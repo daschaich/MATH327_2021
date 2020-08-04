@@ -1,0 +1,10 @@
+*~
+*swp
+*log
+*blg
+*aux
+*out
+*toc
+*.bbl
+*.pdf
+.DS_Store

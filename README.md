@@ -1,2 +1,2 @@
-# MATH327_2021
-Public lecture notes and computer project tutorials for Liverpool's Statistical Physics module
+# University of Liverpool MATH327, Statistical Physics, Spring term 2021
+This public repository contains lecture notes and computer project tutorials for Liverpool's Statistical Physics module
