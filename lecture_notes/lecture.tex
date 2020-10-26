@@ -1,0 +1,205 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{10 pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+%\usepackage{epsfig}
+%\usepackage{amsfonts}
+%\usepackage{float}
+\usepackage{framed,color}
+\usepackage{fancybox}
+\usepackage{varwidth}
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\usepackage[framemethod=tikz]{mdframed}
+
+% Formatting
+% The following little hack cancels the change to using paragraphs rather than explicit \medskip
+\newcommand{\mysection}[1]{\vspace{-\medskipamount}\section{#1}\vspace{-\medskipamount}}
+\newcommand{\mysubsection}[1]{\vspace{-\medskipamount}\subsection{#1}\vspace{-\medskipamount}}
+\newcommand{\mutesection}[1]{\vspace{-\medskipamount}\section*{#1}\vspace{-\medskipamount}}
+\newcommand{\mutesubsection}[1]{\vspace{-\medskipamount}\subsection*{#1}\vspace{-\medskipamount}}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\Nbb}{\ensuremath{\mathbb N} }
+\newcommand{\cO}{\ensuremath{\mathcal O} }
+\newcommand{\Rbb}{\ensuremath{\mathbb R} }
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\om}{\ensuremath{\omega} }
+\newcommand{\Om}{\ensuremath{\Omega} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\begin{center}
+  \textcolor{white}{spacing hack}
+  \vfill
+  {\LARGE \textbf{MATH327: Statistical Physics}} \\[6 pt]
+  \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021}
+  \vfill
+  {\LARGE LECTURE \ NOTES} \\[6 pt]
+  Last modified 26 October 2020
+  \vfill
+\end{center}
+\clearpage
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\mutesection{Logistics}
+\mutesubsection{Coordinator}
+\begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item[\qquad] Dr David Schaich
+  \item[\qquad] Department of Mathematical Sciences
+  \item[\qquad] Mathematics Building Room 124 (Theoretical Physics Wing)
+  \item[\qquad] \href{http://www.davidschaich.net}{www.davidschaich.net}
+  \item[\qquad] \href{mailto:david.schaich@liverpool.ac.uk}{david.schaich@liverpool.ac.uk}
+\end{description}
+
+\mutesubsection{Schedule}
+\TODO{...}
+\begin{comment}
+\begin{tabular}{|l|p{12cm}|}
+  \hline
+  \textbf{Weeks 1--7:}  & We will have \textit{three hours of lecture} and \textit{one tutorial}.
+                          There will be question sheets for the tutorials.
+                          You will work through part of these questions in your time before the tutorial (non-assessed).
+                          Key elements will be discussed in the tutorial. \\[12 pt]
+  \hline
+  \textbf{Week 8--10:}  & We will have \textit{two hours of lecture} and \textit{two hours Computer Lab}.
+                          In the Computer Lab sessions, we will study a statistical phenomenon (see page~\pageref{sec:project}) with a computer experiment using MATLAB.
+                          A basic introduction to MATLAB will be provided, but familiarising yourself with MATLAB (if needed) could be beneficial.
+                          Support material to get started with MATLAB is provided at the VITAL page for MATH327. \\[12 pt]
+  \hline
+  \textbf{Week 11--12:} & We will have \textit{three hours of lecture} and \textit{one tutorial}.
+                          Both will include exam revision sessions. \\[12 pt]
+  \hline
+\end{tabular}
+\end{comment}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\mutesubsection{Assessment}
+\begin{tabular}{ll}
+  30\% & Two homeworks with equal weighting, \TODO{due in ...} \\
+  20\% & A two-part computer project \TODO{due in ...} \\
+  50\% & Standard examination \\
+\end{tabular}
+
+For all assignments, clear and neat presentations of your workings and the logic guiding them will contribute to your mark.
+
+\href{https://www.python.org}{Python} is the default (free) programming language for the computer project, but if you prefer you will also be able to use other languages such as \href{https://www.r-project.org}{R} or even \href{https://matlab.mathworks.com}{MATLAB} (through the University's site license).
+
+\mutesubsection{Resources}
+All resources for this module are gathered at its Canvas site.
+In addition to these lecture notes, these resources include explanatory videos, sample problems \TODO{and more...}
+
+\textbf{Co-creation:} You can find the \LaTeX\ source for these lecture notes at \\
+\centerline{\href{https://github.com/daschaich/MATH327_2021}{github.com/daschaich/MATH327\_2021},}
+where you are welcome to report issues and submit pull requests to correct them.
+
+The lists of further reading below provide some optional additional resources that may be helpful.
+Hyperlinks lead either to the resource itself or to the corresponding record page in our Library.
+
+\noindent\textbf{These books and lecture notes are roughly at the level of this module:} \\[-24 pt]
+\begin{enumerate}
+  \item David Tong, \href{https://www.damtp.cam.ac.uk/user/tong/statphys.html}{\textit{Lectures on Statistical Physics}} (2012), \\ www.damtp.cam.ac.uk/user/tong/statphys.html
+  \item Daniel V.~Schroeder, \textit{An Introduction to Thermal Physics} (first edition, 2000)
+  \item Charles Kittel and Herbert Kroemer, \textit{Thermal Physics} (second edition, 1980)
+  \item F.~Reif, \textit{Fundamentals of Statistical and Thermal Physics} (first edition, 1965)
+\end{enumerate}
+
+\noindent\textbf{These books are more advanced and more specialized, but can be useful to consult concerning specific questions or topics:} \\[-24 pt]
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item Weinan E, Tiejun Li and Eric Vanden-Eijnden, \textit{Applied Stochastic Analysis} (first edition, 2019)
+  \item R.~K.~Pathria, \textit{Statistical Mechanics} (second edition, 1996)
+  \item Sidney Redner, \textit{A Guide to First-Passage Processes} (first edition, 2007)
+  \item Pavel L.~Krapivsky, Sidney Redner and Eli Ben-Naim, \textit{A Kinetic View of Statistical Physics} (first edition, 2010)
+  \item Kerson Huang, \textit{Statistical Mechanics} (second edition, 1987)
+  \item Michael Plischke and Birger Bergersen, \textit{Equilibrium Statistical Physics} (third edition, 2005)
+  \item L.~D.~Landau and E.~M.~Lifshitz, \textit{Statistical Physics, Part 1} (third edition, 1980)
+\end{enumerate}
+
+\noindent\textbf{Maple and MATLAB resources:} \\[-24 pt]
+\begin{enumerate}
+  \setcounter{enumi}{11}
+  \item Ian Thompson, \href{https://library.liv.ac.uk/record=b4395758~S8}{\textit{Understanding Maple}} (ebook edition, 2017) \\
+        Related videos: \href{https://stream.liv.ac.uk/4k67bdzt}{\textit{Running Maple for the first time}} (stream.liv.ac.uk/4k67bdzt) \\
+        \textcolor{white}{Related videos:} \href{https://stream.liv.ac.uk/7pjge23a}{\textit{Configuring Maple}} (stream.liv.ac.uk/7pjge23a)
+  \item Stormy Attaway, \textit{MATLAB: A Practical Introduction to Programming and Problem Solving} (third edition, 2013)
+  \item B.~Barnes and G.~R.~Fulford, \textit{Mathematical Modelling with Case Studies: Using Maple and MATLAB} (third edition, 2014)
+\end{enumerate}
+
+Finally, there is a vast constellation of purely online resources, such as \href{https://en.wikipedia.org/wiki/Statistical_physics}{Wikipedia}.
+These are often fine places to \emph{start} learning about a subject, but tend to be terrible places to \emph{stop}.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\tableofcontents
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{comment}
+\newpage
+\input{ch1_central.tex}
+
+\newpage
+\input{ch2_entropy.tex}
+
+\newpage
+\input{ch3_canonical.tex}
+
+\newpage
+\input{ch4_ideal.tex}
+
+\newpage
+\input{ch5_cycle.tex}
+
+\newpage
+\input{ch6_grand.tex}
+
+\newpage
+\input{ch8_quantum.tex}
+
+\newpage
+\input{ch9_transitions.tex}
+
+\newpage
+\input{appendices.tex}
+
+\newpage
+\input{appendices_hw.tex}
+\end{comment}
+
+\end{document}
+% ------------------------------------------------------------------
