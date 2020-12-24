@@ -4,16 +4,25 @@
 \pagenumbering{arabic}
 
 \setlength{\parindent}{10 mm}
-\setlength{\parskip}{10 pt}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{verbatim}    % For comment
-\usepackage{geometry}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
 \usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
 
-%\usepackage{epsfig}
 %\usepackage{amsfonts}
 %\usepackage{float}
 \usepackage{framed,color}
@@ -21,13 +30,6 @@
 \usepackage{varwidth}
 \definecolor{shadecolor}{rgb}{1,0.8,0.3}
 \usepackage[framemethod=tikz]{mdframed}
-
-% Formatting
-% The following little hack cancels the change to using paragraphs rather than explicit \medskip
-\newcommand{\mysection}[1]{\vspace{-\medskipamount}\section{#1}\vspace{-\medskipamount}}
-\newcommand{\mysubsection}[1]{\vspace{-\medskipamount}\subsection{#1}\vspace{-\medskipamount}}
-\newcommand{\mutesection}[1]{\vspace{-\medskipamount}\section*{#1}\vspace{-\medskipamount}}
-\newcommand{\mutesubsection}[1]{\vspace{-\medskipamount}\subsection*{#1}\vspace{-\medskipamount}}
 % ------------------------------------------------------------------
 
 
@@ -50,39 +52,40 @@
 % ------------------------------------------------------------------
 \begin{document}
 \begin{center}
-  \textcolor{white}{spacing hack}
-  \vfill
   {\LARGE \textbf{MATH327: Statistical Physics}} \\[6 pt]
-  \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021}
-  \vfill
+  \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021} \\[48 pt]
   {\LARGE LECTURE \ NOTES} \\[6 pt]
   Last modified 24 December 2020
-  \vfill
 \end{center}
-\clearpage
+\renewcommand{\contentsname}{}
+\setcounter{tocdepth}{1}
+\tableofcontents
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\mutesection{Coordinator}
+\newpage
+\setcounter{section}{0}
+\addcontentsline{toc}{section}{Module information}
+\section*{Module information}
+\subsection*{Coordinator}
 \begin{description}
   \setlength{\itemsep}{1pt}
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
   \item[\qquad] Dr David Schaich
-  \item[\qquad] Department of Mathematical Sciences
   \item[\qquad] Mathematics Building Room 124 (Theoretical Physics Wing)
-  \item[\qquad] \href{http://www.davidschaich.net}{www.davidschaich.net}
   \item[\qquad] \href{mailto:david.schaich@liverpool.ac.uk}{david.schaich@liverpool.ac.uk}
-  \item[\qquad] \TODO{Office hours and by request via Calendly...}
+  \item[\qquad] \href{http://www.davidschaich.net}{www.davidschaich.net} \\
+  \item[\qquad] Office hours: \TODO{...} and by request via \href{https://calendly.com/daschaich}{calendly.com/daschaich}
 \end{description}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\mutesection{Logistics, lecture notes, and learning strategy}
+\subsection*{Logistics, lecture notes, and learning strategy}
 All resources for this module are gathered at its Canvas site.
 \TODO{notes-driven delivery with recorded introductions and take-aways...}{
 \TODO{notes have gaps --- attempt to fill these in as exercise, which we will review during synchronous sessions and (depending on demand) through supplemental video...}
@@ -91,35 +94,25 @@ In addition to these lecture notes, these resources include explanatory videos, 
 \TODO{...possible supplements by demand/survey...} % TODO: Need to be provided a week in advance?...
 \TODO{...can supplement with recorded lectures from last year on stream.liv.ac.uk...}
 
-\textbf{Co-creation:} You can find the \LaTeX\ source for these lecture notes at \\
-\centerline{\href{https://github.com/daschaich/MATH327_2021}{github.com/daschaich/MATH327\_2021},}
-where you are welcome to report issues and create pull requests to correct them.
-This is \TODO{optional... git intro...}
+\TODO{...numbered equations and colored boxes...}
 
-\begin{comment}
-\begin{tabular}{|l|p{12cm}|}
-  \hline
-  \textbf{Weeks 1--7:}  & We will have \textit{three hours of lecture} and \textit{one tutorial}.
-                          There will be question sheets for the tutorials.
-                          You will work through part of these questions in your time before the tutorial (non-assessed).
-                          Key elements will be discussed in the tutorial. \\[12 pt]
-  \hline
-  \textbf{Week 8--10:}  & We will have \textit{two hours of lecture} and \textit{two hours Computer Lab}.
-                          In the Computer Lab sessions, we will study a statistical phenomenon (see page~\pageref{sec:project}) with a computer experiment using MATLAB.
-                          A basic introduction to MATLAB will be provided, but familiarising yourself with MATLAB (if needed) could be beneficial.
-                          Support material to get started with MATLAB is provided at the VITAL page for MATH327. \\[12 pt]
-  \hline
-  \textbf{Week 11--12:} & We will have \textit{three hours of lecture} and \textit{one tutorial}.
-                          Both will include exam revision sessions. \\[12 pt]
-  \hline
-\end{tabular}
-\end{comment}
+\subsubsection*{Expected background}
+\TODO{Quantum and combinatorics not assumed... do expect binomial coefficients and gaussian integrals}
+
+\subsubsection*{Version control and co-creation}
+The \LaTeX\ source for these lecture notes is kept under version control at \\
+\centerline{\href{https://github.com/daschaich/MATH327_2021}{github.com/daschaich/MATH327\_2021}}
+If any changes need to be made to these notes during the term (to correct mistakes or add supplemental information), the GitHub interface provides an easy way to see what changed and when.
+In addition, you are also welcome to use GitHub to report issues and create pull requests to address them.
+Such co-creation is entirely optional.
+If you are interested in learning more about version control with \texttt{git}, the \href{https://software-carpentry.org}{Software Carpentry} project provides free resources at \\
+\centerline{\href{https://swcarpentry.github.io/git-novice/}{swcarpentry.github.io/git-novice/}}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\mutesection{Assessment and Academic Integrity}
+\subsection*{Assessment and academic integrity}
 \begin{tabular}{ll}
   30\% & Two homework assignments with equal 15\% weighting, due \TODO{5 March} and \TODO{30 April} \\ % TODO: Covering weeks 1--3 and weeks 4--7/8
   20\% & A two-part computer project due \TODO{19 March} (part 1) and \TODO{16 April} (part 2) \\
@@ -133,7 +126,7 @@ in light of this year's hybrid teaching and learning.
 
 \href{https://www.python.org}{Python} is the default (free) programming language for the computer project, but if you prefer you may use a different language such as \href{https://en.wikipedia.org/wiki/C_(programming_language)}{C}, \href{https://www.r-project.org}{R} or even (through the University's site license) \href{https://matlab.mathworks.com}{MATLAB}.
 
-I strongly encourage you to discuss the in-term assignments with each other, since discussing and debating concepts and procedures is a very effective way to learn.
+I encourage you to discuss the in-term assignments with each other, since discussing and debating concepts and procedures is a very effective way to learn.
 The examination must be done on your own, and your submissions for all assignments must be your own work representing your own understanding.
 Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
 It is unacceptable to copy solutions in part or in whole from other students (current or prior) or from other sources (commercial or otherwise).
@@ -145,10 +138,11 @@ In all cases, the spirit of the Academic Integrity Policy should take precedence
 % ------------------------------------------------------------------
 
 
+
 % ------------------------------------------------------------------
-\mutesection{Additional resources}
+\subsection*{Additional resources}
 The lists of further reading below provide some optional additional resources that may be helpful.
-Hyperlinks lead either to the resource itself or to the corresponding record page in our Library.
+Hyperlinks lead either to the resource itself or to the corresponding record page in our library.
 
 \noindent\textbf{These books and lecture notes are roughly at the level of this module:} \\[-24 pt]
 \begin{enumerate}
@@ -188,43 +182,116 @@ These are often fine places to \emph{start} learning about a subject, but tend t
 
 % ------------------------------------------------------------------
 \newpage
-\tableofcontents
+\setcounter{section}{1}
+\section*{Week 1: Central limit theorem and diffusion}
+\addcontentsline{toc}{section}{Week 1: Central limit theorem and diffusion}
+
+\subsection*{Introductory remarks: What is Statistical Physics?}
+Mathematical sciences such as physics aim to determine the laws of nature and understand how these govern experimental observations---both in everyday circumstances and under extreme conditions.
+\TODO{...}
+
+\TODO{...module organized in terms of statistical ensembles...}
+\TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\begin{comment}
-\newpage
-\input{ch1_central.tex}
+\subsection{Probability essentials}
+% ------------------------------------------------------------------
 
-\newpage
-\input{ch2_entropy.tex}
 
-\newpage
-\input{ch3_canonical.tex}
 
+% ------------------------------------------------------------------
 \newpage
-\input{ch4_ideal.tex}
+\setcounter{section}{2}
+\section*{Week 2: Micro-canonical ensemble}
+\addcontentsline{toc}{section}{Week 2: Micro-canonical ensemble}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
 \newpage
-\input{ch5_cycle.tex}
+\setcounter{section}{3}
+\section*{Week 3: Canonical ensemble}
+\addcontentsline{toc}{section}{Week 3: Canonical ensemble}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
 \newpage
-\input{ch6_grand.tex}
+\setcounter{section}{4}
+\section*{Week 4: Ideal gases}
+\addcontentsline{toc}{section}{Week 4: Ideal gases}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
 \newpage
-\input{ch8_quantum.tex}
+\setcounter{section}{5}
+\section*{Week 5: Thermodynamic cycles}
+\addcontentsline{toc}{section}{Week 5: Thermodynamic cycles}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
 \newpage
-\input{ch9_transitions.tex}
+\setcounter{section}{6}
+\section*{Week 6: Grand-canonical ensemble}
+\addcontentsline{toc}{section}{Week 6: Grand-canonical ensemble}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
 \newpage
-\input{appendices.tex}
+\setcounter{section}{7}
+\section*{Week 7: Quantum statistics}
+\addcontentsline{toc}{section}{Week 7: Quantum statistics}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
 \newpage
-\input{appendices_hw.tex}
-\end{comment}
+\setcounter{section}{8}
+\section*{Week 8: Quantum gases of bosons}
+\addcontentsline{toc}{section}{Week 8: Quantum gases of bosons}
+% ------------------------------------------------------------------
 
+
+
+% ------------------------------------------------------------------
+\newpage
+\setcounter{section}{9}
+\section*{Week 9: Quantum gases of fermions}
+\addcontentsline{toc}{section}{Week 9: Quantum gases of fermions}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\setcounter{section}{10}
+\section*{Week 10: Interacting systems}
+\addcontentsline{toc}{section}{Week 10: Interacting systems}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\setcounter{section}{11}
+\section*{Week 11: Synthesis and broader applications}
+\addcontentsline{toc}{section}{Week 11: Synthesis and broader applications}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
 \end{document}
 % ------------------------------------------------------------------
