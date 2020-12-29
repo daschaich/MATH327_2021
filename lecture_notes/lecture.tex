@@ -36,6 +36,7 @@
 
 % ------------------------------------------------------------------
 % Shortcuts
+\newcommand{\cE}{\ensuremath{\mathcal E} }
 \newcommand{\Nbb}{\ensuremath{\mathbb N} }
 \newcommand{\cO}{\ensuremath{\mathcal O} }
 \newcommand{\Rbb}{\ensuremath{\mathbb R} }
@@ -43,6 +44,10 @@
 \newcommand{\si}{\ensuremath{\sigma} }
 \newcommand{\om}{\ensuremath{\omega} }
 \newcommand{\Om}{\ensuremath{\Omega} }
+\newcommand{\lra}{\ensuremath{\longrightarrow} }
+\newcommand{\Lra}{\ensuremath{\Longrightarrow} }
+\newcommand{\llra}{\ensuremath{\longleftrightarrow} }
+\newcommand{\X}{\ensuremath{\!\times\!} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
 \newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
 % ------------------------------------------------------------------
@@ -188,16 +193,64 @@ These are often fine places to \emph{start} learning about a subject, but tend t
 
 \subsection*{Introductory remarks: What is Statistical Physics?}
 Mathematical sciences such as physics aim to determine the laws of nature and understand how these govern experimental observations---both in everyday circumstances and under extreme conditions.
+This mathematical understanding is typically guided by reproducing a set of observations, with the resulting framework then used to make predictions for other ``observables''.
+
+Over the past few centuries this process has been tremendously successful, with theoretical physics accurately predicting experimental and observational results from sub-atomic through to extra-galactic scales.
+Modern physics labs can create a vacuum better than in outer space and the coldest temperatures in the known universe, as well as going to the other extreme to reach temperatures of millions of degrees and pressures millions of times atmospheric pressure at sea level.
+Amazingly, many aspects of these realms of physics can be theoretically described by mathematics developed centuries ago.\footnote{Eugene Wigner's famous article, ``\href{https://en.wikipedia.org/wiki/The_Unreasonable_Effectiveness_of_Mathematics_in_the_Natural_Sciences}{The Unreasonable Effectiveness of Mathematics in the Natural Sciences}'' (1960), and subsequent work in the philosophy of physics, elaborates on why this may be considered `amazing'.  These lecture notes will not comment extensively on philosophy.}
+
+The domain of \textbf{statistical physics} is one in which simple mathematical principles enable amazing predictive capabilities.
+Initially developed in the second half of the nineteenth century, statistical physics remains a core component of modern physics, and will continue to be central to physics in the future.
+The foundations of statistical physics lie in the use of probability theory to mathematically describe experimental observations and corresponding laws of nature that involve stochastic randomness rather than being perfectly predictable.
+
+The lack of perfect predictability in statistical physics is a matter of practicality rather than one of principle.
+This can be considered to result from working with a large number of degrees of freedom (i.e., a large number of independent objects such as particles or balls).
+For example, Avogadro's number $N_A \approx 6.022\times 10^{23}$ is the \text{very} large number that quantifies the number of molecules in everyday amounts of familiar substances---about 18~grams of water or about 22~litres of air at sea-level atmospheric pressure ($\approx$$101$~kPa).
+
+\TODO{...}
+far too much information to store even in the memory of a modern super-computer.
 \TODO{...}
 
 \TODO{...module organized in terms of statistical ensembles...}
-\TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects}
+\TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\subsection{Probability essentials}
+\subsection{Probability foundation}
+Let's begin by placing some familiar everyday concepts into a more formal mathematical framework through the following definitions: \\[-24 pt]
+\begin{itemize}
+  \item A \textbf{random experiment} \cE involves setting up, manipulating and/or observing some (physical or hypothetical) system with some element of randomness.
+        Flipping a coin is a simple random experiment.
+        In the context of the thermodynamic ensembles that will be the focus of this module, the typical experiment will be simply allowing a collection of particles to evolve in time, subject to certain constraints.
+  \item Each time an experiment is performed, the world comes out in some \textbf{state} $\om$.
+        The definition of the experiment and the state must include all objects of interest, and may include more besides.
+        When flipping a coin, for example, the full state could contain information not only about the final orientation of the coin, but also about its position---did it land on the floor or on a cat?
+  \item The \textbf{set of all states} \Om collects all possible outcome states \om of the given experiment, and hence is intricately tied to the experiment $\cE$.
+  \item We are generally not interested in all aspects of the full state $\om$.
+        We typically don't care whether or not the coin landed on a cat, for example.
+        We may only care whether it landed heads up or tails up (and may want to `throw away' any state that doesn't cleanly map on to those options).
+        The \textbf{measurement} $X(\om)$ extracts and quantifies this information, acting as a function that maps the state \om to a number that we can mathematically manipulate.
+        If we repeat a fixed experiment \cE many times and carry out the measurement $X$ on each resulting state $\om$, we will obtain a sequence of numbers $X(\om)$ that behave as a \textit{random variable}.
+  \item Acting with the measurement $X$ on all of the possible states in the set $\Om$, we can collect the output into the
+  \item 
+  \item 
+\end{itemize}
+
+\fbox{\begin{minipage}{\dimexpr\textwidth-3\fboxsep-3\fboxrule\relax}
+  (A) Rolling a six-sided die: \\[100 pt]
+  (B) Toss of a coin four times: \\[100 pt]
+  (C) A gas of $6\X 10^{23}$ argon atoms in a container: \\[100 pt]
+\end{minipage}}
+
+We can generalize the concept of measurement by considering the introduction of a unique number as a \textit{label} to characterize each state \om in the set $\Om$.
+This would give us a label function $L(\om)$ as a random variable, which is isomorphic due to our condition of uniqueness, and can be used interchangeably with the full state,
+\begin{equation*}
+  \om \llra L(\om).
+\end{equation*}
+Even in the case that our measurement of interest $X$ does not produce a unique number for each state $\om$, we generally won't care about the extra information that is lost upon measurement
+\TODO{...}
 % ------------------------------------------------------------------
 
 
