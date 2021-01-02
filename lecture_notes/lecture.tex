@@ -60,7 +60,7 @@
   {\LARGE \textbf{MATH327: Statistical Physics}} \\[6 pt]
   \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021} \\[48 pt]
   {\LARGE LECTURE \ NOTES} \\[6 pt]
-  Last modified 24 December 2020
+  Last modified 1 January 2021
 \end{center}
 \renewcommand{\contentsname}{}
 \setcounter{tocdepth}{1}
@@ -92,7 +92,7 @@
 % ------------------------------------------------------------------
 \subsection*{Logistics, lecture notes, and learning strategy}
 All resources for this module are gathered at its Canvas site.
-\TODO{notes-driven delivery with recorded introductions and take-aways...}{
+\TODO{notes-driven delivery with recorded introductions and take-aways...}
 \TODO{notes have gaps --- attempt to fill these in as exercise, which we will review during synchronous sessions and (depending on demand) through supplemental video...}
 In addition to these lecture notes, these resources include explanatory videos, sample problems \TODO{and more...}
 \TODO{...weekly introductory overview and take-away...}
@@ -100,6 +100,9 @@ In addition to these lecture notes, these resources include explanatory videos, 
 \TODO{...can supplement with recorded lectures from last year on stream.liv.ac.uk...}
 
 \TODO{...numbered equations and colored boxes...}
+
+\TODO{...module organized in terms of statistical ensembles...}
+\TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
 
 \subsubsection*{Expected background}
 \TODO{Quantum and combinatorics not assumed... do expect binomial coefficients and gaussian integrals}
@@ -200,19 +203,24 @@ Modern physics labs can create a vacuum better than in outer space and the colde
 Amazingly, many aspects of these realms of physics can be theoretically described by mathematics developed centuries ago.\footnote{Eugene Wigner's famous article, ``\href{https://en.wikipedia.org/wiki/The_Unreasonable_Effectiveness_of_Mathematics_in_the_Natural_Sciences}{The Unreasonable Effectiveness of Mathematics in the Natural Sciences}'' (1960), and subsequent work in the philosophy of physics, elaborates on why this may be considered `amazing'.  These lecture notes will not comment extensively on philosophy.}
 
 The domain of \textbf{statistical physics} is one in which simple mathematical principles enable amazing predictive capabilities.
-Initially developed in the second half of the nineteenth century, statistical physics remains a core component of modern physics, and will continue to be central to physics in the future.
+Initially developed in the nineteenth century, statistical physics remains a core component of modern physics, and will retain this position in years to come.
 The foundations of statistical physics lie in the use of probability theory to mathematically describe experimental observations and corresponding laws of nature that involve stochastic randomness rather than being perfectly predictable.
 
 The lack of perfect predictability in statistical physics is a matter of practicality rather than one of principle.
-This can be considered to result from working with a large number of degrees of freedom (i.e., a large number of independent objects such as particles or balls).
-For example, Avogadro's number $N_A \approx 6.022\times 10^{23}$ is the \text{very} large number that quantifies the number of molecules in everyday amounts of familiar substances---about 18~grams of water or about 22~litres of air at sea-level atmospheric pressure ($\approx$$101$~kPa).
+It results from working with a large number of degrees of freedom (i.e., a large number of independent objects such as particles or balls).
+For example, Avogadro's number $N_A \approx 6.022\times 10^{23}$ is the large number of molecules in everyday amounts of familiar substances---about 18~grams of water or about 22~litres of air at sea-level atmospheric pressure ($\approx$$101$~kPa). % 22.4 litres for 1atm=101.325~kPa, 22.71 litres for 100~kPa at $O^{\circ}$~C
+Specifying the positions and velocities of $\sim$$10^{23}$ objects would require far more information than could be stored even in the memory of the biggest existing supercomputers.
+Statistical physics instead produces simple mathematical descriptions of large-scale properties such as temperature, pressure and diffusion, which are generally of such outstanding quality that the underlying `randomness' is effectively undetectable.
 
-\TODO{...}
-far too much information to store even in the memory of a modern super-computer.
-\TODO{...}
+As an historical aside, the difficulty detecting the stochastic basis of such `thermodynamic' properties made it challenging to convince skeptics that atoms and molecules really existed.
+Ludwig Boltzmann, a prominent early champion of statistical physics, endured a constant struggle to defend his ideas, which likely contributed to his deteriorating mental health and eventual suicide in 1906.
+A crucial advance to convincingly establish the existence of atoms was Albert Einstein's use of statistical physics to explain the observed ``\href{https://en.wikipedia.org/wiki/Brownian_motion}{Brownian motion}'' of particles suspended in fluids---this work was part of Einstein's ``miracle year'' in 1905, along with special relativity and early contributions to quantum physics.
+More modern applications of statistical physics include explaining why stars don't collapse under the `weight' of their own gravity, and identifying effects of dark matter in temperature fluctuations observable in the \textit{cosmic microwave background} lingering from the early years of the universe.
 
-\TODO{...module organized in terms of statistical ensembles...}
-\TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
+For this week we will focus on some of the foundational mathematics that will underlie our later development and application of statistical ensembles.
+Looking back to Boltzmann's times, we can consider the following question one of his opponents might have asked:
+\textit{If the pressure of a gas in a container results from molecules stochastically colliding with the walls of that container and pushing them out, how can the pressure be so stable and reproducible, rather than itself fluctuating stochastically?}
+The mathematical answer lies in the \textbf{law of large numbers} and the \textbf{central limit theorem}, which this week we will learn and apply to the physics of diffusion in one dimension.
 % ------------------------------------------------------------------
 
 
@@ -221,21 +229,24 @@ far too much information to store even in the memory of a modern super-computer.
 \subsection{Probability foundation}
 Let's begin by placing some familiar everyday concepts into a more formal mathematical framework through the following definitions: \\[-24 pt]
 \begin{itemize}
-  \item A \textbf{random experiment} \cE involves setting up, manipulating and/or observing some (physical or hypothetical) system with some element of randomness.
+  \item A (random) \textbf{experiment} \cE involves setting up, manipulating and/or observing some (physical or hypothetical) system with some element of randomness.
         Flipping a coin is a simple random experiment.
-        In the context of the thermodynamic ensembles that will be the focus of this module, the typical experiment will be simply allowing a collection of particles to evolve in time, subject to certain constraints.
+        In the context of the statistical ensembles that will be the focus of this module, the typical experiment will be simply allowing a collection of particles to evolve in time, subject to certain constraints.
   \item Each time an experiment is performed, the world comes out in some \textbf{state} $\om$.
         The definition of the experiment and the state must include all objects of interest, and may include more besides.
         When flipping a coin, for example, the full state could contain information not only about the final orientation of the coin, but also about its position---did it land on the floor or on a cat?
-  \item The \textbf{set of all states} \Om collects all possible outcome states \om of the given experiment, and hence is intricately tied to the experiment $\cE$.
+  \item The \textbf{set of all states} \Om collects all possible states \om that the given experiment \cE can produce, and is therefore intricately tied to \cE itself.
   \item We are generally not interested in all aspects of the full state $\om$.
-        We typically don't care whether or not the coin landed on a cat, for example.
-        We may only care whether it landed heads up or tails up (and may want to `throw away' any state that doesn't cleanly map on to those options).
+        For example, we won't care where a flipped coin lands.
+        Instead we're typically only interested in whether it lands heads up or tails up---and we may want to set aside any state that doesn't cleanly map on to those options.
         The \textbf{measurement} $X(\om)$ extracts and quantifies this information, acting as a function that maps the state \om to a number that we can mathematically manipulate.
         If we repeat a fixed experiment \cE many times and carry out the measurement $X$ on each resulting state $\om$, we will obtain a sequence of numbers $X(\om)$ that behave as a \textit{random variable}.
-  \item Acting with the measurement $X$ on all of the possible states in the set $\Om$, we can collect the output into the
-  \item 
-  \item 
+  \item Acting with the measurement $X$ on all of the possible states in the set $\Om$ defines the \textbf{set of all outcomes} $A$:
+        \begin{equation*}
+          X: \Om \to A.
+        \end{equation*}
+        That is, $A$ collects all possible measurement results that the given experiment \cE and measurement $X$ can produce
+  \item Finally, we define the \textbf{set of events}\TODO{...}
 \end{itemize}
 
 \fbox{\begin{minipage}{\dimexpr\textwidth-3\fboxsep-3\fboxrule\relax}
@@ -250,6 +261,7 @@ This would give us a label function $L(\om)$ as a random variable, which is isom
   \om \llra L(\om).
 \end{equation*}
 Even in the case that our measurement of interest $X$ does not produce a unique number for each state $\om$, we generally won't care about the extra information that is lost upon measurement
+This allows
 \TODO{...}
 % ------------------------------------------------------------------
 
