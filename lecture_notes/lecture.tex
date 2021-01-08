@@ -52,6 +52,7 @@
 \newcommand{\llra}{\ensuremath{\longleftrightarrow} }
 \newcommand{\X}{\ensuremath{\!\times\!} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\fig}[1]{Figure~\ref{#1}}
 \newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
 % ------------------------------------------------------------------
 
@@ -63,7 +64,7 @@
   {\LARGE \textbf{MATH327: Statistical Physics}} \\[6 pt]
   \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021} \\[48 pt]
   {\LARGE LECTURE \ NOTES} \\[6 pt]
-  Last modified 7 January 2021
+  Last modified 8 January 2021
 \end{center}
 \renewcommand{\contentsname}{}
 \setcounter{tocdepth}{1}
@@ -247,7 +248,7 @@ Let's begin by placing some familiar everyday concepts into a more formal mathem
         Instead we're typically only interested in whether it lands heads up or tails up---and we may want to set aside any state that doesn't cleanly map on to those options.
         The \textbf{measurement} $X(\om)$ extracts and quantifies this information, acting as a function that maps the state \om to a number that we can mathematically manipulate.
         If we repeat a fixed experiment \cE many times and carry out the measurement $X$ on each resulting state $\om$, we will obtain a sequence of numbers $X(\om)$ that behave as a \textit{random variable}.
-  \item Acting with the measurement $X$ on all of the possible states in the set $\Om$ defines the \textbf{set of all outcomes} $A$:
+  \item Acting with the measurement $X$ on all of the possible states in the set $\Om$ defines the \textbf{set of all outcomes} (or \textbf{outcome space}) $A$:
         \begin{equation*}
           X: \Om \to A.
         \end{equation*}
@@ -261,7 +262,7 @@ With an experiment of rolling a six-sided die and measuring the number ($1$--$6$
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
-What is the outcome set $A$ if we toss a coin four times and measure whether it lands heads up ($H$) or tails up ($T$)?
+What is the outcome space $A$ if we toss a coin four times and measure whether it lands heads up ($H$) or tails up ($T$)?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
@@ -281,7 +282,7 @@ While the measurements $X(\om)$ we consider will generally not produce a unique 
 Ignoring that irrelevant information leaves us free to interchange the set of outcomes $A$ for the set of states $\Om$, which we will do from now on.
 (Some textbooks may never distinguish between $A$ vs \Om in the first place, though this can be a source of confusion.)
 
-We are now prepared for the final foundational definition of this section, the \textbf{probability} $P$ that an event in the set \cF has of occurring.
+We are now prepared for the final foundational definition in this section, the \textbf{probability} $P$ that an event in the set \cF has of occurring.
 Mathematically, $P$ is a \textit{measure function},
 \begin{equation*}
   P: \cF \to [0, 1],
@@ -289,7 +290,7 @@ Mathematically, $P$ is a \textit{measure function},
 which must satisfy the following two requirements: \\[-24 pt]
 \begin{enumerate}
   \item The probability of a countable union of mutually exclusive events must equal the countable sum of the probabilities of each of these events.
-  \item The probability of the outcome set $A$ must equal $1$ (even if $A$ is uncountable).
+  \item The probability of the outcome space ($\cF = A$) must equal $1$ (even if $A$ is uncountable).
         This simply means that the experiment \cE must produce an outcome.
         If no outcome were produced, it would not make sense to say that the experiment had occurred.
 \end{enumerate}
@@ -304,7 +305,7 @@ If two states are identical, $\om_i = \om_j$, they must produce the same measure
   X(\om_i) \ne X(\om_j) \qquad \Lra \qquad \om_i \ne \om_j.
 \end{equation*}
 On the other hand, as described above, it is possible to have $X(\om_i) = X(\om_j)$ even when $\om_i \ne \om_j$.
-This means that the size $n$ of the outcome set $A$ may be smaller than the size of $\Om$, $n \leq N$.
+This means that the size $n$ of the outcome space $A$ may be smaller than the size of $\Om$, $n \leq N$.
 We can write
 \begin{equation*}
   A = \left\{X_1, X_2, \cdots, X_n\right\},
@@ -329,17 +330,40 @@ Similarly choosing an event space $\cF = A$ for the six-sided die considered in 
   \ \\[100 pt]
 \end{mdframed}
 \newpage % WARNING: FORMATTING BY HAND
-\noindent
-For the above case of tossing a coin four times, what are the probabilities $p_{\al}$ that result from assuming the coin is fair?
-Taking the event space to be
+\noindent Again taking $\cF = A$ for the case of tossing a coin four times, what are the probabilities $p_{\al}$ that result from assuming the coin is fair?
+If we instead consider the event space
 \begin{equation*}
   \cF = \left\{\mbox{equal number of } H \mbox{ and } T, \mbox{ different numbers of } H \mbox{ and } T\right\},
 \end{equation*}
-what are the probabilities for each of the two events in $\cF$?
+what are the probabilities $p_{\text{equal}}$ and $p_{\text{diff}}$ for the two events in this $\cF$?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
-\TODO{Roulette...}
+
+\begin{minipage}{0.4\textwidth}
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{figs/roulette.pdf} \\
+    \href{https://www.vecteezy.com/vector-art/658761-casino-roulette-wheel}{Source}
+  \end{center}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+  The standard European roulette wheel shown to the left has 37 pockets labelled ``0'' through ``36''.
+  18 of these pockets are coloured red, 18 are coloured black and 1 (pocket ``0'') is coloured green.
+\end{minipage}
+
+\noindent What is the outcome space $A$ for a spin of the roulette wheel?
+With $\cF = A$, what are the probabilities $p_{\al}$ for a fair wheel?
+With
+\begin{equation*}
+  \cF = \left\{\mbox{ball in a red pocket, ball in a black pocket, ball in the green pocket}\right\},
+\end{equation*}
+what are the corresponding probabilities $p_{\text{red}}$, $p_{\text{black}}$ and $p_{\text{green}}$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+We conclude this section with two \textbf{comments} on 
+\TODO{...}
 % ------------------------------------------------------------------
 
 
