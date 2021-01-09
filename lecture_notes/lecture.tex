@@ -87,7 +87,7 @@
   \item[\qquad] Mathematics Building Room 124 (Theoretical Physics Wing)
   \item[\qquad] \href{mailto:david.schaich@liverpool.ac.uk}{david.schaich@liverpool.ac.uk}
   \item[\qquad] \href{http://www.davidschaich.net}{www.davidschaich.net} \\
-  \item[\qquad] Office hours: \TODO{...} and by request via \href{https://calendly.com/daschaich}{calendly.com/daschaich}
+  \item[\qquad] Office hours: \TODO{TBD} and by request via \href{https://calendly.com/daschaich}{calendly.com/daschaich}
 \end{description}
 % ------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ In addition to these lecture notes, these resources include explanatory videos, 
 \TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
 
 \subsubsection*{Expected background}
-\TODO{Quantum and combinatorics not assumed... do expect binomial coefficients and gaussian integrals}
+\TODO{Quantum and combinatorics not assumed... do expect binomial coefficients and gaussian integrals...}
 
 \subsubsection*{Version control and co-creation}
 The \LaTeX\ source for these lecture notes is kept under version control at \\
@@ -341,13 +341,10 @@ what are the probabilities $p_{\text{equal}}$ and $p_{\text{diff}}$ for the two 
 \end{mdframed}
 
 \begin{minipage}{0.4\textwidth}
-  \begin{center}
-    \includegraphics[width=0.75\textwidth]{figs/roulette.pdf} \\
-    \href{https://www.vecteezy.com/vector-art/658761-casino-roulette-wheel}{Source}
-  \end{center}
+  \includegraphics[width=0.75\textwidth]{figs/roulette.pdf}
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
-  The standard European roulette wheel shown to the left has 37 pockets labelled ``0'' through ``36''.
+  The standard European roulette wheel shown to the left (\href{https://www.vecteezy.com/vector-art/658761-casino-roulette-wheel}{source}) has 37 pockets labelled ``0'' through ``36''.
   18 of these pockets are coloured red, 18 are coloured black and 1 (pocket ``0'') is coloured green.
 \end{minipage}
 
@@ -362,7 +359,53 @@ what are the corresponding probabilities $p_{\text{red}}$, $p_{\text{black}}$ an
   \ \\[100 pt]
 \end{mdframed}
 
-We conclude this section with two \textbf{comments} on 
+We conclude this section with two \textbf{comments} on the process of assigning probabilities to events (which is called \textit{modelling}): \\[-24 pt]
+\begin{itemize}
+  \item We saw above that \textit{symmetries} are a powerful way to constrain probabilities.
+        The symmetry between the six sides of a fair die, the two sides of a fair coin, and the 37 pockets of a fair roulette wheel each sufficed to completely fix the corresponding probabilities $p_{\al}$.
+  \item Modelling can also be guided by empirical information obtained by repeating an experiment many times.
+        For example, if we don't know whether a set of dice are fair, we will be able to infer their probabilities $p_{\al}$ (with a certain confidence level) by rolling them enough times.
+        The need to repeat the experiment many times comes from the law of large numbers, to which we now turn.
+\end{itemize}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Law of large numbers}
+Let's continue considering the setup introduced above, with
+\begin{equation*}
+  \cF = A = \left\{X_1, X_2, \cdots, X_n\right\}
+\end{equation*}
+for finite $n$, and probabilities $p_{\al} = P(X_{\al})$ that obey
+\begin{align*}
+  p_{\al} & \in [0, 1] &
+  \sum_{\al = 1}^n p_{\al} & = 1.
+\end{align*}
+We can generalize this notation by writing instead
+\begin{equation*}
+  \sum_{X \in A} P(X) = 1,
+\end{equation*}
+which provides simple expressions for the \textbf{mean} $\mu$ and \textbf{variance} $\si^2$ of the probability space,
+\begin{align}
+              \mu = \vev{X} = & \sum_{X \in A} X P(X) \\
+  \si^2 = \vev{(X - \mu)^2} = & \sum_{X \in A} (X - \mu)^2 P(X).
+\end{align}
+The angle bracket notation indicates the \textbf{expected} (or \textbf{expectation}) \textbf{value} with general definition
+\begin{equation*}
+  \vev{f(X)} = \sum_{X \in A} f(X) P(X).
+\end{equation*}
+
+We now define a new experiment that consists of \textit{repeating} the original experiment $R$ times, with each repetition independent of all the others.
+Keeping the measurement fixed, we can call the resulting outcome space $B$.
+\newpage % WARNING: FORMATTING BY HAND
+\noindent For $R = 4$, what are some representative outcomes in the set $B$?
+What is the total size of $B$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+Each outcome in $B$ contains $R$ different $X^{(r)} \in A$, one for each repetition $r = 1, \cdots, R$.
 \TODO{...}
 % ------------------------------------------------------------------
 
