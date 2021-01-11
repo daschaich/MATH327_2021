@@ -1,8 +1,7 @@
 % ------------------------------------------------------------------
-\documentclass[12 pt]{article}
-\pagestyle{plain}
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\newcommand{\moddate}{Last modified 11 Jan.~2021}
 \pagenumbering{arabic}
-
 \setlength{\parindent}{10 mm}
 \setlength{\parskip}{12 pt}
 
@@ -30,6 +29,13 @@
 \usepackage{varwidth}
 \definecolor{shadecolor}{rgb}{1,0.8,0.3}
 \usepackage[framemethod=tikz]{mdframed}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small MATH327}\hfill \thepage\hfill {\small \moddate}}
 % ------------------------------------------------------------------
 
 
@@ -41,9 +47,11 @@
 \newcommand{\Nbb}{\ensuremath{\mathbb N} }
 \newcommand{\cO}{\ensuremath{\mathcal O} }
 \newcommand{\Rbb}{\ensuremath{\mathbb R} }
+\newcommand{\Xbar}{\ensuremath{\overline X} }
 \newcommand{\al}{\ensuremath{\alpha} }
 \newcommand{\be}{\ensuremath{\beta} }
 \newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\de}{\ensuremath{\delta} }
 \newcommand{\si}{\ensuremath{\sigma} }
 \newcommand{\om}{\ensuremath{\omega} }
 \newcommand{\Om}{\ensuremath{\Omega} }
@@ -52,6 +60,7 @@
 \newcommand{\llra}{\ensuremath{\longleftrightarrow} }
 \newcommand{\X}{\ensuremath{\!\times\!} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\eq}[1]{Eq.~\ref{#1}}
 \newcommand{\fig}[1]{Figure~\ref{#1}}
 \newcommand{\TODO}[1]{\textcolor{red}{\textbf{#1}}}
 % ------------------------------------------------------------------
@@ -60,11 +69,12 @@
 
 % ------------------------------------------------------------------
 \begin{document}
+\thispagestyle{empty}
 \begin{center}
   {\LARGE \textbf{MATH327: Statistical Physics}} \\[6 pt]
   \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021} \\[48 pt]
   {\LARGE LECTURE \ NOTES} \\[6 pt]
-  Last modified 8 January 2021
+  \moddate
 \end{center}
 \renewcommand{\contentsname}{}
 \setcounter{tocdepth}{1}
@@ -95,18 +105,17 @@
 
 % ------------------------------------------------------------------
 \subsection*{Logistics, lecture notes, and learning strategy}
-All resources for this module are gathered at its Canvas site.
-\TODO{notes-driven delivery with recorded introductions and take-aways...}
-\TODO{notes have gaps --- attempt to fill these in as exercise, which we will review during synchronous sessions and (depending on demand) through supplemental video...}
-In addition to these lecture notes, these resources include explanatory videos, sample problems \TODO{and more...}
-\TODO{...weekly introductory overview and take-away...}
-\TODO{...possible supplements by demand/survey...} % TODO: Need to be provided a week in advance?...
-\TODO{...can supplement with recorded lectures from last year on stream.liv.ac.uk...}
+All resources for this module will be gathered at its Canvas site.
+\TODO{...notes-driven delivery with video recordings for each week providing introductory motivation/overview and concluding summary of main learning objectives...}
+\TODO{...notes have gaps --- attempt to fill these in while working through --- will be discussed during synchronous sessions, and any that prove particularly tricky I may address through supplemental follow-up video recordings...}
+%In addition to these lecture notes, these resources include explanatory videos, sample problems \TODO{and more...}
+\TODO{...such supplements can also be requested outside of synchronous sessions...} % TODO: Need to be provided a week in advance?...
+%\TODO{...can supplement with recorded lectures from last year on stream.liv.ac.uk...}
 
-\TODO{...numbered equations and colored boxes...}
+\TODO{...no need to memorize equations---numbers mostly used in order to refer back to past work in later derivations... colored boxes highlight main learning objectives to be understood...}
 
-\TODO{...module organized in terms of statistical ensembles...}
-\TODO{...focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
+\TODO{...module organized around statistical ensembles...}
+\TODO{...mostly focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
 
 \subsubsection*{Expected background}
 \TODO{Quantum and combinatorics not assumed... do expect binomial coefficients and gaussian integrals...}
@@ -219,7 +228,7 @@ For example, Avogadro's number $N_A \approx 6.022\times 10^{23}$ is the large nu
 Specifying the positions and velocities of $\sim$$10^{23}$ objects would require far more information than could be stored even in the memory of the biggest existing supercomputers.
 Statistical physics instead produces simple mathematical descriptions of large-scale properties such as temperature, pressure and diffusion, which are generally of such outstanding quality that the underlying `randomness' is effectively undetectable.
 
-Historically, the difficulty detecting the stochastic processes underlying such \textit{thermodynamic} properties made it challenging to convince skeptics that atoms and molecules really existed.
+Historically, the difficulty detecting the stochastic processes underlying such \textit{thermodynamic} properties made it challenging to convince skeptics that atoms and molecules really exist.
 Ludwig Boltzmann, a prominent early developer of statistical physics, endured a constant struggle to defend his ideas, which likely contributed to his deteriorating mental health and eventual suicide in 1906.
 A crucial advance to convincingly establish the existence of atoms was Albert Einstein's use of statistical physics to explain the observed ``\href{https://en.wikipedia.org/wiki/Brownian_motion}{Brownian motion}'' of particles suspended in fluids---this work was part of Einstein's ``miracle year'' in 1905, along with special relativity and early contributions to quantum physics.
 More modern applications of statistical physics include explaining why stars don't collapse under the `weight' of their own gravity, and identifying effects of dark matter in temperature fluctuations observable in the \textit{cosmic microwave background} lingering from the early years of the universe.
@@ -374,9 +383,10 @@ We conclude this section with two \textbf{comments} on the process of assigning 
 % ------------------------------------------------------------------
 \subsection{Law of large numbers}
 Let's continue considering the setup introduced above, with
-\begin{equation*}
+\begin{equation}
+  \label{eq:finite_set}
   \cF = A = \left\{X_1, X_2, \cdots, X_n\right\}
-\end{equation*}
+\end{equation}
 for finite $n$, and probabilities $p_{\al} = P(X_{\al})$ that obey
 \begin{align*}
   p_{\al} & \in [0, 1] &
@@ -388,24 +398,91 @@ We can generalize this notation by writing instead
 \end{equation*}
 which provides simple expressions for the \textbf{mean} $\mu$ and \textbf{variance} $\si^2$ of the probability space,
 \begin{align}
-              \mu = \vev{X} = & \sum_{X \in A} X P(X) \\
-  \si^2 = \vev{(X - \mu)^2} = & \sum_{X \in A} (X - \mu)^2 P(X).
+              \mu = \vev{X} = & \sum_{X \in A} X P(X)            \label{eq:mean} \\
+  \si^2 = \vev{(X - \mu)^2} = & \sum_{X \in A} (X - \mu)^2 P(X). \label{eq:var}
 \end{align}
 The angle bracket notation indicates the \textbf{expected} (or \textbf{expectation}) \textbf{value} with general definition
+\begin{equation}
+  \label{eq:expect_disc}
+  \vev{f(X)} = \sum_{X \in A} f(X) P(X),
+\end{equation}
+which is a linear operation,
 \begin{equation*}
-  \vev{f(X)} = \sum_{X \in A} f(X) P(X).
+  \vev{c\cdot f(X) + g(X)} = c\vev{f(X)} + \vev{g(X)}.
 \end{equation*}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent The square root of the variance, $\sqrt{\si^2} = \si$, is the \textbf{standard deviation}.
+What is \si expressed in terms of $\vev{X^2}$ and $\vev{X}^2$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
 
 We now define a new experiment that consists of \textit{repeating} the original experiment $R$ times, with each repetition independent of all the others.
-Keeping the measurement fixed, we can call the resulting outcome space $B$.
-\newpage % WARNING: FORMATTING BY HAND
-\noindent For $R = 4$, what are some representative outcomes in the set $B$?
+Using the same measurement as before for each repetition, we obtain a new outcome space that we can call $B$.
+For $R = 4$, what are some representative outcomes in the set $B$?
 What is the total size of $B$?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
 
-Each outcome in $B$ contains $R$ different $X^{(r)} \in A$, one for each repetition $r = 1, \cdots, R$.
+Each outcome in $B$ contains $R$ different $X^{(r)} \in A$ (with $\vev{X^{(r)}} = \mu$ and $\vev{(X^{(r)} - \mu)^2} = \si^2$), one for each repetition $r = 1, \cdots, R$.
+Considering the case $R = 4$ for simplicity, any element of $B$ can be written as $X_i^{(1)} X_j^{(2)} X_k^{(3)} X_l^{(4)} \in B$ with corresponding probability
+\begin{equation*}
+  P_B\left(X_i^{(1)} X_j^{(2)} X_k^{(3)} X_l^{(4)}\right) = P_A\left(X_i^{(1)}\right) P_A\left(X_j^{(2)}\right) P_A\left(X_k^{(3)}\right) P_A\left(X_l^{(4)}\right),
+\end{equation*}
+using subscripts to distinguish between the single-experiment ($A$) and repeated-experiment ($B$) probability spaces.
+
+Averaging over all $R$ repetitions defines the \textit{arithmetic mean}
+\begin{equation*}
+  \Xbar_R = \frac{1}{R} \sum_{r = 1}^R X^{(r)}.
+\end{equation*}
+Unlike the true mean $\mu$, the arithmetic mean $\Xbar_R$ is a random variable---a number that may be different for each element of $B$.
+That said, $\Xbar_R$ and $\mu$ are certainly related, and so long as the standard deviation exists (i.e., $\si^2$ is finite), this relation can be proved rigorously in the limit $R \to \infty$.\footnote{In the computer-based project we will numerically investigate a case with divergent $\si^2$.}
+
+Here we will not be fully rigorous, and take it for granted that
+\begin{equation*}
+  \vev{\left(X^{(i)} - \mu\right)\left(X^{(j)} - \mu\right)} = \si^2 \de_{ij} = \left\{\begin{array}{ll}\si^2 & \mbox{for } i = j \\ 0 & \mbox{for } i \ne j\end{array}\right.,
+\end{equation*}
+where the \textit{Kronecker delta} $\de_{ij} = 1$ for $i = j$ and vanishes for $i \ne j$.
+This is a consequence of the assumed independence of the different repetitions.
+Using this result and the relation $\left(\sum_i a_i\right)\left(\sum_j b_j\right) = \sum_{i, j} \left(a_i b_j\right)$, express the following quantity in terms of \si and $R$:
+\begin{mdframed}
+  $\displaystyle \vev{\left(\frac{1}{R} \sum_{r = 1}^R X^{(r)} - \mu\right)^2} = $ \\[100 pt]
+\end{mdframed}
+You should find that your result vanishes in the limit $R \to \infty$, so long as $\si^2$ is finite.
+Since the square makes this expectation value a sum of non-negative terms, it can vanish only if every one of those terms is individually zero.
+
+\begin{shaded}
+  This result establishes the \textbf{law of large numbers}:
+  \begin{equation}
+    \lim_{R \to \infty} \frac{1}{R} \sum_{r = 1}^R X^{(r)} = \mu,
+  \end{equation}
+  where we have assumed $\vev{X^{(r)}} = \mu$ and $\vev{(X^{(r)} - \mu)^2} = \si^2$ are finite.
+\end{shaded}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Probability distributions}
+It is not necessary to make the assumption (\eq{eq:finite_set}) that we are dealing with a countable number of $X_1, \cdots, X_n$.
+The considerations above continue to hold even if the random variable $X$ is a continuous real number.
+In this case, however, the identification of probabilities with outcomes $X$ is slightly more complicated, which will be relevant when we consider the central limit theorem in the next section.
+
+When the outcome can be any number on the real line, the fundamental object is a \textbf{probability distribution} (or \textbf{density function}) $p(x)$ defined for all $x \in \Rbb$.
+Starting from this density, a probability is determined by integrating over a given interval, which we can call $[a, b]$.
+This integral produces the probability that the outcome $X$ lies within this interval,
+\begin{equation*}
+  P\left(a \leq X \leq b\right) = \int_a^b p(x) dx.
+\end{equation*}
+
+We similarly generalize the definition of an expectation value (\eq{eq:expect_disc}) to integrate over the probability distribution,
+\begin{equation}
+  \label{eq:expect_cont}
+  \vev{f(X)} = \int f(x) p(x) dx
+\end{equation}
+By omitting the limits on the integral we implicitly integrate over the entire domain, in this case $\int dx = \int_{-\infty}^{\infty} dx$.
+\TODO{mean, stdev,...}
 \TODO{...}
 % ------------------------------------------------------------------
 
