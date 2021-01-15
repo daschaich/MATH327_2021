@@ -1,0 +1,282 @@
+% ------------------------------------------------------------------
+\renewcommand{\thisweek}{MATH327 Week 1}
+\renewcommand{\moddate}{Last modified 15 Jan.~2021}
+\setcounter{section}{1}
+\section*{Week 1: Central limit theorem and diffusion}
+\addcontentsline{toc}{section}{Week 1: Central limit theorem and diffusion}
+
+\subsection*{Introductory remarks: What is Statistical Physics?}
+Mathematical sciences such as physics aim to determine the laws of nature and understand how these govern experimental observations---both in everyday circumstances and under extreme conditions.
+This mathematical understanding is typically guided by reproducing a set of observations, with the resulting framework then used to make predictions for other ``observables''.
+
+Over the past few centuries this process has been tremendously successful, with theoretical physics accurately predicting experimental and observational results from sub-atomic through to extra-galactic scales.
+Modern physics labs can create a vacuum better than in outer space and the coldest temperatures in the known universe, as well as going to the other extreme to reach temperatures of millions of degrees and pressures millions of times atmospheric pressure at sea level.
+Amazingly, many aspects of these realms of physics can be theoretically described by mathematics developed centuries ago.\footnote{Eugene Wigner's famous article, ``\href{https://en.wikipedia.org/wiki/The_Unreasonable_Effectiveness_of_Mathematics_in_the_Natural_Sciences}{The Unreasonable Effectiveness of Mathematics in the Natural Sciences}'' (1960), and subsequent work in the philosophy of physics, elaborates on why this may be considered `amazing'.  These lecture notes will not comment extensively on philosophy.}
+
+The domain of \textbf{statistical physics} is one in which simple mathematical principles enable amazing predictive capabilities.
+Initially developed in the nineteenth century, statistical physics remains a core component of modern physics, and will retain this position in years to come.
+The foundations of statistical physics lie in the use of probability theory to mathematically describe experimental observations and corresponding laws of nature that involve stochastic randomness rather than being perfectly predictable.
+
+The lack of perfect predictability in statistical physics is a matter of practicality rather than one of principle.
+It results from working with a large number of degrees of freedom (i.e., a large number of independent objects such as particles or balls).
+For example, Avogadro's number $N_A \approx 6.022\times 10^{23}$ is the large number of molecules in everyday amounts of familiar substances---about 18~grams of water or about 22~litres of air at sea-level atmospheric pressure ($\approx$$101$~kPa). % 22.4 litres for 1atm=101.325~kPa, 22.71 litres for 100~kPa at $O^{\circ}$~C
+Specifying the positions and velocities of $\sim$$10^{23}$ objects would require far more information than could be stored even in the memory of the biggest existing supercomputers.
+Statistical physics instead produces simple mathematical descriptions of large-scale properties such as temperature, pressure and diffusion, which are generally of such outstanding quality that the underlying `randomness' is effectively undetectable.
+
+Historically, the difficulty detecting the stochastic processes underlying such \textit{thermodynamic} properties made it challenging to convince skeptics that atoms and molecules really exist.
+Ludwig Boltzmann, a prominent early developer of statistical physics, endured a constant struggle to defend his ideas, which likely contributed to his deteriorating mental health and eventual suicide in 1906.
+A crucial advance to convincingly establish the existence of atoms was Albert Einstein's use of statistical physics to explain the observed ``\href{https://en.wikipedia.org/wiki/Brownian_motion}{Brownian motion}'' of particles suspended in fluids---this work was part of Einstein's ``miracle year'' in 1905, along with special relativity and early contributions to quantum physics.
+More modern applications of statistical physics include explaining why stars don't collapse under the `weight' of their own gravity, and identifying effects of dark matter in temperature fluctuations observable in the \textit{cosmic microwave background} lingering from the early years of the universe.
+
+For this week we will focus on some of the foundational mathematics that will underlie our later development and application of statistical ensembles.
+Looking back to Boltzmann's times, we can consider the following question one of his opponents might have asked:
+\textit{If the pressure of a gas in a container results from molecules stochastically colliding with the walls of that container and pushing them out, then how can the pressure be so stable and reproducible, rather than itself fluctuating stochastically?}
+The mathematical answer lies in the \textbf{law of large numbers} and the \textbf{central limit theorem}, which this week we will learn and apply to the physics of diffusion in one dimension.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Probability foundations}
+Let's begin by placing some familiar everyday concepts into a more formal mathematical framework through the following definitions: \\[-24 pt]
+\begin{itemize}
+  \item A (random) \textbf{experiment} \cE involves setting up, manipulating and/or observing some (physical or hypothetical) system with some element of randomness.
+        Flipping a coin is a simple random experiment.
+        In the context of the statistical ensembles that will be the focus of this module, the typical experiment will be simply allowing a collection of particles to evolve in time, subject to certain constraints.
+  \item Each time an experiment is performed, the world comes out in some \textbf{state} $\om$.
+        The definition of the experiment and the state must include all objects of interest, and may include more besides.
+        When flipping a coin, for example, the full state could contain information not only about the final orientation of the coin, but also about its position---did it land on the floor or on a cat?
+  \item The \textbf{set of all states} \Om collects all possible states \om that the given experiment \cE can produce, and is therefore intricately tied to \cE itself.
+  \item We are generally not interested in all aspects of the full state $\om$.
+        For example, we won't care where a flipped coin lands.
+        Instead we're typically only interested in whether it lands heads up or tails up---and we may want to set aside any state that doesn't cleanly map on to those options.
+        The \textbf{measurement} $X(\om)$ extracts and quantifies this information, acting as a function that maps the state \om to a number that we can mathematically manipulate.
+        If we repeat a fixed experiment \cE many times and carry out the measurement $X$ on each resulting state $\om$, we will obtain a sequence of numbers $X(\om)$ that behave as a \textit{random variable}.
+  \item Acting with the measurement $X$ on all of the possible states in the set $\Om$ defines the \textbf{set of all outcomes} (or \textbf{outcome space}) $A$:
+        \begin{equation*}
+          X: \Om \to A.
+        \end{equation*}
+        That is, $A$ collects all possible measurement results that the given experiment \cE and measurement $X$ can produce.
+        $A$ can be finite, countably infinite, or uncountably infinite (i.e., continuous).
+  \item Finally, defining an \textbf{event} to be any subset of the set of all outcomes $A$, we further group these subsets together to define a \textbf{set of events} $\cF$.
+\end{itemize}
+
+Let's consider some \textbf{examples} to clarify these definitions.
+With an experiment of rolling a six-sided die and measuring the number ($1$--$6$) that comes out on top, what is the set of all outcomes $A$, and what additional information could be present in the set of all states $\Om$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+What is the outcome space $A$ if we toss a coin four times and measure whether it lands heads up ($H$) or tails up ($T$)?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent What information would characterize a state \om for a gas of $6\X 10^{23}$ argon atoms in a container?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+We can generalize the concept of measurement by introducing a unique number as a \textit{label} to characterize each state \om in the set $\Om$.
+This would provide a label function $L(\om)$ as a random variable.
+Our condition of uniqueness makes $L(\om)$ isomorphic, so that the label can be used interchangeably with the full state,
+\begin{equation*}
+  \om \llra L(\om).
+\end{equation*}
+While the measurements $X(\om)$ we consider will generally not produce a unique number for each $\om$, we will design them (as best we can) precisely to remove irrelevant information that doesn't interest us.
+Ignoring that irrelevant information leaves us free to interchange the set of outcomes $A$ for the set of states $\Om$, which we will do from now on.
+(Some textbooks may never distinguish between $A$ vs \Om in the first place, though this can be a source of confusion.)
+
+We are now prepared for the final foundational definition in this section, the \textbf{probability} $P$ that an event in the set \cF has of occurring.
+Mathematically, $P$ is a \textit{measure function},
+\begin{equation*}
+  P: \cF \to [0, 1],
+\end{equation*}
+which must satisfy the following two requirements: \\[-24 pt]
+\begin{enumerate}
+  \item The probability of a countable union of mutually exclusive events must equal the countable sum of the probabilities of each of these events.
+  \item The probability of the outcome space ($\cF = A$) must equal $1$ (even if $A$ is uncountable).
+        This simply means that the experiment \cE must produce an outcome.
+        If no outcome were produced, it would not make sense to say that the experiment had occurred.
+\end{enumerate}
+Combining the outcome space, event space and probability measure gives us a \textit{probability space} $(A, \cF, P)$.
+
+For \textbf{example}, consider an experiment that can only produce $N$ possible states as outcomes, so that
+\begin{equation*}
+  \Om = \left\{\om_1, \om_2, \cdots, \om_N\right\}.
+\end{equation*}
+If two states are identical, $\om_i = \om_j$, they must produce the same measurements $X(\om_i) = X(\om_j)$, which implies the contra-positive
+\begin{equation*}
+  X(\om_i) \ne X(\om_j) \qquad \Lra \qquad \om_i \ne \om_j.
+\end{equation*}
+On the other hand, as described above, it is possible to have $X(\om_i) = X(\om_j)$ even when $\om_i \ne \om_j$.
+This means that the size $n$ of the outcome space $A$ may be smaller than the size of $\Om$, $n \leq N$.
+We can write
+\begin{equation*}
+  A = \left\{X_1, X_2, \cdots, X_n\right\},
+\end{equation*}
+where each $X_{\al}$ is distinct and its index does \textit{not} necessarily correspond to that on $\om_i$.
+We can take the individual $X_{\al}$ themselves to be the events we're interested in, with an overall event space
+\begin{equation*}
+  \cF = \left\{X_1, X_2, \cdots, X_n\right\} = A.
+\end{equation*}
+These events are all mutually exclusive by construction, so if we assign them probabilities
+\begin{equation*}
+  P(X_{\al}) \equiv p_{\al} \qquad \mbox{for } \al = 1, \cdots, n,
+\end{equation*}
+then the above requirements on probabilities demand that for any $\al \ne \be$ we have
+\begin{align*}
+  P(X_{\al} \mbox{ or } X_{\be}) & = p_{\al} + p_{\be} \\
+  P(X_1 \hbox{ or } X_2 \hbox{ or } \cdots \mbox{ or } X_n) & = \sum_{\al = 1}^n p_{\al} = 1.
+\end{align*}
+
+Similarly choosing an event space $\cF = A$ for the six-sided die considered in an earlier gap, what are the probabilities $p_1$ through $p_6$ that result from assuming the die is \textit{fair} (meaning that each outcome is equally probable)?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent Again taking $\cF = A$ for the case of tossing a coin four times, what are the probabilities $p_{\al}$ that result from assuming the coin is fair?
+If we instead consider the event space
+\begin{equation*}
+  \cF = \left\{\mbox{equal number of } H \mbox{ and } T, \mbox{ different numbers of } H \mbox{ and } T\right\},
+\end{equation*}
+what are the probabilities $p_{\text{equal}}$ and $p_{\text{diff}}$ for the two events in this $\cF$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+\begin{minipage}{0.4\textwidth}
+  \includegraphics[width=0.75\textwidth]{figs/roulette.pdf}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+  The standard European roulette wheel shown to the left (\href{https://www.vecteezy.com/vector-art/658761-casino-roulette-wheel}{source}) has 37 pockets labelled ``0'' through ``36''.
+  18 of these pockets are coloured red, 18 are coloured black and 1 (pocket ``0'') is coloured green.
+\end{minipage}
+
+\noindent What is the outcome space $A$ for a spin of the roulette wheel?
+With $\cF = A$, what are the probabilities $p_{\al}$ for a fair wheel?
+With
+\begin{equation*}
+  \cF = \left\{\mbox{ball in a red pocket, ball in a black pocket, ball in the green pocket}\right\},
+\end{equation*}
+what are the corresponding probabilities $p_{\text{red}}$, $p_{\text{black}}$ and $p_{\text{green}}$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+We conclude this section with two \textbf{comments} on the process of assigning probabilities to events (which is called \textit{modelling}): \\[-24 pt]
+\begin{itemize}
+  \item We saw above that \textit{symmetries} are a powerful way to constrain probabilities.
+        The symmetry between the six sides of a fair die, the two sides of a fair coin, and the 37 pockets of a fair roulette wheel each sufficed to completely fix the corresponding probabilities $p_{\al}$.
+  \item Modelling can also be guided by empirical information obtained by repeating an experiment many times.
+        For example, if we don't know whether a set of dice are fair, we will be able to infer their probabilities $p_{\al}$ (with a certain confidence level) by rolling them enough times.
+        The need to repeat the experiment many times comes from the law of large numbers, to which we now turn.
+\end{itemize}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Law of large numbers}
+Let's continue considering the setup introduced above, with
+\begin{equation}
+  \label{eq:finite_set}
+  \cF = A = \left\{X_1, X_2, \cdots, X_n\right\}
+\end{equation}
+for finite $n$, and probabilities $p_{\al} = P(X_{\al})$ that obey
+\begin{align*}
+  p_{\al} & \in [0, 1] &
+  \sum_{\al = 1}^n p_{\al} & = 1.
+\end{align*}
+We can generalize this notation by writing instead
+\begin{equation*}
+  \sum_{X \in A} P(X) = 1,
+\end{equation*}
+which provides simple expressions for the \textbf{mean} $\mu$ and \textbf{variance} $\si^2$ of the probability space,
+\begin{align}
+              \mu = \vev{X} = & \sum_{X \in A} X P(X)            \label{eq:mean} \\
+  \si^2 = \vev{(X - \mu)^2} = & \sum_{X \in A} (X - \mu)^2 P(X). \label{eq:var}
+\end{align}
+The angle bracket notation indicates the \textbf{expected} (or \textbf{expectation}) \textbf{value} with general definition
+\begin{equation}
+  \label{eq:expect_disc}
+  \vev{f(X)} = \sum_{X \in A} f(X) P(X),
+\end{equation}
+which is a linear operation,
+\begin{equation*}
+  \vev{c\cdot f(X) + g(X)} = c\vev{f(X)} + \vev{g(X)}.
+\end{equation*}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent The square root of the variance, $\sqrt{\si^2} = \si$, is the \textbf{standard deviation}.
+What is \si expressed in terms of $\vev{X^2}$ and $\vev{X}^2$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+We now define a new experiment that consists of \textit{repeating} the original experiment $R$ times, with each repetition independent of all the others.
+Using the same measurement as before for each repetition, we obtain a new outcome space that we can call $B$.
+For $R = 4$, what are some representative outcomes in the set $B$?
+What is the total size of $B$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+Each outcome in $B$ contains $R$ different $X^{(r)} \in A$ (with $\vev{X^{(r)}} = \mu$ and $\vev{(X^{(r)} - \mu)^2} = \si^2$), one for each repetition $r = 1, \cdots, R$.
+Considering the case $R = 4$ for simplicity, any element of $B$ can be written as $X_i^{(1)} X_j^{(2)} X_k^{(3)} X_l^{(4)} \in B$ with corresponding probability
+\begin{equation*}
+  P_B\left(X_i^{(1)} X_j^{(2)} X_k^{(3)} X_l^{(4)}\right) = P_A\left(X_i^{(1)}\right) P_A\left(X_j^{(2)}\right) P_A\left(X_k^{(3)}\right) P_A\left(X_l^{(4)}\right),
+\end{equation*}
+using subscripts to distinguish between the single-experiment ($A$) and repeated-experiment ($B$) probability spaces.
+
+Averaging over all $R$ repetitions defines the \textit{arithmetic mean}
+\begin{equation*}
+  \Xbar_R = \frac{1}{R} \sum_{r = 1}^R X^{(r)}.
+\end{equation*}
+Unlike the true mean $\mu$, the arithmetic mean $\Xbar_R$ is a random variable---a number that may be different for each element of $B$.
+That said, $\Xbar_R$ and $\mu$ are certainly related, and so long as the standard deviation exists (i.e., $\si^2$ is finite), this relation can be proved rigorously in the limit $R \to \infty$.\footnote{In the computer-based project we will numerically investigate a case with divergent $\si^2$.}
+
+Here we will not be fully rigorous, and take it for granted that
+\begin{equation*}
+  \vev{\left(X^{(i)} - \mu\right)\left(X^{(j)} - \mu\right)} = \si^2 \de_{ij} = \left\{\begin{array}{ll}\si^2 & \mbox{for } i = j \\ 0 & \mbox{for } i \ne j\end{array}\right.,
+\end{equation*}
+where the \textit{Kronecker delta} $\de_{ij} = 1$ for $i = j$ and vanishes for $i \ne j$.
+This is a consequence of the assumed independence of the different repetitions.
+Using this result and the relation $\big(\sum_i a_i\big)\big(\sum_j b_j\big) = \sum_{i, j} \left(a_i b_j\right)$, express the following quantity in terms of \si and $R$:
+\begin{mdframed}
+  $\displaystyle \vev{\left(\frac{1}{R} \sum_{r = 1}^R X^{(r)} - \mu\right)^2} = $ \\[100 pt]
+\end{mdframed}
+You should find that your result vanishes in the limit $R \to \infty$, so long as $\si^2$ is finite.
+Since the square makes this expectation value a sum of non-negative terms, it can vanish only if every one of those terms is individually zero.
+
+\begin{shaded}
+  This result establishes the \textbf{law of large numbers}:
+  \begin{equation}
+    \lim_{R \to \infty} \frac{1}{R} \sum_{r = 1}^R X^{(r)} = \mu,
+  \end{equation}
+  where we have assumed $\vev{X^{(r)}} = \mu$ and $\vev{(X^{(r)} - \mu)^2} = \si^2$ are finite.
+\end{shaded}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Probability distributions}
+It is not necessary to make the assumption (\eq{eq:finite_set}) that we are dealing with a countable number of $X_1, \cdots, X_n$.
+The considerations above continue to hold even if the random variable $X$ is a continuous real number.
+In this case, however, the identification of probabilities with outcomes $X$ is slightly more complicated, which will be relevant when we consider the central limit theorem in the next section.
+
+When the outcome can be any number on the real line, the fundamental object is a \textbf{probability distribution} (or \textbf{density function}) $p(x)$ defined for all $x \in \Rbb$.
+Starting from this density, a probability is determined by integrating over a given interval, which we can call $[a, b]$.
+This integral produces the probability that the outcome $X$ lies within this interval,
+\begin{equation*}
+  P\left(a \leq X \leq b\right) = \int_a^b p(x) dx.
+\end{equation*}
+
+We similarly generalize the definition of an expectation value (\eq{eq:expect_disc}) to integrate over the probability distribution,
+\begin{equation}
+  \label{eq:expect_cont}
+  \vev{f(X)} = \int f(x) p(x) dx
+\end{equation}
+By omitting the limits on the integral we implicitly integrate over the entire domain, in this case $\int dx = \int_{-\infty}^{\infty} dx$.
+\TODO{mean, stdev,...}
+\TODO{...}
+% ------------------------------------------------------------------
