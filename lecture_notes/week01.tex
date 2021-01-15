@@ -265,18 +265,37 @@ The considerations above continue to hold even if the random variable $X$ is a c
 In this case, however, the identification of probabilities with outcomes $X$ is slightly more complicated, which will be relevant when we consider the central limit theorem in the next section.
 
 When the outcome can be any number on the real line, the fundamental object is a \textbf{probability distribution} (or \textbf{density function}) $p(x)$ defined for all $x \in \Rbb$.
-Starting from this density, a probability is determined by integrating over a given interval, which we can call $[a, b]$.
-This integral produces the probability that the outcome $X$ lies within this interval,
+Starting from this density, a probability is determined by integrating over a given interval.
+Calling this interval $[a, b]$, the integration produces the probability that the outcome $X$ lies within the interval,
 \begin{equation*}
   P\left(a \leq X \leq b\right) = \int_a^b p(x) dx.
 \end{equation*}
 
-We similarly generalize the definition of an expectation value (\eq{eq:expect_disc}) to integrate over the probability distribution,
+We similarly generalize the definition of an expectation value (\eq{eq:expect_disc}) to an integral over the entire domain of the  probability distribution,
+\begin{equation*}
+  \vev{f(x)} = \int f(x) \; p(x) \; dx.
+\end{equation*}
+We will omit the limits on integrals over the entire domain, so for $x \in \Rbb$ we implicitly have $\int dx = \int_{-\infty}^{\infty} dx$.
+An important set of expectation values is
 \begin{equation}
   \label{eq:expect_cont}
-  \vev{f(X)} = \int f(x) p(x) dx
+  \vev{x^{\ell}} = \int x^{\ell} \; p(x) \; dx,
 \end{equation}
-By omitting the limits on the integral we implicitly integrate over the entire domain, in this case $\int dx = \int_{-\infty}^{\infty} dx$.
-\TODO{mean, stdev,...}
+which provide the mean and variance of the probability distribution $p(x)$, through generalizations of Eqs.~\ref{eq:mean}--\ref{eq:var}:
+\begin{align}
+  \label{eq:mean_var}
+  \mu   & = \vev{x} = \int x \; p(x) \; dx&
+  \si^2 & = \vev{x^2} - \vev{x}^2.
+\end{align}
+The expression for the variance should be familiar from your determination of the standard deviation in an earlier gap.
+Unless stated otherwise, we will assume the mean and variance are both finite for the probability distributions we consider.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Central limit theorem}
+The central limit theorem is a major result of probability theory.
+Over the years it has been phrased in many equivalent ways, and many distinct variants of the theorem exist to accommodate different conditions and assumptions.
 \TODO{...}
 % ------------------------------------------------------------------
