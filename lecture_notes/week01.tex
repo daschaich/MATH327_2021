@@ -37,7 +37,7 @@ The mathematical answer lies in the \textbf{law of large numbers} and the \textb
 
 
 % ------------------------------------------------------------------
-\subsection{Probability foundations}
+\subsection{\label{sec:prob}Probability foundations}
 Let's begin by placing some familiar everyday concepts into a more formal mathematical framework through the following definitions: \\[-24 pt]
 \begin{itemize}
   \item A (random) \textbf{experiment} \cE involves setting up, manipulating and/or observing some (physical or hypothetical) system with some element of randomness.
@@ -100,11 +100,11 @@ which must satisfy the following two requirements: \\[-24 pt]
 \end{enumerate}
 Combining the outcome space, event space and probability measure gives us a \textit{probability space} $(A, \cF, P)$.
 
-For \textbf{example}, consider an experiment that can only produce $N$ possible states as outcomes, so that
+For \textbf{example}, consider an experiment that can only produce $N$ possible states, so that
 \begin{equation*}
   \Om = \left\{\om_1, \om_2, \cdots, \om_N\right\}.
 \end{equation*}
-If two states are identical, $\om_i = \om_j$, they must produce the same measurements $X(\om_i) = X(\om_j)$, which implies the contra-positive
+If two states are identical, $\om_i = \om_j$, they must produce the same measurement outcomes $X(\om_i) = X(\om_j)$, which implies the contra-positive
 \begin{equation*}
   X(\om_i) \ne X(\om_j) \qquad \Lra \qquad \om_i \ne \om_j.
 \end{equation*}
@@ -176,7 +176,7 @@ We conclude this section with two \textbf{comments} on the process of assigning 
 
 
 % ------------------------------------------------------------------
-\subsection{Law of large numbers}
+\subsection{\label{sec:LLN}Law of large numbers}
 Let's continue considering the setup introduced above, with
 \begin{equation}
   \label{eq:finite_set}
@@ -228,9 +228,10 @@ Considering the case $R = 4$ for simplicity, any element of $B$ can be written a
 using subscripts to distinguish between the single-experiment ($A$) and repeated-experiment ($B$) probability spaces.
 
 Averaging over all $R$ repetitions defines the \textit{arithmetic mean}
-\begin{equation*}
+\begin{equation}
+  \label{eq:ave}
   \Xbar_R = \frac{1}{R} \sum_{r = 1}^R X^{(r)}.
-\end{equation*}
+\end{equation}
 Unlike the true mean $\mu$, the arithmetic mean $\Xbar_R$ is a random variable---a number that may be different for each element of $B$.
 That said, $\Xbar_R$ and $\mu$ are certainly related, and so long as the standard deviation exists (i.e., $\si^2$ is finite), this relation can be proved rigorously in the limit $R \to \infty$.\footnote{In the computer-based project we will numerically investigate a case with divergent $\si^2$.}
 
@@ -248,7 +249,7 @@ You should find that your result vanishes in the limit $R \to \infty$, so long a
 Since the square makes this expectation value a sum of non-negative terms, it can vanish only if every one of those terms is individually zero.
 
 \begin{shaded}
-  This result establishes the \textbf{law of large numbers}:
+  This establishes the \textbf{law of large numbers}:
   \begin{equation}
     \lim_{R \to \infty} \frac{1}{R} \sum_{r = 1}^R X^{(r)} = \mu,
   \end{equation}
@@ -259,16 +260,16 @@ Since the square makes this expectation value a sum of non-negative terms, it ca
 
 
 % ------------------------------------------------------------------
-\subsection{Probability distributions}
-It is not necessary to make the assumption (\eq{eq:finite_set}) that we are dealing with a countable number of $X_1, \cdots, X_n$.
+\subsection{\label{sec:probdist}Probability distributions}
+It is not necessary to make the assumption (\eq{eq:finite_set}) that our outcome space contains only a countable number of possible outcomes.
 The considerations above continue to hold even if the random variable $X$ is a continuous real number.
-In this case, however, the identification of probabilities with outcomes $X$ is slightly more complicated, which will be relevant when we consider the central limit theorem in the next section.
+In this case, however, the identification of probabilities with outcomes is slightly more complicated, which will be relevant when we consider the central limit theorem in the next section.
 
 When the outcome can be any number on the real line, the fundamental object is a \textbf{probability distribution} (or \textbf{density function}) $p(x)$ defined for all $x \in \Rbb$.
 Starting from this density, a probability is determined by integrating over a given interval.
 Calling this interval $[a, b]$, the integration produces the probability that the outcome $X$ lies within the interval,
 \begin{equation*}
-  P\left(a \leq X \leq b\right) = \int_a^b p(x) dx.
+  P\left(a \leq X \leq b\right) = \int_a^b p(x) \; dx.
 \end{equation*}
 
 We similarly generalize the definition of an expectation value (\eq{eq:expect_disc}) to an integral over the entire domain of the  probability distribution,
@@ -281,10 +282,10 @@ An important set of expectation values is
   \label{eq:expect_cont}
   \vev{x^{\ell}} = \int x^{\ell} \; p(x) \; dx,
 \end{equation}
-which provide the mean and variance of the probability distribution $p(x)$, through generalizations of Eqs.~\ref{eq:mean}--\ref{eq:var}:
+which provides the mean and variance of the probability distribution $p(x)$, through generalizations of Eqs.~\ref{eq:mean}--\ref{eq:var}:
 \begin{align}
   \label{eq:mean_var}
-  \mu   & = \vev{x} = \int x \; p(x) \; dx&
+  \mu   & = \vev{x} = \int x \; p(x) \; dx &
   \si^2 & = \vev{x^2} - \vev{x}^2.
 \end{align}
 The expression for the variance should be familiar from your determination of the standard deviation in an earlier gap.
@@ -296,6 +297,64 @@ Unless stated otherwise, we will assume the mean and variance are both finite fo
 % ------------------------------------------------------------------
 \subsection{Central limit theorem}
 The central limit theorem is a major result of probability theory.
-Over the years it has been phrased in many equivalent ways, and many distinct variants of the theorem exist to accommodate different conditions and assumptions.
+Over the years it has been expressed in several equivalent ways, and there are also many distinct variants of the theorem accommodating different conditions and assumptions.
+In this module we are interested in applying rather than proving the central limit theorem; the curious can find proofs in many textbooks.
+
+The version of the theorem we use in this module assumes we have $N$ independent random variables $x_1, \cdots, x_N$, each of which has the same (finite) mean $\mu$ and variance $\si^2$.
+(Such random variables are said to be \textit{identically distributed}, and a common way to obtain them is to repeat an experiment $N$ times, as we considered in \secref{sec:LLN}.)
+Just as in \eq{eq:ave}, the sum
+\begin{equation*}
+  s = \sum_{i = 1}^N x_i
+\end{equation*}
+is itself a random variable.
+
+\begin{shaded}
+  The \textbf{central limit theorem} states that for large $N \gg 1$ the probability distribution for $s$ is
+  \begin{equation}
+    p(s) \approx \frac{1}{\sqrt{2\pi N\si^2}} \exp\left[-\frac{(s - N\mu)^2}{2N\si^2}\right],
+  \end{equation}
+  with the approximation becoming exact in the $N \to \infty$ limit.
+\end{shaded}
+In addition to asserting that the collective behaviour of many independent and identically distributed random variables $x_i$ is governed by a \textbf{normal} (or \textbf{gaussian}) \textbf{distribution}, the central limit theorem further specifies the precise form of this distribution in terms of the mean and variance of \textit{each individual} $x_i$.
+
+As an \textbf{example} to illustrate the applicability of the central limit theorem even for a modest $N = 5$, consider the roulette wheel discussed in \secref{sec:prob}.
+A simple game of roulette would let us place bets on whether or not the ball will end up in a red- or black-coloured pocket: If we bet correctly we get back twice the money we put in; otherwise we lose our money.
+Define our (potentially negative) \textit{gain} to be the amount we receive minus the amount we spend on bets.
+
+Suppose we place \textsterling5 bets on `black' for each of $N$ spins of the roulette wheel.
+What are the probabilities and gains of winning and of losing for any single one of those spins?
+Letting $W = 0, \cdots, N$ be the number of spins where we win, show that our total gain is $G_W = 10W - 5N$.
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+Recall that the number of different ways we could win $W$ times out of $N$ attempts is given by the binomial coefficient
+\begin{equation*}
+  \left(\begin{array}{c} N \\ W \end{array}\right) = \frac{N!}{W! \; (N - W)!},
+\end{equation*}
+with $0! = 1$.
+Setting $N = 5$, what are the six probabilities $p_0$--$p_5$ that we win $W = 0, \cdots, 5$ times?
+What is the general expression for $p_i$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+\newpage % WARNING: FORMATTING BY HAND
+Now let's apply the central limit theorem to this setup.
+What are the mean gain and its variance for a single spin of the wheel?
+What is the resulting probability distribution $p(G)$ given by the central limit theorem for the gain after $N$ spins?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+In order to compare this approximation with the exact $p_i$ computed above, we need to extract probabilities by integrating over appropriate intervals as discussed in \secref{sec:probdist}.
+\TODO{...}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{\label{sec:diffusion}Diffusion on a line}
+As a more generic application of the central limit theorem, let's consider the behaviour of an object moving randomly in one dimension---say to the left or right on a line.
+\TODO{...}
+Such \textbf{random walks} appear frequently in mathematical modelling of stochastic phenomena (including Brownian motion).
 \TODO{...}
 % ------------------------------------------------------------------
