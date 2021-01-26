@@ -70,14 +70,12 @@
 
 % ------------------------------------------------------------------
 \begin{document}
-\newcommand{\thisweek}{MATH327 information}
-\newcommand{\moddate}{Last modified 15 Jan.~2021}
 \thispagestyle{empty}
 \begin{center}
   {\LARGE \textbf{MATH327: Statistical Physics}} \\[6 pt]
   \textbf{David Schaich \qquad\qquad\qquad\qquad Spring 2021} \\[48 pt]
   {\LARGE LECTURE \ NOTES} \\[6 pt]
-  \moddate
+  Last modified 26 January 2021
 \end{center}
 \renewcommand{\contentsname}{}
 \setcounter{tocdepth}{1}
@@ -88,129 +86,8 @@
 
 % ------------------------------------------------------------------
 \newpage
-\setcounter{section}{0}
-\addcontentsline{toc}{section}{Module information}
-\section*{Module information}
-\subsection*{Coordinator}
-\begin{description}
-  \setlength{\itemsep}{1pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}
-  \item[\qquad] Dr David Schaich
-  \item[\qquad] Mathematics Building Room 124 (Theoretical Physics Wing)
-  \item[\qquad] \href{mailto:david.schaich@liverpool.ac.uk}{david.schaich@liverpool.ac.uk}
-  \item[\qquad] \href{http://www.davidschaich.net}{www.davidschaich.net} \\
-  \item[\qquad] Office hours: \TODO{TBD} and by request via \href{https://calendly.com/daschaich}{calendly.com/daschaich}
-\end{description}
-% ------------------------------------------------------------------
+\input{info.tex}
 
-
-
-% ------------------------------------------------------------------
-\subsection*{Logistics, lecture notes, and learning strategy}
-All resources for this module will be gathered at its Canvas site.
-\TODO{...notes-driven delivery with video recordings for each week providing introductory motivation/overview and concluding summary of main learning objectives...}
-\TODO{...notes have gaps --- attempt to fill these in while working through --- will be discussed during synchronous sessions, and any that prove particularly tricky I may address through supplemental follow-up video recordings...}
-%In addition to these lecture notes, these resources include explanatory videos, sample problems \TODO{and more...}
-\TODO{...such supplements can also be requested outside of synchronous sessions...} % TODO: Need to be provided a week in advance?...
-%\TODO{...can supplement with recorded lectures from last year on stream.liv.ac.uk...}
-
-\TODO{...no need to memorize equations---numbers mostly used in order to refer back to past work in later derivations... colored boxes highlight main learning objectives to be understood...}
-
-\TODO{...module organized around statistical ensembles...}
-\TODO{...mostly focusing on systems whose constituents (which may be particles, balls, spins or other objects) do not interact with each other...}
-
-\TODO{...same content as last year to make sure expectations are reasonable...} % TODO: Last year spent six timetabled hours on computer project --- add that to schedule or leave it separate???...  Could merge weeks 8--9 and move the grand-canonical ensemble after spring break, but I'm worried students may revolt if a week is fully given over to code training...
-\TODO{...load may fluctuate from week to week...}
-
-\subsubsection*{Expected background}
-\TODO{Quantum and combinatorics not assumed... do expect binomial coefficients and gaussian integrals...}
-
-\subsubsection*{Version control and co-creation}
-The \LaTeX\ source for these lecture notes is kept under version control at \\
-\centerline{\href{https://github.com/daschaich/MATH327_2021}{github.com/daschaich/MATH327\_2021}}
-If any changes need to be made to these notes during the term (to correct mistakes or add supplemental information), the GitHub interface provides an easy way to see what changed and when.
-In addition, you are also welcome to use GitHub to report issues and create pull requests to address them.
-Such co-creation is entirely optional.
-If you are interested in learning more about version control with \texttt{git}, the \href{https://software-carpentry.org}{Software Carpentry} project provides free resources at \\
-\centerline{\href{https://swcarpentry.github.io/git-novice/}{swcarpentry.github.io/git-novice/}}
-% ------------------------------------------------------------------
-
-
-
-% ------------------------------------------------------------------
-\subsection*{Assessment and academic integrity}
-The assessment workload has also been kept the same as last year, but in light of this year's hybrid teaching and learning approach the weighting of assignments has been spread more evenly across the term to avoid a high-stakes final assessment.
-The following deadlines for the in-term assignments have been coordinated within the Department to minimize pile-up: \\[-24 pt]
-\begin{description}
-  \item[15\%] A homework assignment covering weeks 1--3, due \TODO{Friday, 5 March (TBC)}
-  \item[20\%] A computer-based project divided into two equally weighted parts, the first due \TODO{Friday, 19 March (TBC)} and the second due \TODO{Friday, 16 April (TBC)}
-  \item[15\%] A homework assignment covering weeks 4--8, due \TODO{Friday, 30 April (TBC)}
-  \item[50\%] A final assessment to be centrally scheduled within the period 17 May through 4 June
-\end{description}
-
-Because the computer-based project will be done remotely, rather than in a computer lab on campus, you are free to complete it using the programming language of your choice.
-Training in the necessary programming concepts will be provided using \href{https://www.python.org}{Python}, the free programming language recommended for the project.
-If you have difficulty setting up Python on your device, you can run it for free online at \href{https://repl.it/languages/python3}{repl.it}.
-(Make sure to keep a copy of the code to submit for assessment!)
-Alternative languages could include \href{https://en.wikipedia.org/wiki/C_(programming_language)}{C}, \href{https://www.r-project.org}{R}, or even \href{https://matlab.mathworks.com}{MATLAB} (through the University's site license).
-Maple may struggle to handle parts of the project.
-
-I encourage you to discuss the in-term assignments with each other, since discussing and debating concepts and procedures is a very effective way to learn.
-The examination must be done on your own, and your submissions for all assignments must be your own work representing your own understanding.
-Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
-It is unacceptable to copy solutions in part or in whole from other students (current or prior) or from other sources (commercial or otherwise).
-Should you make use of resources beyond the module materials, these must be explicitly referenced in your work.
-
-By now you should have successfully passed the Academic Integrity Tutorial and Quiz to affirm that you have read and understood the Academic Integrity Policy detailed in Appendix L of the Code of Practice on Assessment.
-If you have any questions about what is or is not acceptable under this policy, please ask me or Departmental Assessment Officer Kamila Zychaluk.
-In all cases, the spirit of the Academic Integrity Policy should take precedence over legalistic convolutions of the text.
-% ------------------------------------------------------------------
-
-
-
-% ------------------------------------------------------------------
-\subsection*{Additional resources}
-The lists of further reading below provide some optional additional resources that may be helpful.
-Hyperlinks lead either to the resource itself or to the corresponding record page in our library.
-
-\noindent\textbf{These books and lecture notes are roughly at the level of this module:} \\[-24 pt]
-\begin{enumerate}
-  \item David Tong, \href{https://www.damtp.cam.ac.uk/user/tong/statphys.html}{\textit{Lectures on Statistical Physics}} (2012), \\ www.damtp.cam.ac.uk/user/tong/statphys.html
-  \item Daniel V.~Schroeder, \textit{An Introduction to Thermal Physics} (first edition, 2000)
-  \item C.~ Kittel and H.~Kroemer, \textit{Thermal Physics} (second edition, 1980)
-  \item F.~Reif, \textit{Fundamentals of Statistical and Thermal Physics} (first edition, 1965)
-\end{enumerate}
-
-\noindent\textbf{These books are more advanced and more specialized, but can be useful to consult concerning specific questions or topics:} \\[-24 pt]
-\begin{enumerate}
-  \setcounter{enumi}{4}
-  \item Weinan E, Tiejun Li and Eric Vanden-Eijnden, \textit{Applied Stochastic Analysis} (first edition, 2019)
-  \item R.~K.~Pathria, \textit{Statistical Mechanics} (second edition, 1996)
-  \item Sidney Redner, \textit{A Guide to First-Passage Processes} (first edition, 2007)
-  \item Pavel L.~Krapivsky, Sidney Redner and Eli Ben-Naim, \textit{A Kinetic View of Statistical Physics} (first edition, 2010)
-  \item Kerson Huang, \textit{Statistical Mechanics} (second edition, 1987)
-  \item Michael Plischke and Birger Bergersen, \textit{Equilibrium Statistical Physics} (third edition, 2005)
-  \item L.~D.~Landau and E.~M.~Lifshitz, \textit{Statistical Physics, Part 1} (third edition, 1980)
-\end{enumerate}
-
-\noindent\textbf{Maple and MATLAB resources:} \\[-24 pt]
-\begin{enumerate}
-  \setcounter{enumi}{11}
-  \item Ian Thompson, \href{https://library.liv.ac.uk/record=b4395758~S8}{\textit{Understanding Maple}} (ebook edition, 2017) \\
-        Related videos: \href{https://stream.liv.ac.uk/4k67bdzt}{\textit{Running Maple for the first time}} (stream.liv.ac.uk/4k67bdzt) \\
-        \textcolor{white}{Related videos:} \href{https://stream.liv.ac.uk/7pjge23a}{\textit{Configuring Maple}} (stream.liv.ac.uk/7pjge23a)
-  \item Stormy Attaway, \textit{MATLAB: A Practical Introduction to Programming and Problem Solving} (third edition, 2013)
-  \item B.~Barnes and G.~R.~Fulford, \textit{Mathematical Modelling with Case Studies: Using Maple and MATLAB} (third edition, 2014)
-\end{enumerate}
-
-Finally, there is a vast constellation of purely online resources, such as \href{https://en.wikipedia.org/wiki/Statistical_physics}{Wikipedia}.
-These are often fine places to \emph{start} learning about a subject, but may be terrible places to \emph{stop}.
-% ------------------------------------------------------------------
-
-
-
-% ------------------------------------------------------------------
 \newpage
 \input{week01.tex}
 
