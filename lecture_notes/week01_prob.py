@@ -83,9 +83,9 @@ print("Probabilities sum to %.4g" % np.sum(integ))
 # Plot all three data sets using matplotlib.pyplot ('plt')
 # 'mfc' is short for markerfacecolor; 'none' gives any empty symbol
 plt.figure(figsize=(6.40, 3.84))    # Standard Gnuplot size
-plt.plot(gain, prob, 'go', mfc='none', label='Direct')      # Green circles
-plt.plot(gain, integ, 'b+', mfc='none', label='Integrated') # Blue pluses
-plt.plot(gain, const, 'rx', label='Constant')               # Red x's
+plt.plot(gain, prob, 'go', mfc='none', label='Direct')  # Green circles
+plt.plot(gain, integ, 'b+', label='Integrated')         # Blue pluses
+plt.plot(gain, const, 'rx', label='Constant')           # Red x's
 
 # Include zero at bottom without changing auto-scaled top
 bottom, top = plt.ylim()

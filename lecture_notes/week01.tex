@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 1}
-\renewcommand{\moddate}{Last modified 26 Jan.~2021}
+\renewcommand{\moddate}{Last modified 30 Jan.~2021}
 \setcounter{section}{1}
 \section*{Week 1: Central limit theorem and diffusion}
 \addcontentsline{toc}{section}{Week 1: Central limit theorem and diffusion}
@@ -323,7 +323,7 @@ Define our (potentially negative) \textit{gain} to be the amount we receive minu
 
 Suppose we place \textsterling5 bets on `black' for each of $N$ spins of the roulette wheel.
 What are the probabilities and gains of winning and of losing for any single one of those spins?
-Letting $W = 0, \cdots, N$ be the number of spins where we win, show that our total gain is $G_W = 10W - 5N$.
+Letting $W = 0, \cdots, N$ be the number of spins where we win, what is our total gain $G_W$ as a function of $(N, W)$?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
@@ -332,8 +332,8 @@ Recall that the number of different ways we could win $W$ times out of $N$ attem
   \left(\begin{array}{c} N \\ W \end{array}\right) = \frac{N!}{W! \; (N - W)!},
 \end{equation*}
 with $0! = 1$.
-Setting $N = 5$, what are the six probabilities $p_0$--$p_5$ that we win $W = 0, \cdots, 5$ times?
-What is the general expression for $p_i$?
+Setting $N = 5$, what are the six probabilities $p_0$ through $p_5$ that we win $W = 0, \cdots, 5$ times?
+What is the general expression for $p_W$ for any $(N, W)$?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
@@ -346,7 +346,24 @@ What is the resulting probability distribution $p(G)$ given by the central limit
   \ \\[100 pt]
 \end{mdframed}
 In order to compare this approximation with the exact $p_i$ computed above, we need to extract probabilities by integrating over appropriate intervals as discussed in \secref{sec:probdist}.
-\TODO{...}
+Natural intervals to consider are
+\begin{equation*}
+  P_{\text{integ}}(G_W) \equiv \int_{G_W - \De G / 2}^{G_W + \De G / 2} p(g) \; dg,
+\end{equation*}
+where $\De G = G_{W + 1} - G_W$ is a constant you can read off from your work above.
+These numerical integrations are not convenient to do by hand, but can easily be performed by Maple, Python, MATLAB, Mathematica, etc.
+Alternately, we can simplify further by approximating $p(G)$ as a constant within each interval, which would give us
+\begin{equation*}
+  P_{\text{const}}(G_W) \equiv p(G_W) \; \De G.
+\end{equation*}
+What are the six $P_{\text{integ}}$ and $P_{\text{const}}$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+You can check your results against those plotted below, which come from \href{https://github.com/daschaich/MATH327_2021/blob/master/lecture_notes/week01_prob.py}{this python code} that is available for you to peruse, run for different $N$ or modify.
+\begin{center}
+  \includegraphics[width=\textwidth]{figs/roulette_prob.pdf}
+\end{center}
 % ------------------------------------------------------------------
 
 
