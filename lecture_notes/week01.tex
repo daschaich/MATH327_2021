@@ -235,7 +235,7 @@ Averaging over all $R$ repetitions defines the \textit{arithmetic mean}
   \Xbar_R = \frac{1}{R} \sum_{r = 1}^R X^{(r)}.
 \end{equation}
 Unlike the true mean $\mu$, the arithmetic mean $\Xbar_R$ is a random variable---a number that may be different for each element of $B$.
-That said, $\Xbar_R$ and $\mu$ are certainly related, and so long as the standard deviation exists (i.e., $\si^2$ is finite), this relation can be proved rigorously in the limit $R \to \infty$.\footnote{In the computer-based project we will numerically investigate a case with divergent $\si^2$.}
+That said, $\Xbar_R$ and $\mu$ are certainly related, and so long as the standard deviation exists (i.e., $\si^2$ is finite), this relation can be proved rigorously in the limit $R \to \infty$.\footnote{In the computer project we will numerically investigate a case with divergent $\si^2$.}
 
 Here we will not be fully rigorous, and take it as given that
 \begin{equation*}
@@ -305,14 +305,16 @@ In this module we are interested in applying rather than proving the central lim
 The version of the theorem we use in this module assumes we have $N$ independent random variables $x_1, \cdots, x_N$, each of which has the same (finite) mean $\mu$ and variance $\si^2$.
 (Such random variables are said to be \textit{identically distributed}, and a common way to obtain them is to repeat an experiment $N$ times, as we considered in \secref{sec:LLN}.)
 Just as in \eq{eq:ave}, the sum
-\begin{equation*}
+\begin{equation}
+  \label{eq:CLTsum}
   s = \sum_{i = 1}^N x_i
-\end{equation*}
+\end{equation}
 is itself a random variable.
 
 \begin{shaded}
   The \textbf{central limit theorem} states that for large $N \gg 1$ the probability distribution for $s$ is
   \begin{equation}
+    \label{eq:CLT}
     p(s) \approx \frac{1}{\sqrt{2\pi N\si^2}} \exp\left[-\frac{(s - N\mu)^2}{2N\si^2}\right],
   \end{equation}
   with the approximation becoming exact in the $N \to \infty$ limit.
@@ -397,7 +399,7 @@ How many possible walks are there for general $N$, and what is the probability f
 
 We will be interested in the walker's final position $x$ at time $t$ after it has taken $N$ steps.
 Just as for the possible gains after $N$ spins of the roulette wheel considered in \secref{sec:CLT}, there are a range of possible final positions $x$, each of which has some probability $P(x)$ of being realized.
-The key pieces of information we want to determine are the expectation value $\vev{x}$ and the variance $\vev{x^2} - \vev{x}^2$ that indicates the scale of fluctuations we can expect around $\vev{x}$ as the $N$-step walk is repeated many times from the same starting point.
+The key pieces of information we want to determine are the expectation value $\vev{x}$ and the variance $\vev{x^2} - \vev{x}^2$ that indicates the scale of fluctuations we can expect around $\vev{x}$ as the $N$-step walk is repeated many times from the same starting point.\footnote{We will reserve the variables $\mu$ and $\si^2$ for the mean and variance (respectively) of the single-step process, which we will connect to the central limit theorem in \secref{sec:RW_CLT}.}
 
 Suppose the $N$ total steps involve $r$ steps to the right.
 What is the final position $x$ of the walker in terms of $N$ and $r$?
@@ -469,9 +471,9 @@ In the end, you should obtain
 \begin{align}
   \label{eq:RWmean}
   \vev{x} & = N(2p - 1) &
-  \si^2 = \vev{x^2} - \vev{x}^2 & = 4Npq.
+  \vev{x^2} - \vev{x}^2 & = 4Npq.
 \end{align}
-We can check that this $\vev{x}$ produces the expected results in the special cases $p = 0$, $1 / 2$ and $1$, while the standard deviation $\si = 2\sqrt{Npq}$ also behaves appropriately by vanishing for both $p = 0$ and $1$.
+We can check that this $\vev{x}$ produces the expected results in the special cases $p = 0$, $1 / 2$ and $1$, while the variance also behaves appropriately by vanishing for both $p = 0$ and $1$.
 % ------------------------------------------------------------------
 
 
@@ -487,9 +489,10 @@ we see that the \textit{expected} final position of the walker depends linearly 
 \begin{equation}
   \vdr = \frac{2p - 1}{\De t} = \frac{N(2p - 1)}{t} = \frac{\vev{x}}{t}.
 \end{equation}
-The standard deviation provides a measure of the uncertainty in the final position of the walker, or equivalently the scale of fluctuations around the expectation value that we should anticipate:
+The sign of the drift velocity indicates whether the walker is drifting to the right ($p > \frac{1}{2}$) or to the left ($p < \frac{1}{2}$).
+The standard deviation of the final position of the walker provides a measure of the scale of fluctuations (or `uncertainty') around the expectation value that we should anticipate:
 \begin{equation*}
-  \De x = \si = \sqrt{\vev{x^2} - \vev{x}^2} = 2\sqrt{Npq} = 2\sqrt{\frac{pq}{\De t}} \sqrt{t},
+  \De x = \sqrt{\vev{x^2} - \vev{x}^2} = 2\sqrt{Npq} = 2\sqrt{\frac{pq}{\De t}} \sqrt{t},
 \end{equation*}
 which increases proportionally to $\sqrt{t}$.
 This is a particular realization of a very general result.
@@ -499,7 +502,7 @@ This is a particular realization of a very general result.
   \begin{equation}
     \De x = D \sqrt{t},
   \end{equation}
-  where $D$ is called the \textbf{diffusion constant} and the uncertainty $\De x$ is sometimes called the \textit{diffusion length}.
+  where $D$ is the \textbf{diffusion constant} and the uncertainty $\De x$ is sometimes called the \textit{diffusion length}.
 \end{shaded}
 
 The diffusion constant $D = 2\sqrt{\frac{pq}{\De t}}$ that we computed above is specific to the current case of a fixed-step-length random walk in one dimension.
@@ -507,26 +510,61 @@ The figure below illustrates why this behavior is called diffusion.
 \begin{center}
   \includegraphics[width=0.45\textwidth]{figs/diff_zero.pdf}
 \end{center}
-This figure shows probability distributions for the special case $p = q = \frac{1}{2}$ where $\vdr = 0$, so the expectation value is always $\vev{x} = 0$ for any walk time $t$.
-However, as time goes on, there is a steady decrease in the probability that any given walker will end up at its starting point $x = 0$.\footnote{As in \secref{sec:CLT}, we can extract this probability by integrating the distribution $p(x)$ over the interval $[-0.5, 0.5]$.}
+This figure shows probability distributions $p(x)$ (computed below) for the special case $p = q = \frac{1}{2}$ where $\vdr = 0$, so the expectation value is always $\vev{x} = 0$ for any walk time $t$.
+However, as time goes on, there is a steady decrease in the probability that any given walker will end up at its starting point $x = 0$.\footnote{As in \secref{sec:CLT}, we can extract this probability by integrating the distribution $p(x)$ over the interval $-0.5 \leq x \leq 0.5$.}
 Instead, the probability distribution spreads (or \textit{diffuses}) outward, leading to a constant (`one-sigma' or 68\%) probability that the walker remains within the steadily increasing interval $-D\sqrt{t} \leq x \leq D\sqrt{t}$.
 
+Except in the trivial cases $p = 0$ or $q = 0$, this same diffusive phenomenon occurs when the drift velocity is non-zero.
+This is shown in the two figures below, which compare the case of a low but non-zero drift velocity on the left with a high drift velocity on the right. \\
+\begin{center} % Don't need centering, but this will provide consistent vertical spacing
+  \includegraphics[width=0.45\textwidth]{figs/diff_low.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/diff_high.pdf}
+\end{center}
+In the figure on the left, each individual probability distribution looks similar to the corresponding one for $\vdr = 0$, but now their central peaks (and expectation values $\vev{x}$) drift steadily to the right.
+The distributions in the figure on the right look a bit different, but still diffuse to exhibit shorter and broader peaks as time goes on.
 
-
-When $p \neq 1 / 2$ so that $\vev{x} \ne 0$, we can also consider the \textit{relative} uncertainty $\De x / \vev{x}$.
-
-\begin{minipage}{0.5\textwidth}
-  \includegraphics[width=0.75\textwidth]{figs/roulette.pdf}
-\end{minipage}%
-\begin{minipage}{0.5\textwidth}
-  
-\end{minipage}
-\TODO{...}
+When $p \neq \frac{1}{2}$ so that $\vev{x} \neq 0$, it is interesting to compare how `fast' the expectation value drifts compared to how fast its uncertainty grows due to diffusion.
+We can do this by considering the following \textit{relative} uncertainty:
+\begin{mdframed}
+  $\frac{\De x}{\vev{x}} = $ \\[100 pt]
+\end{mdframed}
+You should find that at large times this ratio vanishes proportionally to $1 / \sqrt{t} \propto 1 / \sqrt{N}$.
+Although the absolute uncertainty grows by diffusion, $\De x = D \sqrt{t}$, for $\vdr \neq 0$ the linear drift in the expectation value becomes increasingly dominant as time goes on.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\subsubsection{Applying the central limit theorem}
-\TODO{...}
+\subsubsection{\label{sec:RW_CLT}Applying the central limit theorem}
+Based on our work in \secref{sec:CLT}, we can see how to apply the central limit theorem to analyze this fixed-step-length random walk in one dimension, for large numbers of steps $N$ or equivalently large times $t = N \De t$.
+Each step in the random walk can be considered an independent and identically distributed random variable $x_i$, analogous to each spin of the roulette wheel.
+The corresponding probability space involves only two possible outcomes: a step of length $\ell = 1$ to the right or to the left with probability $p$ or $q$, respectively.
+From this we can easily compute the mean and variance \textit{of the single-step process}:
+\begin{mdframed}
+  $\mu = \vev{x_i} = $ \\[33 pt]
+  $\vev{x_i^2} = $ \\[33 pt]
+  $\si^2 = \vev{x_i^2} - \vev{x_i}^2 = $ \\[30 pt]
+\end{mdframed}
+
+The final position $x$ of the walker after $N$ steps is exactly the sum over these $x_i$ given in \eq{eq:CLTsum}.
+Its probability distribution $p(x)$ from the central limit theorem is therefore obtained simply by plugging in these single-step $\mu$ and $\si^2$, which we can then rewrite in terms of the drift velocity and diffusion constant:
+\begin{align}
+  p(x) & = \frac{1}{\sqrt{2\pi (4Npq)}} \exp\left[-\frac{(x - N(2p - 1))^2}{8Npq}\right] \cr
+       & = \frac{1}{\sqrt{2\pi D^2 t}} \exp\left[-\frac{(x - \vdr t)^2}{2D^2 t}\right], \label{eq:RW_CLT}
+\end{align}
+which was used to produce the three figures above.
+We could have jumped straight to the final line by considering \eq{eq:CLT} and noting
+\begin{align}
+  \label{eq:single_step}
+  \vdr t & = N(2p - 1) = N \mu &
+  D^2 t & = 4pq \frac{t}{\De t} = N \si^2.
+\end{align}
+While the functions of $p$ and $q$ that we computed are specific to the particular type of random walk we're currently considering, \eq{eq:single_step} relating $\left\{\vdr, D^2\right\}$ with the single-step $\left\{\mu, \si^2\right\}$ turn out to be generic.
+This is remarkable, because it means that so long as the single-step mean and variance are finite, we end up with \eq{eq:RW_CLT} as the large-$t$ probability distribution for any random walk in a single variable $x$.
+
+This result is related to the generality of the law of diffusion, which we can recognize in the structure of \eq{eq:RW_CLT}.
+For any time $t$, the factor $\de x^2 \equiv (x - \vdr t)^2$ simply measures the distance from the drifting expectation value where the gaussian $p(x)$ is peaked.
+As $t$ increases, so does the factor $2D^2 t$ dividing this $\de x^2$, meaning that a larger distance from the peak is needed for the overall argument of the exponential to reach a given value---in other words, the peak becomes broader.
+This in turn requires a shorter peak, reflected in the $\frac{1}{\sqrt{t}}$ in the overall coefficient, which is set by requiring $\int p(x) \; dx = 1$.
+Therefore we can conclude that the law of diffusion holds whenever the mean and variance of the single-step process are finite.
+In the computer project we will numerically investigate the \textit{anomalous diffusion} that occurs when this condition is not satisfied.
 % ------------------------------------------------------------------
