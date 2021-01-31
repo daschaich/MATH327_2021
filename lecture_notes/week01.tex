@@ -379,9 +379,10 @@ The resulting sequence of system states is known as a \textit{Markov chain}, sin
 To start with a simple case, let's consider a random walker that moves only in a single spatial dimension---to the left or to the right on a line---and can only take `steps' of a fixed length, which we can set to $\ell = 1$ without loss of generality.
 At each point in time, the walker takes either a step to the right ($R$) with probability $p$ or a step to the left ($L$) with probability $q = 1 - p$.
 We will further assume that each step takes a constant amount of time $\De t$, so a walk of $N$ steps will last for total time
-\begin{equation*}
+\begin{equation}
+  \label{eq:RWtime}
   T = N \De t.
-\end{equation*}
+\end{equation}
 
 \newpage % WARNING: FORMATTING BY HAND
 As an example, for $N = 6$ a representative walk can be written as $LRLRRR$, which leaves the walker $x = 2$ steps to the right of its starting point ($x = 0$).
@@ -419,10 +420,13 @@ In terms of this binomial coefficient, what is the general probability $P_r$ tha
 
 Given this probability $P_r$, we can apply Eqs.~\ref{eq:mean}--\ref{eq:var} to find the expectation value $\vev{x}$ and the variance $\vev{x^2} - \vev{x}^2$.
 We will need to compute
-\begin{align*}
-  \vev{x}   = \sum_{r = 0}^N (2r - N)   P_r & = 2\vev{r} - N \\
-  \vev{x^2} = \sum_{r = 0}^N (2r - N)^2 P_r & = 4\vev{r^2} - 4N\vev{r} + N^2,
-\end{align*}
+\begin{equation}
+  \label{eq:RWmoments}
+  \begin{split}
+    \vev{x}   = \sum_{r = 0}^N (2r - N)   P_r & = 2\vev{r} - N \\
+    \vev{x^2} = \sum_{r = 0}^N (2r - N)^2 P_r & = 4\vev{r^2} - 4N\vev{r} + N^2,
+  \end{split}
+\end{equation}
 where, as usual, $\displaystyle \vev{r^n} = \sum_{r = 0}^N r^n P_r$.
 An excellent trick to calculate these expectation values $\vev{r^n}$ is to define the \textbf{generating function}
 \begin{equation}
@@ -453,7 +457,36 @@ Since $p + q = 1$, the simplification $\left.\left(e^{\theta} p + q\right)^n \ri
   \vev{r}   & = Np &
   \vev{r^2} & = Np(Np + q).
 \end{align*}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent Plugging these results into \eq{eq:RWmoments}, we have:
+\begin{mdframed}
+  $\vev{x}   = $ \\[50 pt]
+  $\vev{x^2} = $ \\[50 pt]
+\end{mdframed}
+In the end, you should obtain
+\begin{align}
+  \label{eq:RWmean}
+  \vev{x} & = N(2p - 1) &
+  \si^2 = \vev{x^2} - \vev{x}^2 & = 4Npq.
+\end{align}
+We can check that this $\vev{x}$ produces the expected results in the special cases $p = 0$, $1 / 2$ and $1$, while the standard deviation $\si = 2\sqrt{Npq}$ also behaves appropriately by vanishing for both $p = 0$ and $1$.
 
+We can gain a more intuitive interpretation of these findings by inspecting them in terms of the total time $T$ taken by the random walk (\eq{eq:RWtime}).
+Inserting $N = T / \De t$ into \eq{eq:RWmean},
+\begin{equation*}
+  \vev{x} = \frac{T}{\De t} (2p - 1) = \frac{2p - 1}{\De t} T \equiv \vdr T,
+\end{equation*}
+we define the \textbf{drift velocity}
+\begin{equation}
+  \vdr = \frac{2p - 1}{\De t} = \frac{N(2p - 1)}{T} = \frac{\vev{x}}{T}.
+\end{equation}
+The standard deviation provides a measure of the \textit{absolute} uncertainty in the final position of the walker,
+\begin{equation*}
+  \De x = \si = \sqrt{\vev{x^2} - \vev{x}^2} = 2\sqrt{Npq} = 2\sqrt{\frac{pq}{\De t}} \sqrt{T},
+\end{equation*}
+which also increases as time passes, for non-trivial (non-zero) $p$ and $q$.
+\TODO{Diffusion...}
 
+When $p \neq 1 / 2$ so that $\vev{x} \ne 0$, we can also consider the \textit{relative} uncertainty $\De x / \vev{x}$.
 \TODO{...}
 % ------------------------------------------------------------------
