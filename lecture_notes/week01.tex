@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 1}
-\renewcommand{\moddate}{Last modified 30 Jan.~2021}
+\renewcommand{\moddate}{Last modified 31 Jan.~2021}
 \setcounter{section}{1}
 \phantomsection
 \addcontentsline{toc}{section}{Week 1: Central limit theorem and diffusion}
@@ -236,7 +236,7 @@ Averaging over all $R$ repetitions defines the \textit{arithmetic mean}
 Unlike the true mean $\mu$, the arithmetic mean $\Xbar_R$ is a random variable---a number that may be different for each element of $B$.
 That said, $\Xbar_R$ and $\mu$ are certainly related, and so long as the standard deviation exists (i.e., $\si^2$ is finite), this relation can be proved rigorously in the limit $R \to \infty$.\footnote{In the computer-based project we will numerically investigate a case with divergent $\si^2$.}
 
-Here we will not be fully rigorous, and take it for granted that
+Here we will not be fully rigorous, and take it as given that
 \begin{equation*}
   \vev{\left(X^{(i)} - \mu\right)\left(X^{(j)} - \mu\right)} = \si^2 \de_{ij} = \left\{\begin{array}{ll}\si^2 & \mbox{for } i = j \\ 0 & \mbox{for } i \ne j\end{array}\right.,
 \end{equation*}
@@ -330,7 +330,7 @@ Letting $W = 0, \cdots, N$ be the number of spins where we win, what is our tota
 \end{mdframed}
 Recall that the number of different ways we could win $W$ times out of $N$ attempts is given by the binomial coefficient
 \begin{equation*}
-  \left(\begin{array}{c} N \\ W \end{array}\right) = \frac{N!}{W! \; (N - W)!},
+  \binom{N}{W} = \frac{N!}{W! \; (N - W)!},
 \end{equation*}
 with $0! = 1$.
 Setting $N = 5$, what are the six probabilities $p_0$ through $p_5$ that we win $W = 0, \cdots, 5$ times?
@@ -411,7 +411,7 @@ For $N = 6$, what are all the possible walks that produce $x = 4$, and what is t
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
-Your answer should have a factor of $6$ that corresponds to the binomial coefficient $\left(\begin{array}{c}N \\ r\end{array}\right) = \left(\begin{array}{c}6 \\ 5\end{array}\right) = 6$.
+Your answer should have a factor of $6$ that corresponds to the binomial coefficient $\binom{N}{r} = \binom{6}{5} = 6$.
 In terms of this binomial coefficient, what is the general probability $P_r$ that an $N$-step walk will include $r$ steps to the right in any order?
 \begin{mdframed}
   \ \\[100 pt]
@@ -438,16 +438,17 @@ What do you obtain upon taking derivatives of the generating function and then s
 \end{mdframed}
 
 For the current case of a fixed-step-length random walk in one dimension, the probabilities $P_r$ provide a simple closed-form expression for the generating functional:
-\begin{equation*}
-  \left(e^{\theta} p + q\right)^N = \sum_{r = 0}^N e^{r \theta} \left(\begin{array}{c}N \\ r\end{array}\right) p^r q^{N - r} = \sum_{r = 0}^N e^{r \theta} P_r = T(\theta),
-\end{equation*}
-making use of the binomial formula $\left(a + b\right)^N = \sum_{i = 0}^N \left(\begin{array}{c}N \\ i\end{array}\right) a^i b^{N - i}$.
-It's straightforward to take the necessary derivatives of this expression:
+\begin{equation}
+  \label{eq:gen_func}
+  \left(e^{\theta} p + q\right)^N = \sum_{r = 0}^N e^{r \theta} \binom{N}{r} p^r q^{N - r} = \sum_{r = 0}^N e^{r \theta} P_r = T(\theta),
+\end{equation}
+making use of the binomial formula $\left(a + b\right)^N = \sum_{i = 0}^N \binom{N}{i} a^i b^{N - i}$.
+It's straightforward to take the necessary derivatives of \eq{eq:gen_func}:
 \begin{mdframed}
   $\displaystyle \left.\frac{d}{d\theta} \left(e^{\theta} p + q\right)^N \right|_{\theta = 0} = $ \\[50 pt]
   $\displaystyle \left.\frac{d^2}{d\theta^2} \left(e^{\theta} p + q\right)^N \right|_{\theta = 0} = $ \\[50 pt]
 \end{mdframed}
-Since $p + q = 1$, the simplification $\left.\left(e^{\theta} p + q\right)^n \right|_{\theta = 0} = 1$ should provide
+Since $p + q = 1$, the simplification $\left.\left(e^{\theta} p + q\right)^n \right|_{\theta = 0} = 1$ provides
 \begin{align*}
   \vev{r}   & = Np &
   \vev{r^2} & = Np(Np + q).
