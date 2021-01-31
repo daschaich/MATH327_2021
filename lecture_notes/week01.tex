@@ -370,7 +370,8 @@ You can check your results against those plotted below, which come from \href{ht
 
 
 % ------------------------------------------------------------------
-\subsection{\label{sec:diffusion}Diffusion on a line}
+\subsection{\label{sec:diffusion}Diffusion and the central limit theorem}
+\subsubsection{Random walk on a line}
 As a more general application and illustration of the central limit theorem, let's consider the behaviour of a randomly moving object.
 Such \textbf{random walks} appear frequently in mathematical modelling of stochastic phenomena (including Brownian motion), and can be applied to movement through either physical space or more abstract vector spaces.
 They are examples of \href{https://en.wikipedia.org/wiki/Markov_process}{Markov processes}, in which the state of the system (in this case the position of the `walker') at any time probabilistically depends only on the system's prior state at the previous point in time---there is no `memory' of any earlier states.
@@ -381,7 +382,7 @@ At each point in time, the walker takes either a step to the right ($R$) with pr
 We will further assume that each step takes a constant amount of time $\De t$, so a walk of $N$ steps will last for total time
 \begin{equation}
   \label{eq:RWtime}
-  T = N \De t.
+  t = N \De t.
 \end{equation}
 
 \newpage % WARNING: FORMATTING BY HAND
@@ -393,7 +394,7 @@ How many possible walks are there for general $N$, and what is the probability f
   \ \\[100 pt]
 \end{mdframed}
 
-We will be interested in the walker's final position $x$ at time $T$ after it has taken $N$ steps.
+We will be interested in the walker's final position $x$ at time $t$ after it has taken $N$ steps.
 Just as for the possible gains after $N$ spins of the roulette wheel considered in \secref{sec:CLT}, there are a range of possible final positions $x$, each of which has some probability $P(x)$ of being realized.
 The key pieces of information we want to determine are the expectation value $\vev{x}$ and the variance $\vev{x^2} - \vev{x}^2$ that indicates the scale of fluctuations we can expect around $\vev{x}$ as the $N$-step walk is repeated many times from the same starting point.
 
@@ -470,23 +471,54 @@ In the end, you should obtain
   \si^2 = \vev{x^2} - \vev{x}^2 & = 4Npq.
 \end{align}
 We can check that this $\vev{x}$ produces the expected results in the special cases $p = 0$, $1 / 2$ and $1$, while the standard deviation $\si = 2\sqrt{Npq}$ also behaves appropriately by vanishing for both $p = 0$ and $1$.
+% ------------------------------------------------------------------
 
-We can gain a more intuitive interpretation of these findings by inspecting them in terms of the total time $T$ taken by the random walk (\eq{eq:RWtime}).
-Inserting $N = T / \De t$ into \eq{eq:RWmean},
+
+
+% ------------------------------------------------------------------
+\subsubsection{Law of diffusion}
+It's possible to gain a more intuitive interpretation of the results in \eq{eq:RWmean} by expressing them in terms of the total time $t$ taken by the random walk (\eq{eq:RWtime}).
+Inserting $N = t / \De t$ into \eq{eq:RWmean},
 \begin{equation*}
-  \vev{x} = \frac{T}{\De t} (2p - 1) = \frac{2p - 1}{\De t} T \equiv \vdr T,
+  \vev{x} = \frac{t}{\De t} (2p - 1) = \frac{2p - 1}{\De t} t \equiv \vdr t,
 \end{equation*}
-we define the \textbf{drift velocity}
+we see that the \textit{expected} final position of the walker depends linearly on time, with \textbf{drift velocity}
 \begin{equation}
-  \vdr = \frac{2p - 1}{\De t} = \frac{N(2p - 1)}{T} = \frac{\vev{x}}{T}.
+  \vdr = \frac{2p - 1}{\De t} = \frac{N(2p - 1)}{t} = \frac{\vev{x}}{t}.
 \end{equation}
-The standard deviation provides a measure of the \textit{absolute} uncertainty in the final position of the walker,
+The standard deviation provides a measure of the uncertainty in the final position of the walker, or equivalently the scale of fluctuations around the expectation value that we should anticipate:
 \begin{equation*}
-  \De x = \si = \sqrt{\vev{x^2} - \vev{x}^2} = 2\sqrt{Npq} = 2\sqrt{\frac{pq}{\De t}} \sqrt{T},
+  \De x = \si = \sqrt{\vev{x^2} - \vev{x}^2} = 2\sqrt{Npq} = 2\sqrt{\frac{pq}{\De t}} \sqrt{t},
 \end{equation*}
-which also increases as time passes, for non-trivial (non-zero) $p$ and $q$.
-\TODO{Diffusion...}
+which increases proportionally to $\sqrt{t}$.
+This is a particular realization of a very general result.
+
+\begin{shaded}
+  The \textbf{law of diffusion} states that
+  \begin{equation}
+    \De x = D \sqrt{t},
+  \end{equation}
+  where $D$ is called the \textbf{diffusion constant} and the uncertainty $\De x$ is sometimes called the \textit{diffusion length}.
+\end{shaded}
+
+The diffusion constant $D = 2\sqrt{\frac{pq}{\De t}}$ that we computed above is specific to the current case of a fixed-step-length random walk in one dimension.
+The figure below illustrates why this behavior is called diffusion.
+\begin{center}
+  \includegraphics[width=0.45\textwidth]{figs/diff_zero.pdf}
+\end{center}
+This figure shows probability distributions for the special case $p = q = \frac{1}{2}$ where $\vdr = 0$, so the expectation value is always $\vev{x} = 0$ for any walk time $t$.
+However, as time goes on, there is a steady decrease in the probability that any given walker will end up at its starting point $x = 0$.\footnote{As in \secref{sec:CLT}, we can extract this probability by integrating the distribution $p(x)$ over the interval $[-0.5, 0.5]$.}
+Instead, the probability distribution spreads (or \textit{diffuses}) outward, leading to a constant (`one-sigma' or 68\%) probability that the walker remains within the steadily increasing interval $-D\sqrt{t} \leq x \leq D\sqrt{t}$.
+
+
 
 When $p \neq 1 / 2$ so that $\vev{x} \ne 0$, we can also consider the \textit{relative} uncertainty $\De x / \vev{x}$.
+\TODO{...}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsubsection{Applying the central limit theorem}
 \TODO{...}
 % ------------------------------------------------------------------

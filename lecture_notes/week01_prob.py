@@ -45,8 +45,8 @@ print("Probabilities sum to %.4g" % np.sum(prob))
 def CLT(x):
   num = (x - N * mean)**2
   denom = 2.0 * N * var
-  const = 1.0 / np.sqrt(2.0 * np.pi * N * var)
-  return const * np.exp(-1.0 * num / denom)
+  coeff = 1.0 / np.sqrt(2.0 * np.pi * N * var)
+  return coeff * np.exp(-1.0 * num / denom)
 
 # First approximate probability as central value of integrand
 # times (constant) difference between subsequent gains
