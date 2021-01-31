@@ -1,10 +1,36 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 4}
-\renewcommand{\moddate}{Last modified 25 Jan.~2021}
+\renewcommand{\moddate}{Last modified 31 Jan.~2021}
 \setcounter{section}{4}
 \phantomsection
 \addcontentsline{toc}{section}{Week 4: Ideal gases}
 \section*{Week 4: Ideal gases}
 
+\subsection{The (non-relativistic) classical ideal gas}
+This week we apply the canonical ensemble to investigate non-relativistic, classical, ideal gases.
+Using statistical physics we will explore how the large-scale behaviour of such gases emerges from the fundamental features of the particles that it consists of.
+The three adjectives above precisely specify these fundamental features: \\[-24 pt]
+\begin{itemize}
+  \item \textbf{Classical} systems are those for which we can ignore the effects of quantum mechanics.\footnote{In general in physics, `classical' means precisely `non-quantum'.}
+        At a technical level, this means we assume we can simultaneously define both the position $\vec x$ and the momentum $\vec p$ of each particle with arbitrary accuracy.
+  \item \textbf{Non-relativistic} particles move with speeds small compared to the speed of light, which allows us to ignore small effects due to special relativity.
+        The particles are therefore governed by the laws Isaac Newton published all the way back in 1687.
+        In particular, the energy of each particle of mass $m$ is
+        \begin{equation*}
+          E_i = \frac{1}{2m} \vec{p}_i^{\,2}.
+        \end{equation*}
+  \item \textbf{Ideal} gases are those whose constituent particles don't interact with each other.
+        As a result, the total energy of the gas is simply the sum of the energies of the $N$ individual particles,
+        \begin{equation}
+          E = \frac{1}{2m} \sum_{i = 1}^N \vec{p}_i^{\,2}.
+        \end{equation}
+\end{itemize}
+
+As usual for the canonical ensemble, we consider the gas enclosed in a box with volume $V = L^3$, which is in thermal equilibrium with a large external thermal reservoir with which the gas can exchange energy.
+
+
 \TODO{Being written...}
+
+% In order to define the partition function, we need to `quantize' the allowable values of the momenta that each particle can have, so that we have a sum over a countably infinite number of terms that can be enumerated.
+% Quantum mechanics explains how this quantization arises, but for the purposes of this module we will just take it as given.
 % ------------------------------------------------------------------
