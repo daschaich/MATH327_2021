@@ -2,8 +2,9 @@
 \renewcommand{\thisweek}{MATH327 Week 1}
 \renewcommand{\moddate}{Last modified 30 Jan.~2021}
 \setcounter{section}{1}
-\section*{Week 1: Central limit theorem and diffusion}
+\phantomsection
 \addcontentsline{toc}{section}{Week 1: Central limit theorem and diffusion}
+\section*{Week 1: Central limit theorem and diffusion}
 
 \subsection*{Introductory remarks: What is Statistical Physics?}
 Mathematical sciences such as physics aim to determine the laws of nature and understand how these govern experimental observations---both in everyday circumstances and under extreme conditions.
@@ -295,7 +296,7 @@ Unless stated otherwise, we will assume the mean and variance are both finite fo
 
 
 % ------------------------------------------------------------------
-\subsection{Central limit theorem}
+\subsection{\label{sec:CLT}Central limit theorem}
 The central limit theorem is a major result of probability theory.
 Over the years it has been expressed in several equivalent ways, and there are also many distinct variants of the theorem accommodating different conditions and assumptions.
 In this module we are interested in applying rather than proving the central limit theorem; the curious can find proofs in many textbooks.
@@ -370,8 +371,88 @@ You can check your results against those plotted below, which come from \href{ht
 
 % ------------------------------------------------------------------
 \subsection{\label{sec:diffusion}Diffusion on a line}
-As a more generic application of the central limit theorem, let's consider the behaviour of an object moving randomly in one dimension---say to the left or right on a line.
-\TODO{...}
-Such \textbf{random walks} appear frequently in mathematical modelling of stochastic phenomena (including Brownian motion).
+As a more general application and illustration of the central limit theorem, let's consider the behaviour of a randomly moving object.
+Such \textbf{random walks} appear frequently in mathematical modelling of stochastic phenomena (including Brownian motion), and can be applied to movement through either physical space or more abstract vector spaces.
+They are examples of \href{https://en.wikipedia.org/wiki/Markov_process}{Markov processes}, in which the state of the system (in this case the position of the `walker') at any time probabilistically depends only on the system's prior state at the previous point in time---there is no `memory' of any earlier states.
+The resulting sequence of system states is known as a \textit{Markov chain}, since each state is produced from the one before, like links in a chain.
+
+To start with a simple case, let's consider a random walker that moves only in a single spatial dimension---to the left or to the right on a line---and can only take `steps' of a fixed length, which we can set to $\ell = 1$ without loss of generality.
+At each point in time, the walker takes either a step to the right ($R$) with probability $p$ or a step to the left ($L$) with probability $q = 1 - p$.
+We will further assume that each step takes a constant amount of time $\De t$, so a walk of $N$ steps will last for total time
+\begin{equation*}
+  T = N \De t.
+\end{equation*}
+
+\newpage % WARNING: FORMATTING BY HAND
+As an example, for $N = 6$ a representative walk can be written as $LRLRRR$, which leaves the walker $x = 2$ steps to the right of its starting point ($x = 0$).
+The opposite walk $RLRLLL$ would leave the walker at $x = -2$, with negative numbers indicating positions to the left of the starting point.
+How many possible walks are there for $N = 6$, and what is the probability (in terms of $p$ and $q$) for these particular walks $LRLRRR$ and $RLRLLL$ to occur?
+How many possible walks are there for general $N$, and what is the probability for any particular walk involving $r$ steps to the right to occur?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+We will be interested in the walker's final position $x$ at time $T$ after it has taken $N$ steps.
+Just as for the possible gains after $N$ spins of the roulette wheel considered in \secref{sec:CLT}, there are a range of possible final positions $x$, each of which has some probability $P(x)$ of being realized.
+The key pieces of information we want to determine are the expectation value $\vev{x}$ and the variance $\vev{x^2} - \vev{x}^2$ that indicates the scale of fluctuations we can expect around $\vev{x}$ as the $N$-step walk is repeated many times from the same starting point.
+
+Suppose the $N$ total steps involve $r$ steps to the right.
+What is the final position $x$ of the walker in terms of $N$ and $r$?
+Check your general answer for the cases $N = 6$ and $r = 4$, $2$ considered above.
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+This relation makes it equivalent to consider either the probability $P_r$ of taking $r$ steps to the right, or the probability $P(x)$ of ending up at final position $x$.
+This equivalence will not hold for more general random walks in which the step length is no longer fixed and $\ell_i$ can vary from one step to the next.
+
+\newpage % WARNING: FORMATTING BY HAND
+Because the order in which steps are taken does not affect the final position $x$, to determine the probability $P_x$ we have to count all possible ways of walking to $x$.
+For $N = 6$, what are all the possible walks that produce $x = 4$, and what is the corresponding probability $P_4$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+Your answer should have a factor of $6$ that corresponds to the binomial coefficient $\left(\begin{array}{c}N \\ r\end{array}\right) = \left(\begin{array}{c}6 \\ 5\end{array}\right) = 6$.
+In terms of this binomial coefficient, what is the general probability $P_r$ that an $N$-step walk will include $r$ steps to the right in any order?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+Given this probability $P_r$, we can apply Eqs.~\ref{eq:mean}--\ref{eq:var} to find the expectation value $\vev{x}$ and the variance $\vev{x^2} - \vev{x}^2$.
+We will need to compute
+\begin{align*}
+  \vev{x}   = \sum_{r = 0}^N (2r - N)   P_r & = 2\vev{r} - N \\
+  \vev{x^2} = \sum_{r = 0}^N (2r - N)^2 P_r & = 4\vev{r^2} - 4N\vev{r} + N^2,
+\end{align*}
+where, as usual, $\displaystyle \vev{r^n} = \sum_{r = 0}^N r^n P_r$.
+An excellent trick to calculate these expectation values $\vev{r^n}$ is to define the \textbf{generating function}
+\begin{equation}
+  T(\theta) = \sum_{r = 0}^N e^{r \theta} P_r.
+\end{equation}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent This approach introduces a parameter $\theta$ that we subsequently remove by setting $\theta = 0$.
+For example, $T(0) = \sum_{r = 0}^N P_r = 1$.
+What do you obtain upon taking derivatives of the generating function and then setting $\theta = 0$?
+\begin{mdframed}
+  $\displaystyle \left.\frac{d}{d\theta} T(\theta)\right|_{\theta = 0} = $ \\[50 pt]
+  $\displaystyle \left.\frac{d^n}{d\theta^n} T(\theta)\right|_{\theta = 0} = $ \\[50 pt]
+\end{mdframed}
+
+For the current case of a fixed-step-length random walk in one dimension, the probabilities $P_r$ provide a simple closed-form expression for the generating functional:
+\begin{equation*}
+  \left(e^{\theta} p + q\right)^N = \sum_{r = 0}^N e^{r \theta} \left(\begin{array}{c}N \\ r\end{array}\right) p^r q^{N - r} = \sum_{r = 0}^N e^{r \theta} P_r = T(\theta),
+\end{equation*}
+making use of the binomial formula $\left(a + b\right)^N = \sum_{i = 0}^N \left(\begin{array}{c}N \\ i\end{array}\right) a^i b^{N - i}$.
+It's straightforward to take the necessary derivatives of this expression:
+\begin{mdframed}
+  $\displaystyle \left.\frac{d}{d\theta} \left(e^{\theta} p + q\right)^N \right|_{\theta = 0} = $ \\[50 pt]
+  $\displaystyle \left.\frac{d^2}{d\theta^2} \left(e^{\theta} p + q\right)^N \right|_{\theta = 0} = $ \\[50 pt]
+\end{mdframed}
+Since $p + q = 1$, the simplification $\left.\left(e^{\theta} p + q\right)^n \right|_{\theta = 0} = 1$ should provide
+\begin{align*}
+  \vev{r}   & = Np &
+  \vev{r^2} & = Np(Np + q).
+\end{align*}
+
+
 \TODO{...}
 % ------------------------------------------------------------------
