@@ -1,0 +1,811 @@
+1
+00:00:00,870 --> 00:00:04,560
+The hello and welcome back to the end of week one
+
+2
+00:00:04,560 --> 00:00:08,400
+of statistical physics, a brief wrap up video that
+
+3
+00:00:08,400 --> 00:00:13,110
+we'll try to highlight and summarize the key
+
+4
+00:00:13,560 --> 00:00:16,920
+learning outcomes of this first week's content on
+
+5
+00:00:17,730 --> 00:00:21,810
+probability essentials that underlie statistical
+
+6
+00:00:21,810 --> 00:00:25,620
+physics, as well as the central limit theorem and
+
+7
+00:00:25,620 --> 00:00:28,830
+its role in diffusion. So I'll try to keep this
+
+8
+00:00:28,980 --> 00:00:31,650
+about 10 minutes to keep from overloading you with
+
+9
+00:00:32,100 --> 00:00:35,700
+too much content that is picking out information
+
+10
+00:00:35,700 --> 00:00:38,940
+that you do already have in full form. In the
+
+11
+00:00:38,940 --> 00:00:42,210
+lecture notes, I'll go through and just say a few
+
+12
+00:00:42,210 --> 00:00:45,150
+things on my mind for each of these sections,
+
+13
+00:00:45,150 --> 00:00:50,040
+starting with the the probability foundations. And
+
+14
+00:00:51,030 --> 00:00:53,970
+I'll mention that the distinction we draw here
+
+15
+00:00:53,970 --> 00:00:57,900
+between states that are produced by experiments on
+
+16
+00:00:57,900 --> 00:01:00,570
+the one hand, and the outcomes that are produced
+
+17
+00:01:00,570 --> 00:01:03,570
+by measurements on the other, is really rather
+
+18
+00:01:03,570 --> 00:01:07,740
+formal and not something that so many treatments
+
+19
+00:01:07,740 --> 00:01:11,040
+of this topic do. What this does is really justify
+
+20
+00:01:11,040 --> 00:01:17,370
+rigorously how we are able to put the outcomes of
+
+21
+00:01:17,370 --> 00:01:19,860
+random experiments in a solid mathematical
+
+22
+00:01:19,860 --> 00:01:23,610
+framework where we don't have to worry about the
+
+23
+00:01:25,950 --> 00:01:29,310
+in principle possible but very unlikely states
+
+24
+00:01:29,310 --> 00:01:31,890
+that could result from experiments in full
+
+25
+00:01:31,890 --> 00:01:35,190
+generality. So just to illustrate what I mean here,
+
+26
+00:01:35,190 --> 00:01:37,890
+if I go back to the example of flipping a coin
+
+27
+00:01:39,150 --> 00:01:42,840
+once, a process that through the measurement of
+
+28
+00:01:42,840 --> 00:01:45,900
+whether the coin landed, heads up or landed tails
+
+29
+00:01:45,900 --> 00:01:49,440
+up, I have a solid probability space to work with.
+
+30
+00:01:49,800 --> 00:01:54,270
+And I don't have to worry about the much less
+
+31
+00:01:54,270 --> 00:01:57,300
+likely but in principle possible states that could
+
+32
+00:01:57,300 --> 00:01:59,190
+result from the basic experiment of flipping a
+
+33
+00:01:59,190 --> 00:02:03,060
+coin. For example, the the state where I flip the
+
+34
+00:02:03,060 --> 00:02:07,260
+coin and a rogue seagull comes in and swallows the
+
+35
+00:02:07,260 --> 00:02:09,510
+coin out of the air. And I never know whether it's
+
+36
+00:02:09,510 --> 00:02:12,870
+heads up or tails up. There is obviously a low
+
+37
+00:02:12,870 --> 00:02:16,650
+probability of that occurring, especially since my
+
+38
+00:02:16,800 --> 00:02:21,630
+windows are closed. But it is in principle a
+
+39
+00:02:21,630 --> 00:02:24,450
+possible outcome or a possible state produced by
+
+40
+00:02:24,450 --> 00:02:27,090
+that experiment. And by processing those states
+
+41
+00:02:27,090 --> 00:02:33,810
+through a measurement, we discard that possibility
+
+42
+00:02:33,810 --> 00:02:37,620
+and end up with the simple set of outcomes that
+
+43
+00:02:37,620 --> 00:02:40,290
+can be straightforwardly analyzed through
+
+44
+00:02:41,100 --> 00:02:43,470
+probability theory, defining the probabilities
+
+45
+00:02:43,470 --> 00:02:47,130
+that map each of those outcomes to their
+
+46
+00:02:47,130 --> 00:02:48,780
+probability of occurring.
+
+47
+00:02:50,940 --> 00:02:53,460
+The probability is also define the mean and
+
+48
+00:02:53,460 --> 00:02:56,370
+variance, which are very important concepts. I
+
+49
+00:02:56,370 --> 00:02:58,320
+imagine you've seen that before. You'll be seeing
+
+50
+00:02:58,320 --> 00:03:01,980
+them again. These are formally defined by
+
+51
+00:03:02,460 --> 00:03:06,300
+something over all of the outcomes in the outcome
+
+52
+00:03:06,310 --> 00:03:10,500
+space, weighed by the corresponding probability
+
+53
+00:03:10,500 --> 00:03:11,520
+for that outcome
+
+54
+00:03:14,040 --> 00:03:17,760
+at the same time. And this gets us to to one of
+
+55
+00:03:17,790 --> 00:03:22,410
+the key learning outcomes. The the law of large
+
+56
+00:03:22,410 --> 00:03:25,590
+numbers is the statement that we don't necessarily
+
+57
+00:03:25,590 --> 00:03:30,060
+have to sum formally over every possible outcome
+
+58
+00:03:30,060 --> 00:03:33,360
+in the outcome space in order to determine the
+
+59
+00:03:33,360 --> 00:03:36,810
+mean and variance with some accuracy. It turns out
+
+60
+00:03:36,840 --> 00:03:39,750
+that as an experiment is repeated a large number
+
+61
+00:03:39,750 --> 00:03:44,130
+of times, if we measure the outcome of interest
+
+62
+00:03:44,130 --> 00:03:46,440
+and then just average over all of those
+
+63
+00:03:46,440 --> 00:03:50,430
+repetitions, the arithmetic mean that we get out
+
+64
+00:03:50,430 --> 00:03:54,330
+of that process reliably and steadily approaches.
+
+65
+00:03:54,330 --> 00:03:57,870
+The true probabilistic been defined by something
+
+66
+00:03:58,170 --> 00:04:01,110
+over all of the elements of the outcome space. And
+
+67
+00:04:01,110 --> 00:04:04,770
+when we consider outcomes spaces with infinite,
+
+68
+00:04:04,770 --> 00:04:09,180
+either countable or uncountable numbers of of
+
+69
+00:04:09,180 --> 00:04:13,410
+possible outcomes, then this becomes the law of
+
+70
+00:04:13,410 --> 00:04:16,530
+large numbers, becomes a crucial tool that allows
+
+71
+00:04:16,530 --> 00:04:20,850
+us to determine the mean and the variance and the
+
+72
+00:04:20,850 --> 00:04:24,960
+properties of our system without knowing the
+
+73
+00:04:24,960 --> 00:04:31,410
+exhaustive probability measure that is mapping all
+
+74
+00:04:31,410 --> 00:04:33,930
+of the possible outcomes to the corresponding
+
+75
+00:04:34,350 --> 00:04:37,740
+probabilities. So that is one of the formal
+
+76
+00:04:37,740 --> 00:04:41,550
+ingredients that is going to underlie the
+
+77
+00:04:41,550 --> 00:04:45,840
+application of probability theory to large scale
+
+78
+00:04:45,840 --> 00:04:48,000
+systems in statistical physics and really put it
+
+79
+00:04:48,000 --> 00:04:51,570
+on a firm mathematical foundation, even though
+
+80
+00:04:51,780 --> 00:04:54,570
+moving forward we will take that foundation for
+
+81
+00:04:54,570 --> 00:04:57,810
+granted and focus on the applications that can be
+
+82
+00:04:57,810 --> 00:04:58,590
+built on it.
+
+83
+00:05:00,680 --> 00:05:04,460
+I mentioned just now the the possibility that the
+
+84
+00:05:04,460 --> 00:05:07,490
+outcome space is unaccountably infinite, which
+
+85
+00:05:07,490 --> 00:05:12,860
+makes it not obvious how to define a sum over all
+
+86
+00:05:12,860 --> 00:05:15,710
+of the elements of that outcome space. It's not
+
+87
+00:05:16,250 --> 00:05:19,940
+possible to enumerate an uncountable number of
+
+88
+00:05:20,600 --> 00:05:23,150
+possibilities, essentially by the definition of
+
+89
+00:05:23,160 --> 00:05:28,700
+unaccountability. What we have in this situation
+
+90
+00:05:29,000 --> 00:05:32,420
+is really a probability distribution or
+
+91
+00:05:32,420 --> 00:05:36,290
+probability density function rather than a
+
+92
+00:05:36,650 --> 00:05:39,320
+probability itself in the relation between
+
+93
+00:05:39,740 --> 00:05:44,090
+probabilities and probability distributions. Is
+
+94
+00:05:44,090 --> 00:05:50,210
+that the the probability is the integral integral
+
+95
+00:05:50,690 --> 00:05:54,080
+of the probability distribution over an
+
+96
+00:05:54,080 --> 00:05:58,160
+appropriate interval that defines the sort of
+
+97
+00:05:58,160 --> 00:06:06,640
+outcome that we can consider formally in a a
+
+98
+00:06:06,740 --> 00:06:09,860
+finite system. So if we want to extract some
+
+99
+00:06:09,860 --> 00:06:12,740
+probability for some finite number of outcomes, we
+
+100
+00:06:12,740 --> 00:06:17,420
+integrate over the corresponding range of the
+
+101
+00:06:17,420 --> 00:06:21,230
+outcomes space. We integrate the probability
+
+102
+00:06:21,590 --> 00:06:27,260
+distribution weighted again by whatever function
+
+103
+00:06:27,380 --> 00:06:30,140
+for which we want to determine the the expectation
+
+104
+00:06:30,140 --> 00:06:35,180
+value or the variance in this arises in the
+
+105
+00:06:35,180 --> 00:06:38,090
+context of the central limit theorem, which is
+
+106
+00:06:38,630 --> 00:06:42,410
+very powerful for for several reasons. First of
+
+107
+00:06:42,410 --> 00:06:42,770
+all,
+
+108
+00:06:44,810 --> 00:06:47,210
+the the central limit theorem
+
+109
+00:06:49,910 --> 00:06:54,560
+provides a very good approximation to the
+
+110
+00:06:54,560 --> 00:06:57,530
+probability distribution for.
+
+111
+00:07:01,820 --> 00:07:05,780
+A sum and outcome of a collective process that we
+
+112
+00:07:05,780 --> 00:07:10,340
+obtained by repeating some elementary single step
+
+113
+00:07:10,340 --> 00:07:15,650
+core process, a large number of times, as the
+
+114
+00:07:16,940 --> 00:07:20,150
+number of repetitions increases, we can
+
+115
+00:07:20,150 --> 00:07:24,110
+approximate a probability distribution from the
+
+116
+00:07:24,110 --> 00:07:28,010
+underlying probabilities of the elementary single
+
+117
+00:07:28,010 --> 00:07:31,340
+step process. And the central limit theorem tells
+
+118
+00:07:31,340 --> 00:07:36,410
+us exactly how the mean and the variance for that
+
+119
+00:07:36,650 --> 00:07:40,010
+elementary single set process govern the
+
+120
+00:07:40,010 --> 00:07:45,740
+probability distribution for the continuous
+
+121
+00:07:45,740 --> 00:07:49,190
+outcome that we can approximate in the limit of a
+
+122
+00:07:49,190 --> 00:07:53,270
+large number of repetitions so that the the sum is
+
+123
+00:07:53,270 --> 00:07:56,870
+essentially or effectively a continuous,
+
+124
+00:07:57,350 --> 00:07:58,970
+continuously valued parameter.
+
+125
+00:08:02,750 --> 00:08:06,140
+Another important aspect of the central limit
+
+126
+00:08:06,140 --> 00:08:08,420
+theorem is that the probability distribution
+
+127
+00:08:08,420 --> 00:08:12,110
+obtained in that manner is a Gaussian distribution
+
+128
+00:08:12,110 --> 00:08:17,180
+or a normal distribution whenever the mean and the
+
+129
+00:08:17,180 --> 00:08:20,630
+variance of that elementary single set process
+
+130
+00:08:20,630 --> 00:08:26,480
+exist. And the consequence of this is what's known
+
+131
+00:08:26,480 --> 00:08:29,120
+as the law of diffusion, which we illustrated
+
+132
+00:08:29,120 --> 00:08:34,310
+through the example of a random walk, which is a
+
+133
+00:08:34,310 --> 00:08:37,700
+very generic framework that can be used to analyze
+
+134
+00:08:38,180 --> 00:08:41,660
+all sorts of statistical physics systems. So here
+
+135
+00:08:42,110 --> 00:08:44,720
+we gave the simplest possible example of some
+
+136
+00:08:45,200 --> 00:08:49,340
+walker that can take a step of a fixed length,
+
+137
+00:08:49,340 --> 00:08:53,480
+either to the right with some probability or to
+
+138
+00:08:53,480 --> 00:08:58,490
+the left with the remaining probability. But it's
+
+139
+00:08:58,670 --> 00:09:01,970
+very easy to generalize that simple situation to
+
+140
+00:09:02,450 --> 00:09:07,370
+all sorts of more abstract situations. To give
+
+141
+00:09:07,370 --> 00:09:11,330
+just one example, we can think about the physics
+
+142
+00:09:11,330 --> 00:09:15,890
+of protein folding, which is a major topic in
+
+143
+00:09:16,190 --> 00:09:19,550
+molecular biology and mathematical biology. And we
+
+144
+00:09:19,550 --> 00:09:24,110
+can model the process of protein folding by
+
+145
+00:09:24,320 --> 00:09:27,860
+considering the protein to be carrying out a
+
+146
+00:09:27,860 --> 00:09:31,340
+random walk through the high dimensional space
+
+147
+00:09:32,270 --> 00:09:37,130
+that is defined by the possible configurations it
+
+148
+00:09:37,130 --> 00:09:39,500
+could take. So this is an abstract vector space
+
+149
+00:09:40,040 --> 00:09:45,320
+where each basis vector is some aspect of the
+
+150
+00:09:45,320 --> 00:09:48,920
+configuration of this protein and the process of
+
+151
+00:09:48,920 --> 00:09:53,030
+this protein folding is then a walk through that
+
+152
+00:09:53,030 --> 00:09:55,280
+space, a random walk, because there's some
+
+153
+00:09:55,280 --> 00:09:58,160
+elements of randomness and probability to it and
+
+154
+00:09:58,190 --> 00:10:02,720
+obviously a directed walk that is biased towards
+
+155
+00:10:03,170 --> 00:10:06,410
+the stable ground state that the protein wants to
+
+156
+00:10:06,410 --> 00:10:10,580
+end up in. So the probabilities here are
+
+157
+00:10:12,590 --> 00:10:14,840
+present. They are probabilistic, but it's not
+
+158
+00:10:15,260 --> 00:10:17,210
+completely random in the sense that anything could
+
+159
+00:10:17,210 --> 00:10:21,140
+happen. The probability is describe the most
+
+160
+00:10:21,140 --> 00:10:27,680
+likely outcome and by working or by translating
+
+161
+00:10:28,670 --> 00:10:32,540
+the walk into a process that occurs over some
+
+162
+00:10:32,540 --> 00:10:35,000
+amount of time. So we imagine that each step in
+
+163
+00:10:35,000 --> 00:10:39,110
+this walk takes some fixed length of time. We can
+
+164
+00:10:39,110 --> 00:10:42,860
+treat the random walk as a process evolving in
+
+165
+00:10:42,860 --> 00:10:49,190
+time, which lets us see how the the basic features
+
+166
+00:10:49,370 --> 00:10:53,040
+of the system evolve in time as the week goes by.
+
+167
+00:10:53,060 --> 00:10:58,250
+So we define the drift velocity that governs how
+
+168
+00:10:58,670 --> 00:11:03,320
+the expectation value for the location of our
+
+169
+00:11:03,350 --> 00:11:06,380
+random water or our system, how that evolves in
+
+170
+00:11:06,380 --> 00:11:13,130
+time as well as the diffusion length which governs
+
+171
+00:11:14,540 --> 00:11:19,280
+the scale of fluctuations around that that average
+
+172
+00:11:19,280 --> 00:11:23,330
+out, that expected value of the outcome. So this
+
+173
+00:11:23,330 --> 00:11:26,660
+diffusion length we saw that as time goes on, the
+
+174
+00:11:26,660 --> 00:11:29,530
+diffusion length becomes larger and larger,
+
+175
+00:11:29,570 --> 00:11:32,990
+proportional to the square root of the time that
+
+176
+00:11:32,990 --> 00:11:35,750
+has been taken, which is known as the law of
+
+177
+00:11:35,750 --> 00:11:38,240
+diffusion and turns out to be a very general
+
+178
+00:11:38,240 --> 00:11:41,420
+result. And by applying the central limit theorem
+
+179
+00:11:41,810 --> 00:11:45,260
+to the case of this random walk, we were able to
+
+180
+00:11:45,260 --> 00:11:50,570
+see how exactly the law of diffusion arises from
+
+181
+00:11:51,020 --> 00:11:53,870
+the fact that the probability distribution
+
+182
+00:11:54,230 --> 00:11:56,720
+provided by the Central Limit Theorem is a
+
+183
+00:11:56,720 --> 00:11:59,690
+Gaussian distribution, that Gaussian distribution
+
+184
+00:11:59,690 --> 00:12:01,910
+gives us the law of diffusion.
+
+185
+00:12:04,010 --> 00:12:07,040
+So we get both of those whenever the assumptions
+
+186
+00:12:07,040 --> 00:12:09,410
+of the Central Limit theorem hold, in particular
+
+187
+00:12:09,890 --> 00:12:15,680
+that the elementary single step process has both a
+
+188
+00:12:15,740 --> 00:12:20,810
+finite mean and a finite variance, so long as that
+
+189
+00:12:20,810 --> 00:12:23,270
+holds the central limit theorem and the law of
+
+190
+00:12:23,270 --> 00:12:26,480
+diffusion hold and in the computer projects in a
+
+191
+00:12:26,480 --> 00:12:29,660
+few weeks, we will numerically investigate what
+
+192
+00:12:29,660 --> 00:12:34,190
+happens when those assumptions break down and the
+
+193
+00:12:34,190 --> 00:12:37,940
+law of diffusion no longer results. And we will
+
+194
+00:12:37,940 --> 00:12:42,050
+need to use numerical computing to analyze that
+
+195
+00:12:42,050 --> 00:12:45,080
+case because things get much more complicated when
+
+196
+00:12:45,080 --> 00:12:48,080
+we are no longer able to bring to bear the very
+
+197
+00:12:48,080 --> 00:12:50,870
+powerful mathematical tool of the central limit
+
+198
+00:12:50,870 --> 00:12:55,790
+theorem. So that's something to look forward to.
+
+199
+00:12:55,790 --> 00:12:57,770
+And at the same time, we'll be going through
+
+200
+00:12:57,980 --> 00:13:01,130
+additional learning material in the coming week of.
+
+201
+00:13:01,210 --> 00:13:05,680
+Flying these probabilistic foundations to the case
+
+202
+00:13:05,860 --> 00:13:09,370
+of our first statistical unsalable, the micro
+
+203
+00:13:09,370 --> 00:13:11,080
+canonical ensemble.

@@ -1,0 +1,711 @@
+1
+00:00:01,950 --> 00:00:05,490
+Hello and welcome to the overview video for the
+
+2
+00:00:05,490 --> 00:00:08,190
+first week's content of the statistical physics
+
+3
+00:00:08,190 --> 00:00:12,960
+module, where the title for this week is Central
+
+4
+00:00:12,960 --> 00:00:15,210
+Limit Theorem and Diffusion. But that's really
+
+5
+00:00:15,210 --> 00:00:20,340
+encompassing all of the fundamental aspects of
+
+6
+00:00:20,340 --> 00:00:22,200
+probability theory that are going to form the
+
+7
+00:00:22,200 --> 00:00:26,520
+groundwork for everything we are looking at in
+
+8
+00:00:26,520 --> 00:00:29,790
+this term, really. And having said that, I should
+
+9
+00:00:29,790 --> 00:00:33,060
+say that once we go through this groundwork in
+
+10
+00:00:33,060 --> 00:00:35,580
+this week, it's going to be largely in the
+
+11
+00:00:35,580 --> 00:00:39,450
+background and we won't be doing exactly the the
+
+12
+00:00:39,450 --> 00:00:45,060
+sorts of work that that we'll be seeing in the
+
+13
+00:00:45,060 --> 00:00:46,920
+lecture notes in the synchronous sessions this
+
+14
+00:00:46,920 --> 00:00:50,430
+week. Considering formal definitions of
+
+15
+00:00:51,150 --> 00:00:53,970
+measurements and outcomes and probability spaces,
+
+16
+00:00:54,720 --> 00:00:59,250
+what we will be doing is building upon those
+
+17
+00:00:59,250 --> 00:01:04,680
+fundamentals a larger superstructure of of
+
+18
+00:01:04,680 --> 00:01:11,730
+applications that rely on these concepts of
+
+19
+00:01:12,360 --> 00:01:14,400
+experiments, measurements, outcomes and
+
+20
+00:01:14,400 --> 00:01:18,030
+probability spaces without explicitly giving those
+
+21
+00:01:18,030 --> 00:01:21,420
+a big role. So the flavor of this week is going to
+
+22
+00:01:21,420 --> 00:01:24,150
+be a bit different compared to those that are
+
+23
+00:01:24,150 --> 00:01:28,290
+coming up. And I'll see a bit more about that for
+
+24
+00:01:28,740 --> 00:01:31,950
+the moment. I'll just take a step backward to talk
+
+25
+00:01:31,950 --> 00:01:35,880
+about the the big picture overview of statistical
+
+26
+00:01:35,880 --> 00:01:39,840
+physics and this module more generally, which at
+
+27
+00:01:39,840 --> 00:01:43,590
+its essence is the is based on the application of
+
+28
+00:01:43,590 --> 00:01:45,720
+probability theory to
+
+29
+00:01:48,900 --> 00:01:52,740
+probabilistically predict physical phenomena, the
+
+30
+00:01:52,740 --> 00:01:55,170
+outcomes of experiments, whether those experiments
+
+31
+00:01:55,170 --> 00:01:58,440
+be things we actually do in a in a laboratory or
+
+32
+00:01:58,440 --> 00:02:01,590
+things we think about conducting experiments in
+
+33
+00:02:01,590 --> 00:02:07,350
+idealise systems, the the domain of statistical
+
+34
+00:02:07,350 --> 00:02:11,370
+physics. This application of probability theory to
+
+35
+00:02:11,880 --> 00:02:14,700
+predict properties of large scale systems grew out
+
+36
+00:02:14,700 --> 00:02:18,030
+of work in the in the late eighteen hundreds to
+
+37
+00:02:19,200 --> 00:02:22,590
+understand the empirically observed laws of
+
+38
+00:02:22,590 --> 00:02:25,920
+thermodynamics and how those could be understood
+
+39
+00:02:25,920 --> 00:02:30,180
+to emerge from the more fundamental behavior of
+
+40
+00:02:31,140 --> 00:02:33,630
+the atoms and molecules of which these large
+
+41
+00:02:33,630 --> 00:02:39,150
+systems of of gasses and fluids were built. And
+
+42
+00:02:39,150 --> 00:02:42,150
+this is obviously still relevant today because we
+
+43
+00:02:42,150 --> 00:02:45,360
+are still building systems out of atoms and
+
+44
+00:02:45,360 --> 00:02:48,720
+molecules and want to know how those large scale
+
+45
+00:02:48,720 --> 00:02:52,590
+systems behave without having to go through the
+
+46
+00:02:52,830 --> 00:02:58,290
+formal work of applying Newton's laws of mechanics
+
+47
+00:02:58,290 --> 00:03:01,890
+to all of the atoms and molecules that are in the
+
+48
+00:03:01,890 --> 00:03:05,340
+game, whether that be in the physics of neutron
+
+49
+00:03:05,340 --> 00:03:09,750
+stars, the physics of the atmosphere and climate
+
+50
+00:03:09,750 --> 00:03:12,780
+change, or the physics of internal combustion
+
+51
+00:03:12,780 --> 00:03:17,820
+engines or refrigerators, all of which rely on the
+
+52
+00:03:17,820 --> 00:03:20,340
+statistical physics that we will be seeing in this
+
+53
+00:03:20,340 --> 00:03:23,760
+module. And one of the remarkable things about
+
+54
+00:03:24,690 --> 00:03:28,830
+this whole domain of physics is the fantastic
+
+55
+00:03:28,830 --> 00:03:33,810
+accuracy with which this probabilistic analysis,
+
+56
+00:03:34,230 --> 00:03:35,130
+based in
+
+57
+00:03:37,470 --> 00:03:40,680
+the idea of random fluctuations, can really
+
+58
+00:03:41,040 --> 00:03:44,700
+predictably describe the large scale properties of
+
+59
+00:03:44,700 --> 00:03:48,450
+these systems, which, looking back historically,
+
+60
+00:03:48,450 --> 00:03:52,890
+this was a big puzzle in the eighteen hundreds and
+
+61
+00:03:52,890 --> 00:03:55,650
+there was a very long running debate even about
+
+62
+00:03:55,650 --> 00:03:58,530
+whether atoms and molecules, as we understand them
+
+63
+00:03:58,530 --> 00:04:01,650
+today, could be thought to exist at all. The
+
+64
+00:04:01,650 --> 00:04:06,300
+argument being that if we imagined systems like
+
+65
+00:04:07,080 --> 00:04:10,500
+the air being composed of a large number of
+
+66
+00:04:10,500 --> 00:04:14,850
+randomly jostling air molecules, why don't we
+
+67
+00:04:14,850 --> 00:04:18,480
+observe all of that random jostling when we work
+
+68
+00:04:18,480 --> 00:04:21,150
+with the air? Instead, we see behaviour that seems
+
+69
+00:04:21,150 --> 00:04:24,240
+to be very stable, very smooth. And the essential
+
+70
+00:04:24,240 --> 00:04:29,010
+answer at the qualitative and handwaving level is
+
+71
+00:04:29,010 --> 00:04:31,320
+that there are just so many molecules that their
+
+72
+00:04:31,320 --> 00:04:34,500
+effects all smooth each other out. And these
+
+73
+00:04:34,500 --> 00:04:38,190
+fluctuations are unobservable at the macroscopic
+
+74
+00:04:38,190 --> 00:04:41,460
+scale. We can easily observe and to quantify how
+
+75
+00:04:41,460 --> 00:04:45,180
+large is large. It's worth more worthwhile to keep
+
+76
+00:04:45,180 --> 00:04:48,210
+in mind Avogadro's number, which is about ten to
+
+77
+00:04:48,210 --> 00:04:51,810
+the power, twenty three, about a thousand billion
+
+78
+00:04:51,810 --> 00:04:55,350
+billion or ten thousand billion billion in round
+
+79
+00:04:55,350 --> 00:05:00,570
+numbers. That is the number of watermill. He rules
+
+80
+00:05:00,990 --> 00:05:04,920
+that there are in 18 grams of water, which is not
+
+81
+00:05:04,920 --> 00:05:07,710
+very much. So we're talking about an enormous
+
+82
+00:05:10,020 --> 00:05:13,230
+number of degrees of freedom in the systems that
+
+83
+00:05:13,230 --> 00:05:16,080
+are governed by statistical physics, which also
+
+84
+00:05:16,770 --> 00:05:21,390
+helps us understand why we have the idea that
+
+85
+00:05:21,390 --> 00:05:26,700
+these are described by random fluctuations in
+
+86
+00:05:26,700 --> 00:05:30,390
+principle using the classical laws of Newtonian
+
+87
+00:05:30,390 --> 00:05:32,370
+mechanics from the sixteen hundreds we could
+
+88
+00:05:32,370 --> 00:05:36,360
+imagine track tracing of the positions and
+
+89
+00:05:36,360 --> 00:05:39,870
+momentum and interactions of all of those thousand
+
+90
+00:05:39,870 --> 00:05:42,450
+billion billion particles in a few drops of water
+
+91
+00:05:43,200 --> 00:05:47,730
+and predicting exactly how those particles and the
+
+92
+00:05:47,730 --> 00:05:50,520
+water as a whole is going to behave. That is
+
+93
+00:05:50,520 --> 00:05:53,130
+simply impossible in practice because there are
+
+94
+00:05:53,130 --> 00:05:56,400
+too many particles to many degrees of freedom to
+
+95
+00:05:56,400 --> 00:06:01,440
+keep track of. Instead, thanks to the law of large
+
+96
+00:06:01,440 --> 00:06:06,360
+numbers that we will see in the lecture notes for
+
+97
+00:06:06,360 --> 00:06:09,180
+this week, we can really
+
+98
+00:06:11,310 --> 00:06:14,640
+make the approximation that the behavior of all
+
+99
+00:06:14,640 --> 00:06:17,310
+those particles is just randomly fluctuating
+
+100
+00:06:17,580 --> 00:06:23,490
+around some collective average in this turns out
+
+101
+00:06:23,760 --> 00:06:28,290
+to give both accurate or both correct results that
+
+102
+00:06:28,290 --> 00:06:32,880
+are very precise and very accurate. And this is
+
+103
+00:06:34,920 --> 00:06:37,140
+perhaps remarkable, but we will take advantage of
+
+104
+00:06:37,140 --> 00:06:41,460
+it to learn about all sorts of different systems
+
+105
+00:06:41,460 --> 00:06:44,160
+throughout the course of this term. Again, relying
+
+106
+00:06:44,160 --> 00:06:47,670
+on this law of large numbers and the the related
+
+107
+00:06:47,670 --> 00:06:52,050
+central limit theorem that will put this
+
+108
+00:06:52,050 --> 00:06:55,800
+discussion on an actual mathematical basis rather
+
+109
+00:06:55,800 --> 00:06:58,860
+than the very qualitative handwaving overview that
+
+110
+00:06:58,860 --> 00:07:02,070
+I'm getting in this video. So just looking through
+
+111
+00:07:02,070 --> 00:07:07,050
+the few sections that the notes for this week are
+
+112
+00:07:07,050 --> 00:07:10,170
+split up into, the first section is looking at
+
+113
+00:07:11,100 --> 00:07:13,620
+some probability fundamentals, the concept of
+
+114
+00:07:14,310 --> 00:07:17,880
+experiments, measurement, outcome and probability
+
+115
+00:07:17,880 --> 00:07:21,030
+and how those are all interrelated and.
+
+116
+00:07:23,040 --> 00:07:26,700
+I will say, just keeping an eye on the big picture
+
+117
+00:07:26,700 --> 00:07:30,420
+and looking forward, the idea of experiment is
+
+118
+00:07:31,410 --> 00:07:34,800
+what underlies the so-called statistical ensembles,
+
+119
+00:07:35,340 --> 00:07:38,670
+that the module as a whole are organized around
+
+120
+00:07:39,810 --> 00:07:41,490
+things that are called the micro, canonical and
+
+121
+00:07:41,940 --> 00:07:45,230
+canonical ensemble and grand canonical ensemble,
+
+122
+00:07:45,840 --> 00:07:49,890
+all of which are based on the idea that an
+
+123
+00:07:49,890 --> 00:07:52,920
+experiment can consist of just getting a bunch of
+
+124
+00:07:52,920 --> 00:07:55,530
+degrees of freedom together, a bunch of molecules,
+
+125
+00:07:55,950 --> 00:07:58,770
+letting them evolve for some amount of time,
+
+126
+00:07:58,800 --> 00:08:02,970
+governed by Newton's laws, for example, and then
+
+127
+00:08:04,020 --> 00:08:06,780
+measuring the some aspect of the state of the
+
+128
+00:08:06,780 --> 00:08:12,060
+resulting system that that framework applied to
+
+129
+00:08:12,060 --> 00:08:15,090
+these probability fundamentals provides the
+
+130
+00:08:15,090 --> 00:08:18,810
+concept of ensemble that we will then use to
+
+131
+00:08:18,810 --> 00:08:23,220
+analyze ideal gases, quantum gases and all sorts
+
+132
+00:08:23,220 --> 00:08:28,110
+of of systems throughout this module right here.
+
+133
+00:08:28,230 --> 00:08:31,290
+We're going to be using these concepts of
+
+134
+00:08:31,710 --> 00:08:37,260
+probability and outcome to define some familiar,
+
+135
+00:08:37,280 --> 00:08:40,620
+quite hopefully familiar quantities like the mean
+
+136
+00:08:40,620 --> 00:08:45,470
+and standard deviation or variance of a
+
+137
+00:08:45,480 --> 00:08:49,410
+probability space, which leads to the law of large
+
+138
+00:08:49,410 --> 00:08:53,760
+numbers. The the fact that a empirical observed
+
+139
+00:08:53,970 --> 00:08:57,240
+arithmetic average over many repeated experiments
+
+140
+00:08:58,200 --> 00:09:03,210
+reproduces the theoretical mean that is predicted
+
+141
+00:09:03,540 --> 00:09:06,390
+by the probabilities themselves of the
+
+142
+00:09:06,390 --> 00:09:10,320
+mathematical level, as well as the central limit
+
+143
+00:09:10,320 --> 00:09:17,190
+theorem that governs the behavior of systems when
+
+144
+00:09:17,400 --> 00:09:22,830
+large numbers of particles are are all at play.
+
+145
+00:09:24,660 --> 00:09:29,700
+And we will use a few example applications to
+
+146
+00:09:29,700 --> 00:09:32,490
+illustrate aspects of the central limit theorem
+
+147
+00:09:32,880 --> 00:09:38,370
+and the the way in which repeated experiments can
+
+148
+00:09:39,360 --> 00:09:41,790
+provide that sort of smoothing or averaging out
+
+149
+00:09:41,790 --> 00:09:46,590
+process that leads to these very precise
+
+150
+00:09:47,730 --> 00:09:53,120
+mathematical approximations, even when the the
+
+151
+00:09:53,160 --> 00:09:55,590
+large and limit of the number of degrees of
+
+152
+00:09:55,590 --> 00:09:59,280
+freedom is not necessarily as large as 10 to the
+
+153
+00:09:59,280 --> 00:10:02,070
+power. Twenty three. So one of those examples is
+
+154
+00:10:02,520 --> 00:10:05,040
+looking at the game of roulette and thinking about
+
+155
+00:10:05,040 --> 00:10:09,150
+how much we or how likely we are to win or lose a
+
+156
+00:10:09,150 --> 00:10:12,630
+certain amount of money when playing a game of
+
+157
+00:10:12,630 --> 00:10:17,040
+roulette after some number of spins of the
+
+158
+00:10:17,040 --> 00:10:21,060
+roulette wheel. The second example being the case
+
+159
+00:10:21,060 --> 00:10:27,060
+of a random walker or an object that can move
+
+160
+00:10:27,060 --> 00:10:31,440
+randomly, which is a very versatile way of
+
+161
+00:10:31,440 --> 00:10:36,120
+modeling all sorts of physical phenomena. We'll be
+
+162
+00:10:36,120 --> 00:10:39,510
+looking at the very simplest case of a random
+
+163
+00:10:39,510 --> 00:10:42,450
+walker that can just take steps of a fixed length,
+
+164
+00:10:42,720 --> 00:10:46,470
+either to the right on a line or to the left on a
+
+165
+00:10:46,470 --> 00:10:50,340
+line, which, when
+
+166
+00:10:52,500 --> 00:10:55,500
+a sufficient number of those steps are taken, can
+
+167
+00:10:55,500 --> 00:10:58,440
+both be analyzed by the central limit theorem and
+
+168
+00:10:58,440 --> 00:11:02,730
+illustrates the process of diffusion and the law
+
+169
+00:11:02,730 --> 00:11:07,890
+of diffusion that turns out to be very general and
+
+170
+00:11:07,890 --> 00:11:12,480
+will be revisited in the computer project in a few
+
+171
+00:11:12,480 --> 00:11:16,290
+weeks where we will see how that law of diffusion
+
+172
+00:11:16,290 --> 00:11:20,730
+can break down, which is associated with the
+
+173
+00:11:20,850 --> 00:11:23,910
+applicability of the central limit theorem where
+
+174
+00:11:23,910 --> 00:11:25,980
+that comes from and what that produces. But for
+
+175
+00:11:25,980 --> 00:11:30,000
+now, let's start with the the basic fundamentals
+
+176
+00:11:30,000 --> 00:11:34,980
+of the probability central limit theorem and how
+
+177
+00:11:34,980 --> 00:11:37,950
+that is all related to the law of ordinary
+
+178
+00:11:37,950 --> 00:11:41,130
+diffusion in very general circumstances.
