@@ -6,6 +6,7 @@
 *out
 *toc
 *.bbl
+*.png
 *.pdf
 *.txt
 *.mp4
