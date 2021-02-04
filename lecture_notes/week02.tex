@@ -7,26 +7,28 @@
 \addcontentsline{toc}{section}{Week 2: Micro-canonical ensemble}
 \section*{Week 2: Micro-canonical ensemble}
 
-\subsection{Statistical ensembles}
+\subsection{Statistical ensembles and thermodynamic equilibrium}
 We begin this week by developing the concept of \textit{statistical ensembles} (introduced by \href{https://en.wikipedia.org/wiki/Josiah_Willard_Gibbs}{J.\ Willard Gibbs} in the early 1900s), building on the probability foundations we laid last week.
 As forecast last week, we will be interested in `experiments' that simply allow a collection of degrees of freedom to evolve in time, subject to certain constraints.
 At a given time $t_1$, the disposition of these degrees of freedom defines the state $\om_1$ of the system.
-To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) evenly spaced along a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
+To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) arranged along a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
 What information would characterize the state of $N$ hydrogen (H$_2$) molecules in a container?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
 
 At a different time $t_2$, the system's state $\om_2$ is generally different from $\om_1$.
-However, there are some \textit{measurements} we can perform on these states that never change as the system evolves in time.
-These measurements define \textit{conserved quantities}, an important example of which is the (\href{https://en.wikipedia.org/wiki/Internal_energy}{internal}) energy $E$ of an isolated system,
+However, there are some measurements we can perform on these states that always produce the same outcome as the system evolves in time.
+These measurements define \textit{conserved quantities}, an important example of which is the total energy $E$ \textit{inside} an isolated (or `closed') system,
 \begin{equation*}
   E(\om_1) = E(\om_2).
 \end{equation*}
-The conservation of an isolated system's energy is part of the \textbf{first law of thermodynamics}, which we will state more fully later in the module when we consider non-isolated systems.
+The conservation of energy is presumably a familiar concept, and you may also know that it can be rigorously proven through \href{https://en.wikipedia.org/wiki/Emmy_Noether}{Emmy Noether}'s theorem.\footnote{This proof holds only in `flat' space-time as opposed to the curved space-time manifolds than arise in general relativity---which is far beyond the scope of this module.}
+Because statistical physics was first developed when conservation of energy was primarily an empirical observation rather than a proven result, it was given a more grandiose name: the \textbf{first law of thermodynamics}.
+Another way of stating the first law is that any change in the internal energy of one particular system \Om must be matched by an equal and opposite change in the energy of some other system(s) with which \Om is in contact.
+We will return to this formulation of the first law in future weeks.
 
-\newpage % WARNING: FORMATTING BY HAND
-Returning to the \textbf{examples} above, suppose the spin system is placed in an external magnetic field.
+For now, let's return to the \textbf{examples} above, and suppose that the spin system is placed in an external magnetic field.
 If a spin is parallel to the field, it contributes energy $H$ to the total energy $E$ of the system.
 If a spin is anti-parallel to the field, it instead contributes energy $-H$.
 What is the total energy $E$ of a system of $N$ spins in a state with $n_+$ spins parallel to the field and $n_- = N - n_+$ anti-parallel to it?
@@ -35,7 +37,7 @@ How many of the $2^8 = 256$ states of the spin system have this energy?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
-For the $N$ hydrogen molecules in a container, we can write down a simple expression for the energy $E$ by treating each molecules as a point-like particle, with no size or structure.
+For the $N$ hydrogen molecules in a container, we can write down a simple expression for the energy $E$ by treating each molecules as a \textit{point-like particle}, with no size or structure.
 In this case each molecule contributes only its kinetic energy to $E$,
 \begin{equation*}
   E = \frac{m}{2} \sum_{i = 1}^N \vec{v}_i^{\,2} = \frac{1}{2m} \sum_{i = 1}^N \vec{p}_i^{\,2},
@@ -48,6 +50,25 @@ As emphasized in last week's introduction, we treat the time evolution of the sy
 \end{equation*}
 This attitude is adopted as a matter of practicality rather than one of principle.
 In principle, Newton's laws would allow us to exactly compute the time evolution of (say) $\sim$$10^{23}$ hydrogen molecules, by specifying $\sim$$10^{23}$ initial conditions and solving $\sim$$10^{23}$ differential equations.
+Since we cannot hope to write down so much information or carry out so many computations, we instead apply probability theory in order to analyze these systems.
+
+\begin{shaded}
+  This leads us to the following core definition: A \textbf{statistical ensemble} is the set of all states $\Om = \left\{\om_1, \om_2, \cdots\right\}$ that a system can possibly adopt through its time evolution.
+  Each state $\om_i$ has some probability $p_i$ of being adopted by the system, so we can identify a statistical ensemble as a probability space.
+\end{shaded}
+
+Because these states $\om_i$ depend on the `microscopic' degrees of freedom that compose the overall system, we will refer to them as \textbf{micro-states} from now on.
+The fact that time evolution cannot change any conserved quantities, as discussed above, means that such conserved quantities characterize statistical ensembles.
+We will define different types of statistical ensemble, which depend on the specific set of conserved quantities.
+
+\begin{shaded}
+  This week we define a \textbf{micro-canonical ensemble} to be a statistical ensemble characterized by conserved internal energy $E$ and conserved number of degrees of freedom $N$ (which we will call \textbf{particle number} for short).
+\end{shaded}
+
+According to the discussion above, this means that a system governed by the micro-canonical ensemble is \textit{isolated} in the sense that it cannot exchange energy or particles with any other system.
+
+\TODO{model probabilities... equilibrium...}
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
@@ -56,6 +77,18 @@ In principle, Newton's laws would allow us to exactly compute the time evolution
 % ------------------------------------------------------------------
 \newpage % TODO: Placeholder...
 \subsection{Entropy and its properties}
+We can gain insight into thermodynamic equilibrium by considering a famous derived quantity.
+\begin{shaded}
+  The \textbf{entropy} of a statistical ensemble \Om with $M$ micro-states is defined to be
+  \begin{equation}
+    \label{eq:entropy}
+    S = - \sum_{i = 1}^M p_i \log p_i
+  \end{equation}
+  where $p_i$ is the probability for micro-state $\om_i$ to occur.
+\end{shaded}
+
+Because the ensemble \Om is characterized by conserved quantities, the entropy 
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
