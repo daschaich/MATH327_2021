@@ -1,26 +1,53 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 2}
-\renewcommand{\moddate}{Last modified 2 Feb.~2021}
+\renewcommand{\moddate}{Last modified 4 Feb.~2021}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 2: Micro-canonical ensemble}
 \section*{Week 2: Micro-canonical ensemble}
 
-\subsection{First law of thermodynamics}
+\subsection{Statistical ensembles}
 We begin this week by developing the concept of \textit{statistical ensembles} (introduced by \href{https://en.wikipedia.org/wiki/Josiah_Willard_Gibbs}{J.\ Willard Gibbs} in the early 1900s), building on the probability foundations we laid last week.
 As forecast last week, we will be interested in `experiments' that simply allow a collection of degrees of freedom to evolve in time, subject to certain constraints.
 At a given time $t_1$, the disposition of these degrees of freedom defines the state $\om_1$ of the system.
-To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) evenly spaced along a line?
+To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) evenly spaced along a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
 What information would characterize the state of $N$ hydrogen (H$_2$) molecules in a container?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
 
-At a different time $t_2$, the system's state $\om_2$ is most likely different from $\om_1$.
-However, there are some \textit{measurements} we can perform on these states that do not change as the system evolves in time.
-These measurements define \textit{conserved quantities}, an important example of which is the 
+At a different time $t_2$, the system's state $\om_2$ is generally different from $\om_1$.
+However, there are some \textit{measurements} we can perform on these states that never change as the system evolves in time.
+These measurements define \textit{conserved quantities}, an important example of which is the (\href{https://en.wikipedia.org/wiki/Internal_energy}{internal}) energy $E$ of an isolated system,
+\begin{equation*}
+  E(\om_1) = E(\om_2).
+\end{equation*}
+The conservation of an isolated system's energy is part of the \textbf{first law of thermodynamics}, which we will state more fully later in the module when we consider non-isolated systems.
 
+\newpage % WARNING: FORMATTING BY HAND
+Returning to the \textbf{examples} above, suppose the spin system is placed in an external magnetic field.
+If a spin is parallel to the field, it contributes energy $H$ to the total energy $E$ of the system.
+If a spin is anti-parallel to the field, it instead contributes energy $-H$.
+What is the total energy $E$ of a system of $N$ spins in a state with $n_+$ spins parallel to the field and $n_- = N - n_+$ anti-parallel to it?
+What is $E$ for the representative $N = 8$-spin state you wrote down above?
+How many of the $2^8 = 256$ states of the spin system have this energy?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+For the $N$ hydrogen molecules in a container, we can write down a simple expression for the energy $E$ by treating each molecules as a point-like particle, with no size or structure.
+In this case each molecule contributes only its kinetic energy to $E$,
+\begin{equation*}
+  E = \frac{m}{2} \sum_{i = 1}^N \vec{v}_i^{\,2} = \frac{1}{2m} \sum_{i = 1}^N \vec{p}_i^{\,2},
+\end{equation*}
+where $\vec v_i$ is the velocity of the $i$th molecule, $\vec p_i = m \vec v_i$ is its momentum, and all molecules have exactly the same mass $m$.
+
+As emphasized in last week's introduction, we treat the time evolution of the system as a stochastic process in which the system probabilistically adopts a sequence of states $\om_i \in \Om$:
+\begin{equation*}
+  \om_1 \lra \om_2 \lra \om_3 \lra \om_4 \lra \cdots
+\end{equation*}
+This attitude is adopted as a matter of practicality rather than one of principle.
+In principle, Newton's laws would allow us to exactly compute the time evolution of (say) $\sim$$10^{23}$ hydrogen molecules, by specifying $\sim$$10^{23}$ initial conditions and solving $\sim$$10^{23}$ differential equations.
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
