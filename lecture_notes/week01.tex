@@ -147,7 +147,7 @@ what are the probabilities $p_{\text{equal}}$ and $p_{\text{diff}}$ for the two 
 \end{mdframed}
 
 \begin{minipage}{0.4\textwidth}
-  \includegraphics[width=0.75\textwidth]{figs/roulette.pdf}
+  \includegraphics[width=0.75\textwidth]{figs/week01_roulette.pdf}
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
   The standard European roulette wheel shown to the left (\href{https://www.vecteezy.com/vector-art/658761-casino-roulette-wheel}{source}) has 37 pockets labelled ``0'' through ``36''.
@@ -366,7 +366,7 @@ What are the six $P_{\text{integ}}$ and $P_{\text{const}}$?
 \end{mdframed}
 You can check your results against those plotted below, which come from \href{https://github.com/daschaich/MATH327_2021/blob/master/lecture_notes/week01_prob.py}{this python code} that is available for you to peruse, run for different $N$ or modify.
 \begin{center}
-  \includegraphics[width=\textwidth]{figs/roulette_prob.pdf}
+  \includegraphics[width=\textwidth]{figs/week01_roulette_prob.pdf}
 \end{center}
 % ------------------------------------------------------------------
 
@@ -508,16 +508,16 @@ This is a particular realization of a very general result.
 The diffusion constant $D = 2\sqrt{\frac{pq}{\De t}}$ that we computed above is specific to the current case of a fixed-step-length random walk in one dimension.
 The figure below illustrates why this behavior is called diffusion.
 \begin{center}
-  \includegraphics[width=0.45\textwidth]{figs/diff_zero.pdf}
+  \includegraphics[width=0.45\textwidth]{figs/week01_diff_zero.pdf}
 \end{center}
 This figure shows probability distributions $p(x)$ (computed below) for the special case $p = q = \frac{1}{2}$ where $\vdr = 0$, so the expectation value is always $\vev{x} = 0$ for any walk time $t$.
 However, as time goes on, there is a steady decrease in the probability that any given walker will end up at its starting point $x = 0$.\footnote{As in \secref{sec:CLT}, we can extract this probability by integrating the distribution $p(x)$ over the interval $-0.5 \leq x \leq 0.5$.}
 Instead, the probability distribution spreads (or \textit{diffuses}) outward, leading to a constant (`one-sigma' or 68\%) probability that the walker remains within the steadily increasing interval $-D\sqrt{t} \leq x \leq D\sqrt{t}$.
 
 Except in the trivial cases $p = 0$ or $q = 0$, this same diffusive phenomenon occurs when the drift velocity is non-zero.
-This is shown in the two figures below, which compare the case of a low but non-zero drift velocity on the left with a high drift velocity on the right. \\
+This is shown in the two figures below, which compare the case of a low but non-zero drift velocity on the left with a high drift velocity on the right.
 \begin{center} % Don't need centering, but this will provide consistent vertical spacing
-  \includegraphics[width=0.45\textwidth]{figs/diff_low.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/diff_high.pdf}
+  \includegraphics[width=0.45\textwidth]{figs/week01_diff_low.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/week01_diff_high.pdf}
 \end{center}
 In the figure on the left, each individual probability distribution looks similar to the corresponding one for $\vdr = 0$, but now their central peaks (and expectation values $\vev{x}$) drift steadily to the right.
 The distributions in the figure on the right look a bit different, but still diffuse to exhibit shorter and broader peaks as time goes on.
