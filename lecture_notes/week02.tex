@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 2}
-\renewcommand{\moddate}{Last modified 4 Feb.~2021}
+\renewcommand{\moddate}{Last modified 5 Feb.~2021}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \phantomsection
@@ -11,7 +11,7 @@
 We begin this week by developing the concept of \textit{statistical ensembles} (introduced by \href{https://en.wikipedia.org/wiki/Josiah_Willard_Gibbs}{J.\ Willard Gibbs} in the early 1900s), building on the probability foundations we laid last week.
 As forecast last week, we will be interested in `experiments' that simply allow a collection of degrees of freedom to evolve in time, subject to certain constraints.
 At a given time $t_1$, the disposition of these degrees of freedom defines the state $\om_1$ of the system.
-To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) arranged along a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
+To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) arranged in a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
 What information would characterize the state of $N$ hydrogen (H$_2$) molecules in a container?
 \begin{mdframed}
   \ \\[100 pt]
@@ -49,17 +49,18 @@ As emphasized in last week's introduction, we treat the time evolution of the sy
   \om_1 \lra \om_2 \lra \om_3 \lra \om_4 \lra \cdots
 \end{equation*}
 This attitude is adopted as a matter of practicality rather than one of principle.
-In principle, Newton's laws would allow us to exactly compute the time evolution of (say) $\sim$$10^{23}$ hydrogen molecules, by specifying $\sim$$10^{23}$ initial conditions and solving $\sim$$10^{23}$ differential equations.
+In principle, Newton's laws would allow us to exactly predict the time evolution of (say) $\sim$$10^{23}$ hydrogen molecules, but only by specifying $\sim$$10^{23}$ initial conditions and solving $\sim$$10^{23}$ differential equations.
 Since we cannot hope to write down so much information or carry out so many computations, we instead apply probability theory in order to analyze these systems.
 
 \begin{shaded}
   This leads us to the following core definition: A \textbf{statistical ensemble} is the set of all states $\Om = \left\{\om_1, \om_2, \cdots\right\}$ that a system can possibly adopt through its time evolution.
-  Each state $\om_i$ has some probability $p_i$ of being adopted by the system, so we can identify a statistical ensemble as a probability space.
+  Each state $\om_i$ has some probability $p_i$ of being adopted by the system, so we can recognize a statistical ensemble as a probability space.
 \end{shaded}
 
 Because these states $\om_i$ depend on the `microscopic' degrees of freedom that compose the overall system, we will refer to them as \textbf{micro-states} from now on.
+From last week's definition of probability, we have the requirement $\sum_i p_i = 1$, which simply means that the system must be in \textit{some} micro-state at any point in time.
 The fact that time evolution cannot change any conserved quantities, as discussed above, means that such conserved quantities characterize statistical ensembles.
-We will define different types of statistical ensemble, which depend on the specific set of conserved quantities.
+We will define different types of statistical ensemble that depend on the specific set of conserved quantities.
 
 \begin{shaded}
   This week we define a \textbf{micro-canonical ensemble} to be a statistical ensemble characterized by conserved internal energy $E$ and conserved number of degrees of freedom $N$ (which we will call \textbf{particle number} for short).
@@ -67,27 +68,64 @@ We will define different types of statistical ensemble, which depend on the spec
 
 According to the discussion above, this means that a system governed by the micro-canonical ensemble is \textit{isolated} in the sense that it cannot exchange energy or particles with any other system.
 
-\TODO{model probabilities... equilibrium...}
+Now that the micro-canonical ensemble is defined, we can connect it to our intuition from everyday physical systems.
+Let's consider a collection of particles moving around and bouncing (or `\textit{scattering}') off each other in a sealed container.
+To a first approximation, this should describe the behaviour of air in a room, which our lived experience indicates is spread quite uniformly throughout the room in a way that is stable as time passes.
+We do not expect all the air in a room to be concentrated in any one corner, nor do we expect strong collective gusts of wind without some clear external influence.
 
-\TODO{Being written...}
-% ------------------------------------------------------------------
+These qualitative expectations illustrate the idea of \textbf{thermodynamic equilibrium}, an axiomatic concept in statistical physics.\footnote{Our expectation that physical systems generically evolve towards thermodynamic equilibrium as time passes is more formally expressed as the \href{https://en.wikipedia.org/wiki/Ergodic_hypothesis}{ergodic hypothesis}.}
+We can mathematically define thermodynamic equilibrium through the probabilities $p_i$ that appear in the micro-canonical ensemble.
 
-
-
-% ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
-\subsection{Entropy and its properties}
-We can gain insight into thermodynamic equilibrium by considering a famous derived quantity.
 \begin{shaded}
-  The \textbf{entropy} of a statistical ensemble \Om with $M$ micro-states is defined to be
+  A micro-canonical system \Om with $M$ micro-states $\om_i$ is in thermodynamic equilibrium if and only if all probabilities $p_i$ are equal.
+  If $M$ is finite, the requirement $\sum_i p_i = 1$ implies
   \begin{equation}
-    \label{eq:entropy}
-    S = - \sum_{i = 1}^M p_i \log p_i
+    \label{eq:micro_equil}
+    p_i = \frac{1}{M}.
   \end{equation}
-  where $p_i$ is the probability for micro-state $\om_i$ to occur.
 \end{shaded}
 
-Because the ensemble \Om is characterized by conserved quantities, the entropy 
+The full meaning and significance of this definition are not immediately obvious, and we will continue exploring them through consideration of derived quantities such as entropy and temperature.
+First, we emphasize that this equilibrium is indeed \textit{dynamic}: There is not a single `equilibrium state' that the system approaches; instead, the system continues probabilistically adopting different states as it evolves in time.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Entropy and its properties}
+We can gain further insight into thermodynamic equilibrium by considering a famous derived quantity.
+\begin{shaded}
+  The \textbf{entropy} of a statistical ensemble \Om with a finite number of micro-states $M$ is defined to be
+  \begin{equation}
+    \label{eq:entropy}
+    S = - \sum_{i = 1}^M p_i \log p_i,
+  \end{equation}
+  where $p_i$ is the probability for micro-state $\om_i$ to occur.
+  Unless otherwise specified, ``$\log$'' indicates the natural logarithm of base $e$.
+\end{shaded}
+
+When the system under consideration is in thermodynamic equilibrium, we expect derived quantities such as the entropy to be stable over time, even as different micro-states are probabilistically adopted.
+This implies that such derived quantities are functions of the conserved quantities that are the same for all micro-states.
+So for the micro-canonical ensemble, the equilibrium entropy $S(E, N)$ would be a function of the conserved energy and particle number.
+
+Of course, by inserting \eq{eq:micro_equil} into \eq{eq:entropy} you can quickly compute a simple expression for the entropy of a micro-canonical ensemble in thermodynamic equilibrium:
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+%\begin{equation}
+%  \label{eq:}
+%  S = - \sum_{i = 1}^M \frac{1}{M} \log \left(\frac{1}{M}\right) = \log M.
+%\end{equation}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent Your result should depend only on the number of micro-states $M$, and diverge as $M \to \infty$.
+While the energy $E$ and particle number $N$ are not explicit in this expression, $\left\{E, N, M\right\}$ are inter-related and might be expressed in terms of each other depending on the particular situation under consideration.
+For example, what is the equilibrium entropy of the system of $N$ spins considered above, if the external magnetic field is turned off (so $H = 0$ implying $E = 0$)?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
+The increase in entropy for an increasing number of micro-states $M$ is a reflection of entropy being an \textit{extensive} quantity. % TODO: as opposed to intrinsic temperature
+Extensive quantities are formally defined by considering how they behave if two isolated systems are brought together to form a combined system.
 
 \TODO{Being written...}
 % ------------------------------------------------------------------
