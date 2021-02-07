@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 2}
-\renewcommand{\moddate}{Last modified 6 Feb.~2021}
+\renewcommand{\moddate}{Last modified 7 Feb.~2021}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \phantomsection
@@ -11,7 +11,7 @@
 We begin this week by developing the concept of \textit{statistical ensembles} (introduced by \href{https://en.wikipedia.org/wiki/Josiah_Willard_Gibbs}{J.\ Willard Gibbs} in the early 1900s), building on the probability foundations we laid last week.
 As forecast last week, we will be interested in `experiments' that simply allow a collection of degrees of freedom to evolve in time, subject to certain constraints.
 At a given time $t_1$, the disposition of these degrees of freedom defines the state $\om_1$ of the system.
-To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either up or down) arranged in a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
+To consider a couple of examples, what would be a representative state for a system of $8$ \textit{spins} (arrows that can point either `up' or `down') arranged in a line?\footnote{We will consider \href{https://en.wikipedia.org/wiki/Spin_model}{spin systems} extensively in this module.  In addition to obeying simple mathematics analogous to flipping coins, spins also serve as good models of physical systems such as magnetic molecules.}
 What information would characterize the state of $N$ hydrogen (H$_2$) molecules in a container?
 \begin{mdframed}
   \ \\[100 pt]
@@ -29,15 +29,15 @@ Another way of stating the first law is that any change in the internal energy o
 We will return to this formulation of the first law in future weeks.
 
 For now, let's return to the \textbf{examples} above, and suppose that the spin system is placed in an external magnetic field.
-If a spin is parallel to the field, it contributes energy $H$ to the total energy $E$ of the system.
-If a spin is anti-parallel to the field, it instead contributes energy $-H$.
-What is the total energy $E$ of a system of $N$ spins in a state with $n_+$ spins parallel to the field and $n_- = N - n_+$ anti-parallel to it?
+If a spin is parallel to the field, it contributes energy $-H$ to the total energy $E$ of the system.
+If a spin is anti-parallel to the field, it instead contributes energy $H > 0$.
+What is the total energy $E$ of a system of $N$ spins in a state with $n_+$ spins anti-parallel to the field and $n_- = N - n_+$ parallel to it?
 What is $E$ for the representative $N = 8$-spin state you wrote down above?
 How many of the $2^8 = 256$ states of the spin system have this energy?
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
-For the $N$ hydrogen molecules in a container, we can write down a simple expression for the energy $E$ by treating each molecules as a \textit{point-like particle}, with no size or structure.
+For the $N$ hydrogen molecules in a container, we can write a simple expression for the energy $E$ by treating each molecule as a \textit{point-like particle}, with no size or structure.
 In this case each molecule contributes only its kinetic energy to $E$,
 \begin{equation*}
   E = \frac{m}{2} \sum_{i = 1}^N \vec{v}_i^{\,2} = \frac{1}{2m} \sum_{i = 1}^N \vec{p}_i^{\,2},
@@ -134,11 +134,10 @@ Extensive quantities are formally defined by considering how they behave if two 
 This is clearest to consider through the specific example shown below of two isolated spin systems, $\Om_1$ \& $\Om_2$, respectively characterized by the corresponding energies $E_1$ \& $E_2$ and particle numbers $N_1$ \& $N_2$.
 To simplify the subsequent analysis, we can assume that both systems are placed in external magnetic fields with the same $H$, so that $E_S = H\left(n_+^{(S)} - n_-^{(S)}\right)$ for $S = 1$, $2$.
 \begin{center}
-  \includegraphics[width=0.7\textwidth]{figs/week02_entropy-separate.pdf} \\
-  \includegraphics[width=0.7\textwidth]{figs/week02_entropy-combo.pdf}
+  \includegraphics[width=0.7\textwidth]{figs/week02_entropy-separate.pdf}
 \end{center}
 
-Considering the top figure above, say system $\Om_1$ has $M_1$ micro-states with probabilities $p_i$ while system $\Om_2$ has $M_2$ micro-states with probabilities $q_k$.
+In the figure above, we can take system $\Om_1$ to have $M_1$ micro-states with probabilities $p_i$ while system $\Om_2$ has $M_2$ micro-states with probabilities $q_k$.
 (As discussed above, $M_S$ is a function of $E_S$ and $N_S$ for $S = 1$, $2$.)
 Then, even without assuming thermodynamic equilibrium, the entropies of the two systems are
 \begin{align*}
@@ -146,7 +145,11 @@ Then, even without assuming thermodynamic equilibrium, the entropies of the two 
   S_2 & = - \sum_{k = 1}^{M_2} q_k \log q_k.
 \end{align*}
 
-Now we keep these two (sub)systems isolated from each other, but consider them as a combined system $\Om_{1+2}$, as illustrated in the bottom figure.
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/week02_entropy-combo.pdf}
+\end{center}
+
+Now we keep these two (sub)systems isolated from each other, but consider them as a combined system $\Om_{1+2}$, as illustrated above.
 In order to compute the entropy $S_{1+2}$, we first need to figure out how many micro-states the combined system could possibly adopt ($M_{1+2}$), and then determine the corresponding probability for each micro-state.
 Both steps are simplified by the systems being isolated from each other, so that they are statistically independent.
 Specifically, with subsystem $\Om_1$ in a fixed micro-state $\om_i^{(1)}$, subsystem $\Om_2$ could independently inhabit any of its $M_2$ micro-states.
@@ -259,7 +262,42 @@ As advertised, we recover \eq{eq:micro_equil} from our new definition of thermod
 
 % ------------------------------------------------------------------
 \subsection{Temperature}
-In the micro-canonical ensemble, 
+In the micro-canonical ensemble, the conserved internal energy and particle number are fundamental, while the temperature (like the entropy) is a derived quantity.
+As discussed below \eq{eq:entropy}, in thermodynamic equilibrium such derived quantities are functions of the conserved $\left\{E, N\right\}$.
+Here we will simply state the definition of temperature for the micro-canonical ensemble, and then check that our definition reproduces our expectations from everyday experiences.
+
+\begin{shaded}
+  In thermodynamic equilibrium, the \textbf{temperature} in the micro-canonical ensemble is defined by
+  \begin{equation}
+    \label{eq:temperature}
+    \frac{1}{T(E)} = \left. \pderiv{S}{E}\right|_N.
+  \end{equation}
+  In words, the (inverse) temperature is set by the dependence of the entropy on the internal energy for a fixed number of degrees of freedom.
+\end{shaded}
+
+Since this definition is not terribly intuitive, we will again gain insight by working through the \textbf{example} of $N$ spins in a line, in an external magnetic field of strength $H$.
+We saw above that $E = H(n_+ - n_-)$ for $n_+$ and $n_- = N - n_+$ spins respectively aligned anti-parallel and parallel to the magnetic field.
+Each (conserved) value of $E$ defines a \textit{different} micro-canonical system, which we can expect to have a different number of micro-states $M(E)$, different entropy $S(E)$ and different temperature $T(E)$.
+We will compute the functional forms of each of these three quantities, starting with $M(E)$.
+
+Even though the total energy $E$ remains fixed as time passes, individual spins can `flip' between pointing parallel or anti-parallel to the magnetic field.
+Such spin flips simply have to come in pairs so that the overall $n_{\pm}$ both remain the same.
+As illustration, what are the spin configurations that produce the minimal energy $E_{\text{min}} \equiv E_0$ and the next-to-minimal $E_1$?
+What are $E_0$ and $E_1$ in terms of $\left\{N, H\right\}$, and how many distinct micro-states are there for each of $E_0$ and $E_1$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+Your results should generalize to
+\begin{equation*}
+  M(E_{n_+}) = \binom{N}{n_+} = \frac{N!}{n_+! \; (N - n_+)!}.
+\end{equation*}
+
+To take the derivative in \eq{eq:temperature}, we need to express $n_+$ in terms of $\left\{E, N\right\}$.
+For this it is convenient to define $\nu = E / H$.
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
