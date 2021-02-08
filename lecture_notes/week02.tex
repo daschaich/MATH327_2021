@@ -30,7 +30,7 @@ We will return to this formulation of the first law in future weeks.
 
 For now, let's return to the \textbf{examples} above, and suppose that the spin system is placed in an external magnetic field.
 If a spin is parallel to the field, it contributes energy $-H$ to the total energy $E$ of the system.
-If a spin is anti-parallel to the field, it instead contributes energy $H > 0$.
+If a spin is anti-parallel to the field, it instead contributes energy $H \geq 0$.
 What is the total energy $E$ of a system of $N$ spins in a state with $n_+$ spins anti-parallel to the field and $n_- = N - n_+$ parallel to it?
 What is $E$ for the representative $N = 8$-spin state you wrote down above?
 How many of the $2^8 = 256$ states of the spin system have this energy?
@@ -264,13 +264,14 @@ As advertised, we recover \eq{eq:micro_equil} from our new definition of thermod
 \subsection{Temperature}
 In the micro-canonical ensemble, the conserved internal energy and particle number are fundamental, while the temperature (like the entropy) is a derived quantity.
 As discussed below \eq{eq:entropy}, in thermodynamic equilibrium such derived quantities are functions of the conserved $\left\{E, N\right\}$.
-Here we will simply state the definition of temperature for the micro-canonical ensemble, and then check that our definition reproduces our expectations from everyday experiences.
+In this section we will state the definition of temperature for the micro-canonical ensemble and apply this to a spin system.
+In the next section we will check that our definition reproduces our expectations from everyday experiences.
 
 \begin{shaded}
   In thermodynamic equilibrium, the \textbf{temperature} in the micro-canonical ensemble is defined by
   \begin{equation}
     \label{eq:temperature}
-    \frac{1}{T(E)} = \left. \pderiv{S}{E}\right|_N.
+    \frac{1}{T} = \left. \pderiv{S}{E}\right|_N.
   \end{equation}
   In words, the (inverse) temperature is set by the dependence of the entropy on the internal energy for a fixed number of degrees of freedom.
 \end{shaded}
@@ -288,23 +289,60 @@ What are $E_0$ and $E_1$ in terms of $\left\{N, H\right\}$, and how many distinc
   \ \\[100 pt]
 \end{mdframed}
 Your results should generalize to
-\begin{equation*}
+\begin{equation}
+  \label{eq:spin_states}
   M(E_{n_+}) = \binom{N}{n_+} = \frac{N!}{n_+! \; (N - n_+)!}.
-\end{equation*}
+\end{equation}
 
 To take the derivative in \eq{eq:temperature}, we need to express $n_+$ in terms of $\left\{E, N\right\}$.
-For this it is convenient to define $\nu = E / H$.
+It will also be convenient to avoid the factorial operation, which is inconvenient to differentiate.
+For $N \gg 1$, we can accomplish both these goals by interpreting the spin system as a random walk (in the abstract `line' of its possible energies $E$) and applying the central limit theorem: \\[-24 pt]
+\begin{itemize}
+  \item Each spin adds to $x \equiv \frac{E}{H} = 2n_+ - N$ a `step' of fixed `length' $\pm 1$.
+        Our task therefore coincides with the special case we considered in \secref{sec:diffusion}.
+  \item We don't impose any preference for positive vs.\ negative energies, meaning $p = q = \frac{1}{2}$ in the language of \secref{sec:diffusion}.
+  \item With $p = q = \frac{1}{2}$, every one of the $2^N$ possible configurations of $N$ spins is equally probable.
+        Therefore the probability $P_{n_+}$ that our overall `walk' ends up producing a configuration with $n_+ = \frac{1}{2}\left(x + N\right)$ is simply the fraction of those $2^N$ configurations with this $n_+$, in which we can recognize \eq{eq:spin_states}:
+        \begin{equation*}
+          P_{n_+} = \frac{1}{2^N} \binom{N}{n_+} = \frac{M(E_{n_+})}{2^N} \qquad \implies \qquad M(E_{n_+}) = 2^N P_{n_+}.
+        \end{equation*}
+  \item To estimate $P_{n_+}$ for $N \gg 1$, we apply the central limit theorem just as in \secref{sec:RW_CLT}.
+        In particular, we can re-use our computation that $\mu = 2p - 1 = 0$ and $\si^2 = 4pq = 1$, finding
+        \begin{equation*}
+          p(x) = \frac{1}{\sqrt{2\pi N}}\exp\left[-\frac{x^2}{2N}\right] = \frac{1}{\sqrt{2\pi N}}\exp\left[-\frac{E^2}{2NH^2}\right]
+        \end{equation*}
+        for the probability \textit{distribution} from which we want to extract $P_{n_+}$.
+  \item We saw in \secref{sec:CLT} that $P_{\text{const}}(n_+) = p(2n_+ - N) \De n_+$ is a good approximation, and $\De n_+ = 1$.
+        Therefore we find
+        \begin{equation}
+          \label{eq:CLT_states}
+          M(E) \approx 2^N p(2n_+ - N) \approx \frac{2^N}{\sqrt{2\pi N}}\exp\left[-\frac{E^2}{2NH^2}\right].
+        \end{equation}
+\end{itemize}
+What is the derivative of the log of \eq{eq:CLT_states} with $N$ fixed?
 \begin{mdframed}
-  \ \\[100 pt]
+  $\displaystyle \left.\pderiv{}{E} \log M\right|_N = $ \\[100 pt]
 \end{mdframed}
 
-\TODO{Being written...}
+You should find the temperature
+\begin{align}
+  T & \approx -\frac{NH^2}{E} &
+  N & \gg 1,
+\end{align}
+which in several ways does \textit{not} seem to match our expectations from everyday experiences: This $T$ diverges as $E \to 0$ for $n_+ \approx n_-$, and it is negative whenever $E > 0$ (corresponding to $n_+ > n_-$).\footnote{You can check that $T < 0$ whenever the number of micro-states decreases for larger internal energies, $\pderiv{M}{E} < 0$.  In so-called `natural' systems, larger energies `open up' more possible micro-states, producing $\pderiv{M}{E} > 0$ and a positive temperature.}
+When $H = 0$, we also have $E = 0$ and $T$ is ill-defined.
+Restricting our attention to $H > 0$, with $n_+ < n_-$ producing a positive temperature, we also see that this temperature cannot vanish.
+It is minimized by the most-negative energy you found above, $T_{\text{min}} = H > 0$ for $E_{\text{min}} = -NH$.
+The non-zero minimum temperature is specific to spin systems, while some of the other oddities result from the micro-canonical approach more generally.
+This will motivate turning to the canonical ensemble next week, but first we can check that at least some aspects of the temperature defined in \eq{eq:temperature} do match with our everyday expectations.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
 \subsection{Heat exchange}
+When a high-temperature system $A$ is brought into thermal contact with a low-temperature system $B$, we expect from everyday experiences that $A$ will cool down heating up $B$.
+We will now check that the micro-canonical definition of temperature in \eq{eq:temperature} predicts this behaviour.
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
