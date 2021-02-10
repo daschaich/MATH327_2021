@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 2}
-\renewcommand{\moddate}{Last modified 7 Feb.~2021}
+\renewcommand{\moddate}{Last modified 10 Feb.~2021}
 \setcounter{section}{2}
 \setcounter{subsection}{0}
 \phantomsection
@@ -132,7 +132,7 @@ For example, what is the equilibrium entropy of the system of $N$ spins consider
 The increase in entropy for an increasing number of micro-states $M$ is a reflection of entropy being an \textit{extensive} quantity. % TODO: as opposed to intrinsic temperature
 Extensive quantities are formally defined by considering how they behave if two isolated systems are \textit{analyzed} as a single system---while still remaining isolated from each other, exchanging neither energy nor particles.
 This is clearest to consider through the specific example shown below of two isolated spin systems, $\Om_1$ \& $\Om_2$, respectively characterized by the corresponding energies $E_1$ \& $E_2$ and particle numbers $N_1$ \& $N_2$.
-To simplify the subsequent analysis, we can assume that both systems are placed in external magnetic fields with the same $H$, so that $E_S = H\left(n_+^{(S)} - n_-^{(S)}\right)$ for $S = 1$, $2$.
+To simplify the subsequent analysis, we can assume that both systems are placed in external magnetic fields with the same $H$, so that $E_S = H\left(n_+^{(S)} - n_-^{(S)}\right)$ for $S \in \left\{1, 2\right\}$.
 \begin{center}
   \includegraphics[width=0.7\textwidth]{figs/week02_entropy-separate.pdf}
 \end{center}
@@ -177,7 +177,7 @@ You should find that the entropies of the two isolated subsystems add up to form
   \textbf{Extensive} quantities are \href{https://goldbook.iupac.org/terms/view/E02281}{defined} to be those that add up across independent subsystems.
   Examples include the energy, particle number and entropy as shown above.
   This can be contrasted with \textbf{intensive} quantities, which are \href{https://goldbook.iupac.org/terms/view/I03074}{defined} to be independent of the extent of the system (and hence the same for subsystems as for the combined system).
-  We will see an example of this next week. % External magnetic field strength $H$ is control parameter rather than system property...
+  We will see an example of this below. % External magnetic field strength $H$ is control parameter rather than system property...
   It is possible for quantities to be neither extensive nor intensive.
 \end{shaded}
 
@@ -196,7 +196,7 @@ is the same for every combined micro-state.
 
 
 % ------------------------------------------------------------------
-\subsubsection{Second law of thermodynamics}
+\subsubsection{\label{sec:second_law}Second law of thermodynamics}
 Let's continue considering the two spin (sub)systems discussed above, with one significant change: We suppose the two subsystems are now able to exchange energy (but not particles) with each other.
 We'll say they are in \textit{thermal contact} with each other, rather than being fully isolated.
 This is illustrated by the figure below:
@@ -214,11 +214,12 @@ Considering a micro-state in which the $N_1$ spins contribute energy $e_1$ to th
 Our work above implies there are $M_{e_1} = M_{e_1}^{(1)} M_{E - e_1}^{(2)}$ micro-states providing this particular distribution of energies, where $M_{e_1}^{(1)}$ is the number of micro-states of the formerly isolated subsystem $\Om_1$ with energy $e_1$, and $M_{E - e_1}^{(2)}$ similarly corresponds to $\Om_2$ with energy $E - e_1$.
 We also know that it's possible to have $e_1 = E_1$, since that's the initial energy of $\Om_1$ before it was brought into thermal contact with $\Om_2$.
 When $e_1 = E_1$, we have $M_{e_1} = M_1 M_2$, covering all the micro-states of the combined system when the two subsystems were isolated.
-\textit{In addition}, we also have to count any other microstates for which $e_1 \ne E_1$:
-\begin{equation*}
+\textit{In addition}, we also have to count any other micro-states for which $e_1 \ne E_1$:
+\begin{equation}
+  \label{eq:micro_sum}
   M = \sum_{e_1} M_{e_1}^{(1)} M_{E - e_1}^{(2)} = M_1 M_2 + \sum_{e_1 \ne E_1} M_{e_1}^{(1)} M_{E - e_1}^{(2)} \geq M_1 M_2.
-\end{equation*}
-(It could be that $e_1 = E_1$ is the only possibility.)
+\end{equation}
+Equality holds when $e_1 = E_1$ is the only possibility, which is an extremely special case.
 This is all we can say without specifying more details of a particular example, but it allows us to obtain a famous result for the total entropy $S$ of \Om \textit{in thermodynamic equilibrium}:
 \begin{mdframed}
   $S = \log M \geq $ \\[100 pt]
@@ -230,8 +231,10 @@ This is all we can say without specifying more details of a particular example, 
     S \geq S_{1 + 2} = S_1 + S_2.
   \end{equation*}
   In words, whenever isolated (sub)systems in thermodynamic equilibrium are brought into thermal contact with each other and allowed to exchange energy, the total entropy of the overall system can never decrease.
+  Indeed, it generically increases except in extremely special cases.
 \end{shaded}
 
+Though we won't go through the more general derivation here, it turns out that the total entropy never decreases (and generically increases) as time passes, under \textit{any} circumstances.
 This has many far-reaching consequences, the first of which is a more general definition of thermodynamic equilibrium that (unlike \eq{eq:micro_equil}) will also apply when we consider statistical ensembles other than the micro-canonical ensemble.
 For simplicity we assume that any system under consideration has a finite number of micro-states, which means that its entropy is bounded from above.
 To motivate the definition below, note that the overall system \Om may have undergone an equilibration process to reach its thermodynamic equilibrium after its two (independently equilibrated) subsystems were brought into thermal contact---and in this process the entropy was non-decreasing.
@@ -334,15 +337,72 @@ When $H = 0$, we also have $E = 0$ and $T$ is ill-defined.
 Restricting our attention to $H > 0$, with $n_+ < n_-$ producing a positive temperature, we also see that this temperature cannot vanish.
 It is minimized by the most-negative energy you found above, $T_{\text{min}} = H > 0$ for $E_{\text{min}} = -NH$.
 The non-zero minimum temperature is specific to spin systems, while some of the other oddities result from the micro-canonical approach more generally.
-This will motivate turning to the canonical ensemble next week, but first we can check that at least some aspects of the temperature defined in \eq{eq:temperature} do match with our everyday expectations.
+This will motivate turning to the canonical ensemble next week, but first we can check that some aspects of the temperature defined in \eq{eq:temperature} do match our everyday expectations.
+These include the temperature being \textit{intensive} (independent of $N$) since $\vev{E} \propto N$ from \eq{eq:RWmean}, as well as its implications for heat exchange.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
 \subsection{Heat exchange}
-When a high-temperature system $A$ is brought into thermal contact with a low-temperature system $B$, we expect from everyday experiences that $A$ will cool down heating up $B$.
-We will now check that the micro-canonical definition of temperature in \eq{eq:temperature} predicts this behaviour.
+In the `natural' positive-temperature regime of the spin system considered above, we see that larger (i.e., less-negative) energies produce higher temperatures.
+This direct relation between energy and temperature is very generic, and we will study it in more detail when considering thermodynamic cycles in a few weeks.
+For now, considering unspecified systems that exhibit this behaviour, let's ask what would happen if we take two initially isolated micro-canonical systems ($\Om_A$ and $\Om_B$ with temperatures $T_A$ and $T_B$ in thermodynamic equilibrium) and bring them into thermal contact.
 
-\TODO{Being written...}
+In micro-canonical terms, the temperatures $T_A$ and $T_B$ are derived from the corresponding energies $E_A$ and $E_B$, while thermal contact allows the two systems to exchange energy (but not particles) as non-isolated subsystems of a combined micro-canonical system $\Om_C$.
+Once the two subsystems have been in thermal contact long enough for the combined system to have reached thermodynamic equilibrium, it will have temperature $T_C$.
+We can then re-isolate the two subsystems, which will now have energies $E_A'$ and $E_B'$ with (in thermodynamic equilibrium) temperatures $T_A'$ and $T_B'$.
+This three-step procedure is illustrated below.
+
+\begin{center}
+  \includegraphics[width=0.45\textwidth]{figs/week02_heat-exchange.pdf}
+\end{center}
+
+From everyday experience, we expect that this energy exchange will result in a net flow of energy from the hotter system to the colder system, cooling the former by heating the latter.
+We will now check that the micro-canonical definition of temperature in \eq{eq:temperature} predicts this expected behaviour.
+We define
+\begin{align*}
+  E_i' & = E_i + \De E_i &
+  \left|\frac{\De E_i}{E_i}\right| & \ll 1 &
+  i & \in \left\{A, B\right\},
+\end{align*}
+for simplicity considering the case where the change in energy is relatively small (suggesting that $E_A$ and $E_B$ are not extremely different).
+We also know $\De E_B = -\De E_A$ thanks to conservation of energy.
+
+Equation~\ref{eq:temperature} tells us that we need to consider the entropies as functions of $E_i$ and $E_i'$ in order to connect the temperatures to any flow of energy.
+(Because we don't change the number of particles in each system, we only need to consider the energy dependence of the entropy.)
+We assume that we can expand each of the final entropies $S(E_i')$ in a Taylor series,
+\begin{equation*}
+  S(E_i') = S(E_i + \De E_i) \approx S(E_A) + \left.\pderiv{S}{E}\right|_{E_i} \De E_i,
+\end{equation*}
+neglecting all $\cO\left(\De E_i^2\right)$ terms because we consider relatively small changes in energy.\footnote{The assumption here is that $S(E)$ is continuous and infinitely differentiable, which is not the case at a \textit{first-order phase transition}, where we would need to be more careful.  We will learn about phase transitions towards the end of the term.}
+What is the linearized Taylor series above in terms of the initial temperatures $T_i$?
+\begin{mdframed}
+  \ \\[50 pt]
+\end{mdframed}
+
+From the second law of thermodynamics, we know that the total entropy of these systems can never decrease as time passes:
+\begin{equation}
+  \label{eq:entropy_ineq}
+  S(E_A') + S(E_B') = S(E_A + E_B) \geq S(E_A) + S(E_B).
+\end{equation}
+The fact that re-isolating the two subsystems doesn't change the entropy may be surprising---it's tempting to guess that this procedure might reduce the entropy, by reversing the argument used when the two subsystems were brought into thermal contact in \secref{sec:second_law}.
+The key is that we don't fix $E_A'$, which could have any value from zero to $E_A + E_B$ at the moment when the subsystems are re-isolated.
+Computing the final entropy $S(E_A') + S(E_B')$ therefore requires summing over all possible values of $E_A'$, producing exactly the sum in \eq{eq:micro_sum} for the overall system.
+We will see something similar when we consider `the Gibbs paradox' in a couple of weeks.
+
+\newpage % WARNING: FORMATTING BY HAND
+What do you find when you insert your linearized Taylor series into \eq{eq:entropy_ineq}?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
+Applying conservation of energy should produce
+\begin{equation*}
+  \left(\frac{1}{T_A} - \frac{1}{T_B}\right) \De E_A \geq 0.
+\end{equation*}
+Recalling from \secref{sec:second_law} that equality holds only in extremely special cases, we can identify three possibilities consistent with this result.
+If $T_A > T_B$, then $\left(\frac{1}{T_A} - \frac{1}{T_B}\right)$ is negative and we will generically have $\De E_A < 0$, so that energy flows out of the hotter system $\Om_A$ and into the colder one.
+Similarly, if $T_A < T_B$, we will generically have $\De E_A > 0$, and energy still flows from the hotter system $\Om_B$ into the colder one.
+We can finally conclude that $T_A = T_B$ is the very special case where there is no energy flow, $\De E_i = 0$.
+All of this is exactly what we expected based on everyday experience.
 % ------------------------------------------------------------------
