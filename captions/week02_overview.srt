@@ -1,0 +1,727 @@
+1
+00:00:01,000 --> 00:00:04,680
+Hello and welcome back to week two of the
+
+2
+00:00:05,190 --> 00:00:07,790
+statistical physics module, math 327.
+
+3
+00:00:08,220 --> 00:00:11,610
+This is the overview video for the week, which
+
+4
+00:00:11,610 --> 00:00:14,730
+will aim to serve as an introduction to the
+
+5
+00:00:14,730 --> 00:00:19,560
+lecture notes, doing two things in approximately
+
+6
+00:00:19,560 --> 00:00:23,580
+the next ten minutes. So first goal of this video
+
+7
+00:00:23,580 --> 00:00:28,530
+is to orient this week in the overall scope of the
+
+8
+00:00:28,530 --> 00:00:32,010
+module across the entire term, seeing how it
+
+9
+00:00:32,010 --> 00:00:35,130
+builds on what we went through the previous week,
+
+10
+00:00:35,130 --> 00:00:38,400
+week one, and then how it's going to be built on
+
+11
+00:00:38,400 --> 00:00:41,400
+in turn as we go on and develop things further in
+
+12
+00:00:41,400 --> 00:00:45,000
+the coming weeks. And after looking at that very
+
+13
+00:00:45,000 --> 00:00:48,300
+big picture very abstractly, we'll focus in on
+
+14
+00:00:48,930 --> 00:00:55,230
+some of the main topics in the lecture notes for
+
+15
+00:00:55,260 --> 00:00:58,110
+this week for you to keep an eye out for as you
+
+16
+00:00:58,260 --> 00:01:01,380
+read through those. And then we will come back
+
+17
+00:01:01,380 --> 00:01:04,710
+around to them and just summarize the takeaway
+
+18
+00:01:04,710 --> 00:01:08,550
+points in the separate video after you've gone
+
+19
+00:01:08,550 --> 00:01:12,390
+through those notes. So looking at the big picture,
+
+20
+00:01:13,860 --> 00:01:16,470
+there's going to be what feels like a significant
+
+21
+00:01:16,470 --> 00:01:19,890
+change in style or focus this week compared to
+
+22
+00:01:19,890 --> 00:01:23,670
+last week. So last week we were focusing on the
+
+23
+00:01:23,670 --> 00:01:26,250
+essentials, the essential foundations from
+
+24
+00:01:26,250 --> 00:01:29,850
+probability theory. And this week we are going to
+
+25
+00:01:29,850 --> 00:01:33,930
+start applying those to statistical physics and in
+
+26
+00:01:33,930 --> 00:01:39,780
+particular, statistical ensembles. So this week is
+
+27
+00:01:39,780 --> 00:01:44,460
+going to be sort of the model for much of the rest
+
+28
+00:01:44,460 --> 00:01:47,550
+of the term. We will be looking at three different
+
+29
+00:01:47,550 --> 00:01:51,540
+types of statistical ensembles, all of which have
+
+30
+00:01:52,080 --> 00:01:55,200
+a few basic things in common. First of all, they
+
+31
+00:01:55,200 --> 00:02:00,480
+are grounded or they are based on the probability
+
+32
+00:02:00,480 --> 00:02:04,080
+foundation that we established last week. But now
+
+33
+00:02:04,260 --> 00:02:09,060
+that we are focusing on developing these ensembles
+
+34
+00:02:09,060 --> 00:02:13,740
+as a no more higher level framework and applying
+
+35
+00:02:13,740 --> 00:02:17,970
+that framework to interesting systems and
+
+36
+00:02:17,970 --> 00:02:21,570
+phenomena, that probability theory is going to
+
+37
+00:02:21,570 --> 00:02:23,400
+fade into the background a bit. We'll know it's
+
+38
+00:02:23,400 --> 00:02:25,740
+there providing the foundation for the work we're
+
+39
+00:02:25,740 --> 00:02:29,820
+doing, but we will mostly be focused on exploring
+
+40
+00:02:29,820 --> 00:02:32,550
+and applying the frameworks that are built on top
+
+41
+00:02:32,550 --> 00:02:37,410
+of those foundations. And as I said, that's this
+
+42
+00:02:37,410 --> 00:02:39,390
+is this week is the first example of one of those
+
+43
+00:02:39,390 --> 00:02:42,390
+frameworks in the form of the micro canonical
+
+44
+00:02:42,390 --> 00:02:45,000
+ensemble, which I probably should have mentioned
+
+45
+00:02:45,000 --> 00:02:48,780
+earlier, as it is the title of the week. The other
+
+46
+00:02:49,170 --> 00:02:51,720
+two ensembles we will be looking at in later weeks
+
+47
+00:02:51,720 --> 00:02:54,150
+are called the Canonical Ensemble and Grant
+
+48
+00:02:54,150 --> 00:02:58,440
+Canonical Ensemble, and all three based on the
+
+49
+00:02:58,440 --> 00:03:01,710
+same probability foundations and also all three
+
+50
+00:03:02,070 --> 00:03:06,990
+based on the same qualitative idea that these are
+
+51
+00:03:06,990 --> 00:03:09,780
+mathematical frameworks. Each of these ensembles
+
+52
+00:03:10,680 --> 00:03:12,990
+is a mathematical framework or specifically a
+
+53
+00:03:12,990 --> 00:03:17,280
+probability space that is designed to describe the
+
+54
+00:03:17,280 --> 00:03:21,060
+behaviour of systems that involve large numbers of
+
+55
+00:03:21,060 --> 00:03:24,360
+particles where all use particles interchangeably
+
+56
+00:03:24,360 --> 00:03:27,990
+for degrees of freedom. A bit more formal term. We
+
+57
+00:03:27,990 --> 00:03:30,270
+have large numbers of particles that are evolving
+
+58
+00:03:30,540 --> 00:03:35,890
+in time, subject to certain constraints. And in
+
+59
+00:03:35,910 --> 00:03:38,550
+each of those three cases, micro, canonical,
+
+60
+00:03:38,550 --> 00:03:42,450
+canonical and grand canonical, the detailed form
+
+61
+00:03:42,450 --> 00:03:44,460
+of the constraints will be different, reflecting
+
+62
+00:03:44,460 --> 00:03:47,850
+different physical situations in the micro
+
+63
+00:03:47,850 --> 00:03:51,180
+canonical ensemble. What we have in mind is a
+
+64
+00:03:51,180 --> 00:03:55,350
+system that is completely isolated from the rest
+
+65
+00:03:55,350 --> 00:03:59,040
+of the universe. It has some number of particles
+
+66
+00:03:59,040 --> 00:04:02,970
+that have some amount of energy and because it is
+
+67
+00:04:02,970 --> 00:04:06,210
+isolated, it can exchange neither particles nor
+
+68
+00:04:06,210 --> 00:04:10,980
+energy with its surroundings or with anything else
+
+69
+00:04:10,980 --> 00:04:14,850
+in the universe. So both particle number and
+
+70
+00:04:15,300 --> 00:04:18,420
+energy are conserved quantities for this system
+
+71
+00:04:18,990 --> 00:04:21,900
+and that conservation of energy
+
+72
+00:04:24,390 --> 00:04:29,370
+is hopefully a familiar concept. It was to some
+
+73
+00:04:29,370 --> 00:04:31,860
+extent developed by considering the source of
+
+74
+00:04:31,860 --> 00:04:35,640
+statistical systems. So in this context,
+
+75
+00:04:36,250 --> 00:04:38,730
+conservation of energy in an isolated system is
+
+76
+00:04:38,730 --> 00:04:42,450
+given a rather grand, grand or grandiose sounding
+
+77
+00:04:42,450 --> 00:04:45,930
+name. The first law of thermodynamics, which is
+
+78
+00:04:46,320 --> 00:04:50,940
+one of the things being seen this week, along with
+
+79
+00:04:50,940 --> 00:04:54,170
+the second law that will come to in just a bit.
+
+80
+00:04:55,050 --> 00:04:55,560
+Now,
+
+81
+00:04:58,290 --> 00:05:02,080
+one key both. For the MicroCon article ensemble,
+
+82
+00:05:02,080 --> 00:05:04,120
+as well as all the others, so this is a third
+
+83
+00:05:04,120 --> 00:05:07,300
+thing that all three have in common in addition to
+
+84
+00:05:07,690 --> 00:05:10,000
+their probability foundation and their
+
+85
+00:05:11,200 --> 00:05:14,140
+interpretation as physical systems evolving in
+
+86
+00:05:14,140 --> 00:05:17,800
+time, in addition to both of those, we are only
+
+87
+00:05:17,800 --> 00:05:21,130
+going to be considering these ensembles in what is
+
+88
+00:05:21,130 --> 00:05:26,140
+called thermodynamic equilibrium. And you will see
+
+89
+00:05:26,590 --> 00:05:28,870
+a detailed discussion of thermodynamic equilibrium
+
+90
+00:05:28,870 --> 00:05:32,950
+in the notes, along with two definitions of this
+
+91
+00:05:32,950 --> 00:05:35,710
+concept that are equivalent for the micro
+
+92
+00:05:35,710 --> 00:05:40,090
+canonical ensemble. The big idea is that we are
+
+93
+00:05:40,090 --> 00:05:43,150
+looking at systems that, as they evolve in time,
+
+94
+00:05:43,450 --> 00:05:47,830
+are fairly stable, fairly steady, like the air in
+
+95
+00:05:47,980 --> 00:05:51,310
+this room. There are no wild changes just
+
+96
+00:05:51,310 --> 00:05:55,240
+happening spontaneously with no outside influence.
+
+97
+00:05:56,410 --> 00:05:59,530
+We don't have all the air rushing over to that
+
+98
+00:05:59,530 --> 00:06:03,280
+corner to my right or that corner to my left. At
+
+99
+00:06:03,280 --> 00:06:07,350
+any point, it's all feels very smooth and and
+
+100
+00:06:07,360 --> 00:06:11,680
+steady over time. Of course, that's this is the
+
+101
+00:06:11,680 --> 00:06:14,080
+overview video. This is all the qualitative
+
+102
+00:06:14,530 --> 00:06:19,000
+literally handwaving idea that is then more
+
+103
+00:06:19,000 --> 00:06:21,760
+carefully defined mathematically and elaborated on
+
+104
+00:06:22,570 --> 00:06:28,390
+in the in the lecture notes and based on the micro
+
+105
+00:06:28,390 --> 00:06:31,570
+canonical ensemble in thermodynamic equilibrium.
+
+106
+00:06:32,380 --> 00:06:36,640
+We will after defining that concept mathematically,
+
+107
+00:06:36,640 --> 00:06:40,780
+we will use it to introduce two important derived
+
+108
+00:06:40,780 --> 00:06:44,500
+quantities, at least one of which I'm sure you've
+
+109
+00:06:44,500 --> 00:06:48,640
+heard of. These are first, the entropy and then
+
+110
+00:06:48,640 --> 00:06:52,960
+the temperature. And again, without going into
+
+111
+00:06:52,960 --> 00:06:57,700
+details in this big overview, the fact that both
+
+112
+00:06:57,700 --> 00:07:01,240
+of these are derived quantities might be
+
+113
+00:07:01,630 --> 00:07:04,720
+surprising if you are used to thinking of the
+
+114
+00:07:04,720 --> 00:07:09,250
+temperature as a sort of intrinsic property of
+
+115
+00:07:09,250 --> 00:07:12,640
+some system. So I have in this coffee cup, there
+
+116
+00:07:12,640 --> 00:07:17,230
+are say ten of the twenty five molecules. And I
+
+117
+00:07:17,230 --> 00:07:20,050
+can sort of feel that at this point I've been
+
+118
+00:07:20,050 --> 00:07:22,840
+talking too long and they're relatively cold. The
+
+119
+00:07:22,840 --> 00:07:26,290
+temperature is a very intuitive thing I'm able to
+
+120
+00:07:26,320 --> 00:07:29,020
+pick up on from here. In the micro canonical
+
+121
+00:07:29,020 --> 00:07:31,510
+ensemble, we're thinking of systems that are
+
+122
+00:07:31,510 --> 00:07:34,360
+completely isolated from the environment. So those
+
+123
+00:07:34,360 --> 00:07:36,430
+differ from this coffee cup. I can't just look in
+
+124
+00:07:36,700 --> 00:07:39,520
+feel and say, oh, it's got a unfortunately cold
+
+125
+00:07:39,520 --> 00:07:43,210
+temperature. We have to define the temperature as
+
+126
+00:07:43,210 --> 00:07:47,950
+some mathematical function of the more fundamental
+
+127
+00:07:48,040 --> 00:07:50,680
+quantities that define the ensemble, specifically
+
+128
+00:07:50,980 --> 00:07:55,180
+its energy and its number of particles, number of
+
+129
+00:07:55,180 --> 00:07:58,990
+degrees of freedom, or more generally, the number
+
+130
+00:07:58,990 --> 00:08:03,730
+of states that the system can realize based on
+
+131
+00:08:04,390 --> 00:08:06,880
+those two defining features, the number of degrees
+
+132
+00:08:06,880 --> 00:08:10,930
+of freedom and the amount of energy. And I'll call
+
+133
+00:08:10,930 --> 00:08:14,680
+the individual states that the system can realize
+
+134
+00:08:16,840 --> 00:08:19,990
+those will go by the term microstates going
+
+135
+00:08:19,990 --> 00:08:23,680
+forward because they are descriptions of the whole
+
+136
+00:08:23,680 --> 00:08:26,230
+set of microscopic degrees of freedom in the
+
+137
+00:08:26,230 --> 00:08:31,270
+system. And based on all of those microstates, we
+
+138
+00:08:32,290 --> 00:08:36,010
+define these derived quantities of temperature and
+
+139
+00:08:36,010 --> 00:08:38,470
+entropy, entropy. I suspect
+
+140
+00:08:41,020 --> 00:08:42,940
+many of you have also heard of, though it's a more
+
+141
+00:08:42,940 --> 00:08:45,970
+specialised concept that we intuitively think of
+
+142
+00:08:45,970 --> 00:08:50,500
+measuring the amount of disorder in a system and
+
+143
+00:08:50,500 --> 00:08:54,190
+we will see mathematically what that amounts to in
+
+144
+00:08:54,340 --> 00:08:58,270
+the definition of temperature sorry, the
+
+145
+00:08:58,270 --> 00:09:02,320
+definition of entropy. See how this concept
+
+146
+00:09:02,320 --> 00:09:07,240
+matches on to the number of available states or
+
+147
+00:09:07,240 --> 00:09:09,340
+the number of available available microstates. I
+
+148
+00:09:09,340 --> 00:09:12,760
+should be careful to use the terms of define. And
+
+149
+00:09:12,760 --> 00:09:19,210
+I also want to highlight the example that we will
+
+150
+00:09:19,240 --> 00:09:22,450
+be using throughout this week to illustrate all of
+
+151
+00:09:22,480 --> 00:09:25,750
+these both fundamental concepts and derived
+
+152
+00:09:25,750 --> 00:09:29,440
+quantities. We will be looking at a system of
+
+153
+00:09:29,440 --> 00:09:34,660
+particles where the particles can only take one of
+
+154
+00:09:34,660 --> 00:09:40,510
+two orientations. They can be so they can be sort
+
+155
+00:09:40,510 --> 00:09:44,110
+of pointing up or pointing down is the usual
+
+156
+00:09:44,110 --> 00:09:48,730
+picture. And we have the terminology that we use
+
+157
+00:09:48,730 --> 00:09:52,660
+for this is that these particles are a spin. Each
+
+158
+00:09:52,660 --> 00:09:55,150
+particle is a spin that can have one of two
+
+159
+00:09:55,150 --> 00:10:02,480
+orientations up or down and. This is to some
+
+160
+00:10:02,480 --> 00:10:05,990
+extent an artificial example, because it's very
+
+161
+00:10:05,990 --> 00:10:09,800
+much an oversimplification compared to the sorts
+
+162
+00:10:09,800 --> 00:10:11,900
+of systems we will be interested in later on in
+
+163
+00:10:11,900 --> 00:10:15,560
+the term the air moving in the room or the coffee
+
+164
+00:10:15,560 --> 00:10:18,770
+moving around in my cup. The benefit of spin
+
+165
+00:10:18,770 --> 00:10:20,960
+systems is that the mathematics is extremely
+
+166
+00:10:20,960 --> 00:10:23,740
+simple because there are only two possibilities.
+
+167
+00:10:24,860 --> 00:10:26,930
+The mathematics is essentially the same as that of
+
+168
+00:10:26,930 --> 00:10:31,370
+flipping a coin. And we talked about last week and
+
+169
+00:10:31,370 --> 00:10:34,310
+at the same time, despite being so simple, it's
+
+170
+00:10:34,310 --> 00:10:38,000
+not a terrible approximation for several physical
+
+171
+00:10:38,000 --> 00:10:42,890
+systems, particularly magnetic systems, magnetic
+
+172
+00:10:42,890 --> 00:10:48,740
+molecules or systems of the underlying physics of
+
+173
+00:10:48,740 --> 00:10:53,180
+Ferrol. Magnets can be modeled as simply spins
+
+174
+00:10:53,180 --> 00:10:56,930
+that are either pointing up aligned with a
+
+175
+00:10:56,930 --> 00:11:00,470
+magnetic field or pointing down aligned against a
+
+176
+00:11:00,650 --> 00:11:03,440
+external magnetic field. That external magnetic
+
+177
+00:11:03,440 --> 00:11:07,940
+field introduces a temperature sorry. It
+
+178
+00:11:07,940 --> 00:11:10,850
+introduces an energy for these spins, and that
+
+179
+00:11:10,850 --> 00:11:13,460
+energy in turn defines the corresponding
+
+180
+00:11:13,460 --> 00:11:14,150
+temperature
+
+181
+00:11:17,210 --> 00:11:20,330
+details which you will see in the in the lecture
+
+182
+00:11:20,330 --> 00:11:23,420
+notes. I will summarize in the next video.
