@@ -5,16 +5,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Check distribution
-random.seed(314156)
+random.seed(42)
 nSamples = 100000
 dat = []
 for i in range(0, nSamples):
   dat.append(2.0 * math.sqrt(random.random()))
 
 nbins = 51
-plt.hist(dat, nbins)
+plt.hist(dat, nbins, density=True)
 x = np.arange(0, 2, 0.01)
-y = 2000.0 * x
+y = 0.5 * x
 plt.plot(x, y)
 plt.savefig('hist.png')
 
@@ -22,7 +22,6 @@ plt.savefig('hist.png')
 N_list = [10, 20, 30, 40, 50, 60, 70, 80]
 L = []
 for Nstep in N_list:
-  random.seed(314156)
   L.append(0.0)
   for i in range(0, nSamples):
     d = 0.0
