@@ -87,6 +87,11 @@ plt.plot(gain, prob, 'go', mfc='none', label='Direct')  # Green circles
 plt.plot(gain, integ, 'b+', label='Integrated')         # Blue pluses
 plt.plot(gain, const, 'rx', label='Constant')           # Red x's
 
+# Optionally add probability distribution itself, which should not match
+#x = np.arange(gain[0], gain[N], 0.1)
+#y = CLT(x)
+#plt.plot(x, y, label='Distribution')
+
 # Include zero at bottom without changing auto-scaled top
 bottom, top = plt.ylim()
 plt.ylim(0, top)
