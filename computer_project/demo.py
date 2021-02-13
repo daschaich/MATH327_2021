@@ -4,6 +4,13 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Check versions
+from platform import python_version
+print(python_version())
+print(np.__version__)
+import matplotlib
+print(matplotlib.__version__)
+
 # Check distribution
 random.seed(42)
 nSamples = 100000
@@ -43,8 +50,8 @@ for Nstep in N_list:
   print(Nstep, L[-1])
 
 # Check that walk lengths look reasonable
-plt.clf()
 plt.plot(N_list, L, linestyle='None', marker=".")
+plt.show()
 
 # Fit walk lengths to straight line, L = a * N + b
 output = np.polyfit(N_list, L, 1)
@@ -53,6 +60,7 @@ b=output[1]
 print("a =", a)
 print("b =", b)
 
+plt.plot(N_list, L, linestyle='None', marker=".")
 x = np.arange(0, 80, 0.1)
 p = a * x + b
 plt.plot(x, p)
@@ -70,7 +78,6 @@ c=np.exp(output[1])
 print("alpha =", alpha)
 print("c =", c)
 
-plt.clf()
 plt.plot(N_list, L, linestyle='None', marker=".")
 x = np.arange(0, 80, 0.1)
 p = c * x**alpha
