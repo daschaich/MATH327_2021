@@ -1,0 +1,233 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+\usepackage{framed,color}
+\usepackage{fancybox}
+\usepackage{varwidth}
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\usepackage[framemethod=tikz]{mdframed}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\eq}[1]{Eq.~\ref{#1}}
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Project Part 1}
+\newcommand{\moddate}{Last modified 14 Feb.~2021}
+\begin{center}
+  {\Large \textbf{MATH327: Statistical Physics, Spring 2021}} \\[12 pt]
+  {\Large \textbf{Computer Project \ --- \ Part 1}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+In this first part of the computer project you will numerically analyze ordinary diffusive behaviour in a one-dimensional random walk.
+This will allow you to verify your numerical results by comparing them with exact analytic predictions based on the module's week-1 material.
+The verified numerical methods can then be generalized to consider anomalous diffusion in the second part of the project, where exact analytic predictions will not be available.
+
+There are three exercises below, the first two of which include some background information on pseudo-random numbers and inverse transform sampling.
+While the exercises mention some syntax specific to Python, you may use a different programming option if you prefer.
+A \href{https://tinyurl.com/math327demo}{demo notebook} is provided to illustrate the Python programming tools needed for the project.
+Even running slowly in the cloud via \href{https://repl.it}{repl.it}, the computing for each exercise should complete in a minute or less.
+
+This part of the project is \textbf{due by 23:59 on Tuesday, 2 March}.
+Submit it by file upload \href{https://liverpool.instructure.com/courses/19478/assignments/89666}{on Canvas}.
+\textbf{Both} your answers to the questions below and the code that produces your results must be submitted.
+These can be uploaded as separate files or in a combined file, as you prefer.
+With the exception of Mathematica \texttt{.nb} files, it will be quicker for me to check code submitted in its native format (for example, a \texttt{.py} file for Python code or a \texttt{.m} file for MATLAB code).
+Anonymous marking is turned on, and I will aim to return feedback before the term break in case this may be helpful when working on the second part of the project.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Exercise 1: Pseudo-random numbers}
+\subsection*{Background}
+As discussed in week 1 of the module, statistical physics is based on considering systems that involve some element of randomness.
+Because computer programs are deterministic, it is not possible to use them to generate a truly random sequence of numbers.\footnote{New quantum technologies are being developed as a way to produce truly random numbers.  This is part of the motivation for \href{https://uknqt.ukri.org}{large investments in quantum technologies} around the world.}
+Instead, computer algorithms generate \textit{pseudo}-random numbers, which are entirely sufficient for our purposes.
+
+A sequence of pseudo-random numbers is defined to be a sequence that \textit{looks} random, in the sense that knowing the first $N - 1$ elements in the sequence does not suffice to predict the $N$th element with a high probability of correctness.
+Equivalently, it takes a very long time for the sequence to start repeating itself---such repetition \textit{will} eventually happen, because computers encode numbers in a finite set of bits, which can represent only a finite set of numbers.
+For example, $32$ bits can represent all integers from $0$ through \href{https://en.wikipedia.org/wiki/4,294,967,295}{$2^{32} - 1 \approx 10^9$} while $64$ bits increase the upper bound to $2^{64} - 1 \approx 10^{19}$.
+\href{https://docs.python.org/3/library/random.html}{Python uses the Mersenne Twister algorithm} as its default pseudo-random number generator (PRNG).
+This algorithm can provide $2^{19937} - 1 \approx 10^{6000}$ numbers before its sequence repeats.
+
+We can view the absence of true randomness as a feature rather than a bug.
+Deterministic pseudo-random numbers allow our computer programs to be reproducible up to the (very high) precision of the computer.
+All of the exercises below start by initializing the PRNG with a ``seed'', and after this initialization the PRNG will always produce exactly the same sequence of pseudo-random numbers.
+
+\subsection*{Task}
+Initialize the random number generator with seed $42$.
+In Python, this can be done by calling the function \texttt{random.seed(42)}, as shown in the demo.
+Calling the function \texttt{random.random()} then generates a pseudo-random number $u$ following the uniform distribution
+\begin{equation*}
+  p(u) = \left\{\begin{array}{l}1 \qquad \mbox{for } 0 \leq u < 1 \\
+                                0 \qquad \mbox{otherwise}\end{array}\right. .
+\end{equation*}
+
+What are the exact mean $\mu$ and standard deviation \si of this probability distribution?
+
+\showmarks{2}
+
+For each of the six $R = 10$, $20$, $100$, $200$, $1000$ and $100{,}000$, generate a sequence of $R$ pseudo-random numbers $u_r$ distributed according to $p(u)$.
+Use these to estimate the mean and standard deviation via the law of large numbers,
+\begin{align}
+  \label{eq:mean}
+  \mu & \approx \frac{1}{R} \sum_{r = 1}^R u_r &
+  \si & \approx \sqrt{\frac{1}{R} \sum_{r = 1}^R u_r^2 - \left(\frac{1}{R} \sum_{r = 1}^R u_r\right)^2}.
+\end{align}
+
+How do your numerical results compare to your exact analytic predictions above?
+How do they change if the PRNG is re-seeded for each $R$, compared to using only a single seed for the entire exercise?
+Rounding to four decimal places should suffice for these comparisons.
+
+\showmarks{10}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Exercise 2: Inverse transform sampling}
+\subsection*{Background}
+The uniform distribution is a bit boring.
+Inverse transform sampling is a technique that allows us to consider more interesting probability distributions, while still generating pseudo-random numbers using the \texttt{random.random()} function.
+The idea is illustrated by the sketch below.
+\begin{center}
+  \includegraphics[width=\textwidth]{figs/sampling.pdf}
+\end{center}
+
+In words, we take our uniformly distributed $u_r$ and act on them with some invertible transformation $F$ to define $x_r = F(u_r)$ that follow the distribution of interest, $p(x)$.
+We require $p(u) du = p(x) dx$, which allows us to relate $p(x)$ and the transformation $F(u)$:
+\begin{equation*}
+  p(x) = p(u) \frac{du}{dx} = p(u) \frac{d}{dx} F^{-1}(x),
+\end{equation*}
+hence the name ``inverse transform sampling''.
+This relation lets us either engineer an appropriate transformation $F(u)$ to produce a desired distribution $p(x)$, or determine the distribution that results from a given transformation.
+
+\subsection*{Task}
+Initialize the random number generator with seed $42$.
+Based on the uniformly distributed pseudo-random numbers $u$ generated by \texttt{random.random()}, define
+\begin{equation}
+  \label{eq:transform}
+  x = F(u) = \arcsin\left(2u - 1\right).
+\end{equation}
+
+What is the probability distribution $p(x)$ of these random numbers $x$?
+What are the minimum and maximum possible values that $x$ can take?
+What are the resulting exact mean $\mu$ and standard deviation \si of $p(x)$?
+
+\showmarks{6}
+
+Now, using the \texttt{arcsin} function provided by the Numerical Python (NumPy) library, generate $R = 100{,}000$ pseudo-random numbers $x_r$ via \eq{eq:transform}.
+Use these to numerically estimate the mean and standard deviation (analogously to \eq{eq:mean} in the previous exercise).
+How do your numerical results compare to your exact analytic predictions above?
+Rounding to four decimal places should suffice for this comparison.
+
+\showmarks{6}
+
+In a single plot, compare the histogram of the $100{,}000$ $\left\{x_r\right\}$ to the analytic $p(x)$ you found above.
+The Matplotlib Python plotting library provides (via the \texttt{pyplot} module) a \texttt{hist} function for the histogram and a \texttt{plot} function for $p(x)$.
+Do your numerical results match your prediction?
+Roughly $50$ bins in the histogram should suffice for this comparison.
+
+\showmarks{6}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Exercise 3: Random walks}
+\subsection*{(a) Central limit theorem}
+Now consider a random walk that consists of $N$ steps, with the length of each step set by a pseudo-random number $x_i$ obtained using \eq{eq:transform}.
+By independently generating $R$ different $N$-step random walks you can analyze the final positions of the walks,
+\begin{align*}
+  X_r(N) & = \sum_{i = 1}^N x_i &
+  r & = 1, 2, \cdots, R.
+\end{align*}
+Based on the central limit theorem, what are the analytic predictions for $\vev{X(N)}$ and
+\begin{equation*}
+  \ell_2(N) = \sqrt{\vev{\left[X(N)\right]^2} - \vev{X(N)}^2}
+\end{equation*}
+as functions of $N$?
+
+\showmarks{2}
+
+\subsection*{(b) Fixed walk length}
+Initialize the random number generator with seed $42$.
+With fixed $N = 100$, generate $R$ $100$-step random walks for each of the six $R = 10$, $20$, $100$, $200$, $1000$ and $10{,}000$.
+Use the resulting $X_r$ to numerically estimate
+\begin{align*}
+  \vev{X(N)} & \approx \frac{1}{R} \sum_{r = 1}^R X_r(N) \qquad &
+  \ell_2(N) & \approx \sqrt{\frac{1}{R} \sum_{r = 1}^R \left[X_r(N)\right]^2 - \left(\frac{1}{R} \sum_{r = 1}^R X_r(N)\right)^2}.
+\end{align*}
+
+How do your numerical results compare to your exact analytic predictions for $N = 100$?
+Rounding to four decimal places should suffice for this comparison.
+
+\showmarks{8}
+
+\subsection*{(c) Diffusion constant}
+Initialize the random number generator with seed $42$.
+Then fix $R = 10{,}000$ and estimate $\ell_2(N)$ for every $N = 1, 2, \cdots, 500$.
+(You can ignore potential correlations between $\ell_2(N)$ for different values of $N$.)
+Instead of reporting your numerical results, plot them vs.\ $N$.
+
+\showmarks{4}
+
+Now fit your numerical results to the function
+\begin{equation*}
+  \ell_2(N) = C + D \sqrt{N}.
+\end{equation*}
+NumPy provides a \texttt{polyfit} function that can be used to do this fitting.
+Include your fit in your plot of $\ell_2$ vs.\ $N$.
+How do your fit results for $C$ and the diffusion constant $D$ compare to the exact analytic predictions from the central limit theorem?
+
+\showmarks{6}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
