@@ -235,11 +235,6 @@ From our everyday experience, we expect a similar direct relation between temper
     \label{eq:heat_cap}
     c_v = \pderiv{}{T} \vev{E} \geq 0.
   \end{equation}
-%  A \textbf{fluctuation--dissipation relation} guarantees that the heat capacity is always non-negative (and generically positive):
-%  \begin{equation}
-%    \label{eq:fluct_diss}
-%    c_v = \frac{1}{T^2}\vev{\left(E - \vev{E}\right)^2} \geq 0.
-%  \end{equation}
 \end{shaded}
 
 In a homework assignment you will show that $c_v$\footnote{The subscript indicates that the volume of the system is kept fixed; details will wait until we properly introduce the volume over the next couple of weeks.} is always non-negative (and generically positive), by deriving a so-called \textbf{fluctuation--dissipation} (or \textbf{fluctuation--response}) \textbf{relation}.
@@ -247,7 +242,7 @@ This will be a special case of a \href{https://en.wikipedia.org/wiki/Fluctuation
 The (generically) positive heat capacity confirms our expectation from everyday experiences that higher temperatures produce larger (average) internal energies.
 
 \newpage % WARNING: FORMATTING BY HAND
-We finally need to compute the entropy of \Om itself, still in thermodynamic equilibrium but with no reference to the thermal reservoir (apart from its role fixing $T$).
+We finally need to compute the entropy of \Om itself, still in thermodynamic equilibrium but with no reference to the thermal reservoir apart from its role fixing $T$.
 Since the definition of the entropy in \eq{eq:entropy} continues to hold for the canonical ensemble, we just need to insert the probabilities $p_i$ from \eq{eq:canon_prob}:
 \begin{mdframed}
   $\displaystyle S(T) = -\sum_{i = 1}^M p_i \log p_i = $ \\[100 pt]
@@ -265,7 +260,24 @@ You should find
 \subsection{Helmholtz free energy}
 Last week we saw that the micro-canonical entropy depended logarithmically on the number of micro-states.
 Now \eq{eq:canon_entropy} contains a similar logarithm of the partition function, which we identified as a fundamental quantity in the canonical ensemble.
-We can 
+This motivates the definition We can 
+
+\begin{shaded}
+  The \textbf{Helmholtz free energy} of a canonical ensemble is defined to be
+  \begin{equation}
+    \label{eq:helmholtz}
+    F(T) = -T \log Z,
+  \end{equation}
+  where $Z$ is the partition function of the ensemble.
+\end{shaded}
+
+\TODO{...}
+
+\begin{mdframed}
+  $\displaystyle \pderiv{}{T} \log Z = $ \\[100 pt]
+  \ \\[100 pt]
+\end{mdframed}
+Combining this result with \eq{eq:canon_entropy} and the expression for $\vev{E}$ from an earlier gap, \TODO{...}
 
 \TODO{Being written...}
 % ------------------------------------------------------------------
