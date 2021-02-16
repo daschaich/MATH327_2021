@@ -143,7 +143,7 @@ What is the occupation probability $p_k$ that maximizes $\Sbar$?
 
 You should find a probability
 \begin{equation}
-  \label{eq:canon_prob}
+  \label{eq:occ_prob}
   p_k = \frac{1}{Z} e^{-\be E_k},
 \end{equation}
 where we define $Z = \exp\left[1 - \frac{\al}{R}\right]$ to put the result in its traditional form.
@@ -166,7 +166,7 @@ If we apply our second constraint, \eq{eq:canon_Etot}, we can relate \be to $E_{
   E_{\text{tot}} = R \sum_{i = 1}^M p_i E_i = \frac{R}{Z(\be)} \sum_{i = 1}^M E_i \; e^{-\be E_i} = R \frac{\sum_{i = 1}^M E_i \; e^{-\be E_i}}{\sum_{i = 1}^M e^{-\be E_i}}.
 \end{equation}
 This is a bit opaque, but will suffice for our goal of expressing the entropy in terms of $E_{\text{tot}}$.
-Inserting \eq{eq:canon_prob} for $p_i$ into your earlier result for the entropy, what do you obtain upon applying Eqs.~\ref{eq:part_func} and \ref{eq:canon_aveE}?
+Inserting \eq{eq:occ_prob} for $p_i$ into your earlier result for the entropy, what do you obtain upon applying Eqs.~\ref{eq:part_func} and \ref{eq:canon_aveE}?
 \begin{mdframed}
   $\displaystyle S(E_{\text{tot}}) = -R \sum_{i = 1}^M p_i \log p_i = $ \\[100 pt]
 \end{mdframed}
@@ -188,7 +188,7 @@ so that we don't need to figure out the explicit form of $\be'$:
 What's truly remarkable about \eq{eq:beta} is that all the details of the thermal reservoir have vanished---there is no reference to the $R$ replicas or any extensive quantity such as $E_{\text{tot}}$.
 This is \textcolor{green}{the goal} we have been pursuing since the start of the notes for this week!
 The large thermal reservoir is still present to fix the temperature $T$ characterizing the canonical system $\Om$, but beyond that nothing about it is relevant---or even knowable in the canonical approach.
-Every aspect of \Om can now be specified in terms of the fixed temperature $T$ and conserved particle number $N$, starting with the parameter $\be = 1 / T$.
+Every aspect of \Om can now be specified in terms of its fixed temperature $T$ and conserved particle number $N$, starting with the parameter $\be = 1 / T$.
 
 In particular, the partition function from \eq{eq:part_func} is simply
 \begin{equation}
@@ -196,33 +196,77 @@ In particular, the partition function from \eq{eq:part_func} is simply
 \end{equation}
 and together with \be specifies the probabilities
 \begin{equation}
+  \label{eq:canon_prob}
   p_i = \frac{1}{Z} e^{-E_i / T}
 \end{equation}
-from \eq{eq:canon_prob}.
+from \eq{eq:occ_prob}.
 This $p_i$ is now the probability---in thermodynamic equilibrium---that \Om adopts micro-state $\om_i$ with (non-conserved) internal energy $E_i$.
-As we might have expected based on last week's look at the micro-canonical ensemble, all micro-statse with the same energy have the same probability in thermodynamic equilibrium.
+As we might have expected based on last week's look at the micro-canonical ensemble, all micro-states with the same energy have the same probability in thermodynamic equilibrium.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\subsection{Internal energy, entropy and heat capacity}
-Now that the temperature of the system \Om is fixed, its internal energy is no longer conserved, and can fluctuate by exchanging energy with the thermal reservoir.
-Although the internal energy fluctuates, its expectation value $\vev{E}$ is a derived quantity of interest, which can be defined in the usual way for the probability space of the canonical ensemble:
+\subsection{Internal energy, heat capacity, and entropy}
+In addition to fixing the temperature of the system $\Om$, the thermal reservoir also allows the internal energy of \Om to fluctuate, by exchanging energy with this reservoir.
+Although the internal energy fluctuates, its expectation value $\vev{E}$ is an important derived quantity in thermodynamic equilibrium.
+Applying the general definition from \eq{eq:expect_disc} to the probability space of the canonical ensemble,
 \begin{equation*}
-  \vev{E}\!(T) = \sum_{i = 1}^M E_i \; p_i = \frac{1}{Z} \sum_{i = 1}^M E_i e^{-\be E_i}.
+  \vev{E}\!(T) = \sum_{i = 1}^M E_i \; p_i = \frac{1}{Z} \sum_{i = 1}^M E_i \; e^{-\be E_i}.
 \end{equation*}
-Here we have explicitly noted the temperature-dependence of $\vev{E}$, and also freely interchanged $\be = 1 / T$, in part because the last expression may \TODO{...}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent
+Here we highlight the dependence of $\vev{E}$ on the temperature, and also freely interchange $\be = 1 / T$, in part because the last expression may look familiar from our work above:
+\begin{mdframed}
+  $\displaystyle \pderiv{}{\be} \log Z = $ \\[100 pt]
+\end{mdframed}
+In this case it is easier to take the derivative with respect to \be as opposed to
+\begin{equation*}
+  \pderiv{}{\be} = \pderiv{T}{\be} \pderiv{}{T} = -\frac{1}{\be^2} \pderiv{}{T} = -T^2 \pderiv{}{T}.
+\end{equation*}
 
+Last week, we saw that `natural' micro-canonical systems exhibit higher (derived) temperatures for larger (conserved) internal energies.
+Now, in the canonical approach, the average internal energy $\vev{E}$ is the derived quantity while the temperature is fixed.
+From our everyday experience, we expect a similar direct relation between temperature and energy, which the following result confirms.
 
-\TODO{Being written...}
+\begin{shaded}
+  The \textbf{heat capacity} is defined to be
+  \begin{equation}
+    \label{eq:heat_cap}
+    c_v = \pderiv{}{T} \vev{E} \geq 0.
+  \end{equation}
+%  A \textbf{fluctuation--dissipation relation} guarantees that the heat capacity is always non-negative (and generically positive):
+%  \begin{equation}
+%    \label{eq:fluct_diss}
+%    c_v = \frac{1}{T^2}\vev{\left(E - \vev{E}\right)^2} \geq 0.
+%  \end{equation}
+\end{shaded}
+
+In a homework assignment you will show that $c_v$\footnote{The subscript indicates that the volume of the system is kept fixed; details will wait until we properly introduce the volume over the next couple of weeks.} is always non-negative (and generically positive), by deriving a so-called \textbf{fluctuation--dissipation} (or \textbf{fluctuation--response}) \textbf{relation}.
+This will be a special case of a \href{https://en.wikipedia.org/wiki/Fluctuation-dissipation_theorem}{more general theorem}, and will relate the fluctuations of the internal energy around its expectation value, $\sum_i \left(E_i - \vev{E}\right)^2$, to the energy's \textit{response} to a change in temperature, $\pderiv{}{T} \vev{E}$.
+The (generically) positive heat capacity confirms our expectation from everyday experiences that higher temperatures produce larger (average) internal energies.
+
+\newpage % WARNING: FORMATTING BY HAND
+We finally need to compute the entropy of \Om itself, still in thermodynamic equilibrium but with no reference to the thermal reservoir (apart from its role fixing $T$).
+Since the definition of the entropy in \eq{eq:entropy} continues to hold for the canonical ensemble, we just need to insert the probabilities $p_i$ from \eq{eq:canon_prob}:
+\begin{mdframed}
+  $\displaystyle S(T) = -\sum_{i = 1}^M p_i \log p_i = $ \\[100 pt]
+\end{mdframed}
+You should find
+\begin{equation}
+  \label{eq:canon_entropy}
+  S(T) = \frac{\vev{E}}{T} + \log Z.
+\end{equation}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
 \subsection{Helmholtz free energy}
+Last week we saw that the micro-canonical entropy depended logarithmically on the number of micro-states.
+Now \eq{eq:canon_entropy} contains a similar logarithm of the partition function, which we identified as a fundamental quantity in the canonical ensemble.
+We can 
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
