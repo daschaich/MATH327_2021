@@ -1,0 +1,663 @@
+1
+00:00:00,960 --> 00:00:04,320
+Hello and welcome back to statistical physics
+
+2
+00:00:04,330 --> 00:00:07,680
+this week three overview video on the canonical
+
+3
+00:00:07,680 --> 00:00:11,970
+ensemble. And before getting into that overview,
+
+4
+00:00:12,060 --> 00:00:16,620
+just a brief logistical note. Over the past few
+
+5
+00:00:16,620 --> 00:00:19,440
+days, I've been experimenting with these
+
+6
+00:00:19,440 --> 00:00:23,730
+recordings and I believe I found a way to reduce
+
+7
+00:00:23,730 --> 00:00:27,240
+the file size by roughly a factor of five with
+
+8
+00:00:27,240 --> 00:00:31,740
+only a modest decrease in the video quality. So
+
+9
+00:00:31,770 --> 00:00:35,460
+that's what I'm trying now. And I want you to let
+
+10
+00:00:35,460 --> 00:00:39,810
+me know if the quality decrease is more sufficient
+
+11
+00:00:40,080 --> 00:00:44,610
+or more severe than it seems to me. And any issues
+
+12
+00:00:44,910 --> 00:00:49,470
+are arising that would motivate going back to the
+
+13
+00:00:50,730 --> 00:00:55,950
+larger size recordings, but moving on to the
+
+14
+00:00:55,950 --> 00:01:00,390
+actual content for this week, the canonical
+
+15
+00:01:00,390 --> 00:01:03,750
+ensemble is the second of three statistical
+
+16
+00:01:03,750 --> 00:01:07,240
+ensembles we will be looking at in this module. So
+
+17
+00:01:07,240 --> 00:01:10,860
+we only spent one week on micro canonical ensemble
+
+18
+00:01:10,860 --> 00:01:14,940
+last week and have moved straight on to the
+
+19
+00:01:14,940 --> 00:01:19,550
+canonical ensemble, in part related to some
+
+20
+00:01:19,800 --> 00:01:22,380
+something I emphasized in last week's videos that
+
+21
+00:01:22,380 --> 00:01:25,500
+the micro canonical ensemble, while it features
+
+22
+00:01:25,500 --> 00:01:31,040
+this fundamental connection to the. Conserve
+
+23
+00:01:31,040 --> 00:01:35,270
+energy that is conserve by the first law of
+
+24
+00:01:35,270 --> 00:01:39,530
+thermodynamics. This requires imagining systems
+
+25
+00:01:39,530 --> 00:01:41,990
+that are completely isolated from the rest of the
+
+26
+00:01:41,990 --> 00:01:47,600
+universe, which is not very realistic or relevant,
+
+27
+00:01:47,630 --> 00:01:50,030
+not the sort of problems that we want to apply
+
+28
+00:01:50,300 --> 00:01:53,660
+statistical physics to analyze and solve. So the
+
+29
+00:01:53,660 --> 00:01:57,620
+canonical ensemble gets around this by fixing the
+
+30
+00:01:57,620 --> 00:02:02,330
+temperature. Instead of imposing conservation of
+
+31
+00:02:02,330 --> 00:02:05,630
+energy directly on the system being analyzed, the
+
+32
+00:02:05,630 --> 00:02:09,530
+idea here is that the system we're looking at is
+
+33
+00:02:09,830 --> 00:02:12,230
+in thermal contact. It's allowed to exchange
+
+34
+00:02:12,230 --> 00:02:19,320
+energy with a large thermal reservoir. So. Some
+
+35
+00:02:19,320 --> 00:02:23,160
+other much larger system that sets the temperature
+
+36
+00:02:23,190 --> 00:02:25,440
+that is then picked up by the system that we are
+
+37
+00:02:25,440 --> 00:02:29,340
+studying so that the temperature can be considered
+
+38
+00:02:29,340 --> 00:02:32,550
+fixed for the energy of the system is allowed to
+
+39
+00:02:32,550 --> 00:02:35,520
+fluctuate while still conserving the overall
+
+40
+00:02:35,520 --> 00:02:39,300
+energy of the universe through exchanging energy
+
+41
+00:02:39,300 --> 00:02:43,560
+with this surrounding or external thermal
+
+42
+00:02:43,560 --> 00:02:47,610
+reservoir that it is in contact with. And a big
+
+43
+00:02:47,610 --> 00:02:51,750
+part of the lecture notes for this week consist of
+
+44
+00:02:52,110 --> 00:02:55,680
+putting that basic idea on a more rigorous
+
+45
+00:02:55,680 --> 00:02:58,410
+mathematical framework. You know, highlight some
+
+46
+00:02:58,410 --> 00:03:01,950
+of the key features of that in the the wrap up
+
+47
+00:03:01,950 --> 00:03:04,560
+overview video at the end of the week, rather than
+
+48
+00:03:04,560 --> 00:03:05,550
+here at the overview,
+
+49
+00:03:07,740 --> 00:03:13,500
+will say that part of this process introduces a
+
+50
+00:03:13,530 --> 00:03:16,770
+very important quantity known as the partition
+
+51
+00:03:16,770 --> 00:03:22,560
+function, which. In essence, it is the the
+
+52
+00:03:22,560 --> 00:03:24,720
+canonical ensemble that contains all of the
+
+53
+00:03:24,720 --> 00:03:30,630
+information about the probability space with this
+
+54
+00:03:30,630 --> 00:03:34,050
+constraint of a fixed temperature and the Kanala
+
+55
+00:03:34,050 --> 00:03:36,150
+and the partition function for the canonical
+
+56
+00:03:36,150 --> 00:03:38,850
+ensemble itself can be.
+
+57
+00:03:41,150 --> 00:03:45,650
+Replaced by or is equivalent to a related quantity
+
+58
+00:03:45,650 --> 00:03:48,410
+with the dimensions of energy that is known as the
+
+59
+00:03:48,800 --> 00:03:55,820
+Helmholtz free energy. This is the logarithm of
+
+60
+00:03:55,820 --> 00:03:58,490
+the partition function. Times the temperature will
+
+61
+00:03:58,490 --> 00:04:01,370
+pop up in the lecture notes and the only
+
+62
+00:04:01,370 --> 00:04:04,220
+motivation for swapping back and forth between the
+
+63
+00:04:04,220 --> 00:04:07,220
+partition function and the Helmholtz free energy
+
+64
+00:04:07,220 --> 00:04:11,420
+is just sort of ease of calculations and notation
+
+65
+00:04:12,200 --> 00:04:15,950
+as we derive quantities and analyze systems based
+
+66
+00:04:15,950 --> 00:04:19,730
+on this canonical ensemble. And maybe I should
+
+67
+00:04:20,060 --> 00:04:23,210
+reiterate, the basic idea of statistical ensembles
+
+68
+00:04:23,210 --> 00:04:26,930
+obviously will be reusing some of those concepts
+
+69
+00:04:26,930 --> 00:04:29,090
+that were developed last week and the micro
+
+70
+00:04:29,090 --> 00:04:34,220
+canonical context where these statistical ensemble
+
+71
+00:04:34,220 --> 00:04:39,260
+is a physical system and that evolves through time
+
+72
+00:04:39,950 --> 00:04:42,080
+probabilistically sampling the possible
+
+73
+00:04:42,080 --> 00:04:45,500
+microstates that it's microscopic degrees of
+
+74
+00:04:45,500 --> 00:04:50,910
+freedom can can realize. And subject to the
+
+75
+00:04:50,910 --> 00:04:53,700
+certain constraints which now for the canonical
+
+76
+00:04:53,700 --> 00:04:58,200
+ensemble are the six temperature as well as the
+
+77
+00:04:58,200 --> 00:05:01,230
+conserved particle number that we also had for the
+
+78
+00:05:01,530 --> 00:05:05,400
+canonical ensemble last week. So the big
+
+79
+00:05:05,400 --> 00:05:08,400
+difference going from micro, canonical to
+
+80
+00:05:08,400 --> 00:05:13,530
+canonical is that. Now, instead of the temperature
+
+81
+00:05:14,040 --> 00:05:16,800
+being a derived quantity based on the conserved
+
+82
+00:05:16,800 --> 00:05:19,300
+energy, which was the situation for the micro
+
+83
+00:05:19,320 --> 00:05:22,770
+canonical ensemble in the canonical ensemble, we
+
+84
+00:05:22,770 --> 00:05:26,040
+have the energy of the system or the average
+
+85
+00:05:26,040 --> 00:05:29,940
+energy, the expectation value that is a derived
+
+86
+00:05:29,940 --> 00:05:33,270
+quantity based on the fixed temperature that's set
+
+87
+00:05:33,270 --> 00:05:37,170
+by the large thermal reservoir. In both cases, the
+
+88
+00:05:37,170 --> 00:05:42,720
+entropy is another derived quantity, and we'll go
+
+89
+00:05:42,720 --> 00:05:45,180
+through that a bit more rapidly this week. Having
+
+90
+00:05:45,180 --> 00:05:48,120
+gotten an introduction to the concept of entropy
+
+91
+00:05:48,450 --> 00:05:52,050
+last week in the microRNA canonical context, and
+
+92
+00:05:52,050 --> 00:05:57,240
+one other derived quantity that we look at here is
+
+93
+00:05:57,240 --> 00:06:00,090
+known as the heat capacity, which basically
+
+94
+00:06:00,690 --> 00:06:07,080
+dictates how the energy of Earth or the average
+
+95
+00:06:07,080 --> 00:06:09,390
+internal energy of the system depends on the
+
+96
+00:06:09,390 --> 00:06:11,550
+temperature. Just as we looked at in the
+
+97
+00:06:11,550 --> 00:06:14,010
+microeconomics case last week, the temperature
+
+98
+00:06:14,340 --> 00:06:19,170
+depended on the energy and in agreement. Well. We
+
+99
+00:06:19,170 --> 00:06:22,110
+get the expected results, which I will revisit and
+
+100
+00:06:22,110 --> 00:06:26,640
+save for the wrap up overview video at the end of
+
+101
+00:06:26,640 --> 00:06:27,120
+the week,
+
+102
+00:06:29,640 --> 00:06:35,820
+the last section of this week's lecture notes is a
+
+103
+00:06:36,600 --> 00:06:40,740
+detailed investigation of a first application of
+
+104
+00:06:40,740 --> 00:06:44,520
+the canonical ensemble, which is focusing on the.
+
+105
+00:06:46,130 --> 00:06:48,320
+The same sort of spin systems that we introduced
+
+106
+00:06:48,320 --> 00:06:51,770
+last week, that simplest possible mathematics of
+
+107
+00:06:51,770 --> 00:06:54,860
+degrees of freedom that can take one of two
+
+108
+00:06:54,950 --> 00:06:59,690
+possible values, either aligned with a magnetic
+
+109
+00:06:59,690 --> 00:07:02,570
+field that is externally applied or aligned
+
+110
+00:07:02,570 --> 00:07:09,050
+against it. So the mathematics is. Very similar to
+
+111
+00:07:09,050 --> 00:07:11,360
+that of flipping a coin. But at the same time, we
+
+112
+00:07:11,360 --> 00:07:15,530
+can define the energy and temperature and entropy
+
+113
+00:07:15,710 --> 00:07:20,780
+for this system. In this last subsection of the
+
+114
+00:07:20,780 --> 00:07:24,230
+lecture notes for this week, we look at the.
+
+115
+00:07:25,630 --> 00:07:28,810
+Physically observable effects that result,
+
+116
+00:07:29,440 --> 00:07:34,000
+depending on how much information is knowable
+
+117
+00:07:34,090 --> 00:07:38,440
+about the spin system we consider. So we look at
+
+118
+00:07:38,440 --> 00:07:42,970
+two distinct cases, one in which we have a bunch
+
+119
+00:07:42,970 --> 00:07:46,120
+of spins and we can distinguish between them. We
+
+120
+00:07:46,120 --> 00:07:49,630
+can tell them apart. And then the the realization.
+
+121
+00:07:51,900 --> 00:07:54,450
+Focus on here, we suppose that the spin's are
+
+122
+00:07:54,450 --> 00:07:57,330
+embedded in some solid material, so they have a
+
+123
+00:07:57,330 --> 00:08:01,650
+definite position and we know that a spin can be
+
+124
+00:08:01,650 --> 00:08:04,710
+distinguished by looking at each individual
+
+125
+00:08:04,710 --> 00:08:05,310
+position.
+
+126
+00:08:07,340 --> 00:08:12,470
+And we contrast this with the case of now that
+
+127
+00:08:12,470 --> 00:08:16,570
+same bunch of Stenz that's no longer embedded with
+
+128
+00:08:16,580 --> 00:08:19,340
+a fixed position for a spin, but the spins are
+
+129
+00:08:19,340 --> 00:08:22,070
+allowed to sort of mix together because they don't
+
+130
+00:08:22,070 --> 00:08:24,470
+interact. They can even overlap with each other
+
+131
+00:08:24,470 --> 00:08:30,620
+and occupy the the same points in space so that
+
+132
+00:08:30,620 --> 00:08:34,640
+there's no way of knowing by any method.
+
+133
+00:08:36,950 --> 00:08:40,490
+Which spin we we might be looking at when we try
+
+134
+00:08:40,490 --> 00:08:44,960
+to measure or observe any individual features of
+
+135
+00:08:44,960 --> 00:08:50,880
+them, so. The information of distinguishing
+
+136
+00:08:50,880 --> 00:08:53,730
+between the various spins, knowing which spin we
+
+137
+00:08:53,730 --> 00:08:56,700
+are looking at is something intrinsic to the
+
+138
+00:08:56,700 --> 00:09:01,080
+system, it's not a matter of practicality whether
+
+139
+00:09:01,080 --> 00:09:04,410
+we are sufficiently clever to measure this
+
+140
+00:09:04,410 --> 00:09:07,590
+information in a given realization of the spin
+
+141
+00:09:07,590 --> 00:09:13,380
+system. It's really something that is intrinsic to
+
+142
+00:09:13,380 --> 00:09:18,550
+the system itself and depending on. That different
+
+143
+00:09:18,550 --> 00:09:22,060
+amount of information in the system, we will see
+
+144
+00:09:22,060 --> 00:09:24,130
+as we go through the notes in some detail.
+
+145
+00:09:26,970 --> 00:09:30,600
+That's predictions for physically observable
+
+146
+00:09:30,600 --> 00:09:34,200
+quantities differ depending on the information in
+
+147
+00:09:34,200 --> 00:09:39,740
+the system, so information is physical. In this
+
+148
+00:09:39,740 --> 00:09:43,160
+context, and that has many far reaching
+
+149
+00:09:43,280 --> 00:09:46,820
+implications that remain at the forefront of
+
+150
+00:09:46,820 --> 00:09:49,760
+modern day research. One example you might have
+
+151
+00:09:49,760 --> 00:09:54,260
+heard of being the black hole information paradox,
+
+152
+00:09:54,260 --> 00:09:59,990
+which is dealing with the same sort of issues, the
+
+153
+00:09:59,990 --> 00:10:02,840
+physically observable consequences of what
+
+154
+00:10:02,840 --> 00:10:07,580
+information can in principle be determined about a
+
+155
+00:10:07,790 --> 00:10:11,150
+statistical system, though in the black hole case,
+
+156
+00:10:11,150 --> 00:10:15,320
+this involves quantum mechanics and the general
+
+157
+00:10:15,320 --> 00:10:18,260
+relativistic theory of gravity. So that's why
+
+158
+00:10:18,260 --> 00:10:21,830
+we're looking at our usual spin system as the
+
+159
+00:10:22,580 --> 00:10:26,090
+example we consider in this module the first
+
+160
+00:10:26,090 --> 00:10:29,900
+example of the canonical approach which we will
+
+161
+00:10:29,900 --> 00:10:34,760
+follow in the next couple of weeks by applying the
+
+162
+00:10:34,760 --> 00:10:39,350
+canonical approach to ideal gases and
+
+163
+00:10:39,770 --> 00:10:42,320
+thermodynamic cycles. But before that, I will be
+
+164
+00:10:42,320 --> 00:10:45,650
+back with a wrap up video for this week
+
+165
+00:10:46,220 --> 00:10:49,220
+summarizing the highlights after you've gone
+
+166
+00:10:49,220 --> 00:10:51,230
+through those lecture notes.

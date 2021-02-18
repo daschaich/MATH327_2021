@@ -1,0 +1,1111 @@
+1
+00:00:02,450 --> 00:00:05,980
+Hello and welcome back to Statistical Physics.
+
+2
+00:00:06,050 --> 00:00:11,210
+This is the wrap up video for week three of the
+
+3
+00:00:11,210 --> 00:00:14,180
+canonical ensemble, about 10 minutes summarizing
+
+4
+00:00:14,780 --> 00:00:19,160
+the highlights and key learning outcomes from what
+
+5
+00:00:19,160 --> 00:00:22,880
+is just the first of three weeks focused on the
+
+6
+00:00:22,880 --> 00:00:26,510
+canonical ensemble. So the key for this week is to
+
+7
+00:00:27,020 --> 00:00:30,170
+introduce this concept, see how it works, how it
+
+8
+00:00:30,170 --> 00:00:34,040
+works, how it's put together, and do a first quick
+
+9
+00:00:34,040 --> 00:00:38,030
+application to the physics of information. So
+
+10
+00:00:39,080 --> 00:00:40,790
+beginning from the beginning.
+
+11
+00:00:44,260 --> 00:00:47,020
+The overview video mentioned that the canonical
+
+12
+00:00:47,020 --> 00:00:51,730
+ensemble fixes the temperature and particle no, in
+
+13
+00:00:51,730 --> 00:00:55,450
+contrast to the micro canonical ensemble that
+
+14
+00:00:55,450 --> 00:00:57,550
+fixes the energy
+
+15
+00:00:59,680 --> 00:01:05,090
+in particle, no. So. In a lot of more physics
+
+16
+00:01:05,090 --> 00:01:08,060
+courses, that would sort of be the stopping point,
+
+17
+00:01:08,060 --> 00:01:11,000
+you would just define that as the ensemble and go
+
+18
+00:01:11,000 --> 00:01:13,400
+from there. Here we are being a bit more
+
+19
+00:01:13,400 --> 00:01:17,090
+mathematical and going to provide some of the
+
+20
+00:01:17,210 --> 00:01:18,890
+mathematical justification
+
+21
+00:01:21,380 --> 00:01:25,190
+attributed to Gibs that really justifies how and
+
+22
+00:01:25,190 --> 00:01:27,650
+why we are able to.
+
+23
+00:01:29,690 --> 00:01:33,820
+Use the canonical ensemble as a basis of of
+
+24
+00:01:33,830 --> 00:01:38,780
+analyzing statistical systems when we don't have
+
+25
+00:01:39,140 --> 00:01:43,950
+the. Very clear, direct connection to the
+
+26
+00:01:43,950 --> 00:01:46,290
+conservation of energy. The first law of
+
+27
+00:01:46,290 --> 00:01:52,500
+thermodynamics and the trick here is known as the
+
+28
+00:01:52,500 --> 00:01:55,830
+replica trick. It is a trick that we will see
+
+29
+00:01:55,830 --> 00:01:59,640
+again later in this module and also has other uses
+
+30
+00:01:59,640 --> 00:02:01,230
+and applications in.
+
+31
+00:02:04,420 --> 00:02:08,440
+In mathematical physics, and the idea is so
+
+32
+00:02:08,770 --> 00:02:12,280
+backtracking just a bit to reiterate the overview
+
+33
+00:02:13,330 --> 00:02:17,860
+in the canonical ensemble, we posit that the
+
+34
+00:02:17,860 --> 00:02:21,250
+temperature of our system of interest is fixed.
+
+35
+00:02:21,940 --> 00:02:25,810
+And we argue that this is done by having our
+
+36
+00:02:25,810 --> 00:02:29,200
+system in thermal contact with a much larger
+
+37
+00:02:29,710 --> 00:02:33,190
+external system, a thermal reservoir with which it
+
+38
+00:02:33,190 --> 00:02:37,970
+is able to exchange energy. And that thermal
+
+39
+00:02:37,970 --> 00:02:42,560
+reservoir fixes the temperature of the overall
+
+40
+00:02:42,830 --> 00:02:46,460
+combined system of the system we're interested in,
+
+41
+00:02:46,700 --> 00:02:49,580
+plus the reservoir is the total system that
+
+42
+00:02:49,580 --> 00:02:53,570
+temperature is fixed by the reservoir or the
+
+43
+00:02:53,570 --> 00:02:55,610
+system we're interested in is just a small
+
+44
+00:02:55,610 --> 00:02:58,820
+probation on that. And because the temperature is
+
+45
+00:02:59,450 --> 00:03:04,340
+a is an intensive quantity at fixed temperature of
+
+46
+00:03:04,340 --> 00:03:07,010
+the total system, including the reservoir is
+
+47
+00:03:07,010 --> 00:03:10,220
+picked up by the system we care about. That's the
+
+48
+00:03:10,700 --> 00:03:13,550
+handwaving, qualitative idea. And the replica
+
+49
+00:03:13,550 --> 00:03:18,110
+trick is a way to justify that mathematically. And
+
+50
+00:03:18,110 --> 00:03:22,430
+the. The overall calculation that we go through is
+
+51
+00:03:23,180 --> 00:03:26,060
+close to half of the lecture notes for this week,
+
+52
+00:03:26,060 --> 00:03:28,070
+though, there are
+
+53
+00:03:30,200 --> 00:03:33,020
+other pieces that we pick up along the way,
+
+54
+00:03:33,500 --> 00:03:36,500
+including the partition function and Boltzmann
+
+55
+00:03:36,500 --> 00:03:40,240
+distribution, that we'll get to adjust to bits.
+
+56
+00:03:40,240 --> 00:03:46,400
+But the basic idea is to introduce some well
+
+57
+00:03:46,400 --> 00:03:50,600
+motivated onslaughts for the form of this thermal
+
+58
+00:03:50,600 --> 00:03:53,900
+reservoir. And having specified that, we are able
+
+59
+00:03:53,900 --> 00:03:59,030
+to analyse it mathematically and we want to see
+
+60
+00:03:59,030 --> 00:04:04,550
+and do see that the detailed form of this
+
+61
+00:04:04,550 --> 00:04:08,000
+reservoir that we have proposed the results turns
+
+62
+00:04:08,000 --> 00:04:11,210
+out not to have any effect. All the details of the
+
+63
+00:04:11,210 --> 00:04:14,750
+reservoir drop out when we look at the system
+
+64
+00:04:14,750 --> 00:04:18,590
+itself, apart from the fact that the temperature
+
+65
+00:04:18,590 --> 00:04:22,100
+is fixed from having this reservoir there. So the
+
+66
+00:04:22,760 --> 00:04:26,960
+conclusion we draw from that, which is not a not
+
+67
+00:04:26,960 --> 00:04:29,980
+so much a proof as a self consistency argument,
+
+68
+00:04:30,200 --> 00:04:33,560
+it's saying that we don't have to worry about what
+
+69
+00:04:33,560 --> 00:04:37,640
+form this thermal reservoir has so long as it is
+
+70
+00:04:37,640 --> 00:04:41,540
+there. It will serve this role of fixing the
+
+71
+00:04:41,540 --> 00:04:44,570
+temperature and mathematically defining the
+
+72
+00:04:44,570 --> 00:04:49,210
+economical ensemble. And the well motivated Aitzaz
+
+73
+00:04:49,210 --> 00:04:54,180
+that. That gives came up with is to say, let's
+
+74
+00:04:54,180 --> 00:04:58,590
+just say we have a system that we want to analyze
+
+75
+00:04:58,740 --> 00:05:00,990
+with a fixed temperature and the canonical
+
+76
+00:05:00,990 --> 00:05:05,430
+approach, we say that while the system is
+
+77
+00:05:05,640 --> 00:05:09,270
+something that is realistic enough and interesting
+
+78
+00:05:09,270 --> 00:05:11,820
+enough that we are bothering to analyze it. So
+
+79
+00:05:11,820 --> 00:05:14,910
+let's just suppose that the thermal reservoir is
+
+80
+00:05:14,910 --> 00:05:18,270
+the same sort of stuff as the system, just more of
+
+81
+00:05:18,270 --> 00:05:22,790
+it. So we. And we formalized this by saying that
+
+82
+00:05:22,790 --> 00:05:26,900
+the total system is a large number of replicas,
+
+83
+00:05:27,560 --> 00:05:31,070
+identical copies of the system we are interested
+
+84
+00:05:31,070 --> 00:05:35,510
+in, so we can pick out one of those replicas as
+
+85
+00:05:35,510 --> 00:05:40,160
+the system we want to find out about in all of the
+
+86
+00:05:40,160 --> 00:05:44,720
+other replicas for collectively that large
+
+87
+00:05:44,720 --> 00:05:48,920
+external thermal reservoir that we can then
+
+88
+00:05:48,920 --> 00:05:54,470
+analyze by having specified how this reservoir
+
+89
+00:05:55,010 --> 00:05:58,910
+behaves, what it looks like in terms of the system
+
+90
+00:05:58,910 --> 00:06:00,590
+we are interested in studying
+
+91
+00:06:03,230 --> 00:06:08,810
+and. The way we analyze that overall combined
+
+92
+00:06:08,810 --> 00:06:13,220
+system in the replica trick is to step back to
+
+93
+00:06:13,220 --> 00:06:16,490
+that more fundamental micro canonical ensemble
+
+94
+00:06:16,490 --> 00:06:22,960
+that we spent last week looking at and. We have
+
+95
+00:06:22,960 --> 00:06:26,710
+the idea that this overall total system with all
+
+96
+00:06:26,710 --> 00:06:29,860
+the replicas really is the universe that matters.
+
+97
+00:06:30,220 --> 00:06:33,360
+So we can analyze that with the micro economical
+
+98
+00:06:33,370 --> 00:06:37,750
+approach that assumes conservation of energy, that
+
+99
+00:06:37,750 --> 00:06:40,960
+is satisfied by the overall system, even though
+
+100
+00:06:40,960 --> 00:06:44,740
+it's not satisfied by the small subsystem. The one
+
+101
+00:06:44,740 --> 00:06:47,350
+particular replica that we want to analyze that is
+
+102
+00:06:47,350 --> 00:06:50,680
+now able to exchange energy with this thermal
+
+103
+00:06:50,680 --> 00:06:57,330
+reservoir and applying. The microeconomic analysis
+
+104
+00:06:57,330 --> 00:07:01,050
+to that overall system of all of these replicas
+
+105
+00:07:02,010 --> 00:07:08,080
+takes us through the. Well, the same exercise as
+
+106
+00:07:08,080 --> 00:07:10,480
+it was last week, we count the number of
+
+107
+00:07:10,480 --> 00:07:14,860
+microstates we throughout all of this work, we are
+
+108
+00:07:14,860 --> 00:07:17,710
+assuming thermodynamic equilibrium. I neglected to
+
+109
+00:07:17,710 --> 00:07:19,570
+mention that in the overview. So I'll mention it
+
+110
+00:07:19,570 --> 00:07:23,290
+here. Everything is a dynamic equilibrium. So the
+
+111
+00:07:23,290 --> 00:07:26,290
+entropy is the logarithm of the number of
+
+112
+00:07:26,290 --> 00:07:31,870
+microstates. And by maximizing that subject to the
+
+113
+00:07:31,870 --> 00:07:35,620
+usual constraints on conservation of energy and
+
+114
+00:07:35,620 --> 00:07:39,670
+conservation of probability, we come up with a
+
+115
+00:07:39,670 --> 00:07:46,650
+form for the occupation probability. That is the
+
+116
+00:07:47,100 --> 00:07:51,210
+probability that if we pick any one of these
+
+117
+00:07:51,480 --> 00:07:55,170
+replicas at random, it will be in a particular
+
+118
+00:07:55,170 --> 00:08:00,330
+micro state of the small or smaller system that we
+
+119
+00:08:00,330 --> 00:08:05,500
+are interested in analyzing. In the form of this
+
+120
+00:08:05,500 --> 00:08:09,950
+occupation, probability is. A very famous
+
+121
+00:08:10,970 --> 00:08:13,940
+distribution known as either the both the
+
+122
+00:08:13,960 --> 00:08:16,700
+distribution or the Gibbs distribution, depending
+
+123
+00:08:16,700 --> 00:08:19,570
+in part on which side of the Atlantic you're on
+
+124
+00:08:20,060 --> 00:08:21,770
+and it involves.
+
+125
+00:08:24,740 --> 00:08:27,620
+Two pieces, one of which is an exponential factor
+
+126
+00:08:29,600 --> 00:08:35,540
+to the. Minus energy over temperature. I'm jumping
+
+127
+00:08:35,540 --> 00:08:38,090
+ahead a bit to connect this to the temperature.
+
+128
+00:08:40,620 --> 00:08:42,600
+That is known as The Ballston Factor, this
+
+129
+00:08:42,600 --> 00:08:44,730
+exponential dependence, and what it tells us is
+
+130
+00:08:44,730 --> 00:08:49,980
+that lower energies that have a less negative
+
+131
+00:08:49,980 --> 00:08:52,770
+argument to this exponential are probabilistically
+
+132
+00:08:52,770 --> 00:08:55,860
+favored in the canonical approach into a dynamic
+
+133
+00:08:55,860 --> 00:08:59,390
+equilibrium, which is a big contrast to the
+
+134
+00:08:59,400 --> 00:09:02,100
+microeconomic ensemble where all of the
+
+135
+00:09:02,100 --> 00:09:06,720
+microstates had the same probability. Now we have
+
+136
+00:09:06,720 --> 00:09:09,960
+the additional specification that all microstates
+
+137
+00:09:09,960 --> 00:09:14,790
+with the same energy have. The same probability
+
+138
+00:09:15,480 --> 00:09:20,040
+and the extent to which we are sensitive to the
+
+139
+00:09:20,040 --> 00:09:22,440
+energy is set by the temperature that is
+
+140
+00:09:22,440 --> 00:09:26,040
+normalizing this. The other piece of the
+
+141
+00:09:26,040 --> 00:09:31,140
+distribution is the partition function Z, which is
+
+142
+00:09:31,140 --> 00:09:36,660
+the sum over all microstates of our single replica
+
+143
+00:09:36,660 --> 00:09:43,200
+system of interest. That. Contains essentially all
+
+144
+00:09:43,200 --> 00:09:47,220
+of the information about that replica as a
+
+145
+00:09:47,250 --> 00:09:52,730
+statistical ensemble and by. Maximizing that
+
+146
+00:09:52,730 --> 00:09:57,160
+entropy to. Get to thermodynamic equilibrium.
+
+147
+00:09:57,190 --> 00:10:00,130
+Taking the derivative, we get the temperature and
+
+148
+00:10:00,130 --> 00:10:04,600
+we get the result that I have already referenced
+
+149
+00:10:04,600 --> 00:10:08,500
+before, that it is the temperature that shows up
+
+150
+00:10:08,950 --> 00:10:12,430
+in that Boltzmann factor and therefore in the
+
+151
+00:10:12,430 --> 00:10:14,470
+partitioned function. And therefore it is the
+
+152
+00:10:14,470 --> 00:10:18,580
+temperature that completely specifies the system
+
+153
+00:10:18,580 --> 00:10:24,170
+we're interested in. And this is the. Key takeaway
+
+154
+00:10:24,170 --> 00:10:26,690
+message of the replica trick, all of that talk
+
+155
+00:10:26,690 --> 00:10:30,620
+about replicas and the total system of lots of
+
+156
+00:10:30,620 --> 00:10:34,460
+replicas with conserve energy, that all drops away.
+
+157
+00:10:34,910 --> 00:10:40,010
+All that matters is the temperature that the
+
+158
+00:10:40,160 --> 00:10:43,640
+condition of the dynamic equilibrium connects to
+
+159
+00:10:43,640 --> 00:10:47,600
+the partition function and therefore specifies
+
+160
+00:10:48,060 --> 00:10:50,360
+along with the conserved particle number that's
+
+161
+00:10:50,360 --> 00:10:52,820
+always coming along for the ride. We have the
+
+162
+00:10:52,820 --> 00:10:55,130
+temperature and conserve particle numbers
+
+163
+00:10:55,130 --> 00:10:59,180
+specifying all the details of our canonical system
+
+164
+00:10:59,690 --> 00:11:03,890
+with no more reference to the form of that thermal
+
+165
+00:11:03,890 --> 00:11:06,530
+reservoir. It just has to be president to set the
+
+166
+00:11:06,530 --> 00:11:09,740
+temperature. And beyond that, it doesn't matter.
+
+167
+00:11:12,960 --> 00:11:15,540
+The one thing I'll say about the derived qualities,
+
+168
+00:11:15,540 --> 00:11:19,680
+since I'm going on a bit bit long with that story
+
+169
+00:11:19,680 --> 00:11:20,820
+about the replica trick,
+
+170
+00:11:22,950 --> 00:11:27,660
+is that part of the homework coming up in a few
+
+171
+00:11:27,660 --> 00:11:33,000
+weeks will be to derive the heat capacity, which
+
+172
+00:11:33,000 --> 00:11:37,410
+is the dependence of the average internal energy
+
+173
+00:11:37,410 --> 00:11:41,490
+of the system on the temperature that is now the
+
+174
+00:11:41,490 --> 00:11:44,940
+fundamental independent variable characterizing
+
+175
+00:11:44,940 --> 00:11:45,540
+the system.
+
+176
+00:11:48,650 --> 00:11:52,190
+If you plug in the expression that we have for the
+
+177
+00:11:52,190 --> 00:11:59,010
+energy, you will find a relation between. The
+
+178
+00:11:59,010 --> 00:12:02,190
+fluctuations in the energy about his mean value
+
+179
+00:12:02,700 --> 00:12:06,420
+and the heat capacity of the derivative or the
+
+180
+00:12:06,420 --> 00:12:10,440
+response of the average energy to this control
+
+181
+00:12:10,440 --> 00:12:12,810
+parameter or the temperature. And this is an
+
+182
+00:12:12,810 --> 00:12:17,780
+example of a fluctuation response relation or for
+
+183
+00:12:18,240 --> 00:12:20,550
+somewhat obscure historical reasons, what's known
+
+184
+00:12:20,550 --> 00:12:23,640
+as the fluctuation dissipation relation that.
+
+185
+00:12:25,450 --> 00:12:29,430
+Appears quite generally in statistical physics,
+
+186
+00:12:29,440 --> 00:12:33,370
+another example being the relation that while the
+
+187
+00:12:33,370 --> 00:12:36,490
+law, the law of diffusion that we looked at in
+
+188
+00:12:36,790 --> 00:12:41,020
+week one, which is what Einstein derived when
+
+189
+00:12:41,020 --> 00:12:44,740
+analyzing Brownian motion, using statistical
+
+190
+00:12:44,740 --> 00:12:47,530
+physics, that law of diffusion is another example
+
+191
+00:12:48,070 --> 00:12:50,560
+of the fluctuation dissipation theorem.
+
+192
+00:12:53,080 --> 00:12:57,130
+And wrapping up with the example of.
+
+193
+00:13:00,310 --> 00:13:05,760
+The spin system. And the different behavior of the
+
+194
+00:13:05,760 --> 00:13:10,170
+spin system, depending on what information is
+
+195
+00:13:10,170 --> 00:13:14,220
+physically knowable about it, some of the
+
+196
+00:13:14,700 --> 00:13:20,340
+takeaways to see from this example are. The.
+
+197
+00:13:23,290 --> 00:13:26,800
+Concept of the Crown State and the excited states
+
+198
+00:13:26,800 --> 00:13:30,880
+where now the canonical ensemble where the
+
+199
+00:13:31,210 --> 00:13:35,260
+probability of a microstates depends exponentially
+
+200
+00:13:35,530 --> 00:13:40,030
+on the energy of that microstates, it becomes
+
+201
+00:13:40,030 --> 00:13:43,660
+important. So we have some non-zero probability of
+
+202
+00:13:43,660 --> 00:13:47,590
+sampling any micro state in the system, regardless
+
+203
+00:13:47,590 --> 00:13:49,900
+of what its energy is, that energy is no longer
+
+204
+00:13:49,900 --> 00:13:53,290
+conserved. But there is a probabilistic preference
+
+205
+00:13:53,710 --> 00:13:58,360
+to sample the states with the the lower or the
+
+206
+00:13:58,360 --> 00:14:01,360
+lowest energy, that lowest energy state being
+
+207
+00:14:01,360 --> 00:14:04,960
+known as the ground state. And as the temperature
+
+208
+00:14:04,960 --> 00:14:10,760
+decreases. The factor of the temperature in the
+
+209
+00:14:10,770 --> 00:14:14,160
+Boltzmann factor to the minus energy divided by
+
+210
+00:14:14,160 --> 00:14:17,690
+temperature makes that sensitivity to the energy
+
+211
+00:14:18,090 --> 00:14:21,030
+more and more significant. So as the temperature
+
+212
+00:14:21,030 --> 00:14:24,720
+approaches absolute zero, the economical system
+
+213
+00:14:24,720 --> 00:14:28,410
+really freezes in battleground states and the
+
+214
+00:14:28,440 --> 00:14:33,240
+entropy accordingly vanishes. Because there's
+
+215
+00:14:33,240 --> 00:14:37,890
+really only one state with a non-zero probability
+
+216
+00:14:37,890 --> 00:14:43,500
+of being realized and the logarithm of one is the
+
+217
+00:14:43,500 --> 00:14:45,840
+entropy, which is zero. One day the number of
+
+218
+00:14:45,840 --> 00:14:49,260
+microstates in that limit of absolute zero
+
+219
+00:14:49,260 --> 00:14:53,400
+temperature and at low temperatures, we can see
+
+220
+00:14:53,400 --> 00:14:58,320
+the effects of higher energy, excited states in
+
+221
+00:14:58,350 --> 00:15:01,860
+these derived quantities, the internal energy and
+
+222
+00:15:01,860 --> 00:15:06,150
+the entropy. In the case of this spin system, that
+
+223
+00:15:06,150 --> 00:15:10,440
+effect is exponential in the energy difference
+
+224
+00:15:10,440 --> 00:15:13,410
+between the ground state and the first excited
+
+225
+00:15:13,410 --> 00:15:16,410
+state, what's known as the energy gap. That's
+
+226
+00:15:16,410 --> 00:15:22,380
+generically true for the energy. And systems that
+
+227
+00:15:22,380 --> 00:15:25,260
+have this non-zero energy gap rather than a
+
+228
+00:15:25,260 --> 00:15:30,240
+continuous, continuously varying possible energy
+
+229
+00:15:30,240 --> 00:15:34,990
+use, it's a little bit different. That's. There's
+
+230
+00:15:34,990 --> 00:15:37,840
+not such a strong statement we can say about the
+
+231
+00:15:37,840 --> 00:15:44,110
+entropy, what we can look at is contrasting the so
+
+232
+00:15:44,740 --> 00:15:48,540
+those facts, the. The zero temperature limit of
+
+233
+00:15:48,540 --> 00:15:53,220
+the energy and entropy is the same, regardless of
+
+234
+00:15:53,670 --> 00:15:55,920
+whether or not we can distinguish these spins,
+
+235
+00:15:55,920 --> 00:15:59,910
+what information is intrinsic to the system? There
+
+236
+00:15:59,940 --> 00:16:02,610
+are bigger differences at non-zero temperature and
+
+237
+00:16:02,610 --> 00:16:06,480
+in particular physically observable differences in
+
+238
+00:16:06,480 --> 00:16:10,050
+things like the energy of the system as a function
+
+239
+00:16:10,050 --> 00:16:14,280
+of temperature. So there is physical content to
+
+240
+00:16:14,670 --> 00:16:17,420
+the information that is knowable about the system.
+
+241
+00:16:17,790 --> 00:16:21,960
+And there's also a very striking difference in the
+
+242
+00:16:23,220 --> 00:16:26,670
+entropy in the limit of very high temperatures
+
+243
+00:16:27,150 --> 00:16:32,150
+where. We approximately recover the micro
+
+244
+00:16:32,150 --> 00:16:35,570
+canonical behavior, what's going on there is that
+
+245
+00:16:36,050 --> 00:16:38,060
+in the high temperature limits, the temperature is
+
+246
+00:16:38,060 --> 00:16:42,020
+so much larger than the energy of any individual
+
+247
+00:16:42,020 --> 00:16:45,590
+spin in the system, that to a good approximation,
+
+248
+00:16:45,590 --> 00:16:51,590
+we can say that the the energy is effectively
+
+249
+00:16:51,590 --> 00:16:55,910
+vanishing. So all microstates have that same
+
+250
+00:16:56,360 --> 00:17:00,050
+negligible energy. And we get back to the micro
+
+251
+00:17:00,050 --> 00:17:04,310
+canonical case as the limit here. But in the case
+
+252
+00:17:04,310 --> 00:17:10,420
+where the spins are distinguishable. We calculate
+
+253
+00:17:10,420 --> 00:17:15,400
+that the entropy at high temperatures is the
+
+254
+00:17:15,400 --> 00:17:19,750
+number of spins and times, the logarithm of two,
+
+255
+00:17:20,530 --> 00:17:23,200
+whereas in the case where we where it is not
+
+256
+00:17:23,200 --> 00:17:26,080
+possible in principle to distinguish the spins,
+
+257
+00:17:26,800 --> 00:17:29,860
+the entropy is much smaller. It is the logarithm
+
+258
+00:17:29,860 --> 00:17:33,130
+of one plus one. So approximately the logarithm of
+
+259
+00:17:33,130 --> 00:17:36,430
+N for a large number of spins. So that's an
+
+260
+00:17:36,430 --> 00:17:41,140
+exponential difference in the energy. That is a
+
+261
+00:17:41,140 --> 00:17:44,290
+direct consequence of the exponential difference
+
+262
+00:17:44,290 --> 00:17:47,260
+in the number of possible microstates. We can
+
+263
+00:17:47,260 --> 00:17:52,090
+distinguish all those things we have to do the n
+
+264
+00:17:52,090 --> 00:17:56,170
+different microstates that differ by the values
+
+265
+00:17:56,170 --> 00:17:58,390
+that those distinguishable spins can have. When we
+
+266
+00:17:58,390 --> 00:18:01,600
+can't distinguish those spins, then the
+
+267
+00:18:01,600 --> 00:18:05,320
+microstates are characterized only by the energies
+
+268
+00:18:05,320 --> 00:18:07,870
+that they have and there are only and plus one
+
+269
+00:18:08,290 --> 00:18:12,130
+possible energy levels in the system of an spins.
+
+270
+00:18:13,520 --> 00:18:18,260
+So that is the the first application of the
+
+271
+00:18:18,260 --> 00:18:21,530
+canonical approach, demonstrating that information
+
+272
+00:18:21,530 --> 00:18:25,880
+is physical and in the next two weeks we will look
+
+273
+00:18:25,880 --> 00:18:26,390
+at.
+
+274
+00:18:29,580 --> 00:18:33,300
+A bit broader implications of the canonical
+
+275
+00:18:33,300 --> 00:18:37,680
+ensemble to ideal gases and so dynamical cycles
+
+276
+00:18:38,220 --> 00:18:42,330
+that include refrigerators and heat engines. So I
+
+277
+00:18:42,330 --> 00:18:46,860
+will finally, after a bit of a lengthy diatribe,
+
+278
+00:18:46,860 --> 00:18:50,270
+wrap up this wrap up. With that.
