@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 3}
-\renewcommand{\moddate}{Last modified 15 Feb.~2021}
+\renewcommand{\moddate}{Last modified 18 Feb.~2021}
 \setcounter{section}{3}
 \setcounter{subsection}{0}
 \phantomsection
@@ -8,7 +8,7 @@
 \section*{Week 3: Canonical ensemble}
 
 \subsection{The thermal reservoir}
-\subsubsection{Replicas and occupation numbers}
+\subsubsection{\label{sec:replicas}Replicas and occupation numbers}
 While it is relatively easy to prevent particle exchange, for example by sealing gases inside airtight containers, it is not practical to forbid energy exchange as would be needed to fully isolate statistical systems.
 Any thermal insulator is imperfect, and even in the deepest reaches of space we would still be bombarded by cosmic microwave radiation.
 In practice it is more convenient to work with physical systems that are characterized by their (intensive) temperatures rather than their (extensive) internal energies.
@@ -24,7 +24,7 @@ The key qualitative idea is that, in thermodynamic equilibrium, \Om has a neglig
 In particular, the temperature of that overall system---and therefore the temperature of $\Om$, by intensivity---is set by the reservoir and remains fixed even as $E$ fluctuates.
 This effectively generalizes the setup we used to analyze heat exchange last week, where we saw that thermal contact causes a net flow of energy from hotter systems to colder systems, cooling the former by heating the latter.
 
-The mathematical realization of this argument, as developed by Gibbs, proceeds by considering a well-motivated ansatz for the form of the thermal reservoir $\Om_{\text{res}}$.
+The mathematical realization of this argument, as developed by J.\ Willard Gibbs, proceeds by considering a well-motivated ansatz for the form of the thermal reservoir $\Om_{\text{res}}$.
 \textcolor{green}{The goal}, which will be useful to keep in mind as we go through the lengthy analysis, is to show that the specific form of $\Om_{\text{res}}$ is ultimately irrelevant.
 This will allow us to work directly with the system of interest, $\Om$, independent of the details of the thermal reservoir that fixes its temperature.
 
@@ -192,6 +192,7 @@ Every aspect of \Om can now be specified in terms of its fixed temperature $T$ a
 
 In particular, the partition function from \eq{eq:part_func} is simply
 \begin{equation}
+  \label{eq:canon_part_func}
   Z(T) = \sum_{i = 1}^M e^{-E_i / T}.
 \end{equation}
 and together with \be specifies the probabilities
@@ -201,7 +202,8 @@ and together with \be specifies the probabilities
 \end{equation}
 from \eq{eq:occ_prob}.
 This $p_i$ is now the probability---in thermodynamic equilibrium---that \Om adopts micro-state $\om_i$ with (non-conserved) internal energy $E_i$.
-As we might have expected based on last week's look at the micro-canonical ensemble, all micro-states with the same energy have the same probability in thermodynamic equilibrium.
+This probability distribution is called either the \textbf{Boltzmann distribution} or the \textbf{Gibbs distribution}, while $e^{-E_i / T}$ itself is known as a \textbf{Boltzmann factor}.
+All micro-states with the same energy have the same probability in thermodynamic equilibrium, which is consistent with the micro-canonical behaviour we saw last week.
 % ------------------------------------------------------------------
 
 
@@ -221,9 +223,10 @@ Here we highlight the dependence of $\vev{E}$ on the temperature, and also freel
   $\displaystyle \pderiv{}{\be} \log Z = $ \\[100 pt]
 \end{mdframed}
 In this case it is easier to take the derivative with respect to \be as opposed to
-\begin{equation*}
+\begin{equation}
+  \label{eq:beta_T}
   \pderiv{}{\be} = \pderiv{T}{\be} \pderiv{}{T} = -\frac{1}{\be^2} \pderiv{}{T} = -T^2 \pderiv{}{T}.
-\end{equation*}
+\end{equation}
 
 Last week, we saw that `natural' micro-canonical systems exhibit higher (derived) temperatures for larger (conserved) internal energies.
 Now, in the canonical approach, the average internal energy $\vev{E}$ is the derived quantity while the temperature is fixed.
@@ -233,13 +236,14 @@ From our everyday experience, we expect a similar direct relation between temper
   The \textbf{heat capacity} is defined to be
   \begin{equation}
     \label{eq:heat_cap}
-    c_v = \pderiv{}{T} \vev{E} \geq 0.
+    c_v = \pderiv{}{T} \vev{E},
   \end{equation}
+  and is always non-negative, $c_v \geq 0$.
 \end{shaded}
 
-In a homework assignment you will show that $c_v$\footnote{The subscript indicates that the volume of the system is kept fixed; details will wait until we properly introduce the volume over the next couple of weeks.} is always non-negative (and generically positive), by deriving a so-called \textbf{fluctuation--dissipation} (or \textbf{fluctuation--response}) \textbf{relation}.
-This will be a special case of a \href{https://en.wikipedia.org/wiki/Fluctuation-dissipation_theorem}{more general theorem}, and will relate the fluctuations of the internal energy around its expectation value, $\sum_i \left(E_i - \vev{E}\right)^2$, to the energy's \textit{response} to a change in temperature, $\pderiv{}{T} \vev{E}$.
-The (generically) positive heat capacity confirms our expectation from everyday experiences that higher temperatures produce larger (average) internal energies.
+In a homework assignment you will show that $c_v \geq 0$,\footnote{The subscript indicates that the volume of the system is kept fixed; details will wait until we properly introduce the volume over the next couple of weeks.} by deriving a so-called \textbf{fluctuation--dissipation} (or \textbf{fluctuation--response}) \textbf{relation}.
+That relation will be a special case of a \href{https://en.wikipedia.org/wiki/Fluctuation-dissipation_theorem}{more general theorem}, and will connect the fluctuations of the internal energy around its expectation value, $\sum_i \left(E_i - \vev{E}\right)^2$, to the energy's \textit{response} to a change in temperature, $\pderiv{}{T} \vev{E}$.
+Equality will hold only in extremely special cases, meaning that the heat capacity is generically positive, which confirms our expectation from everyday experiences that higher temperatures produce larger (average) internal energies.
 
 \newpage % WARNING: FORMATTING BY HAND
 We finally need to compute the entropy of \Om itself, still in thermodynamic equilibrium but with no reference to the thermal reservoir apart from its role fixing $T$.
@@ -258,42 +262,205 @@ You should find
 
 % ------------------------------------------------------------------
 \subsection{Helmholtz free energy}
-Last week we saw that the micro-canonical entropy depended logarithmically on the number of micro-states.
-Now \eq{eq:canon_entropy} contains a similar logarithm of the partition function, which we identified as a fundamental quantity in the canonical ensemble.
-This motivates the definition We can 
+Last week we saw that the micro-canonical entropy in thermodynamic equilibrium is the logarithm of the number of micro-states.
+Now \eq{eq:canon_entropy} features a similar logarithm of the partition function (\eq{eq:canon_part_func}), which is a sum over all micro-states that we identified as a fundamental quantity in the canonical ensemble.
+This motivates the following definition of a quantity with the dimensions of energy that is related to $\log Z$, which provides simpler and more elegant expressions for the derived quantities we considered above.
 
 \begin{shaded}
   The \textbf{Helmholtz free energy} of a canonical ensemble is defined to be
-  \begin{equation}
+  \begin{align}
     \label{eq:helmholtz}
-    F(T) = -T \log Z,
-  \end{equation}
+    F(T) & = -T \log Z(T) &
+    F(\be) & = -\frac{\log Z(\be)}{\be},
+  \end{align}
   where $Z$ is the partition function of the ensemble.
+  In terms of this free energy, Eqs.~\ref{eq:canon_part_func} and \ref{eq:canon_prob} are
+  \begin{align*}
+    Z & = e^{-F / T} &
+    p_i = e^{(F - E_i) / T}.
+  \end{align*}
 \end{shaded}
 
-\TODO{...}
-
+\newpage % WARNING: FORMATTING BY HAND
+The Helmholtz free energy is named after \href{https://en.wikipedia.org/wiki/Hermann_von_Helmholtz}{Hermann von Helmholtz} and reveals its usefulness when we take its derivative.
+The derivative involves $\pderiv{}{T} \log Z$, which is worth collecting in advance based on \eq{eq:beta_T}:
 \begin{mdframed}
-  $\displaystyle \pderiv{}{T} \log Z = $ \\[100 pt]
-  \ \\[100 pt]
+  $\displaystyle -\pderiv{}{T}\left(\frac{F(T)}{T}\right) = \pderiv{}{T} \log Z(T) = $ \\[50 pt]
+  $\displaystyle \pderiv{}{T} F(T) = $ \\[50 pt]
 \end{mdframed}
-Combining this result with \eq{eq:canon_entropy} and the expression for $\vev{E}$ from an earlier gap, \TODO{...}
-
-\TODO{Being written...}
+From these results and \eq{eq:beta_T} we can read off the more elegant expressions promised above:
+\begin{align}
+  S(T) & = -\pderiv{}{T} F(T) \\
+  \vev{E}\!(T) & = -T^2 \pderiv{}{T}\left(\frac{F(T)}{T}\right) = \pderiv{}{\be}\left[\be F(\be)\right] = T S(T) + F(T).
+\end{align}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
-\subsection{Distinguishable Spins}
-\TODO{Being written...}
+\subsection{The physics of information}
+As a first application of the canonical ensemble, we will explore physically observable effects that depend on the pure information content of a statistical system.
+A famous topic related to these effects is the \href{https://en.wikipedia.org/wiki/Black_hole_information_paradox}{black hole information loss paradox}, but this example is well beyond the scope of this module since it involves quantum mechanics and general relativity in addition to statistical physics.
+Here we will consider simple spin systems as introduced last week, contrasting the behaviour of their average internal energy $\vev{E}$ and entropy $S$ depending on whether or not the spins can (in principle) be distinguished from each other.
+It's important to appreciate that the ``information'' discussed here is an intrinsic property of the system---what is \textit{knowable} about it in principle.
+It does not matter whether or not any observer actually knows this information; so long as it can possibly be known it will have an effect.
+
+\subsubsection{Distinguishable spins in a solid}
+We begin with the setup introduced last week: A system of $N$ spins arranged in a line, placed in an external magnetic field of strength $H$, and in thermodynamic equilibrium.
+We further specify that the spins are embedded in a solid material that fixes their positions and prevents them from moving.
+This allows them to be distinguished from one another: An observer can target an appropriate position in the solid to measure the corresponding spin.
+The spins distinguished in this way will be aligned either anti-parallel or parallel to the magnetic field.
+The canonical system therefore has $M = 2^N$ distinct micro-states $\om_i$ with energies $E_i$ and probabilities $p_i = \frac{1}{Z} e^{-E_i / T}$, each defined by the orientations of all $N$ spins.
+
+Building on our work last week, we can represent the orientation of the $n$th spin as $s_n \in \left\{1, -1\right\}$, where $s_n = 1$ indicates alignment anti-parallel to the field and $s_n = -1$ indicates alignment parallel to the field.
+Since the spins don't interact with each other, the internal energy of the system in micro-state $\om_i$ specified by the $N$ spins $\left\{s_n\right\}$ is therefore
+\begin{equation}
+  \label{eq:spin_energy}
+  E_i = H \sum_{n = 1}^N s_n.
+\end{equation}
+To compute the partition function $Z_D$ (with the subscript reminding us about the spins' distinguishability), we have to sum over all possible spin configurations $\left\{s_n\right\}$.
+In this process we can save some space by defining the dimensionless variable $x = \be H = \frac{H}{T}$:
+\begin{align}
+  Z_D & = \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} e^{-\be E_i} = \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} \exp\left[-x \sum_{n = 1}^N s_n\right] \cr
+      & = \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} e^{-x s_1} \cdots e^{-x s_N} = \left(\sum_{s_1 = \pm 1} e^{-x s_1}\right) \cdots \left(\sum_{s_N = \pm 1} e^{-x s_N}\right) \cr
+      & = \left(\sum_{s = \pm 1} e^{-x s}\right)^N = \left(e^x + e^{-x}\right)^N = \left[2\cosh\left(\be H\right)\right]^N,
+\end{align}
+distributing the summations since all the spins are independent of each other.
+
+The corresponding Helmholtz free energy
+\begin{equation}
+  \label{eq:dist_Helm}
+  F_D(\be) = -\frac{N \log\left[2\cosh\left(\be H\right)\right]}{\be}
+\end{equation}
+is all we need to compute the average internal energy:
+\begin{mdframed}
+  $\displaystyle \vev{E}_D = \pderiv{}{\be}\left[\be F_D(\be)\right] = $ \\[100 pt]
+\end{mdframed}
+From this we immediately obtain the entropy
+\begin{equation}
+  \label{eq:dist_entropy}
+  S_D = \be\left(\vev{E} - F\right) = -N\be H \tanh\left(\be H\right) + N \log\left[2\cosh\left(\be H\right)\right].
+\end{equation}
+These results for $\vev{E}_D$ and $S_D$ are plotted below as functions of $\frac{T}{H} = \frac{1}{\be H}$.
+Since both these quantities are extensive, we show them in natural units, $\frac{\vev{E}_D}{NH}$ and $\frac{S_D}{N}$.
+
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/week03_distinguish.pdf}
+\end{center}
+
+Let's check the asymptotic behaviour of these functions, starting with \textbf{low temperatures}.
+In the canonical ensemble, there is no issue with taking the independent variable $T \to 0$.
+This corresponds to $\be H \to \infty$ and $\tanh\left(\be H\right) \to 1$, approaching the ``ground-state'' energy $E_{\text{min}} = E_0 = -NH$ you computed last week, which is realized only by the single micro-state in which all the spins are aligned with the magnetic field (every $s_n = -1$).
+At the same time, $\log\left[2\cosh\left(\be H\right)\right] \to \log e^{\be H} = \be H$ and the two terms in \eq{eq:dist_entropy} cancel out, so that $S_D \to 0$.
+This vanishing entropy is a generic consequence of temperatures approaching \textit{absolute zero}.
+
+Even at low temperatures, $\vev{E}_D$ and $S_D$ will be affected by the non-zero probability for the system to adopt higher-energy ``excited states''.
+Last week you also computed the energy $E_1 = -(N - 2)H$ of the first excited state, which is realized by $N$ distinct micro-states.
+The \textit{energy gap} between the ground state and the first excited state is $\De E = E_1 - E_0 = 2H$.
+(For this system all energy levels are separated by the same $E_{n_+ + 1} - E_{n_+} = 2H$, which we will use below.)
+
+\newpage % WARNING: FORMATTING BY HAND
+We can see the effects of the higher-energy states at low temperatures $\be H \gg 1$ by expanding $\vev{E}_D$ in powers of $e^{-\be H} \ll 1$.
+What is the first $\frac{T}{H}$-dependent term in this expansion?
+\begin{mdframed}
+  $\displaystyle \frac{\vev{E}_D}{NH} = $ \\[100 pt]
+\end{mdframed}
+You should find that the excited-state effects are \textit{exponentially} suppressed by the energy gap $\De E$ at low temperatures,
+\begin{equation*}
+  \frac{\vev{E}_D}{NH} = -1 + 2e^{-\be \De E} + \cO\left(e^{-2\be \De E}\right).
+\end{equation*}
+This is a generic feature of systems with a non-zero energy gap, and is due to the exponentially small probability $\propto$$e^{-\be \De E}$ of the system adopting any of the micro-states with the higher energy.
+
+The low-temperature expansion of \eq{eq:dist_entropy} for the entropy $S_D$ in powers of $e^{-\be H} \ll 1$ is similar:
+\begin{mdframed}
+  $\displaystyle \frac{S_D}{N} = $ \\[100 pt]
+\end{mdframed}
+Here the exponential suppression in the leading term is slightly counteracted by a linear factor of $\be \De E$,
+\begin{equation*}
+  \frac{S_D}{N} = \be \De E e^{-\be \De E} + e^{-\be \De E} + \cO\left(e^{-2\be \De E}\right).
+\end{equation*}
+
+In the limit of \textbf{high temperatures} the expansion of $\vev{E}_D$ and $S_D$ in powers of $\be H \ll 1$ is more straightforward.
+The $\tanh$ in $\vev{E}_D$ can be expanded as usual,
+\begin{equation*}
+  \frac{\vev{E}_D}{NH} = -\tanh\left(\be H\right) = -\be H + \frac{\left(\be H\right)^3}{3} + \cO\left(\left[\be H\right]^5\right),
+\end{equation*}
+and vanishes $\sim$$\frac{1}{T}$ as $T \to \infty$.
+This matches the micro-canonical behaviour we saw for this system last week, where the derived temperature diverged as the conserved energy approached zero.
+
+For the entropy, there is a similar connection to micro-canonical behaviour at high temperatures:
+\begin{mdframed}
+  $\displaystyle \frac{S_D}{N} = $ \\[100 pt]
+\end{mdframed}
+As $\frac{T}{H} \to \infty$, the result
+\begin{equation*}
+  \frac{S_D}{N} = \log 2 - \frac{\left(\be H\right)^2}{2} + \cO\left(\left[\be H\right]^4\right)
+\end{equation*}
+approaches the asymptotic value $S_D \to N\log 2 = \log M$ for the $M = 2^N$ micro-states (with different energies).
+Qualitatively, in this limit the energy of each spin is negligible compared to the temperature, and the system approximately behaves as though the energy were zero for all micro-states (and hence conserved).
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
-\subsection{Indistinguishable Spins}
-\TODO{Being written...}
+\subsubsection{Indistinguishable spins in a gas}
+We now consider nearly the same setup, with $N$ spins in thermodynamic equilibrium, in an external magnetic field of strength $H$.
+The only difference is that now the spins are allowed to move, like particles in a one-dimensional gas.
+We demand that they move slowly so that we can neglect their kinetic energy and the total energy of the system continues to be given by \eq{eq:spin_energy}.
+Since the spins don't interact with each other, they can freely move past each other, and even occupy the same space, making it impossible for them to be distinguished from one another in any way. % Statistical treatment started by assuming we don't trace the motion of all the degrees of freedom...
+
+To define the fundamental canonical partition function (\eq{eq:canon_part_func}), we have to sum over the micro-states of the system.
+These micro-states are no longer in one-to-one correspondence with the full configurations $\left\{s_n\right\}$ of the $N$ spins.
+Because the spins are now indistinguishable, certain spin configurations also cannot be distinguished from each other.
+The simplest example comes from the two-spin system considered in \secref{sec:replicas}, where the configurations $\downarrow\uparrow$ and $\uparrow\downarrow$ now both map onto a single micro-state.
+In this micro-state, we know only that one spin is $s_i = 1$ while the other is $s_k = -1$; it's not possible to distinguish which is which.
+
+What remains observable is the energy of the micro-state.
+Because permutations of the spin configurations don't change the internal energy (the sum in \eq{eq:spin_energy} is commutative), we can conclude that all such permutations correspond to a single distinct micro-state.
+For this particular system, we saw above that the energies are best described as \textit{energy levels} separated by a constant gap $\De E = 2H$.
+As a quick example, enumerate the energy levels when $N = 4$ and list the spin configurations associated with the corresponding micro-states.
+How many micro-states are there for $N$ spins?
+\begin{mdframed}
+  \ \\[120 pt]
+\end{mdframed}
+
+A convenient way to label these micro-states and energy levels is to define
+\begin{equation*}
+  E_k = -NH + 2Hk
+\end{equation*}
+for micro-state $\om_k$ with $k = 0, \cdots N$.
+(Previously we used the label $n_+$ instead of $k$.)
+To compute the partition function $Z_I$ (with the subscript reminding us about the spins' indistinguishability), we simply sum
+\begin{align}
+  Z_I & = \sum_{k = 0}^N e^{-\be E_k} = \sum_{k = 0}^N e^{\be H (N - 2k)} = e^{N\be H} \sum_{k = 0}^N \left(e^{-2\be H}\right)^k = e^{N\be H} \frac{1 - e^{-2(N + 1) \be H}}{1 - e^{-2\be H}}.
+\end{align}
+The geometric series in the last step can be reconstructed by considering
+\begin{equation*}
+  \sum_{k = 0}^N x^k = \sum_{k = 0}^{\infty} x^k - \sum_{k = N + 1}^{\infty} x^k = \frac{1}{1 - x} - x^{N + 1} \sum_{\ell = 0}^{\infty} x^{\ell} = \frac{1}{1 - x} - \frac{x^{N + 1}}{1 - x}.
+\end{equation*}
+
+The corresponding Helmholtz free energy is
+\begin{equation}
+  \label{eq:indist_Helm}
+  F_I(\be) = -NH - \frac{\log\left[1 - e^{-2(N + 1) \be H}\right]}{\be} + \frac{\log\left[1 - e^{-2 \be H}\right]}{\be}.
+\end{equation}
+In contrast to \eq{eq:dist_Helm}, $F_i(\be)$ is no longer proportional to $N$.
+In a homework assignment you will use $F_I$ to determine the average internal energy $\vev{E_I}$ and entropy $S_I$ shown in the figures below, and also check the low- and high-temperature expansions like we did for the distinguishable case above.
+Unlike our results for the distinguishable case, you will find that $\frac{\vev{E}_I}{NH}$ and $\frac{S_I}{N}$ depend on $N$, which requires us to fix $N = 4$ in the plots below.
+\begin{center} % Don't need centering, but this will provide consistent vertical spacing
+  \includegraphics[width=0.45\textwidth]{figs/week03_energies.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/week03_entropies.pdf}
+\end{center}
+
+The dash-dotted lines in these figures are exactly the distinguishable-spin results shown above.
+The solid lines are the new results for indistinguishable spins.
+We see that the same $T \to 0$ limits are approached in both cases: $E \to -NH$ and $S \to 0$.
+At low temperatures, the indistinguishable results approach these limits more quickly---they still feature exponential suppression of excited-state effects by the energy gap, $e^{-\be \De E}$, but this now comes with additional factors of $N$.
+
+At high temperatures there is an even more striking difference.
+While the average internal energy $\vev{E_I}$ continues to vanish $\sim$$\frac{1}{T}$ as $T \to \infty$ (with different $N$ dependence), the entropy approaches the asymptotic value $S_I \to \log\left(N + 1\right) = \log M$ for the $M = N + 1$ micro-states.
+This logarithmic dependence on $N$ is very different from the $S_D \to N\log 2$ limit we found for distinguishable spins, and reflects the exponentially smaller number of micro-states that exist for indistinguishable spins, $N + 1$ vs.\ $2^N$.
+
+Finally, away from those low- and high-temperature limits, the results above show a significant difference in the internal energy of the spin systems, depending only on whether or not the spins can be distinguished from each other in principle.
+This is a physically measurable effect caused by the intrinsic information content of a statistical system, and a simple illustration of phenomena that remain at the leading edge of ongoing research.
+The conclusion was pithily stated by \href{https://en.wikipedia.org/wiki/Rolf_Landauer}{Rolf Landauer} in 1991: ``Information is physical.''
 % ------------------------------------------------------------------
