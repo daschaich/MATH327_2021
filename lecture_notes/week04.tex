@@ -1,39 +1,69 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 4}
-\renewcommand{\moddate}{Last modified 18 Feb.~2021}
+\renewcommand{\moddate}{Last modified 20 Feb.~2021}
 \setcounter{section}{4}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 4: Ideal gases}
 \section*{Week 4: Ideal gases}
 
-\subsection{The (non-relativistic) classical ideal gas}
+\subsection{Volume and energy levels}
 This week we apply the canonical ensemble to investigate non-relativistic, classical, ideal gases.
-Using statistical physics we will explore how the large-scale behaviours of such gases emerge from the properties of the particles that compose.
+Using statistical physics we will explore how the large-scale behaviours of such gases emerge from the properties of the particles that compose them.
 The three adjectives above specify these properties in the case we consider this week: \\[-24 pt]
 \begin{itemize}
   \item \textbf{Classical} systems are those for which we can ignore the effects of quantum mechanics.
-        At a technical level, this means we assume we can simultaneously define both the position $\vec x$ and the momentum $\vec p$ of each particle with arbitrary accuracy.
+        At a technical level, this means we assume we can simultaneously define both the position $(x, y, z)$ and the momentum $\vec p = (p_x, p_y, p_z)$ of each particle with arbitrary precision.
   \item \textbf{Non-relativistic} particles move with speeds small compared to the speed of light, which allows us to ignore small effects due to special relativity.
         The particles are therefore governed by the laws Isaac Newton published all the way back in 1687.
         In particular, the energy of each particle of mass $m$ is
         \begin{equation*}
-          E_i = \frac{1}{2m} \vec{p}_i^{\,2}.
+          E_n = \frac{1}{2m} p_n^2,
         \end{equation*}
+        where $p^2 = \vec p \cdot \vec p$ is the inner (or `dot') product of the momentum vector.
   \item \textbf{Ideal} gases are those whose constituent particles don't interact with each other.
         As a result, the total energy of the gas is simply the sum of the energies of the $N$ individual particles,
         \begin{equation}
-          E = \frac{1}{2m} \sum_{i = 1}^N \vec{p}_i^{\,2}.
+          E = \frac{1}{2m} \sum_{i = n}^N p_n^2.
         \end{equation}
 \end{itemize}
 
-As usual for the canonical ensemble, we consider the gas enclosed in a box with volume $V = L^3$, which is in thermal equilibrium with a large external thermal reservoir with which the gas can exchange energy.
+As usual for the canonical ensemble, we consider the gas to be in thermodynamic equilibrium, and in thermal contact with a large external thermal reservoir with which it can exchange energy but not particles.
+To prevent particle exchange, we can specify that the gas is enclosed in a box with volume $V = L^3$.
+The thermal reservoir fixes the temperature $T$ of the gas.
 
+The starting point for our analysis is to compute the partition function
+\begin{equation*}
+  Z = \sum_i e^{-E_i / T}.
+\end{equation*}
+Here the sum is over all possible micro-states of the $N$-particle canonical system, which is problematic.
+The energies $E_i$ of the micro-states $\om_i$ depend on the momenta $\vec{p}_n$ of each of the $N$ particles, and we would classically assume those momentum components and energies to be continuously varying, real numbers.
+Every possible set of momenta and energies (modulo particle distinguishability) corresponds to a distinct micro-states, implying an uncountably infinite set of micro-states for which the discrete summation above ill-defined.
+
+To proceed, we need to \textit{regulate} the system so that there are a countable number of micro-states and we can define the partition function.
+We do this by positing that the particles' momentum components can take only discrete (or `quantized') values depending on the volume of the box.
+Specifically, we declare that the possible momenta are
+\begin{align*}
+  \vec p & = (p_x, p_y, p_z) = \hbar \frac{\pi}{L} (k_x, k_y, k_z) &
+  k_{x, y, z} = 0, 1, 2, \cdots.
+\end{align*}
+The constant factor $\hbar$ (``h-bar''), known as the (reduced) Planck constant, simply converts units from inverse-length ($\frac{1}{L}$) to momentum ($p$).
+Such discrete momenta turn out to be realized in nature, thanks to quantum mechanics---if you have previously studied quantum physics, you may recognize the momenta for a \href{https://en.wikipedia.org/wiki/Particle_in_a_box}{particle in a box}, but for the purposes of this module we can just adopt this result as an ansatz.
+With these momenta, we see that the energies fall into discrete \textit{energy levels},
+\begin{align*}
+  E(p) & = \frac{\hbar^2 \pi^2}{2mL^2} (k_x^2 + k_y^2 + k_z^2) &
+  k_{x, y, z} = 0, 1, 2, \cdots,
+\end{align*}
+somewhat similar to the spin system considered last week.
+
+Even though there are still an infinite number of possible momenta and energy levels for each particle in the gas, these are now countable, making our partition function well-defined.
+Let's start by considering the partition function $Z_1$ for a single particle in the box:
+\begin{equation*}
+  Z_1 = \TODO{...}
+\end{equation*}
+% o that we have a sum over a countably infinite number of terms that can be enumerated.
 
 \TODO{Being written...}
-
-% In order to define the partition function, we need to `quantize' the allowable values of the momenta that each particle can have, so that we have a sum over a countably infinite number of terms that can be enumerated.
-% Quantum mechanics explains how this quantization arises, but for the purposes of this module we will just take it as given.
 % ------------------------------------------------------------------
 
 
