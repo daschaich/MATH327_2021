@@ -194,16 +194,85 @@ As the temperature approaches absolute zero, $T \to 0$, it appears as though the
 
 % ------------------------------------------------------------------
 \subsection{The mixing entropy and the `Gibbs paradox'}
-The `Gibbs paradox' was an argument presented by J.\ Willard Gibbs in 1874--1875 that seemed to show a way for the entropy of an isolated system to decrease, in violation of the second law of thermodynamics.
-Here we will summarize the argument and point out where it goes wrong.
+Back in \secref{sec:heat_ex} we considered what would happen if we allowed two micro-canonical ensembles to exchange energy, and then re-isolated them.
+We saw that this procedure obeyed the second law of thermodynamics: the entropy never decreased, though we had to be careful to account for all of the entropy after re-isolating the two subsystems.
 
-\TODO{Being written...}
+We can now carry out a similar thought experiment by allowing two canonical ensembles to exchange particles, and then re-separating them.
+We demand that both canonical ensembles are in thermodynamic equilibrium with each other, for instance by sharing the same thermal reservoir with temperature $T$.
+This procedure is illustrated below, where we simplify the setup by taking the two initial systems to have equal volumes, $V_A = V_B = V$, and numbers of particles, $N_A = N_B = N$.
+
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/week04_mixing.pdf}
+\end{center}
+
+We can represent the process of combining and then re-separating these systems by writing
+\begin{equation*}
+  \Om_A + \Om_B \lra \Om_C \lra \Om_A' + \Om_B'.
+\end{equation*}
+What is the entropy for each of these three stages?
+Since the entropies depend on whether or not the particles in the gas are distinguishable from each other, let's first consider the case of \textit{indistinguishable} particles.
+
+\newpage % WARNING: FORMATTING BY HAND
+The initial entropy is the sum of the contributions from the two canonical systems, $S_A + S_B$, both of which are the same thanks to our simplification above, and are given by \eq{eq:ideal_entropy}:
+\begin{mdframed}
+  $\displaystyle S_A + S_B = 2S_I(N, V) = $ \\[50 pt]
+\end{mdframed}
+To find the entropy $S_C$ of the combined system, we just need to consider what happens when we double the volume and also double the number of particles:
+\begin{mdframed}
+  $\displaystyle S_C = S_I(2N, 2V) = $ \\[50 pt]
+\end{mdframed}
+You should find $S_C = S_A + S_B$, which is consistent with the second law of thermodynamics.
+
+Things are more complicated when we re-separate the systems.
+Analogously to our considerations in \secref{sec:heat_ex}, we need to sum over all the possible ways of dividing the $2N$ particles between the two re-separated boxes.
+If $N_A'$ particles end up in the left box (system $\Om_A'$), then the other system $\Om_B'$ must contain the remaining $N_B' = 2N - N_A'$ particles.
+Adding up the entropies,
+\begin{align}
+  S_A' + S_B' & = \sum_{N_A' = 0}^{2N} \left[\frac{3}{2} N_A' + N_A' \log\left(\frac{eV}{N_A' \lath^3}\right) \right. \cr
+              &         \qquad\qquad + \left.\frac{3}{2} (2N - N_A') + (2N - N_A') \log\left(\frac{eV}{(2N - N_A') \lath^3}\right)\right] \label{eq:mixing_full} \\
+              & = 3N + 2N \log\left(\frac{eV}{\lath^3}\right) + \sum_{N_A' = 0}^{2N} \log\left[\left(N_A'\right)^{-N_A'} \left(2N - N_A'\right)^{-(2N - N_A')}\right]. \nonumber
+\end{align}
+
+Since this is hard to compare with $S_C = S_A + S_B = 3N + 2N \log\left(\frac{eV}{N\lath^3}\right)$, back in the 1870s J.\ Willard Gibbs suggested considering only the case $N_A' = N_B' = N$.
+This is justified for large numbers of particles, $N \gg 1$, because there are \textit{very} many ways of choosing $N$ out of the total $2N$ particles to end up in $\Om_A'$,
+\begin{equation}
+  \label{eq:mixing_factorial}
+  \binom{2N}{N} = \frac{(2N)!}{N! \; N!} \gg 1,
+\end{equation}
+compared to (for example) the single way of choosing $N_A' = 0$.
+This is the case drawn in the illustration above, and with this approximation we have $\Om_A' = \Om_A$ and $\Om_B' = \Om_B$.
+Therefore the final entropy is simply $S_A' + S_B' = S_A + S_B$ and the second law of thermodynamics is satisfied:
+\begin{equation*}
+  S_A' + S_B' = S_C = S_A + S_B.
+\end{equation*}
+This is what we would expect from everyday experience: opening a door between two identical rooms doesn't lead to any observable effects, nor does reversing that process by closing the door.
+
+Something interesting happens when we repeat the same procedure for the case of \textit{distinguishable} particles, using our result for $S_D(N, V)$ in \eq{eq:ideal_entropy}.
+If we consider the difference between the combined entropy $S_C$ and the initial entropy $S_A + S_B$,
+\begin{align}
+  \De S_{\mathrm{mix}} & = S_C - (S_A + S_B) = S_D(2N, 2V) - 2S_D(N, V) \cr
+                       & = 3N + 2N \log\left(\frac{2V}{\lath^3}\right) - \left[3N + 2N \log\left(\frac{V}{\lath^3}\right)\right] = 2N\log 2 > 0,
+\end{align}
+we find that the entropy increases upon combining the two initial systems.
+This $\De S_{\mathrm{mix}} > 0$ is known as the \textbf{mixing entropy}.
+
+This result $S_C > S_A + S_B$ is what we would expect from the second law of thermodynamics.
+However, repeating the argument above that we can approximate $\Om_A' = \Om_A$ and $\Om_B' = \Om_B$ would then imply $S_A' + S_B' < S_C$, indicating a \textit{decrease} in the entropy by $\De S_{\mathrm{mix}}$ and an apparent violation of the second law of thermodynamics.
+This is known as the `Gibbs paradox', though Gibbs himself explained how the paradox is avoided.
+
+Because the particles are now distinguishable, $N_A' = N_A$ is no longer sufficient to establish $\Om_A' = \Om_A$.
+We need to specify not only that the total number of particles is the same, but also that the same distinguishable particles initially in $\Om_A$ also end up in the final $\Om_A'$.
+For example, if we start with particles $\left\{A, B, C\right\}$ in system $\Om_A$ with $\left\{D, E, F\right\}$ in $\Om_B$, then there is only a single way of ending up with $\left\{A, B, C\right\}$ in $\Om_A'$ and $\left\{D, E, F\right\}$ in $\Om_B$, not the factorially large number (\eq{eq:mixing_factorial}) that let us justify Gibbs's approximation. % TODO: Could mention un-mixing coffee and cream, though those are interacting fluids rather than ideal gases...
+Therefore we have to sum over all the possible ways of distributing all $2N$ distinct particles into the re-separated systems, analogously to \eq{eq:mixing_full}.
+It's not illuminating to grind through that calculation; we can be content to observe that the `Gibbs paradox' does not arise and the second law of thermodynamics remains valid.
+
+We can also observe another example of physical effects that differ depending only on the intrinsic information content of the system---whether or not the particles in an ideal gas can be distinguished from each other in principle.
+While mixing gases of distinguishable particles introduces a positive mixing entropy, for gases of indistinguishable particles there is no change in entropy when we let two subsystems mix, or when we reverse that process and re-separate them.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
 \subsection{Pressure and the equation of state}
 
 \TODO{Adiabaticity and constant-entropy condition...}
