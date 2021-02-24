@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 4}
-\renewcommand{\moddate}{Last modified 21 Feb.~2021}
+\renewcommand{\moddate}{Last modified 24 Feb.~2021}
 \setcounter{section}{4}
 \setcounter{subsection}{0}
 \phantomsection
@@ -120,12 +120,12 @@ In the simple two-particle example illustrated below, these labels mean we have 
   \includegraphics[width=0.7\textwidth]{figs/week04_distinguish.pdf}
 \end{center}
 If the particles are indistinguishable, no such labeling is possible, and there is only one micro-state for these $\left\{\vec p_1, \vec p_2\right\}$, rather than two.
-This factor of $2$ is not accidental, as you can appreciate by counting how many micro-states there are for three distinguishable particles with momenta $\left\{\vec p_1, \vec p_2, \vec p_3\right\}$, compared to the single micro-state for the indistinguishable case:
+This factor of $2$ is not accidental, as you can explore by counting how many micro-states there are for three distinguishable particles with momenta $\left\{\vec p_1, \vec p_2, \vec p_3\right\}$, compared to the single micro-state for the indistinguishable case:
 \begin{mdframed}
   \ \\[100 pt]
 \end{mdframed}
 
-In full generality, ideal gases with $N$ distinguishable particles have $N!$ times more micro-states compared to otherwise-identical ideal gases with indistinguishable particles: There are $N$ possible ways to label the particle with momentum $\vec{p}_1$, then $N - 1$ possible labels for $\vec{p}_2$, and so on.
+Generalizing to $N$ particles, ideal gases with distinguishable particles have $N!$ times more micro-states compared to otherwise-identical ideal gases with indistinguishable particles: There are $N$ possible ways to label the particle with momentum $\vec{p}_1$, then $N - 1$ possible labels for $\vec{p}_2$, and so on.\footnote{We here assume that the momenta themselves are distinguishable: $\vec{p}_i \neq \vec{p}_k$ for any $i \neq k$.  This is a reliable assumption for classical gases, but will need to be revisited when we introduce quantum statistics.}
 The partition function sums over these micro-states, but depends only on their energies, which are independent of any labeling.
 Therefore this factor of $N!$ is the only difference between \eq{eq:ideal_dist} and the partition function $Z_I$ for indistinguishable particles,
 \begin{equation}
@@ -215,11 +215,11 @@ Since the entropies depend on whether or not the particles in the gas are distin
 \newpage % WARNING: FORMATTING BY HAND
 The initial entropy is the sum of the contributions from the two canonical systems, $S_A + S_B$, both of which are the same thanks to our simplification above, and are given by \eq{eq:ideal_entropy}:
 \begin{mdframed}
-  $\displaystyle S_A + S_B = 2S_I(N, V) = $ \\[50 pt]
+  $\displaystyle S_A + S_B = $ \\[50 pt]
 \end{mdframed}
 To find the entropy $S_C$ of the combined system, we just need to consider what happens when we double the volume and also double the number of particles:
 \begin{mdframed}
-  $\displaystyle S_C = S_I(2N, 2V) = $ \\[50 pt]
+  $\displaystyle S_C = $ \\[50 pt]
 \end{mdframed}
 You should find $S_C = S_A + S_B$, which is consistent with the second law of thermodynamics.
 
@@ -251,7 +251,7 @@ Something interesting happens when we repeat the same procedure for the case of 
 If we consider the difference between the combined entropy $S_C$ and the initial entropy $S_A + S_B$,
 \begin{align}
   \De S_{\mathrm{mix}} & = S_C - (S_A + S_B) = S_D(2N, 2V) - 2S_D(N, V) \cr
-                       & = 3N + 2N \log\left(\frac{2V}{\lath^3}\right) - \left[3N + 2N \log\left(\frac{V}{\lath^3}\right)\right] = 2N\log 2 > 0,
+                       & = 3N + 2N \log\left(\frac{2V}{\lath^3}\right) - \left[3N + 2N \log\left(\frac{V}{\lath^3}\right)\right] = 2N\log 2 > 0, \label{eq:mixing_entropy}
 \end{align}
 we find that the entropy increases upon combining the two initial systems.
 This $\De S_{\mathrm{mix}} > 0$ is known as the \textbf{mixing entropy}.
@@ -260,22 +260,92 @@ This result $S_C > S_A + S_B$ is what we would expect from the second law of the
 However, repeating the argument above that we can approximate $\Om_A' = \Om_A$ and $\Om_B' = \Om_B$ would then imply $S_A' + S_B' < S_C$, indicating a \textit{decrease} in the entropy by $\De S_{\mathrm{mix}}$ and an apparent violation of the second law of thermodynamics.
 This is known as the `Gibbs paradox', though Gibbs himself explained how the paradox is avoided.
 
-Because the particles are now distinguishable, $N_A' = N_A$ is no longer sufficient to establish $\Om_A' = \Om_A$.
+The explanation is that because the particles are now distinguishable, $N_A' = N_A$ is no longer sufficient to establish $\Om_A' = \Om_A$.
 We need to specify not only that the total number of particles is the same, but also that the same distinguishable particles initially in $\Om_A$ also end up in the final $\Om_A'$.
-For example, if we start with particles $\left\{A, B, C\right\}$ in system $\Om_A$ with $\left\{D, E, F\right\}$ in $\Om_B$, then there is only a single way of ending up with $\left\{A, B, C\right\}$ in $\Om_A'$ and $\left\{D, E, F\right\}$ in $\Om_B$, not the factorially large number (\eq{eq:mixing_factorial}) that let us justify Gibbs's approximation. % TODO: Could mention un-mixing coffee and cream, though those are interacting fluids rather than ideal gases...
+For example, if we start with particles $\left\{A, B, C\right\}$ in system $\Om_A$ with $\left\{D, E, F\right\}$ in $\Om_B$, then there is only a single way of ending up with $\left\{A, B, C\right\}$ in $\Om_A'$ and $\left\{D, E, F\right\}$ in $\Om_B'$, not the factorially large number (\eq{eq:mixing_factorial}) that let us justify Gibbs's approximation. % TODO: Could mention un-mixing coffee and cream, though those are interacting fluids rather than ideal gases...
 Therefore we have to sum over all the possible ways of distributing all $2N$ distinct particles into the re-separated systems, analogously to \eq{eq:mixing_full}.
 It's not illuminating to grind through that calculation; we can be content to observe that the `Gibbs paradox' does not arise and the second law of thermodynamics remains valid.
 
 We can also observe another example of physical effects that differ depending only on the intrinsic information content of the system---whether or not the particles in an ideal gas can be distinguished from each other in principle.
-While mixing gases of distinguishable particles introduces a positive mixing entropy, for gases of indistinguishable particles there is no change in entropy when we let two subsystems mix, or when we reverse that process and re-separate them.
+While mixing gases of distinguishable particles introduces a positive mixing entropy, \eq{eq:mixing_entropy}, for gases of indistinguishable particles there is no change in entropy when we let two subsystems mix, or when we reverse that process and re-separate them.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\subsection{Pressure and the equation of state}
+\subsection{Pressure, ideal gas law, and equations of state}
+Below \eq{eq:ideal_dist} we emphasized that the ideal gas partition function depends on the volume of the gas, $V$, in addition to the fixed temperature $T$ and conserved particle number $N$ that always characterize systems governed by the canonical ensemble.
+Parameters like $V$ that appear in the partition function are called \textbf{control parameters}, with the idea that they can (in principle) be controlled in experiments.
+Control parameters often enter the partition function through the definition of the energies $E_i$ for the micro-states $\om_i$.
+In the spin systems we considered in previous weeks, the strength $H$ of the external magnetic field is another example of a control parameter.
 
-\TODO{Adiabaticity and constant-entropy condition...}
+Focusing on ideal gases for now, we see that all dependence on $V$ drops out of our result for the average internal energy, \eq{eq:ideal_energy}.
+On the other hand, the volume does appear in \eq{eq:ideal_entropy} for the entropy $S$.
+For both cases of distinguishable and indistinguishable particles, the entropy depends on the same combination of volume and temperature: $V \lath^{-3} \propto V T^{3/2}$.
+If we keep $N$ fixed and consider using our experimental control to change the volume and the temperature of the system, the entropy will typically change as a consequence, unless the following relation is satisfied:
+\begin{equation*}
+  V T^{3/2} = \mbox{constant} \qquad \implies \qquad S = \mbox{constant.}
+\end{equation*}
+Such constant-entropy processes are important enough to merit special terminology.
 
-\TODO{Being written...}
+\begin{shaded}
+  We define an \textbf{adiabatic} process to be a change in the control parameters of a system that does not change the system's entropy.
+\end{shaded}
+
+We have previously seen from the micro-canonical temperature (\eq{eq:temperature}) and the canonical heat capacity (\eq{eq:heat_cap}) that it can be interesting to consider how a system's derived quantities depend on its control parameters.
+If we consider trying to squeeze an inflated balloon into a small box, we can motivate the following connection between pressure and changes in a system's volume.
+
+\begin{shaded}
+  The \textbf{pressure} is defined to be
+  \begin{equation}
+    \label{eq:pressure}
+    P = -\left. \pderiv{}{V} \vev{E}\right|_S,
+  \end{equation}
+  with constant entropy $S$.
+  In words, the pressure is the adiabatic response of the system's internal energy to a change in the volume.
+\end{shaded}
+
+Next week we will look in detail at processes that change some or all of the pressure, volume, temperature, or internal energy of a gas (with $N$ fixed).
+Although changing the temperature departs from the assumptions of the canonical ensemble, we will be able to understand these processes as changing the system from one canonical ensemble (in thermodynamic equilibrium with a thermal reservoir that fixes the initial temperature $T_0$) into another (in thermodynamic equilibrium with a different thermal reservoir that fixes the final temperature $T_f$).
+
+If we demand an adiabatic process,
+\begin{equation*}
+  V T^{3/2} = c' \qquad \lra \qquad T = c V^{-2 / 3},
+\end{equation*}
+with $c$ a constant, then starting from \eq{eq:ideal_energy} we can relate the average internal energy to the volume (with $N$ fixed),
+\begin{equation*}
+  \vev{E} = \frac{3}{2} NT = \frac{3c}{2} N V^{-2 / 3} \qquad \mbox{for constant entropy}.
+\end{equation*}
+This in turn allows us to determine the pressure for the ideal gas,
+\begin{mdframed}
+  $\displaystyle P = -\left. \pderiv{}{V} \vev{E}\right|_S = $ \\[100 pt]
+\end{mdframed}
+
+\begin{shaded}
+  You should find the \textbf{ideal gas law},
+  \begin{equation}
+    \label{eq:ideal_gas_law}
+    PV = NT,
+  \end{equation}
+  which is an example of an \textbf{equation of state}.
+\end{shaded}
+
+The ``state'' being referred to by this terminology is different from the micro-states that we have discussed up until now.
+Whereas each micro-state is defined by detailed information about the microscopic degrees of freedom constituting the system, this \textbf{thermodynamic state} or \textbf{macro-state} concerns only the large-scale properties of the system: its pressure, volume, temperature, or internal energy.
+
+Historically, equations of state were empirically observed and experimentally studied well before the mathematical development of statistical physics.
+In the 1660s, for instance, \href{https://en.wikipedia.org/wiki/Robert_Boyle}{Robert Boyle} experimented with changing the pressure of a gas while holding its temperature fixed, finding a special case of the ideal gas law,
+\begin{equation*}
+  PV = \mbox{constant} \qquad\qquad \mbox{for constant } N \mbox{ and } T,
+\end{equation*}
+which became known as Boyle's law.
+Other aspects of the ideal gas law were uncovered during the Industrial Revolution:
+ \\[-24 pt]
+\begin{itemize}
+  \item $\displaystyle \frac{V}{T} = \mbox{constant}$ for constant $N$ and $P$ (1787) %, attributed to \href{https://en.wikipedia.org/wiki/Jacques_Charles}{Jacques Charles}
+  \item $\displaystyle \frac{P}{T} = \mbox{constant}$ for constant $N$ and $V$ (1802) %, attributed to \href{https://en.wikipedia.org/wiki/Joseph_Louis_Gay-Lussac}{Joseph Gay-Lussac}
+  \item $\displaystyle \frac{V}{N} = \mbox{constant}$ for constant $P$ and $T$ (1812) %, attributed to \href{https://en.wikipedia.org/wiki/Amedeo_Avogadro}{Amedeo Avogadro}
+\end{itemize}
+In the 1830s these empirical results were combined into the ideal gas law itself, which was subsequently derived on the basis of statistical physics in the 1850s. % Combination by \href{https://en.wikipedia.org/wiki/Benoît_Paul_Émile_Clapeyron}{\'Emile Clapeyron}, independent derivations by \href{https://en.wikipedia.org/wiki/August_Krönig}{August Krönig} and \href{}{Rudolf Clausius}
+These historical data are useful to illustrate how progress in scientific and mathematical understanding went hand-in-hand with industrial developments, including the design of engines and related machines, which are connected to our next topic of thermodynamic cycles.
 % ------------------------------------------------------------------
