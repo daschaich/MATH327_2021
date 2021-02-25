@@ -1,0 +1,699 @@
+1
+00:00:01,400 --> 00:00:04,880
+Hello and welcome back to a statistical physics.
+
+2
+00:00:04,910 --> 00:00:09,400
+This is the overview video for a week for an ideal
+
+3
+00:00:09,400 --> 00:00:14,060
+Agassiz. And before diving into that, let me try
+
+4
+00:00:14,150 --> 00:00:18,770
+something different in case my face might be less
+
+5
+00:00:18,770 --> 00:00:23,480
+interesting than seeing how this overview matches
+
+6
+00:00:23,480 --> 00:00:27,080
+up with the written material. Now that I have
+
+7
+00:00:27,080 --> 00:00:33,100
+changed the. Software being used to record this
+
+8
+00:00:33,100 --> 00:00:36,610
+video, I should be able to share my screen and
+
+9
+00:00:36,610 --> 00:00:40,920
+pull up. That's written material on the lecture
+
+10
+00:00:40,920 --> 00:00:46,650
+transcript and won't go through the. The full
+
+11
+00:00:46,650 --> 00:00:49,890
+transcript here, but just be able to point out
+
+12
+00:00:49,890 --> 00:00:51,390
+where the.
+
+13
+00:00:54,250 --> 00:00:56,920
+Comments I'm making correspond to the text that
+
+14
+00:00:56,920 --> 00:01:01,630
+you have available to read at your leisure. So as
+
+15
+00:01:01,630 --> 00:01:07,090
+I said, week for high gases is coming after a few
+
+16
+00:01:07,090 --> 00:01:10,060
+weeks of Quick Hits, looking at slightly different
+
+17
+00:01:10,060 --> 00:01:14,020
+topics, first probability foundations than the
+
+18
+00:01:14,020 --> 00:01:16,600
+formulation of the micro canonical statistical
+
+19
+00:01:16,600 --> 00:01:19,510
+ensemble and then the formulation of the canonical
+
+20
+00:01:19,510 --> 00:01:23,960
+ensemble. And now week four, we're. Dive again a
+
+21
+00:01:23,960 --> 00:01:27,980
+bit more deeply to the first really large scale
+
+22
+00:01:27,980 --> 00:01:31,370
+application of these canonical ensembles to
+
+23
+00:01:31,760 --> 00:01:35,390
+physical systems that historically have been very
+
+24
+00:01:35,390 --> 00:01:37,580
+important to the development of statistical
+
+25
+00:01:37,580 --> 00:01:40,250
+physics and remain a very.
+
+26
+00:01:42,350 --> 00:01:45,020
+Good starting point, a good approximation for a
+
+27
+00:01:45,020 --> 00:01:48,140
+large number of applications. So these are ideal
+
+28
+00:01:48,140 --> 00:01:54,470
+gases and specifically a simplified ideal gases
+
+29
+00:01:54,770 --> 00:01:59,390
+that neglect the effects of quantum physics. The
+
+30
+00:01:59,390 --> 00:02:02,150
+terminology for that is they are classical. They
+
+31
+00:02:02,150 --> 00:02:05,030
+neglect the effects of special relativity. They
+
+32
+00:02:05,030 --> 00:02:08,660
+are non relativistic, and they neglect the effects
+
+33
+00:02:08,660 --> 00:02:14,210
+of interaction between the particles out of which
+
+34
+00:02:14,210 --> 00:02:15,260
+this gas is made.
+
+35
+00:02:17,620 --> 00:02:22,960
+And that is the terminology for ideal gases and
+
+36
+00:02:23,830 --> 00:02:25,660
+really when we say we're neglecting those
+
+37
+00:02:25,660 --> 00:02:29,260
+interactions, you mean that they don't impact the
+
+38
+00:02:29,260 --> 00:02:32,710
+energy of the particular micro state, which is
+
+39
+00:02:32,710 --> 00:02:35,200
+then just given by the direct some over the
+
+40
+00:02:35,200 --> 00:02:40,480
+energies of all of the individual particles? And
+
+41
+00:02:40,660 --> 00:02:43,610
+there is a. Bit of a song and dance, so we have to
+
+42
+00:02:43,610 --> 00:02:46,820
+go through even to take those energies and define
+
+43
+00:02:46,910 --> 00:02:49,550
+the partition function with them because the
+
+44
+00:02:49,550 --> 00:02:53,300
+partition function is a sum over microstates, we
+
+45
+00:02:53,300 --> 00:02:56,780
+need to make sure that this sum is well defined in
+
+46
+00:02:56,780 --> 00:03:00,380
+the sense of the microstates are accountable. We
+
+47
+00:03:00,380 --> 00:03:02,720
+do that with an onsides which turns out to be.
+
+48
+00:03:03,890 --> 00:03:07,670
+Justified by quantum physics as quantum physics is
+
+49
+00:03:07,670 --> 00:03:12,080
+not a prerequisite for this module, it is just
+
+50
+00:03:12,080 --> 00:03:14,180
+Trainspotting exercise for those of you who have
+
+51
+00:03:14,180 --> 00:03:17,570
+previously taken it to recognize the particle in a
+
+52
+00:03:17,570 --> 00:03:23,810
+box calculation. Which gives us a well-defined.
+
+53
+00:03:25,280 --> 00:03:27,950
+Canonical partition function, so we fix the number
+
+54
+00:03:27,950 --> 00:03:31,610
+of particles, we fix the temperature by having our
+
+55
+00:03:31,640 --> 00:03:35,420
+ideal gas in contact, thermal contact with a large
+
+56
+00:03:35,810 --> 00:03:38,840
+thermal reservoir, and then we are able to come up
+
+57
+00:03:38,840 --> 00:03:42,590
+actually with two distinct partition functions,
+
+58
+00:03:42,950 --> 00:03:46,340
+both of which are built on this single particle
+
+59
+00:03:46,340 --> 00:03:48,470
+case. And they differ by.
+
+60
+00:03:50,950 --> 00:03:53,680
+Assuming whether or not the particles are
+
+61
+00:03:53,680 --> 00:03:56,920
+distinguishable or indistinguishable in the
+
+62
+00:03:56,920 --> 00:03:59,620
+disclosable case, the partition function is just
+
+63
+00:04:00,040 --> 00:04:04,060
+in factors of the single particle partition
+
+64
+00:04:04,060 --> 00:04:07,540
+function, whereas in the indistinguishable case,
+
+65
+00:04:08,680 --> 00:04:12,250
+there is a overcounting factor that comes in,
+
+66
+00:04:12,460 --> 00:04:17,170
+turns out to be a factor in factorial. Assuming
+
+67
+00:04:17,170 --> 00:04:24,070
+that all of the particles in this gas have. Unique
+
+68
+00:04:24,370 --> 00:04:27,190
+momento, which is an assumption and a footnote
+
+69
+00:04:27,190 --> 00:04:31,300
+here that we will get back to when we look at
+
+70
+00:04:31,300 --> 00:04:35,800
+quantum statistics after the term break. So given
+
+71
+00:04:35,800 --> 00:04:38,650
+the partition function for both those
+
+72
+00:04:38,650 --> 00:04:41,710
+distinguishable and indistinguishable cases, all
+
+73
+00:04:41,710 --> 00:04:44,680
+of the derived quantities that were interested in
+
+74
+00:04:44,680 --> 00:04:48,040
+predicting from the underlying properties of this
+
+75
+00:04:48,040 --> 00:04:52,000
+gas come straight out of that partition function.
+
+76
+00:04:53,710 --> 00:04:57,460
+And most elegantly, in the form of the Helmholtz
+
+77
+00:04:57,460 --> 00:05:00,700
+free energy, which is directly related to the
+
+78
+00:05:00,700 --> 00:05:03,340
+logic of that partition function, we get the
+
+79
+00:05:03,850 --> 00:05:07,120
+average internal energy which depends quite
+
+80
+00:05:07,120 --> 00:05:10,690
+directly on the conserve quantities or the fixed
+
+81
+00:05:10,690 --> 00:05:12,700
+quantities of the canonical ensemble, the
+
+82
+00:05:12,700 --> 00:05:16,120
+temperature and the number of particles, as well
+
+83
+00:05:16,120 --> 00:05:22,710
+as the entropy. Which turns out to depend on
+
+84
+00:05:22,890 --> 00:05:25,440
+whether or not the particles are distinguishable
+
+85
+00:05:25,440 --> 00:05:28,770
+in a way that the energy, the average internal
+
+86
+00:05:28,770 --> 00:05:32,180
+energy does not. And this has
+
+87
+00:05:34,190 --> 00:05:37,160
+make some sense if we think of the entropy is
+
+88
+00:05:37,160 --> 00:05:40,910
+measuring the logarithm of the number of
+
+89
+00:05:40,910 --> 00:05:44,600
+microstates with the given energy, that depends on
+
+90
+00:05:45,020 --> 00:05:47,870
+how well we can distinguish the different
+
+91
+00:05:47,870 --> 00:05:50,360
+particles that form those microstates from each
+
+92
+00:05:50,360 --> 00:05:54,950
+other. And another aspect of distinguished ability
+
+93
+00:05:54,950 --> 00:05:58,370
+and the physical effects of pure information
+
+94
+00:05:58,370 --> 00:06:03,560
+content of the system comes from what is known as
+
+95
+00:06:03,560 --> 00:06:07,610
+the mixing entropy, where the basic idea to
+
+96
+00:06:07,610 --> 00:06:14,150
+overview is shown in this diagram that I will try
+
+97
+00:06:14,150 --> 00:06:20,660
+to fit onto my screen as best I can. We're
+
+98
+00:06:20,660 --> 00:06:26,420
+similarly to the consideration of heat exchange in
+
+99
+00:06:26,420 --> 00:06:29,900
+the micro economical context back in week two here,
+
+100
+00:06:29,900 --> 00:06:33,710
+we consider particle exchange in the canonical
+
+101
+00:06:33,710 --> 00:06:37,130
+context. So we take two canonical ensembles with
+
+102
+00:06:37,550 --> 00:06:40,550
+the same fixed number of particles, fixed volume
+
+103
+00:06:40,550 --> 00:06:45,110
+and fixed temperature. Remove this barrier between
+
+104
+00:06:45,110 --> 00:06:47,330
+them, let them exchange particles and then
+
+105
+00:06:47,630 --> 00:06:52,570
+reinsert that barrier. And ask, how does the
+
+106
+00:06:52,570 --> 00:06:56,140
+entropy change as we go through this process from
+
+107
+00:06:56,140 --> 00:06:59,820
+one step to the next? The answer turns out to
+
+108
+00:06:59,820 --> 00:07:03,540
+depend on whether or not the particles are
+
+109
+00:07:03,660 --> 00:07:07,020
+distinguishable in particular, so in the
+
+110
+00:07:07,020 --> 00:07:10,200
+indistinguishably case, there is essentially no
+
+111
+00:07:10,200 --> 00:07:15,130
+difference whether the. Barrier is there or not,
+
+112
+00:07:15,580 --> 00:07:21,910
+we can make the approximation that. Reinserting
+
+113
+00:07:21,910 --> 00:07:24,760
+the barrier leaves us with a similar number of
+
+114
+00:07:24,760 --> 00:07:28,900
+particles on each side. This was a trick that was
+
+115
+00:07:28,900 --> 00:07:32,080
+proposed way back in the 70s. And it's sort of
+
+116
+00:07:32,080 --> 00:07:34,960
+like the situation. If you're open and close the
+
+117
+00:07:34,960 --> 00:07:38,290
+door, a door between two identical rooms, nothing
+
+118
+00:07:38,290 --> 00:07:40,690
+very dramatic happens in that process is
+
+119
+00:07:40,690 --> 00:07:45,850
+reversible without changing the entropy of the
+
+120
+00:07:45,850 --> 00:07:50,020
+universe. In the distinguishable case, instead of
+
+121
+00:07:50,170 --> 00:07:52,300
+opening and closing a door between two identical
+
+122
+00:07:52,300 --> 00:07:56,620
+rooms where doing something more like pouring milk
+
+123
+00:07:56,620 --> 00:08:00,640
+into tea, that once the particles from the two
+
+124
+00:08:00,640 --> 00:08:03,550
+systems mix, there's sort of no way to reverse
+
+125
+00:08:03,790 --> 00:08:07,450
+that mixing and disentangle them. And that
+
+126
+00:08:08,230 --> 00:08:13,270
+manifests itself in the form of what is known as a
+
+127
+00:08:13,270 --> 00:08:19,150
+mixing entropy, where after removing the barrier,
+
+128
+00:08:19,360 --> 00:08:23,920
+the total entropy of the system increases by this
+
+129
+00:08:23,920 --> 00:08:28,480
+non-zero amount. That fact increases linearly with
+
+130
+00:08:28,480 --> 00:08:31,390
+the number of particles in the system.
+
+131
+00:08:37,040 --> 00:08:40,250
+The last topic, which is a bit of a transition
+
+132
+00:08:40,640 --> 00:08:45,010
+from the. Basic framework of ideal gas is in the
+
+133
+00:08:45,010 --> 00:08:49,210
+canonical ensemble to the following week dynamical
+
+134
+00:08:49,210 --> 00:08:54,640
+cycles looks at the pressure, the ideal gas law
+
+135
+00:08:54,640 --> 00:08:59,830
+and equations of state law generally. Based on the
+
+136
+00:08:59,830 --> 00:09:03,840
+observation from some of the. Fundamental
+
+137
+00:09:03,840 --> 00:09:06,630
+definitions, the petition function and Helmholtz
+
+138
+00:09:06,630 --> 00:09:11,460
+free energy depend not just on the number of
+
+139
+00:09:11,460 --> 00:09:16,740
+particles or the fixed temperature, but also on
+
+140
+00:09:16,920 --> 00:09:22,980
+the volume into which we place this ideal gas. And
+
+141
+00:09:22,980 --> 00:09:25,620
+this identifies that volume as what is known as a
+
+142
+00:09:25,620 --> 00:09:28,620
+control parameter, something that we can imagine
+
+143
+00:09:29,010 --> 00:09:33,010
+controlling in an experimental setup. And
+
+144
+00:09:34,060 --> 00:09:36,940
+interesting things happen when we consider the
+
+145
+00:09:36,940 --> 00:09:40,390
+response of the system to variations in this
+
+146
+00:09:40,390 --> 00:09:44,440
+control parameter subject to certain conditions,
+
+147
+00:09:44,440 --> 00:09:49,630
+as usual, the condition we look at here is keeping
+
+148
+00:09:49,630 --> 00:09:54,520
+the entropy constant, which defines what are known
+
+149
+00:09:54,520 --> 00:09:57,910
+as adiabatic processes. These are important enough
+
+150
+00:09:57,910 --> 00:10:02,990
+to merit. Their own fancy terminology, and in
+
+151
+00:10:02,990 --> 00:10:06,980
+particular, the idiomatic change in the internal
+
+152
+00:10:06,980 --> 00:10:10,370
+energy of a system upon changing its volume
+
+153
+00:10:10,730 --> 00:10:15,960
+defines the pressure. Which then, as we go through
+
+154
+00:10:15,960 --> 00:10:20,160
+that confrontation, shows up in the form of an
+
+155
+00:10:20,160 --> 00:10:26,700
+ideal gas law relating. The. Large scale.
+
+156
+00:10:28,440 --> 00:10:31,740
+Properties of the system, its pressure volume,
+
+157
+00:10:31,980 --> 00:10:34,620
+number of particles and temperature in the
+
+158
+00:10:34,620 --> 00:10:37,920
+relation that is known for somewhat historical
+
+159
+00:10:37,920 --> 00:10:42,120
+reasons as an equation of states where the state
+
+160
+00:10:42,120 --> 00:10:45,990
+being discussed is not the microstates that have
+
+161
+00:10:45,990 --> 00:10:49,710
+played a prominent role in the formulation of the
+
+162
+00:10:49,710 --> 00:10:53,370
+micro and canonical ensembles, but rather the
+
+163
+00:10:53,730 --> 00:10:56,610
+thermodynamic state or macro state of the system
+
+164
+00:10:56,610 --> 00:11:00,590
+as a whole characterized by these properties and
+
+165
+00:11:00,750 --> 00:11:05,170
+the internal energy. And it is the.
+
+166
+00:11:07,880 --> 00:11:13,010
+Historical development of these concepts of states,
+
+167
+00:11:13,010 --> 00:11:16,250
+macro states and equations of states that connect
+
+168
+00:11:16,250 --> 00:11:24,370
+to the. Thermodynamic cycles and the. Application
+
+169
+00:11:24,370 --> 00:11:29,080
+now of the ideal gas law as a further construction
+
+170
+00:11:29,350 --> 00:11:31,690
+built on top of the framework of the canonical
+
+171
+00:11:31,690 --> 00:11:34,750
+ensemble that is coming up in the following week.
+
+172
+00:11:35,290 --> 00:11:41,100
+But before that, I will let you read the. Written
+
+173
+00:11:41,100 --> 00:11:44,610
+material in detail and come back with the
+
+174
+00:11:45,030 --> 00:11:47,730
+subsequent wrap up going into a bit more detail
+
+175
+00:11:47,730 --> 00:11:50,970
+about the key points to take away from this.
