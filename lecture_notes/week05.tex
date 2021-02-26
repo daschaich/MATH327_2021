@@ -1,22 +1,84 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 5}
-\renewcommand{\moddate}{Last modified 24 Feb.~2021}
+\renewcommand{\moddate}{Last modified 26 Feb.~2021}
 \setcounter{section}{5}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 5: Thermodynamic cycles}
 \section*{Week 5: Thermodynamic cycles}
-
 \subsection{Work, pressure and force}
-% TODO: Isothermal slow vs. adiabatic fast...
-\TODO{Being written...}
+Last week we defined the pressure in the canonical ensemble as the thermodynamic response of the internal energy to an adiabatic change in the volume (\eq{eq:pressure}).
+At the same time, we motivated this definition by thinking about `squeezing' the system---exerting a force on it---which suggests a connection between pressure and force.
+Here we make this connection explicit by considering how the energy of an object changes when a force acts on it.
+
+\begin{shaded}
+  Consider an object at position $\vec r = (x, y, z)$, and suppose it is displaced by a vector $d\vec r$ due to a force $\vec F(\vec r)$.
+  The \textbf{work} done by this force is defined to be the resulting change in the energy of the object.
+  Infinitesimally, $dW = dE = \vec F\cdot d\vec r$, which generalizes to the line integral $W = \De E = \int \vec F(r)\cdot d\vec r$.
+\end{shaded}
+
+A famous example is an object falling due to the force of the Earth's gravity.
+That force is $\vec F = (0, 0, -mg)$, where $m$ is the mass of the object, $g \approx 9.8~\mathrm{m}/\mathrm{s}^2$ (metres per second per second) is the strength of gravity near the surface of the Earth, and the negative sign indicates that the gravitational force is directed downward.
+The object starts from rest, with initial (kinetic) energy $E_0 = 0$, and falls downward (parallel to $\vec F$) from a height $h$.
+Its final energy $E_f$ upon hitting the ground comes from the work done by the Earth's gravity:
+\begin{align*}
+  W & = \int \vec F(r)\cdot d\vec r = -mg \int_h^0 dz = mgh > 0 \\
+  E_f & = E_0 + \De E = 0 + W = mgh = \frac{p_z^2}{2m} \qquad \lra \qquad p_z = m\sqrt{2gh},
+\end{align*}
+where $\vec p = (p_x, p_y, p_z)$ is the momentum we considered last week (\eq{eq:momentum}).
+
+To connect the concept of work to the pressure of a statistical system described by the canonical ensemble, let's consider the setup shown below (copied from Schroeder's \textit{Introduction to Thermal Physics}).
+Here we have an gas in a container of volume $V$, with one wall of that container being a piston that we can displace by applying a force $F$.
+Let's demand that this process is adiabatic---it does not change the entropy of the gas.
+The displacement $\De x$ shown in the figure reduces the volume of the gas, by $\De V = -A\De x < 0$ where $A$ is the area of the piston.
+Since the force $F$ is parallel to the piston's displacement $\De x$, it does positive work $W = F\De x > 0$.
+Therefore the energy of the gas increases, at the same time as its volume decreases adiabatically, so from \eq{eq:pressure} we have
+\begin{equation}
+  P = -\left. \pderiv{}{V} \vev{E}\right|_S = -\frac{W}{\De V} = \frac{F\De x}{A\De x} = \frac{F}{A}
+\end{equation}
+This identifies the pressure of a gas in a container as the force per unit area that the gas exerts on the container wall, reassuringly consistent with our everyday experiences.
+
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figs/week05_piston.pdf}
+\end{center}
+
+Rearranging the expressions above, we can obtain an expression for the work \textit{put into} the gas by its surroundings (that is, by the external force applied to move the piston).
+Still assuming an adiabatic (constant-entropy) process, this input work must match the increase in the gas's average internal energy,
+\begin{align*}
+  W_{\text{in}} & = \De \vev{E} = -P \De V & & \mbox{for constant entropy.}
+\end{align*}
+If the entropy is allowed to change, this relation between pressure and work will still hold---as we will see in the next section, we will simply no longer be able to identify the work as the total change in the average internal energy:
+\begin{align}
+  \label{eq:work_constP}
+  W_{\text{in}} & = -P \De V & & \mbox{more generally.}
+\end{align}
+Later we will be interested in using the gas as a thermodynamic engine that \textit{does work on} its surroundings.
+This removes energy from the gas, reversing the negative sign above, $W_{\text{done}} = -W_{\text{in}}$.
+
+Of course, as we change the volume of the gas, the pressure itself will change as described by the gas's equation of state---such as the ideal gas law, \eq{eq:ideal_gas_law}.
+With the equation of state providing an expression $P(V)$ for the pressure as a function of the volume, \eq{eq:work_constP} generalizes to
+\begin{equation}
+  \label{eq:work}
+  W_{\text{in}} = -\int_{V_0}^{V_f} P(V) dV.
+\end{equation}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
 \subsection{Heat and entropy}
+Now let's switch things up by changing the temperature $T$ of an ideal gas while keeping its volume constant.
+(As always for the canonical ensemble, the number of particles $N$ is also constant.)
+Since the volume is constant, \eq{eq:work} indicates that no work is done, $W = 0$.
+Even so, from \eq{eq:ideal_energy} we have $\vev{E} = \frac{3}{2} NT$ and can see that the average internal energy still changes,
+\begin{equation}
+  d\vev{E} = \frac{3}{2} N dT.
+\end{equation}
+
+How does this change the internal energy $\vev{E}$ and the entropy $S$?
+
+
+% TODO: Isothermal slow vs. adiabatic fast...
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
