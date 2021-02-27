@@ -28,6 +28,12 @@
 \definecolor{shadecolor}{rgb}{1,0.8,0.3}
 \usepackage[framemethod=tikz]{mdframed}
 
+% To highlight revisions in pdf
+\usepackage[normalem]{ulem}
+\definecolor{green}{rgb}{0,0.4,0}
+\newcommand{\rem}[1]{\textcolor{red}{\sout{#1}}}
+\newcommand{\add}[1]{\textcolor{green}{\uwave{#1}}}
+
 % Put module code and last-modified date in footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -64,7 +70,6 @@
 \newcommand{\lra}{\ensuremath{\longrightarrow} }
 \newcommand{\Lra}{\ensuremath{\Longrightarrow} }
 \newcommand{\llra}{\ensuremath{\longleftrightarrow} }
-\definecolor{green}{rgb}{0,0.4,0}
 \newcommand{\X}{\ensuremath{\!\times\!} }
 \newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
 \newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
