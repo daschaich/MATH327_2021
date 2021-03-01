@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 5}
-\renewcommand{\moddate}{Last modified 27 Feb.~2021}
+\renewcommand{\moddate}{Last modified 1 Mar.~2021}
 \setcounter{section}{5}
 \setcounter{subsection}{0}
 \phantomsection
@@ -45,7 +45,7 @@ This identifies the pressure of a gas in a container as the force per unit area 
 Rearranging the expressions above, we can obtain an expression for the work \textit{put into} the gas by its surroundings (that is, by the external force applied to move the piston).
 Still assuming an adiabatic (constant-entropy) process, this input work must match the increase in the gas's average internal energy,
 \begin{align*}
-  W_{\text{in}} & = \De \vev{E} = -P \De V & & \mbox{for constant entropy.}
+  W_{\text{in}} & = \De\!\vev{E} = -P \De V & & \mbox{for constant entropy.}
 \end{align*}
 If the entropy is allowed to change, this relation between pressure and work will still hold---as we will see in the next section, we will simply no longer be able to identify the work as the total change in the average internal energy:
 \begin{align}
@@ -73,7 +73,7 @@ Since the volume is constant, \eq{eq:work} indicates that no work is done, $W = 
 Even so, from \eq{eq:ideal_energy} we have $\vev{E} = \frac{3}{2} NT$ and can see that the average internal energy still changes,
 \begin{equation}
   \label{eq:dE_dT}
-  d\vev{E} = \frac{3}{2} N dT.
+  d\!\vev{E} = \frac{3}{2} N dT.
 \end{equation}
 
 In order to remain consistent with our discussion in the previous section, we should expect a change in the entropy to accompany this change in the internal energy that occurs with no work done.
@@ -85,7 +85,7 @@ What is the change in the entropy that results from changing the temperature by 
 \begin{mdframed}
   $\displaystyle dS = $ \\[60 pt]
 \end{mdframed}
-Looking back to \eq{eq:dE_dT}, you should find $d\vev{E} = T dS$, which leads us to another important definition.
+Looking back to \eq{eq:dE_dT}, you should find $d\!\vev{E} = T dS$, which leads us to another important definition.
 
 \begin{shaded}
   The \textbf{heat} added to or removed from a statistical system is defined to be
@@ -103,13 +103,13 @@ We can generally invert this relation to integrate over the infinitesimal\footno
   \label{eq:heat}
   Q = \int_{S_0}^{S_f} T(S) \; dS,
 \end{equation}
-with $Q = \De \vev{E}$ when the volume is constant.
+with $Q = \De\!\vev{E}$ when the volume is constant.
 
 This relation between heat exchange and changes in the entropy provides useful insight into what it means, physically, for a process to be adiabatic.
 In order to keep the entropy constant, an adiabatic process has to occur with no heat moving into or out of the system.
 In other words, \textbf{adiabatic processes are fast} enough that the system does not have time to exchange heat with its surroundings 
-The opposite extreme would a process slow enough that any and all possible heat exchange can be completed while it is underway.
-Based on our work in \secref{sec:heat_ex} we can see that such heat exchange will keep the system's temperature equal to the temperature of its surroundings.
+The opposite extreme would be a process slow enough that any and all possible heat exchange can be completed while it is underway.
+Based on our work in \secref{sec:heat_ex}, we can see that such heat exchange will keep the system's temperature equal to the temperature of its surroundings.
 Taking that surrounding temperature to be constant, we reach the conclusion that \textbf{constant-temperature (or isothermal) processes are slow}.
 Most real processes exist in between these two extremes, usually closer to the adiabatic limit.
 % ------------------------------------------------------------------
@@ -118,8 +118,9 @@ Most real processes exist in between these two extremes, usually closer to the a
 
 % ------------------------------------------------------------------
 \subsection{Thermodynamic cycles}
-Now we can generalize our work in the previous two sections to consider simultaneous changes in the temperature $T$ and the volume $V$ (still with fixed particle number $N$).
-The internal energy $\vev{E}\!(T, V)$ and entropy $S(T, V)$ are functions of the temperature and volume, which provides relations that we can invert to express the temperature $T(S, V)$ and therefore the internal energy as functions of the entropy and volume,
+Now we can generalize our work in the previous two sections to consider simultaneous changes in the temperature $T$ and the volume $V$ of the gas (still with fixed particle number $N$).
+We are used to working with the internal energy $\vev{E}\!(T, V)$ and entropy $S(T, V)$ as functions of the temperature and volume.
+Inverting these relations allows us to instead express the temperature $T(S, V)$ and therefore the internal energy as functions of the entropy and volume,
 \begin{equation*}
   \vev{E}\!(T, V) \to \vev{E}\!(S, V).
 \end{equation*}
@@ -127,34 +128,70 @@ Expanding the internal energy to first order in a multi-variable Taylor expansio
 \begin{equation*}
   \vev{E}\!(S, V) \approx \vev{E}\!(S_0, V_0) + (S - S_0) \left.\pderiv{\vev{E}}{S}\right|_V + (V - V_0) \left.\pderiv{\vev{E}}{V}\right|_S.
 \end{equation*}
-This approximation becomes exact in the limit of infinitesimal changes, $(S - S_0) \to dS$, $(V - V_0) \to dV$ and $\vev{E}\!(S, V) - \vev{E}\!(S_0, V_0) \to d\vev{E}$.
+This approximation becomes exact in the limit of infinitesimal changes, $(S - S_0) \to dS$, $(V - V_0) \to dV$ and $\vev{E}\!(S, V) - \vev{E}\!(S_0, V_0) \to d\!\vev{E}$.
 At the same time, we can recognize the temperature from \eq{eq:temperature} and the (negative) pressure from \eq{eq:pressure}, to obtain
 \begin{equation}
-  d\vev{E} = T dS - P dV = Q + W_{\text{in}}.
+  \label{eq:first_law}
+  d\!\vev{E} = T dS - P dV = Q + W_{\text{in}}.
 \end{equation}
-This is the general form of the \textbf{first law of thermodynamics}, with any change in the internal energy of a statistical system matched by (either or both) heat exchange with its surroundings or work done by or on those surroundings.
+This is the general form of the \textbf{first law of thermodynamics}: Any change in the internal energy of a statistical system must be matched by (either or both) heat exchange with its surroundings or work done by or on those surroundings.
 
 \begin{shaded}
-  We now have all the conceptual tools and \textbf{key equations} needed to consider a variety of ways to manipulate an ideal gas in a container: \\
-  \eq{eq:ideal_gas_law}
+  We now have all the concepts and \textbf{key equations} needed to consider a variety of ways to manipulate an ideal gas in a container: \\[-24 pt]
+  \begin{itemize}
+    \item \eq{eq:ideal_energy} for the internal energy $\vev{E} = \frac{3}{2} NT$
+    \item \eq{eq:ideal_entropy} for the condition of constant entropy, $V T^{3/2} = \mbox{constant}$
+    \item \eq{eq:ideal_gas_law} for the equation of state (ideal gas law): $PV = NT$
+    \item \eq{eq:first_law} for the first law of thermodynamics, $d\!\vev{E} = T dS - P dV = Q + W_{\text{in}}$
+  \end{itemize}
 \end{shaded}
 
-As examples, the piston shown in the figure above allows us to compress or expand the gas, and this change in volume can be either fast enough to keep the entropy constant (adiabatic) or slow enough to keep the temperature constant (isothermal).
-Alternately, we can clamp the piston in place to keep the volume constant, and add heat to the gas to increase its temperature, which will also increase its pressure according to the ideal gas law.
-We can also add heat while keeping the pressure constant (by applying a constant force to the piston), which 
+As examples of manipulations we could carry out just by changing the system's control parameters, the piston shown in the figure above allows us to compress or expand the gas.
+This change in volume can be either fast enough to keep the entropy constant (adiabatic) or slow enough to keep the temperature constant (isothermal).
+Alternately, we can clamp the piston in place to keep the volume constant, and add heat to the gas to increase its temperature---which will also increase its pressure according to the ideal gas law.
+Or we can add heat while keeping the pressure constant by applying a constant force to the piston.
+The ideal gas law then implies the volume will increase, pushing out the piston and potentially doing work on the external world.
 
-If we 
+It's possible to carry out a sequence of such manipulations that cause the system to end up in the same thermodynamic (macro-)state in which it started, with the same pressure, volume, temperature and internal energy.
+That sequence can then be repeated over and over again, always ending up back at its starting point.
+Such a repeatable process is known as a \textbf{thermodynamic cycle}.
+As we will see in the next section, such cycles can make use of heat to have the system do work on its surroundings (providing an \textit{engine}), or make use of work to remove heat from the system (providing a \textit{refrigerator}), among other applications.
 
+Thanks to the key equations above, we can see that the full ideal gas macro-state can be specified solely in terms of the pressure $P$ and the volume $V$.
+With fixed $N$, the ideal gas law then fixes the temperature $T$ in terms of $P$, $V$ and $N$, which then provides the internal energy $\vev{E} \propto NT$.
+It is therefore convenient to represent the system's macro-state in the form of a \textbf{pressure--volume} (or $\mathbf{PV}$) \textbf{diagram}---a plot with the volume on the horizontal axis and the pressure on the vertical axis.
+The manipulations discussed above correspond to lines in this plot.
 
+As a first example, the figure below shows the $PV$~diagram for a (slow) isothermal expansion of the gas.
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{figs/week05_isotherm.pdf}
+\end{center}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent The line in a $PV$~diagram for an isothermal process is known as an \textit{isotherm}.
+As the volume expands from $V_0$ to $V_f$, the temperature is constant, $T_f = T_0$.
+What is the change in pressure $\De P = P_f - P_i$ in terms of $P_0$, $V_0$ and $V_f$?
+Can isotherms ever cross?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
 
-%\TODO{key equations, PV diagrams, and repetition/cycling...}
-\TODO{Being written...}
+Similarly, we can consider the $PV$~diagram below for a (fast) adiabatic compression of the gas.
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{figs/week05_adiabat.pdf}
+\end{center}
+In this case both the pressure and temperature change, while the entropy is constant.
+What are $\De P$ and the change in the temperature $\De T = T_f - T_0$ in terms of $P_0$, $V_0$, $V_f$ and the fixed number of particles $N$?
+\begin{mdframed}
+  \ \\[100 pt]
+\end{mdframed}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage % TODO: Placeholder...
 \subsection{The Carnot cycle}
+A famous thermodynamic cycle was proposed by \href{https://en.wikipedia.org/wiki/Nicolas_Léonard_Sadi_Carnot}{Sadi Carnot} in 1824, and laid the groundwork for subsequent development of engines and refrigerators later in the nineteenth century.
+The key idea is to consider a container filled with an ideal gas, which has access to two different thermal reservoirs: a `hot' reservoir with temperature $T_H$ and a `cold' reservoir with temperature $T_L$.
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
