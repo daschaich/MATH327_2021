@@ -1,0 +1,623 @@
+1
+00:00:01,770 --> 00:00:05,070
+Hello and welcome back to a statistical physics.
+
+2
+00:00:06,010 --> 00:00:10,690
+This is the first video for the week five material,
+
+3
+00:00:10,690 --> 00:00:14,920
+and I will continue experimenting with the format
+
+4
+00:00:14,920 --> 00:00:18,670
+of these videos, in particular continuing that
+
+5
+00:00:18,670 --> 00:00:24,560
+screen share. And when I first tried this. Last
+
+6
+00:00:24,560 --> 00:00:28,040
+week, it seemed as though it was hard to keep the
+
+7
+00:00:28,040 --> 00:00:31,640
+overview separate from the the take away and wrap
+
+8
+00:00:31,640 --> 00:00:35,570
+up summary of the key learning outcomes, so tried
+
+9
+00:00:35,570 --> 00:00:39,680
+to just do a single pass through the material for
+
+10
+00:00:39,680 --> 00:00:42,920
+this week, both putting it into context and
+
+11
+00:00:43,160 --> 00:00:48,320
+emphasizing what to take away from it. And we'll
+
+12
+00:00:48,320 --> 00:00:51,110
+see how that works and if it's worth continuing
+
+13
+00:00:51,110 --> 00:00:54,290
+for the remainder of the term. Still aiming for
+
+14
+00:00:54,320 --> 00:00:57,770
+the same amount of time in these videos. So that's
+
+15
+00:00:58,370 --> 00:01:03,800
+not too much of the written material is duplicated
+
+16
+00:01:03,800 --> 00:01:08,480
+redundantly. So as I said, read five is our last
+
+17
+00:01:08,480 --> 00:01:12,080
+week looking at the canonical ensemble, the
+
+18
+00:01:12,650 --> 00:01:15,440
+probability space that fixes the temperature and
+
+19
+00:01:15,440 --> 00:01:18,950
+the particle number. And as we saw last week, in
+
+20
+00:01:19,170 --> 00:01:24,830
+some contexts, the volume is also a key parameter,
+
+21
+00:01:24,980 --> 00:01:28,640
+a control parameter of the canonical ensemble. And
+
+22
+00:01:28,640 --> 00:01:32,270
+this week we continue applying those canonical
+
+23
+00:01:32,270 --> 00:01:35,270
+tools to look at thermodynamic cycles and in
+
+24
+00:01:35,270 --> 00:01:39,140
+particular cycles that act as engines or
+
+25
+00:01:39,140 --> 00:01:44,810
+refrigerators. And this begins quite directly from
+
+26
+00:01:44,960 --> 00:01:47,810
+where we left off last week, where we defined the
+
+27
+00:01:48,140 --> 00:01:53,870
+thermodynamic pressure as the response of the
+
+28
+00:01:53,870 --> 00:01:57,020
+average internal energy to an adiabatic change in
+
+29
+00:01:57,020 --> 00:02:00,200
+the volume adiabatic, meaning the entropy is fixed,
+
+30
+00:02:01,760 --> 00:02:07,760
+finding the ideal gas law and motivating that
+
+31
+00:02:08,780 --> 00:02:12,230
+definition of pressure by thinking about squeezing
+
+32
+00:02:12,230 --> 00:02:16,280
+or compressing a system of an ideal gas, which
+
+33
+00:02:17,000 --> 00:02:21,380
+then brings in a connection between pressure and
+
+34
+00:02:21,380 --> 00:02:24,680
+force, which may be familiar to those of you who
+
+35
+00:02:24,680 --> 00:02:27,860
+have encountered Newtonian mechanics before, where
+
+36
+00:02:28,100 --> 00:02:31,370
+pressure is just the force exerted per unit area
+
+37
+00:02:31,610 --> 00:02:35,330
+of a surface. And that is precisely the connection
+
+38
+00:02:35,330 --> 00:02:39,440
+that we begin by deriving this relation between
+
+39
+00:02:39,440 --> 00:02:44,150
+the thermodynamic pressure as the response of a
+
+40
+00:02:44,150 --> 00:02:48,200
+probabilistic system to the idea of a force acting
+
+41
+00:02:48,200 --> 00:02:53,930
+on some area. And this relies on the role of the
+
+42
+00:02:53,930 --> 00:02:57,710
+volume as a control parameter in the ensemble.
+
+43
+00:02:57,920 --> 00:03:03,270
+That volume is providing the area. Where?
+
+44
+00:03:06,000 --> 00:03:08,720
+Skip ahead quickly to this illustration, we have a
+
+45
+00:03:08,720 --> 00:03:13,070
+picture of ideal gas particles in some container
+
+46
+00:03:13,610 --> 00:03:16,760
+where one wall of that container is a movable
+
+47
+00:03:16,760 --> 00:03:22,490
+piston with that area, A, which we can push in to
+
+48
+00:03:22,490 --> 00:03:25,280
+compress the gas or pull out to expand the gas by
+
+49
+00:03:25,280 --> 00:03:29,420
+applying an appropriate force. And that process
+
+50
+00:03:29,420 --> 00:03:33,740
+changing the volume. As we saw, that raises the
+
+51
+00:03:34,190 --> 00:03:37,580
+energy of the gas and if it's done idiomatically,
+
+52
+00:03:37,970 --> 00:03:41,930
+then the change in energy raising, if it's
+
+53
+00:03:41,930 --> 00:03:45,800
+compressed and falling, if it's expanded, that
+
+54
+00:03:45,800 --> 00:03:49,310
+change in energy is given by the work done by this
+
+55
+00:03:49,310 --> 00:03:52,760
+force. Another concept from the 17th century,
+
+56
+00:03:52,760 --> 00:03:57,500
+Newtonian mechanics. The work is the product. The
+
+57
+00:03:57,500 --> 00:04:00,980
+inner product of the force got it into the
+
+58
+00:04:01,310 --> 00:04:05,330
+displacements it causes, both in three dimensions.
+
+59
+00:04:06,290 --> 00:04:08,270
+So a simple example you can work through, if this
+
+60
+00:04:08,270 --> 00:04:10,640
+is unfamiliar, is thinking about an object falling
+
+61
+00:04:10,640 --> 00:04:13,520
+from a height under the force of the Earth's
+
+62
+00:04:13,520 --> 00:04:16,100
+gravity, which is directed downward. The object
+
+63
+00:04:16,100 --> 00:04:18,860
+falls downward so that work is just a simple
+
+64
+00:04:18,860 --> 00:04:22,880
+product of the force times. The light falls that
+
+65
+00:04:22,880 --> 00:04:26,180
+changes the energy from, say, zero if it starts at
+
+66
+00:04:26,180 --> 00:04:32,450
+rest to a classic result for the momentum or the
+
+67
+00:04:32,450 --> 00:04:35,330
+velocity of a particle that falls some distance
+
+68
+00:04:35,330 --> 00:04:40,970
+from rest. In this example, with the movable
+
+69
+00:04:40,970 --> 00:04:44,720
+piston, the force is again directed in the
+
+70
+00:04:45,200 --> 00:04:47,060
+parallel, in the same direction as the
+
+71
+00:04:47,330 --> 00:04:51,080
+displacement it causes. So the work it produces is
+
+72
+00:04:51,080 --> 00:04:55,250
+positive, and that corresponds to a change, a
+
+73
+00:04:55,250 --> 00:04:58,490
+positive change in the internal energy coming from
+
+74
+00:04:58,490 --> 00:05:03,140
+a decrease in the volume. And we can connect the
+
+75
+00:05:03,140 --> 00:05:05,630
+thermodynamic definition of the pressure from last
+
+76
+00:05:05,630 --> 00:05:12,050
+week to the usual force per unit area that comes
+
+77
+00:05:12,050 --> 00:05:15,790
+from the 17th century. And.
+
+78
+00:05:19,410 --> 00:05:23,370
+More generally, the work is still given by that
+
+79
+00:05:23,370 --> 00:05:26,080
+pressure times the change in the volume with that
+
+80
+00:05:26,100 --> 00:05:26,910
+negative sign.
+
+81
+00:05:30,020 --> 00:05:33,410
+Correctly mapping the decreasing volume to an
+
+82
+00:05:33,410 --> 00:05:38,180
+increasing internal energy, but if the entropy is
+
+83
+00:05:38,180 --> 00:05:40,790
+allowed to change, then there is another possible
+
+84
+00:05:41,150 --> 00:05:45,110
+way to introduce changes to the energy without
+
+85
+00:05:45,110 --> 00:05:49,850
+changing the volume or doing any work in this
+
+86
+00:05:49,850 --> 00:05:54,350
+simple relation generalizes to an integration when
+
+87
+00:05:54,680 --> 00:05:56,810
+the pressure is not constant. Typically, as we
+
+88
+00:05:57,050 --> 00:06:00,590
+change the volume, we change the pressure that is
+
+89
+00:06:01,400 --> 00:06:03,920
+familiar from trying to say, compressible doing
+
+90
+00:06:04,610 --> 00:06:06,590
+the. As the volume could squeeze, the pressure
+
+91
+00:06:06,590 --> 00:06:09,740
+gets larger and the total work done has to be
+
+92
+00:06:09,740 --> 00:06:12,560
+integrated over that changing pressure as a
+
+93
+00:06:12,560 --> 00:06:16,250
+function of volume. But if we suppose that the
+
+94
+00:06:16,250 --> 00:06:19,280
+volume stays constant so that no work is done, W
+
+95
+00:06:19,310 --> 00:06:22,250
+equals zero. It's still possible to change the
+
+96
+00:06:22,910 --> 00:06:25,250
+internal energy of the gas, which we actually
+
+97
+00:06:25,580 --> 00:06:27,590
+looked at all the way back in the micro canonical
+
+98
+00:06:27,590 --> 00:06:28,760
+ensemble and week to.
+
+99
+00:06:31,610 --> 00:06:36,290
+The internal energy is related to heat and the
+
+100
+00:06:36,290 --> 00:06:40,160
+economical ensemble, the exchange of heat with the
+
+101
+00:06:40,160 --> 00:06:41,630
+system's surroundings.
+
+102
+00:06:45,200 --> 00:06:48,680
+So from last week for an ideal gas, we found that
+
+103
+00:06:48,710 --> 00:06:52,060
+the average internal energy is just given by the
+
+104
+00:06:52,070 --> 00:06:58,450
+temperature. So even if we. Keep the volume fixed
+
+105
+00:06:58,450 --> 00:07:01,330
+so that no work is done, we can increase that
+
+106
+00:07:01,330 --> 00:07:05,640
+temperature by adding some heat. And the process
+
+107
+00:07:05,640 --> 00:07:09,510
+of increasing the temperature we expect since the
+
+108
+00:07:09,510 --> 00:07:14,610
+energy changes for you is zero, the entropy must
+
+109
+00:07:14,610 --> 00:07:18,210
+also change in order to be consistent with the
+
+110
+00:07:18,210 --> 00:07:23,390
+work in the previous section and. Running through
+
+111
+00:07:23,390 --> 00:07:28,330
+that calculation. Produces a change in the entropy
+
+112
+00:07:28,330 --> 00:07:30,670
+that is directly proportional to the change in the
+
+113
+00:07:30,670 --> 00:07:33,730
+energy, and it is precisely that.
+
+114
+00:07:35,920 --> 00:07:38,700
+Change in the energy that we define as the heat in
+
+115
+00:07:38,700 --> 00:07:42,810
+terms of the temperature and the change in entropy.
+
+116
+00:07:43,230 --> 00:07:47,880
+And just as for work, this heat is positive when
+
+117
+00:07:47,880 --> 00:07:51,510
+the internal energy of the gas increases, negative
+
+118
+00:07:51,510 --> 00:07:55,860
+when it decreases, and if the temperature changes
+
+119
+00:07:56,220 --> 00:07:58,920
+in that process, we need to express the
+
+120
+00:07:58,920 --> 00:08:01,290
+temperature as a function of the entropy,
+
+121
+00:08:01,290 --> 00:08:05,930
+inverting the usual relation that we looked at
+
+122
+00:08:05,940 --> 00:08:08,890
+even a couple of weeks ago. Or the canonical
+
+123
+00:08:08,890 --> 00:08:13,330
+ensemble and integrates over the change of the
+
+124
+00:08:13,330 --> 00:08:15,250
+entropy in this process.
+
+125
+00:08:18,240 --> 00:08:20,250
+And the one last thing I'll say before.
+
+126
+00:08:22,390 --> 00:08:24,550
+Stopping this video and starting a new one to keep
+
+127
+00:08:24,550 --> 00:08:27,040
+them relatively bite sized is that.
+
+128
+00:08:29,510 --> 00:08:33,800
+This relation between heat exchange and the change
+
+129
+00:08:33,800 --> 00:08:38,480
+in entropy gives us some important physical
+
+130
+00:08:38,480 --> 00:08:41,510
+intuition for what it means for a process to be
+
+131
+00:08:41,510 --> 00:08:44,420
+adiabatic. Remember, adiabatic means that the
+
+132
+00:08:44,420 --> 00:08:48,080
+entropy does not change. And this equation. Sixty
+
+133
+00:08:48,080 --> 00:08:51,110
+five. The definition of heat then means that no
+
+134
+00:08:51,110 --> 00:08:57,170
+heat is exchanged due to the constant entropy. So
+
+135
+00:08:57,170 --> 00:08:59,720
+in adiabatic process is one that does not exchange
+
+136
+00:08:59,720 --> 00:09:03,170
+heat, which we can interpret as typically being a
+
+137
+00:09:03,170 --> 00:09:06,080
+process that occurs quickly enough that there's no
+
+138
+00:09:06,080 --> 00:09:09,830
+time for heat to be exchanged between the system
+
+139
+00:09:09,830 --> 00:09:13,430
+and its surroundings. In other words, adiabatic
+
+140
+00:09:13,430 --> 00:09:18,710
+processes are fast, and the opposite extreme is to
+
+141
+00:09:18,710 --> 00:09:24,950
+consider a slow process where enough heat is
+
+142
+00:09:24,950 --> 00:09:28,970
+exchanged at every step in the process to keep the
+
+143
+00:09:29,210 --> 00:09:32,600
+temperature fixed in verbalised with the
+
+144
+00:09:32,990 --> 00:09:36,640
+surrounding systems. Where the system's
+
+145
+00:09:36,640 --> 00:09:40,630
+surroundings, I should say, that fixed temperature
+
+146
+00:09:40,630 --> 00:09:44,710
+is known as isothermal situation or nicer thermal
+
+147
+00:09:44,710 --> 00:09:48,550
+process, and that is the opposite exchange of what
+
+148
+00:09:48,550 --> 00:09:51,520
+happens when changes in the system are done very
+
+149
+00:09:51,520 --> 00:09:54,970
+slowly and the system is allowed to recalibrates
+
+150
+00:09:54,970 --> 00:09:59,560
+to its constant temperature thermal reservoir at
+
+151
+00:09:59,560 --> 00:10:02,710
+each step in that process. And those real
+
+152
+00:10:02,710 --> 00:10:06,280
+processes exist in between those two extremes,
+
+153
+00:10:06,280 --> 00:10:11,650
+usually closer to the adiabatic limit and. With
+
+154
+00:10:11,650 --> 00:10:16,650
+that, I will. Pause the recording and pick up with
+
+155
+00:10:17,220 --> 00:10:21,900
+applying these ideas of heat and work to look at
+
+156
+00:10:22,320 --> 00:10:24,450
+bona fide thermodynamic cycles.
