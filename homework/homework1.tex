@@ -1,0 +1,182 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+\usepackage{framed,color}
+\usepackage{fancybox}
+\usepackage{varwidth}
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\usepackage[framemethod=tikz]{mdframed}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\vdr}{\ensuremath{v_{\mathrm{dr}}} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Homework 1}
+\newcommand{\moddate}{Last modified 4 Mar.~2021}
+\begin{center}
+  {\Large \textbf{MATH327: Statistical Physics, Spring 2021}} \\[12 pt]
+  {\Large \textbf{Homework assignment 1}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+Complete all four questions below and submit your solutions by file upload \href{https://liverpool.instructure.com/courses/19478/assignments/89667}{on Canvas}.
+Clear and neat presentations of your workings and the logic behind them will contribute to your mark.
+This assignment is \textbf{due by 23:59 on Tuesday, 16 March}.
+Anonymous marking is turned on, and I will aim to return feedback during the term break.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Question 1: Probability intervals}
+Consider a random walk that consists of $N$ steps, with the length $x_i$ of each step randomly drawn from the probability distribution
+\begin{equation*}
+  p_1(x) = \left\{\begin{array}{ll}\frac{3}{4} x (2 - x) & \mbox{for } 0 \leq u < 2 \\
+                                   0                     & \mbox{otherwise}\end{array}\right. .
+\end{equation*}
+What is the most likely step length?
+What are the mean step length $\mu$ and its standard deviation $\si$?
+
+\showmarks{3}
+
+After many steps are taken, $N \gg 1$, the final position of the walker is
+\begin{equation*}
+  X = \sum_{i = 1}^N x_i.
+\end{equation*}
+What is the probability distribution $p(X)$ for this final position $X$ from the central limit theorem?
+What are the corresponding expectation value $\vev{X}$ and standard deviation $\ell_2 = \sqrt{\vev{X^2} - \vev{X}^2}$ as functions of $N$?
+
+\showmarks{3}
+
+After $N = 100$ steps, what are the intervals
+\begin{equation*}
+  \vev{X} - \De \leq X \leq \vev{X} + \De
+\end{equation*}
+within which the walker can be found with 68\%, 96\% and 99\% probabilities?
+
+Hint: The following values of the error function may be useful:
+\begin{align*}
+  \mathrm{erf}(u) = \frac{1}{\sqrt{\pi}} \int_{-u}^u e^{-x^2} \; dx = \left\{\begin{array}{ll}0.68 & \mbox{for } u \approx 0.7032 \\
+                                                                                              0.96 & \mbox{for } u \approx 1.4522 \\
+                                                                                              0.99 & \mbox{for } u \approx 1.8214\end{array}\right.
+\end{align*}
+
+\showmarks{6}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Question 2: Drift and diffusion}
+There has been an oil spill $1~\mathrm{km}$ away from a \href{https://en.wikipedia.org/wiki/Marine_protected_area}{marine protected area} (MPA).
+$5000$ tonnes of oil are in the water.
+The motion of each oil droplet can be modeled as a one-dimensional random walk towards (or away from) the MPA, with diffusion constant $D = 15~\mathrm{cm}/\sqrt{\mathrm{min}}$.
+You have been called on to estimate how much time is available for the government to take action to protect the MPA.
+If the oil has a drift velocity $\vdr = 50~\mathrm{cm}/\mathrm{min}$ towards the MPA, how long will it take until $100$ tonnes of oil is inside the MPA?
+
+Hint: The error function in the previous question may be useful.
+
+\showmarks{12}
+
+If the oil were washing up on a shore instead of entering an MPA, the mathematics would be significantly more complicated, because each droplet's random walk would \textit{stop} once it reached the shore and left the water.
+This is known as a \textit{first-passage process}.
+Without attempting this more complicated mathematics, explain whether it will take more time, less time or the same amount time for $100$ tonnes of oil to wash up on shore, compared to the MPA case considered above, with everything else the same.
+
+\showmarks{3}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\vfill
+\section*{Question 3: Heat capacity}
+Starting from the average internal energy for the canonical ensemble,
+\begin{equation*}
+  \vev{E} = \frac{1}{Z} \sum_{i = 1}^M E_i \; e^{-\be E_i},
+\end{equation*}
+derive a relation between the heat capacity
+\begin{equation*}
+  c_v = \pderiv{}{T} \vev{E}
+\end{equation*}
+and the quantity $\vev{\left(E - \vev{E}\right)^2}$.
+
+\showmarks{6}
+
+What condition(s) must the micro-state energies $E_i$ satisfy in order for the heat capacity to vanish, $c_v = 0$?
+
+\showmarks{2}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\section*{Question 4: Indistinguishable spins}
+The Helmholtz free energy for $N \gg 1$ indistinguishable spins is
+\begin{equation*}
+  F_I(\be) = -NH - \frac{\log\left[1 - e^{-2(N + 1) \be H}\right]}{\be} + \frac{\log\left[1 - e^{-2 \be H}\right]}{\be}.
+\end{equation*}
+What are the corresponding internal energy $\vev{E}_I$ and entropy $S_I$?
+
+\showmarks{5}
+
+What are the two leading terms in each low-temperature ($e^{-2\be H} \ll 1$) expansion of $\vev{E}_I$ and $S_I$?
+
+\showmarks{5}
+
+What is the leading term in the high-temperature ($\be H \ll 1$) expansion of $\vev{E}_I$?
+What are the two leading terms in the high-temperature expansion of $S_I$?
+
+\showmarks{5}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
