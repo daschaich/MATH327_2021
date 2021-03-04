@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 3}
-\renewcommand{\moddate}{Last modified 18 Feb.~2021}
+\renewcommand{\moddate}{Last modified 4 Mar.~2021}
 \setcounter{section}{3}
 \setcounter{subsection}{0}
 \phantomsection
@@ -338,7 +338,7 @@ is all we need to compute the average internal energy:
 From this we immediately obtain the entropy
 \begin{equation}
   \label{eq:dist_entropy}
-  S_D = \be\left(\vev{E} - F\right) = -N\be H \tanh\left(\be H\right) + N \log\left[2\cosh\left(\be H\right)\right].
+  S_D = \be\left(\vev{E}_D - F_D\right) = -N\be H \tanh\left(\be H\right) + N \log\left[2\cosh\left(\be H\right)\right].
 \end{equation}
 These results for $\vev{E}_D$ and $S_D$ are plotted below as functions of $\frac{T}{H} = \frac{1}{\be H}$.
 Since both these quantities are extensive, we show them in natural units, $\frac{\vev{E}_D}{NH}$ and $\frac{S_D}{N}$.
@@ -444,7 +444,7 @@ The corresponding Helmholtz free energy is
   F_I(\be) = -NH - \frac{\log\left[1 - e^{-2(N + 1) \be H}\right]}{\be} + \frac{\log\left[1 - e^{-2 \be H}\right]}{\be}.
 \end{equation}
 In contrast to \eq{eq:dist_Helm}, $F_i(\be)$ is no longer proportional to $N$.
-In a homework assignment you will use $F_I$ to determine the average internal energy $\vev{E_I}$ and entropy $S_I$ shown in the figures below, and also check the low- and high-temperature expansions like we did for the distinguishable case above.
+In a homework assignment you will use $F_I$ to determine the average internal energy $\vev{E}_I$ and entropy $S_I$ shown in the figures below, and also check the low- and high-temperature expansions like we did for the distinguishable case above.
 Unlike our results for the distinguishable case, you will find that $\frac{\vev{E}_I}{NH}$ and $\frac{S_I}{N}$ depend on $N$, which requires us to fix $N = 4$ in the plots below.
 \begin{center} % Don't need centering, but this will provide consistent vertical spacing
   \includegraphics[width=0.45\textwidth]{figs/week03_energies.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/week03_entropies.pdf}
@@ -456,7 +456,7 @@ We see that the same $T \to 0$ limits are approached in both cases: $E \to -NH$ 
 At low temperatures, the indistinguishable results approach these limits more quickly---they still feature exponential suppression of excited-state effects by the energy gap, $e^{-\be \De E}$, but this now comes with additional factors of $N$.
 
 At high temperatures there is an even more striking difference.
-While the average internal energy $\vev{E_I}$ continues to vanish $\sim$$\frac{1}{T}$ as $T \to \infty$ (with different $N$ dependence), the entropy approaches the asymptotic value $S_I \to \log\left(N + 1\right) = \log M$ for the $M = N + 1$ micro-states.
+While the average internal energy $\vev{E}_I$ continues to vanish $\sim$$\frac{1}{T}$ as $T \to \infty$ (with different $N$ dependence), the entropy approaches the asymptotic value $S_I \to \log\left(N + 1\right) = \log M$ for the $M = N + 1$ micro-states.
 This logarithmic dependence on $N$ is very different from the $S_D \to N\log 2$ limit we found for distinguishable spins, and reflects the exponentially smaller number of micro-states that exist for indistinguishable spins, $N + 1$ vs.\ $2^N$.
 
 Finally, away from those low- and high-temperature limits, the results above show a significant difference in the internal energy of the spin systems, depending only on whether or not the spins can be distinguished from each other in principle.
