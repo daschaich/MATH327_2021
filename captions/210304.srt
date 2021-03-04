@@ -1,0 +1,2067 @@
+1
+00:00:04,250 --> 00:00:09,290
+And I think while we wait for a few more folks to
+
+2
+00:00:09,290 --> 00:00:12,020
+trickle in just after the hour, it's worth getting
+
+3
+00:00:12,020 --> 00:00:15,770
+that recording started and setting up some or
+
+4
+00:00:15,770 --> 00:00:19,010
+going through some of the usual logistics,
+
+5
+00:00:19,820 --> 00:00:25,970
+including the usual initial question from the
+
+6
+00:00:25,970 --> 00:00:29,030
+people everywhere asking.
+
+7
+00:00:31,090 --> 00:00:35,350
+If there are any questions you want to see
+
+8
+00:00:35,650 --> 00:00:40,210
+discussed this week, where I do already have notes
+
+9
+00:00:40,240 --> 00:00:45,970
+of the question that came in on Monday to discuss
+
+10
+00:00:47,670 --> 00:00:54,520
+equation fifty four on what pages that page 63 of
+
+11
+00:00:54,550 --> 00:00:57,820
+the notes, which is the sixth page of the week for
+
+12
+00:00:57,820 --> 00:01:02,050
+lecture notes on. Fairly certain we will get to
+
+13
+00:01:02,050 --> 00:01:08,020
+that today. I just want to wrap up a bit of what
+
+14
+00:01:09,010 --> 00:01:12,700
+you were discussing with the energy levels for the
+
+15
+00:01:12,700 --> 00:01:18,220
+ideal gas in a cubic volume before moving on to
+
+16
+00:01:18,370 --> 00:01:21,910
+those derived quantities, the internal energy and
+
+17
+00:01:22,000 --> 00:01:22,660
+entropy.
+
+18
+00:01:28,210 --> 00:01:35,970
+And while. I have that poll up and running and.
+
+19
+00:01:37,390 --> 00:01:39,700
+Give you a few minutes to get any thoughts in
+
+20
+00:01:39,700 --> 00:01:44,410
+there can also go through the other aspects of
+
+21
+00:01:44,410 --> 00:01:48,220
+logistics for this week that, as you know, the
+
+22
+00:01:48,520 --> 00:01:51,760
+first part of the computer project was do just
+
+23
+00:01:51,760 --> 00:01:55,210
+about 36 hours ago. And most of those have been
+
+24
+00:01:55,210 --> 00:01:58,660
+submitted. There's still some time to submit
+
+25
+00:01:58,660 --> 00:02:01,300
+layouts for those of you who have not yet got
+
+26
+00:02:01,300 --> 00:02:07,300
+those in with some late penalties that are mild by
+
+27
+00:02:07,300 --> 00:02:11,470
+my standards. And since that is now hopefully out
+
+28
+00:02:11,470 --> 00:02:18,670
+of the way, the next homework assignment is
+
+29
+00:02:19,120 --> 00:02:24,640
+uploaded and available on canvas of all, depending
+
+30
+00:02:24,640 --> 00:02:27,370
+on your notification settings, you should have
+
+31
+00:02:27,370 --> 00:02:31,090
+gotten a notification about it when it was updated
+
+32
+00:02:31,090 --> 00:02:35,530
+earlier this week. Just going to the assignments
+
+33
+00:02:35,530 --> 00:02:42,130
+homework one and it is usual PDF linked from that
+
+34
+00:02:42,130 --> 00:02:48,000
+page in canvas. And available for you to work on
+
+35
+00:02:48,000 --> 00:02:53,790
+do at the end of Tuesday, 16th of March, so a week
+
+36
+00:02:53,790 --> 00:02:58,260
+from next Tuesday or 12 days from today.
+
+37
+00:03:04,860 --> 00:03:09,330
+And in equation 54, we will get to in due course,
+
+38
+00:03:09,330 --> 00:03:15,540
+but let's let me move on from that open request
+
+39
+00:03:15,540 --> 00:03:18,390
+for questions to.
+
+40
+00:03:20,990 --> 00:03:24,560
+Just wrapping up what we were discussing last week
+
+41
+00:03:24,560 --> 00:03:25,640
+with the.
+
+42
+00:03:28,940 --> 00:03:30,680
+Energy levels for.
+
+43
+00:03:32,770 --> 00:03:38,830
+This ideal gas in a cubic volume where you ran out
+
+44
+00:03:38,830 --> 00:03:44,080
+of time just before I could ask what I expected to
+
+45
+00:03:44,080 --> 00:03:48,670
+be, the last quick question about that, which I
+
+46
+00:03:48,670 --> 00:03:55,240
+will now bring up on that poll everywhere and.
+
+47
+00:03:57,290 --> 00:04:03,440
+That now leads that going back to this portion of
+
+48
+00:04:03,470 --> 00:04:06,230
+the notes just where we ended last time.
+
+49
+00:04:08,880 --> 00:04:14,670
+We saw that the three lowest energy levels coming
+
+50
+00:04:14,670 --> 00:04:19,950
+from these highest momenta are on sites to get a
+
+51
+00:04:19,950 --> 00:04:23,700
+well defined partitioned function for an ideal gas.
+
+52
+00:04:26,220 --> 00:04:28,410
+Those three energy levels for all integer
+
+53
+00:04:28,410 --> 00:04:32,010
+multiples of this quantity, each are squared pi
+
+54
+00:04:32,010 --> 00:04:35,280
+squared over 2m elsewhere where each bar is
+
+55
+00:04:35,640 --> 00:04:38,670
+Planck's constant and is the mass of the particles
+
+56
+00:04:38,670 --> 00:04:42,960
+in the gas and oil is the length of each side of
+
+57
+00:04:42,960 --> 00:04:48,520
+the cubic volume that the gas can find within. And
+
+58
+00:04:49,510 --> 00:04:52,450
+the question the follow up question to that is,
+
+59
+00:04:52,600 --> 00:04:58,480
+are all of the energy levels for this single
+
+60
+00:04:58,480 --> 00:05:02,170
+particle gas evenly spaced in general the way that
+
+61
+00:05:02,560 --> 00:05:04,360
+these three lowest ones are?
+
+62
+00:05:14,580 --> 00:05:19,100
+Debating which of these screens is the best to. To
+
+63
+00:05:19,100 --> 00:05:20,060
+have on the share,
+
+64
+00:05:23,300 --> 00:05:26,500
+let's stick with this one. You know, to keep an
+
+65
+00:05:26,500 --> 00:05:29,230
+eye on the responses.
+
+66
+00:05:31,480 --> 00:05:32,410
+Separately.
+
+67
+00:07:19,030 --> 00:07:19,360
+That's.
+
+68
+00:07:36,010 --> 00:07:36,560
+Mr..
+
+69
+00:08:18,770 --> 00:08:23,560
+Not many responses have come in yet, so. Continue
+
+70
+00:08:23,830 --> 00:08:28,430
+waiting in case you are. Reviewing the.
+
+71
+00:08:30,830 --> 00:08:33,650
+The general result from last week
+
+72
+00:08:35,900 --> 00:08:38,300
+or sorry, last time, one day this week.
+
+73
+00:09:01,210 --> 00:09:05,320
+So far, there's one response which is in agreement
+
+74
+00:09:05,320 --> 00:09:10,390
+with itself, so there's a 100 percent. Choice for
+
+75
+00:09:10,780 --> 00:09:13,700
+one of those four options. That's.
+
+76
+00:09:16,330 --> 00:09:21,010
+Why, I'm just giving it another few seconds for
+
+77
+00:09:21,010 --> 00:09:22,090
+those who are.
+
+78
+00:09:25,220 --> 00:09:31,560
+Still considering. How these energy, how these
+
+79
+00:09:31,560 --> 00:09:35,280
+disparities, energy levels work for just a single
+
+80
+00:09:35,280 --> 00:09:39,970
+particle in this volume. With our arms out for the
+
+81
+00:09:39,970 --> 00:09:40,540
+momentum.
+
+82
+00:11:22,480 --> 00:11:26,960
+Well, at this point, it's. May have gotten all the
+
+83
+00:11:27,770 --> 00:11:30,050
+responses that are going to come in there. There
+
+84
+00:11:30,080 --> 00:11:35,840
+are a serial number now. So if we look at.
+
+85
+00:11:39,080 --> 00:11:41,570
+What we have here, there's now an even split
+
+86
+00:11:41,570 --> 00:11:46,790
+between two of these options where if we.
+
+87
+00:11:51,830 --> 00:11:56,090
+Just recall, the general form for the energy is
+
+88
+00:11:56,090 --> 00:11:59,750
+coming from those inventor. You have.
+
+89
+00:12:03,560 --> 00:12:08,230
+From last time. It is a. Kay.
+
+90
+00:12:18,490 --> 00:12:23,060
+And the fact that the. Energies depend quadratics
+
+91
+00:12:23,270 --> 00:12:28,550
+on these integer, okay, tell us that not all of
+
+92
+00:12:28,550 --> 00:12:30,530
+the energies are going to be evenly spaced. They
+
+93
+00:12:30,530 --> 00:12:34,970
+will, in generality be quite radically spaced. And
+
+94
+00:12:34,970 --> 00:12:39,710
+the question is, when does that set in? Responses
+
+95
+00:12:39,710 --> 00:12:45,720
+have switched around now and. If we look at the
+
+96
+00:12:46,200 --> 00:12:52,500
+options for these three energy levels here. You
+
+97
+00:12:52,500 --> 00:12:55,050
+saw last time that they corresponded to.
+
+98
+00:12:57,790 --> 00:13:03,400
+These values of the Vector's K being all Xeros
+
+99
+00:13:03,400 --> 00:13:07,900
+having one non-zero entry or two and six or in
+
+100
+00:13:07,900 --> 00:13:10,870
+permutations thereof if we have.
+
+101
+00:13:14,100 --> 00:13:21,540
+Talk of one one, one that energy is three times
+
+102
+00:13:21,780 --> 00:13:27,930
+the usual units, which I'll call that a lowercase
+
+103
+00:13:27,930 --> 00:13:34,950
+E. And we can go on to consider. To.
+
+104
+00:13:38,110 --> 00:13:41,500
+Zero zero with an energy of four.
+
+105
+00:13:43,870 --> 00:13:49,840
+Two one zero. With an energy. Five.
+
+106
+00:13:58,790 --> 00:14:01,850
+And it looks like I actually made a mistake in the
+
+107
+00:14:01,850 --> 00:14:04,760
+counting of the whole everywhere problem problems
+
+108
+00:14:04,770 --> 00:14:08,510
+made these quiz question, which may be why there
+
+109
+00:14:08,510 --> 00:14:11,090
+were relatively few responses. When we get up to
+
+110
+00:14:11,090 --> 00:14:17,300
+two on one, that energy is 60, but there is no way
+
+111
+00:14:17,300 --> 00:14:20,690
+to get seven units of energy from these integer
+
+112
+00:14:20,690 --> 00:14:24,890
+squares. So after that seventh level, which is an
+
+113
+00:14:24,890 --> 00:14:26,870
+energy of six, which is where that miscounting
+
+114
+00:14:26,870 --> 00:14:32,330
+came from, I apologize for we jump straight up to
+
+115
+00:14:32,810 --> 00:14:38,030
+to come to an energy of eight units. So that
+
+116
+00:14:40,760 --> 00:14:41,840
+hopefully is now.
+
+117
+00:14:43,880 --> 00:14:47,210
+Clear to see, having written down the overall
+
+118
+00:14:47,630 --> 00:14:49,220
+formula went.
+
+119
+00:14:53,360 --> 00:14:56,730
+But a bit longer than I expected. So let's set
+
+120
+00:14:56,730 --> 00:14:57,870
+aside the.
+
+121
+00:15:00,880 --> 00:15:06,120
+Individual energy for this particle and for this
+
+122
+00:15:06,130 --> 00:15:12,880
+ideal gas and cubic container and skip through all
+
+123
+00:15:12,880 --> 00:15:15,580
+of these manipulations going from the.
+
+124
+00:15:17,940 --> 00:15:23,180
+Disparities moment back to continuous moments in
+
+125
+00:15:23,330 --> 00:15:27,210
+integrating over those to get to the partition
+
+126
+00:15:27,210 --> 00:15:31,290
+functions for distinguishable and
+
+127
+00:15:31,650 --> 00:15:35,820
+indistinguishable particles in the gas, we're now
+
+128
+00:15:35,820 --> 00:15:38,190
+approaching the question that was asked about
+
+129
+00:15:38,190 --> 00:15:42,990
+equation. Fifty four coming up. Before we get
+
+130
+00:15:42,990 --> 00:15:45,600
+there, though, let me.
+
+131
+00:15:47,700 --> 00:15:55,620
+Ask one quick question that did not appear in. The
+
+132
+00:15:55,650 --> 00:15:57,840
+asynchronous material, which is.
+
+133
+00:16:05,690 --> 00:16:08,840
+If I can get to it up here, what is the heat
+
+134
+00:16:08,840 --> 00:16:15,660
+capacity for this ideal gas with in particles? And
+
+135
+00:16:15,710 --> 00:16:18,830
+as we saw in equation fifty four, that this
+
+136
+00:16:18,830 --> 00:16:21,620
+doesn't depend on whether or not those particles
+
+137
+00:16:21,620 --> 00:16:26,810
+are distinguishable or indistinguishable. It is a
+
+138
+00:16:27,710 --> 00:16:34,130
+fixed answer for both cases. And since that was
+
+139
+00:16:34,130 --> 00:16:38,870
+not something you were asked to consider in
+
+140
+00:16:38,870 --> 00:16:41,240
+advance, give you a.
+
+141
+00:16:44,950 --> 00:16:47,040
+A minute or two to think about it.
+
+142
+00:17:01,840 --> 00:17:03,970
+Responses have started coming in and.
+
+143
+00:17:07,110 --> 00:17:10,830
+We'll wait for more to accumulate.
+
+144
+00:19:50,260 --> 00:19:51,060
+Spacings.
+
+145
+00:20:37,180 --> 00:20:38,440
+I'll make this the
+
+146
+00:20:41,350 --> 00:20:51,300
+last call for responses which may be slowing down.
+
+147
+00:21:26,750 --> 00:21:30,110
+And there is, again, a.
+
+148
+00:21:34,000 --> 00:21:38,410
+Even split between two of these options, so
+
+149
+00:21:41,050 --> 00:21:45,250
+I'll go through this briefly that recalling the
+
+150
+00:21:45,760 --> 00:21:46,780
+heat capacity.
+
+151
+00:21:50,460 --> 00:21:51,210
+Is.
+
+152
+00:21:53,490 --> 00:21:58,110
+The derivative of the internal energy with respect
+
+153
+00:21:58,110 --> 00:22:01,830
+to the temperature at a fixed volume, then this
+
+154
+00:22:01,830 --> 00:22:07,920
+equation 54 gives us the derivative of T with T is
+
+155
+00:22:07,920 --> 00:22:14,340
+one in the constant three has N comes out as the
+
+156
+00:22:14,340 --> 00:22:22,580
+heat capacity. And that was one of those options
+
+157
+00:22:22,580 --> 00:22:28,070
+that I'll select there, and that brings us to the
+
+158
+00:22:28,070 --> 00:22:35,050
+equation 54 that. Was asked about, so I'll turn on
+
+159
+00:22:35,050 --> 00:22:36,280
+the open
+
+160
+00:22:38,320 --> 00:22:42,250
+response polls from that back on while we look at
+
+161
+00:22:42,250 --> 00:22:43,870
+this equation. Fifty four.
+
+162
+00:22:49,100 --> 00:22:52,790
+In more detail, and I suspect the question has to
+
+163
+00:22:52,790 --> 00:22:58,070
+do with this footnote here and the observation
+
+164
+00:22:58,700 --> 00:22:59,270
+that
+
+165
+00:23:01,820 --> 00:23:05,840
+in contrast to the spin system considered at the
+
+166
+00:23:05,840 --> 00:23:10,190
+end of the week, three material introducing the
+
+167
+00:23:10,190 --> 00:23:16,840
+canonical ensemble. There we saw that the energy
+
+168
+00:23:16,840 --> 00:23:20,830
+and the entropy were both different for
+
+169
+00:23:20,830 --> 00:23:24,070
+distinguishable versus indistinguishable particles,
+
+170
+00:23:25,570 --> 00:23:27,070
+in this case distinguishable versus
+
+171
+00:23:27,070 --> 00:23:30,730
+indistinguishable spins. This is the energy on the
+
+172
+00:23:30,730 --> 00:23:35,330
+left. And the entropy on the right now that we're
+
+173
+00:23:35,330 --> 00:23:39,290
+looking at an ideal gas, we find that the energy
+
+174
+00:23:39,500 --> 00:23:42,800
+is always the same independent of the
+
+175
+00:23:42,800 --> 00:23:46,400
+distinguished ability or indistinguishably of the
+
+176
+00:23:46,400 --> 00:23:50,060
+particles. In this ideal gas, though, there is
+
+177
+00:23:50,060 --> 00:23:56,030
+still a difference in the entropy. So in a sense,
+
+178
+00:23:56,030 --> 00:23:59,840
+that difference of the entropy is what we may have
+
+179
+00:23:59,840 --> 00:24:04,700
+expected coming from last week and the. Identical
+
+180
+00:24:04,700 --> 00:24:08,000
+internal energies are potentially more surprising
+
+181
+00:24:08,150 --> 00:24:10,220
+in this footnote here, mentions, if you were
+
+182
+00:24:10,220 --> 00:24:16,530
+surprised by. That results that the reason for it
+
+183
+00:24:16,530 --> 00:24:21,420
+is it has to do with how the microstates match up
+
+184
+00:24:21,420 --> 00:24:25,890
+or how the partitioned function matches up between
+
+185
+00:24:26,370 --> 00:24:29,580
+these cases of distinguishable and
+
+186
+00:24:29,580 --> 00:24:31,950
+indistinguishable particles, which
+
+187
+00:24:34,710 --> 00:24:38,460
+takes us back up to the previous section of the
+
+188
+00:24:38,460 --> 00:24:41,850
+nose where we were computing those two partition
+
+189
+00:24:41,850 --> 00:24:43,560
+functions for the case of distinguishable and
+
+190
+00:24:43,560 --> 00:24:47,850
+indistinguishable particles. And just as a quick
+
+191
+00:24:47,850 --> 00:24:53,850
+reminder that I will. Reuse this box as empty
+
+192
+00:24:53,850 --> 00:24:59,400
+space to to scratch in rather than confining
+
+193
+00:24:59,400 --> 00:25:06,150
+myself to the margins. The partition function for
+
+194
+00:25:06,690 --> 00:25:12,870
+indistinguishable particles is the sum over all of
+
+195
+00:25:12,870 --> 00:25:18,700
+those microstates I. Of the bowsman factor,
+
+196
+00:25:18,700 --> 00:25:22,360
+exponential to the negative energy of that micro
+
+197
+00:25:22,360 --> 00:25:25,270
+state divided by the temperature or multiplied by
+
+198
+00:25:25,270 --> 00:25:31,120
+the inverse temperature beta. And we argued and
+
+199
+00:25:31,120 --> 00:25:32,770
+there was a gap where you hopefully convince
+
+200
+00:25:32,770 --> 00:25:37,660
+yourself that every microstates of
+
+201
+00:25:37,660 --> 00:25:40,180
+indistinguishable particles in an ideal gas
+
+202
+00:25:40,690 --> 00:25:45,440
+corresponds to in factorial different microstates
+
+203
+00:25:46,240 --> 00:25:48,970
+of if those particles are distinguishable. And
+
+204
+00:25:48,970 --> 00:25:52,210
+that simply comes from taking all those particles
+
+205
+00:25:52,360 --> 00:25:55,330
+and slapping labels on each one and declaring a
+
+206
+00:25:55,330 --> 00:25:58,630
+different micro state for every permutation of
+
+207
+00:25:58,630 --> 00:26:03,070
+those labels, which provides that an vectorial
+
+208
+00:26:03,070 --> 00:26:07,970
+accounting factor. So. From that, we saw that the
+
+209
+00:26:08,270 --> 00:26:11,060
+partition function for distinguishable particles.
+
+210
+00:26:12,870 --> 00:26:17,390
+I was just in factorial.
+
+211
+00:26:23,290 --> 00:26:26,740
+Times that sum over the microstates the N
+
+212
+00:26:26,740 --> 00:26:31,270
+factorial is independent of the energy. So it's a
+
+213
+00:26:31,270 --> 00:26:34,980
+cost factor that can come outside the sum which
+
+214
+00:26:35,270 --> 00:26:39,340
+gives us that factorial times the
+
+215
+00:26:39,340 --> 00:26:41,170
+indistinguishable, partitioned function.
+
+216
+00:26:44,270 --> 00:26:48,230
+And going back to last week's work on the
+
+217
+00:26:48,230 --> 00:26:51,560
+canonical example, in general, we had the
+
+218
+00:26:52,430 --> 00:26:57,190
+revelation that the internal energy is the
+
+219
+00:26:57,200 --> 00:27:00,750
+negative. Derivative with respect to that internal
+
+220
+00:27:00,750 --> 00:27:04,800
+temperature of the logarithm of the partitioned
+
+221
+00:27:04,800 --> 00:27:08,940
+function. So if we consider here the partition
+
+222
+00:27:08,940 --> 00:27:12,690
+function for the distinguishable case, that means
+
+223
+00:27:12,690 --> 00:27:16,110
+that we're looking at the distinguishable internal
+
+224
+00:27:16,110 --> 00:27:20,040
+energy there. We have the
+
+225
+00:27:22,350 --> 00:27:28,800
+derivative with this constant factor of log and
+
+226
+00:27:28,800 --> 00:27:33,390
+factorial pulled out of that product.
+
+227
+00:27:37,570 --> 00:27:41,230
+Just using the usual properties of logarithms, the
+
+228
+00:27:41,230 --> 00:27:47,500
+derivative of this constant vanishes and we then
+
+229
+00:27:47,500 --> 00:27:49,920
+find. That
+
+230
+00:27:52,170 --> 00:27:56,820
+the internal energy in the distinguishable case is
+
+231
+00:27:56,820 --> 00:27:58,980
+identical to the internal energy in the
+
+232
+00:27:58,980 --> 00:28:02,700
+indistinguishable case, regardless of what the
+
+233
+00:28:02,700 --> 00:28:06,540
+particular form of those energies are in each
+
+234
+00:28:06,540 --> 00:28:10,680
+microstates. It only depends on whether this
+
+235
+00:28:11,730 --> 00:28:14,130
+different counting factor or whether really the
+
+236
+00:28:14,130 --> 00:28:16,500
+partition functions are directly proportional
+
+237
+00:28:18,990 --> 00:28:23,040
+to each other. Any constant factors multiplied by
+
+238
+00:28:23,400 --> 00:28:26,010
+multiplying the partition function will drop out
+
+239
+00:28:26,580 --> 00:28:30,840
+in the determination of the internal energy simply
+
+240
+00:28:30,840 --> 00:28:32,400
+because it's the.
+
+241
+00:28:34,660 --> 00:28:38,740
+Derivative of a logarithm, perhaps another way of
+
+242
+00:28:39,670 --> 00:28:44,020
+writing that or seeing it is to apply the
+
+243
+00:28:44,020 --> 00:28:49,120
+properties of derivatives of Florida rhythms that
+
+244
+00:28:49,810 --> 00:28:57,610
+it ends up with a one over Z D at DeVita. So in
+
+245
+00:28:57,610 --> 00:29:01,690
+the overall cost and factors in this Z in the
+
+246
+00:29:01,690 --> 00:29:04,630
+numerator and the one over Z that comes out from
+
+247
+00:29:04,630 --> 00:29:07,410
+the derivative of the log are going to cancel out.
+
+248
+00:29:08,440 --> 00:29:12,490
+And that is, you know, for professionals, that's a
+
+249
+00:29:12,490 --> 00:29:18,100
+very useful result and useful facts to to be aware
+
+250
+00:29:18,100 --> 00:29:22,930
+of that any causal factor is just drop out of the
+
+251
+00:29:22,930 --> 00:29:25,990
+internal energy because of factors in the
+
+252
+00:29:25,990 --> 00:29:27,610
+partition function, drop out of the internal
+
+253
+00:29:27,610 --> 00:29:33,550
+energy. And if we hop back to the case considered
+
+254
+00:29:34,300 --> 00:29:40,000
+last week in the canonical ensemble, we can see
+
+255
+00:29:40,000 --> 00:29:46,060
+why the simplification was not applicable. So this
+
+256
+00:29:46,060 --> 00:29:49,870
+here is the starting expression for the
+
+257
+00:29:50,620 --> 00:29:54,040
+indistinguishable partition function, in that case,
+
+258
+00:29:54,280 --> 00:29:59,410
+something over the energy levels. Here we have a
+
+259
+00:29:59,440 --> 00:30:03,730
+gas of spins that are indistinguishable rather
+
+260
+00:30:03,730 --> 00:30:08,730
+than. Particles with some kinetic energy and if we
+
+261
+00:30:08,730 --> 00:30:09,480
+want to.
+
+262
+00:30:12,190 --> 00:30:13,540
+Relate this.
+
+263
+00:30:16,030 --> 00:30:18,610
+Indistinguishable partition function to the
+
+264
+00:30:18,610 --> 00:30:22,330
+distinguishable case, we have to think about how
+
+265
+00:30:22,330 --> 00:30:26,050
+many different microstates there would be with
+
+266
+00:30:26,050 --> 00:30:29,170
+each of those energy levels if the spin's were
+
+267
+00:30:29,170 --> 00:30:33,770
+distinguishable. So just to consider some simple
+
+268
+00:30:33,770 --> 00:30:38,420
+cases in the case equals zero ground state with
+
+269
+00:30:38,810 --> 00:30:42,290
+the minimum energy, there's only a single
+
+270
+00:30:42,290 --> 00:30:43,160
+microstates.
+
+271
+00:30:45,370 --> 00:30:47,740
+Regardless of whether or not the spins are
+
+272
+00:30:47,740 --> 00:30:51,220
+distinguishable in here, I'm assuming that the
+
+273
+00:30:51,700 --> 00:30:56,080
+external magnetic field is oriented downward so
+
+274
+00:30:56,080 --> 00:30:58,690
+that all of those guys are parallel to it,
+
+275
+00:30:58,690 --> 00:31:01,970
+contributing negative energy. So there is
+
+276
+00:31:04,910 --> 00:31:07,640
+the same number of microstates in the
+
+277
+00:31:07,640 --> 00:31:11,580
+distinguishable and indistinguishable cases. So
+
+278
+00:31:11,580 --> 00:31:16,080
+there's a causal factor of one going up to the
+
+279
+00:31:16,170 --> 00:31:17,550
+first excited state.
+
+280
+00:31:24,490 --> 00:31:28,250
+We had. There's a comment that we had we might
+
+281
+00:31:28,250 --> 00:31:32,600
+have gone through this exercise already in the
+
+282
+00:31:32,600 --> 00:31:36,560
+notes that I'll wrap it up. Since it's.
+
+283
+00:31:39,080 --> 00:31:43,250
+Almost done here, if we can distinguish these
+
+284
+00:31:43,250 --> 00:31:46,340
+spins, you know, any one of the end can be
+
+285
+00:31:46,520 --> 00:31:49,730
+oriented opposite to that external magnetic field.
+
+286
+00:31:51,720 --> 00:31:55,630
+So there are and possible states and in full
+
+287
+00:31:55,650 --> 00:32:02,720
+generality. We have this son of interviews, K
+
+288
+00:32:03,440 --> 00:32:07,730
+Times, these energy is better times, E.K., which
+
+289
+00:32:07,730 --> 00:32:14,480
+is minus and H plus to HK So the key here is that.
+
+290
+00:32:16,760 --> 00:32:17,270
+This.
+
+291
+00:32:21,660 --> 00:32:26,660
+Victor, I'm not sure why. This program is trying
+
+292
+00:32:26,660 --> 00:32:29,990
+to change the screen rather than just underlining
+
+293
+00:32:30,440 --> 00:32:33,590
+that factor, that counting factor going from
+
+294
+00:32:33,590 --> 00:32:37,550
+indistinguishable to distinguishable is
+
+295
+00:32:39,710 --> 00:32:43,190
+dependent. And there's no overall a constant
+
+296
+00:32:43,190 --> 00:32:46,860
+factor that can be pulled out to relate to
+
+297
+00:32:46,880 --> 00:32:49,550
+distinguishable and indistinguishable partition
+
+298
+00:32:49,550 --> 00:32:53,180
+functions. The thing to do is to rearrange all of
+
+299
+00:32:53,180 --> 00:32:56,780
+the terms of this finite sum to match up the
+
+300
+00:32:57,650 --> 00:32:59,900
+distinguishable micro states with positive and
+
+301
+00:32:59,900 --> 00:33:07,280
+negative energies, which ends up producing. That.
+
+302
+00:33:10,050 --> 00:33:13,200
+Result that we saw earlier, that the distinction,
+
+303
+00:33:13,320 --> 00:33:15,930
+the case is the exponential of.
+
+304
+00:33:19,570 --> 00:33:23,740
+E to the minus beta age plus either the plus B to
+
+305
+00:33:23,740 --> 00:33:27,730
+age race to the power of N, which if we compare
+
+306
+00:33:27,730 --> 00:33:33,750
+that to. The full indistinguishable case is not
+
+307
+00:33:34,800 --> 00:33:37,590
+directly proportional to it, so that is the
+
+308
+00:33:37,590 --> 00:33:42,360
+explanation. Stated here is that counting factor
+
+309
+00:33:42,360 --> 00:33:47,640
+that varies with the energy and so rather than the
+
+310
+00:33:47,640 --> 00:33:50,220
+simple constants relating those to partition
+
+311
+00:33:50,220 --> 00:33:52,290
+functions we ended up with.
+
+312
+00:33:56,170 --> 00:33:59,380
+Non constant values that did not vanish in the
+
+313
+00:33:59,380 --> 00:34:01,780
+logarithmic derivative, providing the energy.
+
+314
+00:34:06,330 --> 00:34:09,970
+Pause for just a moment to see if any other
+
+315
+00:34:09,970 --> 00:34:11,830
+questions have come in or if there are follow up
+
+316
+00:34:11,830 --> 00:34:15,370
+questions about that whole discussion, essentially.
+
+317
+00:34:18,290 --> 00:34:23,870
+Going through that background explanation and a
+
+318
+00:34:23,870 --> 00:34:29,350
+bit more detail and diving into the. Fundamental
+
+319
+00:34:29,350 --> 00:34:32,200
+reasons for this change in behavior.
+
+320
+00:34:55,370 --> 00:35:00,320
+And not hearing any, I think, the remaining time.
+
+321
+00:35:01,870 --> 00:35:04,570
+Today, let's see fundamental reasons.
+
+322
+00:35:09,010 --> 00:35:10,600
+This is the I'm not sure if.
+
+323
+00:35:12,840 --> 00:35:15,960
+Your last comment in the chat window is a question
+
+324
+00:35:15,960 --> 00:35:20,280
+or just a comment? The fundamental reason for this
+
+325
+00:35:20,280 --> 00:35:26,080
+difference is the. The distinction, whether or not
+
+326
+00:35:26,090 --> 00:35:28,010
+the distinguishable and indistinguishable
+
+327
+00:35:28,010 --> 00:35:31,070
+partition functions are directly proportional to
+
+328
+00:35:31,070 --> 00:35:34,340
+each other, they are in the case of an ideal gas
+
+329
+00:35:34,340 --> 00:35:38,690
+and they are not in the case of a spin system. And
+
+330
+00:35:38,690 --> 00:35:42,620
+that is what goes through the calculation to
+
+331
+00:35:43,070 --> 00:35:45,630
+produce. That
+
+332
+00:35:47,820 --> 00:35:51,390
+net result, that different behavior in the two
+
+333
+00:35:51,390 --> 00:35:52,050
+energies.
+
+334
+00:35:59,490 --> 00:36:03,270
+So in the time remaining, I think we will be able
+
+335
+00:36:03,270 --> 00:36:07,260
+to do just one quick conceptual question and then
+
+336
+00:36:07,260 --> 00:36:09,930
+maybe a somewhat more detailed
+
+337
+00:36:12,360 --> 00:36:16,050
+computation, looking at the entropy for the ideal
+
+338
+00:36:16,050 --> 00:36:19,890
+gas, in particular, the mixing entropy that shows
+
+339
+00:36:19,890 --> 00:36:25,290
+up in this conversation or this section on the we
+
+340
+00:36:25,290 --> 00:36:29,070
+call it so-called gives paradox, which we saw is
+
+341
+00:36:29,070 --> 00:36:31,710
+not actually a paradox.
+
+342
+00:36:35,460 --> 00:36:40,620
+So switching over to. The whole here.
+
+343
+00:36:42,670 --> 00:36:44,800
+Just asking something that
+
+344
+00:36:47,230 --> 00:36:50,730
+doesn't necessarily need any formal computation,
+
+345
+00:36:50,740 --> 00:36:52,120
+it's more of an.
+
+346
+00:36:54,190 --> 00:36:58,120
+Developing an intuition for how information and
+
+347
+00:36:58,120 --> 00:37:02,080
+entropy are related. The question is, how do you
+
+348
+00:37:02,080 --> 00:37:06,460
+expect the entropy of an ideal gas to depend on
+
+349
+00:37:06,460 --> 00:37:09,010
+the distinguished ability of the particles in that
+
+350
+00:37:09,010 --> 00:37:09,490
+gas?
+
+351
+00:37:15,100 --> 00:37:18,340
+And more generally, this is even something that
+
+352
+00:37:18,340 --> 00:37:20,170
+could be considered.
+
+353
+00:37:23,200 --> 00:37:28,420
+For generic statistical systems, how would entropy
+
+354
+00:37:28,420 --> 00:37:31,480
+in general depend on the distinguished ability of
+
+355
+00:37:31,480 --> 00:37:33,400
+particles? What we can consider is just the ideal
+
+356
+00:37:33,400 --> 00:37:35,170
+use case for
+
+357
+00:37:37,930 --> 00:37:41,800
+to keep things more concrete and avoid having to
+
+358
+00:37:41,800 --> 00:37:43,780
+worry about whether we've captured all
+
+359
+00:37:43,780 --> 00:37:44,740
+possibilities.
+
+360
+00:37:53,060 --> 00:37:57,040
+I'll give you a minute or two to think about and
+
+361
+00:37:57,040 --> 00:38:03,260
+respond. To that, again, without a need for
+
+362
+00:38:03,350 --> 00:38:04,820
+detailed calculations.
+
+363
+00:38:07,160 --> 00:38:13,340
+But it's just instinct or intuition or.
+
+364
+00:38:16,450 --> 00:38:21,810
+And understanding the concept of how. And how
+
+365
+00:38:22,010 --> 00:38:26,030
+entropy and information are related.
+
+366
+00:39:31,040 --> 00:39:35,450
+And we do have multiple responses already that all
+
+367
+00:39:35,450 --> 00:39:37,970
+were in agreement about.
+
+368
+00:39:42,160 --> 00:39:42,520
+The.
+
+369
+00:39:47,750 --> 00:39:51,980
+The fact that the distinguishable particles, we
+
+370
+00:39:51,980 --> 00:39:55,100
+should expect a larger entropy and the conceptual
+
+371
+00:39:55,100 --> 00:39:59,480
+reason for this is that we can think of entropy as
+
+372
+00:40:00,410 --> 00:40:02,780
+to some extent a measure of the amount of
+
+373
+00:40:02,780 --> 00:40:05,330
+information in the system. And being able to
+
+374
+00:40:05,780 --> 00:40:10,860
+distinguish particles provides a. Provides more
+
+375
+00:40:10,860 --> 00:40:13,500
+information that we can extract from a given
+
+376
+00:40:13,500 --> 00:40:19,530
+system, and this is also visible in both the plots
+
+377
+00:40:19,530 --> 00:40:22,140
+that we had last week where
+
+378
+00:40:24,210 --> 00:40:29,760
+the distinguishable entropy was larger than the
+
+379
+00:40:29,760 --> 00:40:33,980
+indices in the case and also visible in this
+
+380
+00:40:33,990 --> 00:40:36,330
+equation. Fifty five here for the ideal gas,
+
+381
+00:40:36,330 --> 00:40:41,970
+specifically where all the leading behavior of the
+
+382
+00:40:41,970 --> 00:40:48,510
+entropy is constant. The logarithmic correction in
+
+383
+00:40:48,510 --> 00:40:51,720
+the indistinguishable case is suppressed by this
+
+384
+00:40:51,720 --> 00:40:55,590
+factor of end, which is typically a large number.
+
+385
+00:40:57,630 --> 00:41:00,810
+So now the more detailed question that will wrap
+
+386
+00:41:00,810 --> 00:41:08,500
+up. Today's meeting is going back here to
+
+387
+00:41:11,020 --> 00:41:12,460
+get this up and.
+
+388
+00:41:15,090 --> 00:41:15,600
+Running.
+
+389
+00:41:18,980 --> 00:41:21,400
+It has to do with the.
+
+390
+00:41:24,030 --> 00:41:28,710
+Calculation gone through on page 64 of the notes,
+
+391
+00:41:28,710 --> 00:41:34,770
+which is Nancy see, let me get to that, the
+
+392
+00:41:34,770 --> 00:41:40,200
+seventh page of the PDF, where we have two initial
+
+393
+00:41:40,200 --> 00:41:43,260
+systems, A and B, with the same number of
+
+394
+00:41:43,620 --> 00:41:50,070
+particles in the same size volume with a cell wall
+
+395
+00:41:50,070 --> 00:41:52,980
+separating those two volumes, A and B.
+
+396
+00:42:00,840 --> 00:42:04,770
+When we remove that wall, the particles in those
+
+397
+00:42:04,770 --> 00:42:08,670
+two initial systems and B are allowed to mix in A
+
+398
+00:42:08,670 --> 00:42:12,540
+combined system C and then the wall is reinserted
+
+399
+00:42:13,500 --> 00:42:19,260
+and using gives his argument, we can assume that
+
+400
+00:42:19,440 --> 00:42:21,270
+to a good approximation, when that wall is
+
+401
+00:42:21,270 --> 00:42:23,700
+reinserted, there will be an equal or
+
+402
+00:42:23,700 --> 00:42:26,700
+approximately equal number of particles in each of
+
+403
+00:42:26,730 --> 00:42:29,430
+the two redivided systems.
+
+404
+00:42:32,500 --> 00:42:39,540
+A prime and be prime. And in the notes, without
+
+405
+00:42:40,170 --> 00:42:42,810
+too much in the way of gaffes for you to consider,
+
+406
+00:42:43,110 --> 00:42:45,330
+we went through the calculations in the case where
+
+407
+00:42:45,330 --> 00:42:48,450
+all the particles were indistinguishable, in which
+
+408
+00:42:48,450 --> 00:42:49,170
+case the.
+
+409
+00:42:52,480 --> 00:42:55,000
+Removing or reinserting the wall had no effect on
+
+410
+00:42:55,000 --> 00:42:57,970
+the entropy was constant from each of these stages
+
+411
+00:42:57,970 --> 00:43:00,580
+to the next, and we also looked at the fully
+
+412
+00:43:00,580 --> 00:43:03,700
+distinguishable case where every particle could be
+
+413
+00:43:03,700 --> 00:43:07,030
+distinguished from all the others. In that case,
+
+414
+00:43:07,030 --> 00:43:09,610
+there was a mixing entropy that
+
+415
+00:43:11,740 --> 00:43:14,500
+was added to the system upon removing the wall,
+
+416
+00:43:14,500 --> 00:43:17,620
+and that persisted after that wall was reinserted
+
+417
+00:43:17,740 --> 00:43:20,770
+just because it was not possible to get all the
+
+418
+00:43:20,770 --> 00:43:23,890
+way back to the initial states where the specific
+
+419
+00:43:23,890 --> 00:43:31,920
+particles A.B.C. were all in. The same subsystem
+
+420
+00:43:31,920 --> 00:43:35,160
+where they had started off, so now the question
+
+421
+00:43:35,160 --> 00:43:38,910
+that is up in the
+
+422
+00:43:41,730 --> 00:43:44,910
+polls everywhere is asking about an intermediate
+
+423
+00:43:44,910 --> 00:43:51,990
+case where we suppose that the three particles or
+
+424
+00:43:51,990 --> 00:43:54,660
+all of the particles in System A are
+
+425
+00:43:54,660 --> 00:43:57,810
+indistinguishable from each other, but they can be
+
+426
+00:43:57,810 --> 00:43:59,640
+distinguished from the particles initially in
+
+427
+00:43:59,640 --> 00:44:03,690
+System B, maybe say one of these these particles
+
+428
+00:44:03,690 --> 00:44:08,430
+are. In this case, red particles and systemis and
+
+429
+00:44:08,430 --> 00:44:10,950
+green particles and System B.
+
+430
+00:44:15,030 --> 00:44:19,480
+Or we could consider, say, oxygen consistency in
+
+431
+00:44:19,680 --> 00:44:23,040
+nitrogen molecules and System B that.
+
+432
+00:44:26,410 --> 00:44:30,860
+Are indistinguishable from each other. But
+
+433
+00:44:30,860 --> 00:44:33,530
+distinguishable from one set compared to that
+
+434
+00:44:33,530 --> 00:44:39,320
+other set, and the question is not looking at
+
+435
+00:44:39,320 --> 00:44:41,600
+reinserting the again, but just considering
+
+436
+00:44:41,600 --> 00:44:44,510
+removing the wall and combining these systems and
+
+437
+00:44:44,510 --> 00:44:51,530
+B to form C, so let me zoom in on. That case, is
+
+438
+00:44:51,530 --> 00:44:58,350
+there a. Mixing entropy in this intermediate
+
+439
+00:44:58,350 --> 00:44:59,150
+situation.
+
+440
+00:45:04,160 --> 00:45:06,950
+And I'll remind you, in case you don't have it in
+
+441
+00:45:06,950 --> 00:45:08,390
+front of you, that's the.
+
+442
+00:45:11,300 --> 00:45:12,470
+Two in law, two
+
+443
+00:45:14,540 --> 00:45:17,960
+mentioned in three of the possible responses, here
+
+444
+00:45:17,960 --> 00:45:22,160
+is the mixing entropy from the completely
+
+445
+00:45:22,190 --> 00:45:24,050
+distinguishable case. So we had the full
+
+446
+00:45:24,050 --> 00:45:26,990
+information about every single particle could
+
+447
+00:45:26,990 --> 00:45:29,690
+label each of them uniquely and distinguish each
+
+448
+00:45:29,690 --> 00:45:35,300
+of them from the other. That's equation 58 on page
+
+449
+00:45:35,300 --> 00:45:38,420
+sixty six, page nine of that PDF. Just a couple of
+
+450
+00:45:38,420 --> 00:45:42,080
+pages further down from this picture we're looking
+
+451
+00:45:42,080 --> 00:45:42,650
+at here.
+
+452
+00:47:33,740 --> 00:47:36,500
+Let's say it looks like only one response has come
+
+453
+00:47:36,500 --> 00:47:40,100
+in so far in the interest of time, I may.
+
+454
+00:47:44,660 --> 00:47:48,920
+Started going through the calculation that you
+
+455
+00:47:48,920 --> 00:47:52,850
+would do to to answer this question, and that
+
+456
+00:47:52,850 --> 00:47:54,890
+response is.
+
+457
+00:47:58,070 --> 00:48:01,570
+Arguing that the mixing entropy from the system
+
+458
+00:48:02,320 --> 00:48:07,040
+where. The particles are indistinguishable within
+
+459
+00:48:07,040 --> 00:48:09,590
+each of the initial cell volumes would be greater
+
+460
+00:48:09,590 --> 00:48:12,770
+than the mixing entropy of the fully
+
+461
+00:48:13,130 --> 00:48:15,830
+distinguishable case. So let's go through the
+
+462
+00:48:15,830 --> 00:48:20,660
+calculation and see how that comes out, where
+
+463
+00:48:21,290 --> 00:48:25,470
+actually the entropy in the. Initial states, s.A
+
+464
+00:48:25,470 --> 00:48:33,600
+plus SB. Turns out to be just the same as in the
+
+465
+00:48:33,600 --> 00:48:37,740
+Gap on the following page, considered here because
+
+466
+00:48:38,340 --> 00:48:42,480
+the particles are indistinguishable within each of
+
+467
+00:48:42,480 --> 00:48:46,260
+these cell volumes. So we just have twice the
+
+468
+00:48:47,010 --> 00:48:50,220
+quintessential entropy for a system of particles
+
+469
+00:48:50,490 --> 00:48:56,190
+in a volume V, which is written down up above
+
+470
+00:48:56,520 --> 00:49:02,550
+three N plus two and times this logarithm of e.V.
+
+471
+00:49:02,790 --> 00:49:07,530
+over in lambda cubed. That lambda is the thermal
+
+472
+00:49:07,530 --> 00:49:08,760
+devilly wavelength.
+
+473
+00:49:11,470 --> 00:49:15,070
+Defined above and now for the case of.
+
+474
+00:49:17,160 --> 00:49:18,380
+The combined system,
+
+475
+00:49:20,430 --> 00:49:21,510
+what do we have?
+
+476
+00:49:25,030 --> 00:49:28,000
+Well, we're out of time, so I will just tell you
+
+477
+00:49:28,000 --> 00:49:30,880
+that because the particles are not interacting
+
+478
+00:49:30,880 --> 00:49:35,890
+with each other, what we have is a system of in.
+
+479
+00:49:38,070 --> 00:49:43,320
+Indistinguishable red particles that are now in a
+
+480
+00:49:43,320 --> 00:49:44,250
+doubled volume.
+
+481
+00:49:47,980 --> 00:49:51,670
+So there are none of those guys and there are also
+
+482
+00:49:52,240 --> 00:49:55,120
+an indistinguishable green particles in that same
+
+483
+00:49:55,130 --> 00:50:00,140
+double volume, so. The change going from the
+
+484
+00:50:00,140 --> 00:50:04,370
+separate to the combined systems is in the volume
+
+485
+00:50:05,300 --> 00:50:12,390
+that the particles are. Able to occupy, which
+
+486
+00:50:12,390 --> 00:50:14,550
+affects their energy levels and affects their
+
+487
+00:50:14,550 --> 00:50:17,960
+entropies. Like so.
+
+488
+00:50:21,210 --> 00:50:25,530
+And if we look at the difference between.
+
+489
+00:50:30,500 --> 00:50:32,150
+The combined and.
+
+490
+00:50:35,770 --> 00:50:41,140
+Initially separated systems, well, the constant
+
+491
+00:50:41,140 --> 00:50:44,830
+factors of three and drop outs and all of the.
+
+492
+00:50:46,430 --> 00:50:48,380
+Arguments of that law cancel out with the
+
+493
+00:50:48,380 --> 00:50:52,160
+corresponding arguments in there, and we are left
+
+494
+00:50:52,160 --> 00:50:52,730
+with
+
+495
+00:50:55,370 --> 00:51:00,140
+two and more to two from that factor of two coming
+
+496
+00:51:00,140 --> 00:51:03,320
+from the volume. So the.
+
+497
+00:51:08,120 --> 00:51:14,160
+Response I would get is actually the same. Mixing
+
+498
+00:51:14,160 --> 00:51:18,930
+entropy for this sort of intermediate case, as for
+
+499
+00:51:19,350 --> 00:51:23,490
+the fully distinguishable case that you went
+
+500
+00:51:23,490 --> 00:51:26,640
+through in the notes here, which is
+
+501
+00:51:29,070 --> 00:51:31,460
+something I might find a bit surprising.
+
+502
+00:51:34,210 --> 00:51:38,770
+Just trying to work on conceptual intuition rather
+
+503
+00:51:38,770 --> 00:51:40,780
+than going through the calculation, given that.
+
+504
+00:51:43,530 --> 00:51:45,930
+You know, the partial distinguished ability
+
+505
+00:51:45,930 --> 00:51:49,080
+provides only part of the full information is full
+
+506
+00:51:49,380 --> 00:51:51,570
+distinguished ability. Despite that, it still
+
+507
+00:51:51,570 --> 00:51:55,440
+produces the same mixing entropy in the set up.
+
+508
+00:51:57,530 --> 00:52:00,480
+And it may be fun to go through the calculation to
+
+509
+00:52:00,480 --> 00:52:03,890
+see what happens when the wall is reinserted. I'll
+
+510
+00:52:04,220 --> 00:52:08,240
+leave that for you and possibly put it on the.
+
+511
+00:52:09,480 --> 00:52:11,820
+Second homework assignment after the break. But
+
+512
+00:52:11,820 --> 00:52:15,600
+for now, I'll I'll stop talking there, see if you
+
+513
+00:52:15,600 --> 00:52:20,280
+have any final questions for today and come back
+
+514
+00:52:20,280 --> 00:52:24,120
+in a few minutes for office hours at the same zoo
+
+515
+00:52:24,120 --> 00:52:26,880
+meeting. I will shut down the meeting in order to
+
+516
+00:52:26,880 --> 00:52:29,520
+extract the recording and then restart it. I'll be
+
+517
+00:52:29,520 --> 00:52:31,560
+back here at the top of the hour.
