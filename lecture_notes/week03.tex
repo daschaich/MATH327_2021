@@ -73,7 +73,7 @@ We can assume that $R$ and $M$ are both finite, so we don't need to worry about 
 
 
 % ------------------------------------------------------------------
-\subsubsection{Partition function}
+\subsubsection{\label{sec:canon_part}Partition function}
 Following Gibbs, we have already taken the thermal reservoir $\Om_{\text{res}}$ to consist of $R - 1$ replicas of the system of interest, $\Om$.
 The next step is to further simplify the mathematics by assuming that the overall $R$-replica system $\Om_{\text{tot}}$ is fully specified by a fixed set of $M$ occupation numbers $\left\{n_i\right\}$.
 From \eq{eq:canon_Etot}, we see that this ensures conservation of the total energy $E_{\text{tot}}$, and we can apply the micro-canonical tools we developed last week.
@@ -208,7 +208,7 @@ All micro-states with the same energy have the same probability in thermodynamic
 
 
 % ------------------------------------------------------------------
-\subsection{Internal energy, heat capacity, and entropy}
+\subsection{\label{sec:canon_derived}Internal energy, heat capacity, and entropy}
 In addition to fixing the temperature of the system $\Om$, the thermal reservoir also allows the internal energy of \Om to fluctuate, by exchanging energy with this reservoir.
 Although the internal energy fluctuates, its expectation value $\vev{E}$ is an important derived quantity in thermodynamic equilibrium.
 Applying the general definition from \eq{eq:expect_disc} to the probability space of the canonical ensemble,
@@ -260,7 +260,7 @@ You should find
 
 
 % ------------------------------------------------------------------
-\subsection{Helmholtz free energy}
+\subsection{\label{sec:Helmholtz}Helmholtz free energy}
 Last week we saw that the micro-canonical entropy in thermodynamic equilibrium is the logarithm of the number of micro-states.
 Now \eq{eq:canon_entropy} features a similar logarithm of the partition function (\eq{eq:canon_part_func}), which is a sum over all micro-states that we identified as a fundamental quantity in the canonical ensemble.
 This motivates the following definition of a quantity with the dimensions of energy that is related to $\log Z$, which provides simpler and more elegant expressions for the derived quantities we considered above.
@@ -276,7 +276,7 @@ This motivates the following definition of a quantity with the dimensions of ene
   In terms of this free energy, Eqs.~\ref{eq:canon_part_func} and \ref{eq:canon_prob} are
   \begin{align*}
     Z & = e^{-F / T} &
-    p_i = e^{(F - E_i) / T}.
+    p_i & = e^{(F - E_i) / T}.
   \end{align*}
 \end{shaded}
 
