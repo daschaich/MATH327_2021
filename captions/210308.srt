@@ -1,0 +1,1915 @@
+1
+00:00:02,710 --> 00:00:07,360
+So I expect some more people to come in as we go
+
+2
+00:00:07,360 --> 00:00:12,790
+on and I'll get the recording underway and go
+
+3
+00:00:12,790 --> 00:00:17,410
+through the usual routine that we've established
+
+4
+00:00:17,410 --> 00:00:22,930
+over the past month where. I'll start off by
+
+5
+00:00:23,320 --> 00:00:26,440
+asking you if there are any questions on the
+
+6
+00:00:26,920 --> 00:00:30,280
+asynchronous materials for last week or this week,
+
+7
+00:00:30,280 --> 00:00:34,690
+last week being the ideal gas law in this week,
+
+8
+00:00:34,840 --> 00:00:37,840
+applying that to thermodynamic cycles and wrapping
+
+9
+00:00:37,840 --> 00:00:42,430
+up the three weeks that we're spending on not
+
+10
+00:00:42,430 --> 00:00:45,820
+interacting systems in the canonical ensemble
+
+11
+00:00:45,820 --> 00:00:48,960
+before moving on to the grand canonical ensemble.
+
+12
+00:00:50,800 --> 00:00:55,030
+And there is also a the first part of the computer
+
+13
+00:00:55,030 --> 00:00:57,250
+project. A lot of those submissions look good.
+
+14
+00:00:57,280 --> 00:00:59,770
+They're being marked right now to get back to you
+
+15
+00:01:00,640 --> 00:01:04,360
+within the next week. And then the first homework
+
+16
+00:01:04,360 --> 00:01:09,280
+assignment is due a week from tomorrow. So.
+
+17
+00:01:10,540 --> 00:01:15,940
+Everything is in full swing, and I should have,
+
+18
+00:01:16,270 --> 00:01:18,310
+while going through that discussion of
+
+19
+00:01:20,380 --> 00:01:24,520
+the location we are in, the chorus I should have
+
+20
+00:01:25,330 --> 00:01:31,070
+brought up. The the end of the week, four notes,
+
+21
+00:01:31,070 --> 00:01:34,780
+the beginning of week five, which is where we left
+
+22
+00:01:34,780 --> 00:01:38,680
+off last time, with that transition from deriving
+
+23
+00:01:38,680 --> 00:01:42,100
+the ideal gas law as an example of an equation of
+
+24
+00:01:42,100 --> 00:01:45,820
+states to applying it to thermodynamic cycles,
+
+25
+00:01:45,820 --> 00:01:49,840
+processes in which we change the the macro state
+
+26
+00:01:49,840 --> 00:01:53,920
+of some system, it's pressure, volume, temperature,
+
+27
+00:01:53,920 --> 00:01:57,460
+entropy, internal energy, and can imagine
+
+28
+00:01:57,850 --> 00:02:00,760
+stringing together a sequence of such changes in
+
+29
+00:02:00,760 --> 00:02:05,230
+such a way that they all end up. Back at the
+
+30
+00:02:05,530 --> 00:02:09,250
+initial conditions and the processes, the sequence
+
+31
+00:02:09,250 --> 00:02:12,400
+can then be repeated over and over and over again
+
+32
+00:02:12,400 --> 00:02:16,300
+to make useful, interesting things happen.
+
+33
+00:02:35,200 --> 00:02:38,230
+So I'm just pausing for a moment to give you a
+
+34
+00:02:38,230 --> 00:02:41,470
+chance to type in questions, and I'll reiterate
+
+35
+00:02:41,470 --> 00:02:45,460
+that you're more than welcome to. Post them on,
+
+36
+00:02:45,460 --> 00:02:48,040
+zoom in the chat window or just speaking up, am
+
+37
+00:02:48,040 --> 00:02:53,110
+using yourself as well, and if no questions or
+
+38
+00:02:53,260 --> 00:02:58,030
+requests come in the next few seconds, I'll switch
+
+39
+00:02:58,030 --> 00:03:02,800
+over to asking you about some questions about the
+
+40
+00:03:02,800 --> 00:03:08,050
+material just to check the way that the concepts
+
+41
+00:03:08,050 --> 00:03:10,640
+are coming through well enough in the in the
+
+42
+00:03:10,690 --> 00:03:17,070
+asynchronous materials and build on them to to
+
+43
+00:03:17,110 --> 00:03:20,290
+show what all of this material is useful for.
+
+44
+00:03:51,430 --> 00:03:54,850
+So without further ado, I should have now
+
+45
+00:03:55,870 --> 00:03:57,370
+activated a
+
+46
+00:03:59,920 --> 00:04:04,780
+different question in the usual poll, looking at
+
+47
+00:04:06,070 --> 00:04:12,370
+the the ideal gas law and the application of the
+
+48
+00:04:12,370 --> 00:04:16,210
+ideal gas law to model the the actual atmosphere
+
+49
+00:04:16,210 --> 00:04:18,550
+of the Earth, which in round numbers is about 80
+
+50
+00:04:18,550 --> 00:04:22,450
+percent nitrogen and 20 percent oxygen. And the
+
+51
+00:04:22,450 --> 00:04:28,330
+ideal gas law is sufficient to let us relates the
+
+52
+00:04:28,330 --> 00:04:32,230
+overall pressure of the atmosphere to the pressure
+
+53
+00:04:32,230 --> 00:04:38,430
+of its individual. Components. I'll make sure that
+
+54
+00:04:38,430 --> 00:04:40,500
+those of you who have entered in the last few
+
+55
+00:04:40,500 --> 00:04:44,550
+minutes have that direct link to the poll, and
+
+56
+00:04:44,550 --> 00:04:48,330
+since this is not in the the lecture notes, the
+
+57
+00:04:48,330 --> 00:04:51,330
+asynchronous materials that you got beforehand,
+
+58
+00:04:51,330 --> 00:04:55,620
+I'll give you a few minutes to think about it and.
+
+59
+00:04:56,690 --> 00:04:58,610
+Judge your responses.
+
+60
+00:07:09,220 --> 00:07:13,370
+Let's see, we've got about a quarter of. The
+
+61
+00:07:13,460 --> 00:07:19,110
+participants responding so far so. If you just a
+
+62
+00:07:19,110 --> 00:07:23,070
+bit longer and summarize the the options here,
+
+63
+00:07:23,070 --> 00:07:25,290
+which maybe I should have done in the first place
+
+64
+00:07:25,290 --> 00:07:27,510
+to give you some more time to think about it, that.
+
+65
+00:07:29,410 --> 00:07:32,710
+Given these two gases forming the atmosphere of
+
+66
+00:07:32,710 --> 00:07:36,790
+the earth, you have four options for the overall
+
+67
+00:07:36,790 --> 00:07:38,860
+pressure of that atmosphere. The first just being
+
+68
+00:07:38,860 --> 00:07:41,590
+the average pressure of each of those. The
+
+69
+00:07:41,920 --> 00:07:44,050
+pressure of nitrogen, plus the pressure of oxygen
+
+70
+00:07:44,620 --> 00:07:48,790
+divided by two, where we can bring in information
+
+71
+00:07:48,790 --> 00:07:52,660
+about the relative abundance of nitrogen, oxygen
+
+72
+00:07:52,660 --> 00:07:56,020
+in the air. If it's 80 percent nitrogen, we might
+
+73
+00:07:56,020 --> 00:07:59,230
+expect the overall pressure to be consists of 80
+
+74
+00:07:59,230 --> 00:08:02,800
+percent of the pressure of nitrogen, plus 20
+
+75
+00:08:02,800 --> 00:08:07,660
+percent of the pressure of the oxygen. Or just the
+
+76
+00:08:09,460 --> 00:08:14,350
+the direct some of the pressure of nitrogen, plus
+
+77
+00:08:14,350 --> 00:08:16,540
+the pressure of oxygen giving the overall pressure
+
+78
+00:08:16,540 --> 00:08:21,340
+of the air, or the fourth option is that we might
+
+79
+00:08:21,730 --> 00:08:23,830
+imagine that the pressure of all the components is
+
+80
+00:08:23,830 --> 00:08:27,850
+equal both to the total pressure and also to each
+
+81
+00:08:27,850 --> 00:08:30,490
+other. That is, the the nitrogen in the air has an
+
+82
+00:08:30,490 --> 00:08:33,280
+equal pressure to the oxygen, which has an equal
+
+83
+00:08:33,280 --> 00:08:35,020
+pressure to its mixture.
+
+84
+00:09:25,630 --> 00:09:31,510
+Let's see the responses that have come in so far
+
+85
+00:09:31,540 --> 00:09:38,860
+are evenly split. If the page will load of.
+
+86
+00:09:41,210 --> 00:09:43,670
+Fifty percent saying that all the pressures should
+
+87
+00:09:43,670 --> 00:09:46,760
+be equal and another 50 percent saying that the
+
+88
+00:09:46,760 --> 00:09:49,910
+pressure should be proportional to the abundances.
+
+89
+00:09:51,110 --> 00:09:55,880
+And we'll ask you with this on the screen how we
+
+90
+00:09:55,880 --> 00:10:01,160
+might use the ideal gas law to resolve this
+
+91
+00:10:01,580 --> 00:10:05,480
+disagreement and come up with a definitive
+
+92
+00:10:05,480 --> 00:10:09,230
+mathematical answer to this question.
+
+93
+00:11:16,960 --> 00:11:20,380
+Not hearing any volunteers, maybe I'll take a stab
+
+94
+00:11:20,380 --> 00:11:25,270
+at running through the application of the ideal
+
+95
+00:11:25,270 --> 00:11:30,280
+gas law to this case, let me find a nice piece of
+
+96
+00:11:30,280 --> 00:11:31,480
+margin to.
+
+97
+00:11:35,620 --> 00:11:39,430
+To put this where we have the ideal gas law
+
+98
+00:11:39,430 --> 00:11:42,850
+related to the pressure and volume of gas is to
+
+99
+00:11:42,850 --> 00:11:46,300
+the number of particles in that volume and their
+
+100
+00:11:46,300 --> 00:11:51,250
+temperature. So if we take this as input and
+
+101
+00:11:51,250 --> 00:11:58,640
+consider some. Volume of gas that has, you know,
+
+102
+00:11:58,670 --> 00:12:06,500
+80 percent nitrogen molecules and two and 20
+
+103
+00:12:06,500 --> 00:12:07,160
+percent.
+
+104
+00:12:09,670 --> 00:12:14,980
+Oxygen, then we can assume they have the same
+
+105
+00:12:15,040 --> 00:12:18,820
+temperature being in the same volume, and that
+
+106
+00:12:18,820 --> 00:12:20,710
+tells us that, say, the number of nitrogen
+
+107
+00:12:20,710 --> 00:12:23,440
+molecules is given by.
+
+108
+00:12:26,080 --> 00:12:29,890
+The pressure of that nitrogen times, that fixed
+
+109
+00:12:29,890 --> 00:12:32,830
+volume over that fixed temperature and similarly
+
+110
+00:12:33,130 --> 00:12:35,440
+for the oxygen,
+
+111
+00:12:38,290 --> 00:12:43,420
+and we know that the total number of particles is
+
+112
+00:12:43,420 --> 00:12:46,270
+going to be related to the total pressure of this
+
+113
+00:12:46,270 --> 00:12:48,850
+mixture, which we'll just call p the pressure with
+
+114
+00:12:48,850 --> 00:12:53,200
+no underscore. And it's also, I hope, intuitively
+
+115
+00:12:53,200 --> 00:12:58,210
+obvious that the total number of particles is the
+
+116
+00:12:58,570 --> 00:13:02,830
+sum of the number of each species, which she gives
+
+117
+00:13:02,830 --> 00:13:03,460
+us then.
+
+118
+00:13:05,770 --> 00:13:09,880
+He and finds that the poverty and oxygen times
+
+119
+00:13:09,880 --> 00:13:12,790
+that fixed the poverty, which we can cancel out
+
+120
+00:13:12,790 --> 00:13:17,740
+and get the result that the total pressure is the
+
+121
+00:13:17,740 --> 00:13:21,010
+sum of what I call the two partial pressures,
+
+122
+00:13:21,310 --> 00:13:27,800
+which hopefully was an option in the. A poll that
+
+123
+00:13:28,910 --> 00:13:30,200
+we just had here.
+
+124
+00:13:33,730 --> 00:13:34,170
+Of.
+
+125
+00:13:36,220 --> 00:13:42,790
+And this is one of the relations that was
+
+126
+00:13:43,720 --> 00:13:46,540
+mentioned in the historical context at the very
+
+127
+00:13:46,540 --> 00:13:49,570
+end of this week's notes, that a lot of these
+
+128
+00:13:50,890 --> 00:13:54,160
+so-called thermodynamic thermodynamic relations
+
+129
+00:13:54,160 --> 00:13:58,810
+between the macro state properties of the system,
+
+130
+00:13:59,170 --> 00:14:01,990
+pressure, volume, temperature and number of
+
+131
+00:14:01,990 --> 00:14:05,290
+particles were empirically observed even as far
+
+132
+00:14:05,290 --> 00:14:10,120
+back as the sixteen hundreds, well before the
+
+133
+00:14:10,780 --> 00:14:13,990
+development of the ideal gas law or understanding
+
+134
+00:14:13,990 --> 00:14:19,330
+of the statistical and atomic or molecular basis
+
+135
+00:14:19,900 --> 00:14:22,600
+of all of these emergent thermodynamic properties.
+
+136
+00:14:23,230 --> 00:14:27,700
+In this result that the pressure of the mixture is
+
+137
+00:14:27,700 --> 00:14:30,910
+equal to this, some of the pressures of all of the
+
+138
+00:14:31,330 --> 00:14:36,250
+individual components of that mixture was another
+
+139
+00:14:36,250 --> 00:14:39,520
+one of those empirical relations discovered before
+
+140
+00:14:39,520 --> 00:14:43,090
+the ideal gas was formulated, and in particular
+
+141
+00:14:43,090 --> 00:14:47,440
+during the the growth of industry in the late
+
+142
+00:14:47,440 --> 00:14:49,960
+seventeen hundreds and into the eighteen hundreds
+
+143
+00:14:50,290 --> 00:14:52,180
+in Europe. It is.
+
+144
+00:14:54,870 --> 00:14:59,250
+Become known as Dalton's law of partial pressures,
+
+145
+00:15:00,690 --> 00:15:02,070
+the partial pressure being.
+
+146
+00:15:04,590 --> 00:15:07,890
+The pressure of each component of the gas, the
+
+147
+00:15:07,890 --> 00:15:12,180
+nitrogen and the oxygen in this case and published,
+
+148
+00:15:12,180 --> 00:15:15,150
+I believe, around 18 won a couple of decades
+
+149
+00:15:15,150 --> 00:15:21,970
+before the ideal gas law itself. And as we saw, it
+
+150
+00:15:21,990 --> 00:15:26,490
+comes directly out of the ideal gas law relating
+
+151
+00:15:26,490 --> 00:15:28,830
+the pressure to the particle number, which is
+
+152
+00:15:28,830 --> 00:15:31,410
+something that we are more familiar with
+
+153
+00:15:33,600 --> 00:15:38,000
+adding. Adding up just linearly with No.
+
+154
+00:15:43,200 --> 00:15:46,950
+No need for detail considerations of how much of
+
+155
+00:15:46,950 --> 00:15:50,820
+each species is present, the less of a of the
+
+156
+00:15:50,820 --> 00:15:53,100
+fewer particles of the species there are, the less
+
+157
+00:15:53,100 --> 00:15:56,430
+pressure there is. And that accounts for the
+
+158
+00:15:56,430 --> 00:16:04,850
+abundance in this direct some. So let me go back
+
+159
+00:16:04,850 --> 00:16:07,970
+and we'll ask if there are any.
+
+160
+00:16:10,420 --> 00:16:13,720
+Questions about that derivation and explanation
+
+161
+00:16:13,720 --> 00:16:18,920
+before I move on to. To the next question that
+
+162
+00:16:18,920 --> 00:16:23,110
+will transition. Out of last week and into the
+
+163
+00:16:23,110 --> 00:16:27,300
+coming weeks material. And I know we are right at
+
+164
+00:16:27,300 --> 00:16:32,610
+the start of the week, so I'll try. Not to assume
+
+165
+00:16:32,610 --> 00:16:36,660
+you've gone through the entirety of the week five
+
+166
+00:16:36,660 --> 00:16:39,390
+notes through the nemec cycles in advance. We'll
+
+167
+00:16:39,900 --> 00:16:45,210
+see if we can stick to the first half of that and
+
+168
+00:16:45,210 --> 00:16:45,540
+the.
+
+169
+00:16:47,990 --> 00:16:48,800
+First.
+
+170
+00:16:52,760 --> 00:16:54,080
+Question that I am.
+
+171
+00:16:56,350 --> 00:17:01,390
+Activating now on this poll should be up is
+
+172
+00:17:01,390 --> 00:17:07,210
+actually tying together all three of the the weeks
+
+173
+00:17:07,210 --> 00:17:10,390
+that we are working on the canonical ensemble and
+
+174
+00:17:10,390 --> 00:17:14,800
+its application to ideal gas's, first in general
+
+175
+00:17:14,800 --> 00:17:19,480
+and then ideally gas's in thermodynamic cycles. So
+
+176
+00:17:19,480 --> 00:17:23,650
+just to give some background to this question. Can.
+
+177
+00:17:25,230 --> 00:17:31,700
+Look back to. Our lecture notes from week three
+
+178
+00:17:31,700 --> 00:17:35,510
+introducing the canonical ensemble where we
+
+179
+00:17:35,690 --> 00:17:40,530
+introduce this heat capacity as the. The response
+
+180
+00:17:40,530 --> 00:17:43,890
+of the internal energy with with respect to a
+
+181
+00:17:43,890 --> 00:17:48,510
+change in the temperature and we mentioned in a
+
+182
+00:17:48,510 --> 00:17:52,470
+footnote that the subscripts V on this severe heat
+
+183
+00:17:52,470 --> 00:17:57,300
+capacity refers to the fact that this particular
+
+184
+00:17:57,300 --> 00:18:02,760
+form of the heat capacity is assuming that the
+
+185
+00:18:02,910 --> 00:18:06,750
+volume of our system is kept fixed. This is the
+
+186
+00:18:07,050 --> 00:18:09,090
+heat capacity at constant volume.
+
+187
+00:18:12,160 --> 00:18:15,850
+And we mentioned that we hadn't yet considered the
+
+188
+00:18:15,850 --> 00:18:20,000
+role of the volume in. The heat and the internal
+
+189
+00:18:20,000 --> 00:18:24,920
+energy which was coming up in the the first
+
+190
+00:18:24,920 --> 00:18:29,840
+section of the ideal gas materials where we
+
+191
+00:18:30,260 --> 00:18:33,860
+related the volume of the container holding that
+
+192
+00:18:33,860 --> 00:18:36,800
+gas to the possible energy levels that could
+
+193
+00:18:36,800 --> 00:18:44,180
+occupy and thereby to the properties of the. The
+
+194
+00:18:44,180 --> 00:18:46,460
+system and.
+
+195
+00:18:50,100 --> 00:18:54,190
+The tablet is. Feeling a bit twitchy, but now we
+
+196
+00:18:54,190 --> 00:19:01,000
+are looking at the the first few pages of the
+
+197
+00:19:01,000 --> 00:19:03,670
+notes for the week starting today.
+
+198
+00:19:05,770 --> 00:19:08,690
+Where? We are.
+
+199
+00:19:11,460 --> 00:19:14,490
+Drawing a distinction between two possible ways of
+
+200
+00:19:14,490 --> 00:19:19,440
+changing the internal energy and the temperature
+
+201
+00:19:19,710 --> 00:19:24,200
+of an ideal gas in a particular volume, and we
+
+202
+00:19:25,050 --> 00:19:30,500
+have we saw in this. First section, that's the
+
+203
+00:19:30,500 --> 00:19:34,550
+work that is done on the gas by, say, compressing
+
+204
+00:19:34,550 --> 00:19:40,400
+its volume, applying some external force to move a
+
+205
+00:19:40,400 --> 00:19:43,430
+piston that forms one wall of its container, for
+
+206
+00:19:43,430 --> 00:19:48,110
+example, is only identified with the overall
+
+207
+00:19:48,110 --> 00:19:52,070
+change in internal energy when the entropy is
+
+208
+00:19:52,070 --> 00:19:54,440
+constant, when we are considering an adiabatic
+
+209
+00:19:54,440 --> 00:19:59,510
+process and more generally, there are two possible
+
+210
+00:19:59,510 --> 00:20:04,940
+contributions that can be made to that internal
+
+211
+00:20:04,940 --> 00:20:09,300
+energy which we identify with. On the one hand
+
+212
+00:20:09,300 --> 00:20:12,740
+that working, on the other hand, the flow of heat,
+
+213
+00:20:12,740 --> 00:20:16,220
+a change in the temperature of the gas without
+
+214
+00:20:16,220 --> 00:20:19,910
+changing its volume so that both the volume and
+
+215
+00:20:19,920 --> 00:20:25,730
+particle number are kept constant when heat is
+
+216
+00:20:25,730 --> 00:20:26,300
+flowing.
+
+217
+00:20:28,630 --> 00:20:31,510
+There's what I really wanted to underline, that
+
+218
+00:20:31,510 --> 00:20:33,580
+when the volume is constant, there is no
+
+219
+00:20:34,030 --> 00:20:39,040
+mechanical work done and the change in energy is
+
+220
+00:20:39,040 --> 00:20:42,280
+exactly the change in heat. And this connects us
+
+221
+00:20:42,280 --> 00:20:48,820
+to that constant volume heat capacity that we had
+
+222
+00:20:49,450 --> 00:20:50,680
+back in week three.
+
+223
+00:20:53,620 --> 00:20:56,050
+World now decorate it with a reminder that the
+
+224
+00:20:56,050 --> 00:20:59,830
+volume is kept fixed when we take the partial
+
+225
+00:20:59,830 --> 00:21:01,360
+derivative of the energy with respect to
+
+226
+00:21:01,360 --> 00:21:04,990
+temperature and because the volume is fixed, we
+
+227
+00:21:04,990 --> 00:21:11,110
+have this connection. That's the change in energy.
+
+228
+00:21:13,280 --> 00:21:17,090
+Is exactly the heat, which gives us, of course,
+
+229
+00:21:17,090 --> 00:21:20,570
+the the terminology for this quantity as a heat
+
+230
+00:21:20,570 --> 00:21:23,990
+capacity rather than the temperature dependence of
+
+231
+00:21:23,990 --> 00:21:29,540
+the energy. And that is all a prelude to looking
+
+232
+00:21:29,540 --> 00:21:34,690
+at the more general situation where. We may allow
+
+233
+00:21:34,690 --> 00:21:39,700
+both the energy and the entropy to change, and the
+
+234
+00:21:39,700 --> 00:21:42,760
+more general change in energy then
+
+235
+00:21:45,130 --> 00:21:50,360
+is the some. Of both that heat and the the work
+
+236
+00:21:50,360 --> 00:21:54,020
+that is done by the change in volume. So if you
+
+237
+00:21:54,020 --> 00:21:56,960
+want to look at the.
+
+238
+00:21:59,030 --> 00:21:59,900
+The overall.
+
+239
+00:22:02,880 --> 00:22:08,520
+Heat in this context, I'm not sure why the tablet
+
+240
+00:22:08,520 --> 00:22:13,340
+is being very slow to respond. At the moment.
+
+241
+00:22:16,380 --> 00:22:20,490
+Hopefully it's settled down now of this relation
+
+242
+00:22:20,490 --> 00:22:21,270
+tells us.
+
+243
+00:22:25,390 --> 00:22:30,010
+If you will wake up that the heat whose capacity
+
+244
+00:22:30,020 --> 00:22:34,450
+we want to define is in this more general
+
+245
+00:22:34,690 --> 00:22:40,930
+situation, not only the change in the energy, but
+
+246
+00:22:40,930 --> 00:22:42,760
+the difference between the change in the energy
+
+247
+00:22:42,760 --> 00:22:44,020
+and the work that is done,
+
+248
+00:22:46,090 --> 00:22:53,290
+where that work we saw in that first section and
+
+249
+00:22:53,290 --> 00:22:57,010
+I'll put a reminder here, was the negative of the
+
+250
+00:22:59,080 --> 00:23:01,840
+pressure times, the change in volume. So if the
+
+251
+00:23:01,840 --> 00:23:05,470
+volume is compressed, the volume is reduced. We
+
+252
+00:23:05,470 --> 00:23:09,430
+get a positive amount of work done on our system
+
+253
+00:23:09,430 --> 00:23:16,180
+by that process. And this relation between the.
+
+254
+00:23:17,190 --> 00:23:19,350
+Heat energy and work.
+
+255
+00:23:22,440 --> 00:23:28,230
+Motivates the definition of a an alternative heat
+
+256
+00:23:28,230 --> 00:23:30,720
+capacity, which is the one being asked about in
+
+257
+00:23:30,720 --> 00:23:34,490
+the poll now. Which is the heat capacity at
+
+258
+00:23:34,490 --> 00:23:37,450
+constant pressure rather than constant volume
+
+259
+00:23:38,120 --> 00:23:42,310
+where. No longer imposing a constant volume, the
+
+260
+00:23:42,620 --> 00:23:45,140
+there may be a non-zero heat, so we have to keep
+
+261
+00:23:45,140 --> 00:23:50,210
+track of both the sensitivity of the internal
+
+262
+00:23:50,210 --> 00:23:55,740
+energy to the temperature, constant pressure. Plus,
+
+263
+00:23:56,730 --> 00:23:57,240
+the.
+
+264
+00:23:59,290 --> 00:24:05,180
+And that w, of course, was a very. Plus, the
+
+265
+00:24:05,750 --> 00:24:10,280
+change in the volume with that change in
+
+266
+00:24:10,280 --> 00:24:13,130
+temperature again and a constant pressure, so
+
+267
+00:24:13,610 --> 00:24:14,660
+we've seen that.
+
+268
+00:24:17,800 --> 00:24:22,520
+Or we've discussed that if we heat up a an ideal
+
+269
+00:24:22,520 --> 00:24:25,640
+gas with, say, a constant force applied.
+
+270
+00:24:29,610 --> 00:24:33,390
+To that movable piston in the in the diagram we
+
+271
+00:24:33,390 --> 00:24:37,380
+just looked at earlier, as that gas is heated up,
+
+272
+00:24:38,100 --> 00:24:41,160
+its pressure will change. It will be able to push
+
+273
+00:24:41,160 --> 00:24:46,290
+out that piston and increase the volume just as a
+
+274
+00:24:46,710 --> 00:24:50,340
+consequence of adding energy, adding heat to
+
+275
+00:24:50,340 --> 00:24:53,250
+increase its temperature. So that is the
+
+276
+00:24:53,250 --> 00:24:56,910
+background for the question being asked here,
+
+277
+00:24:56,910 --> 00:24:58,650
+which is cycling back to
+
+278
+00:25:00,870 --> 00:25:07,050
+connect all three weeks material on the. The
+
+279
+00:25:07,050 --> 00:25:10,440
+canonical ensemble leading the heat capacity now
+
+280
+00:25:10,440 --> 00:25:14,340
+it and pressure, rather than cast a volume to the
+
+281
+00:25:14,340 --> 00:25:17,580
+ideal gases and particles and to the relation
+
+282
+00:25:17,580 --> 00:25:24,540
+between. Heat and work and energy. And I have.
+
+283
+00:25:25,940 --> 00:25:32,120
+Rambled on for a while to to get that all set up
+
+284
+00:25:32,120 --> 00:25:34,610
+for you to consider. So I will now shut up for a
+
+285
+00:25:34,610 --> 00:25:36,860
+few minutes and let you consider
+
+286
+00:25:39,830 --> 00:25:42,470
+how you would answer this question about the
+
+287
+00:25:42,470 --> 00:25:46,250
+constant pressure, heat capacity on the basis of
+
+288
+00:25:46,790 --> 00:25:48,980
+this equation written in the margins here, which I
+
+289
+00:25:48,980 --> 00:25:53,120
+hope is is legible. And let me know if it is not
+
+290
+00:25:53,120 --> 00:25:57,230
+or if any of the build up to this question. Was
+
+291
+00:25:57,230 --> 00:25:57,860
+not clear.
+
+292
+00:28:29,030 --> 00:28:31,460
+Let's see, about a quarter of responses have come
+
+293
+00:28:31,460 --> 00:28:36,620
+in, so another minute or two for those who are
+
+294
+00:28:36,620 --> 00:28:39,320
+still. Working on this.
+
+295
+00:29:30,920 --> 00:29:32,030
+And at this point.
+
+296
+00:29:34,240 --> 00:29:39,370
+I can get to the responses I see.
+
+297
+00:29:44,550 --> 00:29:48,960
+Not unanimity, but a preference for five here. So
+
+298
+00:29:49,350 --> 00:29:54,870
+just quickly confirm that, that if we conveniently
+
+299
+00:29:54,870 --> 00:29:58,020
+have the expression for the energy sitting right
+
+300
+00:29:58,020 --> 00:30:00,060
+here so we can plug in.
+
+301
+00:30:02,320 --> 00:30:04,150
+The derivative of that with respect to the
+
+302
+00:30:04,150 --> 00:30:07,450
+temperature, just the same at counterpressure and
+
+303
+00:30:07,870 --> 00:30:13,000
+at constant volume, so that three halves in was
+
+304
+00:30:13,000 --> 00:30:16,060
+the constant volume heat capacity we looked at
+
+305
+00:30:16,600 --> 00:30:23,480
+last week and then from the ideal gas. We have the
+
+306
+00:30:23,480 --> 00:30:28,570
+expression for. The volume in terms of the number
+
+307
+00:30:28,570 --> 00:30:30,640
+of particles, their temperature and the pressure,
+
+308
+00:30:31,150 --> 00:30:35,950
+so plugging that in to this derivative up here,
+
+309
+00:30:36,460 --> 00:30:40,390
+take the derivative with respect to t, it just
+
+310
+00:30:40,390 --> 00:30:44,830
+gets rid of that linear T. We have a P times and
+
+311
+00:30:44,830 --> 00:30:49,780
+over P and then a five has. And they're.
+
+312
+00:30:52,860 --> 00:30:56,790
+And I'll just ask for questions or concerns about
+
+313
+00:30:57,060 --> 00:31:01,790
+that little derivation. While I move on to the
+
+314
+00:31:01,790 --> 00:31:11,780
+next. And maybe recentre. This page. So all of it
+
+315
+00:31:11,780 --> 00:31:13,760
+is is visible.
+
+316
+00:31:17,910 --> 00:31:18,810
+Down there.
+
+317
+00:31:42,290 --> 00:31:44,360
+And let's see,
+
+318
+00:31:46,520 --> 00:31:50,030
+the next question is up, and this is asking about.
+
+319
+00:31:51,340 --> 00:31:51,880
+The.
+
+320
+00:31:56,340 --> 00:31:59,790
+The relation between idiomatic expansion and heats,
+
+321
+00:31:59,790 --> 00:32:02,910
+which comes up at a similar point in the notes
+
+322
+00:32:02,910 --> 00:32:03,990
+that I'll just review.
+
+323
+00:32:07,650 --> 00:32:10,050
+To give you a chance to think about this question,
+
+324
+00:32:10,500 --> 00:32:16,050
+where? We saw that we earlier defined in the
+
+325
+00:32:16,060 --> 00:32:19,170
+previous weeks work adiabatic processes to be
+
+326
+00:32:19,170 --> 00:32:25,560
+those where the Entropia. Is unchanged, and we saw
+
+327
+00:32:25,590 --> 00:32:29,340
+in this equation 65 there any change in the
+
+328
+00:32:29,340 --> 00:32:33,780
+entropy corresponds to the heat that is either
+
+329
+00:32:33,780 --> 00:32:39,450
+flowing into or flowing out of. Our our system as
+
+330
+00:32:39,450 --> 00:32:41,520
+it is manipulated.
+
+331
+00:32:43,680 --> 00:32:50,770
+And then changed in this process. And.
+
+332
+00:32:54,520 --> 00:32:58,570
+A way to understand this a bit more intuitively or
+
+333
+00:32:58,570 --> 00:33:03,640
+at least physically, is by saying that this
+
+334
+00:33:03,640 --> 00:33:07,240
+exchange of heat takes some time in which to occur
+
+335
+00:33:07,270 --> 00:33:10,240
+more or less time, depending on how isolated the
+
+336
+00:33:10,240 --> 00:33:13,060
+system is from its environments. But the faster
+
+337
+00:33:13,060 --> 00:33:17,590
+the process is carried out, the less time there is
+
+338
+00:33:17,980 --> 00:33:21,670
+for heat to be exchanged with its surroundings and
+
+339
+00:33:21,670 --> 00:33:27,280
+the less chance there is then for entropy to to be
+
+340
+00:33:27,850 --> 00:33:30,460
+created either in the system or its surroundings
+
+341
+00:33:30,730 --> 00:33:34,210
+through that flow of heat, which gives us the
+
+342
+00:33:34,210 --> 00:33:39,940
+intuition that adiabatic processes are fast while
+
+343
+00:33:39,970 --> 00:33:42,190
+the exchange of heat.
+
+344
+00:33:48,080 --> 00:33:50,750
+Requires that the process be a bit slower and real
+
+345
+00:33:50,750 --> 00:33:53,600
+processes typically are closer to the idiomatic
+
+346
+00:33:53,600 --> 00:33:56,870
+extreme than the extreme, where there is enough
+
+347
+00:33:56,990 --> 00:33:59,780
+fluid, the maximum amount of heat flows at every
+
+348
+00:33:59,780 --> 00:34:03,350
+stage of the process to keep the temperature fixed.
+
+349
+00:34:03,710 --> 00:34:07,850
+Where isothermal. And the question that I put up
+
+350
+00:34:07,850 --> 00:34:15,260
+here is to consider. Two identical systems. Like
+
+351
+00:34:15,260 --> 00:34:19,110
+that. Container with the piston. We had a picture
+
+352
+00:34:19,110 --> 00:34:22,170
+of and consider pulling out that piston to double
+
+353
+00:34:22,170 --> 00:34:25,050
+the volume of each in one case quickly so that
+
+354
+00:34:25,050 --> 00:34:28,800
+it's an adiabatic process and the other case not
+
+355
+00:34:28,800 --> 00:34:31,620
+quite so quickly, so that there is at least some
+
+356
+00:34:31,620 --> 00:34:35,880
+in flowing heat from the external surroundings
+
+357
+00:34:35,880 --> 00:34:38,850
+with which the system is initially in equilibrium.
+
+358
+00:34:40,050 --> 00:34:42,690
+So just to draw a.
+
+359
+00:34:45,090 --> 00:34:46,140
+Picture of that.
+
+360
+00:34:51,820 --> 00:34:53,140
+Taking advantage of.
+
+361
+00:34:55,570 --> 00:35:01,150
+This picture here, we start off with two of these
+
+362
+00:35:01,150 --> 00:35:04,490
+systems. And.
+
+363
+00:35:07,890 --> 00:35:11,720
+Approximately double their size one, idiomatically,
+
+364
+00:35:11,730 --> 00:35:13,050
+no heat flowing.
+
+365
+00:35:15,770 --> 00:35:18,050
+And the second, allowing some heat to enter from
+
+366
+00:35:18,050 --> 00:35:21,830
+the environment, both of these systems started off
+
+367
+00:35:21,830 --> 00:35:25,190
+with the same pressure of volume, temperature and
+
+368
+00:35:25,190 --> 00:35:26,060
+particle number.
+
+369
+00:35:28,440 --> 00:35:32,070
+And you can call the final pressures P1 and P2,
+
+370
+00:35:32,670 --> 00:35:36,030
+and the question is, what is the relation between
+
+371
+00:35:36,600 --> 00:35:42,000
+those pressures? Is P1 greater than P2, less than
+
+372
+00:35:42,050 --> 00:35:47,890
+pizza, or are they equal? Depending on how much
+
+373
+00:35:47,890 --> 00:35:52,360
+heat is or how much heat is, zero or non-zero
+
+374
+00:35:52,360 --> 00:35:57,340
+amount is able to flow into the system as it is
+
+375
+00:35:57,340 --> 00:35:58,090
+expanding.
+
+376
+00:36:06,310 --> 00:36:09,240
+I'll give you a minute or two or two to think
+
+377
+00:36:09,240 --> 00:36:10,530
+about that.
+
+378
+00:36:22,260 --> 00:36:24,810
+One response has already come in
+
+379
+00:36:27,690 --> 00:36:30,030
+while I was going through the set up.
+
+380
+00:39:01,110 --> 00:39:06,210
+And in this case, with multiple responses coming
+
+381
+00:39:06,210 --> 00:39:09,480
+in, we do have.
+
+382
+00:39:11,500 --> 00:39:17,410
+A consensus that. The the pressure is smaller
+
+383
+00:39:17,410 --> 00:39:20,030
+after adiabatic expansion and larger with heat
+
+384
+00:39:20,040 --> 00:39:23,160
+entering. There are a few ways you might have
+
+385
+00:39:23,340 --> 00:39:31,100
+gotten to that. Conclusion. First by. Noting from
+
+386
+00:39:31,100 --> 00:39:34,430
+the ideal gas law that he entering the system is
+
+387
+00:39:34,430 --> 00:39:37,280
+going to increase its temperature and thereby
+
+388
+00:39:37,280 --> 00:39:42,950
+increase its pressure, so any kid that is allowed
+
+389
+00:39:42,950 --> 00:39:45,860
+to exchange will pump up the temperature of the
+
+390
+00:39:45,860 --> 00:39:47,690
+amount of energy in the gas and thereby adds
+
+391
+00:39:47,690 --> 00:39:53,270
+pressure or could have jumped ahead to these
+
+392
+00:39:53,270 --> 00:39:56,480
+pressure volume diagrams. And in particular, the
+
+393
+00:39:56,480 --> 00:40:03,650
+second one shows that the adiabatic. Compression
+
+394
+00:40:03,650 --> 00:40:05,120
+and expansion is.
+
+395
+00:40:07,460 --> 00:40:10,940
+Taking us, just as I said, between two different
+
+396
+00:40:10,940 --> 00:40:14,950
+temperatures. One with the higher pressure, one
+
+397
+00:40:14,950 --> 00:40:19,390
+with a lower pressure, so identifying this, you
+
+398
+00:40:19,390 --> 00:40:22,360
+know, reversing the arrows on these lines to look
+
+399
+00:40:22,360 --> 00:40:25,360
+at expansion rather than compression can see that
+
+400
+00:40:25,360 --> 00:40:28,870
+in the extreme case of no heat exchange, the
+
+401
+00:40:28,870 --> 00:40:30,010
+pressure ends up.
+
+402
+00:40:33,200 --> 00:40:40,210
+Higher than in the. The resulting pressure. Coming
+
+403
+00:40:40,210 --> 00:40:44,400
+out of that adiabatic expansion. And perhaps I
+
+404
+00:40:44,400 --> 00:40:47,130
+should back up and just.
+
+405
+00:40:49,370 --> 00:40:53,240
+Motivates these this pressure building diagram of
+
+406
+00:40:53,240 --> 00:40:56,960
+it in the you know, the last bit of today's
+
+407
+00:40:56,960 --> 00:41:01,070
+meeting. This is a useful way of representing that
+
+408
+00:41:01,070 --> 00:41:05,690
+overall macro status of its limbic system, given
+
+409
+00:41:05,690 --> 00:41:10,670
+that the if we fixed the number of particles and
+
+410
+00:41:10,670 --> 00:41:14,470
+then the pressure and volume. Together determine.
+
+411
+00:41:15,790 --> 00:41:17,740
+The the temperature.
+
+412
+00:41:21,950 --> 00:41:26,420
+The temperature, in turn determines the internal
+
+413
+00:41:26,420 --> 00:41:26,990
+energy.
+
+414
+00:41:32,170 --> 00:41:36,970
+And the entropy can also be found from the flow of
+
+415
+00:41:36,970 --> 00:41:39,490
+heat and work in these processes, work being
+
+416
+00:41:39,490 --> 00:41:42,790
+related to the volume and pressure plotted on
+
+417
+00:41:42,790 --> 00:41:45,160
+these diagrams. So
+
+418
+00:41:47,230 --> 00:41:47,980
+the last.
+
+419
+00:41:51,320 --> 00:41:56,300
+Activity we'll talk about today is just. Check in
+
+420
+00:41:56,300 --> 00:42:01,030
+with one of the the first gaps that were in the
+
+421
+00:42:01,900 --> 00:42:04,970
+written materials this week asking about the
+
+422
+00:42:05,690 --> 00:42:07,850
+change in temperature and change in the pressure
+
+423
+00:42:08,300 --> 00:42:16,110
+from this adiabatic process. Shown here and in the
+
+424
+00:42:16,110 --> 00:42:18,810
+interest of time, maybe I'll ask you just to.
+
+425
+00:42:23,630 --> 00:42:27,140
+Check out the change in that pressure, which
+
+426
+00:42:27,140 --> 00:42:33,090
+should now be activated. On that pole everywhere
+
+427
+00:42:33,840 --> 00:42:34,410
+here.
+
+428
+00:42:40,780 --> 00:42:44,500
+And while you're thinking I can mention or make
+
+429
+00:42:44,510 --> 00:42:51,100
+explicit the terminology that the the line on that
+
+430
+00:42:51,100 --> 00:42:54,430
+pressure volume diagram for an adiabatic process
+
+431
+00:42:54,790 --> 00:43:01,120
+is known as an idea that whereas the corresponding
+
+432
+00:43:01,120 --> 00:43:03,970
+line for an isothermal process is known as the
+
+433
+00:43:03,970 --> 00:43:08,140
+nisso thurm, essentially turning adjectives into
+
+434
+00:43:08,140 --> 00:43:08,860
+nouns.
+
+435
+00:43:12,630 --> 00:43:16,320
+In a way that may not be the most elegant, but is
+
+436
+00:43:16,770 --> 00:43:22,110
+reasonably widespread. So some responses coming in
+
+437
+00:43:22,890 --> 00:43:27,780
+of a couple of minutes to for the rest of you to
+
+438
+00:43:27,780 --> 00:43:31,140
+consider that in particular, those who might not
+
+439
+00:43:31,140 --> 00:43:35,100
+have gotten to this in advance of Monday morning.
+
+440
+00:46:15,620 --> 00:46:17,870
+Now, only one response so far may be.
+
+441
+00:46:21,970 --> 00:46:24,220
+Getting worn out at the end of the session, so
+
+442
+00:46:24,220 --> 00:46:27,630
+I'll just go through the calculation quickly.
+
+443
+00:46:30,250 --> 00:46:34,390
+This tablet is able to get a little less twitchy
+
+444
+00:46:35,170 --> 00:46:39,400
+where all we need to do is start from the given
+
+445
+00:46:39,400 --> 00:46:42,640
+information that due to the constant entropy. This
+
+446
+00:46:42,640 --> 00:46:46,210
+particular combination of volume and temperature
+
+447
+00:46:46,570 --> 00:46:51,260
+is constant. And in particular, in the terminology
+
+448
+00:46:51,260 --> 00:46:53,000
+of this plot with
+
+449
+00:46:55,730 --> 00:47:00,710
+T notes and P not going to be final in P final.
+
+450
+00:47:05,840 --> 00:47:10,170
+Lake Constance, the key to the three halves of
+
+451
+00:47:10,540 --> 00:47:16,250
+that statement, which is the same as saying that
+
+452
+00:47:16,850 --> 00:47:19,820
+the volumes of the two thirds times the
+
+453
+00:47:19,820 --> 00:47:26,300
+temperature is constant and plugging in the.
+
+454
+00:47:28,600 --> 00:47:34,530
+Temperature in terms of the ideal gas law. TV over
+
+455
+00:47:34,530 --> 00:47:36,930
+and over again is fixed, but the pressure and
+
+456
+00:47:36,930 --> 00:47:37,530
+volume.
+
+457
+00:47:40,060 --> 00:47:44,100
+P and V. Are able to change.
+
+458
+00:47:48,890 --> 00:47:51,530
+You can see that.
+
+459
+00:47:54,170 --> 00:47:55,430
+Canceling out the ends.
+
+460
+00:48:01,760 --> 00:48:07,940
+He told the not to the. Five thirds is fixed.
+
+461
+00:48:11,510 --> 00:48:16,010
+So that Diltz happy. Defined as the final minus
+
+462
+00:48:16,010 --> 00:48:18,200
+initial is.
+
+463
+00:48:21,100 --> 00:48:26,390
+The ratio dividing through both sides by that
+
+464
+00:48:26,420 --> 00:48:31,660
+violence of the five thirds minus one. Which was
+
+465
+00:48:31,660 --> 00:48:36,880
+indeed the option that was preferred.
+
+466
+00:48:39,780 --> 00:48:46,480
+So that brings us to the end of time. I will leave
+
+467
+00:48:46,480 --> 00:48:50,980
+that up in case I went through the algebraic
+
+468
+00:48:50,980 --> 00:48:55,390
+manipulations a bit quickly and leave the
+
+469
+00:48:56,350 --> 00:48:58,270
+recording running just a little while longer in
+
+470
+00:48:58,270 --> 00:49:01,960
+case any of you have any final questions here at
+
+471
+00:49:01,960 --> 00:49:06,940
+the end. If not, we will pick up on Thursday with
+
+472
+00:49:06,940 --> 00:49:10,180
+the remainder of thermodynamics cycles and the
+
+473
+00:49:11,380 --> 00:49:15,920
+last bit of. Our focus on the canonical ensemble
+
+474
+00:49:15,920 --> 00:49:18,080
+before moving into the grand canonical ensemble
+
+475
+00:49:18,470 --> 00:49:24,140
+and also be back in this TSOU meeting in about 10
+
+476
+00:49:24,140 --> 00:49:27,980
+minutes for office hours, I'll have to shut down
+
+477
+00:49:28,010 --> 00:49:31,340
+before then to get the recording saved and started
+
+478
+00:49:31,340 --> 00:49:31,880
+back up.
+
+479
+00:49:34,000 --> 00:49:35,240
+That is it for me today.
