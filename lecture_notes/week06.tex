@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 6}
-\renewcommand{\moddate}{Last modified 7 Mar.~2021}
+\renewcommand{\moddate}{Last modified 8 Mar.~2021}
 \setcounter{section}{6}
 \setcounter{subsection}{0}
 \phantomsection
@@ -83,19 +83,19 @@ As in \secref{sec:replicas}, we assume that this system $\Om = \left\{\om_1, \om
 This again allows us to analyze the overall system of $R$ replicas in terms of occupation numbers $n_i$ and the corresponding occupation probabilities $p_i$.
 Recall that $n_i$ is the number of replicas that adopt the micro-state $\om_i \in \Om$ in any given micro-state of the overall system $\Om_{\text{tot}}$, so that $\sum_i n_i = R$.
 Similarly, $p_i = n_i / R$ is the probability that a randomly chosen replica will be in micro-state $\om_i$, with $\sum_i p_i = 1$ as usual.
-In this formulation, the total number of micro-states of $\Om_{\text{tot}}$, and the corresponding entropy, are the same as we derived in \secref{sec:canon_part},
+In terms of $n_i$ and $p_i$, the total number of micro-states of $\Om_{\text{tot}}$, and the corresponding entropy, are the same as we derived in \secref{sec:canon_part},
 \begin{equation*}
-  M_{\text{tot}} = \frac{R!}{n_1! \; n_2! \; \cdots \; n_M!} \qquad \lra \qquad S(\Etot, \Ntot) = -R \sum_{i = 1}^M p_i \log p_i.
+  M_{\text{tot}} = \frac{R!}{n_1! \; n_2! \; \cdots \; n_M!} \qquad \lra \qquad S(\Etot, \Ntot) = -R \sum_{i = 1}^M p_i \log p_i,
 \end{equation*}
+assuming $R \gg 1$ and $n_i \gg 1$ for all $i = 1, \cdots, M$.
 In this expression, the dependence on both \Etot and \Ntot now enters through the occupation probabilities $p_i$, since the micro-states $\om_i$ may involve different numbers of particles in addition to different energies.
 
 Continuing as before, we want to determine the (intensive) temperature and chemical potential of $\Om_{\text{tot}}$ through Eqs.~\ref{eq:temperature} and \ref{eq:chem_pot}, which requires expressing $S(\Etot, \Ntot)$ directly in terms of \Etot and $\Ntot$.
 We again do this by maximizing the entropy subject to the constraints on the conserved quantities of the micro-canonical overall system $\Om_{\text{tot}}$.
 Labelling the energy and particle number of each replica $E_r$ and $N_r$, respectively, as in \eq{eq:canon_Etot} we can again rearrange sums over replicas into sums over the micro-states of $\Om$:
 \begin{align}
-                                                             1 & = \sum_{i = 1}^M p_i \cr
-  \Etot = \sum_{r = 1}^R E_r = \sum_{i = 1}^M n_i E_i & = R \sum_{i = 1}^M p_i E_i \cr
-  \Ntot = \sum_{r = 1}^R N_r = \sum_{i = 1}^M n_i N_i & = R \sum_{i = 1}^M p_i N_i, \label{eq:grand_constraint}
+  1 & = \sum_{i = 1}^M p_i & \Etot = \sum_{r = 1}^R E_r = \sum_{i = 1}^M n_i E_i & = R \sum_{i = 1}^M p_i E_i \cr
+    &                      & \Ntot = \sum_{r = 1}^R N_r = \sum_{i = 1}^M n_i N_i & = R \sum_{i = 1}^M p_i N_i, \label{eq:grand_constraint}
 \end{align}
 where $E_i$ and $N_i$ are the energies and particle numbers of the $M$ micro-states $\om_i \in \Om$.
 The first two constraints, on the occupation probabilities and the total energy, are the same as we had in \secref{sec:canon_part}.
@@ -178,6 +178,8 @@ In particular, the probability---in thermodynamic equilibrium---that \Om adopts 
   \end{equation}
   Analogously to the canonical partition function, this $Z_g$ is a fundamental quantity in the grand-canonical ensemble, from which many other derived quantities can be obtained.
 \end{shaded}
+
+Since the particle number $N_i$ is dimensionless, the combination $E_i - \mu N_i$ that appears in Eqs.~\ref{eq:grand_prob} and \ref{eq:grand_part_func} is consistent with our observation below \eq{eq:chem_pot} that the chemical potential $\mu$ has dimensions of energy.
 % ------------------------------------------------------------------
 
 
@@ -211,9 +213,70 @@ We can anticipate that both of these derived quantities will be related to the l
 \end{shaded}
 
 The grand-canonical potential is sometimes called the \textit{Landau free energy}, named after \href{https://en.wikipedia.org/wiki/Lev_Landau}{Lev Landau}, to highlight its similarity with the Helmholtz free energy.
+\newpage % WARNING: FORMATTING BY HAND
+\noindent An aspect of this similarity is the importance of derivatives of the grand-canonical potential.
+The simplest derivative to consider first is with respect to the chemical potential,
+\begin{mdframed}
+  $\displaystyle \pderiv{}{\mu} \Phi(\be, \mu) = $ \\[120 pt]
+\end{mdframed}
+The derivative with respect to the temperature is a little messier.
+As in \secref{sec:Helmholtz}, it involves $\pderiv{}{T} \log Z_g$, which is again worth collecting in advance, recalling $\pderiv{}{T} = -\be^2 \pderiv{}{\be} $ from \eq{eq:beta_T}.
+\begin{mdframed}
+  $\displaystyle -\pderiv{}{T}\left(\frac{\Phi(T, \mu)}{T}\right) = \pderiv{}{T} \log Z_g(T, \mu) = $ \\[80 pt]
+  $\displaystyle \pderiv{}{T} \Phi(T, \mu) = $ \\[80 pt]
+\end{mdframed}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent You should find
+\begin{equation*}
+  \pderiv{\Phi}{T} = \frac{\Phi - \vev{E} + \mu\vev{N}}{T} = -\log Z_g - \be\vev{E} + \be\mu\vev{N},
+\end{equation*}
+which we can connect to the entropy by inserting the probabilities $p_i$ from \eq{eq:grand_prob} into the definition of the entropy from \eq{eq:entropy}:
+\begin{mdframed}
+  $\displaystyle S(T, \mu) = -\sum_{i = 1}^M p_i \log p_i = $ \\[100 pt]
+\end{mdframed}
 
+\begin{shaded}
+  From this work we can read off the following relations involving the grand-canonical potential $\Phi(T, \mu)$:
+  \begin{align}
+    \vev{N}\!(T, \mu) & = -\pderiv{}{\mu} \Phi(T, \mu) \\
+            S(T, \mu) & = -\pderiv{}{T} \Phi(T, \mu) \\
+    \vev{E}\!(T, \mu) & = -T^2 \pderiv{}{T} \left[\frac{\Phi(T, \mu)}{T}\right] + \mu \vev{N}\!(T, \mu) \\
+         \Phi(T, \mu) & = -T S(T, \mu) + \vev{E}\!(T, \mu) - \mu \vev{N}\!(T, \mu)
+  \end{align}
+\end{shaded}
 
-\TODO{$\Phi$ rather than $\Om$...}
-\TODO{Being written...}
-% TODO: Fugacity expansion?
+Finally, the connections between the energy, entropy and particle number provided by these relations motivate a further extension of the general first law of thermodynamics we derived last week (\eq{eq:first_law}).
+Now allowing the particle number $N$ of our thermodynamic system to change, we can express its entropy as a function of the internal energy, volume and particle number, $S(E, V, N)$, and consider the change in the entropy due to changes in each of these three parameters,\footnote{To make the notation less cumbersome here, we write $\vev{E}$ and $\vev{N}$ as $E$ and $N$, respectively, keeping in mind that these are properties of the system's thermodynamic macro-state rather than its fluctuating micro-state.}
+\begin{equation*}
+  dS = \left.\pderiv{S}{E}\right|_{V, N} dE + \left.\pderiv{S}{V}\right|_{E, N} dV + \left.\pderiv{S}{N}\right|_{V, E} dN = \frac{1}{T} dE + \left.\pderiv{S}{V}\right|_{E, N} dV - \frac{\mu}{T} dN.
+\end{equation*}
+We can interpret the remaining partial derivative by considering the first law, \eq{eq:first_law}, in the case of fixed internal energy $E$,
+\begin{equation*}
+  dE = 0 = T \; dS - P \; dV \qquad \Lra \qquad \left.\pderiv{S}{V}\right|_{E, N} = \frac{P}{T}.
+\end{equation*}
+The fixed particle number $N$ is already incorporated into \eq{eq:first_law}, since that expression was derived in the framework of the canonical ensemble.
+
+Putting things together, we obtain the generalized thermodynamic identity
+\begin{equation}
+  dE = T \; dS - P \; dV + \mu \; dN.
+\end{equation}
+Due to this result, the term $\mu \; dN$ is sometimes referred to as ``chemical work'', in analogy to the mechanical work $W = - P \; dV$ done on the system by changing its volume.
+This thermodynamic identity provides a convenient way to remember (or derive) relations between the internal energy, entropy, volume and particle number in thermodynamic equilibrium, by considering processes in which any two of these are fixed.
+For example, fixing $N$ and $V$ gets us back to \eq{eq:temperature} for the temperature,
+\begin{equation*}
+  dE = T \; dS \qquad \Lra \qquad \frac{1}{T} = \left.\pderiv{S}{E}\right|_{N, V},
+\end{equation*}
+while fixing $N$ and $S$ gives \eq{eq:pressure} for the pressure,
+\begin{equation*}
+  dE = -P \; dV \qquad \Lra \qquad P = -\left.\pderiv{E}{V}\right|_{N, S}.
+\end{equation*}
+
+If we fix the entropy $S$ and volume $V$, we end up with another way of understanding the chemical potential,
+\begin{equation}
+  \label{eq:mu_E}
+  dE = \mu \; dN \qquad \Lra \qquad \mu = \left.\pderiv{E}{N}\right|_{S, V}.
+\end{equation}
+That is, the chemical potential is the change in the internal energy when we adiabatically add a particle to the system (in a constant volume).
+We argued below \eq{eq:chem_pot} that systems with more degrees of freedom generically have more entropy, and can recall that `natural' systems have positive temperatures that correspond to the entropy increasing as the internal energy increases.
+In order to keep the entropy \textit{fixed} as we increase $N$, we would therefore have to reduce $E$, and vice-versa, so that \eq{eq:mu_E} confirms our earlier finding that the chemical potential is negative in general.
 % ------------------------------------------------------------------
