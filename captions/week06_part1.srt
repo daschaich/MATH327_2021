@@ -1,0 +1,859 @@
+1
+00:00:01,700 --> 00:00:04,760
+Hello and welcome back to Statistical Physics.
+
+2
+00:00:04,970 --> 00:00:08,150
+We'll do a couple of videos on the week six
+
+3
+00:00:08,150 --> 00:00:11,000
+material introducing the grand canonical ensemble
+
+4
+00:00:11,000 --> 00:00:16,610
+and we'll do that with the screen shared following
+
+5
+00:00:17,210 --> 00:00:20,570
+the same pattern as last week. And to start by
+
+6
+00:00:21,230 --> 00:00:24,350
+putting this week in the context of the overall
+
+7
+00:00:24,350 --> 00:00:29,690
+module this week, six on the grand canonical
+
+8
+00:00:29,690 --> 00:00:33,700
+ensemble is. Playing the final piece, the
+
+9
+00:00:33,700 --> 00:00:37,060
+foundations for the module, we've discussed that
+
+10
+00:00:37,060 --> 00:00:40,300
+we are going to be looking at three particular
+
+11
+00:00:40,390 --> 00:00:43,390
+statistical ensembles, which are probability
+
+12
+00:00:43,390 --> 00:00:46,480
+spaces for systems, either physical or
+
+13
+00:00:46,990 --> 00:00:51,640
+hypothetical, that sample their microstates as
+
+14
+00:00:51,640 --> 00:00:55,030
+they evolve in time subject to certain constraints.
+
+15
+00:00:55,390 --> 00:00:59,260
+And those obvious constraints are conservation of
+
+16
+00:00:59,260 --> 00:01:02,650
+energy and particle number, which define the micro
+
+17
+00:01:02,650 --> 00:01:06,220
+canonical ensemble, but require that a micro
+
+18
+00:01:06,220 --> 00:01:09,520
+canonical system be completely isolated from the
+
+19
+00:01:09,520 --> 00:01:14,050
+rest of the universe. And if we bring that system
+
+20
+00:01:14,050 --> 00:01:17,530
+into thermal contact with its surroundings and
+
+21
+00:01:17,530 --> 00:01:21,130
+allow it to exchange energy while still preserving
+
+22
+00:01:21,130 --> 00:01:24,130
+a fixed number of particles, that defines the
+
+23
+00:01:24,130 --> 00:01:28,120
+canonical ensemble that we saw a few weeks ago and
+
+24
+00:01:28,120 --> 00:01:32,290
+then applied to analyze ideal gases and the role
+
+25
+00:01:32,590 --> 00:01:35,590
+in thermodynamic cycles. And now we take the next
+
+26
+00:01:35,590 --> 00:01:41,140
+step and allow our system to exchange both energy
+
+27
+00:01:41,140 --> 00:01:45,280
+and particles with its surroundings, which defines
+
+28
+00:01:45,280 --> 00:01:49,420
+the grand canonical ensemble. So now, instead of
+
+29
+00:01:49,420 --> 00:01:52,300
+just a thermal reservoir that we had in the
+
+30
+00:01:52,300 --> 00:01:56,050
+canonical ensemble, we promote that to a particle
+
+31
+00:01:56,050 --> 00:02:01,360
+reservoir, a large external system that our system
+
+32
+00:02:01,360 --> 00:02:04,930
+of interest is in contact with and can exchange
+
+33
+00:02:06,040 --> 00:02:11,350
+both energy and particles. And just in the same
+
+34
+00:02:11,350 --> 00:02:16,090
+way that the thermal reservoir, in the canonical
+
+35
+00:02:16,090 --> 00:02:20,460
+context, fixed the temperature of our system and
+
+36
+00:02:20,550 --> 00:02:26,500
+that fixed temperature took the role of the sort
+
+37
+00:02:26,500 --> 00:02:28,900
+of constraint that was initially played by the
+
+38
+00:02:28,900 --> 00:02:31,720
+internal energy and the micro canonical case. We
+
+39
+00:02:31,720 --> 00:02:35,700
+expect that. By exchanging particles with this
+
+40
+00:02:35,700 --> 00:02:39,300
+large external reservoir or some other quantity
+
+41
+00:02:39,300 --> 00:02:42,510
+will be kept fixed in that quantity, turns out to
+
+42
+00:02:42,510 --> 00:02:47,010
+be something known as chemical potential. Which is
+
+43
+00:02:48,120 --> 00:02:50,370
+unlike the temperature is not something that we
+
+44
+00:02:50,580 --> 00:02:53,820
+have the sort of day to day experience of working
+
+45
+00:02:53,820 --> 00:02:58,050
+with, but mathematically it comes from very much
+
+46
+00:02:58,050 --> 00:03:01,200
+the same sort of considerations. How does the
+
+47
+00:03:01,200 --> 00:03:07,000
+entropy of the system respond to changes in the
+
+48
+00:03:07,270 --> 00:03:11,010
+the control parameters? The temperature we saw all
+
+49
+00:03:11,010 --> 00:03:14,400
+the way back in week two is defined as the inverse
+
+50
+00:03:14,400 --> 00:03:16,350
+of the interviews, response to a change in the
+
+51
+00:03:16,350 --> 00:03:19,410
+energy with a fixed number of particles. And to
+
+52
+00:03:19,410 --> 00:03:21,780
+define the chemical potential, we just interchange
+
+53
+00:03:22,200 --> 00:03:25,950
+the role of the energy and particle no in that
+
+54
+00:03:25,950 --> 00:03:30,360
+relation. Also adding a couple of features here, a
+
+55
+00:03:31,230 --> 00:03:34,140
+overall factor of the temperature and a negative
+
+56
+00:03:34,140 --> 00:03:39,300
+sign, both of which you can explain qualitatively
+
+57
+00:03:39,300 --> 00:03:43,290
+and then see how they are applied and how they
+
+58
+00:03:43,620 --> 00:03:46,860
+impact the quantitative mathematics.
+
+59
+00:03:48,900 --> 00:03:53,530
+So the temperature. To start with that, we can
+
+60
+00:03:53,530 --> 00:04:01,300
+recognize this factor of tee times deaths from the
+
+61
+00:04:02,260 --> 00:04:05,890
+first law of thermodynamics. This has the same
+
+62
+00:04:05,890 --> 00:04:09,280
+dimensions as entropy and maybe I should not be
+
+63
+00:04:09,730 --> 00:04:12,580
+jumping around too much in these notes, since you
+
+64
+00:04:12,580 --> 00:04:19,830
+didn't have to skim back to to where we were. And.
+
+65
+00:04:21,070 --> 00:04:24,280
+The negative sign here means that with a positive
+
+66
+00:04:24,280 --> 00:04:27,460
+temperature for a natural system, we generically
+
+67
+00:04:27,460 --> 00:04:30,760
+expect the chemical potential as a whole to have a
+
+68
+00:04:30,760 --> 00:04:36,460
+negative value. That is because we've seen both in
+
+69
+00:04:36,460 --> 00:04:39,040
+general and in particular, examples of the spin
+
+70
+00:04:39,040 --> 00:04:43,480
+system, an ideal gas that as we have more degrees
+
+71
+00:04:43,480 --> 00:04:45,850
+of freedom, more particles, those particles can
+
+72
+00:04:45,850 --> 00:04:48,670
+contain more information and that additional
+
+73
+00:04:48,670 --> 00:04:53,440
+information corresponds to a larger entropy. So
+
+74
+00:04:53,440 --> 00:04:56,500
+this partial derivative, how the entropy changes
+
+75
+00:04:56,800 --> 00:04:58,690
+with respect to the number of particles
+
+76
+00:04:59,050 --> 00:05:01,450
+generically arises even in fixed energy.
+
+77
+00:05:03,470 --> 00:05:07,730
+So what we have are generically negative chemical
+
+78
+00:05:07,730 --> 00:05:12,320
+potentials, and the negative sign is motivated in
+
+79
+00:05:12,320 --> 00:05:19,170
+order to. Ensure that particles flow from regions
+
+80
+00:05:19,170 --> 00:05:21,540
+or systems with larger values of the chemical
+
+81
+00:05:21,540 --> 00:05:24,090
+potential over here, larger means less negative,
+
+82
+00:05:24,090 --> 00:05:27,300
+smaller in magnitude with a negative sign, and
+
+83
+00:05:27,300 --> 00:05:29,040
+they flow from those.
+
+84
+00:05:31,740 --> 00:05:35,100
+Larger chemical potentials to regions with smaller
+
+85
+00:05:35,100 --> 00:05:37,640
+chemical potentials as though they were, say,
+
+86
+00:05:37,650 --> 00:05:40,230
+balls rolling down the hill, going from a higher
+
+87
+00:05:40,230 --> 00:05:43,290
+altitude to a lower one. And that, of course, is
+
+88
+00:05:43,290 --> 00:05:45,870
+the same thing that happens with the temperature.
+
+89
+00:05:46,320 --> 00:05:48,660
+Energy flows from hotter systems of higher
+
+90
+00:05:48,660 --> 00:05:51,030
+temperature to colder systems with lower
+
+91
+00:05:51,030 --> 00:05:51,660
+temperature.
+
+92
+00:05:53,800 --> 00:05:56,170
+And by having the negative side there, we get the
+
+93
+00:05:56,170 --> 00:05:58,390
+same behavior for the chemical potential.
+
+94
+00:06:00,400 --> 00:06:03,640
+Whereas if we had chosen a different convention
+
+95
+00:06:04,090 --> 00:06:05,860
+where the chemical potential was defined without
+
+96
+00:06:05,860 --> 00:06:07,630
+that negative sign, which is mathematically
+
+97
+00:06:07,630 --> 00:06:10,150
+legitimate, you would have had to keep in mind
+
+98
+00:06:10,150 --> 00:06:13,180
+that particles would have flown. That flowed in
+
+99
+00:06:13,180 --> 00:06:17,200
+that case from lower to high, in contrast to the
+
+100
+00:06:17,200 --> 00:06:19,150
+temperature flying from high to low. So what we
+
+101
+00:06:19,690 --> 00:06:23,600
+have in this standard convention. Is putting the
+
+102
+00:06:23,900 --> 00:06:27,380
+temperature and chemical potential on the same
+
+103
+00:06:27,710 --> 00:06:30,620
+intuitive foundation so that we can think of both
+
+104
+00:06:30,620 --> 00:06:33,650
+of them in the same way, governing, on the one
+
+105
+00:06:33,650 --> 00:06:36,350
+hand, the energy flow and on the other hand, the
+
+106
+00:06:36,350 --> 00:06:39,920
+particle flow of the system, both of which flow
+
+107
+00:06:39,920 --> 00:06:44,960
+from large to small values. So with that chemical
+
+108
+00:06:44,960 --> 00:06:47,900
+potential, we are in a position to formally define
+
+109
+00:06:48,260 --> 00:06:50,630
+a grand canonical ensemble as a statistical
+
+110
+00:06:50,630 --> 00:06:54,020
+ensemble where both the energy and particle number
+
+111
+00:06:54,050 --> 00:06:56,150
+are allowed to fluctuate and are no longer
+
+112
+00:06:56,150 --> 00:07:01,640
+conserved. But they always fluctuate by exchange
+
+113
+00:07:01,640 --> 00:07:04,310
+with a large external reservoir that fixes both
+
+114
+00:07:04,310 --> 00:07:07,250
+the temperature of the system and its chemical
+
+115
+00:07:07,250 --> 00:07:11,000
+potential. Which we will always represent with the
+
+116
+00:07:11,000 --> 00:07:11,900
+Greek letter MU.
+
+117
+00:07:15,060 --> 00:07:20,390
+And now let me charge through. The next step in
+
+118
+00:07:20,990 --> 00:07:25,970
+this this week's material, which is going through
+
+119
+00:07:25,970 --> 00:07:29,180
+very much the same mathematical consideration as
+
+120
+00:07:29,180 --> 00:07:31,370
+we did when introducing the canonical ensemble
+
+121
+00:07:31,370 --> 00:07:34,760
+back in week three, which is proposing a well
+
+122
+00:07:34,760 --> 00:07:37,190
+motivated on ZATZ for the form of that particle
+
+123
+00:07:37,190 --> 00:07:40,070
+reservoir, and then showing that the details of
+
+124
+00:07:40,070 --> 00:07:44,060
+the ANZAAS all drop out in the behavior of the
+
+125
+00:07:44,060 --> 00:07:47,390
+grand canonical ensemble, allowing us to describe
+
+126
+00:07:47,690 --> 00:07:50,690
+the system just with reference to that fixed
+
+127
+00:07:50,690 --> 00:07:53,720
+temperature and fixed chemical potential with no
+
+128
+00:07:53,720 --> 00:07:57,260
+other information even knowable about the external
+
+129
+00:07:57,260 --> 00:08:02,580
+reservoir that fixes those parameters. And we do
+
+130
+00:08:02,580 --> 00:08:07,610
+this so. The same spirit of baking a well
+
+131
+00:08:07,610 --> 00:08:10,490
+motivated on size by having a reservoir be the
+
+132
+00:08:10,490 --> 00:08:14,110
+same stuff as the system, but just more of it. We
+
+133
+00:08:14,120 --> 00:08:17,330
+again introduce a large number of replicas of our
+
+134
+00:08:17,330 --> 00:08:20,480
+system single out one of them as the system we
+
+135
+00:08:20,480 --> 00:08:23,150
+actually care about and all of the others form
+
+136
+00:08:23,150 --> 00:08:28,220
+that reservoir as illustrated in a way that does
+
+137
+00:08:28,220 --> 00:08:30,890
+not quite fit on my screen.
+
+138
+00:08:33,120 --> 00:08:33,560
+Here,
+
+139
+00:08:35,820 --> 00:08:39,870
+so this is a very similar picture to the replicas
+
+140
+00:08:39,870 --> 00:08:43,510
+that we considered for systems in week three here.
+
+141
+00:08:43,530 --> 00:08:47,280
+By contrast, we picture an ideal gas with
+
+142
+00:08:47,280 --> 00:08:50,310
+particles like particles of gas bouncing around
+
+143
+00:08:50,310 --> 00:08:53,910
+with some momentum and corresponding energy. And
+
+144
+00:08:53,910 --> 00:08:57,330
+hear all of the boxes that we draw around each of
+
+145
+00:08:57,330 --> 00:09:02,130
+these replicas is fictitious. It's not something
+
+146
+00:09:02,130 --> 00:09:06,210
+real. It's something that we mentally impose on
+
+147
+00:09:06,210 --> 00:09:08,520
+the system in order to organize our calculation.
+
+148
+00:09:08,850 --> 00:09:12,660
+And the particles are able to freely move from any
+
+149
+00:09:12,660 --> 00:09:16,370
+of these boxes, any of these replicas to any other.
+
+150
+00:09:16,380 --> 00:09:19,380
+So the particle numbers, as well as the energy in
+
+151
+00:09:19,530 --> 00:09:22,800
+each replica is fluctuating, subject to
+
+152
+00:09:22,800 --> 00:09:27,810
+constraints on the overall system of the small
+
+153
+00:09:27,810 --> 00:09:31,710
+subsystem of interest, plus the larger reservoir
+
+154
+00:09:32,580 --> 00:09:36,630
+which that overall total system is we can think of.
+
+155
+00:09:36,630 --> 00:09:40,050
+That is the entire universe, and that is still
+
+156
+00:09:40,050 --> 00:09:43,600
+subject to conservation of energy and conservation
+
+157
+00:09:43,600 --> 00:09:44,490
+particle number.
+
+158
+00:09:47,810 --> 00:09:52,250
+If we represent the system in terms of the
+
+159
+00:09:52,250 --> 00:09:55,100
+occupation numbers and occupation probabilities,
+
+160
+00:09:55,100 --> 00:09:58,370
+recalling that the occupation number is the number
+
+161
+00:09:58,760 --> 00:10:03,590
+of replicas that occupy a particular microstates
+
+162
+00:10:04,460 --> 00:10:09,980
+of the single. System of interest. Is the
+
+163
+00:10:09,980 --> 00:10:12,620
+occupation probability is then the corresponding
+
+164
+00:10:13,130 --> 00:10:18,130
+probability that. He randomly chosen replica will
+
+165
+00:10:18,130 --> 00:10:22,660
+be in the corresponding microstates then a lot of
+
+166
+00:10:22,660 --> 00:10:25,200
+the mathematics works out exactly the same as in
+
+167
+00:10:25,210 --> 00:10:27,640
+the canonical case. So we don't need to repeat
+
+168
+00:10:27,640 --> 00:10:30,670
+that here. The number of microstates just counts
+
+169
+00:10:31,000 --> 00:10:33,700
+how all of those replicas can be assigned to all
+
+170
+00:10:33,700 --> 00:10:37,630
+of the microstates. And if we assume that the
+
+171
+00:10:37,630 --> 00:10:41,500
+number of replicas and each occupation number is a
+
+172
+00:10:41,500 --> 00:10:44,460
+very large number, then we get the same result.
+
+173
+00:10:45,540 --> 00:10:48,590
+For the total energy of the system, plus its
+
+174
+00:10:48,590 --> 00:10:54,170
+reservoir, so we now have the usual task of
+
+175
+00:10:54,860 --> 00:10:57,140
+maximizing that entropy corresponding to
+
+176
+00:10:57,140 --> 00:11:00,770
+thermodynamic equilibrium, subject to the
+
+177
+00:11:00,770 --> 00:11:03,080
+constraints, two of which we've seen before.
+
+178
+00:11:03,350 --> 00:11:08,870
+Probabilities have to add to one in the energy. Of
+
+179
+00:11:09,230 --> 00:11:12,320
+each replica, which we can express in terms of the
+
+180
+00:11:12,320 --> 00:11:14,540
+occupation probabilities, has to add up to the
+
+181
+00:11:15,110 --> 00:11:18,110
+conserved total energy of the universe. And we
+
+182
+00:11:18,110 --> 00:11:20,420
+have this one new constraints that now the
+
+183
+00:11:20,840 --> 00:11:23,720
+fluctuating number of particles in each replica,
+
+184
+00:11:23,720 --> 00:11:27,950
+which we can also cast in the form of a sum over
+
+185
+00:11:27,950 --> 00:11:30,560
+occupation probabilities, has to add up to the
+
+186
+00:11:30,560 --> 00:11:33,650
+conserved total number of particles in the
+
+187
+00:11:33,650 --> 00:11:37,880
+universe. So now when we do our maximization, we
+
+188
+00:11:37,880 --> 00:11:43,400
+need three legrange multipliers and imposing those
+
+189
+00:11:43,760 --> 00:11:48,860
+three constraints then fixes the form of each of
+
+190
+00:11:48,860 --> 00:11:52,520
+those three three parameters in terms of the
+
+191
+00:11:52,940 --> 00:11:57,380
+overall total energy and particle number that is
+
+192
+00:11:57,380 --> 00:12:00,830
+conserved in the system. So that's a
+
+193
+00:12:01,310 --> 00:12:04,280
+straightforward, if sometimes messy calculation.
+
+194
+00:12:05,960 --> 00:12:11,640
+And at the end of it we find. That's the parameter
+
+195
+00:12:11,640 --> 00:12:14,790
+Beita is exactly the same inverse temperature as
+
+196
+00:12:14,790 --> 00:12:20,220
+we found for the canonical. Ensemble, the new
+
+197
+00:12:20,220 --> 00:12:23,790
+parameter Gamma is not surprisingly related to the
+
+198
+00:12:23,790 --> 00:12:26,340
+new fixed quantity mbewe the chemical potential,
+
+199
+00:12:27,060 --> 00:12:31,320
+and there is a proportionality factor of the
+
+200
+00:12:31,320 --> 00:12:31,980
+temperature.
+
+201
+00:12:34,450 --> 00:12:38,110
+Essentially providing the the appropriate units in
+
+202
+00:12:38,110 --> 00:12:43,540
+these relations and the final Louvre's multiplier
+
+203
+00:12:43,540 --> 00:12:46,840
+can be identified as the grand canonical partition
+
+204
+00:12:46,840 --> 00:12:50,740
+function, a very direct analogue to the canonical
+
+205
+00:12:50,740 --> 00:12:52,570
+partition function that we've been working with
+
+206
+00:12:52,570 --> 00:12:55,630
+for the past three weeks, which is given by the
+
+207
+00:12:55,630 --> 00:13:00,190
+sum over microstates of this generalized bowsman
+
+208
+00:13:00,190 --> 00:13:06,010
+factor, which includes not only the energy of the
+
+209
+00:13:06,010 --> 00:13:09,220
+micro state being sold over, but also its particle
+
+210
+00:13:09,220 --> 00:13:14,140
+number waited by the chemical potential. So this
+
+211
+00:13:14,140 --> 00:13:17,560
+is the fundamental quantity from which we will
+
+212
+00:13:17,980 --> 00:13:20,770
+derive all the other quantities of interest.
+
+213
+00:13:22,000 --> 00:13:24,520
+Internal energy, entropy, particle number and so
+
+214
+00:13:24,520 --> 00:13:27,940
+on, which I will make a separate video to keep
+
+215
+00:13:27,940 --> 00:13:30,640
+these relatively bite sized.

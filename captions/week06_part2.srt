@@ -1,0 +1,819 @@
+1
+00:00:03,160 --> 00:00:06,280
+OK, welcome back to the second part of this
+
+2
+00:00:06,280 --> 00:00:09,370
+summary of the week six material on the Koran
+
+3
+00:00:09,370 --> 00:00:15,100
+canonical ensemble. So picking up where we left
+
+4
+00:00:15,100 --> 00:00:17,890
+off with the previous parts, we saw by going
+
+5
+00:00:17,890 --> 00:00:21,850
+through the the replica trick, just as we did for
+
+6
+00:00:21,860 --> 00:00:25,450
+the canonical ensemble, that's the great canonical
+
+7
+00:00:25,450 --> 00:00:28,720
+ensemble can be formulated entirely in terms of
+
+8
+00:00:29,170 --> 00:00:34,360
+its fixed temperature and chemical potential, with
+
+9
+00:00:34,840 --> 00:00:39,490
+no reference to any nonsense for the large
+
+10
+00:00:39,490 --> 00:00:42,130
+external particle reservoir that fixes the
+
+11
+00:00:42,130 --> 00:00:44,620
+temperature and chemical potential and with which
+
+12
+00:00:44,830 --> 00:00:47,770
+the system of interest is allowed to exchange
+
+13
+00:00:47,770 --> 00:00:53,980
+energy and particles. And based on the temperature
+
+14
+00:00:54,280 --> 00:00:57,220
+and chemical potential, we have the partition, the
+
+15
+00:00:57,220 --> 00:01:01,570
+grand canonical partition function Z Somji, which
+
+16
+00:01:01,570 --> 00:01:05,410
+is the sum over all microstates of our system of
+
+17
+00:01:05,410 --> 00:01:08,500
+this extended bozsum factor that depends on both
+
+18
+00:01:08,500 --> 00:01:11,140
+the energy and the particle number, both of which
+
+19
+00:01:11,140 --> 00:01:15,250
+can now fluctuate through exchange with that large
+
+20
+00:01:15,250 --> 00:01:19,150
+external particle reservoir. And essentially at
+
+21
+00:01:19,150 --> 00:01:21,880
+this point we are done the grand canonical
+
+22
+00:01:21,880 --> 00:01:27,600
+partition function. Fully specifiers the. The
+
+23
+00:01:27,600 --> 00:01:31,350
+information present in our statistical ensemble or
+
+24
+00:01:31,350 --> 00:01:34,320
+probability space for this system that is allowed
+
+25
+00:01:34,320 --> 00:01:37,410
+to evolve in time with fluctuating energy and
+
+26
+00:01:37,410 --> 00:01:40,440
+particle number and the remainder, the last few
+
+27
+00:01:40,440 --> 00:01:43,740
+pages of the written material for this week are
+
+28
+00:01:43,740 --> 00:01:48,300
+just going through and completing the mathematical
+
+29
+00:01:48,300 --> 00:01:52,080
+calculations to extract those derived quantities
+
+30
+00:01:52,080 --> 00:01:55,560
+of interest from their basis in the grand
+
+31
+00:01:55,560 --> 00:01:58,500
+canonical partition function. And again,
+
+32
+00:01:58,500 --> 00:02:01,560
+continuing the analogy with our development of the
+
+33
+00:02:01,560 --> 00:02:05,970
+canonical ensemble a few weeks ago, we expect the
+
+34
+00:02:05,970 --> 00:02:08,820
+logarithm of the green canonical partition
+
+35
+00:02:08,820 --> 00:02:13,200
+function to play a particularly prominent role in
+
+36
+00:02:13,200 --> 00:02:17,280
+these relations. So just to remind you, now that
+
+37
+00:02:17,280 --> 00:02:19,200
+the energy and particle number are both
+
+38
+00:02:19,200 --> 00:02:22,350
+fluctuating, the specific energy or particle
+
+39
+00:02:22,350 --> 00:02:24,900
+number of that particular microstates is no longer
+
+40
+00:02:25,200 --> 00:02:27,570
+really a meaningful observable. It's not a
+
+41
+00:02:27,570 --> 00:02:30,660
+property of the thermodynamic macro state that we
+
+42
+00:02:30,660 --> 00:02:33,150
+have now become familiar with by working with
+
+43
+00:02:33,150 --> 00:02:36,960
+ideal gases and through the mix cycles. What is a
+
+44
+00:02:36,960 --> 00:02:42,240
+property of that micro state is the macro state is
+
+45
+00:02:42,240 --> 00:02:46,560
+the average internal energy and particle number.
+
+46
+00:02:48,300 --> 00:02:50,940
+The expectation value, which from the definition
+
+47
+00:02:50,940 --> 00:02:53,850
+of expectation value, is obtained from the average
+
+48
+00:02:53,850 --> 00:02:56,250
+over all micro states. So
+
+49
+00:02:58,500 --> 00:03:04,080
+microstates are the individual pieces with their
+
+50
+00:03:04,710 --> 00:03:06,960
+corresponding probabilities, something over all of
+
+51
+00:03:06,960 --> 00:03:10,590
+which gives us information about the large scale
+
+52
+00:03:10,590 --> 00:03:14,910
+thermodynamic macro state that emerges from the
+
+53
+00:03:15,690 --> 00:03:19,200
+dynamics, the properties of the degrees of freedom
+
+54
+00:03:19,410 --> 00:03:21,270
+of which it consists through.
+
+55
+00:03:23,780 --> 00:03:26,150
+Through the machinery of statistical physics.
+
+56
+00:03:29,100 --> 00:03:32,790
+In anticipating that both of the internal energy
+
+57
+00:03:32,790 --> 00:03:36,480
+particle number and entropy will depend on the
+
+58
+00:03:36,480 --> 00:03:39,690
+logarithm of that grand canonical potential, we
+
+59
+00:03:39,690 --> 00:03:43,140
+define an analogue of the Helmholtz free energy,
+
+60
+00:03:43,740 --> 00:03:47,520
+which is this capital five that now depends on
+
+61
+00:03:47,940 --> 00:03:50,700
+both of these fixed quantities, the temperature
+
+62
+00:03:50,700 --> 00:03:54,600
+and chemical potential, which just as the
+
+63
+00:03:54,600 --> 00:03:57,580
+Helmholtz free energy was the negative temperature
+
+64
+00:03:57,580 --> 00:04:00,090
+at times logarithm of the canonical partition
+
+65
+00:04:00,090 --> 00:04:03,180
+function. The grand canonical potential is the
+
+66
+00:04:03,180 --> 00:04:06,420
+negative temperature at times the logarithm of the
+
+67
+00:04:06,420 --> 00:04:10,740
+grand canonical partition function. Which allows
+
+68
+00:04:10,740 --> 00:04:13,680
+us to invert this equation, right, the great
+
+69
+00:04:13,680 --> 00:04:17,620
+canonical partition function in terms of its grand
+
+70
+00:04:17,640 --> 00:04:21,330
+canonical potential and insert that into the
+
+71
+00:04:22,350 --> 00:04:25,110
+Boston factor, the Walsman distribution for the
+
+72
+00:04:25,410 --> 00:04:29,240
+probability of each micro state. And just to
+
+73
+00:04:29,240 --> 00:04:32,180
+highlight the similarity with the help, those free
+
+74
+00:04:32,180 --> 00:04:35,030
+energy, this grand economic potential is sometimes
+
+75
+00:04:35,990 --> 00:04:38,510
+called the land of free energy after the Russian
+
+76
+00:04:38,510 --> 00:04:46,190
+physicist Lev Landau. And at this point. There are
+
+77
+00:04:46,190 --> 00:04:48,860
+a few derivatives to grind through, some of which
+
+78
+00:04:48,860 --> 00:04:52,880
+are straightforward, some of which are messier and
+
+79
+00:04:52,880 --> 00:04:56,540
+can benefit from some preparatory work. And at the
+
+80
+00:04:56,540 --> 00:05:01,640
+end of those calculations, we obtain a relation
+
+81
+00:05:01,640 --> 00:05:05,660
+between these derivatives of the grand canonical
+
+82
+00:05:05,660 --> 00:05:09,170
+potential that potential itself or equivalently,
+
+83
+00:05:09,170 --> 00:05:11,270
+the logarithm of the grand canonical partition
+
+84
+00:05:11,270 --> 00:05:15,400
+function. Along with the internal energy and the
+
+85
+00:05:15,400 --> 00:05:18,900
+average particle, No. All with three factors,
+
+86
+00:05:18,900 --> 00:05:24,000
+giving them the the same dimensions, the same
+
+87
+00:05:24,000 --> 00:05:28,620
+units, and by considering the entropy and plugging
+
+88
+00:05:28,620 --> 00:05:34,550
+in. The result that we found from. For
+
+89
+00:05:34,560 --> 00:05:38,390
+maximisation, Villefranche multipliers for the
+
+90
+00:05:38,420 --> 00:05:40,940
+micro say probability carrying out that
+
+91
+00:05:40,940 --> 00:05:47,000
+calculation gives us relations among these three
+
+92
+00:05:47,000 --> 00:05:50,480
+derived quantities and the grand economic
+
+93
+00:05:50,550 --> 00:05:57,450
+potential. That look. Quite similar to what we had
+
+94
+00:05:57,450 --> 00:06:02,070
+for the energy and entropy in terms of derivatives
+
+95
+00:06:02,070 --> 00:06:06,660
+of the Helmholtz free energy, when the particle
+
+96
+00:06:06,660 --> 00:06:09,690
+number was fixed and the chemical potential was
+
+97
+00:06:09,960 --> 00:06:15,240
+not in the game, these derivatives of the free
+
+98
+00:06:15,240 --> 00:06:18,660
+energy with respect to temperature and derivatives
+
+99
+00:06:18,660 --> 00:06:20,820
+of the ratio of the free energy divided by
+
+100
+00:06:20,820 --> 00:06:22,740
+temperature of the log of the partition function
+
+101
+00:06:23,010 --> 00:06:26,670
+also showed up in that case in the canonical
+
+102
+00:06:26,670 --> 00:06:33,810
+ensemble. So these are the. Useful relations that
+
+103
+00:06:33,810 --> 00:06:37,400
+we will be. Putting into practice after the break,
+
+104
+00:06:37,400 --> 00:06:41,930
+in applications of the grand canonical ensemble
+
+105
+00:06:42,530 --> 00:06:47,120
+focus on quantum systems, which will need some
+
+106
+00:06:47,120 --> 00:06:51,500
+additional consideration of what exactly makes a
+
+107
+00:06:51,500 --> 00:06:54,820
+statistical system, quantum or otherwise. But
+
+108
+00:06:54,950 --> 00:06:58,160
+before we move on to the break and eventually
+
+109
+00:06:58,640 --> 00:07:03,760
+those applications. We can get a little bit more
+
+110
+00:07:03,760 --> 00:07:06,760
+insight into the chemical potential just by seeing
+
+111
+00:07:06,760 --> 00:07:10,240
+how it appears in these sorts of relations that
+
+112
+00:07:10,240 --> 00:07:15,320
+also involve the energy and entropy. This
+
+113
+00:07:16,040 --> 00:07:20,570
+connection between energy and tea time times, the
+
+114
+00:07:20,570 --> 00:07:25,430
+entropy was also something that we saw in the
+
+115
+00:07:25,460 --> 00:07:29,120
+first law of thermodynamics while considering
+
+116
+00:07:29,630 --> 00:07:32,930
+thermodynamic cycles last week there was this
+
+117
+00:07:32,930 --> 00:07:36,590
+relation that the change in energy in a
+
+118
+00:07:36,590 --> 00:07:39,320
+thermodynamic cycle described by the canonical
+
+119
+00:07:39,320 --> 00:07:45,770
+ensemble was the heat added, plus the work done on
+
+120
+00:07:45,770 --> 00:07:48,800
+that system where heat was temperature. At times
+
+121
+00:07:48,800 --> 00:07:51,500
+the change in entropy and work was negative.
+
+122
+00:07:51,500 --> 00:07:55,420
+Pressure times the change in volume. And we can
+
+123
+00:07:55,420 --> 00:08:02,430
+now generalize that, considering the. Particle
+
+124
+00:08:02,430 --> 00:08:06,210
+number two also be allowed to change in our third
+
+125
+00:08:06,210 --> 00:08:13,840
+Adamick system. And express the. Entropy is a
+
+126
+00:08:13,840 --> 00:08:17,290
+function not just of energy and the volume of the
+
+127
+00:08:17,290 --> 00:08:20,740
+system, but all three parameters, energy, volume
+
+128
+00:08:20,740 --> 00:08:27,140
+and particle number. This here is just the basic
+
+129
+00:08:27,650 --> 00:08:30,830
+calculus relation, connecting the derivative to
+
+130
+00:08:30,830 --> 00:08:34,490
+its partial derivatives with in each case, all but
+
+131
+00:08:34,490 --> 00:08:37,610
+one of those three parameters kept fixed.
+
+132
+00:08:40,010 --> 00:08:42,720
+Two of which we can identify as the inverse
+
+133
+00:08:42,770 --> 00:08:46,860
+temperature and. Negative chemical potential
+
+134
+00:08:46,860 --> 00:08:49,440
+divided by temperature that we have previously
+
+135
+00:08:49,440 --> 00:08:52,740
+considered, we're putting everything together and
+
+136
+00:08:52,740 --> 00:08:57,120
+multiplying through by this factor of one over
+
+137
+00:08:57,120 --> 00:09:01,230
+temperature, rearranging the terms, we generalize
+
+138
+00:09:01,230 --> 00:09:03,150
+the first law of thermodynamics further to the
+
+139
+00:09:03,150 --> 00:09:07,910
+case where the particle number can fluctuate. And
+
+140
+00:09:07,910 --> 00:09:11,570
+now the total change in energy is the heat added
+
+141
+00:09:11,660 --> 00:09:15,500
+that changes the entropy, the mechanical work,
+
+142
+00:09:15,500 --> 00:09:20,750
+that changes the volume with a given pressure and
+
+143
+00:09:20,750 --> 00:09:23,690
+what we might call the chemical work, which
+
+144
+00:09:23,690 --> 00:09:26,750
+changes the particle number at a fixed chemical
+
+145
+00:09:26,750 --> 00:09:27,350
+potential.
+
+146
+00:09:30,290 --> 00:09:33,320
+This equation eighty six is a generalized
+
+147
+00:09:33,740 --> 00:09:39,860
+thermodynamic identity that is quite useful if we
+
+148
+00:09:39,860 --> 00:09:45,050
+want to remember or derive relations between these
+
+149
+00:09:45,050 --> 00:09:47,390
+various quantities energy, entropy, volume and
+
+150
+00:09:47,390 --> 00:09:52,310
+particle number. As an example, if we fix the
+
+151
+00:09:52,490 --> 00:09:55,160
+volume of the particle number, then we immediately
+
+152
+00:09:55,490 --> 00:09:59,660
+get back to the relation that one over temperature
+
+153
+00:10:00,710 --> 00:10:05,270
+is the response of the entropy to the energy which
+
+154
+00:10:05,270 --> 00:10:10,840
+we saw already back in week to. And if we
+
+155
+00:10:10,840 --> 00:10:13,210
+similarly fix the particle number and the entropy
+
+156
+00:10:13,510 --> 00:10:15,760
+and look at the idiomatic response of the energy
+
+157
+00:10:15,760 --> 00:10:18,400
+with respect to a change in the volume, that is
+
+158
+00:10:18,400 --> 00:10:23,290
+just the pressure we. Introduced when considering
+
+159
+00:10:23,290 --> 00:10:27,730
+ideal gases. And what is particularly interesting
+
+160
+00:10:27,730 --> 00:10:30,370
+right now, what we're trying to get, trying to
+
+161
+00:10:30,370 --> 00:10:32,860
+build up some intuition for the chemical potential
+
+162
+00:10:33,070 --> 00:10:37,750
+is to fix the entropy sudsing zero, fix the volume
+
+163
+00:10:37,750 --> 00:10:40,990
+so is zero, and then find that the chemical
+
+164
+00:10:40,990 --> 00:10:44,920
+potential new is the response of the energy to a
+
+165
+00:10:44,920 --> 00:10:48,070
+change in particle. No, where that change is done
+
+166
+00:10:48,400 --> 00:10:51,610
+in a fixed volume and idiomatically so the
+
+167
+00:10:51,610 --> 00:10:56,440
+chemical potential is essentially how much energy
+
+168
+00:10:56,770 --> 00:11:01,330
+is added or removed from the system as some
+
+169
+00:11:01,570 --> 00:11:04,660
+particle or degree of freedom is added or removed.
+
+170
+00:11:05,590 --> 00:11:09,160
+And we can also from this relation, confirm our
+
+171
+00:11:09,160 --> 00:11:11,710
+argument earlier that the chemical potential is
+
+172
+00:11:12,070 --> 00:11:15,340
+generically negative for natural systems because
+
+173
+00:11:15,350 --> 00:11:18,370
+we've argued that adding degrees of freedom to
+
+174
+00:11:18,370 --> 00:11:22,120
+systems tends to increase its entropy. And in
+
+175
+00:11:22,120 --> 00:11:24,100
+order to keep that entropy fixed, we have to
+
+176
+00:11:24,100 --> 00:11:27,370
+counteract that increase in the way to do that,
+
+177
+00:11:27,540 --> 00:11:30,730
+the natural system with positive temperature is to
+
+178
+00:11:31,030 --> 00:11:35,710
+decrease the energy. So whenever the particle
+
+179
+00:11:35,710 --> 00:11:39,550
+number increases, the energy has to decrease. So
+
+180
+00:11:39,550 --> 00:11:42,100
+the overall sign of that partial derivative is
+
+181
+00:11:42,100 --> 00:11:44,950
+negative and vice versa if the particle number
+
+182
+00:11:45,310 --> 00:11:51,910
+decreases at fixed entropy. So that is the
+
+183
+00:11:51,910 --> 00:11:56,500
+completion of the introduction, at least of the
+
+184
+00:11:56,500 --> 00:11:59,410
+final of the three statistical ensembles that we
+
+185
+00:11:59,410 --> 00:12:01,900
+consider in this module, we now have micro,
+
+186
+00:12:01,900 --> 00:12:02,590
+canonical,
+
+187
+00:12:04,630 --> 00:12:07,720
+canonical and grand canonical ensembles
+
+188
+00:12:07,720 --> 00:12:12,950
+appropriate for different situations where. Our
+
+189
+00:12:12,950 --> 00:12:15,890
+probabilistic system is sampling states through
+
+190
+00:12:15,890 --> 00:12:19,010
+time, evolution subject to different constraints,
+
+191
+00:12:19,580 --> 00:12:21,510
+fixed energy and particle number for micro
+
+192
+00:12:21,510 --> 00:12:24,110
+economical temperature and particle number four,
+
+193
+00:12:24,110 --> 00:12:26,840
+canonical and fixed temperature and chemical
+
+194
+00:12:26,840 --> 00:12:29,840
+potential for grand canonical. And once we get
+
+195
+00:12:29,840 --> 00:12:32,480
+back from the break, we will.
+
+196
+00:12:34,630 --> 00:12:38,110
+Dive into quantum statistics and use that as the
+
+197
+00:12:38,110 --> 00:12:41,800
+playground to apply the creative canonical
+
+198
+00:12:41,800 --> 00:12:46,510
+ensemble, learn about various sorts of quantum
+
+199
+00:12:46,510 --> 00:12:49,930
+statistical systems, how they behave and connect
+
+200
+00:12:49,930 --> 00:12:55,950
+that to some familiar. Phenomenon like the. The
+
+201
+00:12:55,950 --> 00:12:59,730
+sun shining in the sky for now, though, we have
+
+202
+00:13:00,240 --> 00:13:03,480
+all the basic material and can take a break to
+
+203
+00:13:04,290 --> 00:13:05,610
+incorporate it and.
+
+204
+00:13:09,390 --> 00:13:12,600
+Gain more comfort in familiarity with these
+
+205
+00:13:12,600 --> 00:13:13,500
+foundations.
