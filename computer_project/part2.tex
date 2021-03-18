@@ -1,0 +1,232 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+\usepackage{framed,color}
+\usepackage{fancybox}
+\usepackage{varwidth}
+\definecolor{shadecolor}{rgb}{1,0.8,0.3}
+\usepackage[framemethod=tikz]{mdframed}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\Rbb}{\ensuremath{\mathbb R} }
+\newcommand{\al}{\ensuremath{\alpha} }
+\newcommand{\si}{\ensuremath{\sigma} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\eq}[1]{Eq.~\ref{#1}}
+\newcommand{\showmarks}[1]{\rightline{\texttt{[#1 marks]}}} % \showmarks needs to follow a blank line!
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Project Part 2}
+\newcommand{\moddate}{Last modified 18 Mar.~2021}
+\begin{center}
+  {\Large \textbf{MATH327: Statistical Physics, Spring 2021}} \\[12 pt]
+  {\Large \textbf{Computer Project \ --- \ Part 2}} \\[24 pt]
+\end{center}
+
+\section*{Instructions}
+In this second part of the computer project you will numerically analyze \textit{anomalous diffusion} in a one-dimensional random walk, building on the numerical methods you developed for ordinary diffusion and checked against exact analytic predictions in the first part of the project.
+
+There are two exercises below, which include some background information on the Cauchy--Lorentz distribution and anomalous diffusion.
+While the exercises mention some syntax specific to Python, you may use a different programming option if you prefer.
+A \href{https://tinyurl.com/math327demo}{demo notebook} is provided to illustrate the Python programming tools needed for the project.
+Even running slowly in the cloud via \href{https://repl.it}{repl.it}, the computing for each exercise should complete in a couple of minutes or less.
+
+This part of the project is \textbf{due by 23:59 on Tuesday, 13 April}.
+Submit it by file upload \href{https://liverpool.instructure.com/courses/19478/assignments/89668}{on Canvas}.
+\textbf{Both} your answers to the questions below and the code that produces your results must be submitted.
+These can be uploaded as separate files or in a combined file, as you prefer.
+With the exception of Mathematica \texttt{.nb} files, it will be quicker for me to check code submitted in its native format (for example, a \texttt{.py} file for Python code or a \texttt{.m} file for MATLAB code).
+Anonymous marking is turned on, and I will continue to hold office hours during the term break, since the deadline is very soon after the break.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Exercise 4: Cauchy--Lorentz distribution}
+\subsection*{Background}
+The first part of this project involved the distribution $\frac{1}{2}\cos(z)$ for $-\frac{\pi}{2} \leq z < \frac{\pi}{2}$, for which we were able to apply the central limit theorem based on its mean $0$ and standard deviation $\sqrt{\frac{\pi^2}{4} - 2}$.
+We now consider a more interesting distribution,
+\begin{align}
+  \label{eq:cauchy}
+  p_C(x) & = \left(\frac{1}{b \pi}\right) \frac{1}{1 + (x / b)^2} &
+  x & \in \Rbb
+\end{align}
+which is known as the Cauchy (or Cauchy--Lorentz) distribution.
+Here $b$ is a constant parameter that controls the width of the peak in $p_C(x)$ around $x = 0$.
+The figure below illustrates this by plotting the Cauchy--Lorentz distribution for each of $b = 1 / 2$, $b = 1$ and $b = 2$, comparing them to the normal (or gaussian) distribution $\displaystyle \frac{1}{\sqrt{2\pi}} e^{-x^2 / 2}$.
+
+\begin{center}\includegraphics[width=0.75\textwidth]{figs/cauchy.pdf}\end{center}
+
+The figure shows how the peak of the Cauchy--Lorentz distribution around $x = 0$ becomes higher and narrower as $b$ decreases.
+Even when its peak is very narrow, as $|x|$ increases $p_C(x)$ again becomes larger than the gaussian distribution, simply because the latter decreases exponentially quickly while $p_C(x)$ decreases only $\sim 1 / x^2$.
+These ``fat tails'' at large $|x|$ make the Cauchy--Lorentz distribution both interesting and challenging to analyze.
+
+\subsection*{Task}
+Fix $b = 1 / 2$ in the Cauchy--Lorentz distribution, so that \eq{eq:cauchy} becomes
+\begin{align}
+  \label{eq:px}
+  p_C(x) & = \left(\frac{2}{\pi}\right) \frac{1}{1 + 4x^2} &
+  x & \in \Rbb.
+\end{align}
+What is the integral of this distribution over its full range,
+\begin{equation*}
+  I \equiv \int_{-\infty}^{\infty} p_C(x) \; dx = \int_{-\infty}^{\infty} \left(\frac{2}{\pi}\right) \frac{1}{1 + 4x^2} dx?
+\end{equation*}
+The usual starting point to analyze a probability distribution is finding its mean and standard deviation, by evaluating
+\begin{align*}
+  \vev{x} & = \int x \; p(x) \; dx &
+  \vev{x^2} & = \int x^2 \; p(x) \; dx.
+\end{align*}
+For the Cauchy--Lorentz distribution in \eq{eq:px}, consider instead the functions
+\begin{align*}
+  f(a) & = \int_{-a}^a x \; p_C(x) \; dx = \int_{-a}^a \left(\frac{2}{\pi}\right) \frac{x}{1 + 4x^2} dx \\
+  g(a) & = \int_{-a}^a x^2 \; p_C(x) \; dx = \int_{-a}^a \left(\frac{2}{\pi}\right) \frac{x^2}{1 + 4x^2} dx.
+\end{align*}
+How do $f(a)$ and $g(a)$ behave in the limit $a \to \infty$?
+
+\showmarks{6}
+
+\newpage % WARNING: FORMATTING BY HAND
+Turning to a numerical analysis of the Cauchy--Lorentz distribution, the first step is to determine the transform $F(u)$ that will map the uniformly distributed pseudo-random numbers $u$ to $x = F(u) \in \Rbb$.
+Recall that the uniform distribution implemented by the Python function \texttt{random.random()} is
+\begin{equation*}
+  p(u) = \left\{\begin{array}{l}1 \qquad \mbox{for } 0 \leq u < 1 \\
+                                0 \qquad \mbox{otherwise}\end{array}\right. .
+\end{equation*}
+What is the transform $F$ that provides $x = F(u)$ distributed according to $p_C(x)$ in \eq{eq:px}?
+
+Hint: Guided by the relation
+\begin{equation*}
+  p_C(x) = p(u) \frac{d}{dx} F^{-1}(x),
+\end{equation*}
+it will suffice to propose an ansatz for $F(u)$ based on integrating $p_C(x)$, and then follow the steps in Exercise~2 to confirm that this ansatz produces the desired distribution.
+
+\showmarks{6}
+
+Now initialize the random number generator with seed $42$ and generate $R = 1{,}000{,}000$ pseudo-random numbers $x_r = F(u_r)$ using the transform you found.
+Plot the histogram of these $R = 1{,}000{,}000$ $\left\{x_r\right\}$ and check whether it agrees with the Cauchy--Lorentz distribution shown above.
+
+Hint: You will need to set an appropriate range for the $x$-axis of this histogram.
+A range $-4 \leq x \leq 4$ with roughly $200$ bins should suffice to show all the interesting features.
+In Python this can be done by providing \\
+\centerline{\texttt{bins = np.arange(-4.0, 4.0, 8.0/201.0)}}
+to the Matplotlib \texttt{hist} function used previously.
+In this exercise it is optional to plot $p_C(x)$ itself on top of this histogram---if you choose to do so, you may need to adjust its normalization (and you should think about why this is needed).
+
+\showmarks{8}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\section*{Exercise 5: Anomalous diffusion}
+\subsection*{Background}
+The ``fat tails'' of the Cauchy--Lorentz distribution mean that $p_C(x)$ provides larger probabilities for \textit{rare events} (with large $|x|$) to occur, compared to the gaussian distribution.
+This feature of the distribution is illustrated in the figures below, each of which shows a thousand-step random walk in two dimensions---randomly selecting both the size of each step and the direction $0 \leq \phi < 2\pi$ in which to step.
+The walk shown on the left uses step sizes drawn from a gaussian distribution.
+Even in two dimensions, random walks of this sort obey the law of diffusion, with the standard deviation of their final position growing proportionally to the square root of the number of steps, $\ell_2(N) = \sqrt{\vev{\left[X(N)\right]^2} - \vev{X(N)}^2} \propto \sqrt{N}$.
+
+\noindent\includegraphics[width=0.45\textwidth]{figs/diffusion_ordinary.pdf}\hfill \includegraphics[width=0.45\textwidth]{figs/diffusion_anomalous.pdf}
+
+The walk shown on the right instead uses step sizes drawn from a Cauchy--Lorentz distribution.
+Note that the axes for this figure cover a much larger range!
+The fat tails of the Cauchy--Lorentz distribution result in occasional very large jumps, leading to random walks that do not obey the law of diffusion.
+
+Returning to one-dimensional random walks, some of the results from Exercise~4 motivate defining the \textbf{generalized diffusion length}
+\begin{equation}
+  \label{eq:diff_length}
+  \ell_{\theta}(N) = \vev{|X(N)|^{\theta}}^{1 / \theta},
+\end{equation}
+which depends on a positive real parameter $\theta$.
+Since $\theta$ is not necessarily an integer, the absolute value is needed to ensure $\ell_{\theta} \in \Rbb$, rather than becoming complex valued.
+If $\vev{X(N)} = 0$ and $\ell_{\theta}$ is well-defined with $\theta = 2$, then this generalized diffusion length could reproduce the standard deviation $\ell_2$ and exhibit the ordinary law of diffusion, $\ell_2 \propto N^{1 / 2}$.
+
+For the Cauchy--Lorentz distribution, $\ell_{\theta}$ is ill-defined for any $\theta \geq 1$.
+This parameter $\theta$ can take only values $0 < \theta < 1$.
+The resulting $\ell_{\theta}$ exhibits \textbf{anomalous diffusion},
+\begin{equation*}
+  \ell_{\theta}(N) \propto N^{\al},
+\end{equation*}
+where the exponent is either $\al > \frac{1}{2}$ (called \textit{super-diffusion}) or $0 < \al < \frac{1}{2}$ (called \textit{sub-diffusion}).
+This exercise investigates the exponent \al for the distribution $p_C(x)$ in \eq{eq:px}, and checks whether or not \al depends on $\theta$.
+
+\newpage % WARNING: FORMATTING BY HAND
+\subsection*{Task a: Fixed walk length}
+Initialize the random number generator with seed $42$.
+With fixed $N = 100$, generate $R$ $100$-step random walks,
+\begin{align*}
+  X_r(N) & = \sum_{i = 1}^N x_i &
+  r & = 1, 2, \cdots, R,
+\end{align*}
+for each of the six $R = 10$, $20$, $100$, $200$, $1000$ and $10{,}000$.
+Use the resulting $X_r$ to numerically estimate
+\begin{equation*}
+  \ell_{\theta}(100) \approx \left[\frac{1}{R} \sum_{r = 1}^R \left|X_r(100)\right|^{\theta}\right]^{1 / \theta}
+\end{equation*}
+for two values of $\theta = 0.3$ and $0.6$.
+In Python, NumPy provides both an \texttt{abs} function to take the absolute value, and a \texttt{power} function to compute non-integer powers.
+
+\showmarks{12}
+
+\subsection*{Task b: Anomalous diffusive exponent}
+Initialize the random number generator with seed $42$.
+Then fix $R = 10{,}000$ and estimate $\ell_{\theta}(N)$ for every $N = 1, 2, \cdots, 250$, again considering both $\theta = 0.3$ and $0.6$.
+(You can ignore potential correlations between $\ell_{\theta}(N)$ for different values of $N$.)
+Instead of reporting your numerical results, plot both $\ell_{\theta}(N)$ vs.\ $N$ in a single figure.
+
+\showmarks{8}
+
+Now fit your numerical results for each $\theta = 0.3$ and $0.6$ to the function
+\begin{equation*}
+  \ell_{\theta}(N) = D N^{\al}.
+\end{equation*}
+Report your results for $D$ and $\al$, and comment on their sensitivity to the value of $\theta$.
+(Optionally testing different values of $R$, $N$ or $\theta$ may help to distinguish between real sensitivity vs.\ statistical fluctuations, if you are unsure whether or not an observed effect is significant.)
+
+\showmarks{10}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\end{document}
+% ------------------------------------------------------------------
