@@ -1,0 +1,1995 @@
+1
+00:00:02,640 --> 00:00:08,040
+OK, I've got the recording underway and. It is
+
+2
+00:00:08,040 --> 00:00:12,390
+obviously a small crowd so far on this last
+
+3
+00:00:13,140 --> 00:00:16,230
+session before the term break in, that May.
+
+4
+00:00:17,140 --> 00:00:22,120
+Affects what we cover and how much detail we go
+
+5
+00:00:22,120 --> 00:00:26,530
+into have the usual first.
+
+6
+00:00:28,590 --> 00:00:31,170
+Question up and running for you to provide or
+
+7
+00:00:31,170 --> 00:00:35,610
+point out any. Point any places in the
+
+8
+00:00:35,610 --> 00:00:38,370
+asynchronous materials and he points that you want
+
+9
+00:00:38,370 --> 00:00:41,190
+to ask questions about, and this can also include
+
+10
+00:00:41,700 --> 00:00:45,390
+not just the notes on the grand canonical ensemble
+
+11
+00:00:45,390 --> 00:00:50,820
+for this week, but also the feedback and solutions
+
+12
+00:00:50,820 --> 00:00:53,730
+to the computer project. Now that you've had a few
+
+13
+00:00:53,730 --> 00:00:57,270
+days to to take a look at those. And speaking of
+
+14
+00:00:57,270 --> 00:01:01,320
+that computer project, the second part is now
+
+15
+00:01:02,610 --> 00:01:06,020
+online through the candidate site for the module.
+
+16
+00:01:06,690 --> 00:01:12,000
+It is due the second day after break, Tuesday the
+
+17
+00:01:12,000 --> 00:01:15,840
+13th of April. So while that's almost a month away,
+
+18
+00:01:16,290 --> 00:01:20,100
+three of those three and a half weeks are going to
+
+19
+00:01:20,100 --> 00:01:26,010
+be a term break. So you will benefit from getting
+
+20
+00:01:26,010 --> 00:01:28,500
+started on that part of the project over the break,
+
+21
+00:01:28,860 --> 00:01:34,470
+and I will keep. Office hours running during the
+
+22
+00:01:34,470 --> 00:01:38,970
+break at the usual zero lengths, including the one
+
+23
+00:01:38,970 --> 00:01:41,610
+that we're currently in. So those will be Mondays
+
+24
+00:01:41,610 --> 00:01:46,350
+at 10, Thursdays at two U.K. time. U.K. time is
+
+25
+00:01:46,350 --> 00:01:50,280
+also going to be shifting forward an hour in a
+
+26
+00:01:50,280 --> 00:01:55,470
+couple of weeks. So if you do get started with the
+
+27
+00:01:55,470 --> 00:01:58,170
+project over the break, have any questions about
+
+28
+00:01:58,170 --> 00:02:01,020
+the remainder of it, you will have those
+
+29
+00:02:01,560 --> 00:02:03,930
+opportunities to get in touch with me as well as
+
+30
+00:02:04,650 --> 00:02:10,010
+the asynchronous. Modes of communication through
+
+31
+00:02:10,370 --> 00:02:13,730
+the candidate site or through email.
+
+32
+00:02:17,740 --> 00:02:21,250
+And because this is the last session before the
+
+33
+00:02:21,250 --> 00:02:25,030
+break, I don't want to. Get started on anything
+
+34
+00:02:25,810 --> 00:02:29,080
+bigger involved, just make sure that we touch on
+
+35
+00:02:29,860 --> 00:02:30,760
+all of the.
+
+36
+00:02:33,600 --> 00:02:37,350
+Pieces that come in through the lecture notes for.
+
+37
+00:02:38,720 --> 00:02:44,470
+Week six on the grand canonical ensemble. And.
+
+38
+00:02:45,560 --> 00:02:50,090
+Given the small size, I think that whole
+
+39
+00:02:50,090 --> 00:02:53,180
+everywhere, maybe more trouble than it's worth
+
+40
+00:02:53,180 --> 00:02:57,590
+today, there are a couple of questions prepared,
+
+41
+00:02:58,010 --> 00:03:04,690
+but I think. It will be. Best for, you know, not
+
+42
+00:03:04,690 --> 00:03:07,360
+to run the polls and check in, but just sort of
+
+43
+00:03:07,360 --> 00:03:10,300
+discuss them in free form, you can feel free to
+
+44
+00:03:10,870 --> 00:03:14,620
+amuse yourself if you are able to type of the chat
+
+45
+00:03:14,620 --> 00:03:19,810
+window if you are not. And I'll just keep that one
+
+46
+00:03:20,140 --> 00:03:24,160
+open pole everywhere. Question for your requests
+
+47
+00:03:24,700 --> 00:03:26,230
+running throughout the.
+
+48
+00:03:28,260 --> 00:03:30,870
+The duration of this session, which may not even
+
+49
+00:03:30,870 --> 00:03:34,050
+last, the the full schedule time.
+
+50
+00:03:37,310 --> 00:03:39,770
+And I think we can get away with this in part
+
+51
+00:03:39,770 --> 00:03:44,060
+because this material from week six, setting up
+
+52
+00:03:44,120 --> 00:03:48,140
+the grand canonical ensemble is very much it's
+
+53
+00:03:48,140 --> 00:03:51,020
+very similar to a very much a parallel to the work
+
+54
+00:03:51,020 --> 00:03:54,410
+that we went through back in week three, moving
+
+55
+00:03:54,410 --> 00:03:57,980
+from the micro canonical ensemble to the canonical
+
+56
+00:03:57,980 --> 00:04:03,150
+ensemble. So just as a reminder, I imagine I said
+
+57
+00:04:03,150 --> 00:04:06,240
+this in the videos that go along with these notes,
+
+58
+00:04:06,240 --> 00:04:09,990
+but no harm in repeating myself that the
+
+59
+00:04:09,990 --> 00:04:12,810
+microeconomic ensemble was our starting point
+
+60
+00:04:12,810 --> 00:04:15,810
+because it very directly implements some
+
+61
+00:04:15,810 --> 00:04:18,390
+fundamental physical principles like conservation
+
+62
+00:04:18,390 --> 00:04:22,200
+of energy and conservation of article number. But
+
+63
+00:04:22,200 --> 00:04:26,100
+that means that it is inconvenient to work with in
+
+64
+00:04:26,100 --> 00:04:29,700
+experimental settings where energy is typically
+
+65
+00:04:29,700 --> 00:04:32,550
+flowing between the system being experimented on
+
+66
+00:04:32,880 --> 00:04:37,410
+and the individuals doing the experiments
+
+67
+00:04:37,410 --> 00:04:41,880
+themselves. And that motivated. Reformulating or
+
+68
+00:04:41,880 --> 00:04:45,180
+moving beyond the micro canonical formulation to a
+
+69
+00:04:45,180 --> 00:04:47,670
+different statistical ensemble, the canonical
+
+70
+00:04:47,670 --> 00:04:51,120
+ensemble where the particle number was still fixed
+
+71
+00:04:51,960 --> 00:04:53,970
+in the system, that that system was allowed to
+
+72
+00:04:53,970 --> 00:04:57,900
+exchange energy with its surroundings. And we. We.
+
+73
+00:05:00,150 --> 00:05:04,500
+Demanded that those surroundings were such that
+
+74
+00:05:05,460 --> 00:05:08,610
+the temperature of the system were kept fixed
+
+75
+00:05:08,940 --> 00:05:13,290
+whenever we apply to the canonical framework and
+
+76
+00:05:13,290 --> 00:05:16,050
+now in parallel to that, moving from a conserve
+
+77
+00:05:16,050 --> 00:05:20,100
+energy to a concert or to a fixed temperature, the
+
+78
+00:05:20,100 --> 00:05:22,380
+grand canonical ensemble removes that other
+
+79
+00:05:22,380 --> 00:05:26,400
+constraints conserve particle. No, and replaces
+
+80
+00:05:26,400 --> 00:05:32,010
+that with. Some other fixed quantity that is being
+
+81
+00:05:32,400 --> 00:05:34,020
+kept fixed by.
+
+82
+00:05:37,000 --> 00:05:40,240
+Connection with a large external reservoir where
+
+83
+00:05:40,720 --> 00:05:48,030
+now? If my screen wakes up. Now that external
+
+84
+00:05:48,040 --> 00:05:51,730
+reservoir exchanges both energy and particles with
+
+85
+00:05:51,730 --> 00:05:57,410
+the system. So going through the same.
+
+86
+00:05:58,780 --> 00:06:03,310
+Mathematical replica trick. Well, I should say we
+
+87
+00:06:03,310 --> 00:06:05,230
+define the chemical potential as the antidote to
+
+88
+00:06:05,240 --> 00:06:10,110
+the temperature that is being kept fixed and. With
+
+89
+00:06:10,110 --> 00:06:12,840
+that chemical potential new defined, we can go
+
+90
+00:06:12,840 --> 00:06:18,970
+through the same replica trick to put this. System
+
+91
+00:06:19,210 --> 00:06:20,110
+on a.
+
+92
+00:06:23,540 --> 00:06:26,780
+Solid mathematical foundation, and that involves.
+
+93
+00:06:28,310 --> 00:06:30,980
+Using our usual definition of thermodynamic
+
+94
+00:06:30,980 --> 00:06:34,370
+equilibrium as a state in which the entropy is
+
+95
+00:06:34,370 --> 00:06:35,270
+maximized.
+
+96
+00:06:37,490 --> 00:06:38,150
+To.
+
+97
+00:06:41,260 --> 00:06:44,020
+Determine the condition of thermodynamic
+
+98
+00:06:44,020 --> 00:06:47,320
+equilibrium subject now to three constraints, two
+
+99
+00:06:47,320 --> 00:06:51,220
+of which we saw before in week three, one of those
+
+100
+00:06:51,220 --> 00:06:53,710
+constraints is the usual one that probabilities
+
+101
+00:06:53,980 --> 00:06:58,010
+you have to add up to one. We demand that energy
+
+102
+00:06:58,010 --> 00:07:00,590
+is conserved in the overall universe that consists
+
+103
+00:07:00,590 --> 00:07:03,680
+of all of these replicas, and we now have to
+
+104
+00:07:03,680 --> 00:07:06,320
+demand also that the total number of particles in
+
+105
+00:07:06,320 --> 00:07:08,660
+the universe are similarly conserved.
+
+106
+00:07:11,800 --> 00:07:18,010
+So the. First question that was. Going to, he
+
+107
+00:07:18,010 --> 00:07:18,580
+asked.
+
+108
+00:07:22,670 --> 00:07:25,280
+In the sort of pull everywhere approach for this
+
+109
+00:07:25,280 --> 00:07:28,550
+week, there's going to be looking at this.
+
+110
+00:07:30,070 --> 00:07:33,520
+Constrained entropy maximization problem on page
+
+111
+00:07:33,520 --> 00:07:39,220
+86 and given the numbers, I think it's most
+
+112
+00:07:39,220 --> 00:07:42,040
+worthwhile just for me to talk that through
+
+113
+00:07:42,040 --> 00:07:45,100
+quickly and you can speak up if anything is
+
+114
+00:07:45,100 --> 00:07:48,370
+unclear or you can speak up if all of you already
+
+115
+00:07:48,370 --> 00:07:50,260
+have this worked out in front of you. And it would
+
+116
+00:07:50,260 --> 00:07:53,890
+be a waste of all our time to to consider it.
+
+117
+00:07:58,000 --> 00:08:00,310
+So feel free to interrupt, I'll just charge ahead
+
+118
+00:08:00,310 --> 00:08:04,930
+without waiting for any reactions, responses or
+
+119
+00:08:05,050 --> 00:08:10,870
+questions and just grind through the usual sort of
+
+120
+00:08:10,870 --> 00:08:13,510
+calculation that we have, which is taking a
+
+121
+00:08:13,510 --> 00:08:19,920
+derivative of this. Modified Essabar function,
+
+122
+00:08:19,920 --> 00:08:24,600
+which is both the usual entropy for this mini
+
+123
+00:08:24,600 --> 00:08:27,450
+replica system, along with the three constraints I
+
+124
+00:08:27,450 --> 00:08:32,460
+just summarized, where taking the derivative of
+
+125
+00:08:32,460 --> 00:08:35,640
+this, these sums over the occupation probabilities
+
+126
+00:08:35,640 --> 00:08:39,480
+peahi with respect to some piqué just picks out
+
+127
+00:08:39,680 --> 00:08:43,170
+Delta functions with Ion K and then.
+
+128
+00:08:45,940 --> 00:08:47,950
+Quickly gives us a.
+
+129
+00:08:55,030 --> 00:08:56,880
+Much simpler system.
+
+130
+00:08:59,170 --> 00:09:02,090
+A much simpler equation where.
+
+131
+00:09:09,200 --> 00:09:12,590
+The delts, the. You know, Delta function of I
+
+132
+00:09:12,590 --> 00:09:15,290
+think it picks up a lot of piqué, then we take the
+
+133
+00:09:15,290 --> 00:09:17,420
+derivative of the log, gives a one over P.
+
+134
+00:09:17,780 --> 00:09:22,880
+multiplied by IPE is one. Then there is just a
+
+135
+00:09:22,880 --> 00:09:25,670
+simple factor of Alpha with that Delta function,
+
+136
+00:09:25,670 --> 00:09:29,270
+that is some day over an hour. Time to speed up
+
+137
+00:09:30,320 --> 00:09:33,110
+with the energy coming from the Delta function.
+
+138
+00:09:33,500 --> 00:09:39,390
+And finally, this last. The fire. Gamma are the
+
+139
+00:09:39,390 --> 00:09:44,150
+particle number we are rearranging. Thing is to
+
+140
+00:09:44,150 --> 00:09:45,470
+isolate the.
+
+141
+00:09:47,850 --> 00:09:51,210
+Only place where the occupation probability now
+
+142
+00:09:51,210 --> 00:09:58,300
+shows up. We have. Four terms on the right hand
+
+143
+00:09:58,300 --> 00:09:58,890
+side.
+
+144
+00:10:01,140 --> 00:10:06,330
+And taking the exponential of both sides and
+
+145
+00:10:06,330 --> 00:10:09,210
+rearranging things slightly, we.
+
+146
+00:10:11,640 --> 00:10:12,690
+End up with.
+
+147
+00:10:18,070 --> 00:10:22,030
+A ratio of exponential. That's.
+
+148
+00:10:24,320 --> 00:10:27,350
+Puts things in the standard form for this
+
+149
+00:10:27,350 --> 00:10:30,020
+probability, one over now, a grand canonical
+
+150
+00:10:30,020 --> 00:10:33,800
+partition function and then a generalized
+
+151
+00:10:33,890 --> 00:10:38,320
+Boltzmann factor. And involves both the energy and
+
+152
+00:10:38,830 --> 00:10:45,320
+particle number of. The system and I realize now.
+
+153
+00:10:47,260 --> 00:10:52,960
+That I was going to actually skip ahead to look at
+
+154
+00:10:52,960 --> 00:10:59,250
+this entropy, now that's. We have. One of those.
+
+155
+00:11:00,560 --> 00:11:03,980
+Legrand's multipliers defined in terms of the
+
+156
+00:11:03,980 --> 00:11:06,680
+other two that created canonical partition
+
+157
+00:11:06,680 --> 00:11:13,640
+function. Is just the sum over microstates of that
+
+158
+00:11:13,640 --> 00:11:16,190
+exponential factor, the generalisable, some factor
+
+159
+00:11:16,700 --> 00:11:20,440
+into the minus beta at times energy plus Gamma
+
+160
+00:11:20,450 --> 00:11:25,800
+Times article number. And plugging that in to this
+
+161
+00:11:25,800 --> 00:11:29,250
+expression for the entropy on the bottom of page.
+
+162
+00:11:30,920 --> 00:11:32,030
+Six is.
+
+163
+00:11:36,430 --> 00:11:41,290
+Giving us. The following expression.
+
+164
+00:11:44,360 --> 00:11:48,560
+So I've kept one of these occupation probabilities
+
+165
+00:11:48,560 --> 00:11:50,810
+just hanging around with some.
+
+166
+00:11:53,210 --> 00:11:56,600
+Advance planning and plugging in the other
+
+167
+00:11:56,930 --> 00:11:59,660
+expression for the occupation probabilities one
+
+168
+00:11:59,660 --> 00:12:04,970
+over Z times, E to the minus beta energy plus
+
+169
+00:12:04,970 --> 00:12:09,530
+gamma particle. No, all we need to do is.
+
+170
+00:12:11,660 --> 00:12:15,020
+Distributes that's logarithm, the logarithm of a
+
+171
+00:12:15,020 --> 00:12:20,240
+product is the sum of the corresponding logarithms
+
+172
+00:12:20,240 --> 00:12:23,630
+of its terms. So that pulls out a.
+
+173
+00:12:26,840 --> 00:12:31,610
+Minus Log Z. And the minus signs cancels.
+
+174
+00:12:33,790 --> 00:12:40,390
+Star Log Z. Times that sum of probabilities. And
+
+175
+00:12:40,390 --> 00:12:43,210
+then the minus signs again, cancel from taking the
+
+176
+00:12:43,210 --> 00:12:46,670
+log of E to the minus beta energy. So it's beta
+
+177
+00:12:46,670 --> 00:12:47,170
+are.
+
+178
+00:12:50,840 --> 00:12:55,590
+And then. We have some of her I have those
+
+179
+00:12:55,590 --> 00:13:00,120
+probabilities with a microstates dependence factor
+
+180
+00:13:00,120 --> 00:13:03,550
+of the energy that we can't pull out of the sun.
+
+181
+00:13:03,630 --> 00:13:05,640
+And similarly for.
+
+182
+00:13:07,780 --> 00:13:12,580
+The last term now with a different sign and a sum
+
+183
+00:13:12,580 --> 00:13:17,120
+over the particle numbers rather than the micro
+
+184
+00:13:17,140 --> 00:13:19,960
+state entities, and you can recall the
+
+185
+00:13:19,960 --> 00:13:23,080
+probabilities over all microstates sum up to one
+
+186
+00:13:23,530 --> 00:13:28,330
+and the other. Some defined the usual expectation
+
+187
+00:13:28,330 --> 00:13:34,120
+values, so this all boils down to a beat. Times
+
+188
+00:13:34,120 --> 00:13:35,200
+are times.
+
+189
+00:13:38,240 --> 00:13:44,070
+The. Expectation value with this factor of, ah, we
+
+190
+00:13:44,070 --> 00:13:49,140
+can recognize I'm taking this ah. To the right
+
+191
+00:13:49,140 --> 00:13:54,690
+hand side and. Looking in occupation probability
+
+192
+00:13:54,690 --> 00:14:01,150
+in place of the olsun factor and. When partition
+
+193
+00:14:01,150 --> 00:14:08,240
+function. Oops. And slide back down and pick out.
+
+194
+00:14:10,320 --> 00:14:14,640
+That total energy was a factor of Beita in the
+
+195
+00:14:14,640 --> 00:14:17,670
+total particle number with the factor of Gamma.
+
+196
+00:14:22,520 --> 00:14:25,100
+And again, any questions, as we just talked
+
+197
+00:14:25,100 --> 00:14:28,990
+through some of these aspects of the derivation,
+
+198
+00:14:29,000 --> 00:14:32,990
+feel free to. Unu taught us to toss them in the
+
+199
+00:14:32,990 --> 00:14:35,870
+chat or toss them in everywhere, and I'll flip
+
+200
+00:14:35,870 --> 00:14:38,570
+back and forth between various screens to try to
+
+201
+00:14:38,570 --> 00:14:45,820
+keep an eye on things and. The key developments
+
+202
+00:14:45,820 --> 00:14:50,290
+with this replica trick, just as it was for the
+
+203
+00:14:50,290 --> 00:14:54,850
+canonical ensemble, was that we are able to
+
+204
+00:14:55,720 --> 00:14:58,060
+determine these Legrange multipliers purely in
+
+205
+00:14:58,060 --> 00:15:01,780
+terms of that temperature and chemical potential.
+
+206
+00:15:03,090 --> 00:15:07,640
+That are fixed for our small system with no or for
+
+207
+00:15:07,640 --> 00:15:10,470
+a grand canonical system with no reference to the
+
+208
+00:15:10,470 --> 00:15:13,620
+much larger external particle reservoir that it is
+
+209
+00:15:13,620 --> 00:15:14,610
+in contact with.
+
+210
+00:15:16,680 --> 00:15:21,100
+In this lets us express every aspect of our great
+
+211
+00:15:21,120 --> 00:15:25,410
+canonical system simply in terms of its
+
+212
+00:15:25,410 --> 00:15:28,980
+temperature and chemical potential. Which brings
+
+213
+00:15:28,980 --> 00:15:32,250
+us. To during this
+
+214
+00:15:34,260 --> 00:15:39,840
+similar sort of calculation. Now, toward the end
+
+215
+00:15:40,290 --> 00:15:46,200
+of the notes for the week on page 90, we played
+
+216
+00:15:46,200 --> 00:15:48,930
+this where we do the similar.
+
+217
+00:15:51,780 --> 00:15:53,190
+Calculation of.
+
+218
+00:15:56,030 --> 00:15:58,160
+Plugging in the.
+
+219
+00:16:02,330 --> 00:16:06,050
+Micro state probability is now high in terms of.
+
+220
+00:16:07,300 --> 00:16:10,210
+The temperature and chemical potential rather than
+
+221
+00:16:10,210 --> 00:16:16,770
+the mid-range multiplier gamma, it's the sun there
+
+222
+00:16:16,880 --> 00:16:20,050
+is for a single micro state, I you have the
+
+223
+00:16:20,050 --> 00:16:24,220
+exponential of the inverse temperature times, the
+
+224
+00:16:24,220 --> 00:16:28,380
+energy. Plus, the chemical potential over that
+
+225
+00:16:28,380 --> 00:16:32,310
+temperature in the particle number so that
+
+226
+00:16:32,310 --> 00:16:37,000
+expanding the logarithm of that probability. It
+
+227
+00:16:37,040 --> 00:16:39,800
+was just that same grand chemical partition
+
+228
+00:16:39,800 --> 00:16:44,580
+function. Better times, the energy and of you.
+
+229
+00:16:46,960 --> 00:16:50,140
+Times the particle number, which, again, something
+
+230
+00:16:50,140 --> 00:16:52,750
+over all the microstates with the corresponding
+
+231
+00:16:52,750 --> 00:16:58,140
+probabilities defines the expectation. Values.
+
+232
+00:17:02,100 --> 00:17:06,420
+Better times the average expectation value for the
+
+233
+00:17:06,420 --> 00:17:12,150
+internal energy and. Beat a few times.
+
+234
+00:17:14,250 --> 00:17:16,350
+The expectation value for the particle number,
+
+235
+00:17:16,710 --> 00:17:20,040
+which you can recognize, is.
+
+236
+00:17:23,500 --> 00:17:27,400
+The accommodation that. Had just been computed,
+
+237
+00:17:27,430 --> 00:17:30,250
+the derivative of the grand potential, the
+
+238
+00:17:30,250 --> 00:17:33,400
+analogue of the Helmholtz, free energy with
+
+239
+00:17:33,400 --> 00:17:35,170
+respect to the temperature.
+
+240
+00:17:45,550 --> 00:17:49,300
+And know that a few more people have joined in,
+
+241
+00:17:49,300 --> 00:17:53,640
+I'm wondering whether or not. It's worth.
+
+242
+00:17:56,390 --> 00:17:57,500
+Trying to do a whole.
+
+243
+00:18:03,500 --> 00:18:06,320
+Maybe we'll try it. See how it goes just to check
+
+244
+00:18:06,320 --> 00:18:10,400
+in. So that was the equilibrium entropy on page
+
+245
+00:18:10,400 --> 00:18:13,450
+eighty six we just discussed. The.
+
+246
+00:18:15,690 --> 00:18:18,990
+Corresponding derivative of that creative
+
+247
+00:18:18,990 --> 00:18:24,210
+potential with respect to. The chemical potential
+
+248
+00:18:24,210 --> 00:18:27,780
+now, instead of the temperature maybe worth taking
+
+249
+00:18:27,780 --> 00:18:31,030
+a look at, and that is on the previous page here.
+
+250
+00:18:31,050 --> 00:18:31,830
+Eighty nine.
+
+251
+00:18:34,360 --> 00:18:39,490
+Where? This. Grant medical potential itself, the
+
+252
+00:18:39,490 --> 00:18:42,070
+definition does not quite fit on the same screen.
+
+253
+00:18:42,950 --> 00:18:48,970
+And while that poll is up and running for. You to
+
+254
+00:18:48,970 --> 00:18:49,840
+interact with,
+
+255
+00:18:52,330 --> 00:19:00,670
+I can quickly copy over the. Definition that we
+
+256
+00:19:00,670 --> 00:19:06,960
+have this fight is. Negative temperature at times.
+
+257
+00:19:07,710 --> 00:19:11,220
+The longer the grand economical partition function.
+
+258
+00:19:15,180 --> 00:19:19,800
+We're. The legal petition function is something
+
+259
+00:19:19,800 --> 00:19:21,270
+over all the microstates.
+
+260
+00:19:23,890 --> 00:19:24,760
+With this.
+
+261
+00:19:27,220 --> 00:19:30,460
+Combined factor of energy and particle number,
+
+262
+00:19:31,060 --> 00:19:34,990
+chemical potential, having dimensions of energy to
+
+263
+00:19:35,800 --> 00:19:39,950
+get everything consistent in. Exponential function.
+
+264
+00:20:30,090 --> 00:20:33,900
+Responses are coming in and there's already a good
+
+265
+00:20:33,900 --> 00:20:39,340
+fractioned response who have responded so. I won't
+
+266
+00:20:39,410 --> 00:20:44,540
+wait another minute or less before. Moving on.
+
+267
+00:21:31,180 --> 00:21:34,930
+And taking a look at your responses, if the.
+
+268
+00:21:35,970 --> 00:21:39,420
+Screen wakes up here, they are evenly split.
+
+269
+00:21:40,640 --> 00:21:45,560
+Between options B and D, so going through this
+
+270
+00:21:45,560 --> 00:21:48,290
+myself, I would plug in.
+
+271
+00:21:51,170 --> 00:21:55,280
+Pull out that overall factor of the temperature,
+
+272
+00:21:55,280 --> 00:21:56,180
+which is not.
+
+273
+00:21:58,390 --> 00:22:03,860
+Affected by the. Derivative with the with respect
+
+274
+00:22:03,860 --> 00:22:06,110
+to the chemical potential, and then.
+
+275
+00:22:10,040 --> 00:22:14,340
+The derivative of the logarithm, you remember, and
+
+276
+00:22:14,360 --> 00:22:17,510
+let me convert this into a bit of the inverse
+
+277
+00:22:17,510 --> 00:22:22,430
+temperature that I. Used in the. Statement of the
+
+278
+00:22:22,430 --> 00:22:25,430
+problem to set us off here, the derivative of a
+
+279
+00:22:25,430 --> 00:22:34,400
+log is one over Z times. You acting on Z, which is.
+
+280
+00:22:35,320 --> 00:22:43,860
+The sun. Over this. Generalised exponential factor.
+
+281
+00:22:45,150 --> 00:22:49,860
+Where the chemical potential Mbewe appears in only
+
+282
+00:22:49,860 --> 00:22:50,700
+one place.
+
+283
+00:22:52,790 --> 00:22:54,530
+I'll just circle here in the same colors,
+
+284
+00:22:54,530 --> 00:22:57,530
+hopefully leaving things still legible, so taking
+
+285
+00:22:57,530 --> 00:23:01,190
+the derivative of the exponential brings down a
+
+286
+00:23:01,190 --> 00:23:06,050
+factor of plus Beta and I. So we have a beta over
+
+287
+00:23:06,050 --> 00:23:13,960
+beta, whatever zg then a sum over I of that in I.
+
+288
+00:23:15,160 --> 00:23:18,720
+In the exponential. Persists.
+
+289
+00:23:22,880 --> 00:23:26,420
+And we can recognize the one over Z in the.
+
+290
+00:23:27,430 --> 00:23:30,970
+Exponentially weighted probabilities as
+
+291
+00:23:31,120 --> 00:23:33,790
+probabilities that are defining the.
+
+292
+00:23:40,510 --> 00:23:45,200
+The defining the expectation value over in and I
+
+293
+00:23:45,200 --> 00:23:48,760
+paused because I noticed that I forgot to. Retain
+
+294
+00:23:48,760 --> 00:23:51,910
+the negative sign from the previous line, so we
+
+295
+00:23:51,910 --> 00:23:56,050
+have a negative one times that expectation value
+
+296
+00:23:56,500 --> 00:24:02,670
+of an. Which was an option D in the poll.
+
+297
+00:24:07,000 --> 00:24:07,660
+And.
+
+298
+00:24:10,340 --> 00:24:11,150
+Because.
+
+299
+00:24:14,740 --> 00:24:17,380
+This development of the the grand canonical
+
+300
+00:24:17,380 --> 00:24:18,460
+ensemble is.
+
+301
+00:24:20,720 --> 00:24:22,820
+So closely aligned with the.
+
+302
+00:24:25,540 --> 00:24:27,790
+Earlier development of the canonical ensemble we
+
+303
+00:24:27,790 --> 00:24:32,500
+end up with. Final results that look very similar,
+
+304
+00:24:32,530 --> 00:24:37,940
+the entropy in terms of the derivative of. This.
+
+305
+00:24:40,830 --> 00:24:43,740
+Minus two times the lord of the partition function
+
+306
+00:24:44,310 --> 00:24:50,440
+and similarly the. Internal energy is. Related to
+
+307
+00:24:50,440 --> 00:24:53,650
+the derivative of just the log itself, canceling
+
+308
+00:24:53,650 --> 00:24:58,610
+out that overall factor of the temperature. And.
+
+309
+00:25:06,770 --> 00:25:09,980
+In addition to letting us generalize that first
+
+310
+00:25:09,980 --> 00:25:14,120
+law of thermodynamics to a generalized
+
+311
+00:25:14,390 --> 00:25:19,190
+thermodynamic relation. The.
+
+312
+00:25:22,490 --> 00:25:26,000
+The one last thing and I want to to bring up today
+
+313
+00:25:26,000 --> 00:25:30,710
+before. This module goes on its break
+
+314
+00:25:33,230 --> 00:25:37,690
+would be to. Actually dig a little bit deeper into
+
+315
+00:25:38,350 --> 00:25:44,440
+the connection between. The grand canonical
+
+316
+00:25:44,440 --> 00:25:48,340
+ensemble and the canonical ensemble in the form of
+
+317
+00:25:48,910 --> 00:25:54,300
+the corresponding partition functions, and I made
+
+318
+00:25:54,300 --> 00:25:58,360
+it a bit of blank space for this, which we have
+
+319
+00:25:58,360 --> 00:25:58,810
+here.
+
+320
+00:26:07,340 --> 00:26:08,030
+What I.
+
+321
+00:26:11,040 --> 00:26:14,800
+Points out zooming in. Slightly.
+
+322
+00:26:17,550 --> 00:26:24,150
+Is if I write grand canonical partition function
+
+323
+00:26:24,300 --> 00:26:27,270
+and noting that it is this function of temperature
+
+324
+00:26:27,270 --> 00:26:30,990
+and chemical potential that we saw was the sum of
+
+325
+00:26:31,050 --> 00:26:35,780
+all the microstates of each of the minus beta. I
+
+326
+00:26:35,790 --> 00:26:40,510
+was the energy of the microstates. Plus, beta, the
+
+327
+00:26:40,510 --> 00:26:43,870
+inverse temperature times, the chemical potential
+
+328
+00:26:43,870 --> 00:26:46,810
+times, the number of particles in that microstates
+
+329
+00:26:46,810 --> 00:26:51,040
+and just using the properties of an exponential
+
+330
+00:26:51,040 --> 00:26:57,940
+function, you can break. That's. Single factor
+
+331
+00:26:57,940 --> 00:27:02,530
+into two factors and even two factors, one of
+
+332
+00:27:02,530 --> 00:27:05,380
+which is raised to a power exponentially raised to
+
+333
+00:27:05,380 --> 00:27:08,560
+a power, just multiply the existing argument of
+
+334
+00:27:08,920 --> 00:27:12,790
+the exponential and then that of the minus Beta
+
+335
+00:27:12,810 --> 00:27:17,040
+Etai. That is familiar from the canonical example
+
+336
+00:27:17,040 --> 00:27:21,990
+is still coming along for the ride. And if we do
+
+337
+00:27:21,990 --> 00:27:26,640
+the usual trick of supposing we have a finite
+
+338
+00:27:26,640 --> 00:27:31,890
+number of microstates in freely rearranging the
+
+339
+00:27:31,890 --> 00:27:35,370
+terms of the sun, we can break up the overall sum
+
+340
+00:27:35,670 --> 00:27:41,430
+into all of the microstates into actually a sum of
+
+341
+00:27:41,430 --> 00:27:47,100
+sums that depend on the particle number in the
+
+342
+00:27:47,100 --> 00:27:49,890
+corresponding microstates. So picking out all of
+
+343
+00:27:49,890 --> 00:27:53,070
+the microstates where there are zero particles.
+
+344
+00:27:55,100 --> 00:27:57,560
+We were just have, you know, an exponential factor
+
+345
+00:27:57,560 --> 00:28:00,890
+raised to the power of zero is unity, so only the
+
+346
+00:28:01,340 --> 00:28:03,980
+E to the minus in temperature times, energy,
+
+347
+00:28:04,490 --> 00:28:07,820
+things around and doing the same when there is a
+
+348
+00:28:07,820 --> 00:28:14,330
+single particle. The single factor of the chemical
+
+349
+00:28:14,330 --> 00:28:17,990
+potential over temperature is the same.
+
+350
+00:28:20,520 --> 00:28:23,520
+Eat of minus energy over temperature.
+
+351
+00:28:26,270 --> 00:28:26,960
+And then.
+
+352
+00:28:29,440 --> 00:28:32,380
+We have two particles that factor gets squared.
+
+353
+00:28:34,030 --> 00:28:41,020
+The Boltzmann factor is the same as always and so
+
+354
+00:28:41,020 --> 00:28:44,560
+on off to however many particles we may have.
+
+355
+00:28:46,980 --> 00:28:50,010
+And we can do two things with the equation in this
+
+356
+00:28:50,010 --> 00:28:54,660
+form, the first one is can define a shorthand.
+
+357
+00:28:56,250 --> 00:28:58,980
+This letter, Zeda, is.
+
+358
+00:29:02,130 --> 00:29:05,280
+This combination e to the chemical potential over
+
+359
+00:29:05,280 --> 00:29:05,970
+temperature.
+
+360
+00:29:08,210 --> 00:29:14,690
+Which is known historically as the three Cassity.
+
+361
+00:29:16,120 --> 00:29:20,650
+This parameter Zeta, and we can recognize that.
+
+362
+00:29:23,420 --> 00:29:26,960
+Each of these songs that we've written here.
+
+363
+00:29:30,370 --> 00:29:34,630
+The specter of the sagacity is just a concept that
+
+364
+00:29:34,630 --> 00:29:36,460
+does not depend on the micro state and can be
+
+365
+00:29:36,460 --> 00:29:39,400
+pulled out in front of the sun. And what is left
+
+366
+00:29:39,400 --> 00:29:43,090
+in the sun over microstates is then just the.
+
+367
+00:29:44,430 --> 00:29:50,100
+Canonical partition function for a fixed number of
+
+368
+00:29:50,550 --> 00:29:55,150
+particles where I will write. That canonical
+
+369
+00:29:55,150 --> 00:29:58,690
+partition function as a Z with no subscripts, with
+
+370
+00:29:58,690 --> 00:30:01,900
+arguments of temperature and particle, no a
+
+371
+00:30:01,900 --> 00:30:02,770
+capital N..
+
+372
+00:30:05,020 --> 00:30:08,290
+Maybe I'll even make that a lower case and so it's
+
+373
+00:30:08,290 --> 00:30:11,140
+not confused with any of the particles in each
+
+374
+00:30:11,140 --> 00:30:14,080
+microstates, so this sum here is over all of the
+
+375
+00:30:14,080 --> 00:30:18,460
+microstates with zero particles. So that is just
+
+376
+00:30:18,460 --> 00:30:21,280
+the canonical partition function at the same
+
+377
+00:30:21,280 --> 00:30:25,420
+temperature. We had to begin with with zero
+
+378
+00:30:25,420 --> 00:30:29,830
+particles, and then we can add a factor of the
+
+379
+00:30:29,830 --> 00:30:34,040
+sagacity by. Least favorite Greek letter to write.
+
+380
+00:30:36,430 --> 00:30:39,190
+The canonical partition function with a single
+
+381
+00:30:39,190 --> 00:30:42,870
+particle. Plus, the gas, the squared.
+
+382
+00:30:46,010 --> 00:30:50,360
+The two particle canonical partition function and
+
+383
+00:30:50,360 --> 00:30:51,950
+so on and in general.
+
+384
+00:30:55,920 --> 00:31:00,150
+Writing this as a sum over the total number of
+
+385
+00:31:00,150 --> 00:31:05,660
+particles in canonical systems. Starting from zero,
+
+386
+00:31:06,050 --> 00:31:08,880
+and we can take the limit now off to infinity that
+
+387
+00:31:08,900 --> 00:31:12,590
+we've rearranged things healthily with a finite
+
+388
+00:31:12,590 --> 00:31:16,130
+number of microstates, if we Kassidy to the power
+
+389
+00:31:16,130 --> 00:31:18,650
+of the number of particles and the economical
+
+390
+00:31:18,650 --> 00:31:21,680
+competition function at our fixed temperature and
+
+391
+00:31:21,980 --> 00:31:25,190
+fixed particle number rather than fixed chemical
+
+392
+00:31:25,190 --> 00:31:25,820
+potential.
+
+393
+00:31:27,890 --> 00:31:33,940
+So this is a direct relation between. The grand
+
+394
+00:31:33,940 --> 00:31:37,570
+canonical partition function as an infinite sum
+
+395
+00:31:37,570 --> 00:31:41,380
+over canonical partition functions for all
+
+396
+00:31:41,380 --> 00:31:45,910
+possible numbers of particles showing the
+
+397
+00:31:46,360 --> 00:31:49,900
+connection between the canonical and grand
+
+398
+00:31:49,900 --> 00:31:57,350
+canonical formulation in. This is known as the
+
+399
+00:31:57,350 --> 00:32:00,200
+focus of the expansion, you may see it
+
+400
+00:32:02,420 --> 00:32:04,370
+referred to in those terms in.
+
+401
+00:32:07,160 --> 00:32:10,340
+In the resources, in Wikipedia, possibly in a in
+
+402
+00:32:10,340 --> 00:32:13,550
+the next homework assignment, depending on whether
+
+403
+00:32:13,550 --> 00:32:16,220
+this seems interesting enough to to dig into.
+
+404
+00:32:18,240 --> 00:32:22,450
+And really, just to. Wrap up by.
+
+405
+00:32:25,880 --> 00:32:29,390
+Demonstrating why this sort of perspective can be
+
+406
+00:32:29,390 --> 00:32:36,500
+useful if we see those are the six notes we have
+
+407
+00:32:36,500 --> 00:32:42,430
+here, if we hop back to. The lecture notes for
+
+408
+00:32:42,440 --> 00:32:45,920
+week for. When we started off.
+
+409
+00:32:48,830 --> 00:32:52,190
+Investigating the canonical partition function for
+
+410
+00:32:52,190 --> 00:32:56,690
+an ideal gas, we began by computing.
+
+411
+00:33:00,070 --> 00:33:03,760
+The partition function just for a single particle
+
+412
+00:33:04,510 --> 00:33:09,280
+of a gas in some volume v., which fixed the
+
+413
+00:33:09,280 --> 00:33:12,760
+possible moment. It could have and gave us the
+
+414
+00:33:14,920 --> 00:33:18,430
+form of the mini particle or the end particle
+
+415
+00:33:18,430 --> 00:33:23,050
+partition function in terms of the single particle
+
+416
+00:33:23,050 --> 00:33:27,340
+partition function that someone to the power in.
+
+417
+00:33:28,490 --> 00:33:32,270
+Where in terms of this. Thermal generally
+
+418
+00:33:32,270 --> 00:33:34,880
+wavelength, that single particle partition
+
+419
+00:33:35,120 --> 00:33:39,650
+function was just that total volume over.
+
+420
+00:33:43,210 --> 00:33:46,590
+Thirroul. Wavelength cubed.
+
+421
+00:33:48,790 --> 00:33:52,930
+Something. Even more interesting happens if we
+
+422
+00:33:53,440 --> 00:33:56,080
+consider the case of indistinguishable particles
+
+423
+00:33:56,560 --> 00:33:57,130
+where.
+
+424
+00:33:59,320 --> 00:34:02,720
+We saw that the. Distinguishable and
+
+425
+00:34:02,720 --> 00:34:04,970
+indistinguishable partition functions were just
+
+426
+00:34:04,970 --> 00:34:08,060
+related by this accounting factor, one over and
+
+427
+00:34:08,060 --> 00:34:10,640
+factorial, so long as we can assume that all of
+
+428
+00:34:10,640 --> 00:34:15,320
+these in particles have different energies where
+
+429
+00:34:15,920 --> 00:34:19,980
+that ratio of volume to. Definitely, wavelength
+
+430
+00:34:19,980 --> 00:34:23,310
+cubed is the single particle partition function.
+
+431
+00:34:25,170 --> 00:34:28,860
+And if we hop back now to the Grand Canal context
+
+432
+00:34:28,860 --> 00:34:32,160
+and we want to consider an ideal gas where the
+
+433
+00:34:32,160 --> 00:34:34,890
+particle number can change, we just have an open
+
+434
+00:34:34,890 --> 00:34:38,700
+container of gas where the gas particles are able
+
+435
+00:34:38,700 --> 00:34:42,930
+to wander in and out of the the topic for the open
+
+436
+00:34:42,930 --> 00:34:48,920
+sides of this unsealed container at will. Then.
+
+437
+00:34:51,050 --> 00:34:57,290
+It's looking in. That indistinguishable partition
+
+438
+00:34:57,290 --> 00:35:02,260
+function in terms of the single particle partition
+
+439
+00:35:02,270 --> 00:35:03,440
+functions and one.
+
+440
+00:35:05,440 --> 00:35:10,960
+You can immediately. Right down the grand little
+
+441
+00:35:10,960 --> 00:35:16,590
+partition function in terms of. It's the bottom of
+
+442
+00:35:16,590 --> 00:35:20,280
+the page in terms of the temperature and chemical
+
+443
+00:35:20,280 --> 00:35:24,970
+potential or. You can change variables to use
+
+444
+00:35:25,420 --> 00:35:29,410
+sagacity in place of that chemical potential, just
+
+445
+00:35:29,440 --> 00:35:34,390
+as some. Over all possible particle numbers.
+
+446
+00:35:36,440 --> 00:35:40,200
+Of the ferocity to the power and whatever and
+
+447
+00:35:40,220 --> 00:35:44,450
+Vectorial and said one to the power and or
+
+448
+00:35:44,480 --> 00:35:49,210
+rearranging things. Slightly. Whatever in
+
+449
+00:35:49,230 --> 00:35:53,670
+Vectorial Times, sagacity, time, single particle
+
+450
+00:35:53,850 --> 00:35:58,560
+partition function to the power end, which is the
+
+451
+00:35:58,560 --> 00:36:03,840
+serious expansion for the exponential function put
+
+452
+00:36:03,840 --> 00:36:04,680
+back in now.
+
+453
+00:36:07,810 --> 00:36:10,900
+The capacity in terms of the chemical potential
+
+454
+00:36:10,900 --> 00:36:14,410
+and temperature, so we get a very compact
+
+455
+00:36:14,410 --> 00:36:18,770
+expression for. The grand canonical position
+
+456
+00:36:18,770 --> 00:36:22,040
+function of a night of not an ideal gas is
+
+457
+00:36:22,040 --> 00:36:26,120
+indistinguishable particles should make a note of
+
+458
+00:36:26,120 --> 00:36:26,450
+that.
+
+459
+00:36:28,760 --> 00:36:32,870
+In terms of this single particle partition
+
+460
+00:36:32,870 --> 00:36:39,940
+function that we. Saw before was just the ratio of
+
+461
+00:36:39,940 --> 00:36:44,050
+the volume to the wavelength cubed. I can plug
+
+462
+00:36:44,050 --> 00:36:45,580
+that in here and now.
+
+463
+00:36:49,010 --> 00:36:51,340
+And that comes immediately from this connection
+
+464
+00:36:51,580 --> 00:36:56,740
+between canonical and grand canonical formulations
+
+465
+00:36:56,740 --> 00:37:00,860
+through the focus, the expansion and. This.
+
+466
+00:37:03,200 --> 00:37:07,670
+Exponential of an exponential is a fun feature
+
+467
+00:37:07,670 --> 00:37:10,460
+that often pops up in in the great economical
+
+468
+00:37:10,790 --> 00:37:15,380
+partition function, just indicating the sort of
+
+469
+00:37:15,380 --> 00:37:22,000
+scale of multiplicities or. Or systems that we are
+
+470
+00:37:22,000 --> 00:37:22,930
+working with here.
+
+471
+00:37:25,160 --> 00:37:28,790
+When not only can the number of particles often be.
+
+472
+00:37:30,930 --> 00:37:35,190
+Enormously large, like a factor of. And the power
+
+473
+00:37:35,200 --> 00:37:38,740
+twenty three, but were then taking exponential of
+
+474
+00:37:38,740 --> 00:37:42,640
+those sorts of power, 23 factors with exponential
+
+475
+00:37:42,640 --> 00:37:45,460
+functions inside the arguments of other
+
+476
+00:37:45,460 --> 00:37:48,730
+exponential functions, things get very large very
+
+477
+00:37:48,730 --> 00:37:54,140
+quickly in statistical physics. And that is. But
+
+478
+00:37:54,150 --> 00:37:55,740
+we will see in more detail with.
+
+479
+00:38:00,570 --> 00:38:03,390
+New applications of the grand canonical ensemble
+
+480
+00:38:03,540 --> 00:38:07,230
+after the term brake applied to quantum statistics.
+
+481
+00:38:08,950 --> 00:38:14,230
+We'll need to spend a little time introducing. The
+
+482
+00:38:14,230 --> 00:38:17,650
+new wrinkle of quantum statistics, which shows up
+
+483
+00:38:17,650 --> 00:38:22,130
+in the assumption I mentioned. Back in week four,
+
+484
+00:38:22,130 --> 00:38:24,820
+where we assume that all the particles occupied
+
+485
+00:38:24,830 --> 00:38:28,160
+different energy levels, if we discard that
+
+486
+00:38:28,160 --> 00:38:30,440
+assumption, things will turn out a bit differently.
+
+487
+00:38:31,790 --> 00:38:35,420
+And a bit more interesting ways that allow us to
+
+488
+00:38:35,420 --> 00:38:38,630
+connect with experimental observations, but this
+
+489
+00:38:38,630 --> 00:38:45,560
+is. All that I think there was to go through with
+
+490
+00:38:45,560 --> 00:38:48,710
+the asynchronous materials we have up to the break.
+
+491
+00:38:49,690 --> 00:38:52,720
+I will stop there, invite you again to ask
+
+492
+00:38:52,720 --> 00:38:57,370
+questions, and I'll be back in this room in about
+
+493
+00:38:57,370 --> 00:39:02,050
+15 minutes for office, hours after I've shut down,
+
+494
+00:39:02,050 --> 00:39:05,470
+Zuman extracted this recording. So any questions
+
+495
+00:39:05,470 --> 00:39:10,150
+about anything we have seen or done in the past
+
+496
+00:39:10,150 --> 00:39:10,810
+six weeks?
+
+497
+00:39:15,700 --> 00:39:21,220
+And if not, you can feel free to. Head off and
+
+498
+00:39:22,570 --> 00:39:24,850
+start enjoying your break, at least from this
+
+499
+00:39:24,850 --> 00:39:25,360
+launch of.
