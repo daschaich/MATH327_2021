@@ -1,11 +1,165 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 7}
-\renewcommand{\moddate}{Last modified 25 Jan.~2021}
+\renewcommand{\moddate}{Last modified 9 Apr.~2021}
 \setcounter{section}{7}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 7: Quantum statistics}
 \section*{Week 7: Quantum statistics}
+\subsection{Quantized energy levels and their micro-states}
+This week we begin applying the grand-canonical ensemble to investigate quantum statistical systems.
+The first step is to introduce quantum statistics itself, building on the initial glimpse that we got in \secref{sec:regulate}.
+It is worth reiterating that no prior knowledge of quantum physics is assumed, nor will this module attempt to teach quantum mechanics.
+We will simply consider quantum behaviour as an ansatz (that turns out to be realized in nature), and analyze the resulting systems by making use of the statistical physics tools we have developed.
 
+Looking back to our derivation of the canonical partition function for a classical (that is, non-quantum) ideal gas in \secref{sec:regulate}, we can recall that we engaged in slightly circular argumentation.
+First, because the partition function is defined as a sum over micro-states $\om_i$,
+\begin{equation*}
+  Z = \sum_i e^{-E(\vec{p}_i) / T},
+\end{equation*}
+we had to conjecture that the gas particles' momenta $\vec{p}_i$ are \textit{quantized} and can take only particular discrete values, rather than varying continuously.
+These quantized momenta produce a countable number of discrete \textit{energy levels}, leading to a countable number of micro-states and hence a well-defined partition function that takes the form of a sum over all possible discrete momenta for each particle.
+Second, we then assumed that the energy levels are spaced very close to each other, allowing us to approximate that sum as a multi-dimensional gaussian integral.
+That is, we went right back to working with continuously varying momenta, despite the formal need to regulate the system by quantization.
+
+For the next few weeks, we will work in the quantum regime where all energy levels of a system remain discrete. % TODO: Could talk about temperature setting an energy scale, but that might be a distraction here and can be pointed out later on...
+In addition, a more subtle change of approach is required by the fundamental indistinguishability of particles governed by quantum mechanics.
+This quantum indistinguishability is a fact about nature that we will take as given.
+
+To appreciate the consequences of quantum indistinguishability, let's first apply our usual (classical) approach to compute the grand-canonical partition function for a system with discrete energy levels $E_{\ell}$ for $\ell = 0$, $1$, $\cdots$, $L$.\footnote{The countable energy levels mean the system remains well defined even for $L \to \infty$.}
+%Without loss of generality, we can take $E_{\ell} \geq 0$
+Despite the discrete energy levels, this calculation will produce a non-quantum result known as \textbf{Maxwell--Boltzmann} (MB) statistics (named after \href{https://en.wikipedia.org/wiki/James_Clerk_Maxwell}{James Clerk Maxwell} and Ludwig Boltzmann).
+We will be able to see when this result is a good approximation and when it breaks down.
+
+Starting from the general expression for the grand-canonical partition function, \eq{eq:grand_part_func},
+\begin{equation*}
+  Z_g(\be, \mu) = \sum_i e^{-\be (E_i - \mu N_i)},
+\end{equation*}
+we just need to define the micro-states $\om_i$ with energy $E_i$ and particle number $N_i$.
+In the classical Maxwell--Boltzmann approach, we first sum over all possible particle numbers,
+\begin{equation*}
+  Z_g^{(MB)}(\be, \mu) = \sum_{i, N_i = 0} e^{-\be E_i} + \sum_{j, N_j = 1} e^{-\be (E_j - \mu)} + \sum_{k, N_k = 2} e^{-\be (E_k - 2\mu)} + \cdots,
+\end{equation*}
+where the micro-states labelled $\left\{\om_i, \om_j, \om_k, \cdots\right\}$ are those that have $N = 0$, $1$, $2$, $\cdots$ particles, respectively.
+We can recognize $N$-particle canonical partition functions $Z_N(\be)$ in the expression above,
+\begin{equation}
+  \label{eq:fugacity_exp}
+  Z_g^{(MB)}(\be, \mu) = Z_0(\be) + e^{\be\mu} Z_1(\be) + e^{2\be\mu} Z_2(\be) + \cdots = \sum_{N = 0}^{\infty} \left[e^{\be\mu}\right]^N Z_N(\be),
+\end{equation}
+allowing us to benefit from our experience with the canonical ensemble.
+(This is a general result known as the \textit{fugacity expansion}, where $e^{\be\mu}$ is called the fugacity.)
+
+In particular, because we continue to consider only `ideal' systems in which the particles don't interact with each other, each $Z_N(\be)$ is simply the product of the single-particle partition functions $Z_1(\be)$ for all $N$ independent particles,
+\begin{equation*}
+  Z_N(\be) = \frac{1}{N!} \left[Z_1(\be)\right]^N,
+\end{equation*}
+with the factor of $N!$ included to correct for over-counting indistinguishable particles.
+This is exactly the derivation we performed in \secref{sec:regulate}, to obtain \eq{eq:ideal_indis} for the classical ideal gas.
+Inserting this into \eq{eq:fugacity_exp}, we have
+\begin{equation*}
+  Z_g^{(MB)}(\be, \mu) = \sum_{N = 0}^{\infty} \frac{1}{N!} \left[e^{\be\mu}\right]^N \left[Z_1(\be)\right]^N = \sum_{N = 0}^{\infty} \frac{1}{N!} \left[e^{\be\mu} Z_1(\be)\right]^N = \exp\left[e^{\be\mu} Z_1(\be)\right].
+\end{equation*}
+In the case of a system with discrete energy levels $E_{\ell}$, the single-particle partition function is simply
+\begin{equation*}
+  Z_1(\be) = \sum_{\ell = 0}^L e^{-\be E_{\ell}},
+\end{equation*}
+leading to the Maxwell--Boltzmann grand-canonical partition function
+\begin{equation}
+  \label{eq:partfunc_MB}
+  Z_g^{(MB)}(\be, \mu) = \exp\left[e^{\be\mu} \sum_{\ell = 0}^L e^{-\be E_{\ell}} \right] = \exp\left[\sum_{\ell = 0}^L e^{-\be\left(E_{\ell} - \mu\right)}\right].
+\end{equation}
+
+Unfortunately, as mentioned in a footnote accompanying \eq{eq:ideal_indis}, this derivation relies on the assumption that every particle occupies a different energy level.
+While this would be effectively guaranteed when the particles' energies vary continuously, and can be an excellent approximation when there are many energy levels spaced very close to each other, the assumption breaks down if there is a non-negligible chance of two particles occupying the same energy level.
+
+We can illustrate this with a simple exercise of considering a system with $N = 2$ particles that can occupy any of five energy levels.
+For a further simplification, let's suppose that all five energy levels have the same value of the energy, namely $E_0 = E_1 = E_2 = E_3 = E_4 = 0$.
+(Such distinct energy levels that have the same value of the energy are said to be \textit{degenerate}.)
+With $E_{\ell} = 0$ for all $\ell$, the canonical partition function simply counts the number of microstates, for example
+\begin{equation*}
+  Z_1 = \sum_{\ell = 0}^4 e^{-\be E_{\ell}} = \sum_{\ell = 0}^4 1 = 5
+\end{equation*}
+for all $\be = 1 / T$.
+The mathematics is the same as counting the number of ways two balls can be placed in five boxes, with possible micro-states that can be represented as $\boxzero\boxone\boxzero\boxzero\boxone$ and $\boxzero\boxzero\boxtwo\boxzero\boxzero$.
+What is the two-particle partition function if the balls are distinguishable?
+\begin{mdframed}
+  $Z_D = $ \\[24 pt]
+\end{mdframed}
+For indistinguishable particles, our derivation above would predict the partition function $Z_I = \frac{1}{2} Z_D$, which is not an integer and therefore cannot be correct.
+
+We can spot the error by explicitly writing down all micro-states in both cases of distinguishable and indistinguishable particles.
+In the distinguishable case, we can suppose that the balls are red ($\textcolor{red}{\bullet}$) and blue ($\textcolor{blue}{\bullet}$), and compactly label micro-states by recording whether each box is empty (``$0$''), contains the red ball (``$R$''), the blue ball (``$B$'') or both balls (``$2$''):
+\begin{align*}
+  \boxzero\boxzero\boxed{\textcolor{red}{\bullet}}\boxzero\boxed{\textcolor{blue}{\bullet}} & = 00R0B &
+  \boxzero\boxzero\boxed{\textcolor{red}{\bullet}\textcolor{blue}{\bullet}}\boxzero\boxzero & = 00200.
+\end{align*}
+The full catalog of micro-states is then
+\begin{align*}
+  RB000 & & 0R0B0 & & BR000 & & 0B0R0 & & 20000 \\
+  R0B00 & & 0R00B & & B0R00 & & 0B00R & & 02000 \\
+  R00B0 & & 00RB0 & & B00R0 & & 00BR0 & & 00200 \\
+  R000B & & 00R0B & & B000R & & 00B0R & & 00020 \\
+  0RB00 & & 000RB & & 0BR00 & & 000BR & & 00002
+\end{align*}
+If we now consider indistinguishable particles where we can only know the number $R = B = 1$, we see that the third and fourth columns above duplicate the first two columns.
+This is exactly the over-counting that the usual factor of $\frac{1}{N!} = \frac{1}{2}$ corrects, which leaves us with the micro-states
+\begin{align*}
+  11000 & & 01010 & & 20000 \\
+  10100 & & 01001 & & 02000 \\
+  10010 & & 00110 & & 00200 \\
+  10001 & & 00101 & & 00020 \\
+  01100 & & 00011 & & 00002
+\end{align*}
+But we see that the micro-states in the final column, with both particles in the same energy level, were not over-counted, and must not be divided by $N!$.
+
+In order to generalize this simple exercise, we note that the micro-states for indistinguishable particles can be systematically labelled by \textit{occupation numbers} $n_{\ell}$, similar to those that we encountered when using replicas to derive the canonical partition function in \secref{sec:replicas} and the grand-canonical partition function in \secref{sec:Zg}.
+Here the occupation number $n_{\ell}$ is simply the number of particles in energy level $E_{\ell}$.
+This change of perspective is all we need to define quantum statistics as opposed to classical statistics.
+
+\begin{shaded}
+  In \textbf{quantum statistics}, the micro-states are defined by considering each energy level $E_{\ell}$ in turn, and summing over the possible occupation numbers $n_{\ell}$ that it could have.
+  This contrasts with the classical approach in which we define the micro-states by considering each particle in turn, and summing over the possible energies $E_{\ell}$ it could have.
+\end{shaded}
+
+Recalling the fundamental indistinguishability of particles governed by quantum mechanics, we have seen that the classical approach over-counts micro-states, but this over-counting depends on how likely it is for multiple particles to occupy the same energy level.
+The quantum approach of summing over the occupation numbers of the quantized energy levels avoids this issue, and requires no additional factors to correct over-counting.
+
+\vspace{24 pt}
+\begin{center}
+  \textbf{Explicit examples of quantum statistics will be added over the weekend.}
+
+  \textbf{The concepts above should provide plenty to think about until then\dots}
+\end{center}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\subsection{Bosons and fermions}
+In the two sections below we will carry out explicit computations to clarify what the above definition of quantum statistics means in practice.
+First, there is one more fact about nature that we need to introduce.
+This concerns the 
+
+
+
+The exercise above of considering two particles that can occupy 
+
+\TODO{Being written...}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\subsection{Bose--Einstein statistics}
+\TODO{Being written...}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\subsection{Fermi--Dirac statistics}
 \TODO{Being written...}
 % ------------------------------------------------------------------
