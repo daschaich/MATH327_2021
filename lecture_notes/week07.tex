@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 7}
-\renewcommand{\moddate}{Last modified 9 Apr.~2021}
+\renewcommand{\moddate}{Last modified 10 Apr.~2021}
 \setcounter{section}{7}
 \setcounter{subsection}{0}
 \phantomsection
@@ -38,13 +38,13 @@ Starting from the general expression for the grand-canonical partition function,
 we just need to define the micro-states $\om_i$ with energy $E_i$ and particle number $N_i$.
 In the classical Maxwell--Boltzmann approach, we first sum over all possible particle numbers,
 \begin{equation*}
-  Z_g^{(MB)}(\be, \mu) = \sum_{i, N_i = 0} e^{-\be E_i} + \sum_{j, N_j = 1} e^{-\be (E_j - \mu)} + \sum_{k, N_k = 2} e^{-\be (E_k - 2\mu)} + \cdots,
+  \ZMB(\be, \mu) = \sum_{i, N_i = 0} e^{-\be E_i} + \sum_{j, N_j = 1} e^{-\be (E_j - \mu)} + \sum_{k, N_k = 2} e^{-\be (E_k - 2\mu)} + \cdots,
 \end{equation*}
 where the micro-states labelled $\left\{\om_i, \om_j, \om_k, \cdots\right\}$ are those that have $N = 0$, $1$, $2$, $\cdots$ particles, respectively.
 We can recognize $N$-particle canonical partition functions $Z_N(\be)$ in the expression above,
 \begin{equation}
   \label{eq:fugacity_exp}
-  Z_g^{(MB)}(\be, \mu) = Z_0(\be) + e^{\be\mu} Z_1(\be) + e^{2\be\mu} Z_2(\be) + \cdots = \sum_{N = 0}^{\infty} \left[e^{\be\mu}\right]^N Z_N(\be),
+  \ZMB(\be, \mu) = Z_0(\be) + e^{\be\mu} Z_1(\be) + e^{2\be\mu} Z_2(\be) + \cdots = \sum_{N = 0}^{\infty} \left[e^{\be\mu}\right]^N Z_N(\be),
 \end{equation}
 allowing us to benefit from our experience with the canonical ensemble.
 (This is a general result known as the \textit{fugacity expansion}, where $e^{\be\mu}$ is called the fugacity.)
@@ -57,7 +57,7 @@ with the factor of $N!$ included to correct for over-counting indistinguishable 
 This is exactly the derivation we performed in \secref{sec:regulate}, to obtain \eq{eq:ideal_indis} for the classical ideal gas.
 Inserting this into \eq{eq:fugacity_exp}, we have
 \begin{equation*}
-  Z_g^{(MB)}(\be, \mu) = \sum_{N = 0}^{\infty} \frac{1}{N!} \left[e^{\be\mu}\right]^N \left[Z_1(\be)\right]^N = \sum_{N = 0}^{\infty} \frac{1}{N!} \left[e^{\be\mu} Z_1(\be)\right]^N = \exp\left[e^{\be\mu} Z_1(\be)\right].
+  \ZMB(\be, \mu) = \sum_{N = 0}^{\infty} \frac{1}{N!} \left[e^{\be\mu}\right]^N \left[Z_1(\be)\right]^N = \sum_{N = 0}^{\infty} \frac{1}{N!} \left[e^{\be\mu} Z_1(\be)\right]^N = \exp\left[e^{\be\mu} Z_1(\be)\right].
 \end{equation*}
 In the case of a system with discrete energy levels $E_{\ell}$, the single-particle partition function is simply
 \begin{equation*}
@@ -66,7 +66,7 @@ In the case of a system with discrete energy levels $E_{\ell}$, the single-parti
 leading to the Maxwell--Boltzmann grand-canonical partition function
 \begin{equation}
   \label{eq:partfunc_MB}
-  Z_g^{(MB)}(\be, \mu) = \exp\left[e^{\be\mu} \sum_{\ell = 0}^L e^{-\be E_{\ell}} \right] = \exp\left[\sum_{\ell = 0}^L e^{-\be\left(E_{\ell} - \mu\right)}\right].
+  \ZMB(\be, \mu) = \exp\left[e^{\be\mu} \sum_{\ell = 0}^L e^{-\be E_{\ell}} \right] = \exp\left[\sum_{\ell = 0}^L e^{-\be\left(E_{\ell} - \mu\right)}\right].
 \end{equation}
 
 Unfortunately, as mentioned in a footnote accompanying \eq{eq:ideal_indis}, this derivation relies on the assumption that every particle occupies a different energy level.
@@ -112,7 +112,7 @@ This is exactly the over-counting that the usual factor of $\frac{1}{N!} = \frac
 \end{align*}
 But we see that the micro-states in the final column, with both particles in the same energy level, were not over-counted, and must not be divided by $N!$.
 
-In order to generalize this simple exercise, we note that the micro-states for indistinguishable particles can be systematically labelled by \textit{occupation numbers} $n_{\ell}$, similar to those that we encountered when using replicas to derive the canonical partition function in \secref{sec:replicas} and the grand-canonical partition function in \secref{sec:Zg}.
+In order to generalize this simple exercise, we note that the micro-states for indistinguishable particles can be systematically labelled by \textit{occupation numbers} $n_{\ell}$, similar to those that we encountered when using replicas to derive the canonical partition function in \secref{sec:reservoir} and the grand-canonical partition function in \secref{sec:Zg}.
 Here the occupation number $n_{\ell}$ is simply the number of particles in energy level $E_{\ell}$.
 This change of perspective is all we need to define quantum statistics as opposed to classical statistics.
 
@@ -123,36 +123,56 @@ This change of perspective is all we need to define quantum statistics as oppose
 
 Recalling the fundamental indistinguishability of particles governed by quantum mechanics, we have seen that the classical approach over-counts micro-states, but this over-counting depends on how likely it is for multiple particles to occupy the same energy level.
 The quantum approach of summing over the occupation numbers of the quantized energy levels avoids this issue, and requires no additional factors to correct over-counting.
-
-\vspace{24 pt}
-\begin{center}
-  \textbf{Explicit examples of quantum statistics will be added over the weekend.}
-
-  \textbf{The concepts above should provide plenty to think about until then\dots}
-\end{center}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{Bosons and fermions}
 In the two sections below we will carry out explicit computations to clarify what the above definition of quantum statistics means in practice.
-First, there is one more fact about nature that we need to introduce.
-This concerns the 
+First, there is one more fact about nature that we need to mention.
+This concerns the occupation numbers $n_{\ell}$ that are possible for each energy level $E_{\ell}$.
 
+\href{https://en.wikipedia.org/wiki/Spin-statistics_theorem}{A theorem}, based on quantum mechanics and special relativity, states that all particles are either \textit{bosons} (named after \href{https://en.wikipedia.org/wiki/Satyendra_Nath_Bose}{Satyendra Nath Bose}) or \textit{fermions} (named after \href{https://en.wikipedia.org/wiki/Enrico_Fermi}{Enrico Fermi}).\footnote{The proof assumes three-dimensional physical space, and \href{https://en.wikipedia.org/wiki/Anyon}{more exotic behaviour} is possible for particles confined to two-dimensional surfaces.}
+These two classes of particles obey different rules for their possible occupation numbers, and therefore give rise to distinct quantum statistics.
 
+Any non-negative number of identical bosons can simultaneously occupy the same energy level, corresponding to occupation numbers $n_{\ell} = 0$, $1$, $2$, $\cdots$.
+Physical examples of bosons include photons (particles of light), pions, helium-$4$ atoms and the famous Higgs particle.
 
-The exercise above of considering two particles that can occupy 
+On the other hand, it is impossible for multiple identical fermions to occupy the same energy level, meaning that their only possible occupation numbers are $n_{\ell} = 0$ and $1$.
+Physical examples of fermions include electrons, protons, neutrons, neutrinos and helium-$3$ atoms.
+This behaviour is known as the \textit{Pauli exclusion principle} (named after \href{https://en.wikipedia.org/wiki/Wolfgang_Pauli}{Wolfgang Pauli}) and has extremely important consequences, including the existence of chemistry and life.
 
-\TODO{Being written...}
+The reason multiple identical fermions cannot occupy the same energy level is due to a feature of quantum mechanics, and not because they physically repel each other.
+This paragraph will imprecisely describe that aspect of quantum mechanics for the curious, and can be skipped without any problem.
+Consider a system of identical quantum particles occupying various energy levels.
+Loosely speaking, if we interchange any pair of those particles, we end up with the same system, up to a factor of $\pm 1$.
+Bosons correspond to the intuitive $+1$ case, where interchanging indistinguishable particles has no effect.
+Fermions correspond to the unintuitive $-1$ case (which is related to \href{https://en.wikipedia.org/wiki/Grassmann_number}{Grassmann numbers} named after \href{https://en.wikipedia.org/wiki/Hermann_Grassmann}{Hermann Grassmann}).
+In this case, if the particles we interchange are occupying the same energy level, the resulting system is exactly the same as the starting point --- but it also has to differ by this factor of $-1$.
+Since no non-zero system of particles can equal its negative, no systems with multiple identical fermions in the same energy level can possibly exist.
+
+Looking back at the example system of $N = 2$ particles with five energy levels in the previous section, all $15$ micro-states we wrote down are possible if the particles are bosons.
+%If the particles are fermions, the five micro-states in the third column are all forbidden since each of them involves a doubly occupied energy level with $n_{\ell} = 2$.
+%Only the other $10$ states with $n_{\ell} \in \left\{0, 1\right\}$ are allowed.
+Which of those micro-states are allowed if the particles are fermions?
+\begin{mdframed}
+  \ \\[24 pt]
+\end{mdframed}
+This difference in the possible micro-states ensures that bosons and fermions exhibit different quantum statistics.
+We will now consider each case in turn.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{Bose--Einstein statistics}
+The quantum statistics of bosons is known as \textbf{Bose--Einstein} (BE) statistics, named after Satyendra Nath Bose and Albert Einstein.
+As described above, to compute the grand-canonical partition function in this case, we first sum over all energy levels,
+\begin{equation*}
+  \ZBE(\be, \mu) = \TODO{...}
+\end{equation*}
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
@@ -161,5 +181,7 @@ The exercise above of considering two particles that can occupy
 % ------------------------------------------------------------------
 \newpage
 \subsection{Fermi--Dirac statistics}
+The quantum statistics of bosons is known as \textbf{Fermi--Dirac} (FD) statistics, named after Enrico Fermi and \href{https://en.wikipedia.org/wiki/Paul_Dirac}{Paul Dirac}.
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
