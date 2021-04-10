@@ -6,7 +6,7 @@
 \phantomsection
 \addcontentsline{toc}{section}{Week 7: Quantum statistics}
 \section*{Week 7: Quantum statistics}
-\subsection{Quantized energy levels and their micro-states}
+\subsection{\label{sec:quantum}Quantized energy levels and their micro-states}
 This week we begin applying the grand-canonical ensemble to investigate quantum statistical systems.
 The first step is to introduce quantum statistics itself, building on the initial glimpse that we got in \secref{sec:regulate}.
 It is worth reiterating that no prior knowledge of quantum physics is assumed, nor will this module attempt to teach quantum mechanics.
@@ -26,12 +26,18 @@ For the next few weeks, we will work in the quantum regime where all energy leve
 In addition, a more subtle change of approach is required by the fundamental indistinguishability of particles governed by quantum mechanics.
 This quantum indistinguishability is a fact about nature that we will take as given.
 
-To appreciate the consequences of quantum indistinguishability, let's first apply our usual (classical) approach to compute the grand-canonical partition function for a system with discrete energy levels $E_{\ell}$ for $\ell = 0$, $1$, $\cdots$, $L$.\footnote{The countable energy levels mean the system remains well defined even for $L \to \infty$.}
-%Without loss of generality, we can take $E_{\ell} \geq 0$
-Despite the discrete energy levels, this calculation will produce a non-quantum result known as \textbf{Maxwell--Boltzmann} (MB) statistics (named after \href{https://en.wikipedia.org/wiki/James_Clerk_Maxwell}{James Clerk Maxwell} and Ludwig Boltzmann).
+To appreciate the consequences of quantum indistinguishability, let's first apply our usual (classical) approach to compute the grand-canonical partition function for a system with discrete energy levels.
+Despite the quantized energy levels, this calculation will still produce a non-quantum result known as \textbf{Maxwell--Boltzmann} (MB) statistics (named after \href{https://en.wikipedia.org/wiki/James_Clerk_Maxwell}{James Clerk Maxwell} and Ludwig Boltzmann).
 We will be able to see when this result is a good approximation and when it breaks down.
 
-Starting from the general expression for the grand-canonical partition function, \eq{eq:grand_part_func},
+To define some notation, let's label the discrete energy levels $\cE_{\ell}$ for $\ell = 0$, $1$, $\cdots$, $L$, where $L$ can be taken to infinity while retaining a countable number of micro-states and hence well-defined partition functions.
+The energy level $\cE_{\ell}$ may be characterized by extra information in addition to the actual value of its energy, $E_{\ell}$.
+As we saw in \secref{sec:regulate}, it is therefore possible for distinct energy levels $\left\{\cE_m, \cE_n\right\}$ to have the same energy $E_m = E_n$ for $m \neq n$.
+Such energy levels with the same value of the energy are said to be \textit{degenerate}.
+We will label energy levels so that $E_m \leq E_n$ for $m < n$, making $\cE_0$ the ground state (with the smallest energy $E_0$).
+Without loss of generality, we can take $E_{\ell} \geq E_0 \geq 0$.
+
+Now starting from the general expression for the grand-canonical partition function, \eq{eq:grand_part_func},
 \begin{equation*}
   Z_g(\be, \mu) = \sum_i e^{-\be (E_i - \mu N_i)},
 \end{equation*}
@@ -65,17 +71,16 @@ In the case of a system with discrete energy levels $E_{\ell}$, the single-parti
 \end{equation*}
 leading to the Maxwell--Boltzmann grand-canonical partition function
 \begin{equation}
-  \label{eq:partfunc_MB}
+  \label{eq:partfunc_MB_nonfactor}
   \ZMB(\be, \mu) = \exp\left[e^{\be\mu} \sum_{\ell = 0}^L e^{-\be E_{\ell}} \right] = \exp\left[\sum_{\ell = 0}^L e^{-\be\left(E_{\ell} - \mu\right)}\right].
 \end{equation}
 
 Unfortunately, as mentioned in a footnote accompanying \eq{eq:ideal_indis}, this derivation relies on the assumption that every particle occupies a different energy level.
-While this would be effectively guaranteed when the particles' energies vary continuously, and can be an excellent approximation when there are many energy levels spaced very close to each other, the assumption breaks down if there is a non-negligible chance of two particles occupying the same energy level.
+While this would be effectively guaranteed when the particles' energies vary continuously, and can be an excellent approximation when there are many more energy levels than there are particles to occupy them, the assumption breaks down if there is a non-negligible chance of two particles occupying the same energy level.
 
 We can illustrate this with a simple exercise of considering a system with $N = 2$ particles that can occupy any of five energy levels.
-For a further simplification, let's suppose that all five energy levels have the same value of the energy, namely $E_0 = E_1 = E_2 = E_3 = E_4 = 0$.
-(Such distinct energy levels that have the same value of the energy are said to be \textit{degenerate}.)
-With $E_{\ell} = 0$ for all $\ell$, the canonical partition function simply counts the number of microstates, for example
+For a further simplification, let's suppose that all five energy levels are degenerate, with $E_{\ell} = 0$ for $\ell = 0$, $\cdots$, $5$.
+This means the canonical partition function simply counts the (integer) number of micro-states, for example
 \begin{equation*}
   Z_1 = \sum_{\ell = 0}^4 e^{-\be E_{\ell}} = \sum_{\ell = 0}^4 1 = 5
 \end{equation*}
@@ -113,12 +118,12 @@ This is exactly the over-counting that the usual factor of $\frac{1}{N!} = \frac
 But we see that the micro-states in the final column, with both particles in the same energy level, were not over-counted, and must not be divided by $N!$.
 
 In order to generalize this simple exercise, we note that the micro-states for indistinguishable particles can be systematically labelled by \textit{occupation numbers} $n_{\ell}$, similar to those that we encountered when using replicas to derive the canonical partition function in \secref{sec:reservoir} and the grand-canonical partition function in \secref{sec:Zg}.
-Here the occupation number $n_{\ell}$ is simply the number of particles in energy level $E_{\ell}$.
+Here the occupation number $n_{\ell}$ is simply the number of particles in energy level $\cE_{\ell}$.
 This change of perspective is all we need to define quantum statistics as opposed to classical statistics.
 
 \begin{shaded}
-  In \textbf{quantum statistics}, the micro-states are defined by considering each energy level $E_{\ell}$ in turn, and summing over the possible occupation numbers $n_{\ell}$ that it could have.
-  This contrasts with the classical approach in which we define the micro-states by considering each particle in turn, and summing over the possible energies $E_{\ell}$ it could have.
+  In \textbf{quantum statistics}, the micro-states are defined by considering each energy level $\cE_{\ell}$ in turn, and summing over the possible occupation numbers $n_{\ell}$ that it could have.
+  This contrasts with the classical approach in which we define the micro-states by considering each particle in turn, and summing over the possible energies $E_{\ell}$ that it could have.
 \end{shaded}
 
 Recalling the fundamental indistinguishability of particles governed by quantum mechanics, we have seen that the classical approach over-counts micro-states, but this over-counting depends on how likely it is for multiple particles to occupy the same energy level.
@@ -131,7 +136,7 @@ The quantum approach of summing over the occupation numbers of the quantized ene
 \subsection{Bosons and fermions}
 In the two sections below we will carry out explicit computations to clarify what the above definition of quantum statistics means in practice.
 First, there is one more fact about nature that we need to mention.
-This concerns the occupation numbers $n_{\ell}$ that are possible for each energy level $E_{\ell}$.
+This concerns the occupation numbers $n_{\ell}$ that are possible for each energy level $\cE_{\ell}$.
 
 \href{https://en.wikipedia.org/wiki/Spin-statistics_theorem}{A theorem}, based on quantum mechanics and special relativity, states that all particles are either \textit{bosons} (named after \href{https://en.wikipedia.org/wiki/Satyendra_Nath_Bose}{Satyendra Nath Bose}) or \textit{fermions} (named after \href{https://en.wikipedia.org/wiki/Enrico_Fermi}{Enrico Fermi}).\footnote{The proof assumes three-dimensional physical space, and \href{https://en.wikipedia.org/wiki/Anyon}{more exotic behaviour} is possible for particles confined to two-dimensional surfaces.}
 These two classes of particles obey different rules for their possible occupation numbers, and therefore give rise to distinct quantum statistics.
@@ -140,11 +145,11 @@ Any non-negative number of identical bosons can simultaneously occupy the same e
 Physical examples of bosons include photons (particles of light), pions, helium-$4$ atoms and the famous Higgs particle.
 
 On the other hand, it is impossible for multiple identical fermions to occupy the same energy level, meaning that their only possible occupation numbers are $n_{\ell} = 0$ and $1$.
-Physical examples of fermions include electrons, protons, neutrons, neutrinos and helium-$3$ atoms.
 This behaviour is known as the \textit{Pauli exclusion principle} (named after \href{https://en.wikipedia.org/wiki/Wolfgang_Pauli}{Wolfgang Pauli}) and has extremely important consequences, including the existence of chemistry and life.
+Physical examples of fermions include electrons, protons, neutrons, neutrinos and helium-$3$ atoms.
 
 The reason multiple identical fermions cannot occupy the same energy level is due to a feature of quantum mechanics, and not because they physically repel each other.
-This paragraph will imprecisely describe that aspect of quantum mechanics for the curious, and can be skipped without any problem.
+This paragraph will imprecisely describe that aspect of quantum physics for the curious, and can be skipped without any problem.
 Consider a system of identical quantum particles occupying various energy levels.
 Loosely speaking, if we interchange any pair of those particles, we end up with the same system, up to a factor of $\pm 1$.
 Bosons correspond to the intuitive $+1$ case, where interchanging indistinguishable particles has no effect.
@@ -153,8 +158,6 @@ In this case, if the particles we interchange are occupying the same energy leve
 Since no non-zero system of particles can equal its negative, no systems with multiple identical fermions in the same energy level can possibly exist.
 
 Looking back at the example system of $N = 2$ particles with five energy levels in the previous section, all $15$ micro-states we wrote down are possible if the particles are bosons.
-%If the particles are fermions, the five micro-states in the third column are all forbidden since each of them involves a doubly occupied energy level with $n_{\ell} = 2$.
-%Only the other $10$ states with $n_{\ell} \in \left\{0, 1\right\}$ are allowed.
 Which of those micro-states are allowed if the particles are fermions?
 \begin{mdframed}
   \ \\[24 pt]
@@ -168,20 +171,145 @@ We will now consider each case in turn.
 % ------------------------------------------------------------------
 \subsection{Bose--Einstein statistics}
 The quantum statistics of bosons is known as \textbf{Bose--Einstein} (BE) statistics, named after Satyendra Nath Bose and Albert Einstein.
-As described above, to compute the grand-canonical partition function in this case, we first sum over all energy levels,
+As described above, to carry out the sum over all micro-states in the grand-canonical partition function
 \begin{equation*}
-  \ZBE(\be, \mu) = \TODO{...}
+  Z_g(\be, \mu) = \sum_i e^{-\be (E_i - \mu N_i)},
 \end{equation*}
+we first sum over all energy levels $\cE_{\ell}$, and then over all possible occupation numbers $n_{\ell} \in \Nbb_0$ for each energy level.
 
-\TODO{Being written...}
+Consider first the simple case of a system that only has a single energy level $\cE$, with energy $E$.
+In this case, each micro-state $\om_i$ is uniquely described by its particle number $N_i$, which is just the occupation number of $\cE$.
+What is the energy $E_i$ of micro-state $\om_i$ with occupation number $n = N_i$?
+\begin{mdframed}
+  $E_i = $ \\[24 pt]
+\end{mdframed}
+
+Plugging this into the sum over all possible particle numbers, the Bose--Einstein grand-canonical partition function for this single-level system is
+\begin{equation}
+  \label{eq:BEsingle}
+  \ZBE(\be, \mu) = \sum_{n = 0}^{\infty} e^{-\be (E - \mu) n} = \sum_{n = 0}^{\infty} \left[e^{-\be (E - \mu)}\right]^n = \frac{1}{1 - e^{-\be (E - \mu)}}.
+\end{equation}
+In the last step we recognized the geometric series
+\begin{equation*}
+  \frac{1}{1 - x} = 1 + x + x^2 + \cdots,
+\end{equation*}
+which only converges for $x = e^{-\be (E - \mu)} < 1$.
+For natural systems with $\be = 1 / T > 0$, this condition requires $E - \mu > 0$ or equivalently $\mu < E$.
+Since we can also take $E_{\ell} \geq 0$ without loss of generality, this constraint is consistent with the negative chemical potential $\mu < 0$ that we discussed last week.
+
+At this point, it is straightforward to generalize to multiple energy levels $\cE_{\ell}$ with $\ell = 0$, $1$, $\cdots$, $L$.
+Because we consider only ideal systems with non-interacting particles, the micro-state $\om_i$ defined by the set of occupation numbers $\left\{n_{\ell}\right\}$ has total energy and particle number
+\begin{align}
+  \label{eq:total_energy_levels}
+  E_i & = \sum_{\ell = 0}^L E_{\ell} n_{\ell} &
+  N_i & = \sum_{\ell = 0}^L n_{\ell}.
+\end{align}
+The general Bose--Einstein grand-canonical partition function is therefore
+\begin{equation*}
+  \ZBE(\be, \mu) = \sum_{n_0 = 0}^{\infty} \sum_{n_1 = 0}^{\infty} \cdots \sum_{n_L = 0}^{\infty} \exp\left[-\be\sum_{\ell = 0}^L \left(E_{\ell} - \mu\right) n_{\ell}\right].
+\end{equation*}
+We can apply the identity $e^{\sum_i x_i} = \prod_i e^{x_i}$ to rewrite
+\begin{equation*}
+  \exp\left[-\be\sum_{\ell = 0}^L \left(E_{\ell} - \mu\right) n_{\ell}\right] = \left(e^{-\be (E_0 - \mu) n_0}\right) \left(e^{-\be (E_1 - \mu) n_1}\right)\cdots \left(e^{-\be (E_L - \mu) n_L}\right).
+\end{equation*}
+Recalling $\mu < E_{\ell}$ for all $\ell$, by rearranging the terms we find
+\begin{align}
+  \ZBE(\be, \mu) & = \left(\sum_{n_0 = 0}^{\infty} e^{-\be (E_0 - \mu) n_0}\right) \left(\sum_{n_1 = 0}^{\infty} e^{-\be (E_1 - \mu) n_1}\right)\cdots \left(\sum_{n_L = 0}^{\infty} e^{-\be (E_L - \mu) n_L}\right) \cr
+                 & = \prod_{\ell = 0}^L \frac{1}{1 - e^{-\be (E_{\ell} - \mu)}}. \label{eq:partfunc_BE}
+\end{align}
+
+This grand-canonical partition function defines the quantum Bose--Einstein statistics of bosons.
+Its structure as the product of an independent contribution for each energy level is reminiscent of the result $Z_N \propto Z_1^N$ for the classical $N$-particle canonical partition function discussed in \secref{sec:quantum}.
+In both cases we say that the computation \textit{factorizes} into a product of many similar pieces, which can enable drastic simplifications.
+Looking back to \eq{eq:partfunc_BE}, we can also observe factorization in the classical Maxwell--Boltzmann grand-canonical partition function,
+\begin{equation}
+  \label{eq:partfunc_MB}
+  \ZMB(\be, \mu) = \exp\left[\sum_{\ell = 0}^L e^{-\be\left(E_{\ell} - \mu\right)}\right] = \prod_{\ell = 0}^L \exp\left[e^{-\be\left(E_{\ell} - \mu\right)}\right].
+\end{equation}
+In all of these cases, factorization is possible because the particles are non-interacting.
+In a few weeks we will consider non-ideal systems in which the particles can interact with each other, where the absence of factorization will make analyses much more difficult.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{Fermi--Dirac statistics}
-The quantum statistics of bosons is known as \textbf{Fermi--Dirac} (FD) statistics, named after Enrico Fermi and \href{https://en.wikipedia.org/wiki/Paul_Dirac}{Paul Dirac}.
+The quantum statistics of fermions is known as \textbf{Fermi--Dirac} (FD) statistics, named after Enrico Fermi and \href{https://en.wikipedia.org/wiki/Paul_Dirac}{Paul Dirac}.
+The derivation of the Fermi--Dirac grand-canonical partition function is very similar to the Bose--Einstein case considered in the previous section.
+We again proceed by summing over all energy levels $\cE_{\ell}$, and just have to account for the more limited possible occupation numbers $n_{\ell} \in \left\{0, 1\right\}$ for each energy level.
+
+Taking the same approach of first considering a simple system with only a single energy level, \eq{eq:BEsingle} would just change to
+\begin{equation*}
+  \ZFD(\be, \mu) = \sum_{n = 0}^1 e^{-\be (E - \mu) n} = 1 + e^{-\be (E - \mu)}.
+\end{equation*}
+Generalizing to multiple energy levels $\cE_{\ell}$ with $\ell = 0$, $1$, $\cdots$, $L$, the energy and particle number remain the same as in \eq{eq:total_energy_levels}, and the computation again factorizes,
+\begin{align}
+  \ZFD(\be, \mu) & = \sum_{n_0 = 0}^1 \sum_{n_1 = 0}^1 \cdots \sum_{n_L = 0}^1 \exp\left[-\be\sum_{\ell = 0}^L \left(E_{\ell} - \mu\right) n_{\ell}\right] \cr
+                 & = \left(\sum_{n_0 = 0}^1 e^{-\be (E_0 - \mu) n_0}\right) \left(\sum_{n_1 = 0}^1 e^{-\be (E_1 - \mu) n_1}\right)\cdots \left(\sum_{n_L = 0}^1 e^{-\be (E_L - \mu) n_L}\right) \cr
+                 & = \prod_{\ell = 0}^L \left[1 + e^{-\be (E_{\ell} - \mu)}\right]. \label{eq:partfunc_FD}
+\end{align}
+This grand-canonical partition function defines the quantum Fermi--Dirac statistics of fermions.
+In this case it is possible for the chemical potential $\mu$ to be either positive or negative.
+
+Over the next two weeks we will take \ZBE and \ZFD as starting points to analyze quantum gases of bosons and fermions, respectively.
+Before beginning those more detailed analyses, let's quickly compare the three types of statistics that we have derived this week, while they are all close to hand.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{The classical limit}
+In \secref{sec:quantum} we claimed that the classical Maxwell--Boltzmann statistics leading to \eq{eq:partfunc_MB} can be an excellent approximation to quantum statistics (both bosonic and fermionic), when the probability of multiple particles occupying the same energy level is negligible.
+We will wrap up this week by demonstrating this fact and clarifying the conditions that define this `classical limit' of quantum statistics.
+
+For convenience, let's collect our earlier results for the grand-canonical partition functions defining classical Maxwell--Boltzmann statistics (\eq{eq:partfunc_MB}), the quantum Bose--Einstein statistics of bosons (\eq{eq:partfunc_BE}) and the quantum Fermi--Dirac statistics of fermions (\eq{eq:partfunc_FD}):
+\begin{equation*}
+  \ZMB = \prod_{\ell = 0}^L \exp\left[e^{-\be\left(E_{\ell} - \mu\right)}\right]
+\end{equation*}
+\begin{align*}
+  \ZBE & = \prod_{\ell = 0}^L \frac{1}{1 - e^{-\be (E_{\ell} - \mu)}} &
+  \ZFD & = \prod_{\ell = 0}^L \left[1 + e^{-\be (E_{\ell} - \mu)}\right].
+\end{align*}
+Recalling $\log\left[\prod_i x_i\right] = \sum_i \log x_i$, the corresponding grand-canonical potentials $\Phi = -T \log Z_g$ for these three cases are
+\begin{equation*}
+  \Phi_{\text{MB}} = -T \sum_{\ell = 0}^L e^{-\be\left(E_{\ell} - \mu\right)}
+\end{equation*}
+\begin{align*}
+  \Phi_{\text{BE}} & =  T \sum_{\ell = 0}^L \log\left[1 - e^{-\be (E_{\ell} - \mu)}\right] &
+  \Phi_{\text{FD}} & = -T \sum_{\ell = 0}^L \log\left[1 + e^{-\be (E_{\ell} - \mu)}\right].
+\end{align*}
+\newpage % WARNING: FORMATTING BY HAND
+\noindent To consider a concrete comparison, let's compute the average particle numbers
+\begin{equation*}
+  \vev{N} = -\pderiv{\Phi}{\mu}
+\end{equation*}
+predicted by the grand-canonical potentials above:
+\begin{align*}
+  \vev{N}_{\text{MB}} & =  T \sum_{\ell = 0}^L \be e^{-\be\left(E_{\ell} - \mu\right)} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)}} = \sum_{\ell = 0}^L \nMB \\
+  \vev{N}_{\text{BE}} & = -T \sum_{\ell = 0}^L \frac{-\be e^{-\be (E_{\ell} - \mu)}}{1 - e^{-\be (E_{\ell} - \mu)}} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)} - 1} = \sum_{\ell = 0}^L \nBE \\
+  \vev{N}_{\text{FD}} & =  T \sum_{\ell = 0}^L \frac{\be e^{-\be (E_{\ell} - \mu)}}{1 + e^{-\be (E_{\ell} - \mu)}} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)} + 1} = \sum_{\ell = 0}^L \nFD.
+\end{align*}
+In all three cases, the average particle number takes the form of a sum over the average occupation numbers
+\begin{align*}
+  \nMB & = \frac{1}{e^{\be (E_{\ell} - \mu)}} &
+  \nBE & = \frac{1}{e^{\be (E_{\ell} - \mu)} - 1} &
+  \nFD & = \frac{1}{e^{\be (E_{\ell} - \mu)} + 1}.
+\end{align*}
+
+It's now clear to see that all 
+We can now start to see similarities between the three cases
+
+
+
+
+Although the quantum Bose--Einstein result in \eq{eq:partfunc_BE} looks significantly different from the classical Maxwell--Boltzmann result in \eq{eq:partfunc_MB}, the only difference in our derivations of them was 
+The only difference between our derivation of the quantum Bose--Einstein result in \eq{eq:partfunc_BE} and the Maxwell--Boltzmann result in \eq{eq:partfunc_MB} is 
+
+Even though bosons' occupation numbers are the same $n_{\ell} \in \Nbb_0$ that we considered 
+that we considered 
+by taking more care to count micro-states correctly
+
+sums over the occupation numbers $n_{\ell}$ for each energy level to find
 
 \TODO{Being written...}
 % ------------------------------------------------------------------
