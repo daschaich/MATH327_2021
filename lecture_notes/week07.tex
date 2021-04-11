@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 7}
-\renewcommand{\moddate}{Last modified 10 Apr.~2021}
+\renewcommand{\moddate}{Last modified 11 Apr.~2021}
 \setcounter{section}{7}
 \setcounter{subsection}{0}
 \phantomsection
@@ -22,7 +22,7 @@ These quantized momenta produce a countable number of discrete \textit{energy le
 Second, we then assumed that the energy levels are spaced very close to each other, allowing us to approximate that sum as a multi-dimensional gaussian integral.
 That is, we went right back to working with continuously varying momenta, despite the formal need to regulate the system by quantization.
 
-For the next few weeks, we will work in the quantum regime where all energy levels of a system remain discrete. % TODO: Could talk about temperature setting an energy scale, but that might be a distraction here and can be pointed out later on...
+For the next few weeks, we will work in the quantum regime where all energy levels of a system remain discrete.
 In addition, a more subtle change of approach is required by the fundamental indistinguishability of particles governed by quantum mechanics.
 This quantum indistinguishability is a fact about nature that we will take as given.
 
@@ -34,7 +34,7 @@ To define some notation, let's label the discrete energy levels $\cE_{\ell}$ for
 The energy level $\cE_{\ell}$ may be characterized by extra information in addition to the actual value of its energy, $E_{\ell}$.
 As we saw in \secref{sec:regulate}, it is therefore possible for distinct energy levels $\left\{\cE_m, \cE_n\right\}$ to have the same energy $E_m = E_n$ for $m \neq n$.
 Such energy levels with the same value of the energy are said to be \textit{degenerate}.
-We will label energy levels so that $E_m \leq E_n$ for $m < n$, making $\cE_0$ the ground state (with the smallest energy $E_0$).
+We will label energy levels so that $E_m \leq E_n$ for $m < n$.
 Without loss of generality, we can take $E_{\ell} \geq E_0 \geq 0$.
 
 Now starting from the general expression for the grand-canonical partition function, \eq{eq:grand_part_func},
@@ -259,10 +259,20 @@ Before beginning those more detailed analyses, let's quickly compare the three t
 
 % ------------------------------------------------------------------
 \subsection{The classical limit}
-In \secref{sec:quantum} we claimed that the classical Maxwell--Boltzmann statistics leading to \eq{eq:partfunc_MB} can be an excellent approximation to quantum statistics (both bosonic and fermionic), when the probability of multiple particles occupying the same energy level is negligible.
-We will wrap up this week by demonstrating this fact and clarifying the conditions that define this `classical limit' of quantum statistics.
+In \secref{sec:quantum} we claimed that the classical Maxwell--Boltzmann statistics leading to \eq{eq:partfunc_MB} can be an excellent approximation to quantum statistics (both bosonic and fermionic), if the probability of multiple particles occupying the same energy level is negligible.
+We will wrap up this week by demonstrating this fact and clarifying the conditions that correspond to this `classical limit' of quantum statistics.
 
-For convenience, let's collect our earlier results for the grand-canonical partition functions defining classical Maxwell--Boltzmann statistics (\eq{eq:partfunc_MB}), the quantum Bose--Einstein statistics of bosons (\eq{eq:partfunc_BE}) and the quantum Fermi--Dirac statistics of fermions (\eq{eq:partfunc_FD}):
+It is useful to start by considering the contrapositive of the statement in the previous paragraph:
+If Maxwell--Boltzmann statistics predicts a non-negligible probability for multiple particles to occupy the same energy level, then it will disagree with the true quantum statistics.
+This is a useful way to state the problem, because it reveals that we have already found the answer, back in \secref{sec:spin_info} (and the first homework assignment).
+There we considered (in the canonical ensemble) classical spin systems with discrete energy levels, finding that at low temperatures the systems are dominated by their lowest-energy micro-states, with only exponentially suppressed corrections coming from any higher-energy micro-states.
+In the present context, this corresponds to an exponentially small probability for particles to occupy any energy levels with $E_{\ell} > E_0$, effectively guaranteeing that the lowest energy level $\cE_0$ will be occupied by multiple particles and classical statistics will break down.
+
+In short, the low-temperature regime is where quantum and classical statistics disagree, while \textbf{high temperatures correspond to the classical limit} of quantum statistics.\footnote{If you are not convinced by the argument above, you can find a more detailed derivation based on the equation of state and thermal de~Broglie wavelength in Section~3.5 of David Tong's \href{https://www.damtp.cam.ac.uk/user/tong/statphys.html}{\textit{Lectures on Statistical Physics}} (reference~1 in the list of further reading on page~6).}
+However, it can be subtle to work with the grand-canonical ensemble at high temperatures, due to the dependence of the average number of particles on the temperature.
+To demonstrate this subtlety, let's compute the average particle number $\vev{N}\!(T, \mu)$ starting from the grand-canonical partition function, for both classical and quantum statistics.
+
+For convenience, let's collect our earlier results for the grand-canonical partition functions corresponding to classical Maxwell--Boltzmann statistics (\eq{eq:partfunc_MB}), the quantum Bose--Einstein statistics of bosons (\eq{eq:partfunc_BE}) and the quantum Fermi--Dirac statistics of fermions (\eq{eq:partfunc_FD}):
 \begin{equation*}
   \ZMB = \prod_{\ell = 0}^L \exp\left[e^{-\be\left(E_{\ell} - \mu\right)}\right]
 \end{equation*}
@@ -278,38 +288,64 @@ Recalling $\log\left[\prod_i x_i\right] = \sum_i \log x_i$, the corresponding gr
   \Phi_{\text{BE}} & =  T \sum_{\ell = 0}^L \log\left[1 - e^{-\be (E_{\ell} - \mu)}\right] &
   \Phi_{\text{FD}} & = -T \sum_{\ell = 0}^L \log\left[1 + e^{-\be (E_{\ell} - \mu)}\right].
 \end{align*}
-\newpage % WARNING: FORMATTING BY HAND
-\noindent To consider a concrete comparison, let's compute the average particle numbers
+We are now ready to compute the average particle numbers.
+Using the result we derived last week,
 \begin{equation*}
-  \vev{N} = -\pderiv{\Phi}{\mu}
+  \vev{N} = -\pderiv{\Phi}{\mu},
 \end{equation*}
-predicted by the grand-canonical potentials above:
+what are the average particle numbers resulting from the three grand-canonical potentials above?
+\begin{mdframed}
+  $\displaystyle \vev{N}_{\text{MB}} =  T \sum_{\ell = 0}^L \pderiv{}{\mu} e^{-\be\left(E_{\ell} - \mu\right)} = $ \\[100 pt]
+  $\displaystyle \vev{N}_{\text{BE}} = -T \sum_{\ell = 0}^L \pderiv{}{\mu} \log\left[1 - e^{-\be (E_{\ell} - \mu)}\right] = $ \\[100 pt]
+  $\displaystyle \vev{N}_{\text{FD}} =  T \sum_{\ell = 0}^L \pderiv{}{\mu} \log\left[1 + e^{-\be (E_{\ell} - \mu)}\right] = $ \\[100 pt]
+\end{mdframed}
+
+You should find that the average particle number in all three cases can be expressed as a sum over the average occupation numbers,
+\begin{equation*}
+  \vev{N} = \sum_{\ell = 0}^L \vev{n_{\ell}},
+\end{equation*}
+where the average occupation numbers for Maxwell--Boltzmann statistics, Bose--Einstein statistics and Fermi--Dirac statistics are
+\begin{equation*}
+  \nMB = \frac{1}{e^{\be (E_{\ell} - \mu)}}
+\end{equation*}
 \begin{align*}
-  \vev{N}_{\text{MB}} & =  T \sum_{\ell = 0}^L \be e^{-\be\left(E_{\ell} - \mu\right)} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)}} = \sum_{\ell = 0}^L \nMB \\
-  \vev{N}_{\text{BE}} & = -T \sum_{\ell = 0}^L \frac{-\be e^{-\be (E_{\ell} - \mu)}}{1 - e^{-\be (E_{\ell} - \mu)}} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)} - 1} = \sum_{\ell = 0}^L \nBE \\
-  \vev{N}_{\text{FD}} & =  T \sum_{\ell = 0}^L \frac{\be e^{-\be (E_{\ell} - \mu)}}{1 + e^{-\be (E_{\ell} - \mu)}} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)} + 1} = \sum_{\ell = 0}^L \nFD.
-\end{align*}
-In all three cases, the average particle number takes the form of a sum over the average occupation numbers
-\begin{align*}
-  \nMB & = \frac{1}{e^{\be (E_{\ell} - \mu)}} &
   \nBE & = \frac{1}{e^{\be (E_{\ell} - \mu)} - 1} &
   \nFD & = \frac{1}{e^{\be (E_{\ell} - \mu)} + 1}.
 \end{align*}
+Note that $0 \leq \nFD \leq 1$, as required for fermions.
+From these results it is easy to see that the classical limit $\nBE \approx \nFD \approx \nMB$ corresponds to
+\begin{equation*}
+  e^{\be (E_{\ell} - \mu)} \pm 1 \approx e^{\be (E_{\ell} - \mu)} \qquad \Lra \qquad e^{\be (E_{\ell} - \mu)} \gg 1.
+\end{equation*}
+We can also confirm that in this limit $\nMB \ll 1$ for all energy levels $\cE_{\ell}$, indicating very small probabilities for multiple particles to occupy the same energy level.
 
-It's now clear to see that all 
-We can now start to see similarities between the three cases
+Now we can appreciate the subtlety promised above, because
+\begin{equation}
+  \label{eq:highT_ratio}
+  \be (E_{\ell} - \mu) = \frac{E_{\ell} - \mu}{T} \gg 1.
+\end{equation}
+does not look like a high-temperature limit.
+Indeed, if we consider the naive high-temperature limit $\be = 1 / T \to 0$ with fixed $(E_{\ell} - \mu)$, we would find large average occupation numbers,
+\begin{align*}
+  \nMB & \approx 1 &
+  \nBE & \to \infty & 
+  \nFD & \approx \frac{1}{2}.
+\end{align*}
+In addition to implying non-negligible classical probabilities for multiple particles to occupy the same energy level, this result indicates that higher temperatures in the grand-canonical ensemble lead to larger particle numbers in total.
 
+In order to balance this effect, we need to adjust the other free parameter offered by the grand-canonical ensemble, the chemical potential $\mu$.
+Specifically, in order to satisfy \eq{eq:highT_ratio} in the high-temperature limit, we need $E_{\ell} - \mu \gg T$, requiring that $\mu \to -\infty$ as $T \to \infty$.
+In order to keep the average particle number finite, the true high-temperature limit in which quantum statistics becomes classical turns out to be
+\begin{equation}
+  -\mu \gg T \gg E_{\ell} \qquad \Lra \qquad \frac{E_{\ell} - \mu}{T} \gg 1.
+\end{equation}
+This corresponds to the right portion of the plot below,\footnote{The plot comes from \href{https://commons.wikimedia.org/wiki/File:Fermi-Dirac_Bose-Einstein_Maxwell-Boltzmann_statistics.svg}{Wikimedia Commons}.  The ``$k$'' in its x-axis label is a unit conversion factor that we set to $k = 1$.} where we can confirm excellent agreement between all three predictions for the average occupation number $\vev{n_{\ell}}$
 
+\begin{center}
+  \includegraphics[width=\textwidth]{figs/week07_dist.pdf}
+\end{center}
 
-
-Although the quantum Bose--Einstein result in \eq{eq:partfunc_BE} looks significantly different from the classical Maxwell--Boltzmann result in \eq{eq:partfunc_MB}, the only difference in our derivations of them was 
-The only difference between our derivation of the quantum Bose--Einstein result in \eq{eq:partfunc_BE} and the Maxwell--Boltzmann result in \eq{eq:partfunc_MB} is 
-
-Even though bosons' occupation numbers are the same $n_{\ell} \in \Nbb_0$ that we considered 
-that we considered 
-by taking more care to count micro-states correctly
-
-sums over the occupation numbers $n_{\ell}$ for each energy level to find
-
-\TODO{Being written...}
+In the low-temperature regime $\frac{E_{\ell} - \mu}{T} \ll 1$ corresponding to the left portion of the plot, we see dramatically different behaviour for the three cases.
+The classical Maxwell--Boltzmann prediction for the average occupation number grows exponentially, while the quantum Bose--Einstein prediction diverges as $E_{\ell} \to \mu$ and the Fermi--Dirac prediction slowly approaches its maximum possible value $\nFD \to 1$.
+Over the next two weeks we will study in more detail the quantum gases of bosons and fermions that produce these results.
 % ------------------------------------------------------------------
