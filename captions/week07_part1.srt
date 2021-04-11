@@ -1,0 +1,763 @@
+1
+00:00:01,850 --> 00:00:05,070
+Hello and welcome back to a statistical physics.
+
+2
+00:00:05,090 --> 00:00:08,960
+This is the first video for week seven resuming
+
+3
+00:00:08,960 --> 00:00:12,860
+after the break. So let's start with a couple of
+
+4
+00:00:12,860 --> 00:00:15,950
+minutes. Just reviewing where we are in the module
+
+5
+00:00:15,950 --> 00:00:20,000
+and where we are going. As usual, with the aid of
+
+6
+00:00:21,560 --> 00:00:26,950
+taking a look at the written materials here. So in
+
+7
+00:00:26,960 --> 00:00:29,870
+approximately the first half of the module, we
+
+8
+00:00:29,870 --> 00:00:34,730
+have introduced the three core statistical
+
+9
+00:00:34,730 --> 00:00:40,070
+ensembles that form the bulk of of what we work
+
+10
+00:00:40,070 --> 00:00:42,410
+with in statistical physics, these being the micro
+
+11
+00:00:42,410 --> 00:00:45,550
+canonical ensemble, canonical ensemble and granth
+
+12
+00:00:45,560 --> 00:00:48,770
+canonical ensemble. And just as a quick reminder,
+
+13
+00:00:49,910 --> 00:00:53,150
+the micro canonical ensemble is defined by
+
+14
+00:00:53,570 --> 00:00:56,870
+conservation of energy and particle under the
+
+15
+00:00:56,870 --> 00:00:59,690
+canonical ensemble. No longer enforces
+
+16
+00:00:59,690 --> 00:01:01,640
+conservation of energy, but instead fixes a
+
+17
+00:01:01,640 --> 00:01:04,400
+temperature while keeping the particle no
+
+18
+00:01:04,820 --> 00:01:07,730
+conserved. And the grand canonical ensemble
+
+19
+00:01:07,730 --> 00:01:10,040
+doesn't conserve either energy or particle. No,
+
+20
+00:01:10,040 --> 00:01:13,220
+but instead fixes the temperature and chemical
+
+21
+00:01:13,220 --> 00:01:19,780
+potential. And just as we previously. Developed
+
+22
+00:01:19,920 --> 00:01:22,650
+and gained familiarity with the canonical ensemble
+
+23
+00:01:22,650 --> 00:01:26,100
+by applying it to investigate ideal gases and the
+
+24
+00:01:26,100 --> 00:01:29,340
+thermodynamic cycles, over the next few weeks, we
+
+25
+00:01:29,340 --> 00:01:34,620
+will gain familiarity and and expertise with the
+
+26
+00:01:34,620 --> 00:01:37,740
+grand canonical ensemble by applying it to
+
+27
+00:01:38,040 --> 00:01:41,550
+investigate quantum gases, which requires the
+
+28
+00:01:41,550 --> 00:01:46,200
+content of this week getting to grips with quantum
+
+29
+00:01:46,200 --> 00:01:49,620
+statistics. And what's quantum really means in
+
+30
+00:01:49,620 --> 00:01:52,500
+this context, with no assumption that you've seen
+
+31
+00:01:52,500 --> 00:01:55,260
+anything quantum before and no intention of really
+
+32
+00:01:55,620 --> 00:01:59,610
+teaching you about quantum mechanics, which is an
+
+33
+00:01:59,610 --> 00:02:03,750
+entirely different module in its own right. What
+
+34
+00:02:03,750 --> 00:02:08,430
+we're doing is taking some of the key features of
+
+35
+00:02:08,700 --> 00:02:11,640
+quantum physics and basically assuming those
+
+36
+00:02:11,640 --> 00:02:15,000
+adopting them as offsets or conjectures and seeing
+
+37
+00:02:15,450 --> 00:02:20,070
+what results when we apply our statistical toolkit
+
+38
+00:02:20,070 --> 00:02:21,720
+to the resulting systems.
+
+39
+00:02:24,130 --> 00:02:27,670
+There are still some conceptual subtleties here
+
+40
+00:02:27,850 --> 00:02:31,600
+that are the focus of this week, so you will see
+
+41
+00:02:31,600 --> 00:02:35,850
+that the materials are. Largely conceptual,
+
+42
+00:02:35,860 --> 00:02:38,760
+there's not much in the way of calculations and
+
+43
+00:02:39,060 --> 00:02:42,990
+and little exercises for you to work on and in in
+
+44
+00:02:43,080 --> 00:02:45,000
+the two videos that I have planned for this week,
+
+45
+00:02:45,000 --> 00:02:48,720
+I'll focus on what I think are the two trickiest
+
+46
+00:02:48,870 --> 00:02:53,370
+concepts here having to do with the contrast
+
+47
+00:02:53,370 --> 00:02:56,760
+between classical and quantum statistics, where if
+
+48
+00:02:56,760 --> 00:03:01,200
+you recall from way back in week for the ideal gas,
+
+49
+00:03:02,070 --> 00:03:05,520
+the word classical simply means not quantum and
+
+50
+00:03:05,520 --> 00:03:07,470
+anything. Quantum is not classical.
+
+51
+00:03:09,900 --> 00:03:13,830
+Now, the sort of obvious condition for quantum
+
+52
+00:03:13,950 --> 00:03:17,370
+physics is that the the system is quantized and in
+
+53
+00:03:17,370 --> 00:03:20,910
+particular the energies that we sum over and the
+
+54
+00:03:20,910 --> 00:03:24,360
+definition of either the canonical or grand
+
+55
+00:03:24,360 --> 00:03:26,910
+canonical partition function are those energies
+
+56
+00:03:26,910 --> 00:03:30,330
+are themselves quantized or discrete, falling into
+
+57
+00:03:30,330 --> 00:03:33,960
+energy levels of the sort that we saw back in week
+
+58
+00:03:33,960 --> 00:03:38,400
+three, four systems of spin's. But of course, back
+
+59
+00:03:38,400 --> 00:03:41,130
+in week three, even though we had these quantize
+
+60
+00:03:41,130 --> 00:03:44,820
+energy levels, we hadn't mentioned the concept of
+
+61
+00:03:44,820 --> 00:03:46,830
+of quantum physics and everything was still being
+
+62
+00:03:46,830 --> 00:03:49,830
+done classically. So there's a different change in
+
+63
+00:03:49,830 --> 00:03:53,520
+perspective that really distinguishes between
+
+64
+00:03:53,850 --> 00:03:57,120
+classical and quantum physics. And to give a
+
+65
+00:03:57,120 --> 00:04:00,180
+slightly different approach to that in this video
+
+66
+00:04:00,180 --> 00:04:03,810
+compared to the written material. Let me jump to
+
+67
+00:04:04,170 --> 00:04:06,210
+the statement of this difference at the end of
+
+68
+00:04:06,540 --> 00:04:10,500
+Section seven point one, and then go back and see
+
+69
+00:04:10,500 --> 00:04:15,140
+how this manifests in. In the earlier parts of the
+
+70
+00:04:15,140 --> 00:04:18,860
+section, so the difference between quantum and
+
+71
+00:04:18,860 --> 00:04:21,770
+classical statistics is that in the quantum case.
+
+72
+00:04:22,900 --> 00:04:26,020
+And we have to define this sum over the
+
+73
+00:04:26,290 --> 00:04:30,070
+microstates that gives us either the canonical or
+
+74
+00:04:30,070 --> 00:04:32,320
+in this case, the grand canonical partition
+
+75
+00:04:32,320 --> 00:04:34,810
+function and then all the properties of the system
+
+76
+00:04:34,810 --> 00:04:38,800
+from that in order to define the microstates in a
+
+77
+00:04:38,800 --> 00:04:43,060
+quantum system, we consider each possible discrete
+
+78
+00:04:43,060 --> 00:04:46,600
+energy level in turn and some over all of the
+
+79
+00:04:46,600 --> 00:04:49,840
+possible occupation numbers that this energy level
+
+80
+00:04:49,840 --> 00:04:53,710
+could have in. This contrasts with the quantum
+
+81
+00:04:53,710 --> 00:04:58,450
+approach where we consider each particle in the
+
+82
+00:04:58,450 --> 00:05:01,540
+system one by one and some over all of the
+
+83
+00:05:01,540 --> 00:05:04,270
+possible energies that that single particle could
+
+84
+00:05:04,270 --> 00:05:04,750
+have.
+
+85
+00:05:06,920 --> 00:05:09,890
+That classical approach is still applicable even
+
+86
+00:05:09,890 --> 00:05:11,630
+in the current canonical ensemble, where different
+
+87
+00:05:11,630 --> 00:05:14,270
+microstates have different particle numbers, just
+
+88
+00:05:14,270 --> 00:05:16,970
+some over all of the particles that there are.
+
+89
+00:05:17,420 --> 00:05:21,290
+What happens when we do so? We saw in week three,
+
+90
+00:05:21,800 --> 00:05:25,280
+we actually overcount the same micro state
+
+91
+00:05:25,280 --> 00:05:28,190
+multiple times when the particles are
+
+92
+00:05:28,190 --> 00:05:30,740
+indistinguishable, which they always are in the
+
+93
+00:05:30,740 --> 00:05:32,540
+context of quantum physics.
+
+94
+00:05:35,530 --> 00:05:39,100
+In that overcounting well, we corrected for it's
+
+95
+00:05:40,390 --> 00:05:42,190
+classically by.
+
+96
+00:05:45,150 --> 00:05:49,380
+Counting how many times the same system was
+
+97
+00:05:49,680 --> 00:05:52,320
+included, which turned out to be that factor of
+
+98
+00:05:52,320 --> 00:05:54,780
+one over and factorial and then just divide it
+
+99
+00:05:54,780 --> 00:05:57,660
+through by that one over. And Vectorial, a
+
+100
+00:05:57,660 --> 00:06:03,330
+normalization gave us the correct partition
+
+101
+00:06:03,330 --> 00:06:06,510
+function for indistinguishably articles with the
+
+102
+00:06:06,510 --> 00:06:10,830
+assumption that was hidden in a footnote, there
+
+103
+00:06:10,830 --> 00:06:14,220
+was the assumption that all of the particles were
+
+104
+00:06:14,220 --> 00:06:19,170
+in distinct energy levels in the case where the
+
+105
+00:06:19,170 --> 00:06:24,490
+energy level is defined by. The momentum and
+
+106
+00:06:24,490 --> 00:06:27,430
+retreat, the momentum is approximately continuous
+
+107
+00:06:27,430 --> 00:06:28,510
+numbers then.
+
+108
+00:06:30,510 --> 00:06:33,780
+It is essentially guaranteed that every particle
+
+109
+00:06:33,780 --> 00:06:36,960
+will have a a different momentum. There are
+
+110
+00:06:37,290 --> 00:06:40,780
+uncountable infinite numbers of possible momenta
+
+111
+00:06:41,040 --> 00:06:44,730
+and only a finite number of particles in the
+
+112
+00:06:44,730 --> 00:06:47,580
+universe. So there's a vanishingly small chance
+
+113
+00:06:47,970 --> 00:06:50,700
+that any of them have the same momentum. But when
+
+114
+00:06:51,090 --> 00:06:55,810
+the energy levels are. Discreet and quantize to
+
+115
+00:06:55,810 --> 00:06:58,690
+depending on how many energy levels are accessible
+
+116
+00:06:58,690 --> 00:07:02,440
+for the system, there may be a negligible chance
+
+117
+00:07:02,440 --> 00:07:06,100
+of having multiple particles, multiple identical
+
+118
+00:07:06,100 --> 00:07:10,450
+particles in the same energy level. And to show
+
+119
+00:07:11,110 --> 00:07:15,040
+what that does in this section, we go through a
+
+120
+00:07:15,640 --> 00:07:19,240
+simple little exercise of considering a canonical
+
+121
+00:07:19,240 --> 00:07:22,540
+system with a fixed number of two particles and
+
+122
+00:07:22,540 --> 00:07:26,800
+only five different energy levels, and we count
+
+123
+00:07:26,800 --> 00:07:30,520
+explicitly how many microstates there are to some
+
+124
+00:07:30,520 --> 00:07:35,020
+over and how many we would predict from the
+
+125
+00:07:35,020 --> 00:07:38,830
+classical argument we use in the past, refine
+
+126
+00:07:39,310 --> 00:07:41,560
+where you will find when you fill in this box a
+
+127
+00:07:41,560 --> 00:07:47,570
+nonsensical prediction. Whereas going over the
+
+128
+00:07:48,050 --> 00:07:53,350
+calculation more explicitly leads to. The
+
+129
+00:07:54,520 --> 00:08:00,810
+exhaustive list here, which is not. A, not
+
+130
+00:08:00,810 --> 00:08:05,040
+something that can be obtained by counting all of
+
+131
+00:08:05,040 --> 00:08:07,380
+the microstates for the single particles and
+
+132
+00:08:07,380 --> 00:08:11,490
+dividing by any overcounting factor, we have to go
+
+133
+00:08:11,490 --> 00:08:16,710
+through energy level by energy level, count the
+
+134
+00:08:17,160 --> 00:08:19,860
+possible occupation numbers for each energy level,
+
+135
+00:08:20,370 --> 00:08:24,120
+and then that gives us the correct accounting of
+
+136
+00:08:24,120 --> 00:08:27,600
+all the microstates with no additional
+
+137
+00:08:27,600 --> 00:08:31,250
+overcounting factor that has to be included. So
+
+138
+00:08:31,250 --> 00:08:33,590
+I'll wrap up this video just with a further
+
+139
+00:08:33,590 --> 00:08:38,650
+comment on. What occupation numbers are possible
+
+140
+00:08:38,650 --> 00:08:43,540
+for typical physical systems, and it turns out for
+
+141
+00:08:44,020 --> 00:08:47,050
+somewhat technical reasons of quantum physics,
+
+142
+00:08:47,410 --> 00:08:49,930
+that there are two distinct classes of
+
+143
+00:08:49,930 --> 00:08:53,830
+possibilities that have the funny looking names of
+
+144
+00:08:53,830 --> 00:08:57,850
+those islands and fermions. Those names come from
+
+145
+00:08:58,540 --> 00:09:01,960
+being named after some 20th century physicists.
+
+146
+00:09:02,560 --> 00:09:05,980
+And really the fundamental distinction between
+
+147
+00:09:06,460 --> 00:09:10,900
+bosons and fermions is precisely the possible
+
+148
+00:09:10,900 --> 00:09:17,290
+occupation numbers for identical particles in a
+
+149
+00:09:17,290 --> 00:09:22,420
+given energy level. So bosons are somewhat
+
+150
+00:09:22,420 --> 00:09:26,470
+familiar or perhaps intuitive case where it is
+
+151
+00:09:26,470 --> 00:09:29,080
+possible to have any non-negative number of
+
+152
+00:09:29,080 --> 00:09:31,710
+particles in the same energy level.
+
+153
+00:09:33,710 --> 00:09:37,090
+And the particles that behave, this so-called
+
+154
+00:09:37,090 --> 00:09:40,660
+Bosnich statistics are photons, particles of light
+
+155
+00:09:41,200 --> 00:09:45,220
+and subatomic particles like pions, the Higgs
+
+156
+00:09:45,220 --> 00:09:48,010
+boson that was discovered almost a decade ago, as
+
+157
+00:09:48,010 --> 00:09:53,610
+well as many atoms, including helium for. The
+
+158
+00:09:53,610 --> 00:09:57,750
+other class of particles, there can be at most one
+
+159
+00:09:58,350 --> 00:10:02,400
+particle in any energy level. This is for fermions,
+
+160
+00:10:02,790 --> 00:10:08,080
+so. There cannot be multiple fermions in an energy
+
+161
+00:10:08,080 --> 00:10:11,650
+level, the energy level is either occupied by a
+
+162
+00:10:11,660 --> 00:10:14,380
+firm hand with occupation, number one, or it is
+
+163
+00:10:14,380 --> 00:10:17,800
+unoccupied. If occupation number zero, which is
+
+164
+00:10:18,610 --> 00:10:23,410
+behavior that was observed before quantum physics
+
+165
+00:10:23,410 --> 00:10:27,060
+was fully developed and became known as the the
+
+166
+00:10:27,130 --> 00:10:31,660
+exclusion principle, before the reasons behind it
+
+167
+00:10:31,660 --> 00:10:32,620
+were understood.
+
+168
+00:10:34,810 --> 00:10:39,340
+And the fact that only a single thermionic can
+
+169
+00:10:39,340 --> 00:10:45,080
+occupy any energy level is extremely important. It
+
+170
+00:10:45,100 --> 00:10:47,800
+is necessary for the existence of chemistry and
+
+171
+00:10:47,800 --> 00:10:50,890
+the existence of life, and it also gives rise to
+
+172
+00:10:51,310 --> 00:10:54,250
+very different quantum statistics compared to both
+
+173
+00:10:54,250 --> 00:10:59,200
+to to quantum bosons as well as to the classical
+
+174
+00:10:59,200 --> 00:11:02,460
+accounting that goes under the name of Maxwell
+
+175
+00:11:02,460 --> 00:11:07,810
+Walsman statistics and was reviewed in Section
+
+176
+00:11:07,810 --> 00:11:11,990
+seven point one. This long paragraph here is a
+
+177
+00:11:12,700 --> 00:11:16,660
+brief story, somewhat imprecise to explaining why
+
+178
+00:11:16,660 --> 00:11:20,700
+exactly those are the fermions differ in this way.
+
+179
+00:11:21,310 --> 00:11:23,770
+It does not have to do with any sort of direct
+
+180
+00:11:23,980 --> 00:11:27,280
+repulsion or pushing on each other in terms of how
+
+181
+00:11:27,280 --> 00:11:31,780
+many particles can occupy the same energy level.
+
+182
+00:11:32,780 --> 00:11:36,890
+It is a a more fundamental aspect of quantum
+
+183
+00:11:36,890 --> 00:11:41,310
+physics that you can skip if you are. Uninterested.
+
+184
+00:11:41,540 --> 00:11:45,170
+So in the next video, I'll briefly look at the
+
+185
+00:11:45,230 --> 00:11:48,650
+resulting statistics and then focus on the second
+
+186
+00:11:49,160 --> 00:11:52,340
+tricky conceptual issue, which is how do the
+
+187
+00:11:52,340 --> 00:11:57,740
+quantum and classical worlds reconnect, given the
+
+188
+00:11:57,740 --> 00:12:01,010
+knowledge that the classical physics were familiar
+
+189
+00:12:01,010 --> 00:12:04,190
+with from everyday experience is fundamentally
+
+190
+00:12:04,190 --> 00:12:08,480
+arising from quantum physics at a smaller distance
+
+191
+00:12:08,480 --> 00:12:09,140
+scales.
