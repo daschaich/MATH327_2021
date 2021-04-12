@@ -1,0 +1,2479 @@
+1
+00:00:01,200 --> 00:00:06,850
+No. Hi, folks, and welcome back. And after the
+
+2
+00:00:06,860 --> 00:00:07,610
+term break.
+
+3
+00:00:10,820 --> 00:00:14,570
+Expecting or hoping that a few more people will
+
+4
+00:00:14,570 --> 00:00:18,710
+sign in over the next few minutes so they'll get
+
+5
+00:00:18,710 --> 00:00:22,160
+the recording started at the screen shared and
+
+6
+00:00:22,370 --> 00:00:28,190
+just start off with the usual pull for whether
+
+7
+00:00:28,190 --> 00:00:34,580
+there are any. Questions or issues that you would
+
+8
+00:00:34,580 --> 00:00:38,870
+like to. Bring up focus on discuss during this
+
+9
+00:00:39,440 --> 00:00:45,500
+secretive session before charging into some of the
+
+10
+00:00:45,800 --> 00:00:52,490
+logistics coming up and the. The new material on
+
+11
+00:00:52,600 --> 00:00:55,090
+quantum statistics and perhaps before getting into
+
+12
+00:00:55,090 --> 00:00:58,180
+the new stuff, it might be worthwhile to do a
+
+13
+00:00:58,300 --> 00:01:02,380
+recap or review of what came before the break
+
+14
+00:01:02,380 --> 00:01:07,210
+since it was a few weeks ago. Now that that break.
+
+15
+00:01:08,260 --> 00:01:13,790
+Kicked in some of the. Details may have slipped
+
+16
+00:01:13,790 --> 00:01:19,240
+away in the meantime, the. The.
+
+17
+00:01:21,970 --> 00:01:26,920
+Usual screening share set up and running.
+
+18
+00:01:36,290 --> 00:01:37,550
+Which should now be.
+
+19
+00:01:40,190 --> 00:01:47,590
+Visible and. Maybe the most timely matter is the
+
+20
+00:01:47,800 --> 00:01:51,700
+second parts of the computer project that is due
+
+21
+00:01:52,060 --> 00:01:57,720
+tomorrow. I have well, I've seen that some of you
+
+22
+00:01:57,720 --> 00:02:01,320
+have already submitted this over the past 10 days
+
+23
+00:02:01,320 --> 00:02:05,220
+or so, though there is still time for submissions,
+
+24
+00:02:05,220 --> 00:02:07,560
+if you see anything that.
+
+25
+00:02:09,960 --> 00:02:13,830
+Maybe suspicious or you would like to revise and
+
+26
+00:02:13,830 --> 00:02:16,620
+of course, there are many of you still working on
+
+27
+00:02:16,620 --> 00:02:20,170
+it and I have received questions about it from.
+
+28
+00:02:21,850 --> 00:02:26,170
+From a few of you and any further questions about
+
+29
+00:02:27,470 --> 00:02:30,220
+both about the assignment for the second part of
+
+30
+00:02:30,220 --> 00:02:33,130
+Self as well as for the solutions to the first
+
+31
+00:02:33,130 --> 00:02:36,940
+part that provide something of a template, a
+
+32
+00:02:36,940 --> 00:02:41,740
+similar exercise in the case where we had the
+
+33
+00:02:41,740 --> 00:02:47,380
+central limit theorem at hand to to provide an
+
+34
+00:02:47,380 --> 00:02:51,220
+analytic check of the numerical solutions, that is
+
+35
+00:02:51,220 --> 00:02:55,780
+all fair game for today is synchronous session.
+
+36
+00:02:56,410 --> 00:02:59,290
+And while I.
+
+37
+00:03:01,450 --> 00:03:06,950
+Wait to see if any. Questions of that sort come in.
+
+38
+00:03:09,560 --> 00:03:13,910
+Through that usual poll everywhere, a link in the
+
+39
+00:03:13,910 --> 00:03:16,820
+chat window. There it is again. For those of you
+
+40
+00:03:16,820 --> 00:03:21,710
+who have joined since it was first posted, I can
+
+41
+00:03:22,700 --> 00:03:29,550
+provide some general comments on. The first
+
+42
+00:03:29,550 --> 00:03:33,600
+homework assignments that got graded during the
+
+43
+00:03:33,600 --> 00:03:37,740
+break, so you all should have gotten the feedback
+
+44
+00:03:37,740 --> 00:03:41,220
+and solutions to that. So I can.
+
+45
+00:03:43,390 --> 00:03:46,330
+Show off in this screen.
+
+46
+00:03:50,270 --> 00:03:55,370
+And to begin with, maybe I will highlight the very
+
+47
+00:03:55,370 --> 00:04:00,050
+last part of the third question is the one that
+
+48
+00:04:01,040 --> 00:04:01,700
+was
+
+49
+00:04:03,920 --> 00:04:09,530
+most consistently confusing for for several of you,
+
+50
+00:04:10,130 --> 00:04:15,380
+which was asking what are the conditions under
+
+51
+00:04:15,380 --> 00:04:15,860
+which?
+
+52
+00:04:19,540 --> 00:04:24,550
+This generic. Each capacity. Um.
+
+53
+00:04:26,980 --> 00:04:28,960
+Why you are not drawing, I don't know.
+
+54
+00:04:32,400 --> 00:04:36,650
+Something. Going on with the tablet there that now
+
+55
+00:04:36,650 --> 00:04:39,440
+seems to be resolved. So when is that heat
+
+56
+00:04:39,440 --> 00:04:42,020
+capacity and which takes the generic form of
+
+57
+00:04:42,350 --> 00:04:45,860
+energy fluctuations around the expectation value
+
+58
+00:04:45,860 --> 00:04:50,060
+of the energy, the conditions under which that can
+
+59
+00:04:50,960 --> 00:04:56,210
+equal zero and. The.
+
+60
+00:04:58,510 --> 00:05:04,540
+Common response that came into that question was
+
+61
+00:05:05,440 --> 00:05:08,500
+to say that, you know, we started off with the
+
+62
+00:05:08,530 --> 00:05:09,570
+heat capacity.
+
+63
+00:05:13,150 --> 00:05:18,910
+Equal to the derivative of that energy expectation
+
+64
+00:05:18,910 --> 00:05:21,730
+value with respect to the temperature. So it was
+
+65
+00:05:21,730 --> 00:05:28,710
+tempting to set that to zero and then. Say that E
+
+66
+00:05:29,470 --> 00:05:30,250
+had to be.
+
+67
+00:05:33,630 --> 00:05:36,900
+The constant in order for the capacity to vanish
+
+68
+00:05:37,230 --> 00:05:41,760
+in that is certainly a sufficient condition, but
+
+69
+00:05:41,760 --> 00:05:44,790
+it is not, in fact necessary. And this is a much
+
+70
+00:05:45,540 --> 00:05:51,870
+too severe a a condition to impose in order to get
+
+71
+00:05:51,880 --> 00:05:58,500
+the capacity to manage what we saw, just to review
+
+72
+00:05:58,500 --> 00:06:00,540
+the solutions. If you haven't looked at them
+
+73
+00:06:00,540 --> 00:06:04,110
+recently, all we have to do is recall the
+
+74
+00:06:04,530 --> 00:06:09,330
+definition of an expectation value as the sum over
+
+75
+00:06:09,330 --> 00:06:13,320
+microstates of the argument of that expectation
+
+76
+00:06:13,320 --> 00:06:17,040
+value in the annual brackets. And in this case,
+
+77
+00:06:18,030 --> 00:06:22,650
+that sum over microstates becomes the sum of a
+
+78
+00:06:23,460 --> 00:06:26,040
+strictly non-negative quantity, some quantity
+
+79
+00:06:26,040 --> 00:06:31,450
+squared. Multiplied by the probability that is
+
+80
+00:06:31,450 --> 00:06:34,420
+also not negative and we can take to be strictly
+
+81
+00:06:34,420 --> 00:06:38,500
+positive by saying that the sun is over, the
+
+82
+00:06:38,500 --> 00:06:40,600
+accessible micro states that have a non-zero
+
+83
+00:06:40,600 --> 00:06:43,870
+probability of actually appearing in the system.
+
+84
+00:06:45,730 --> 00:06:51,460
+So what we have is. A sum of strictly positive
+
+85
+00:06:51,460 --> 00:06:53,860
+squares with positive coefficients and the only
+
+86
+00:06:53,860 --> 00:06:56,980
+way that some can vanish is if each individual
+
+87
+00:06:56,980 --> 00:07:01,000
+term vanishes individually, which gives us the
+
+88
+00:07:01,000 --> 00:07:04,390
+constraints on the energy for each individual
+
+89
+00:07:04,390 --> 00:07:08,260
+micro state. That has to be exactly equal to that
+
+90
+00:07:08,260 --> 00:07:09,400
+expectation value.
+
+91
+00:07:11,480 --> 00:07:14,900
+In other words, there are no possible fluctuations
+
+92
+00:07:14,900 --> 00:07:19,220
+of the energy around this particular value that
+
+93
+00:07:19,220 --> 00:07:23,870
+turns out then to be the expectation value is the
+
+94
+00:07:23,870 --> 00:07:25,790
+only possibility. So.
+
+95
+00:07:27,910 --> 00:07:33,720
+We can actually see this in action back. All the
+
+96
+00:07:33,720 --> 00:07:35,520
+way back in week three, actually, when we were
+
+97
+00:07:35,520 --> 00:07:41,580
+looking at a system of indistinguishable spins. So
+
+98
+00:07:41,590 --> 00:07:45,340
+spins in the solid that can wake up or down.
+
+99
+00:07:49,080 --> 00:07:52,320
+And pick up some energy from.
+
+100
+00:07:54,660 --> 00:08:00,120
+Their interactions with external magnetic field. H.
+
+101
+00:08:01,840 --> 00:08:07,790
+Which. Age oriented in that direction, and we
+
+102
+00:08:07,790 --> 00:08:12,740
+computed. Back in those days before the break that.
+
+103
+00:08:14,790 --> 00:08:17,500
+The of the resulting energy for the system and
+
+104
+00:08:17,520 --> 00:08:21,420
+spins coming from that Helmholtz free energy was.
+
+105
+00:08:23,470 --> 00:08:27,790
+Minus beta, eight times the hyperbolic tangent.
+
+106
+00:08:30,040 --> 00:08:35,070
+A better age is the strength of the magnetic field,
+
+107
+00:08:35,070 --> 00:08:39,420
+beta is the inverse temperature. And therefore,
+
+108
+00:08:39,870 --> 00:08:40,980
+the heat capacity.
+
+109
+00:08:44,070 --> 00:08:45,330
+Resulting from this.
+
+110
+00:08:50,010 --> 00:08:50,910
+Is.
+
+111
+00:08:54,690 --> 00:08:57,900
+Try to remember the beta squared.
+
+112
+00:09:00,170 --> 00:09:03,260
+Debate The Times, this minus B, the age.
+
+113
+00:09:06,120 --> 00:09:07,020
+And then the.
+
+114
+00:09:09,760 --> 00:09:10,990
+Metabolic Vangent.
+
+115
+00:09:18,020 --> 00:09:22,340
+And if I can. Do this in my head or remember the
+
+116
+00:09:22,340 --> 00:09:25,610
+answer. Had the negative sides cancelling out and
+
+117
+00:09:25,610 --> 00:09:27,530
+then the two terms gave a.
+
+118
+00:09:32,240 --> 00:09:40,610
+Beta H squared over the hyperbolic cosine squared.
+
+119
+00:09:42,040 --> 00:09:49,630
+Of being age, which in the limit of. So we can do
+
+120
+00:09:49,630 --> 00:09:53,440
+the usual exercise of looking at the high and low
+
+121
+00:09:53,440 --> 00:09:58,110
+temperature limits of this function. At low
+
+122
+00:09:58,110 --> 00:10:05,130
+temperatures, so t going to zero. Are going to
+
+123
+00:10:06,450 --> 00:10:10,470
+infinity, the hyperbolic cosine diverges much more
+
+124
+00:10:10,470 --> 00:10:15,210
+quickly than Bureij squared, so that is one limit
+
+125
+00:10:15,210 --> 00:10:19,790
+in which the heat capacity goes to zero. Whereas
+
+126
+00:10:19,790 --> 00:10:23,300
+in the limit of infinite temperature where beta
+
+127
+00:10:23,300 --> 00:10:27,530
+goes to zero, hyperbolic, cosine goes to one, the
+
+128
+00:10:27,530 --> 00:10:32,990
+numerator also goes to zero in the way that in
+
+129
+00:10:32,990 --> 00:10:35,240
+that synchronous session we went through and
+
+130
+00:10:35,240 --> 00:10:43,010
+plotted here, this is I can't draw. On this screen,
+
+131
+00:10:43,010 --> 00:10:45,800
+but the vertical axis here is the heat capacity
+
+132
+00:10:45,800 --> 00:10:49,100
+for that system of indistinguishable spins and the
+
+133
+00:10:49,910 --> 00:10:52,820
+horizontal axis is Beda, the inverse temperature
+
+134
+00:10:54,020 --> 00:10:54,740
+so that.
+
+135
+00:10:57,170 --> 00:10:59,950
+The high temperature limit corresponds to the
+
+136
+00:10:59,960 --> 00:11:04,840
+small data where. Nobody goes to zero zero zero,
+
+137
+00:11:04,850 --> 00:11:07,880
+the capacity also goes to zero in the limit of low
+
+138
+00:11:07,880 --> 00:11:14,930
+temperatures or infinite beta. So this is a simple
+
+139
+00:11:14,930 --> 00:11:17,840
+but not trivial example where the heat capacity is
+
+140
+00:11:17,840 --> 00:11:23,610
+not always zero. But we still have limits in which
+
+141
+00:11:23,610 --> 00:11:29,790
+it equals zero when the well, we can check that in
+
+142
+00:11:29,790 --> 00:11:34,970
+those limits. We want. The energy of each
+
+143
+00:11:34,970 --> 00:11:39,440
+microstates to equal the expectation value with no
+
+144
+00:11:39,440 --> 00:11:43,200
+fluctuations. So that is perhaps the takeaway
+
+145
+00:11:43,200 --> 00:11:46,980
+message that we should have looked at before
+
+146
+00:11:46,980 --> 00:11:50,610
+switching back here so we can recall that when we
+
+147
+00:11:50,610 --> 00:11:55,560
+have. Very low temperatures, the probability for
+
+148
+00:11:55,560 --> 00:12:00,270
+the system to be in any micro state other than its
+
+149
+00:12:00,270 --> 00:12:03,300
+ground state is exponentially suppressed. It
+
+150
+00:12:03,300 --> 00:12:09,580
+vanishes exponentially quickly. In the in terms of
+
+151
+00:12:09,580 --> 00:12:13,800
+the energy gap. Which for these things is.
+
+152
+00:12:16,150 --> 00:12:21,610
+To. Age, the change in the energy that we get when
+
+153
+00:12:21,610 --> 00:12:25,270
+we flip one of these spins from oriented with the
+
+154
+00:12:25,270 --> 00:12:28,390
+magnetic field of giving a low energy to oriented
+
+155
+00:12:28,390 --> 00:12:31,360
+against, it's giving a high energy. So as the
+
+156
+00:12:31,360 --> 00:12:35,380
+temperature goes to zero, essentially only a
+
+157
+00:12:35,380 --> 00:12:39,610
+single microstates remains with non-negative
+
+158
+00:12:39,610 --> 00:12:44,140
+probability. And that is the ground state where
+
+159
+00:12:44,230 --> 00:12:46,860
+all the spins are aligned with the magnetic field
+
+160
+00:12:47,620 --> 00:12:52,790
+and it's its micro state. Energy is then so
+
+161
+00:12:52,830 --> 00:12:59,060
+trivially equal to the expectation value. The high
+
+162
+00:12:59,110 --> 00:13:03,130
+temperature limit with beta varnishing is a bit
+
+163
+00:13:03,130 --> 00:13:06,040
+more subtle because that's the case when every
+
+164
+00:13:06,040 --> 00:13:10,960
+possible microstates is equally likely just
+
+165
+00:13:10,960 --> 00:13:13,750
+because their energies are negligible compared to
+
+166
+00:13:13,750 --> 00:13:18,430
+the energy scale set by the temperature. So we're
+
+167
+00:13:18,430 --> 00:13:19,300
+free to.
+
+168
+00:13:21,360 --> 00:13:24,270
+Sample every single one of those microstates with.
+
+169
+00:13:25,630 --> 00:13:28,690
+What appear to be different energies and the way
+
+170
+00:13:28,690 --> 00:13:32,140
+that we end up with the high capacity going to
+
+171
+00:13:32,140 --> 00:13:36,490
+zero in that limit is that all of those energies
+
+172
+00:13:36,490 --> 00:13:39,910
+are so small compared to the temperature that they
+
+173
+00:13:39,910 --> 00:13:44,900
+are effectively zero. And with no fluctuations,
+
+174
+00:13:44,900 --> 00:13:50,150
+then around that zero, the expectation value, so
+
+175
+00:13:50,930 --> 00:13:55,040
+that is the physical picture behind the
+
+176
+00:13:55,040 --> 00:13:58,700
+mathematics we're looking at here and an example
+
+177
+00:13:59,150 --> 00:14:02,840
+showing how we don't need this constraint, that
+
+178
+00:14:02,840 --> 00:14:06,410
+the high capacity always vanishes in order to have
+
+179
+00:14:06,440 --> 00:14:09,470
+that function vanish under some particular
+
+180
+00:14:09,470 --> 00:14:13,900
+conditions on the micro state energies.
+
+181
+00:14:17,210 --> 00:14:22,470
+I haven't seen. Questions come in about the
+
+182
+00:14:22,470 --> 00:14:25,590
+computer projects, homework solutions or other
+
+183
+00:14:25,590 --> 00:14:31,590
+asynchronous materials so far, so I'll pause for a
+
+184
+00:14:31,590 --> 00:14:33,750
+few breaths to see if there are follow up
+
+185
+00:14:33,750 --> 00:14:37,560
+questions about that, that last part of question
+
+186
+00:14:37,560 --> 00:14:38,040
+three.
+
+187
+00:14:42,410 --> 00:14:46,600
+And I can remember while waiting for those that. I
+
+188
+00:14:46,600 --> 00:14:50,140
+did make another notes about generic feedback on
+
+189
+00:14:50,470 --> 00:14:53,770
+the assignment, which was that the vast majority
+
+190
+00:14:53,770 --> 00:14:58,330
+of the marks that were lost were were lost for
+
+191
+00:14:59,590 --> 00:15:03,250
+parts of problems that were skipped, not not
+
+192
+00:15:03,250 --> 00:15:06,610
+answered, rather than doing things incorrectly. So
+
+193
+00:15:07,210 --> 00:15:11,350
+on the one hand, that's encouraging that when
+
+194
+00:15:12,520 --> 00:15:14,530
+solutions were presented, they tended to be
+
+195
+00:15:14,620 --> 00:15:17,950
+correct. And then the.
+
+196
+00:15:21,180 --> 00:15:23,580
+The question is whether the the absence of an
+
+197
+00:15:23,580 --> 00:15:26,850
+attempt was just due to a lack of time and too
+
+198
+00:15:26,850 --> 00:15:29,760
+many things going on, or if there were questions
+
+199
+00:15:29,760 --> 00:15:35,690
+about even where to get started, which. You are
+
+200
+00:15:35,690 --> 00:15:41,320
+always free to ask me. And. I'll figure out what
+
+201
+00:15:41,580 --> 00:15:43,930
+what answer I'm able to give for these sort of
+
+202
+00:15:43,930 --> 00:15:46,690
+assessed these sort of assessments.
+
+203
+00:15:58,110 --> 00:16:01,620
+So now they're seeing or hearing any questions, I
+
+204
+00:16:01,620 --> 00:16:08,710
+will raise one other quick topic, which only. Seem
+
+205
+00:16:08,720 --> 00:16:12,520
+to be an issue on on a few submissions, which
+
+206
+00:16:13,660 --> 00:16:17,770
+noted in the very first part of the first problem
+
+207
+00:16:18,250 --> 00:16:19,270
+that the.
+
+208
+00:16:21,520 --> 00:16:25,060
+The most likely step size in this random question
+
+209
+00:16:25,690 --> 00:16:30,190
+was identical to its in the expectation value of
+
+210
+00:16:30,190 --> 00:16:34,910
+one. And there were some comments to the effect
+
+211
+00:16:34,910 --> 00:16:39,260
+that this should always be expected as a general
+
+212
+00:16:39,260 --> 00:16:40,220
+principle, so.
+
+213
+00:16:42,670 --> 00:16:44,550
+I think I would want to.
+
+214
+00:16:47,080 --> 00:16:51,190
+Pull. Those of you here, see?
+
+215
+00:16:55,910 --> 00:16:58,760
+What you all think about the conditions under
+
+216
+00:16:58,760 --> 00:17:02,480
+which the mean of a probability distribution is
+
+217
+00:17:02,480 --> 00:17:03,830
+this most likely value.
+
+218
+00:17:06,240 --> 00:17:09,840
+Where we saw in the in the homework problem that
+
+219
+00:17:10,310 --> 00:17:14,040
+that both of those were AMURO equals one was
+
+220
+00:17:14,040 --> 00:17:17,730
+trouble with value, X equals one. See if that is
+
+221
+00:17:18,150 --> 00:17:24,840
+something generic or only results from particular
+
+222
+00:17:25,320 --> 00:17:26,240
+conditions.
+
+223
+00:17:32,400 --> 00:17:36,770
+So I'll pause for a minute or two. To give you a
+
+224
+00:17:36,770 --> 00:17:42,740
+chance to think about and respond to that, and I
+
+225
+00:17:42,740 --> 00:17:43,490
+see.
+
+226
+00:17:48,030 --> 00:17:51,070
+Questions in the chat on.
+
+227
+00:17:54,000 --> 00:17:58,170
+Yeah, so while we while you are thinking about the
+
+228
+00:17:59,010 --> 00:18:03,270
+question, I can just correct one statement in the
+
+229
+00:18:03,570 --> 00:18:06,990
+chat that the mean scores were actually not so bad
+
+230
+00:18:06,990 --> 00:18:09,510
+on the assignment's. The mean for the first part
+
+231
+00:18:09,510 --> 00:18:13,320
+of the computer project was sixty five, which is
+
+232
+00:18:14,160 --> 00:18:16,800
+toward the upper end of the interval, I'm told I'm
+
+233
+00:18:16,800 --> 00:18:19,860
+supposed to target in the UK system in the mean
+
+234
+00:18:19,860 --> 00:18:22,860
+for the homework assignment was fifty five, which
+
+235
+00:18:23,310 --> 00:18:27,600
+as at the the lower end of that bracket, both,
+
+236
+00:18:28,350 --> 00:18:35,170
+both pretty much right on target for. For the for
+
+237
+00:18:35,170 --> 00:18:39,580
+the module and in the U.K. system, so. I don't
+
+238
+00:18:39,580 --> 00:18:43,240
+think there's any reason to panic, and of course,
+
+239
+00:18:43,240 --> 00:18:47,050
+there were some scores much better than than those
+
+240
+00:18:47,050 --> 00:18:50,980
+averages, as I said, the most of the marks were
+
+241
+00:18:50,980 --> 00:18:52,080
+lost from.
+
+242
+00:18:54,170 --> 00:18:57,740
+From emitting answers to two questions, skipping
+
+243
+00:18:57,740 --> 00:19:01,010
+those rather than doing things incorrectly, so.
+
+244
+00:19:03,570 --> 00:19:08,100
+I think for the most part, we are in good shape to
+
+245
+00:19:08,760 --> 00:19:11,820
+to meet all the learning outcomes and of course,
+
+246
+00:19:11,820 --> 00:19:14,250
+if you are having any difficulties, that's what
+
+247
+00:19:14,250 --> 00:19:16,950
+I'm here for during the office hours and
+
+248
+00:19:17,730 --> 00:19:19,710
+asynchronous communication.
+
+249
+00:19:46,460 --> 00:19:48,950
+The issue with canvas is I think there are several
+
+250
+00:19:48,950 --> 00:19:53,030
+students who are still registered on the canvas
+
+251
+00:19:53,330 --> 00:19:56,330
+sites but have either withdrawn from this
+
+252
+00:19:56,330 --> 00:19:59,300
+particular module or from cities as a whole. One
+
+253
+00:19:59,300 --> 00:20:01,580
+of them is just a test student. So there are
+
+254
+00:20:01,970 --> 00:20:06,200
+multiple non submissions that canvas is
+
+255
+00:20:06,200 --> 00:20:08,540
+incorrectly averaging over, I think, in the
+
+256
+00:20:08,540 --> 00:20:13,460
+numbers that you are looking at. So that is always
+
+257
+00:20:13,460 --> 00:20:16,080
+going to to pull things down.
+
+258
+00:20:19,930 --> 00:20:21,940
+And let's see.
+
+259
+00:20:24,720 --> 00:20:30,400
+We have some responses coming in to. The question
+
+260
+00:20:30,400 --> 00:20:31,060
+here.
+
+261
+00:20:45,990 --> 00:20:50,790
+In a way, just another minute to see if any more
+
+262
+00:20:51,330 --> 00:20:55,620
+consideration is needed for those of you still.
+
+263
+00:20:57,320 --> 00:21:00,500
+Thinking about. This.
+
+264
+00:21:02,670 --> 00:21:03,570
+This question.
+
+265
+00:21:54,830 --> 00:22:01,490
+Taking a look at the. Responses, if I can get to
+
+266
+00:22:01,490 --> 00:22:07,660
+them. There is an even split between saying that
+
+267
+00:22:08,290 --> 00:22:11,770
+we need to compute things on a case by case basis
+
+268
+00:22:11,770 --> 00:22:17,710
+and the. Choice that there is.
+
+269
+00:22:19,870 --> 00:22:22,960
+Only agreement between the mean, the most likely
+
+270
+00:22:22,960 --> 00:22:29,980
+value when the distribution is symmetric. And. I
+
+271
+00:22:29,980 --> 00:22:34,680
+put in that that response be thinking in advance,
+
+272
+00:22:34,690 --> 00:22:40,870
+that's. It would be a tempting option, but it's
+
+273
+00:22:40,870 --> 00:22:43,870
+true that the mean is is not always the most
+
+274
+00:22:43,870 --> 00:22:47,650
+likely value. We actually saw an example of that
+
+275
+00:22:47,650 --> 00:22:54,910
+in the computer project demonstration, which.
+
+276
+00:22:57,460 --> 00:22:59,710
+Which I won't bother to bring up since nobody.
+
+277
+00:23:01,110 --> 00:23:06,480
+Selected either either of a or or response, see
+
+278
+00:23:06,840 --> 00:23:09,990
+where in the in the demo for the computer project,
+
+279
+00:23:09,990 --> 00:23:13,650
+we looked at a monotonic distribution where the
+
+280
+00:23:13,650 --> 00:23:16,410
+mean and the most likely value were not the same.
+
+281
+00:23:17,940 --> 00:23:23,580
+And if I hop over to a whiteboard here quickly, I
+
+282
+00:23:23,580 --> 00:23:29,820
+want to show off a counterexample for a
+
+283
+00:23:29,820 --> 00:23:32,070
+probability distribution that.
+
+284
+00:23:34,180 --> 00:23:35,320
+Has a.
+
+285
+00:23:40,570 --> 00:23:44,530
+Is the following form where I won't bother to
+
+286
+00:23:44,650 --> 00:23:48,130
+compute the constant that comes out over overall,
+
+287
+00:23:49,480 --> 00:23:52,510
+but I will say that the probability distribution
+
+288
+00:23:52,510 --> 00:24:02,110
+is the sine squared of X for X from minus Pi to Pi
+
+289
+00:24:03,610 --> 00:24:10,410
+in zero otherwise. So that if we. You know, that
+
+290
+00:24:10,410 --> 00:24:14,130
+probability distribution, that the constant factor
+
+291
+00:24:14,150 --> 00:24:16,830
+C can come from.
+
+292
+00:24:20,410 --> 00:24:24,430
+With a smaller line width that can be fixed by
+
+293
+00:24:24,670 --> 00:24:29,730
+requiring that. The integral over the probability
+
+294
+00:24:29,730 --> 00:24:33,210
+distribution equals one across this, its whole
+
+295
+00:24:33,210 --> 00:24:35,340
+range and.
+
+296
+00:24:37,660 --> 00:24:42,820
+Plotting this distribution, we know that the.
+
+297
+00:24:45,160 --> 00:24:49,180
+The sign of high and minus pi is zero. There's
+
+298
+00:24:50,020 --> 00:24:53,140
+been a maximum of sine squared at both plus and
+
+299
+00:24:53,140 --> 00:24:58,150
+minus PI over two and the sine I don't know why it
+
+300
+00:24:58,160 --> 00:25:01,420
+spontaneously zoomed out like that as I tried to
+
+301
+00:25:01,420 --> 00:25:07,710
+draw things, but. Plot four P of X vs. X from
+
+302
+00:25:08,320 --> 00:25:15,190
+minus Pi to Pi then takes the form. Of that,
+
+303
+00:25:17,350 --> 00:25:25,510
+which we can see has. You mean value, so that's X,
+
+304
+00:25:25,540 --> 00:25:31,750
+the integral from minus play pie of.
+
+305
+00:25:38,520 --> 00:25:41,580
+X times square root of X X, which is an odd
+
+306
+00:25:41,580 --> 00:25:45,480
+function over an even range around zero, so that
+
+307
+00:25:45,480 --> 00:25:51,300
+mean value is right at zero there. So that's the
+
+308
+00:25:52,020 --> 00:25:54,840
+the mean, whereas there are actually two
+
+309
+00:25:55,020 --> 00:26:01,550
+degenerate most likely values which come when. The
+
+310
+00:26:01,550 --> 00:26:05,570
+derivative of the probability distribution is set
+
+311
+00:26:05,570 --> 00:26:08,120
+to zero and check to be a maximum rather than a
+
+312
+00:26:08,120 --> 00:26:13,330
+minimum. And those most likely values are at plus
+
+313
+00:26:13,330 --> 00:26:21,260
+and minus pi over two rather than. That's me value
+
+314
+00:26:21,260 --> 00:26:24,200
+zero, even though the probability distribution is
+
+315
+00:26:24,200 --> 00:26:30,500
+symmetric around zero and around, it's me. So the.
+
+316
+00:26:32,230 --> 00:26:38,470
+The ultimate answer to this poll is that both the
+
+317
+00:26:38,740 --> 00:26:41,530
+mean and the most likely value would have to be
+
+318
+00:26:41,530 --> 00:26:44,890
+computed and compared on a case by case basis, one
+
+319
+00:26:44,890 --> 00:26:50,770
+of them corresponds to that integral over the
+
+320
+00:26:51,280 --> 00:26:55,720
+probability distribution of of X, whereas the
+
+321
+00:26:55,720 --> 00:26:59,500
+other corresponds to setting the derivative of the
+
+322
+00:26:59,500 --> 00:27:02,860
+probability distribution to zero and then checking
+
+323
+00:27:02,860 --> 00:27:05,950
+to see whether we have a maximum or a minimum.
+
+324
+00:27:16,380 --> 00:27:22,260
+So that is all that I was going to.
+
+325
+00:27:24,310 --> 00:27:28,990
+Talk about in terms of the assessment and
+
+326
+00:27:28,990 --> 00:27:32,590
+assignments of the computer project due tomorrow
+
+327
+00:27:32,590 --> 00:27:37,360
+and the D homework solutions here where the
+
+328
+00:27:37,570 --> 00:27:41,800
+feedback came back over break. Well, maybe one
+
+329
+00:27:41,800 --> 00:27:44,830
+last thing I can mention quickly was in the
+
+330
+00:27:44,830 --> 00:27:48,100
+High-temperature expansion for the last problem,
+
+331
+00:27:49,150 --> 00:27:53,470
+there were at least some difficulties. Converting
+
+332
+00:27:53,650 --> 00:27:54,370
+between.
+
+333
+00:27:56,950 --> 00:27:57,340
+The.
+
+334
+00:28:00,940 --> 00:28:06,350
+These two forms of. Asymptotic expansion's in
+
+335
+00:28:06,350 --> 00:28:10,160
+terms of expanding a function in the denominator
+
+336
+00:28:10,730 --> 00:28:15,290
+of a ratio and getting that into the the standard
+
+337
+00:28:15,290 --> 00:28:21,150
+form for an asthmatic expansion, where this these
+
+338
+00:28:21,170 --> 00:28:25,910
+higher powers of the small expansion parameter
+
+339
+00:28:26,240 --> 00:28:30,830
+show up as additive factors rather than appearing.
+
+340
+00:28:33,470 --> 00:28:38,990
+Underneath or in the in the denominator of Horatio?
+
+341
+00:28:40,610 --> 00:28:44,510
+And there are one example here, which is a
+
+342
+00:28:44,510 --> 00:28:45,200
+standard
+
+343
+00:28:47,840 --> 00:28:54,290
+expansion that you can look up in in tables of of
+
+344
+00:28:54,290 --> 00:28:58,130
+series or through Mathematica or programs like
+
+345
+00:28:58,130 --> 00:29:01,930
+that. Where in order to.
+
+346
+00:29:04,170 --> 00:29:08,430
+Expand this ratio in the usual geometric series
+
+347
+00:29:08,430 --> 00:29:11,910
+approach, we have to get it into the form of one
+
+348
+00:29:11,910 --> 00:29:16,740
+over one minus something small and then expanding
+
+349
+00:29:17,160 --> 00:29:21,300
+those that something small in the geometric series
+
+350
+00:29:21,600 --> 00:29:26,070
+allows us to rearrange things in terms of. The
+
+351
+00:29:26,070 --> 00:29:32,160
+powers of the. The expansion parameter X that
+
+352
+00:29:32,160 --> 00:29:37,560
+appear, and perhaps the key here is that the
+
+353
+00:29:37,560 --> 00:29:40,830
+manipulation is necessary in order to get things
+
+354
+00:29:40,830 --> 00:29:43,890
+into the geometric series form, bring out this
+
+355
+00:29:43,890 --> 00:29:48,840
+overall factor of one over X that comes along for
+
+356
+00:29:48,840 --> 00:29:54,970
+the ride. And affects. What what order has to be
+
+357
+00:29:55,240 --> 00:30:00,350
+retained within the geometric series expansion? So
+
+358
+00:30:00,350 --> 00:30:03,710
+that once is once the powers of the exchange
+
+359
+00:30:03,720 --> 00:30:07,450
+operator are knocked down by this overall factor,
+
+360
+00:30:07,910 --> 00:30:13,240
+we end up with the given asymptotic behavior. So
+
+361
+00:30:13,240 --> 00:30:18,340
+what we have at the end in this case is a series
+
+362
+00:30:18,340 --> 00:30:22,060
+rather than a Taylor series with negative powers
+
+363
+00:30:22,540 --> 00:30:27,220
+of the expansion Parameter X appearing as well as
+
+364
+00:30:27,400 --> 00:30:32,050
+positive powers. Apart from that, it's a matter of.
+
+365
+00:30:33,270 --> 00:30:37,440
+Keeping track of the terms that appear in these
+
+366
+00:30:37,440 --> 00:30:42,700
+expressions and organizing them. In terms of the
+
+367
+00:30:42,740 --> 00:30:46,990
+small expansion parameter X, which has been a
+
+368
+00:30:47,680 --> 00:30:56,430
+times here. And. Looking now at the.
+
+369
+00:30:59,150 --> 00:31:01,100
+The secret is material for.
+
+370
+00:31:03,350 --> 00:31:07,820
+The coming week will one last check to see if
+
+371
+00:31:07,820 --> 00:31:12,830
+there are questions about assessment or the
+
+372
+00:31:12,860 --> 00:31:14,060
+computer project.
+
+373
+00:31:18,370 --> 00:31:27,550
+And feel free to interrupt as. I go on, I think it
+
+374
+00:31:27,550 --> 00:31:33,510
+would be. Useful due to the break over the past
+
+375
+00:31:33,510 --> 00:31:39,100
+few weeks, just to. Take a quick look back at what
+
+376
+00:31:39,100 --> 00:31:43,570
+we did before that break in terms of introducing
+
+377
+00:31:43,570 --> 00:31:48,880
+and defining and developing the three statistical
+
+378
+00:31:48,880 --> 00:31:53,470
+ensembles that that formed the.
+
+379
+00:31:55,600 --> 00:31:59,410
+This is the spine or the skeleton, the core of
+
+380
+00:31:59,410 --> 00:32:05,050
+this module, where over the next few weeks we will
+
+381
+00:32:05,050 --> 00:32:08,110
+be applying the last of those grand canonical
+
+382
+00:32:08,110 --> 00:32:09,730
+ensemble in the.
+
+383
+00:32:11,820 --> 00:32:16,050
+Context of quantum gases that we will develop
+
+384
+00:32:16,470 --> 00:32:19,740
+later this week so that there are some solid
+
+385
+00:32:19,740 --> 00:32:22,590
+concepts there, which we may get to today, may
+
+386
+00:32:22,590 --> 00:32:25,010
+save until Thursday.
+
+387
+00:32:29,890 --> 00:32:33,230
+In the meantime, we will.
+
+388
+00:32:35,820 --> 00:32:41,490
+Take a few minutes for review to put those three
+
+389
+00:32:42,360 --> 00:32:47,060
+ensembles right next to each other in.
+
+390
+00:32:49,280 --> 00:32:51,170
+In a row here, starting with.
+
+391
+00:32:53,580 --> 00:32:56,970
+The MicroCon conical ensemble and the canonical
+
+392
+00:32:56,970 --> 00:33:01,170
+ensemble and finally the. Grand economical
+
+393
+00:33:01,170 --> 00:33:04,290
+ensemble. So in all three cases we have.
+
+394
+00:33:06,820 --> 00:33:14,770
+In mind that a physical system is evolving in time
+
+395
+00:33:14,770 --> 00:33:16,180
+and as it evolves.
+
+396
+00:33:18,890 --> 00:33:21,860
+It is probabilistically sampling all of the
+
+397
+00:33:21,860 --> 00:33:24,980
+possible states that are accessible to it's
+
+398
+00:33:25,610 --> 00:33:29,390
+subject to certain constraints, and in the micro
+
+399
+00:33:29,390 --> 00:33:35,270
+canonical case, those constraints are the very
+
+400
+00:33:35,270 --> 00:33:39,380
+direct physical laws that energy and particle
+
+401
+00:33:39,380 --> 00:33:43,880
+number need to be conserved. So if we draw our
+
+402
+00:33:43,880 --> 00:33:46,010
+system and zoom back in,
+
+403
+00:33:48,020 --> 00:33:52,260
+we draw our system as. Some box we can even
+
+404
+00:33:52,500 --> 00:33:55,830
+imagine, that box has a bowling and V in which we
+
+405
+00:33:55,830 --> 00:33:56,370
+have.
+
+406
+00:33:58,740 --> 00:34:05,070
+Whatever. Particles for other constituents, we are
+
+407
+00:34:05,070 --> 00:34:05,820
+interested in
+
+408
+00:34:07,890 --> 00:34:15,910
+the energy. In particle number are fixed, which
+
+409
+00:34:15,910 --> 00:34:19,690
+means that this system we're describing with the
+
+410
+00:34:19,690 --> 00:34:22,480
+micro conical ensemble has to be completely
+
+411
+00:34:22,480 --> 00:34:26,650
+isolated from all the rest of the universe. So
+
+412
+00:34:26,650 --> 00:34:31,600
+there is some Hardwell around it through which no
+
+413
+00:34:31,600 --> 00:34:33,820
+particles to pass and through which, in fact, no
+
+414
+00:34:33,820 --> 00:34:38,260
+energy can pass in order to ensure that both
+
+415
+00:34:38,260 --> 00:34:43,320
+energy and particle number remain fixed. So this
+
+416
+00:34:43,320 --> 00:34:45,060
+is sort of
+
+417
+00:34:47,250 --> 00:34:50,340
+a straightforward application of the sort of
+
+418
+00:34:50,340 --> 00:34:53,910
+conservation laws that play an important role in
+
+419
+00:34:53,910 --> 00:34:57,510
+physics, but it is something that's hard to to set
+
+420
+00:34:57,510 --> 00:35:04,500
+up in practice developing. A an experimental setup
+
+421
+00:35:04,500 --> 00:35:08,070
+or or a situation where some system is completely
+
+422
+00:35:08,070 --> 00:35:11,550
+isolated from everything around it and that
+
+423
+00:35:11,550 --> 00:35:18,590
+difficulty motivates. The consideration of the
+
+424
+00:35:18,590 --> 00:35:19,830
+economical ensemble.
+
+425
+00:35:22,240 --> 00:35:27,800
+Where we still have our system. In some boxes
+
+426
+00:35:27,800 --> 00:35:33,200
+flying V.. With that same fixed number of
+
+427
+00:35:33,200 --> 00:35:37,060
+particles. Or whatever other constituents are in
+
+428
+00:35:37,060 --> 00:35:41,650
+there, but now we allow the energy to fluctuate.
+
+429
+00:35:44,900 --> 00:35:52,270
+By. Exchange of energy with. Some external system
+
+430
+00:35:52,510 --> 00:36:00,020
+that. We. Imagine to be significantly larger than
+
+431
+00:36:00,180 --> 00:36:03,540
+than the system of interest in this takes the form.
+
+432
+00:36:05,420 --> 00:36:06,890
+Of a thermal reservoir.
+
+433
+00:36:09,960 --> 00:36:18,210
+That has enough degrees of freedom. That it can
+
+434
+00:36:18,210 --> 00:36:23,470
+fix the the temperature through. Contact them
+
+435
+00:36:23,470 --> 00:36:27,300
+through exchange of energy. Between the system of
+
+436
+00:36:27,300 --> 00:36:31,170
+interest in its selling container, fixing the
+
+437
+00:36:31,170 --> 00:36:37,040
+particle number and the overall thermal energy, I
+
+438
+00:36:37,050 --> 00:36:39,690
+perhaps should have mentioned the micro canonical
+
+439
+00:36:39,690 --> 00:36:44,940
+context that the temperature was a derived
+
+440
+00:36:44,940 --> 00:36:51,300
+quantity as a function of entropy, as a function
+
+441
+00:36:51,300 --> 00:36:54,180
+of energy. The interview is always a derived
+
+442
+00:36:54,180 --> 00:36:58,560
+quantity and all of these cases. And now when we
+
+443
+00:36:58,560 --> 00:37:02,310
+go to the canonical ensemble. Where the NRC is
+
+444
+00:37:02,310 --> 00:37:07,470
+allowed to fluctuate the. Expectation value of
+
+445
+00:37:07,470 --> 00:37:12,130
+that energy. Becomes a derived quantity that is a
+
+446
+00:37:12,130 --> 00:37:15,250
+function now of the fixed temperature being fixed
+
+447
+00:37:15,250 --> 00:37:17,170
+by that thermal reservoir.
+
+448
+00:37:20,160 --> 00:37:25,000
+In the final case that. Was introduced in the week
+
+449
+00:37:25,000 --> 00:37:28,000
+before break and will be our subject going forward
+
+450
+00:37:28,690 --> 00:37:29,320
+is.
+
+451
+00:37:31,590 --> 00:37:34,110
+The so-called grand canonical ensemble where
+
+452
+00:37:36,510 --> 00:37:42,820
+the pattern set by. The. Evolution from
+
+453
+00:37:42,820 --> 00:37:46,290
+microeconomics is economical to continues now
+
+454
+00:37:46,300 --> 00:37:50,590
+instead of fixing either E or N, we allow both the
+
+455
+00:37:50,590 --> 00:37:53,230
+energy and particle number to fluctuate. So I'll
+
+456
+00:37:53,230 --> 00:37:54,550
+draw a
+
+457
+00:37:56,560 --> 00:38:02,230
+container here that does not look so solid and
+
+458
+00:38:02,230 --> 00:38:06,670
+allows both energy and particle number or energy
+
+459
+00:38:06,670 --> 00:38:10,240
+and particles to flow freely into and out of the
+
+460
+00:38:10,240 --> 00:38:13,300
+system. And again, the temperature is fixed
+
+461
+00:38:14,050 --> 00:38:17,050
+through energy exchange with a large external
+
+462
+00:38:17,050 --> 00:38:20,830
+reservoir. And now we also fix the chemical
+
+463
+00:38:20,830 --> 00:38:24,550
+potential move through through that exchange of
+
+464
+00:38:24,550 --> 00:38:28,420
+particles with that large external reservoir.
+
+465
+00:38:30,170 --> 00:38:34,330
+Which is now. Not merely a thermal reservoir, but
+
+466
+00:38:34,330 --> 00:38:37,920
+also a. Critical reservoir.
+
+467
+00:38:40,640 --> 00:38:47,950
+And it is possible for both energy. And particles
+
+468
+00:38:47,950 --> 00:38:51,550
+to be interchanged between the system and its
+
+469
+00:38:51,550 --> 00:38:56,800
+surroundings, making now the expectation value for
+
+470
+00:38:56,950 --> 00:39:00,490
+the particle. No, he derived quantity. That
+
+471
+00:39:00,490 --> 00:39:04,900
+depends both on the temperature and on that
+
+472
+00:39:04,900 --> 00:39:09,760
+chemical potential. So here are.
+
+473
+00:39:11,910 --> 00:39:14,550
+Those three cases all next to each other, showing
+
+474
+00:39:14,550 --> 00:39:19,020
+the sort of systematic variation in terms of what
+
+475
+00:39:19,020 --> 00:39:22,140
+quantities are kept fixed and how.
+
+476
+00:39:34,550 --> 00:39:40,020
+So that is the the context for. Week seven and the
+
+477
+00:39:40,020 --> 00:39:46,050
+following few weeks about the application of the
+
+478
+00:39:46,050 --> 00:39:49,170
+grand canonical ensemble in the context of quantum
+
+479
+00:39:49,170 --> 00:39:52,240
+statistics. Where?
+
+480
+00:39:57,120 --> 00:39:59,940
+The starting point now, well, the other ingredient,
+
+481
+00:39:59,940 --> 00:40:01,970
+in addition to the definition of the great
+
+482
+00:40:01,980 --> 00:40:04,770
+Kilmichael ensemble that we got before the break
+
+483
+00:40:05,010 --> 00:40:08,610
+is what exactly are.
+
+484
+00:40:10,800 --> 00:40:14,280
+Our quantum statistics and how do they differ from
+
+485
+00:40:14,940 --> 00:40:19,260
+the classical or non quantum statistics that we
+
+486
+00:40:19,260 --> 00:40:20,250
+have been looking at?
+
+487
+00:40:22,470 --> 00:40:26,610
+You know, the context picture again, is there.
+
+488
+00:40:29,010 --> 00:40:32,790
+And you know, this is being recorded, so it will.
+
+489
+00:40:33,890 --> 00:40:36,590
+Show up on on that recording.
+
+490
+00:40:39,380 --> 00:40:43,130
+And I'll leave it up as I may be introduced to the
+
+491
+00:40:43,130 --> 00:40:49,800
+last little Cole, I will. Bring up today, which I
+
+492
+00:40:49,800 --> 00:40:50,670
+can introduce.
+
+493
+00:40:54,460 --> 00:40:56,980
+Perhaps speaking out loud for a few minutes before
+
+494
+00:40:57,130 --> 00:41:01,360
+writing anything that someone said we'll see with
+
+495
+00:41:01,360 --> 00:41:03,130
+quantum statistics, is that.
+
+496
+00:41:05,630 --> 00:41:10,670
+The quantization of the energies of the particles
+
+497
+00:41:10,670 --> 00:41:14,420
+in the system is a necessary but not sufficient
+
+498
+00:41:14,420 --> 00:41:19,470
+condition to. To get to quantum statistics, to
+
+499
+00:41:19,470 --> 00:41:21,810
+have a system that is described by by quantum
+
+500
+00:41:21,810 --> 00:41:24,300
+physics and to reiterate, you don't need to know
+
+501
+00:41:24,300 --> 00:41:26,100
+anything about quantum physics coming into this
+
+502
+00:41:26,100 --> 00:41:31,800
+module and there won't be any instruction or
+
+503
+00:41:31,800 --> 00:41:34,390
+information in quantum mechanics coming out of it.
+
+504
+00:41:34,770 --> 00:41:38,430
+So this is basically just developing a set of
+
+505
+00:41:38,430 --> 00:41:42,720
+conjectures to introduce interesting statistical
+
+506
+00:41:42,720 --> 00:41:46,500
+systems that we can analyze with the tools that we
+
+507
+00:41:46,500 --> 00:41:51,090
+have available. One of which we we actually looked
+
+508
+00:41:51,090 --> 00:41:56,280
+at back in week, for which I will cut back to now
+
+509
+00:41:56,280 --> 00:41:58,710
+and be in the material we.
+
+510
+00:42:01,040 --> 00:42:03,650
+When we were considering an ideal gas, we saw that
+
+511
+00:42:03,650 --> 00:42:08,900
+we had to quantize the momentum of the gas
+
+512
+00:42:08,900 --> 00:42:14,930
+particles and therefore their energies that that
+
+513
+00:42:14,960 --> 00:42:20,270
+depend on those momentum in order to get a
+
+514
+00:42:20,270 --> 00:42:24,350
+well-defined canonical partition function as a sum
+
+515
+00:42:24,350 --> 00:42:28,810
+over accountable number of microstates. So there
+
+516
+00:42:28,840 --> 00:42:35,680
+was a quick computation that. With these. Quantize
+
+517
+00:42:35,680 --> 00:42:40,820
+energy with these quantize momenta. The overall
+
+518
+00:42:40,820 --> 00:42:46,800
+energies were some. Constant, every factor that
+
+519
+00:42:46,800 --> 00:42:47,940
+depends on.
+
+520
+00:42:50,610 --> 00:42:56,650
+The the length or the the volume that we assume
+
+521
+00:42:56,650 --> 00:43:02,230
+are particles are in. And then the moments are
+
+522
+00:43:02,230 --> 00:43:02,740
+just.
+
+523
+00:43:07,120 --> 00:43:07,930
+Integer.
+
+524
+00:43:14,020 --> 00:43:22,390
+Just to sum over integer value, K, X, Y and. OK, Z,
+
+525
+00:43:23,600 --> 00:43:28,390
+take values zero, one, two, and so on, with every
+
+526
+00:43:28,390 --> 00:43:32,590
+factor taking those pure numbers caved into
+
+527
+00:43:32,710 --> 00:43:38,380
+physical momentum, mental units of. Mass times
+
+528
+00:43:39,580 --> 00:43:47,880
+velocity and. Looking at. Those energies we saw
+
+529
+00:43:47,880 --> 00:43:53,510
+that the lowest energy levels. Were.
+
+530
+00:43:55,840 --> 00:43:59,110
+Or I should say the lowest energies and.
+
+531
+00:44:03,710 --> 00:44:07,820
+The form of that concept, refactored times, either
+
+532
+00:44:07,820 --> 00:44:10,970
+zero or one or two, which.
+
+533
+00:44:13,090 --> 00:44:17,290
+Should be able to look at in the next fall that
+
+534
+00:44:17,290 --> 00:44:19,030
+I'll activate.
+
+535
+00:44:23,910 --> 00:44:26,160
+And, you know, there's a typo there that the.
+
+536
+00:44:31,250 --> 00:44:33,620
+There's a typo in what I did before earlier, sorry
+
+537
+00:44:33,620 --> 00:44:37,730
+that I left out the two times m factor in the
+
+538
+00:44:37,730 --> 00:44:39,680
+energies that I can.
+
+539
+00:44:42,620 --> 00:44:46,910
+Quickly restore, that is why I write these things
+
+540
+00:44:46,910 --> 00:44:51,320
+down ahead of time, and the question here is has
+
+541
+00:44:51,320 --> 00:44:54,560
+to do with the terminology introduced at the.
+
+542
+00:44:57,680 --> 00:45:01,730
+Start of the written material for this week, which
+
+543
+00:45:01,730 --> 00:45:06,170
+distinguishes between energy levels and the actual
+
+544
+00:45:06,170 --> 00:45:10,940
+value of the energy that any given energy level
+
+545
+00:45:11,240 --> 00:45:14,330
+has. And in particular, there's a possibly
+
+546
+00:45:14,510 --> 00:45:17,780
+confusing aspect of that terminology, that it is
+
+547
+00:45:17,780 --> 00:45:21,500
+possible to have multiple distinct energy levels
+
+548
+00:45:21,980 --> 00:45:26,270
+that all have the identical value of the energy
+
+549
+00:45:27,470 --> 00:45:32,670
+which. Is actually something we saw back in the
+
+550
+00:45:32,670 --> 00:45:35,010
+case of the classical ideal gas and before.
+
+551
+00:45:39,200 --> 00:45:44,830
+And. Question here is a quick reminder of our
+
+552
+00:45:44,830 --> 00:45:48,010
+discussion from back then asking what were the
+
+553
+00:45:48,030 --> 00:45:50,830
+agenda races for the.
+
+554
+00:45:53,160 --> 00:45:56,850
+The three lowest energy, so how many different
+
+555
+00:45:56,850 --> 00:46:02,940
+energy levels are there at all have the same value
+
+556
+00:46:03,720 --> 00:46:04,740
+of the energy?
+
+557
+00:46:16,840 --> 00:46:20,020
+There's just a few minutes left in.
+
+558
+00:46:23,320 --> 00:46:25,270
+In the meeting today, so.
+
+559
+00:46:27,350 --> 00:46:32,220
+I will give you those few minutes to. To think
+
+560
+00:46:32,220 --> 00:46:35,760
+about and recall, that's a derivation from week
+
+561
+00:46:35,760 --> 00:46:42,210
+four that I just reviewed and. I can bring that
+
+562
+00:46:42,210 --> 00:46:46,440
+back up rather than showing the the question that
+
+563
+00:46:49,140 --> 00:46:51,710
+you can look at yourselves.
+
+564
+00:47:02,510 --> 00:47:06,080
+Is pausing the final couple of minutes to.
+
+565
+00:47:08,440 --> 00:47:11,620
+To see what you find for.
+
+566
+00:47:15,700 --> 00:47:18,400
+For the DeGeneres's corresponding to these
+
+567
+00:47:18,400 --> 00:47:19,090
+entities.
+
+568
+00:48:50,240 --> 00:48:54,350
+And in the interests of of time and running out of
+
+569
+00:48:54,350 --> 00:48:57,260
+time, this will be the last call for
+
+570
+00:48:59,570 --> 00:49:00,650
+four responses.
+
+571
+00:49:24,450 --> 00:49:25,050
+And.
+
+572
+00:49:27,070 --> 00:49:33,430
+And since I see disagreements in those. Responses,
+
+573
+00:49:33,430 --> 00:49:36,900
+an even split between two of the options. I'll
+
+574
+00:49:36,900 --> 00:49:41,280
+just go through and. Quickly sketch out the the
+
+575
+00:49:41,280 --> 00:49:44,550
+answer to that which we did look at in some
+
+576
+00:49:45,060 --> 00:49:48,150
+previous meeting that is recorded somewhere, but
+
+577
+00:49:48,870 --> 00:49:52,470
+you all for responses noted that there was only a
+
+578
+00:49:52,470 --> 00:49:55,830
+single way to get zero energy out of this
+
+579
+00:49:55,830 --> 00:50:03,600
+expression, which was that all of X, Y and Z had
+
+580
+00:50:03,600 --> 00:50:04,260
+to equal.
+
+581
+00:50:06,360 --> 00:50:11,430
+Zero. In order for the energy to vanish, for the
+
+582
+00:50:11,430 --> 00:50:15,150
+energy e one, they have a single unit of that
+
+583
+00:50:15,150 --> 00:50:23,610
+prefecture. We just need one of those. Case to be
+
+584
+00:50:23,610 --> 00:50:28,620
+won while the others are zero, there are three
+
+585
+00:50:28,620 --> 00:50:31,290
+ways of managing that.
+
+586
+00:50:35,090 --> 00:50:37,250
+And similarly for.
+
+587
+00:50:40,900 --> 00:50:44,620
+To get two units of energy, we need to case to be
+
+588
+00:50:45,310 --> 00:50:48,160
+one while the last one is zero. And there are
+
+589
+00:50:48,160 --> 00:50:53,330
+again three ways of. Setting that up.
+
+590
+00:50:55,860 --> 00:50:56,490
+So.
+
+591
+00:50:59,360 --> 00:51:02,360
+The point of this exercise is just to serve as a
+
+592
+00:51:02,810 --> 00:51:07,460
+reminder, something we saw earlier, that there are.
+
+593
+00:51:08,760 --> 00:51:10,980
+Multiple possible distinct states in typical
+
+594
+00:51:10,980 --> 00:51:15,660
+systems that can all have the same energy. And
+
+595
+00:51:15,660 --> 00:51:21,360
+that is the justification and motivation for the.
+
+596
+00:51:23,980 --> 00:51:26,950
+Terminology or the syntax that is introduced here,
+
+597
+00:51:26,950 --> 00:51:31,300
+where the energy levels are labeled by these
+
+598
+00:51:31,300 --> 00:51:36,100
+calligraphic ès and those are what are actually
+
+599
+00:51:36,100 --> 00:51:39,640
+being counted and just revised or quantized in the
+
+600
+00:51:39,640 --> 00:51:43,270
+case of quantum statistics, and the actual value
+
+601
+00:51:43,690 --> 00:51:48,940
+of the energy for each energy level may well be
+
+602
+00:51:48,940 --> 00:51:53,230
+the same for multiple distinct energy levels,
+
+603
+00:51:53,230 --> 00:51:56,500
+which is the case in the example that we already
+
+604
+00:51:56,500 --> 00:52:02,460
+saw before the break. So I will stop there. I'll
+
+605
+00:52:02,470 --> 00:52:04,510
+stick around for just a couple of minutes in case
+
+606
+00:52:04,510 --> 00:52:07,090
+there are quick last minute questions. Then I'll
+
+607
+00:52:07,310 --> 00:52:10,750
+I'll need to shut down the meeting to extract the
+
+608
+00:52:11,320 --> 00:52:12,100
+recording.
+
+609
+00:52:14,650 --> 00:52:15,340
+And.
+
+610
+00:52:19,180 --> 00:52:21,950
+I see one question came in after I shut down the
+
+611
+00:52:21,960 --> 00:52:23,810
+office hours will start at the top of the hour.
+
+612
+00:52:24,090 --> 00:52:27,510
+There will definitely be past exam papers. The one
+
+613
+00:52:27,510 --> 00:52:29,310
+from last year should already be up. I will
+
+614
+00:52:29,310 --> 00:52:33,270
+investigate why it is not. And then a second one
+
+615
+00:52:33,750 --> 00:52:38,790
+will come up over the next couple of weeks. So
+
+616
+00:52:38,790 --> 00:52:43,720
+sorry for that oversight, I thought. The 20/20
+
+617
+00:52:43,720 --> 00:52:48,670
+sample exam was already available, and it will get
+
+618
+00:52:48,670 --> 00:52:52,300
+up as soon as possible. So thanks for pointing
+
+619
+00:52:52,300 --> 00:52:57,490
+that out and all of you take care with the the
+
+620
+00:52:57,490 --> 00:52:59,920
+rest of your day and the resumption of term.
