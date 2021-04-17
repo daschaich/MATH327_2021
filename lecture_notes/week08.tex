@@ -1,12 +1,166 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 8}
-\renewcommand{\moddate}{Last modified 10 Apr.~2021}
+\renewcommand{\moddate}{Last modified 17 Apr.~2021}
 \setcounter{section}{8}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 8: Quantum gases of bosons}
 \section*{Week 8: Quantum gases of bosons}
 \subsection{The photon gas}
+Last week we derived the grand-canonical partition function (\eq{eq:partfunc_BE}) that defines quantum Bose--Einstein statistics for systems of non-interacting bosons,
+\begin{equation*}
+  \ZBE(\be, \mu) = \prod_{\ell = 0}^L \frac{1}{1 - e^{-\be (E_{\ell} - \mu)}}.
+\end{equation*}
+This expression results from summing over the possible occupation numbers $n_{\ell} \in \Nbb_0$ for each energy level $\cE_{\ell}$ with energy $E_{\ell}$.
+The corresponding grand-canonical potential is
+\begin{equation*}
+  \Phi_{\text{BE}} = -T \log Z_g = T \sum_{\ell = 0}^L \log\left[1 - e^{-\be (E_{\ell} - \mu)}\right],
+\end{equation*}
+from which we can determine the large-scale properties of the system, including its average internal energy $\vev{E}$, average particle number $\vev{N}$, entropy $S$, and pressure $P$.
+
+To do so, we have to specify the energy levels of the particles that compose the system of interest, and the degeneracies of those energy levels.
+One example of this that we have already seen is the analysis of non-relativistic ideal gas particles in \secref{sec:regulate}.
+For a single particle with mass $m$ in a volume $V = L^3$, we determined the quantized energies
+\begin{equation}
+  \label{eq:nonrel_energy}
+  E(k_x, k_y, k_z) = \frac{\hbar^2 \pi^2}{2mL^2}\left(k_x^2 + k_y^2 + k_z^2\right),
+\end{equation}
+where the integers $k_{x, y, z}$ specify the possible momenta of the particle,
+\begin{align*}
+  \vec p & = (p_x, p_y, p_z) = \hbar \frac{\pi}{L} (k_x, k_y, k_z) &
+  k_{x, y, z} = 1, 2, \cdots.
+\end{align*}
+(For technical reasons, quantum mechanics requires $k_{x, y, z} \geq 1$, leading us to adjust our ansatz compared to \eq{eq:quant_mom}.)
+This system has a unique ground state $\cE_0$ with $\vec k = (1, 1, 1)$ and energy $E_0 = \frac{3}{2} \frac{\hbar^2 \pi^2}{mL^2}$.
+The next three energy levels are degenerate, with energy $3 \frac{\hbar^2 \pi^2}{mL^2}$ corresponding to $\vec k = (2, 1, 1)$ and permutations, followed by another three degenerate energy levels with energy $\frac{9}{2} \frac{\hbar^2 \pi^2}{mL^2}$ corresponding to $\vec k = (2, 2, 1)$ and permutations.
+
+This week we will build on that experience to consider a gas of \textit{photons}, massless bosonic quantum particles of light.
+For our purposes, with no prior knowledge of particle physics, we can define photons simply by specifying two relevant details of their energy levels.
+First, a photon's energy is proportional to the magnitude of its momentum, %with $m = 0$ for massless photons, \eq{eq:nonrel_energy} is clearly problematic.
+\begin{equation*}
+  \Eph(p) = c \sqrt{p_x^2 + p_y^2 + p_z^2} \equiv c p.
+\end{equation*}
+Here the speed of light $c$ is really just a unit conversion factor that we could set to $c = 1$ by using appropriate units.
+Second, for each momentum $\vec p$, a photon has two degenerate energy levels with the same energy $E(p)$. % TODO: Could mention polarization...
+
+In a volume $V = L^3$, only the same discrete momenta as above are allowed,
+\begin{align*}
+  p & = \hbar \frac{\pi}{L} \sqrt{k_x^2 + k_y^2 + k_z^2} \equiv \hbar \frac{\pi}{L} k &
+  k_{x, y, z} = 1, 2, \cdots,
+\end{align*}
+so that the quantized photon energies are
+\begin{equation}
+  \label{eq:photon_Ek}
+  \Eph(k) = \hbar c \frac{\pi}{L} k.
+\end{equation}
+It is conventional to use the speed of light to work with photons in terms of their wavelength \la and angular frequency $\om = 2\pi f$ (not to be confused with generic micro-states $\om_i$), given the relation
+\begin{equation*}
+  c = \frac{\la \om}{2\pi}.
+\end{equation*}
+Just like the momenta, the wavelengths \la are also quantized in volume $V = L^3$,
+\begin{equation*}
+  \la = \frac{2L}{k} \qquad \Lra \qquad c = \frac{\om}{\frac{\pi}{L} k},
+\end{equation*}
+and we can rewrite \eq{eq:photon_Ek} as
+\begin{equation}
+  \label{eq:photon_omega}
+  \Eph(\om) = \hbar \om.
+\end{equation}
+Low (\textit{infrared}) frequencies correspond to small energies and long wavelengths, while high (\textit{ultraviolet}) frequencies correspond to large energies and short wavelengths.
+
+We are now ready to write down the grand-canonical potential for a photon gas:
+\begin{equation*}
+  \Phi_{\text{ph}} = T \sum_{\ell = 0}^L \log\left[1 - e^{-\be (E_{\ell} - \mu)}\right] = 2T \sum_{\vec k} \log\left[1 - e^{-\be (\Eph(k) - \mu)}\right],
+\end{equation*}
+where the factor of $2$ in the final expression accounts for the doubly degenerate energy levels.
+We can simplify this expression by appreciating that photons are easy to create and destroy.
+Every time a light is switched on, it begins emitting a constant flood of photons (with wavelengths of several hundred nanometres).
+Food in a microwave oven gets hot by absorbing many lower-energy photons (with longer wavelengths around $12$~centimetres).
+In both cases an enormous number of photons is required to make even a small change in energy, so that \eq{eq:mu_E} implies the chemical potential of a photon gas must be negligible,
+\begin{equation*}
+  \mu = \left.\pderiv{E}{N}\right|_S \approx 0 \qquad \Lra \qquad \Phi_{\text{ph}} \approx 2T \sum_{\vec k} \log\left[1 - e^{-\be \Eph(k)}\right].
+\end{equation*}
+
+Another simplification comes from considering the photon gas in a large volume, so that we can approximate the sum over discrete integer $k_{x, y, z}$ by integrals over continuous real $\khat_{x, y, z}$,
+\begin{equation*}
+  \Phi_{\text{ph}} \approx 2T \int d\khat_x d\khat_y d\khat_z \log\left[1 - e^{-\be \Eph(\khat)}\right].
+\end{equation*}
+Since the energy $\Eph(\khat)$ depends only on the magnitude $\khat$, we can profit from converting to spherical coordinates.
+When we do so, we have to keep in mind that $k_{x, y, z} > 0$ corresponds only to the positive octant of thee sphere,
+\begin{equation*}
+  \int_0^{\infty} d\khat_x \int_0^{\infty} d\khat_y \int_0^{\infty} d\khat_z = \int_0^{\infty} d\khat \; \khat^2 \int_0^{\pi / 2} d\theta \; \sin\theta \int_0^{\pi / 2} d\phi = \frac{\pi}{2} \int_0^{\infty} d\khat \; \khat^2,
+\end{equation*}
+so that
+\begin{equation*}
+  \Phi_{\text{ph}} \approx \pi T \int_0^{\infty} d\khat \; \khat^2 \log\left[1 - e^{-\be \Eph(\khat)}\right].
+\end{equation*}
+We can finally change variables to integrate over the photon angular frequency $\om = c \frac{\pi}{L} k$, with $\Eph = \hbar \om$, to find
+\begin{align}
+  \Phi_{\text{ph}} & \approx \pi T \left(\frac{L}{\pi c}\right)^3 \int_0^{\infty} d\om \; \om^2 \log\left[1 - e^{-\be \hbar \om}\right] \cr
+                   & = \frac{VT}{c^3 \pi^2} \int_0^{\infty} d\om \; \om^2 \log\left[1 - e^{-\be \hbar \om}\right], \label{eq:photon_grand}
+\end{align}
+recognizing $L^3 = V$.
+With this grand-canonical potential derived, we just need to take the appropriate derivatives to determine the thermodynamics and equation of state for the photon gas.
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{The sun and the void}
+We are now ready to analyze the average internal energy from the grand-canonical potential for a photon gas, \eq{eq:photon_grand}.
+With $\mu = 0$, \eq{eq:E_grand} from week~6 becomes
+\begin{equation*}
+  \vev{E}_{\text{ph}} = -T^2 \pderiv{}{T} \left[\frac{\Phi_{\text{ph}}}{T}\right] = \pderiv{}{\be} \left[\be \Phi_{\text{ph}}\right].
+\end{equation*}
+To begin, we will consider the energy density expressed as an integral over photon frequencies,
+\begin{equation*}
+  \frac{\vev{E}_{\text{ph}}}{V} = \int_0^{\infty} P(\om) \; d\om,
+\end{equation*}
+where the function $P(\om)$ is known as the \textit{spectral density}, or simply the \textit{spectrum}.
+What is the spectrum for a photon gas?
+\begin{mdframed}
+  $\displaystyle \frac{\vev{E}_{\text{ph}}}{V} = \frac{1}{c^3 \pi^2} \int_0^{\infty} d\om \; \om^2 \pderiv{}{\be} \log\left[1 - e^{-\be \hbar \om}\right] = $ \\[100 pt]
+\end{mdframed}
+
+You should find
+\begin{equation}
+  \label{eq:Planck_omega}
+  P(\om) = \left(\frac{\hbar}{c^3 \pi^2}\right) \frac{\om^3}{e^{\be \hbar \om} - 1},
+\end{equation}
+which is known as the Planck spectrum, named after Max Planck.
+The Planck spectrum is plotted in the figure below, which comes from \href{https://commons.wikimedia.org/wiki/File:Black_body.svg}{Wikimedia Commons}.
+
+\begin{center}\includegraphics[width=\textwidth]{figs/week08_spectrum.pdf}\end{center}
+
+In this plot the horizontal axis uses the wavelength $\la = 2\pi c / \om$.
+Changing variables in your work above, what is Planck spectrum $P(\la)$ as a function of wavelength?
+\begin{mdframed}
+  $\displaystyle \frac{\vev{E}_{\text{ph}}}{V} = \frac{\hbar}{c^3 \pi^2} \int_0^{\infty} \frac{\om^3}{e^{\be \hbar \om} - 1} \; d\om = $ \\[120 pt] % WARNING: FORMATTING BY HAND
+\end{mdframed}
+
+You should find
+\begin{equation}
+  \label{eq:Planck_la}
+  P(\la) = \left(\frac{16\pi^2 \hbar c}{\la^5}\right) \frac{1}{e^{2\pi\be \hbar c / \la} - 1},
+\end{equation}
+which is plotted\footnote{The plot divides our $P(\la)$ by $4\pi$~steradian to consider the spectrum per unit of solid angle.} for three temperatures $T = 1 / \be$ in the figure above.
+Considering first the high-energy ultraviolet (UV) limit of small wavelengths $\la$, we can see from \eq{eq:Planck_la} that $P(\la)$ is exponentially suppressed, which overwhelms the diverging factor $\propto 1 / \la^5$ in parentheses.
+
+In the low-energy infrared limit, the large $\la$ has the same effect that a large temperature ($\be \ll 1$) would have: $e^{2\pi\be \hbar c / \la} - 1 \approx 2\pi\be \hbar c / \la$ and
+\begin{equation*}
+  P(\la) \approx \left(\frac{16\pi^2 \hbar c}{\la^5}\right) \frac{\la}{2\pi\be \hbar c} = \frac{8\pi T}{\la^4}.
+\end{equation*}
+The connection to large temperatures indicates that this is the result classical statistics would predict for the energy spectrum of light.
+It is known as the Rayleigh--Jeans spectrum (named after \href{https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh}{the third Baron Rayleigh} and \href{https://en.wikipedia.org/wiki/James_Jeans}{James Jeans}), and clearly cannot be correct in the ultraviolet limit $\la \to 0$, where it predicts short-wavelength light would possess a diverging amount of energy.
+This classical result is known as the \textit{ultraviolet catastrophe}, and Planck's (heuristic) solution to it was one of the first steps towards quantum physics.
+
+
+As the temperature increases, the maximum of the Planck spectrum moves to shorter wavelengths and correspondingly larger energies.
+The fact that the peak of the spectrum for $T \approx 5000$~K falls around the wavelengths of visible light (roughly $400$--$700$~nm) is not a coincidence.
+As shown in the figure below, the 
+
+\begin{center}\includegraphics[width=\textwidth]{figs/week08_sun.pdf}\end{center}
+
 
 
 \TODO{Being written...}
@@ -16,7 +170,7 @@
 
 % ------------------------------------------------------------------
 \newpage
-\subsection{Equation of state}
+\subsection{Photon gas equation of state}
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
@@ -25,5 +179,5 @@
 % ------------------------------------------------------------------
 \newpage
 \subsection{Bose--Einstein condensation}
-\TODO{Being written...}
+\TODO{Being written...} % BEC now routinely produced in hundreds of labs around the world, including as tool for quantum computing (e.g., arXiv:2003.08945)...
 % ------------------------------------------------------------------

@@ -8,3 +8,4 @@ all:
 	@echo "pdftk A=lecture.pdf cat A58-69 output week04.pdf"
 	@echo "pdftk A=lecture.pdf cat A70-81 output week05.pdf"
 	@echo "pdftk A=lecture.pdf cat A82-91 output week06.pdf"
+	@echo "pdftk A=lecture.pdf cat A92-102 output week07.pdf"
