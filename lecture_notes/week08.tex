@@ -171,20 +171,51 @@ In fact, we can even use the Planck spectrum to determine the temperature of int
 Rather than being empty, these voids are actually permeated by a very low-temperature photon gas left over from the Big Bang roughly $14$~billion years ago.
 This photon gas is known as the \href{https://en.wikipedia.org/wiki/Cosmic_microwave_background}{cosmic microwave background} (CMB), and carries information about the early evolution of the universe, including some of the strongest evidence for the existence of dark matter.
 
-\vspace{24 pt}
-\begin{center}\textbf{More information about the CMB and photon gas equation of state \\ will be added over the weekend.}\end{center}
+The picture below is a famous visualization of the CMB, provided by the \href{http://www.esa.int/ESA_Multimedia/Images/2013/03/Planck_CMB}{European Space Agency} and produced from measurements taken by their `Planck' satellite. % Can compare with WMAP from wmap.gsfc.nasa.gov/media/101080/
+To produce this image, for each point in the sky the satellite measures the photon spectrum reaching it from that direction.
+The contributions coming from stars and galaxies are subtracted, and the remaining data is fit to the Planck spectrum to find the temperature of the intergalactic CMB photon gas at that point.
+From point to point, there are only small temperature fluctuations around the average $T_{\text{CMB}} \approx 2.725$~K.
+That average temperature is subtracted and the fluctuations themselves are shown below, with warmer red-coloured regions only $\De T \approx 0.0002$~K hotter than the cooler blue-coloured regions.
 
+\begin{center}\includegraphics[width=\textwidth]{figs/week08_CMB.pdf}\end{center}
 
-% 2006 Nobel to COBE
-\newpage
-\TODO{Being written...}
+The final figure below illustrates such a fit of CMB data to the Planck spectrum, using measurements taken by the Cosmic Background Explorer (COBE) satellite and \href{https://doi.org/10.1086/185717}{published in 1990}.
+(This version of the figure is adapted from that publication, and copied from Schroeder's \textit{Introduction to Thermal Physics}.)
+The squares are the measured data, and their size represents a cautious estimate of uncertainties.
+They are plotted with the frequency $f = \om / (2\pi)$ on the horizontal axis, with $f \approx 3\cdot 10^{-11}~\text{s}^{-1}$ corresponding to a low-energy wavelength $\la = c / f \approx 1$~mm, roughly $1000$ times longer than the wavelengths of visible light.
+The solid line is a fit to the data that produces $T_{\text{CMB}} = 2.735 \pm 0.060$~K.
+While more recent satellites have increased the precision with which we know $T_{\text{CMB}}$, this first result was awarded the 2006 Nobel Prize in Physics.
+
+\begin{center}\includegraphics[width=\textwidth]{figs/week08_COBE.pdf}\end{center}
+
+\begin{shaded}
+  Even though we derived the Planck spectrum by assuming an ideal gas of non-interacting photons, we see that it provides an excellent mathematical model for real physical systems, stretching from the hottest to the coldest places in the universe.
+\end{shaded}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{Photon gas equation of state}
+Having looked in some detail at the integrand for the photon gas energy density, \eq{eq:Planck_omega}, let's complete the integration, which involves a famous integral related to the Riemann zeta function:
+\begin{equation*}
+  I = \int_0^{\infty} \frac{x^3}{e^x - 1} dx = \Gamma(4) \zeta(4) = \frac{\pi^4}{15}.
+\end{equation*}
+Using this result, what is the ideal photon gas energy density?
+\begin{mdframed}
+  $\displaystyle \frac{\vev{E}_{\text{ph}}}{V} = \frac{\hbar}{c^3 \pi^2} \int_0^{\infty} \frac{\om^3}{e^{\be \hbar \om} - 1} \; d\om = $ \\[100 pt]
+\end{mdframed}
+
+You should find a result proportional to $T^4$.
+It would be ideal (sorry) if we could put this in a form as simple as \eq{eq:ideal_energy} for the energy of an $N$-particle ideal gas in the canonical ensemble.
+Now that we are working in the grand-canonical ensemble, we would need to compute the average particle number $\vev{N}_{\text{ph}}$, building on the general Bose--Einstein result
+\begin{equation*}
+  \vev{N}_{\text{BE}} = \sum_{\ell = 0}^L \vev{n_{\ell}} = \sum_{\ell = 0}^L \frac{1}{e^{\be (E_{\ell} - \mu)} - 1}
+\end{equation*}
+that we derived last week.
+Again setting $\mu = 0$ and recalling the two-fold degeneracy of each photon energy level,
+
+
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
