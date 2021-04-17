@@ -143,26 +143,40 @@ You should find
   \label{eq:Planck_la}
   P(\la) = \left(\frac{16\pi^2 \hbar c}{\la^5}\right) \frac{1}{e^{2\pi\be \hbar c / \la} - 1},
 \end{equation}
-which is plotted\footnote{The plot divides our $P(\la)$ by $4\pi$~steradian to consider the spectrum per unit of solid angle.} for three temperatures $T = 1 / \be$ in the figure above.
+which is plotted\footnote{The plot divides our $P(\la)$ by $4\pi$~steradian and multiplies it by $c$ to convert from an energy density to a spectral power per unit area per unit of solid angle.  For our purposes only the functional form is significant.} for three temperatures $T = 1 / \be$ in the figure above.
 Considering first the high-energy ultraviolet (UV) limit of small wavelengths $\la$, we can see from \eq{eq:Planck_la} that $P(\la)$ is exponentially suppressed, which overwhelms the diverging factor $\propto 1 / \la^5$ in parentheses.
 
 In the low-energy infrared limit, the large $\la$ has the same effect that a large temperature ($\be \ll 1$) would have: $e^{2\pi\be \hbar c / \la} - 1 \approx 2\pi\be \hbar c / \la$ and
 \begin{equation*}
   P(\la) \approx \left(\frac{16\pi^2 \hbar c}{\la^5}\right) \frac{\la}{2\pi\be \hbar c} = \frac{8\pi T}{\la^4}.
 \end{equation*}
-The connection to large temperatures indicates that this is the result classical statistics would predict for the energy spectrum of light.
-It is known as the Rayleigh--Jeans spectrum (named after \href{https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh}{the third Baron Rayleigh} and \href{https://en.wikipedia.org/wiki/James_Jeans}{James Jeans}), and clearly cannot be correct in the ultraviolet limit $\la \to 0$, where it predicts short-wavelength light would possess a diverging amount of energy.
-This classical result is known as the \textit{ultraviolet catastrophe}, and Planck's (heuristic) solution to it was one of the first steps towards quantum physics.
+The connection to large temperatures indicates that this is what classical statistics would predict for the energy spectrum of light.
+It is known as the Rayleigh--Jeans spectrum, named after \href{https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh}{the third Baron Rayleigh} and \href{https://en.wikipedia.org/wiki/James_Jeans}{James Jeans}.
+Recall that the classical approach sums over all possible energies for each degree of freedom, corresponding to a light-emitting object (historically known as a \textit{black body}) emitting light of all wavelengths $\la$.
+According to the classical Rayleigh--Jeans spectrum, in the limit $\la \to 0$ this light would carry an infinite amount of energy, an obvious error that became known as the \textit{ultraviolet catastrophe}.
+Planck's (heuristic) solution to this conundrum in 1900 was one of the first steps towards the quantum physics that introduces the exponential suppression we computed above.
 
+One final observation we will make about the Planck spectrum shown above is that as the temperature increases, the maximum of the Planck spectrum moves to shorter wavelengths and correspondingly larger energies.
+The fact that the peak of the spectrum for $T \approx 5000$~K falls within the wavelengths of visible light (roughly $400$--$700$~nm) is not a coincidence.
+As shown in the figure below (from \href{https://commons.wikimedia.org/wiki/File:Solar_Spectrum.png}{Wikimedia Commons}), the amount of sunlight that reaches the surface of the earth is also maximized around visible wavelengths, which are visible to us because we have evolved to make the most efficient use of this sunlight.
 
-As the temperature increases, the maximum of the Planck spectrum moves to shorter wavelengths and correspondingly larger energies.
-The fact that the peak of the spectrum for $T \approx 5000$~K falls around the wavelengths of visible light (roughly $400$--$700$~nm) is not a coincidence.
-As shown in the figure below, the 
+Taking into account the absorption of some sunlight by molecules in the atmosphere, we can see from the figure below that the energy spectrum of the sunlight reaching the top of the atmosphere is quite close to a Planck (or `blackbody') spectrum with temperature $T \approx 5778$~K.
+The agreement isn't perfect, which is to be expected since the Planck spectrum relies on the non-trivial assumption of an ideal gas of non-interacting particles.
+Even with that caveat, numerically fitting the measured sunlight to the Planck spectrum is how the surface temperature of the sun is determined to be $T \approx 5778$~K.
+This same fitting procedure can even be done for distant stars, with red stars corresponding to relatively low temperatures $T \lesssim 3500$~K and blue stars corresponding to relatively high temperatures $T \gtrsim 10{,}000$~K.
 
 \begin{center}\includegraphics[width=\textwidth]{figs/week08_sun.pdf}\end{center}
 
+In fact, we can even use the Planck spectrum to determine the temperature of inter-galactic space.
+Rather than being empty, these voids are actually permeated by a very low-temperature photon gas left over from the Big Bang roughly $14$~billion years ago.
+This photon gas is known as the \href{https://en.wikipedia.org/wiki/Cosmic_microwave_background}{cosmic microwave background} (CMB), and carries information about the early evolution of the universe, including some of the strongest evidence for the existence of dark matter.
+
+\vspace{24 pt}
+\begin{center}\textbf{More information about the CMB and photon gas equation of state \\ will be added over the weekend.}\end{center}
 
 
+% 2006 Nobel to COBE
+\newpage
 \TODO{Being written...}
 % ------------------------------------------------------------------
 
