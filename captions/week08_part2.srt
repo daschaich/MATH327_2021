@@ -1,0 +1,751 @@
+1
+00:00:01,820 --> 00:00:05,010
+Hello and welcome back to Statistical Physics.
+
+2
+00:00:05,060 --> 00:00:09,320
+This is the second video for week eight, wrapping
+
+3
+00:00:09,320 --> 00:00:13,790
+up our brief summary of the context, motivations
+
+4
+00:00:13,790 --> 00:00:17,510
+and Kilani outcomes of this week's material on
+
+5
+00:00:17,510 --> 00:00:21,380
+quantum gases of bosun's analyzed in the grand
+
+6
+00:00:21,380 --> 00:00:25,610
+canonical ensemble. So let's bring up that
+
+7
+00:00:25,610 --> 00:00:28,880
+material back onto the screen. Picking up where
+
+8
+00:00:29,480 --> 00:00:33,810
+the previous part of the summary left off at the
+
+9
+00:00:33,860 --> 00:00:40,160
+grand canonical potential for the photon gas as a
+
+10
+00:00:41,240 --> 00:00:44,420
+specific realization of a quantum gas of bosons
+
+11
+00:00:44,930 --> 00:00:48,980
+where the particular protons we consider photons,
+
+12
+00:00:48,980 --> 00:00:53,660
+particles of light are relativistic and defined by
+
+13
+00:00:54,380 --> 00:01:00,350
+the frequency of the wavelength of the particles,
+
+14
+00:01:00,350 --> 00:01:06,280
+the photons that relates how. The energy levels
+
+15
+00:01:06,280 --> 00:01:11,050
+depend on the quantize momentum in the system and
+
+16
+00:01:11,050 --> 00:01:13,750
+all of that is to say that's the answer. That's
+
+17
+00:01:14,020 --> 00:01:16,000
+where the conjecture that we have adopted in the
+
+18
+00:01:16,000 --> 00:01:19,420
+hopes of gaining a system that would be
+
+19
+00:01:19,420 --> 00:01:24,120
+interesting to analyze with the statistical tools
+
+20
+00:01:24,130 --> 00:01:28,450
+that we have developed in the next section is
+
+21
+00:01:28,720 --> 00:01:32,290
+demonstrating just how interesting those analyses
+
+22
+00:01:32,290 --> 00:01:38,020
+can be by seeing that the resulting mathematical
+
+23
+00:01:38,020 --> 00:01:41,500
+model coming from the simple ideal, not
+
+24
+00:01:41,500 --> 00:01:44,980
+interacting of photons provides really an
+
+25
+00:01:44,980 --> 00:01:50,380
+excellent description of. Real physical systems in
+
+26
+00:01:50,380 --> 00:01:53,800
+the universe, ranging from some of the hottest
+
+27
+00:01:53,800 --> 00:01:56,890
+locations like the surface of the Sun and other
+
+28
+00:01:56,890 --> 00:01:59,740
+stars to some of the coldest locations in the
+
+29
+00:01:59,740 --> 00:02:04,420
+universe, the intergalactic voids that are not
+
+30
+00:02:04,420 --> 00:02:09,400
+quite empty space, but instead permeated by a very
+
+31
+00:02:09,400 --> 00:02:12,400
+low temperature gas of photons known as the cosmic
+
+32
+00:02:12,400 --> 00:02:15,790
+microwave background. In the both of those cases,
+
+33
+00:02:16,570 --> 00:02:20,040
+the information that we have available from
+
+34
+00:02:20,560 --> 00:02:22,510
+observations that we can.
+
+35
+00:02:26,000 --> 00:02:29,690
+Compare with the mathematical model we're
+
+36
+00:02:29,690 --> 00:02:34,670
+developing is measurement through satellites,
+
+37
+00:02:34,670 --> 00:02:36,980
+observatories, telescopes and other tools,
+
+38
+00:02:37,340 --> 00:02:41,120
+measurement of how many photons, how much light
+
+39
+00:02:41,120 --> 00:02:45,230
+arrives with a particular frequency. That is, we
+
+40
+00:02:45,230 --> 00:02:50,800
+have access to. The integration in this expression
+
+41
+00:02:50,830 --> 00:02:56,200
+that ends up over all frequencies to the average
+
+42
+00:02:56,560 --> 00:03:01,170
+energy density for the photon gas. That is being
+
+43
+00:03:01,170 --> 00:03:06,170
+measured. In practice, frequency by frequency,
+
+44
+00:03:08,900 --> 00:03:13,070
+by doing a quick calculation through a gap.
+
+45
+00:03:15,120 --> 00:03:19,380
+We find that the ideal not attracting and gas, the
+
+46
+00:03:19,380 --> 00:03:23,550
+photons produces this expression for the.
+
+47
+00:03:24,930 --> 00:03:29,550
+Essentially, the energy density per unit frequency
+
+48
+00:03:29,700 --> 00:03:32,640
+as a function of that frequency, Omega, which is
+
+49
+00:03:32,640 --> 00:03:36,360
+known as the Planck spectrum and is shown in this
+
+50
+00:03:36,360 --> 00:03:40,050
+figure here for three temperatures of a few
+
+51
+00:03:40,050 --> 00:03:41,100
+thousand Kelvin.
+
+52
+00:03:43,750 --> 00:03:46,150
+Plotted here versus the wavelength rather than the
+
+53
+00:03:46,150 --> 00:03:51,360
+frequency. And compared to the classical
+
+54
+00:03:51,360 --> 00:03:54,720
+prediction for the energy density or in this case,
+
+55
+00:03:54,720 --> 00:04:04,440
+the the power of light. Which from our work last
+
+56
+00:04:04,440 --> 00:04:07,950
+week, connecting quantum statistics to the high
+
+57
+00:04:07,950 --> 00:04:10,920
+temperature of temperature, classical Régine, we
+
+58
+00:04:10,920 --> 00:04:16,070
+expect to come into agreements in. The high
+
+59
+00:04:16,150 --> 00:04:19,030
+temperature classical regime where quantum in
+
+60
+00:04:19,030 --> 00:04:23,890
+classical physics should coincide. A further
+
+61
+00:04:25,150 --> 00:04:26,260
+calculation.
+
+62
+00:04:30,580 --> 00:04:36,550
+Allows us to confirm that at high temperatures and
+
+63
+00:04:36,580 --> 00:04:37,690
+this factor here.
+
+64
+00:04:39,920 --> 00:04:42,440
+Beta is approximately zero at high temperatures
+
+65
+00:04:42,920 --> 00:04:46,930
+this. Denominator that cancels out to leading
+
+66
+00:04:46,930 --> 00:04:49,600
+order and leaves just an overall one over
+
+67
+00:04:49,600 --> 00:04:51,850
+wavelengths of the fourth dependence in the power
+
+68
+00:04:51,850 --> 00:04:57,100
+spectrum. This is the classical result plotted up
+
+69
+00:04:57,100 --> 00:05:03,490
+here that we see agrees with the quantum result at
+
+70
+00:05:03,790 --> 00:05:06,070
+large wavelengths, which is known as the infrared
+
+71
+00:05:06,070 --> 00:05:10,450
+regime, but disagrees enormously, in fact,
+
+72
+00:05:10,660 --> 00:05:14,380
+infinitely in the limit of high energies, short
+
+73
+00:05:14,380 --> 00:05:18,400
+wavelengths known as the ultraviolet. And this
+
+74
+00:05:19,630 --> 00:05:24,880
+breakdown between. The classical prediction and
+
+75
+00:05:25,600 --> 00:05:29,800
+actual observations like that shown in this plot
+
+76
+00:05:29,800 --> 00:05:33,130
+of the solar radiation that reaches the earth,
+
+77
+00:05:33,310 --> 00:05:36,910
+which drops down to zero as the wavelength gets
+
+78
+00:05:36,910 --> 00:05:39,820
+smaller, the ultraviolet, rather than diverging
+
+79
+00:05:39,820 --> 00:05:42,940
+towards the infinite energy predicted classically
+
+80
+00:05:43,390 --> 00:05:47,950
+that was known as the ultraviolet catastrophe and
+
+81
+00:05:47,950 --> 00:05:52,360
+was the motivation for Max Planck more than 100
+
+82
+00:05:52,360 --> 00:05:58,470
+years ago to heuristically develop the. Spectrum
+
+83
+00:05:58,470 --> 00:06:03,420
+we are studying that we have now derived from the
+
+84
+00:06:03,810 --> 00:06:06,420
+first principles of quantum statistics rather than
+
+85
+00:06:06,420 --> 00:06:11,100
+a heuristic argument and shown as illustrated in
+
+86
+00:06:11,100 --> 00:06:14,700
+this figure, very good agreement with the real
+
+87
+00:06:14,700 --> 00:06:18,210
+physical system of the radiation, the light
+
+88
+00:06:18,210 --> 00:06:22,220
+emitted by our sun. Despite the fact that we have
+
+89
+00:06:22,220 --> 00:06:25,700
+assumed the particles we are working with are
+
+90
+00:06:25,970 --> 00:06:28,430
+completely not interacting and.
+
+91
+00:06:31,640 --> 00:06:33,800
+Do not have any influence on each other, which
+
+92
+00:06:34,550 --> 00:06:37,970
+could in principle be a severe assumption or
+
+93
+00:06:37,970 --> 00:06:42,440
+approximation, but turns out to allow a very good
+
+94
+00:06:42,770 --> 00:06:48,590
+reconstruction or model of the energy density
+
+95
+00:06:49,040 --> 00:06:52,430
+released by the sun that reaches us here on Earth
+
+96
+00:06:52,940 --> 00:06:56,420
+and moving from that high temperature regime of
+
+97
+00:06:56,420 --> 00:07:00,170
+the sun to the cold temperature regime of not
+
+98
+00:07:00,170 --> 00:07:04,730
+quite empty intergalactic space observations done
+
+99
+00:07:04,850 --> 00:07:08,240
+more recently by satellites have produced this
+
+100
+00:07:08,240 --> 00:07:13,340
+sort of picture, which is looking at the full sky.
+
+101
+00:07:15,010 --> 00:07:20,200
+Using measurements of that same energy spectrum,
+
+102
+00:07:20,650 --> 00:07:25,690
+the energy density as per unit frequency to define
+
+103
+00:07:26,110 --> 00:07:31,170
+a temperature point by point in the sky. And then
+
+104
+00:07:31,170 --> 00:07:34,200
+color small fluctuations about that temperature,
+
+105
+00:07:34,200 --> 00:07:37,470
+either red or blue, depending on whether they are
+
+106
+00:07:37,470 --> 00:07:41,160
+hotter or colder than average respectively, where
+
+107
+00:07:41,190 --> 00:07:42,870
+the scale of fluctuations.
+
+108
+00:07:44,940 --> 00:07:51,120
+Is on the scale of nearly killed in thousands of
+
+109
+00:07:52,990 --> 00:07:53,880
+of Kelvyn.
+
+110
+00:07:57,030 --> 00:08:00,090
+The red regions are about point zero zero zero two
+
+111
+00:08:00,090 --> 00:08:03,720
+Kelvin, hotter than the cool ones and an example,
+
+112
+00:08:04,050 --> 00:08:07,190
+reconstruction of that temperature from the
+
+113
+00:08:07,350 --> 00:08:10,590
+measured photon spectrum is shown here in this
+
+114
+00:08:10,590 --> 00:08:17,400
+figure that's led to a Nobel Prize 15 years ago
+
+115
+00:08:18,030 --> 00:08:23,880
+where the energy emitted by that cosmic microwave
+
+116
+00:08:23,880 --> 00:08:27,660
+background permeating intergalactic space was
+
+117
+00:08:27,660 --> 00:08:31,740
+measured as a function of frequency, giving the
+
+118
+00:08:33,630 --> 00:08:36,990
+empty squares here the size of which roughly
+
+119
+00:08:36,990 --> 00:08:40,350
+indicates fairly cautious estimates of
+
+120
+00:08:40,350 --> 00:08:45,080
+uncertainties and are fit to precisely the blank
+
+121
+00:08:45,090 --> 00:08:48,750
+spectrum that we have derived in this module,
+
+122
+00:08:49,260 --> 00:08:52,620
+predicting in this case a temperature of about two
+
+123
+00:08:52,620 --> 00:08:55,500
+point seven Kelvin, which was confirmed by
+
+124
+00:08:55,920 --> 00:08:59,520
+subsequent measurements with the following
+
+125
+00:08:59,520 --> 00:09:05,170
+generations of satellites. So even though our
+
+126
+00:09:05,170 --> 00:09:09,310
+derivation of the blank spectrum relied on making
+
+127
+00:09:09,310 --> 00:09:13,820
+the assumption that. The particles we are working
+
+128
+00:09:13,820 --> 00:09:15,770
+with are ideal in the sense that they don't
+
+129
+00:09:15,770 --> 00:09:19,870
+interact with each other. We end up with a truly
+
+130
+00:09:19,870 --> 00:09:23,200
+excellent mathematical models for these real
+
+131
+00:09:23,200 --> 00:09:27,220
+physical systems, and these are, of course, not.
+
+132
+00:09:29,440 --> 00:09:34,060
+Not the only places where our work is applicable
+
+133
+00:09:34,060 --> 00:09:38,020
+to the real world, similar spectrums of radiation
+
+134
+00:09:38,020 --> 00:09:42,980
+are coming out of your oven and. Out of everything
+
+135
+00:09:42,980 --> 00:09:46,910
+else, emitting light and heat and other forms of.
+
+136
+00:09:49,670 --> 00:09:53,990
+Of radiation. So with that.
+
+137
+00:09:56,390 --> 00:10:00,680
+With those examples out of the way, we can wrap up
+
+138
+00:10:00,680 --> 00:10:05,090
+for this week by. Doing a few more quick
+
+139
+00:10:05,090 --> 00:10:08,720
+calculations based on the technical potential
+
+140
+00:10:09,530 --> 00:10:12,440
+computing, some of the other large scale
+
+141
+00:10:12,440 --> 00:10:17,060
+thermodynamic properties of the photon gas from
+
+142
+00:10:17,270 --> 00:10:21,200
+that fundamental defining quantity and putting
+
+143
+00:10:21,200 --> 00:10:24,020
+them together to come up with the equation of
+
+144
+00:10:24,020 --> 00:10:29,420
+states describing the relations between those
+
+145
+00:10:29,810 --> 00:10:33,110
+those quantities, the fresher, average internal
+
+146
+00:10:33,110 --> 00:10:37,400
+energy, average particle number and entropy just
+
+147
+00:10:37,400 --> 00:10:41,690
+in the same way that we did for the canonical
+
+148
+00:10:41,690 --> 00:10:45,140
+ensemble and the classical non relativistic ideal
+
+149
+00:10:45,140 --> 00:10:49,580
+gases back before the term break. And all this is
+
+150
+00:10:49,580 --> 00:10:52,990
+is the the same sort of derivatives of the great
+
+151
+00:10:53,000 --> 00:10:54,020
+canonical potential.
+
+152
+00:10:56,680 --> 00:11:01,960
+Being applied to determine the average particle,
+
+153
+00:11:01,960 --> 00:11:05,530
+no, in addition to the average internal energy
+
+154
+00:11:05,530 --> 00:11:06,400
+that we looked at.
+
+155
+00:11:09,690 --> 00:11:13,560
+To determine that blank spectrum, followed by the
+
+156
+00:11:13,560 --> 00:11:18,690
+entropy and using the entropy and in particular
+
+157
+00:11:18,690 --> 00:11:22,140
+the condition of constant entropy to determine the
+
+158
+00:11:22,440 --> 00:11:25,710
+radiation pressure of the photon gas, we can put
+
+159
+00:11:25,710 --> 00:11:30,870
+everything together. Define the same sort of
+
+160
+00:11:30,870 --> 00:11:35,040
+relations that we saw in the classical non
+
+161
+00:11:35,040 --> 00:11:38,730
+relativistic case of an ideal gas, that the
+
+162
+00:11:39,150 --> 00:11:43,260
+average internal energy is related to the average
+
+163
+00:11:43,260 --> 00:11:45,900
+particle number of times the temperature that can
+
+164
+00:11:45,900 --> 00:11:51,720
+be done. Relativistic case equation 50 for this
+
+165
+00:11:52,500 --> 00:11:58,370
+relation was. A somewhat simpler equals three has
+
+166
+00:11:58,370 --> 00:12:03,500
+a.. That was a very useful relation when analyzing
+
+167
+00:12:03,750 --> 00:12:07,610
+it in cycles here, the numerical factor is a bit
+
+168
+00:12:07,610 --> 00:12:11,180
+more complicated coming from just the details of
+
+169
+00:12:11,180 --> 00:12:15,010
+how the energy's depend on the quantized momentum.
+
+170
+00:12:15,470 --> 00:12:20,570
+And the story is similar for the equation of state
+
+171
+00:12:20,570 --> 00:12:25,190
+relating the pressure volume particle, no
+
+172
+00:12:25,190 --> 00:12:29,630
+temperature or possibly the energy that just like
+
+173
+00:12:29,630 --> 00:12:34,820
+the ideal gas law, PV equals A.. We have the same
+
+174
+00:12:34,820 --> 00:12:38,540
+functional form with just a different numerical
+
+175
+00:12:38,540 --> 00:12:45,250
+factor in front. So in that sense, the. The
+
+176
+00:12:45,250 --> 00:12:51,010
+quantum gas of photons is behaving similarly to
+
+177
+00:12:51,430 --> 00:12:55,240
+the the more familiar, more everyday ideal gases
+
+178
+00:12:55,240 --> 00:12:57,520
+that we have already considered with.
+
+179
+00:12:59,930 --> 00:13:04,160
+On the other hand, we look at not the large scale
+
+180
+00:13:04,160 --> 00:13:06,830
+thermodynamics, but the detailed frequency
+
+181
+00:13:06,830 --> 00:13:12,100
+dependence of the energies there is. Significant
+
+182
+00:13:12,790 --> 00:13:16,060
+divergent differences between the classical and
+
+183
+00:13:16,060 --> 00:13:19,330
+quantum theories in the appropriate low
+
+184
+00:13:19,330 --> 00:13:23,530
+temperature quantum regimes, and we will see if
+
+185
+00:13:23,530 --> 00:13:26,050
+anything, even more striking effects next week
+
+186
+00:13:26,050 --> 00:13:30,700
+when we return to fermions, which exhibit the less
+
+187
+00:13:30,700 --> 00:13:34,310
+familiar behavior that only a single forensic
+
+188
+00:13:34,360 --> 00:13:37,080
+particle can occupy any energy level.

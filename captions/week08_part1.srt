@@ -1,0 +1,507 @@
+1
+00:00:01,470 --> 00:00:04,750
+Hello and welcome back to a statistical physics.
+
+2
+00:00:04,800 --> 00:00:09,050
+This is the first video for eight in the module
+
+3
+00:00:09,240 --> 00:00:13,530
+and following the pattern established with this
+
+4
+00:00:13,530 --> 00:00:17,490
+will provide a brief summary of the context,
+
+5
+00:00:17,490 --> 00:00:20,790
+motivations and key learning outcomes to take away
+
+6
+00:00:20,790 --> 00:00:25,120
+from the asynchronous materials for this week. And
+
+7
+00:00:25,170 --> 00:00:29,190
+speaking of those materials, bring them up on the
+
+8
+00:00:29,190 --> 00:00:34,020
+screen here and see where we are in the module and
+
+9
+00:00:34,350 --> 00:00:39,660
+where we are headed. So indicate we are digging
+
+10
+00:00:39,660 --> 00:00:43,110
+into our application of the grand canonical
+
+11
+00:00:43,110 --> 00:00:46,950
+ensemble in the context of quantum gases of
+
+12
+00:00:46,950 --> 00:00:52,620
+boatswain's. The first of two weeks investigating
+
+13
+00:00:52,620 --> 00:00:57,300
+in some detail the behavior of quantum systems for
+
+14
+00:00:57,630 --> 00:00:59,790
+the different types of particles that we
+
+15
+00:00:59,970 --> 00:01:04,020
+introduced in in last week's material in quantum
+
+16
+00:01:04,020 --> 00:01:08,130
+statistics. So just as a brief refresher, the
+
+17
+00:01:08,280 --> 00:01:10,560
+grand canonical example that we are applying
+
+18
+00:01:11,130 --> 00:01:15,630
+allows both of the energy and particle number of
+
+19
+00:01:15,630 --> 00:01:18,480
+our statistical system to fluctuate through
+
+20
+00:01:18,480 --> 00:01:23,010
+exchange with some large external reservoir. And
+
+21
+00:01:23,010 --> 00:01:28,590
+we are gaining familiarity with this approach to
+
+22
+00:01:28,590 --> 00:01:32,580
+analyzing statistical systems by considering
+
+23
+00:01:33,390 --> 00:01:36,360
+quantum systems this way, quantum gases of those
+
+24
+00:01:36,370 --> 00:01:37,140
+arms where
+
+25
+00:01:40,020 --> 00:01:43,440
+quantum as opposed to classical statistical
+
+26
+00:01:43,440 --> 00:01:48,780
+physics is defined by how we define the
+
+27
+00:01:48,780 --> 00:01:52,830
+microstates being considered and the definition of
+
+28
+00:01:52,830 --> 00:01:55,680
+the fundamental grand canonical partition function
+
+29
+00:01:57,510 --> 00:02:03,600
+that defines our system and its. It's physical
+
+30
+00:02:03,600 --> 00:02:06,870
+behavior, so in the classical approach, the
+
+31
+00:02:06,870 --> 00:02:09,600
+partition function was defined by considering all
+
+32
+00:02:09,600 --> 00:02:12,240
+the particles in the system one by one, and
+
+33
+00:02:12,240 --> 00:02:14,520
+something over all the possible energies that they
+
+34
+00:02:14,520 --> 00:02:18,240
+could have in the quantum approach. We saw that
+
+35
+00:02:19,200 --> 00:02:21,870
+deficiencies in that classical approach could be
+
+36
+00:02:22,920 --> 00:02:28,200
+fixed or corrected by instead summing over every
+
+37
+00:02:28,740 --> 00:02:32,130
+discrete energy level in the system and
+
+38
+00:02:32,130 --> 00:02:34,830
+considering all the possible occupation numbers
+
+39
+00:02:35,160 --> 00:02:38,880
+that that energy level could have. Where the
+
+40
+00:02:38,880 --> 00:02:41,310
+possible occupation numbers distinguish between
+
+41
+00:02:41,310 --> 00:02:44,460
+the two classes of particles of the universe,
+
+42
+00:02:44,970 --> 00:02:50,040
+bosons that behave in the familiar way where each
+
+43
+00:02:50,040 --> 00:02:54,810
+energy level can have any non-negative number of
+
+44
+00:02:54,810 --> 00:02:59,460
+identical particles zero, one, two and so on, as
+
+45
+00:02:59,460 --> 00:03:02,130
+opposed to fermions for only a maximum single
+
+46
+00:03:02,130 --> 00:03:06,360
+particle in energy level is possible. So this week
+
+47
+00:03:07,560 --> 00:03:13,350
+we are focusing on the ozone in case you are
+
+48
+00:03:13,770 --> 00:03:15,450
+quantum gases of bosons.
+
+49
+00:03:17,640 --> 00:03:20,550
+Beginning from the grand finale, coopetition
+
+50
+00:03:20,550 --> 00:03:23,970
+function and potential that were derived in
+
+51
+00:03:23,970 --> 00:03:27,540
+general terms the last week, looking at quantum
+
+52
+00:03:27,540 --> 00:03:32,660
+statistics in the abstract, where these. Partition
+
+53
+00:03:32,660 --> 00:03:34,970
+function and potential depend on the as yet
+
+54
+00:03:34,970 --> 00:03:39,230
+unspecified energies of the energy levels that are
+
+55
+00:03:39,230 --> 00:03:43,040
+being sent over to define the system, and in
+
+56
+00:03:43,040 --> 00:03:45,830
+general, there are two possibilities that we can
+
+57
+00:03:46,070 --> 00:03:46,760
+consider
+
+58
+00:03:49,220 --> 00:03:53,420
+characterized by how the energies of the energy
+
+59
+00:03:53,420 --> 00:03:57,350
+levels depend on the quantized momenta of the
+
+60
+00:03:57,350 --> 00:04:00,680
+particles that are allowed by by quantum physics,
+
+61
+00:04:00,680 --> 00:04:05,000
+which we are again doubting as a Anzac's or
+
+62
+00:04:05,000 --> 00:04:05,780
+conjecture.
+
+63
+00:04:08,610 --> 00:04:12,120
+Rather than relying on any prior knowledge of
+
+64
+00:04:12,120 --> 00:04:16,710
+quantum mechanics or quantum physics and the non
+
+65
+00:04:16,710 --> 00:04:19,380
+unrealistic case we already looked at back in the
+
+66
+00:04:19,470 --> 00:04:21,840
+week for the classical ideal gas, where we
+
+67
+00:04:21,840 --> 00:04:24,690
+introduced this relativistic and non relativistic
+
+68
+00:04:24,690 --> 00:04:28,020
+terminology, and in the quantum context, it turns
+
+69
+00:04:28,020 --> 00:04:31,920
+out to be a significantly simpler calculation on
+
+70
+00:04:31,920 --> 00:04:34,800
+the calculation calculational level to focus on
+
+71
+00:04:35,130 --> 00:04:38,610
+the relativistic case, which is epitomized by.
+
+72
+00:04:41,070 --> 00:04:44,310
+The behavior of quantum particles of light, what
+
+73
+00:04:44,310 --> 00:04:45,780
+are known as photons,
+
+74
+00:04:48,210 --> 00:04:51,210
+these photons, these particles of light are as
+
+75
+00:04:51,210 --> 00:04:55,260
+relativistic as particles can get in the sense
+
+76
+00:04:55,260 --> 00:04:59,430
+that they are characterized by energies that are
+
+77
+00:04:59,550 --> 00:05:03,900
+linearly proportional to the photon momentum as
+
+78
+00:05:03,900 --> 00:05:07,500
+opposed to the quadratic dependence that we looked
+
+79
+00:05:07,500 --> 00:05:10,670
+at from the non relativistic case back before the
+
+80
+00:05:10,680 --> 00:05:11,370
+term break.
+
+81
+00:05:14,840 --> 00:05:19,160
+And going through the same exercise of quanti
+
+82
+00:05:19,160 --> 00:05:21,680
+using these momenta.
+
+83
+00:05:23,760 --> 00:05:27,120
+In a fixed volume V, they can depend only on
+
+84
+00:05:27,120 --> 00:05:31,380
+integer multiples of this combination pie over the
+
+85
+00:05:31,380 --> 00:05:33,870
+linear length of that volume times Planck's
+
+86
+00:05:33,870 --> 00:05:40,440
+constant each bar, we are able to connect these
+
+87
+00:05:40,620 --> 00:05:45,180
+photon energies that are now quantized to the
+
+88
+00:05:45,750 --> 00:05:48,780
+behavior, to the wavelength or equivalently the
+
+89
+00:05:48,780 --> 00:05:55,200
+frequency of the photons interpreted as radiation,
+
+90
+00:05:55,470 --> 00:06:03,300
+as particles of light, where the conventional
+
+91
+00:06:03,390 --> 00:06:07,830
+presentation of the conventional definition of a
+
+92
+00:06:07,830 --> 00:06:11,550
+photon energy is given in terms of its frequency
+
+93
+00:06:12,000 --> 00:06:16,740
+multiplied by playing scales to convert units
+
+94
+00:06:17,520 --> 00:06:19,230
+appropriately to get an energy.
+
+95
+00:06:22,640 --> 00:06:27,290
+So plugging in that background, specifying photons
+
+96
+00:06:27,290 --> 00:06:30,590
+by how their energy levels depend on their
+
+97
+00:06:30,590 --> 00:06:35,820
+quantized momenta wavelengths and frequencies. We
+
+98
+00:06:35,820 --> 00:06:40,890
+can benefit significantly from the simplification
+
+99
+00:06:41,310 --> 00:06:45,480
+that photons are very easy to create and destroy,
+
+100
+00:06:45,960 --> 00:06:49,770
+which allows us to consider the system and to
+
+101
+00:06:49,800 --> 00:06:52,740
+limit where the chemical potential vanishes. And
+
+102
+00:06:52,740 --> 00:06:58,770
+this is the key simplification that provides the.
+
+103
+00:07:00,770 --> 00:07:03,090
+Much more streamlined and much more accessible
+
+104
+00:07:03,150 --> 00:07:06,930
+calculations compared to the the nonrelated tested
+
+105
+00:07:06,930 --> 00:07:11,130
+case. That while there's still interesting in the
+
+106
+00:07:11,130 --> 00:07:15,180
+Nominals Vista case, we can consider a quantum
+
+107
+00:07:15,180 --> 00:07:17,970
+phase transition in a new state of matter known as
+
+108
+00:07:17,970 --> 00:07:20,420
+those Einstein condensation related to the Bose
+
+109
+00:07:20,430 --> 00:07:23,370
+Einstein statistics of non relativistic
+
+110
+00:07:23,370 --> 00:07:28,440
+boatswain's, that turns out to be much more
+
+111
+00:07:28,440 --> 00:07:32,430
+complicated than the simple case of photons, which
+
+112
+00:07:32,430 --> 00:07:37,980
+is all that we will focus on in this module.
+
+113
+00:07:39,350 --> 00:07:43,250
+Though we could discuss the nominals of the case,
+
+114
+00:07:43,250 --> 00:07:44,840
+at least in general terms, in the synchronous
+
+115
+00:07:44,840 --> 00:07:48,620
+session if there is interest in doing so. So with
+
+116
+00:07:48,620 --> 00:07:52,760
+that background set up, it is a fairly
+
+117
+00:07:52,760 --> 00:07:58,200
+straightforward calculation to. Specify the
+
+118
+00:07:58,200 --> 00:08:01,950
+particular form of the grant canonical potential
+
+119
+00:08:02,550 --> 00:08:05,280
+related to the logarithm of the grand canonical
+
+120
+00:08:05,610 --> 00:08:10,770
+partition function that is specific to the photon
+
+121
+00:08:10,770 --> 00:08:14,960
+energy levels. Related to their quantize momentum
+
+122
+00:08:15,570 --> 00:08:19,950
+and given the length of the next section and the
+
+123
+00:08:20,250 --> 00:08:23,950
+length. The amount of time that is already on the
+
+124
+00:08:23,950 --> 00:08:27,100
+clock, it will stop this recording here a bit
+
+125
+00:08:27,100 --> 00:08:30,550
+early and pick up with the remainder of.
+
+126
+00:08:33,560 --> 00:08:35,870
+Summarizing the remainder of the week's material
+
+127
+00:08:36,440 --> 00:08:38,630
+in the next video.
