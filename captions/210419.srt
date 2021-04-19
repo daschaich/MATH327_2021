@@ -1,0 +1,2531 @@
+1
+00:00:02,050 --> 00:00:08,110
+OK, I've got the recording underway and may spend.
+
+2
+00:00:09,820 --> 00:00:12,460
+A couple of minutes going over some of the usual
+
+3
+00:00:12,460 --> 00:00:15,250
+logistical issues, while perhaps more folks will
+
+4
+00:00:15,250 --> 00:00:20,590
+be able to to sign in on this bright Monday
+
+5
+00:00:20,590 --> 00:00:23,770
+morning in Liverpool and.
+
+6
+00:00:26,630 --> 00:00:29,780
+We start off with the usual link to people
+
+7
+00:00:29,780 --> 00:00:34,700
+everywhere, which I think I will experiment with
+
+8
+00:00:34,700 --> 00:00:40,010
+using in a different way for at least the next few
+
+9
+00:00:40,010 --> 00:00:45,450
+days, depending on. How the number of folks were
+
+10
+00:00:45,450 --> 00:00:48,420
+able to make it to these secret sessions continues
+
+11
+00:00:48,420 --> 00:00:53,610
+to evolve. As the numbers decrease, it becomes a
+
+12
+00:00:53,610 --> 00:00:58,920
+bit more. Of a burden on each individual
+
+13
+00:00:59,490 --> 00:01:04,410
+participant to go back and forth between. Polls
+
+14
+00:01:04,410 --> 00:01:10,110
+and discussions, so I may just leave the the basic.
+
+15
+00:01:12,000 --> 00:01:15,680
+Pull open, giving you the opportunity to ask any
+
+16
+00:01:15,690 --> 00:01:19,500
+questions and guide the course of what we
+
+17
+00:01:19,500 --> 00:01:24,350
+discussed today. And I will try to keep an eye on
+
+18
+00:01:25,040 --> 00:01:30,400
+both those results and zoom simultaneously. And
+
+19
+00:01:30,410 --> 00:01:35,840
+also invite you just to speak up in Zoome, if you
+
+20
+00:01:36,380 --> 00:01:38,900
+miss a written comment or you just want to ask a
+
+21
+00:01:38,900 --> 00:01:40,550
+question out loud.
+
+22
+00:01:43,380 --> 00:01:49,050
+And so with a reduced role of polls and quizzes
+
+23
+00:01:49,050 --> 00:01:52,530
+and those sorts of activities, what I think we can
+
+24
+00:01:52,590 --> 00:01:55,860
+spend some time profitably doing both for those of
+
+25
+00:01:55,860 --> 00:01:59,310
+you here who can direct the course of what we
+
+26
+00:01:59,310 --> 00:02:03,000
+discuss and for the folks checking out the
+
+27
+00:02:03,000 --> 00:02:07,020
+recording after the fact, just go through the
+
+28
+00:02:07,170 --> 00:02:12,960
+materials for for this weekend and last week. And
+
+29
+00:02:13,680 --> 00:02:18,060
+chat about some of the key conceptual issues that
+
+30
+00:02:18,060 --> 00:02:19,800
+are highlighted there, see if there are any
+
+31
+00:02:20,160 --> 00:02:22,140
+questions or confusions about those. And I may
+
+32
+00:02:22,140 --> 00:02:28,460
+also elaborate on some of the. Background or some
+
+33
+00:02:28,460 --> 00:02:30,410
+of the information that is not assumed as
+
+34
+00:02:30,410 --> 00:02:33,980
+background, but is being brought in as ANZAAS or
+
+35
+00:02:33,980 --> 00:02:37,880
+an assumption with regards to quantum physics,
+
+36
+00:02:37,880 --> 00:02:40,340
+photons, the nature of light and that sort of
+
+37
+00:02:40,340 --> 00:02:40,720
+thing.
+
+38
+00:02:43,250 --> 00:02:45,890
+So with that prelude, all pause for a minute or
+
+39
+00:02:45,890 --> 00:02:48,980
+two to see if there are any immediate questions
+
+40
+00:02:48,980 --> 00:02:53,300
+about those materials, not only for this week and
+
+41
+00:02:53,300 --> 00:02:57,560
+last, but any point throughout the the module. Any
+
+42
+00:02:57,560 --> 00:03:02,360
+questions about the computer project due last week
+
+43
+00:03:02,360 --> 00:03:06,680
+or the final homework that is due next week, a
+
+44
+00:03:06,680 --> 00:03:07,630
+week from tomorrow?
+
+45
+00:03:14,650 --> 00:03:19,720
+It helps, of course, if I remember to turn on the
+
+46
+00:03:20,470 --> 00:03:22,570
+screen, share where I am actually sharing.
+
+47
+00:03:26,240 --> 00:03:26,690
+Matt.
+
+48
+00:03:29,040 --> 00:03:31,380
+People everywhere question.
+
+49
+00:04:16,850 --> 00:04:21,430
+So not seeing or hearing. Any immediate questions
+
+50
+00:04:21,880 --> 00:04:28,560
+can pull up the materials going back to last week,
+
+51
+00:04:28,930 --> 00:04:32,950
+the topic of quantum statistics that this week
+
+52
+00:04:32,950 --> 00:04:36,730
+we're digging into a bit more in a more detailed
+
+53
+00:04:36,730 --> 00:04:41,110
+investigation of photon gases as the simplest
+
+54
+00:04:41,110 --> 00:04:46,000
+realization of a quantum statistical system of
+
+55
+00:04:46,000 --> 00:04:49,510
+Bosnich particles to be followed next week by
+
+56
+00:04:50,080 --> 00:04:51,970
+quantum statistical systems of thermionic
+
+57
+00:04:51,970 --> 00:04:58,410
+particles in the. Synchronous sessions last week,
+
+58
+00:04:58,410 --> 00:05:01,770
+we discussed pretty thoroughly not only the
+
+59
+00:05:02,910 --> 00:05:05,340
+background and previous parts of the module
+
+60
+00:05:05,340 --> 00:05:09,030
+leading up to the term break, but one of the two
+
+61
+00:05:09,030 --> 00:05:13,440
+main conceptual issues that comes in when we bring
+
+62
+00:05:13,440 --> 00:05:17,380
+in quantum statistics. Again, without assuming
+
+63
+00:05:17,920 --> 00:05:21,310
+familiarity with quantum mechanics, the issue we
+
+64
+00:05:21,310 --> 00:05:24,550
+discussed pretty thoroughly is the need to.
+
+65
+00:05:26,780 --> 00:05:34,150
+Revise or change how we define. The sum over
+
+66
+00:05:34,150 --> 00:05:36,760
+microstates that gives us the.
+
+67
+00:05:39,080 --> 00:05:41,630
+Partition function or grand canonical partition
+
+68
+00:05:41,630 --> 00:05:48,250
+function from which. Essentially, all aspects of
+
+69
+00:05:48,970 --> 00:05:53,860
+our statistical system can be derived in that is
+
+70
+00:05:54,220 --> 00:05:57,040
+always defined as the sum over microstates of the
+
+71
+00:05:57,040 --> 00:06:00,010
+Celsi, distinguishing between classical and
+
+72
+00:06:00,010 --> 00:06:02,980
+quantum statistics is how the individual
+
+73
+00:06:02,980 --> 00:06:05,890
+microstates are defined and distinguished from
+
+74
+00:06:05,890 --> 00:06:08,410
+each other, with the classical case involving
+
+75
+00:06:08,950 --> 00:06:12,640
+considering each particle in the system in turn in
+
+76
+00:06:12,640 --> 00:06:14,650
+something over all of the possible energies that
+
+77
+00:06:14,650 --> 00:06:17,440
+it could have. And then in the indistinguishable
+
+78
+00:06:17,440 --> 00:06:20,740
+case that is relevant for quantum particles, we
+
+79
+00:06:20,740 --> 00:06:25,480
+have to correct possible overcounting or fairly
+
+80
+00:06:25,480 --> 00:06:29,110
+ubiquitous overcounting in order to get the proper
+
+81
+00:06:29,110 --> 00:06:34,110
+number of microstates. And that works perfectly
+
+82
+00:06:34,110 --> 00:06:37,680
+well in a high temperature classical regime where
+
+83
+00:06:38,970 --> 00:06:43,580
+there is. A huge number of microstates available
+
+84
+00:06:43,580 --> 00:06:46,400
+compared to the number of particles in the system,
+
+85
+00:06:46,400 --> 00:06:50,990
+so there is a negligible probability for multiple
+
+86
+00:06:50,990 --> 00:06:55,520
+particles to simultaneously occupy the same energy
+
+87
+00:06:55,520 --> 00:07:00,500
+level. And the quantum regime where classical
+
+88
+00:07:00,890 --> 00:07:03,560
+statistical physics breaks down is distinguished
+
+89
+00:07:03,560 --> 00:07:07,280
+by the opposite behavior when there are relatively
+
+90
+00:07:07,280 --> 00:07:09,620
+few energy levels compared to the number of
+
+91
+00:07:09,620 --> 00:07:12,770
+particles occupying them. And there are then
+
+92
+00:07:12,770 --> 00:07:17,540
+subtleties in the overcounting coming from the
+
+93
+00:07:17,540 --> 00:07:22,580
+need to treat differently. Particles that are in
+
+94
+00:07:23,180 --> 00:07:25,550
+different energy levels or in the same energy
+
+95
+00:07:25,550 --> 00:07:29,120
+level, and we illustrated how that works with a
+
+96
+00:07:29,660 --> 00:07:34,820
+very simple example of the quantum system of two
+
+97
+00:07:35,210 --> 00:07:37,910
+particles that can be any in any one of five
+
+98
+00:07:37,910 --> 00:07:41,570
+energy levels where the mathematics is the same as
+
+99
+00:07:41,570 --> 00:07:46,670
+counting the number of ways that two balls can be
+
+100
+00:07:47,270 --> 00:07:52,220
+placed in any of five boxes. And the results of
+
+101
+00:07:52,940 --> 00:07:54,980
+the classical approach I described are going over
+
+102
+00:07:54,980 --> 00:07:58,100
+each ball, figuring out the number of boxes that
+
+103
+00:07:58,300 --> 00:08:00,410
+they could go in, the number of possibilities, and
+
+104
+00:08:00,410 --> 00:08:05,630
+then correcting for overcounting naively gives a
+
+105
+00:08:07,340 --> 00:08:10,250
+non integer number of possible microstates,
+
+106
+00:08:10,250 --> 00:08:12,980
+possible ways of distributing
+
+107
+00:08:15,260 --> 00:08:17,480
+these particles into the energy levels. And the
+
+108
+00:08:17,960 --> 00:08:21,110
+quantum correction to that is instead of.
+
+109
+00:08:22,380 --> 00:08:25,860
+Something over each particle and then all possible
+
+110
+00:08:25,860 --> 00:08:28,940
+energies, we sum over the possible energy levels
+
+111
+00:08:28,950 --> 00:08:31,860
+and then how many particles can be in each one,
+
+112
+00:08:32,130 --> 00:08:37,100
+the so-called occupation number? Which is the
+
+113
+00:08:37,100 --> 00:08:39,410
+concept we encountered when developing the
+
+114
+00:08:39,410 --> 00:08:43,260
+canonical and grand Kilmichael ensemble's. You
+
+115
+00:08:43,330 --> 00:08:47,200
+threw the the replica trick nonsense for the large
+
+116
+00:08:47,980 --> 00:08:49,990
+thermal reservoir and particle reservoir that
+
+117
+00:08:49,990 --> 00:08:52,690
+fixed the temperature and chemical potential in
+
+118
+00:08:52,690 --> 00:08:58,570
+these canonical and canonical approaches and with
+
+119
+00:08:59,380 --> 00:09:00,880
+the partition function.
+
+120
+00:09:03,100 --> 00:09:08,260
+Defined in this way as a sum over microstates. So
+
+121
+00:09:10,260 --> 00:09:14,750
+right up here. Then there is no further
+
+122
+00:09:14,750 --> 00:09:17,120
+overcounting to worry about, and we can just
+
+123
+00:09:17,510 --> 00:09:22,680
+proceed in a simple and straightforward way. So
+
+124
+00:09:22,680 --> 00:09:27,180
+that is the quick review of the longer discussions
+
+125
+00:09:27,180 --> 00:09:31,110
+and exercises and activities we went through last
+
+126
+00:09:31,110 --> 00:09:37,250
+week. And the. So before moving on to the other
+
+127
+00:09:37,250 --> 00:09:41,540
+key conceptual issue of Sevenoaks, of course, to
+
+128
+00:09:41,540 --> 00:09:46,300
+see if there are. Questions or comments about.
+
+129
+00:09:47,870 --> 00:09:50,900
+That issue of the quantum statistical approach.
+
+130
+00:10:12,570 --> 00:10:16,620
+So moving on, I will actually not jump straight to
+
+131
+00:10:17,220 --> 00:10:17,730
+the.
+
+132
+00:10:19,880 --> 00:10:23,360
+The key conceptual issue of the classical limits,
+
+133
+00:10:23,360 --> 00:10:27,020
+how quantum statistics and classical statistics.
+
+134
+00:10:31,200 --> 00:10:33,870
+Reproduce each other in the appropriate regime, so
+
+135
+00:10:33,870 --> 00:10:36,840
+that's classical physics familiar from Newton's
+
+136
+00:10:36,840 --> 00:10:39,570
+time and even before it can provide excellent
+
+137
+00:10:39,570 --> 00:10:43,050
+approximations to the natural world that is in a
+
+138
+00:10:43,050 --> 00:10:46,110
+more fundamental underlying level described by
+
+139
+00:10:46,680 --> 00:10:53,220
+quantum mechanics. Two things to. Highlights in
+
+140
+00:10:53,220 --> 00:10:56,700
+the intermediate sections comparing bosons and
+
+141
+00:10:56,700 --> 00:11:00,210
+fermions, the two types of quantum particles that
+
+142
+00:11:00,210 --> 00:11:02,730
+are distinguished by the possible occupation
+
+143
+00:11:02,730 --> 00:11:04,110
+numbers that they could have.
+
+144
+00:11:07,660 --> 00:11:08,230
+And.
+
+145
+00:11:10,410 --> 00:11:14,340
+I want to emphasize something that comes up a
+
+146
+00:11:14,340 --> 00:11:18,630
+little later on, which is that in all of the work
+
+147
+00:11:19,080 --> 00:11:22,710
+up through this week and even into next week, that
+
+148
+00:11:22,710 --> 00:11:25,680
+one guest is a fermions. We are still considering
+
+149
+00:11:26,130 --> 00:11:30,240
+idealized system so called ideal Das's, where the
+
+150
+00:11:30,240 --> 00:11:34,170
+individual particles are not interacting at all
+
+151
+00:11:34,170 --> 00:11:37,770
+with each other. If they come and approach each
+
+152
+00:11:37,770 --> 00:11:39,900
+other instead of colliding and bouncing off each
+
+153
+00:11:39,900 --> 00:11:42,480
+other, they simply pass straight through, have no
+
+154
+00:11:42,480 --> 00:11:45,660
+influence on each other, which provides enormous
+
+155
+00:11:45,660 --> 00:11:48,420
+simplifications which will come to appreciate more
+
+156
+00:11:48,420 --> 00:11:53,420
+when we. Drop that. Assumption or that
+
+157
+00:11:53,420 --> 00:11:57,110
+approximation in week ten and look at interacting
+
+158
+00:11:57,110 --> 00:12:00,800
+systems where things immediately become enormously
+
+159
+00:12:00,800 --> 00:12:01,730
+more complicated
+
+160
+00:12:04,100 --> 00:12:09,860
+one. Aspect of these non interacting particles
+
+161
+00:12:09,860 --> 00:12:15,290
+that might sound mysterious without having seen
+
+162
+00:12:15,290 --> 00:12:17,450
+the concepts of those kinds of fermions before, is
+
+163
+00:12:17,450 --> 00:12:23,090
+the issue of exactly how fermions as quantum
+
+164
+00:12:23,090 --> 00:12:26,330
+particles are set up so that at most a single
+
+165
+00:12:26,330 --> 00:12:31,440
+formation can occupy any given energy level? So
+
+166
+00:12:31,440 --> 00:12:36,840
+the intuitive but incorrect way of thinking about
+
+167
+00:12:36,840 --> 00:12:42,360
+this. Is to picture fermions as repelling each
+
+168
+00:12:42,360 --> 00:12:45,360
+other so that once one has claimed its energy
+
+169
+00:12:45,360 --> 00:12:48,900
+level, it forces out any other formula that might
+
+170
+00:12:48,900 --> 00:12:52,950
+try to come in there, just kicks it way off to the
+
+171
+00:12:52,950 --> 00:12:59,100
+curb so that it cannot join the. For the current
+
+172
+00:12:59,100 --> 00:13:01,710
+four million occupying the energy level in the way
+
+173
+00:13:01,710 --> 00:13:04,650
+that those zones are able to, but that would be
+
+174
+00:13:05,100 --> 00:13:09,930
+inconsistent with an approximation that the
+
+175
+00:13:09,930 --> 00:13:12,720
+particles we're working with are not interacting
+
+176
+00:13:12,720 --> 00:13:16,580
+and do not exert any forces on each other in in
+
+177
+00:13:16,650 --> 00:13:17,810
+any circumstances.
+
+178
+00:13:21,180 --> 00:13:21,990
+And the.
+
+179
+00:13:25,060 --> 00:13:29,620
+The real reason that criminals behave as they do
+
+180
+00:13:30,130 --> 00:13:33,280
+has to do with a feature of quantum mechanics that
+
+181
+00:13:33,490 --> 00:13:35,860
+is briefly summarized in the material but is
+
+182
+00:13:36,490 --> 00:13:39,700
+somewhat tangential to the course itself. And
+
+183
+00:13:39,700 --> 00:13:44,050
+there's no need to worry about or think about this
+
+184
+00:13:44,050 --> 00:13:49,030
+topic in order to extract the key information and
+
+185
+00:13:49,030 --> 00:13:54,150
+applications of statistical physics. But
+
+186
+00:13:54,150 --> 00:13:58,520
+essentially. For those who are curious, can spend
+
+187
+00:13:58,550 --> 00:14:01,850
+be synchronous sessions, elaborating a bit on some
+
+188
+00:14:01,850 --> 00:14:06,050
+aspects of this background that come into play and
+
+189
+00:14:06,050 --> 00:14:09,980
+connects to statistical physics, tying all of
+
+190
+00:14:10,520 --> 00:14:13,550
+modern physics and mathematics together into a
+
+191
+00:14:13,550 --> 00:14:19,100
+coherent description of the universe. And in
+
+192
+00:14:19,880 --> 00:14:24,500
+quantum mechanics, particles and in microwaves of
+
+193
+00:14:24,500 --> 00:14:28,100
+many particles are described by wave, what are
+
+194
+00:14:28,100 --> 00:14:31,070
+called wave functions, which are essentially the
+
+195
+00:14:31,070 --> 00:14:36,620
+square roots of probabilities defined at all
+
+196
+00:14:36,620 --> 00:14:41,990
+points in space and time. And those wave functions
+
+197
+00:14:41,990 --> 00:14:48,640
+are the technical term. For. What I call the
+
+198
+00:14:48,880 --> 00:14:51,910
+system in this paragraph, giving a bit of
+
+199
+00:14:52,150 --> 00:14:57,940
+supplementary background, so if we consider.
+
+200
+00:15:00,530 --> 00:15:06,740
+A system of two particles in my system here, I
+
+201
+00:15:06,740 --> 00:15:08,840
+mean, wavefunction that is conventionally written
+
+202
+00:15:08,840 --> 00:15:13,490
+as the uppercase Greek letter PSI, and we think
+
+203
+00:15:13,490 --> 00:15:16,190
+about parametrized in that way function in terms
+
+204
+00:15:16,190 --> 00:15:21,470
+of the positions of those two particles, X1 and X2.
+
+205
+00:15:22,790 --> 00:15:27,680
+And we ask what would happen if we took those two?
+
+206
+00:15:28,750 --> 00:15:31,230
+Identical, indistinguishable particles that
+
+207
+00:15:31,330 --> 00:15:38,210
+position X one index to. And just swap them the
+
+208
+00:15:38,250 --> 00:15:42,630
+particle at X one, moving to X to position X, to
+
+209
+00:15:42,690 --> 00:15:45,000
+particle X to moving to position X one.
+
+210
+00:15:47,360 --> 00:15:50,900
+And in three spatial dimensions.
+
+211
+00:15:52,940 --> 00:15:53,750
+Which is.
+
+212
+00:15:58,050 --> 00:16:01,320
+I think a footnote on the previous page here.
+
+213
+00:16:02,730 --> 00:16:06,630
+Where more interesting behavior is possible in
+
+214
+00:16:07,590 --> 00:16:09,780
+different set ups, for example, if we have
+
+215
+00:16:09,780 --> 00:16:13,950
+particles confined to the two dimensional surface
+
+216
+00:16:13,950 --> 00:16:17,580
+of the table, they can exhibit more exotic
+
+217
+00:16:17,580 --> 00:16:21,030
+behavior. But in three dimensions. The familiar
+
+218
+00:16:21,030 --> 00:16:23,610
+case that we operate in on the day to day basis,
+
+219
+00:16:23,610 --> 00:16:29,250
+there are only two possibilities for what happens
+
+220
+00:16:29,250 --> 00:16:31,950
+when we exchange these two identical particles
+
+221
+00:16:31,950 --> 00:16:35,130
+that are related to what I said earlier about the
+
+222
+00:16:35,580 --> 00:16:38,910
+wavefunction essentially being thought of as a
+
+223
+00:16:38,910 --> 00:16:42,060
+square root of a probability distribution because
+
+224
+00:16:42,060 --> 00:16:48,550
+the particles are identical. The the probability
+
+225
+00:16:48,790 --> 00:16:52,930
+for this set up is unchanged by swapping them, so
+
+226
+00:16:52,930 --> 00:16:54,940
+the probability is one and if we take the square
+
+227
+00:16:54,940 --> 00:16:58,330
+root, there are two possibilities, plus one and
+
+228
+00:16:58,330 --> 00:17:00,850
+minus one, both of which square to that
+
+229
+00:17:00,850 --> 00:17:05,800
+probability, one. So we can have. If the pen
+
+230
+00:17:05,800 --> 00:17:09,580
+writes, instead of changing the zoom of the page,
+
+231
+00:17:11,110 --> 00:17:14,890
+that procedure can lead to either that same.
+
+232
+00:17:15,960 --> 00:17:19,320
+System, that same wavefunction with a positive
+
+233
+00:17:19,320 --> 00:17:21,480
+sign, which is.
+
+234
+00:17:23,900 --> 00:17:28,530
+Behavior of those items or you can pick up that
+
+235
+00:17:28,530 --> 00:17:31,680
+negative sign that still squares to the same
+
+236
+00:17:32,010 --> 00:17:35,790
+probability distribution, which is the behavior of
+
+237
+00:17:35,790 --> 00:17:36,570
+fermions,
+
+238
+00:17:39,240 --> 00:17:42,120
+what we saw last week and earlier in these notes
+
+239
+00:17:42,120 --> 00:17:47,120
+that when the particles are occupying. That same
+
+240
+00:17:47,630 --> 00:17:50,900
+energy level, so this final column of the
+
+241
+00:17:50,900 --> 00:17:54,380
+possibilities that we considered in the simple
+
+242
+00:17:56,060 --> 00:17:58,190
+example case of two particles with five energy
+
+243
+00:17:58,190 --> 00:18:01,970
+levels, there really is only one energy level and
+
+244
+00:18:01,970 --> 00:18:04,820
+interchanging multiple particles in that energy
+
+245
+00:18:04,820 --> 00:18:09,900
+level. Introduces no change to the system or to
+
+246
+00:18:09,900 --> 00:18:14,130
+its wavefunction. So that is the system or that is
+
+247
+00:18:14,130 --> 00:18:18,930
+set up that would correspond to multiple fermions
+
+248
+00:18:18,930 --> 00:18:22,320
+in the same energy level where we would have that
+
+249
+00:18:22,320 --> 00:18:25,080
+same system equal to its negative or that same
+
+250
+00:18:25,080 --> 00:18:27,210
+wavefunction equal to as negative and therefore
+
+251
+00:18:27,630 --> 00:18:31,560
+vanishing. So no possibility of having fermions in
+
+252
+00:18:31,560 --> 00:18:34,200
+the same energy level, not due to any force or
+
+253
+00:18:34,200 --> 00:18:36,870
+interaction, but due to.
+
+254
+00:18:38,980 --> 00:18:39,490
+The.
+
+255
+00:18:42,080 --> 00:18:44,390
+Underlying fundamental description of quantum
+
+256
+00:18:44,390 --> 00:18:47,840
+particles, so that is a bit of elaboration on the
+
+257
+00:18:47,840 --> 00:18:51,950
+background there, how we can still be working with.
+
+258
+00:18:53,240 --> 00:18:56,780
+Not interacting particles that still are not able
+
+259
+00:18:56,780 --> 00:19:01,530
+to. Share a share the same energy level.
+
+260
+00:19:04,010 --> 00:19:04,460
+And.
+
+261
+00:19:09,600 --> 00:19:14,340
+As I move on to the final section. Take a quick
+
+262
+00:19:14,340 --> 00:19:20,640
+check to look for questions or requests for topics
+
+263
+00:19:20,640 --> 00:19:27,050
+to discuss. I will note. In passing a statement
+
+264
+00:19:27,050 --> 00:19:28,010
+made in.
+
+265
+00:19:30,440 --> 00:19:35,570
+This derivation of the grand canonical partition
+
+266
+00:19:35,570 --> 00:19:38,990
+function for Bosnich particles having to do with
+
+267
+00:19:38,990 --> 00:19:41,900
+the convergence of the geometric series that
+
+268
+00:19:41,900 --> 00:19:45,650
+requires the exponential factor to be less than
+
+269
+00:19:45,650 --> 00:19:52,670
+one or equivalently, its arguments to be negative,
+
+270
+00:19:52,670 --> 00:19:54,590
+less than zero, which means that each individual
+
+271
+00:19:54,590 --> 00:19:58,160
+factor with a positive temperature and that
+
+272
+00:19:58,160 --> 00:20:01,430
+overall negative sign has to be greater than zero.
+
+273
+00:20:03,110 --> 00:20:08,860
+And I mentioned here that generically. We have the
+
+274
+00:20:08,870 --> 00:20:11,900
+lowest energy level set equal to zero, and in fact,
+
+275
+00:20:12,140 --> 00:20:16,700
+it is possible to shift all energy levels by a
+
+276
+00:20:16,700 --> 00:20:20,270
+constant factor without changing any expectation
+
+277
+00:20:20,270 --> 00:20:24,470
+values coming out of the statistical probability
+
+278
+00:20:24,500 --> 00:20:31,070
+space, which is a a derivation we can go through
+
+279
+00:20:31,070 --> 00:20:36,590
+or you can work out on your own. In that case, we
+
+280
+00:20:36,590 --> 00:20:39,590
+require a strictly negative chemical potential,
+
+281
+00:20:40,100 --> 00:20:43,760
+which those of you who have had a chance to look
+
+282
+00:20:43,760 --> 00:20:47,930
+at the materials for this week, even at 9:00 a.m.
+
+283
+00:20:47,930 --> 00:20:50,180
+on the Monday morning, will see that in the
+
+284
+00:20:50,180 --> 00:20:54,650
+photographs where we look at the simplest case of
+
+285
+00:20:54,650 --> 00:20:56,870
+an exactly vanishing chemical potential, which we
+
+286
+00:20:56,870 --> 00:21:02,100
+are able to do by stepping back to the. Basic
+
+287
+00:21:02,100 --> 00:21:05,520
+underlying condition that the difference between
+
+288
+00:21:05,520 --> 00:21:08,940
+energy and chemical potential has to be positive
+
+289
+00:21:09,360 --> 00:21:12,750
+and for the photon gas at a finite volume. The.
+
+290
+00:21:14,710 --> 00:21:17,950
+Formulation of quantum mechanics of financially as
+
+291
+00:21:17,950 --> 00:21:22,120
+opposed to classical physics does forbid that zero
+
+292
+00:21:22,120 --> 00:21:24,370
+energy state, which is how we can get away with
+
+293
+00:21:24,970 --> 00:21:29,110
+that state, that simplification of a vanishing
+
+294
+00:21:29,110 --> 00:21:30,820
+chemical potential for photons.
+
+295
+00:21:33,450 --> 00:21:36,090
+And how that is consistent with this discussion
+
+296
+00:21:36,090 --> 00:21:41,370
+here, in case that might have caused any confusion
+
+297
+00:21:41,370 --> 00:21:45,680
+or might cause confusion in the future as you. Dig
+
+298
+00:21:45,680 --> 00:21:49,550
+into to the material for this week and compare it
+
+299
+00:21:49,550 --> 00:21:52,790
+with the derivation left from last week that we're
+
+300
+00:21:52,790 --> 00:21:54,590
+still discussing.
+
+301
+00:21:56,770 --> 00:21:59,740
+So hopping ahead past the.
+
+302
+00:22:01,910 --> 00:22:04,700
+Derivation of the Bose, Einstein and pheromone
+
+303
+00:22:04,700 --> 00:22:07,460
+Dirac Green canonical partition functions that
+
+304
+00:22:07,460 --> 00:22:10,460
+define quantum statistics for those two classes of
+
+305
+00:22:10,460 --> 00:22:11,420
+quantum particles.
+
+306
+00:22:15,670 --> 00:22:17,770
+You made the statements and looked at the plot
+
+307
+00:22:18,100 --> 00:22:20,980
+briefly last week that high temperatures are aware
+
+308
+00:22:21,850 --> 00:22:25,060
+classical physics should be a good approximation
+
+309
+00:22:25,810 --> 00:22:29,170
+to the underlying quantum behavior of the natural
+
+310
+00:22:29,170 --> 00:22:34,760
+world. And we demonstrated that by putting all
+
+311
+00:22:34,760 --> 00:22:38,360
+three of these statistical systems next to each
+
+312
+00:22:38,360 --> 00:22:42,710
+other. From the page here where we can already see
+
+313
+00:22:42,710 --> 00:22:48,640
+from these three equations. Where they are.
+
+314
+00:22:55,740 --> 00:22:58,820
+We're going to be. Reproducing each other is
+
+315
+00:22:58,820 --> 00:23:02,300
+actually maybe even easier to see when we take the
+
+316
+00:23:02,300 --> 00:23:07,730
+logarithm of the three to define the corresponding
+
+317
+00:23:07,730 --> 00:23:10,940
+grand canonical potentials. The usual way that we
+
+318
+00:23:11,060 --> 00:23:14,330
+manipulate and work with the partition function in
+
+319
+00:23:14,330 --> 00:23:18,780
+practical calculations. I can see that in the
+
+320
+00:23:19,680 --> 00:23:22,690
+limits where this exponential factor into the wind
+
+321
+00:23:22,710 --> 00:23:26,490
+speed of times, the energy of the energy level
+
+322
+00:23:27,840 --> 00:23:32,730
+minus the chemical potential, is much less than
+
+323
+00:23:32,730 --> 00:23:37,620
+one. We can expand these logarithms to linear
+
+324
+00:23:37,620 --> 00:23:42,450
+order in that factor. And all that remains is
+
+325
+00:23:42,450 --> 00:23:46,290
+precisely that factor. So the logarithm reduces to
+
+326
+00:23:46,290 --> 00:23:49,500
+the exponential factor, which is what we get in
+
+327
+00:23:49,500 --> 00:23:53,340
+the so-called Maxwell Boltzmann calculation
+
+328
+00:23:53,760 --> 00:23:56,970
+corresponding to the classical statistical
+
+329
+00:23:56,970 --> 00:24:00,120
+approach of sending over particles and then over
+
+330
+00:24:00,120 --> 00:24:02,550
+all their possible energies, then correcting for
+
+331
+00:24:02,550 --> 00:24:06,390
+overcounting and similarly, in the Byzantine
+
+332
+00:24:06,390 --> 00:24:10,230
+Einstein case, expanding that logarithm to linear
+
+333
+00:24:10,230 --> 00:24:13,500
+order in a small exponential would bring out the
+
+334
+00:24:13,500 --> 00:24:17,720
+negative side. In addition to the exponential in
+
+335
+00:24:17,720 --> 00:24:19,700
+all three of these.
+
+336
+00:24:23,280 --> 00:24:27,910
+Canonical potentials end up. Agreeing as we
+
+337
+00:24:27,910 --> 00:24:32,020
+checked out visually on the the figure on the last
+
+338
+00:24:32,020 --> 00:24:37,320
+page of the section there is. Some calculation to
+
+339
+00:24:37,320 --> 00:24:41,400
+do the work to do to reach down to.
+
+340
+00:24:44,040 --> 00:24:47,730
+To that figure in that results on a quantitative
+
+341
+00:24:47,730 --> 00:24:53,880
+rather than conceptual level, which. Were you
+
+342
+00:24:54,080 --> 00:24:56,240
+about halfway through the day? There's time to
+
+343
+00:24:57,110 --> 00:25:00,810
+quickly run through. These three calculations,
+
+344
+00:25:00,810 --> 00:25:05,460
+which are going to start to become routine and
+
+345
+00:25:05,910 --> 00:25:09,480
+quite familiar as we practice going through.
+
+346
+00:25:13,080 --> 00:25:18,000
+Through them one after the next, and just to
+
+347
+00:25:19,170 --> 00:25:22,170
+simplify some of the notation here, they may
+
+348
+00:25:22,170 --> 00:25:28,430
+rewrite things. In terms of. Just to each the
+
+349
+00:25:28,430 --> 00:25:33,020
+minus X, some L, the L was labeling each energy
+
+350
+00:25:33,020 --> 00:25:39,410
+level of our system. Now we are. Something over in
+
+351
+00:25:39,410 --> 00:25:41,960
+the quantum case and.
+
+352
+00:25:44,070 --> 00:25:47,820
+Rewriting the classical result in terms of so that.
+
+353
+00:25:52,680 --> 00:25:56,490
+Excel is the inverse temperature beat of times,
+
+354
+00:25:56,490 --> 00:25:59,670
+the energy of the energy level minus the chemical
+
+355
+00:25:59,670 --> 00:26:01,440
+potential and.
+
+356
+00:26:04,120 --> 00:26:07,690
+The derivative, well, I should have really changed
+
+357
+00:26:07,690 --> 00:26:10,360
+variables in the derivative itself that we can see
+
+358
+00:26:10,360 --> 00:26:14,590
+that it brings down a factor of Beita with a plus
+
+359
+00:26:14,590 --> 00:26:16,750
+sign from the two negative sides overall.
+
+360
+00:26:18,760 --> 00:26:21,760
+So we have a T and EBITA that cancel as their
+
+361
+00:26:21,760 --> 00:26:26,530
+inverses and then just the same exponential factor,
+
+362
+00:26:27,040 --> 00:26:31,570
+you the minus Extel, which we want to identify as.
+
+363
+00:26:33,660 --> 00:26:37,620
+A sum over the energy levels of the average
+
+364
+00:26:37,620 --> 00:26:42,450
+occupation number for each energy level in the
+
+365
+00:26:42,450 --> 00:26:44,640
+next Fogelson case.
+
+366
+00:26:48,130 --> 00:26:50,290
+The derivative is.
+
+367
+00:26:53,030 --> 00:26:58,240
+Just a bit. More work in the other two cases, but.
+
+368
+00:26:59,380 --> 00:27:04,650
+Proceeds in the same sort of way that. Now, in
+
+369
+00:27:04,650 --> 00:27:09,810
+addition to that factor of data here with three
+
+370
+00:27:09,810 --> 00:27:14,380
+negative signs coming. Along with it, so it's
+
+371
+00:27:14,380 --> 00:27:20,290
+minus T in the minus beta, and it needs of the
+
+372
+00:27:20,290 --> 00:27:24,730
+minus X comes along, the derivative of the log is
+
+373
+00:27:24,730 --> 00:27:30,670
+one divided by its arguments in the sun over
+
+374
+00:27:30,670 --> 00:27:33,670
+energy levels out front, which again, those are
+
+375
+00:27:33,670 --> 00:27:36,070
+cancelling and we end up with.
+
+376
+00:27:39,420 --> 00:27:42,870
+If some of your average occupation numbers for the
+
+377
+00:27:43,560 --> 00:27:46,680
+Bose Einstein quantum statistical distribution
+
+378
+00:27:46,920 --> 00:27:50,070
+appropriate for bosun's, where the occupation
+
+379
+00:27:50,070 --> 00:27:52,440
+numbers that we sum over for each energy level can
+
+380
+00:27:52,440 --> 00:27:56,040
+take any non negative value zero, one, two, three
+
+381
+00:27:56,040 --> 00:28:00,840
+and off to infinity, depending on the total number
+
+382
+00:28:00,840 --> 00:28:04,230
+of particles in the micro state. That's the reason
+
+383
+00:28:04,230 --> 00:28:08,070
+we're working with the grand canonical ensemble to
+
+384
+00:28:08,070 --> 00:28:12,570
+keep things simple and straightforward and
+
+385
+00:28:13,770 --> 00:28:17,040
+something over the possible fluctuations in the
+
+386
+00:28:17,040 --> 00:28:19,830
+number of particles with a fixed chemical
+
+387
+00:28:19,830 --> 00:28:25,510
+potential. And. Very similar calculation in the
+
+388
+00:28:25,510 --> 00:28:27,850
+very direct case, with the only difference here
+
+389
+00:28:27,850 --> 00:28:31,780
+being how many negative signs there are and with
+
+390
+00:28:31,780 --> 00:28:35,770
+an even number of negative signs changing compared
+
+391
+00:28:35,770 --> 00:28:40,990
+to the those Einstein case, the results. Ends up
+
+392
+00:28:40,990 --> 00:28:47,570
+the same each the minus beta times. Exponential of
+
+393
+00:28:49,400 --> 00:28:53,360
+exponential minus data times energy minus chemical
+
+394
+00:28:53,360 --> 00:28:58,410
+potential. So the average occupation number for
+
+395
+00:28:59,330 --> 00:29:02,690
+that very direct distribution appropriate for
+
+396
+00:29:02,690 --> 00:29:06,890
+fermions, they can have only zero or one particle
+
+397
+00:29:06,890 --> 00:29:09,620
+per energy level. This is the only possible
+
+398
+00:29:09,620 --> 00:29:14,020
+occupation numbers. And what we just wrote down
+
+399
+00:29:14,780 --> 00:29:18,740
+match the results given here after dividing
+
+400
+00:29:18,740 --> 00:29:24,170
+through by the exponential factor e to the data
+
+401
+00:29:24,170 --> 00:29:27,680
+times differences in energy and chemical potential.
+
+402
+00:29:31,420 --> 00:29:36,400
+And we can obviously see the non conversions of
+
+403
+00:29:36,520 --> 00:29:39,670
+that, but as I sign distribution in the limit,
+
+404
+00:29:39,670 --> 00:29:44,200
+when the exponential factor here becomes E to the
+
+405
+00:29:44,200 --> 00:29:47,110
+zero, if the energy were ever equal to the
+
+406
+00:29:47,110 --> 00:29:51,790
+chemical potential, we have one divided by each of
+
+407
+00:29:51,790 --> 00:29:55,750
+the zero minus one, which diverges, as was also
+
+408
+00:29:55,750 --> 00:29:59,680
+shown in the figure we looked at fairly briefly.
+
+409
+00:30:01,050 --> 00:30:07,260
+Last week that if I add this is zero here where
+
+410
+00:30:07,380 --> 00:30:09,690
+that horizontal axis is precisely the.
+
+411
+00:30:11,880 --> 00:30:14,370
+Difference between energy and chemical potential.
+
+412
+00:30:14,400 --> 00:30:17,730
+So if that ever reaches zero and the Bose Einstein
+
+413
+00:30:18,600 --> 00:30:21,960
+distribution heads off to infinity before it gets
+
+414
+00:30:21,960 --> 00:30:25,380
+there, in contrast to the classical Maxwell
+
+415
+00:30:25,380 --> 00:30:30,840
+Boltzmann case. That diverges exponentially.
+
+416
+00:30:33,690 --> 00:30:34,950
+Where that X is the.
+
+417
+00:30:37,170 --> 00:30:42,300
+Horizontal axis. Down there and the very direct
+
+418
+00:30:42,310 --> 00:30:47,500
+case saturates the maximum possible occupation,
+
+419
+00:30:47,500 --> 00:30:51,800
+number four, and energy level with fermions where
+
+420
+00:30:52,000 --> 00:30:56,080
+the average occupation number is one, that means
+
+421
+00:30:56,080 --> 00:31:02,590
+that we always have a fermoy on in. In this energy
+
+422
+00:31:02,590 --> 00:31:08,170
+level, every every energy level is occupied, and
+
+423
+00:31:08,170 --> 00:31:11,110
+as the lower lying energy levels become occupied,
+
+424
+00:31:11,110 --> 00:31:16,030
+the fermions are forced by the exclusion principle
+
+425
+00:31:16,030 --> 00:31:20,200
+to seek out higher and higher energy levels that
+
+426
+00:31:20,560 --> 00:31:23,500
+remain unoccupied and therefore available to them,
+
+427
+00:31:24,130 --> 00:31:24,850
+which is.
+
+428
+00:31:27,570 --> 00:31:31,260
+The fundamental reason why atoms have electronic
+
+429
+00:31:31,260 --> 00:31:34,200
+structure because electrons are fermions and
+
+430
+00:31:34,230 --> 00:31:38,460
+rather than all filling up, all the electrons
+
+431
+00:31:38,460 --> 00:31:43,380
+orbiting an atomic nucleus could opt for Yori just
+
+432
+00:31:43,380 --> 00:31:46,320
+hanging out in the ground. States have every atom
+
+433
+00:31:46,590 --> 00:31:48,930
+behave the same with no such thing as chemistry,
+
+434
+00:31:48,930 --> 00:31:51,000
+but that Pauli exclusion principle is what
+
+435
+00:31:51,540 --> 00:31:55,620
+prevents that situation. Forces electrons to keep
+
+436
+00:31:55,620 --> 00:31:58,350
+filling out higher and higher energy levels in
+
+437
+00:31:58,350 --> 00:32:02,010
+atoms, which is what allows those atoms to form
+
+438
+00:32:02,010 --> 00:32:08,380
+molecules and. Eventually form us. So the
+
+439
+00:32:08,620 --> 00:32:12,970
+exclusion principle is quite useful for us to
+
+440
+00:32:12,970 --> 00:32:13,650
+exist.
+
+441
+00:32:22,340 --> 00:32:26,570
+So at this point, I will. Pause one last time
+
+442
+00:32:26,570 --> 00:32:33,560
+before diving into the deeper analysis of the.
+
+443
+00:32:35,780 --> 00:32:39,560
+Quantum statistics of gas's of those arms, the
+
+444
+00:32:40,040 --> 00:32:43,570
+more familiar case where. We could have as many
+
+445
+00:32:43,570 --> 00:32:49,150
+bosun's as we want in any given energy level, if
+
+446
+00:32:49,150 --> 00:32:53,620
+there are questions about. What has come up so far
+
+447
+00:32:53,620 --> 00:32:54,010
+today?
+
+448
+00:32:57,160 --> 00:32:59,350
+Write it down or speak them up, raise your hand
+
+449
+00:32:59,350 --> 00:33:01,650
+and zoom. You know.
+
+450
+00:33:07,300 --> 00:33:10,630
+If you just a few seconds for that before hopping
+
+451
+00:33:10,630 --> 00:33:13,590
+over. To recreate.
+
+452
+00:33:37,060 --> 00:33:41,830
+Not seeing or. Hearing anything on any screen?
+
+453
+00:33:43,890 --> 00:33:48,540
+We can dive into week eight again with a bit of.
+
+454
+00:33:50,490 --> 00:33:55,610
+Supplementary background or elaboration on the the
+
+455
+00:33:56,070 --> 00:34:01,670
+module material. And in fact, I preview this a bit
+
+456
+00:34:02,450 --> 00:34:06,430
+earlier today when we were talking about the. The
+
+457
+00:34:06,430 --> 00:34:09,090
+chemical potential and the appearance of the
+
+458
+00:34:09,130 --> 00:34:11,590
+diversions in the.
+
+459
+00:34:14,110 --> 00:34:17,290
+Those Einstein distribution when the exponential
+
+460
+00:34:17,290 --> 00:34:22,210
+factor. Equals one when his argument vanishes.
+
+461
+00:34:22,660 --> 00:34:25,690
+They have that energy level equal to the chemical
+
+462
+00:34:25,690 --> 00:34:30,570
+potential. I can see that divergence both here in.
+
+463
+00:34:31,640 --> 00:34:34,730
+Dividing by one over a factor approaching zero one
+
+464
+00:34:34,730 --> 00:34:39,080
+minus one or taking the logarithm of factor one
+
+465
+00:34:39,080 --> 00:34:43,550
+minus a number, that approaches one. As its
+
+466
+00:34:43,550 --> 00:34:46,190
+argument goes to zero, but.
+
+467
+00:34:48,520 --> 00:34:51,640
+Not surprisingly, since the real world is not
+
+468
+00:34:51,640 --> 00:34:55,030
+divergent, everything is finite. We do not
+
+469
+00:34:55,030 --> 00:35:01,650
+encounter. That issue in. Real systems, in part
+
+470
+00:35:01,650 --> 00:35:05,490
+because the rules of quantum mechanics require
+
+471
+00:35:05,790 --> 00:35:10,710
+that the energy levels in a finite volume are
+
+472
+00:35:10,710 --> 00:35:15,090
+non-zero. The momentum in particular do not take a
+
+473
+00:35:16,140 --> 00:35:21,710
+exactly varnishing zero value and. Again, at the
+
+474
+00:35:21,710 --> 00:35:24,680
+level of this molecule that can be taken as input,
+
+475
+00:35:25,550 --> 00:35:28,220
+but if you are curious about where exactly it's
+
+476
+00:35:28,220 --> 00:35:33,410
+coming from, there is it can be appreciated from.
+
+477
+00:35:34,420 --> 00:35:37,390
+A fairly famous result of quantum physics called
+
+478
+00:35:37,390 --> 00:35:40,870
+the Heisenberg Uncertainty Principle, which.
+
+479
+00:35:42,990 --> 00:35:48,280
+States that. Well, what is called the uncertainty
+
+480
+00:35:48,550 --> 00:35:49,090
+or.
+
+481
+00:35:51,200 --> 00:35:54,410
+What we can really recognize, having gone through
+
+482
+00:35:54,410 --> 00:35:57,470
+some of the work of this module as this version of
+
+483
+00:35:57,470 --> 00:36:00,110
+a particle's position and of that particular
+
+484
+00:36:00,110 --> 00:36:01,760
+momentum in quantum mechanics
+
+485
+00:36:04,460 --> 00:36:09,060
+has some minimum value, that that product there,
+
+486
+00:36:09,230 --> 00:36:11,870
+you can find factors of two in different
+
+487
+00:36:11,870 --> 00:36:13,880
+dimensions for this cell, but a little squiggly
+
+488
+00:36:13,880 --> 00:36:17,120
+sign in that inequality. But there is a factor of
+
+489
+00:36:17,120 --> 00:36:20,180
+each bar on the right hand side.
+
+490
+00:36:23,190 --> 00:36:26,550
+And there's also a AL-JABRI, a connection to this
+
+491
+00:36:26,550 --> 00:36:31,640
+that the. Position and momentum are. Don, can you
+
+492
+00:36:31,640 --> 00:36:36,940
+take operators in the language of of algebra's la
+
+493
+00:36:36,980 --> 00:36:39,560
+algebra's of the groups for those of you who have
+
+494
+00:36:39,830 --> 00:36:42,710
+encountered those concepts in previous modules?
+
+495
+00:36:43,190 --> 00:36:45,410
+And how far is the.
+
+496
+00:36:47,970 --> 00:36:50,880
+Is there commutator the level to which they do not
+
+497
+00:36:50,880 --> 00:36:53,100
+compete with each other, but that may be getting
+
+498
+00:36:53,580 --> 00:36:56,190
+too technical, even for supplementary?
+
+499
+00:36:59,260 --> 00:37:02,590
+Addition to to the material, what happens if we
+
+500
+00:37:02,590 --> 00:37:07,150
+had a momentum of exactly zero leading to an
+
+501
+00:37:07,150 --> 00:37:11,290
+energy of exactly zero is that the uncertainty of
+
+502
+00:37:11,290 --> 00:37:13,150
+the dispersion in the momentum itself would be
+
+503
+00:37:13,150 --> 00:37:16,600
+exactly zero. And then we would need an infinite
+
+504
+00:37:16,750 --> 00:37:20,950
+divergence, dispersion in the position in order
+
+505
+00:37:20,950 --> 00:37:25,150
+for this inequality to be satisfied. And that is
+
+506
+00:37:25,570 --> 00:37:28,960
+something that we cannot have in a finite volume,
+
+507
+00:37:29,470 --> 00:37:34,400
+such as the observable universe. So we have
+
+508
+00:37:34,910 --> 00:37:38,600
+non-zero energies, which is what allows us to have
+
+509
+00:37:39,080 --> 00:37:43,080
+the. Vanishing chemical potential.
+
+510
+00:37:45,410 --> 00:37:49,520
+Discussed at the end of this first section of the
+
+511
+00:37:49,650 --> 00:37:51,140
+is on gas, and that is.
+
+512
+00:37:53,140 --> 00:37:56,680
+Another significant simplification, not quite as
+
+513
+00:37:56,680 --> 00:38:00,580
+significant as the factorization that comes from
+
+514
+00:38:01,270 --> 00:38:04,120
+Don, attracting ideal particles, which is what?
+
+515
+00:38:05,430 --> 00:38:09,330
+Allows the overall grand canonical potential to be
+
+516
+00:38:09,330 --> 00:38:12,840
+written as a simple sum over all the possible
+
+517
+00:38:12,840 --> 00:38:18,980
+energy levels of the system. But it is still a
+
+518
+00:38:19,880 --> 00:38:22,250
+very useful and very significant simplification,
+
+519
+00:38:22,250 --> 00:38:27,140
+which we can see where we would see if we tried to
+
+520
+00:38:28,190 --> 00:38:30,140
+duck back to the.
+
+521
+00:38:34,150 --> 00:38:36,130
+Non relativistic or.
+
+522
+00:38:38,180 --> 00:38:40,850
+I should say massive exotic particles that we
+
+523
+00:38:40,850 --> 00:38:47,120
+considered back in in week four, we had classical
+
+524
+00:38:47,120 --> 00:38:49,700
+particles inaudible gas in the container with
+
+525
+00:38:50,150 --> 00:38:55,610
+their energy of P squared. Overthe place, their
+
+526
+00:38:55,610 --> 00:38:59,750
+mass, which in that finite volume, the
+
+527
+00:38:59,750 --> 00:39:03,530
+quantization of the moment, simply leads to this
+
+528
+00:39:03,530 --> 00:39:06,190
+expression for the energy that we've seen before
+
+529
+00:39:06,650 --> 00:39:12,170
+as an overall factor, depending on the volume and
+
+530
+00:39:12,170 --> 00:39:17,220
+depending on Planck's constant each for. With just
+
+531
+00:39:17,220 --> 00:39:18,930
+numerical factors of.
+
+532
+00:39:21,490 --> 00:39:24,790
+None. Well, in the classical case, not negative,
+
+533
+00:39:24,790 --> 00:39:27,490
+but here in quantum mechanics, strictly positive
+
+534
+00:39:27,670 --> 00:39:32,320
+integers k ranging from one to up to infinity to
+
+535
+00:39:32,320 --> 00:39:36,100
+finding our energy levels and their degeneracy is.
+
+536
+00:39:39,210 --> 00:39:43,170
+And I did. Mentioned in that discussion just now,
+
+537
+00:39:43,170 --> 00:39:46,440
+I realize talking about relativistic and non
+
+538
+00:39:46,440 --> 00:39:50,010
+relativistic particles, maybe I'll wrap up the
+
+539
+00:39:50,010 --> 00:39:51,750
+last few minutes today by
+
+540
+00:39:53,850 --> 00:39:56,640
+just filling in some discussion of that. A
+
+541
+00:39:57,060 --> 00:40:00,240
+reminder for those of you who have encountered
+
+542
+00:40:00,720 --> 00:40:04,210
+special relativity in the past and maybe a bit of,
+
+543
+00:40:04,230 --> 00:40:10,230
+again, interesting supplemental information for
+
+544
+00:40:10,920 --> 00:40:15,490
+those of you who. Or maybe seeing this for the
+
+545
+00:40:15,490 --> 00:40:17,830
+first time, you have some blank space at the top
+
+546
+00:40:17,830 --> 00:40:23,350
+of the page here where I can write down really the
+
+547
+00:40:23,350 --> 00:40:28,000
+most general expression for the energy of a
+
+548
+00:40:28,000 --> 00:40:32,110
+particle as a function of its momentum in special
+
+549
+00:40:32,110 --> 00:40:35,890
+relativity, which is the square root of that
+
+550
+00:40:35,890 --> 00:40:38,830
+momentum squared times, the speed of light squared,
+
+551
+00:40:39,640 --> 00:40:43,120
+plus the mass of the particle again squared times
+
+552
+00:40:43,120 --> 00:40:46,910
+the speed of light to the power. Four, to get the
+
+553
+00:40:47,240 --> 00:40:51,380
+universe to work out correctly. We're also
+
+554
+00:40:51,920 --> 00:40:54,140
+something we certainly saw in before, but I'll
+
+555
+00:40:54,140 --> 00:40:59,770
+remind you of here is that this undecorated P
+
+556
+00:40:59,820 --> 00:41:04,190
+squared for the momenta is the scalar product of
+
+557
+00:41:04,910 --> 00:41:06,530
+the momentum vectors.
+
+558
+00:41:10,030 --> 00:41:14,020
+That you have components of momentum in each
+
+559
+00:41:14,020 --> 00:41:16,240
+possible spatial direction, left and right,
+
+560
+00:41:16,660 --> 00:41:20,050
+forward and backward, up and down. So writing
+
+561
+00:41:20,050 --> 00:41:23,800
+things out in terms of those components, this
+
+562
+00:41:24,340 --> 00:41:27,370
+overall P squared that appears in the energy
+
+563
+00:41:27,370 --> 00:41:32,470
+momentum relation. Is just the sum of squares of
+
+564
+00:41:32,470 --> 00:41:36,820
+those individual momentum components in the X, Y
+
+565
+00:41:37,180 --> 00:41:42,090
+and Z directions. And if we consider the case of a
+
+566
+00:41:42,090 --> 00:41:46,470
+particle with vanishing momentum and see
+
+567
+00:41:46,890 --> 00:41:51,900
+immediately that its energy is the mass times, the
+
+568
+00:41:51,900 --> 00:41:57,300
+speed of light squared equals MC squared being the
+
+569
+00:41:57,570 --> 00:42:03,060
+one of the most famous equations in the bottle in
+
+570
+00:42:03,060 --> 00:42:05,480
+modern physics and also in pretty modern physics.
+
+571
+00:42:06,330 --> 00:42:11,390
+This describes the so-called reste energy. Of a
+
+572
+00:42:11,390 --> 00:42:15,470
+particle with mass M that is not moving, it has
+
+573
+00:42:15,480 --> 00:42:21,280
+lamented zero. And. If we take the.
+
+574
+00:42:23,910 --> 00:42:26,990
+Consider the opposite extreme of a particle with
+
+575
+00:42:27,470 --> 00:42:31,760
+mass, much less than its momentum rather than much
+
+576
+00:42:31,760 --> 00:42:35,780
+greater than its momentum, than the mass drops out
+
+577
+00:42:35,780 --> 00:42:38,780
+of this equation. And we just have the energy
+
+578
+00:42:38,780 --> 00:42:43,100
+equal to P the moment, sometimes the speed of
+
+579
+00:42:43,100 --> 00:42:47,390
+light operating effectively as a unit conversion
+
+580
+00:42:47,390 --> 00:42:50,240
+factor, changing from units of momentum to units
+
+581
+00:42:50,240 --> 00:42:53,480
+of energy. So choosing appropriate units leaves
+
+582
+00:42:53,480 --> 00:42:59,330
+that speed of light just equal to to one, though
+
+583
+00:42:59,330 --> 00:43:03,020
+we will carry it around in.
+
+584
+00:43:05,660 --> 00:43:07,700
+In the materials for this module.
+
+585
+00:43:10,180 --> 00:43:15,100
+Just to keep track of it and as a check on some of
+
+586
+00:43:15,100 --> 00:43:18,400
+these familiar equations like equals EMC squared.
+
+587
+00:43:19,370 --> 00:43:25,490
+And if we look at, say, intermediate regimes,
+
+588
+00:43:25,730 --> 00:43:32,320
+where. Say both the momentum and mass are non-zero
+
+589
+00:43:32,320 --> 00:43:35,520
+zero, but the the mass is relatively large
+
+590
+00:43:36,270 --> 00:43:43,530
+compared to the momentum. Then we can pull. That
+
+591
+00:43:43,530 --> 00:43:47,370
+factor, EMC squared out in front of that square
+
+592
+00:43:47,370 --> 00:43:53,180
+root and. Changing the order of the terms would
+
+593
+00:43:53,180 --> 00:43:59,240
+end up with just one plus A P squared over M
+
+594
+00:43:59,240 --> 00:44:05,600
+squared times, C squared. From pulling out four
+
+595
+00:44:05,600 --> 00:44:08,600
+factors of sea out of the two that are already
+
+596
+00:44:09,290 --> 00:44:11,510
+multiplying the momentum under the square roots
+
+597
+00:44:11,960 --> 00:44:16,130
+and expanding this to linear order in that ratio
+
+598
+00:44:16,130 --> 00:44:23,270
+of P divided by it, that should call this and see.
+
+599
+00:44:29,390 --> 00:44:33,980
+We get the rest energy, EMC squared plus EMC
+
+600
+00:44:33,980 --> 00:44:41,130
+squared times. Pia, authorities squared plus order.
+
+601
+00:44:42,120 --> 00:44:50,550
+Peter, the four. Over M three, C two, which. Like,
+
+602
+00:44:50,710 --> 00:44:52,300
+where can I fit this in?
+
+603
+00:44:55,370 --> 00:44:59,390
+That is EMC squared, the rest energy will let me
+
+604
+00:44:59,390 --> 00:45:03,530
+do this, pull out just that latter term we have.
+
+605
+00:45:05,960 --> 00:45:08,180
+What is called the kinetic energy or energy of
+
+606
+00:45:08,600 --> 00:45:12,160
+motion, energy of momentum, factor of P squared,
+
+607
+00:45:12,710 --> 00:45:17,370
+we have M over M squared is an M i. Forgot about a
+
+608
+00:45:17,370 --> 00:45:20,100
+factor of a half from the expansion of the square
+
+609
+00:45:20,100 --> 00:45:23,550
+root as a one half power, and there is to any and
+
+610
+00:45:23,550 --> 00:45:28,140
+all factors of sea cancel out, and that should be.
+
+611
+00:45:29,250 --> 00:45:34,620
+Exactly what we wrote down a few weeks ago. So
+
+612
+00:45:34,620 --> 00:45:39,720
+that is the distinction that we have between non
+
+613
+00:45:39,720 --> 00:45:42,270
+relativistic particles considered previously and
+
+614
+00:45:42,270 --> 00:45:47,820
+the relativistic particles with. Energy of
+
+615
+00:45:47,820 --> 00:45:51,210
+momentum, time, speed of light, which is the case
+
+616
+00:45:51,210 --> 00:45:56,910
+for photons that we're focusing on this week, and
+
+617
+00:45:58,320 --> 00:46:02,160
+an easy way to remember this whole setup is to
+
+618
+00:46:03,150 --> 00:46:07,950
+picture a triangle with the energy on the
+
+619
+00:46:07,950 --> 00:46:10,500
+hypotenuse, a right triangle with.
+
+620
+00:46:12,680 --> 00:46:17,390
+EMC squared on one of the legs of the triangle in
+
+621
+00:46:17,390 --> 00:46:20,420
+P, C on the other, which.
+
+622
+00:46:23,040 --> 00:46:26,100
+Doesn't have any real physical meaning as a
+
+623
+00:46:26,100 --> 00:46:29,730
+triangle, but it's a visual, dramatic way to
+
+624
+00:46:30,090 --> 00:46:35,910
+remember the. Overall relation between mass energy
+
+625
+00:46:35,910 --> 00:46:40,050
+and momentum in special relativity. So.
+
+626
+00:46:42,950 --> 00:46:46,550
+That takes us to the end of time and I will stop
+
+627
+00:46:46,550 --> 00:46:50,720
+there and dig into the actual results of the week,
+
+628
+00:46:50,720 --> 00:46:56,570
+eight notes on Thursday called. You're free to ask
+
+629
+00:46:56,570 --> 00:46:58,370
+any immediate questions that you have right now,
+
+630
+00:46:58,380 --> 00:47:02,470
+but. If I don't hear those next few seconds, I
+
+631
+00:47:02,470 --> 00:47:05,620
+will shut down, zoom and sort of back up again
+
+632
+00:47:05,620 --> 00:47:10,180
+after saving the recording for the office hours
+
+633
+00:47:11,230 --> 00:47:14,530
+and then call again Thursday afternoon.
