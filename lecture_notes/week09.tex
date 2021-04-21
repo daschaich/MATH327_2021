@@ -1,11 +1,93 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 9}
-\renewcommand{\moddate}{Last modified 25 Jan.~2021}
+\renewcommand{\moddate}{Last modified 21 Apr.~2021}
 \setcounter{section}{9}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 9: Quantum gases of fermions}
 \section*{Week 9: Quantum gases of fermions}
+\subsection{Non-relativistic ideal fermion gas}
+This week we wrap up our applications of the grand-canonical ensemble to investigate ideal gases of non-interacting particles.
+We again take the quantum statistical approach of defining micro-states by summing over the possible occupation numbers $n_{\ell}$ for each energy level $\cE_{\ell}$ with energy $E_{\ell}$.
+In contrast to the bosonic case considered last week, we now focus on quantum gases of fermions, where the only possible occupation numbers are $n_{\ell} = 0$ and $1$, since the Pauli exclusion principle prevents multiple identical fermions from occupying the same energy level.
+
+In \secref{sec:fermi} we derived the grand-canonical partition function (\eq{eq:partfunc_FD}) that defines quantum Fermi--Dirac statistics for such systems of non-interacting fermions,
+\begin{equation*}
+  \ZFD(\be, \mu) = \prod_{\ell = 0}^L \left[1 + e^{-\be (E_{\ell} - \mu)}\right],
+\end{equation*}
+for inverse temperature $\be = 1 / T$ and chemical potential $\mu$.
+From the corresponding grand-canonical potential,
+\begin{equation*}
+  \Phi_{\text{FD}} = -T \sum_{\ell = 0}^L \log\left[1 + e^{-\be (E_{\ell} - \mu)}\right]
+\end{equation*}
+we can determine the large-scale properties of the system, including its average internal energy $\vev{E}$, average particle number $\vev{N}$, entropy $S$, and pressure $P$, along with the equation of state relating these quantities.
+
+A concrete calculation requires specifying the energy levels of the particles that compose the gas, and the degeneracies of those energy levels.
+Let's begin this week by considering non-relativistic particles of the sort we previously analyzed in \secref{sec:regulate}.
+In a volume $V = L^3$, the energy levels are defined by the non-zero quantized energies
+\begin{align*}
+  E(k) & = \frac{p^2}{2m} = \frac{\hbar^2 \pi^2}{2mL^2}\left(k_x^2 + k_y^2 + k_z^2\right) &
+  k_{x, y, z} & = 1, 2, \cdots.
+\end{align*}
+In addition to the usual degeneracies coming from permutations of $(k_x, k_y, k_z)$ that we discussed in previous weeks, for each distinct $\vec k$ typical fermions such as electrons have two degenerate energy levels with the same energy.
+This factor of $2$ has a different origin compared to the double degeneracy discussed for photons last week.
+Rather than worry about the physical origins of this behaviour, in both cases we simply incorporate this given information into our ansatz. % TODO: Could mention spin...
+
+The grand-canonical potential for an ideal gas of non-relativistic fermions is therefore
+\begin{equation*}
+  \Phi_{\text{f}} = T \sum_{\ell = 0}^L \log\left[1 + e^{-\be (E_{\ell} - \mu)}\right] = 2T \sum_{\vec k} \log\left[1 + \exp\left(-\frac{\hbar^2 \pi^2 k^2}{2mL^2 T} + \frac{\mu}{T}\right)\right].
+\end{equation*}
+We can again proceed by considering the gas in a large volume and approximating the sum over discrete integer $k_{x, y, z}$ by integrals over continuous real $\khat_{x, y, z}$:
+\begin{equation*}
+  \Phi_{\text{f}} \approx 2T \int d\khat_x d\khat_y d\khat_z \log\left[1 + \exp\left(-\frac{\hbar^2 \pi^2 \khat^2}{2mL^2 T} + \frac{\mu}{T}\right)\right].
+\end{equation*}
+Converting to spherical coordinates and carrying out the angular integrations over the $\frac{\pi}{2}$ solid angle of the octant of the sphere with $k_{x, y, z} > 0$, we have
+\begin{equation*}
+  \Phi_{\text{f}} \approx \pi T \int_0^{\infty} d\khat \; \khat^2 \log\left[1 + \exp\left(-\frac{\hbar^2 \pi^2 \khat^2}{2mL^2 T} + \frac{\mu}{T}\right)\right].
+\end{equation*}
+In the same spirit as the change of variables we carried out last week, to integrate over photon frequencies $\om = \Eph / \hbar$, we will now change variables to integrate over the fermion energy:
+\begin{align*}
+  E = \frac{\hbar^2 \pi^2}{2mL^2}\khat^2 \quad \lra \quad \khat & = \frac{L\sqrt{m}}{\pi \hbar} \sqrt{2E} \cr
+                                                         d\khat & = \frac{L\sqrt{m}}{\pi \hbar} \frac{dE}{\sqrt{2E}}.
+\end{align*}
+Plugging this in produces
+\begin{align}
+  \Phi_{\text{f}} & \approx \pi T \left(\frac{L^3 m^{3 / 2}}{\pi^3 \hbar^3}\right) \int_0^{\infty} dE \frac{2E}{\sqrt{2E}} \log\left[1 + e^{-\be(E - \mu)}\right] \cr
+                  & = \frac{\sqrt{2 m^3} VT}{\pi^2 \hbar^3} \int_0^{\infty} dE \sqrt{E} \log\left[1 + e^{-\be(E - \mu)}\right]. \label{eq:fermi_grand}
+\end{align}
+recognizing $L^3 = V$.
+
+With this grand-canonical potential derived, we just need to take the appropriate derivatives to determine the thermodynamics and equation of state for non-relativistic fermions.
+When doing so, we'll focus on the low-temperature regime where we expect quantum Fermi--Dirac statistics to differ significantly from the classical case we considered back in \secref{sec:regulate}.
+As we saw in \secref{sec:quantum_classical}, at high temperatures those classical results provide a good approximation to the true quantum physics.
+% TODO: Low temperatures provide a significant simplification, which is why we only consider that regime this week
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\subsection{Low-temperature equation of state}
+Rather than the average internal energy, it will prove profitable to first analyze the average particle number from the grand-canonical potential for non-relativistic fermions, \eq{eq:fermi_grand}.
+
+
+\TODO{...}
+
+\begin{equation*}
+  n(E) \approx \left\{\begin{array}{l}1 \qquad \mbox{for } E \leq u < 1 \\
+                                      0 \qquad \mbox{otherwise}\end{array}\right. .
+\end{equation*}
+
+\TODO{reproduce classical ideal gas law...}
+
+% white dwarfs that accrete matter from a companion giant star, leading to a steadily increasing mass. As the white dwarf's mass approaches the Chandrasekhar limit, its central density increases, and, as a result of compressional heating, its temperature also increases. This eventually ignites nuclear fusion reactions, leading to an immediate carbon detonation, which disrupts the star and causes the supernova
+% named after \href{https://en.wikipedia.org/wiki/Subrahmanyan_Chandrasekhar}{Subrahmanyan Chandrasekhar}
+\TODO{Being written...}
+% ------------------------------------------------------------------
+
+
+% ------------------------------------------------------------------
+\newpage
+\subsection{Equation of state\TODO{...}}
 
 \TODO{Being written...}
 % ------------------------------------------------------------------

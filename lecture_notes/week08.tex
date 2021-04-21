@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 8}
-\renewcommand{\moddate}{Last modified 17 Apr.~2021}
+\renewcommand{\moddate}{Last modified 20 Apr.~2021}
 \setcounter{section}{8}
 \setcounter{subsection}{0}
 \phantomsection
@@ -28,7 +28,7 @@ For a single particle with mass $m$ in a volume $V = L^3$, we determined the qua
 where the integers $k_{x, y, z}$ specify the possible momenta of the particle,
 \begin{align*}
   \vec p & = (p_x, p_y, p_z) = \hbar \frac{\pi}{L} (k_x, k_y, k_z) &
-  k_{x, y, z} = 1, 2, \cdots.
+  k_{x, y, z} & = 1, 2, \cdots.
 \end{align*}
 (For technical reasons, quantum mechanics requires $k_{x, y, z} \geq 1$, leading us to adjust our ansatz compared to \eq{eq:quant_mom}.)
 This system has a unique ground state $\cE_0$ with $\vec k = (1, 1, 1)$ and energy $E_0 = \frac{3}{2} \frac{\hbar^2 \pi^2}{mL^2}$.
@@ -87,7 +87,7 @@ Another simplification comes from considering the photon gas in a large volume, 
   \Phi_{\text{ph}} \approx 2T \int d\khat_x d\khat_y d\khat_z \log\left[1 - e^{-\be \Eph(\khat)}\right].
 \end{equation*}
 Since the energy $\Eph(\khat)$ depends only on the magnitude $\khat$, we can profit from converting to spherical coordinates.
-When we do so, we have to keep in mind that $k_{x, y, z} > 0$ corresponds only to the positive octant of thee sphere,
+When we do so, we have to keep in mind that $k_{x, y, z} > 0$ corresponds only to the positive octant of the sphere,
 \begin{equation*}
   \int_0^{\infty} d\khat_x \int_0^{\infty} d\khat_y \int_0^{\infty} d\khat_z = \int_0^{\infty} d\khat \; \khat^2 \int_0^{\pi / 2} d\theta \; \sin\theta \int_0^{\pi / 2} d\phi = \frac{\pi}{2} \int_0^{\infty} d\khat \; \khat^2,
 \end{equation*}
