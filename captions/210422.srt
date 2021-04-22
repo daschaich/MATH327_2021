@@ -1,0 +1,2483 @@
+1
+00:00:02,470 --> 00:00:06,500
+OK, the recording should now be running, we should
+
+2
+00:00:06,910 --> 00:00:11,950
+get underway on bright and Sunny. Afternoon here
+
+3
+00:00:11,950 --> 00:00:18,520
+in Liverpool with the usual setup and the start
+
+4
+00:00:18,520 --> 00:00:22,120
+off that may be familiar at this point of the term,
+
+5
+00:00:22,810 --> 00:00:30,450
+the. Screen shared unioned. Start off with the
+
+6
+00:00:31,680 --> 00:00:38,540
+usual pull, you see if there are. Any questions or
+
+7
+00:00:38,540 --> 00:00:44,360
+requests about things to focus on today and if
+
+8
+00:00:44,360 --> 00:00:48,140
+there are not, at least while folks may continue
+
+9
+00:00:48,140 --> 00:00:48,560
+to.
+
+10
+00:00:50,810 --> 00:00:52,580
+Enter and join the meeting over the next few
+
+11
+00:00:52,580 --> 00:00:56,800
+minutes. Can comment on. Some of the logistics
+
+12
+00:00:56,800 --> 00:01:02,110
+looking ahead towards the end of term, so the ramp
+
+13
+00:01:02,110 --> 00:01:04,630
+up for the continuous assessment, the second
+
+14
+00:01:04,660 --> 00:01:09,490
+homework assignment is due next Tuesday. And of
+
+15
+00:01:09,490 --> 00:01:14,460
+course, questions on that are. Welcome in the
+
+16
+00:01:14,460 --> 00:01:18,120
+synchronous sessions, there is a limit to how
+
+17
+00:01:18,120 --> 00:01:21,680
+directly and I can answer them. And after that, I
+
+18
+00:01:21,840 --> 00:01:25,810
+heard this morning that the. Semester two exam
+
+19
+00:01:25,810 --> 00:01:30,160
+timetable has finally now appeared with the
+
+20
+00:01:30,160 --> 00:01:35,260
+statistical physics exam scheduled for Tuesday,
+
+21
+00:01:35,260 --> 00:01:41,950
+the 25th of May. So a little over a month from now
+
+22
+00:01:41,950 --> 00:01:45,310
+and a little under a month after that last
+
+23
+00:01:45,310 --> 00:01:46,490
+homework is due.
+
+24
+00:01:50,600 --> 00:01:54,980
+And some sample exams and sample problems for
+
+25
+00:01:55,760 --> 00:01:58,310
+additional preparation are already on the canvass
+
+26
+00:01:58,310 --> 00:02:04,670
+sites and more will be added as the actual course
+
+27
+00:02:04,670 --> 00:02:09,370
+content for the for the module starts to wind down.
+
+28
+00:02:19,580 --> 00:02:21,920
+And checking it again to see that.
+
+29
+00:02:23,940 --> 00:02:28,510
+No questions have come in yet. I can. Hop over to.
+
+30
+00:02:30,090 --> 00:02:33,690
+Where we got to on one day and just pick up from
+
+31
+00:02:33,690 --> 00:02:38,490
+there, going through the materials, commenting on
+
+32
+00:02:38,910 --> 00:02:44,190
+both some of the actual stuff that's in here that
+
+33
+00:02:44,430 --> 00:02:46,140
+you can, of course, read for yourself, as well as
+
+34
+00:02:46,140 --> 00:02:51,480
+going beyond that to give some supplemental
+
+35
+00:02:51,480 --> 00:02:54,810
+background information for for those who may be
+
+36
+00:02:54,810 --> 00:02:58,380
+curious, it's trying to anticipate what might be
+
+37
+00:02:58,380 --> 00:03:01,800
+of interest and also maybe highlighting some of
+
+38
+00:03:01,800 --> 00:03:05,100
+the connections of this module to other aspects of
+
+39
+00:03:05,880 --> 00:03:10,330
+mathematics and physics. So. Where we wrapped up
+
+40
+00:03:10,330 --> 00:03:12,220
+last time was.
+
+41
+00:03:14,660 --> 00:03:20,610
+Elaborating on. How the photon energy is being
+
+42
+00:03:21,000 --> 00:03:24,420
+linearly proportional to their momentum rather
+
+43
+00:03:24,420 --> 00:03:26,760
+than proportional to the momentum squared like we
+
+44
+00:03:26,760 --> 00:03:29,810
+saw for non relativistic particles that can be
+
+45
+00:03:29,830 --> 00:03:34,320
+before, this is the opposite of a relativistic
+
+46
+00:03:34,320 --> 00:03:38,660
+limit. We went through the general relation
+
+47
+00:03:38,840 --> 00:03:42,170
+between mass energy and kinetic energy that
+
+48
+00:03:42,170 --> 00:03:45,050
+connects these two elements of non relativistic
+
+49
+00:03:45,050 --> 00:03:50,530
+appleford relativistic particles, but the. More
+
+50
+00:03:50,530 --> 00:03:55,300
+usual way of presenting the energy for ultra
+
+51
+00:03:55,300 --> 00:03:58,930
+relativistic particles like photons is to hop over
+
+52
+00:04:00,010 --> 00:04:04,780
+to looking at them as waves through a physics
+
+53
+00:04:04,780 --> 00:04:07,360
+concept known as wave particle duality that we
+
+54
+00:04:07,360 --> 00:04:12,580
+don't need to get into here. What this does is
+
+55
+00:04:12,760 --> 00:04:16,990
+connect the momentum of a photon or any other
+
+56
+00:04:17,290 --> 00:04:24,310
+relativistic particle to a wavelength or. The
+
+57
+00:04:24,310 --> 00:04:27,340
+inverse of that wavelength is known as the
+
+58
+00:04:27,340 --> 00:04:30,550
+frequency. The frequency is essentially
+
+59
+00:04:35,260 --> 00:04:39,560
+how many? Peaks and troughs of a wave past an
+
+60
+00:04:39,560 --> 00:04:41,870
+observer and a given amount of time, and that
+
+61
+00:04:41,870 --> 00:04:44,150
+depends on two things. First, how quickly the wave
+
+62
+00:04:44,150 --> 00:04:47,000
+is traveling, and secondly, how far apart those
+
+63
+00:04:47,000 --> 00:04:51,050
+peaks and troughs are spaced. That distance
+
+64
+00:04:51,050 --> 00:04:53,480
+between the peaks and troughs is precisely the
+
+65
+00:04:53,480 --> 00:04:57,350
+wave length and the speed of the wave. In the case
+
+66
+00:04:57,350 --> 00:05:01,010
+of photons is exactly that speed of light, see?
+
+67
+00:05:03,090 --> 00:05:07,170
+Which gives this generic relation for waves
+
+68
+00:05:07,170 --> 00:05:10,770
+between frequency and wavelength that.
+
+69
+00:05:14,030 --> 00:05:17,540
+The product of frequency times wavelength is equal
+
+70
+00:05:17,540 --> 00:05:21,940
+to the speed of propagation of the wave, which. We
+
+71
+00:05:21,940 --> 00:05:26,410
+can illustrate through. Some additional graphics
+
+72
+00:05:26,410 --> 00:05:31,120
+beyond what I included in the lecture notes here,
+
+73
+00:05:31,720 --> 00:05:34,540
+and we'll look at that just by observing that this
+
+74
+00:05:34,990 --> 00:05:40,780
+relation between the momentum of a photon and its
+
+75
+00:05:40,780 --> 00:05:44,670
+corresponding wavelength, once we have quanties,
+
+76
+00:05:44,690 --> 00:05:49,870
+these particles, by working in a finite volume. As
+
+77
+00:05:50,810 --> 00:05:53,860
+as we started doing way back in week four and in
+
+78
+00:05:53,860 --> 00:05:57,820
+reviewed over the past week, we end up with that
+
+79
+00:05:57,820 --> 00:06:02,530
+full time energy. Equals P, C just becomes an
+
+80
+00:06:02,530 --> 00:06:06,310
+expression again now proportional to the frequency
+
+81
+00:06:07,090 --> 00:06:10,540
+of the wave, the frequency of the photon at the
+
+82
+00:06:10,540 --> 00:06:15,820
+photon energy is far omega. And this is
+
+83
+00:06:17,080 --> 00:06:21,190
+illustrated in a bit more detail in this picture
+
+84
+00:06:21,190 --> 00:06:26,230
+here, which is showing a couple of aspects of
+
+85
+00:06:26,830 --> 00:06:30,820
+energies and wavelengths for waves of light.
+
+86
+00:06:30,820 --> 00:06:33,430
+Understood here we're getting a bit beyond the
+
+87
+00:06:34,120 --> 00:06:36,250
+core material for the module into a bit more of
+
+88
+00:06:36,250 --> 00:06:38,620
+the physics background that may be of interest,
+
+89
+00:06:38,620 --> 00:06:43,360
+where the folks on, when considered as a wave, is
+
+90
+00:06:43,360 --> 00:06:47,380
+specifically a wave in an electromagnetic field.
+
+91
+00:06:48,880 --> 00:06:53,050
+So this is the general electromagnetic spectrum.
+
+92
+00:06:54,140 --> 00:06:58,130
+The full range of possible wavelengths for.
+
+93
+00:07:00,150 --> 00:07:07,140
+For photons and as the wavelength gets longer over
+
+94
+00:07:07,140 --> 00:07:13,120
+on the left side. Of this picture here, which I.
+
+95
+00:07:14,360 --> 00:07:18,200
+Looks like I should be able to draw on. We'll see.
+
+96
+00:07:20,920 --> 00:07:24,220
+And will that works. Nothing showing up, so.
+
+97
+00:07:26,650 --> 00:07:28,660
+Looks like it will just be commentary and not
+
+98
+00:07:28,660 --> 00:07:33,150
+colouring in, but over on the left side. Off the
+
+99
+00:07:33,150 --> 00:07:36,000
+top of the stigma, we have the the long wavelength
+
+100
+00:07:36,000 --> 00:07:40,230
+regime looking at waves getting up to
+
+101
+00:07:42,390 --> 00:07:46,980
+a kilometer or more in size, similar to the size
+
+102
+00:07:46,980 --> 00:07:52,020
+of buildings and cities, which from the.
+
+103
+00:07:54,850 --> 00:07:57,880
+Connection between energy and frequency and the
+
+104
+00:07:57,880 --> 00:08:00,430
+connection then between frequency as the inverse
+
+105
+00:08:00,430 --> 00:08:04,690
+of wavelength we know corresponds to low energies
+
+106
+00:08:05,110 --> 00:08:08,560
+and low frequencies from long wavelengths.
+
+107
+00:08:10,870 --> 00:08:14,920
+And as we move up through many orders of magnitude
+
+108
+00:08:15,310 --> 00:08:19,750
+in wavelength and in photon frequency, we
+
+109
+00:08:19,750 --> 00:08:24,730
+eventually get into the microwave and then even
+
+110
+00:08:24,730 --> 00:08:28,870
+after that, the visible spectrum of a few hundred
+
+111
+00:08:28,870 --> 00:08:32,950
+nanometer wavelengths, both of which pop up at
+
+112
+00:08:32,950 --> 00:08:38,110
+different points in the materials for for this
+
+113
+00:08:38,110 --> 00:08:41,770
+week, microwaves in the guise of the cosmic
+
+114
+00:08:41,770 --> 00:08:45,070
+microwave background, invisible lights as the
+
+115
+00:08:45,850 --> 00:08:49,240
+wavelengths where the radiation from the sun
+
+116
+00:08:50,560 --> 00:08:55,480
+reaching the earth is is maximal and then going on
+
+117
+00:08:55,480 --> 00:08:58,600
+even further to shorter wavelengths at higher
+
+118
+00:08:58,600 --> 00:09:01,450
+frequencies that correspond to higher energies. We
+
+119
+00:09:01,450 --> 00:09:06,100
+get past the ultraviolet into X-ray and gamma ray
+
+120
+00:09:06,100 --> 00:09:12,350
+photons, which. As I should also point out, the
+
+121
+00:09:12,640 --> 00:09:16,360
+the very bottom aspect of this picture here that.
+
+122
+00:09:17,880 --> 00:09:21,690
+Those higher energy photons with higher
+
+123
+00:09:21,690 --> 00:09:24,960
+frequencies and shorter wavelengths are emitted by
+
+124
+00:09:24,960 --> 00:09:28,800
+objects with higher and higher temperatures. The
+
+125
+00:09:28,800 --> 00:09:32,100
+visible spectrum corresponding to temperatures
+
+126
+00:09:32,100 --> 00:09:36,570
+around a few thousand Kelvin like the surface
+
+127
+00:09:36,570 --> 00:09:41,340
+temperature of of our sun. And getting up into x
+
+128
+00:09:41,340 --> 00:09:43,950
+rays and gamma rays requires temperatures getting
+
+129
+00:09:43,950 --> 00:09:46,530
+up into the millions or tens of millions of Kelvin,
+
+130
+00:09:47,070 --> 00:09:49,500
+which is more like the interior temperature of
+
+131
+00:09:49,500 --> 00:09:53,070
+stars like the white dwarfs that will appear in
+
+132
+00:09:53,850 --> 00:09:55,370
+the materials next week.
+
+133
+00:09:59,730 --> 00:10:05,230
+So one other aspect of photons that. Is mentioned
+
+134
+00:10:05,920 --> 00:10:10,450
+here in maybe. Interesting to elaborate on is this
+
+135
+00:10:10,450 --> 00:10:15,760
+overall factor of two. Which not assuming any
+
+136
+00:10:16,690 --> 00:10:21,340
+physics background and for this material. You
+
+137
+00:10:21,340 --> 00:10:25,240
+mentioned just came from the fact that any given
+
+138
+00:10:25,240 --> 00:10:29,950
+energy level for a photon comes in, comes with a
+
+139
+00:10:29,950 --> 00:10:35,020
+partner or a pair. So for every single energy
+
+140
+00:10:35,290 --> 00:10:39,910
+related to a quantized frequency in this equation,
+
+141
+00:10:39,920 --> 00:10:43,450
+ninety nine, there are two degenerate energy
+
+142
+00:10:43,450 --> 00:10:46,900
+levels with precisely that energy and the.
+
+143
+00:10:49,200 --> 00:10:53,220
+Specific feature or quantum number that
+
+144
+00:10:53,790 --> 00:10:56,700
+distinguishes those two energy levels with the
+
+145
+00:10:56,700 --> 00:11:00,870
+same energy is something known as the polarization
+
+146
+00:11:01,260 --> 00:11:04,920
+of the photon, which again is easiest to.
+
+147
+00:11:06,320 --> 00:11:10,220
+Appreciate by picturing photogs as these
+
+148
+00:11:10,400 --> 00:11:13,470
+propagating waves in the electromagnetic field.
+
+149
+00:11:14,700 --> 00:11:19,040
+Where? The small little graphic here is showing
+
+150
+00:11:19,550 --> 00:11:23,710
+precisely that sort of. Propagating waves in an
+
+151
+00:11:23,710 --> 00:11:28,740
+electromagnetic field. The red portion of the wave
+
+152
+00:11:28,740 --> 00:11:30,870
+is the electric part, the blue portion is the
+
+153
+00:11:30,900 --> 00:11:33,540
+magnetic part, and they have to come at this 90
+
+154
+00:11:33,540 --> 00:11:38,070
+degree angle where we have a photon propagating
+
+155
+00:11:38,790 --> 00:11:44,250
+along the y axis in this diagram with. The
+
+156
+00:11:44,460 --> 00:11:49,260
+electric parts oscillating or waving linearly in
+
+157
+00:11:49,260 --> 00:11:53,130
+the Z direction and the magnetic part oscillating
+
+158
+00:11:53,130 --> 00:11:56,640
+in the direction. And this is one of the two
+
+159
+00:11:56,640 --> 00:12:01,410
+possible polarizations for this photon, this
+
+160
+00:12:01,410 --> 00:12:04,410
+electromagnetic wave with this particular
+
+161
+00:12:04,410 --> 00:12:10,060
+frequency. In the other colorization comes just
+
+162
+00:12:10,060 --> 00:12:15,400
+from rotating. This wave by 90 degrees about that
+
+163
+00:12:15,400 --> 00:12:20,170
+y it's propagating alone, and so in that case, the
+
+164
+00:12:21,300 --> 00:12:23,800
+the red portion corresponding to the electric
+
+165
+00:12:23,800 --> 00:12:26,020
+parts of the electromagnetic field would be
+
+166
+00:12:26,020 --> 00:12:28,510
+oscillating back and forth in the X direction
+
+167
+00:12:28,930 --> 00:12:33,010
+rather than the Z direction. And the blue magnetic
+
+168
+00:12:33,010 --> 00:12:36,280
+parts of the wave would be oscillating back and
+
+169
+00:12:36,280 --> 00:12:38,130
+forth in the Z direction.
+
+170
+00:12:40,210 --> 00:12:44,740
+So all photons, all the electromagnetic waves can
+
+171
+00:12:44,740 --> 00:12:50,500
+be split up into those two separate polarizations,
+
+172
+00:12:51,340 --> 00:12:55,210
+each of which forms a distinct energy level with
+
+173
+00:12:55,360 --> 00:13:00,110
+the identical energy. And what are the other five
+
+174
+00:13:00,110 --> 00:13:04,280
+of those is what gets filtered out by polarized
+
+175
+00:13:04,280 --> 00:13:08,240
+sunglasses to give an everyday connection of this
+
+176
+00:13:08,240 --> 00:13:14,420
+image, of this concept. So if you were to take two
+
+177
+00:13:14,420 --> 00:13:18,650
+pairs of polarized sunglasses and hold them up at
+
+178
+00:13:19,190 --> 00:13:24,470
+90 degrees to each other, the first pair of those
+
+179
+00:13:24,470 --> 00:13:26,600
+sunglasses would filter out one of these
+
+180
+00:13:26,780 --> 00:13:30,590
+polarizations of the photons coming in. The second
+
+181
+00:13:30,590 --> 00:13:33,980
+pair oriented 90 degrees to it would filter out
+
+182
+00:13:33,980 --> 00:13:36,710
+the other pair and exactly no lights would get
+
+183
+00:13:36,710 --> 00:13:41,330
+through, which is a nice experiment you can do.
+
+184
+00:13:42,300 --> 00:13:44,310
+Well, maybe not at home, but maybe in a sunglass
+
+185
+00:13:44,310 --> 00:13:47,010
+shop, if you will, depending on how many pairs of
+
+186
+00:13:47,010 --> 00:13:49,320
+sunglasses you have just to.
+
+187
+00:13:51,780 --> 00:13:53,700
+Confirm that the sunglasses are, in fact,
+
+188
+00:13:53,700 --> 00:13:56,690
+polarized and see how the polarization of light,
+
+189
+00:13:56,690 --> 00:14:01,300
+these two degenerate energy levels for every four
+
+190
+00:14:01,650 --> 00:14:04,710
+started to degenerate energy levels for every
+
+191
+00:14:04,830 --> 00:14:08,340
+frequency of photon that defines this energy show
+
+192
+00:14:08,340 --> 00:14:10,850
+up. In.
+
+193
+00:14:13,950 --> 00:14:19,060
+In our everyday world, so. The big simplification
+
+194
+00:14:19,060 --> 00:14:22,860
+and the reason that. We focus only on four times
+
+195
+00:14:23,040 --> 00:14:26,880
+in this week's material is that. Photons,
+
+196
+00:14:26,880 --> 00:14:29,880
+especially in a large volume, are extremely easy
+
+197
+00:14:29,880 --> 00:14:32,310
+to create and destroy. There's an enormous flood
+
+198
+00:14:32,310 --> 00:14:35,850
+of photons coming in right now off of your screen,
+
+199
+00:14:37,110 --> 00:14:39,660
+out of any lights that you might have on or coming
+
+200
+00:14:39,660 --> 00:14:44,280
+in through any windows that are also being
+
+201
+00:14:44,280 --> 00:14:48,600
+absorbed by all of the materials giving those
+
+202
+00:14:48,600 --> 00:14:51,810
+materials their distinctive color. And what this
+
+203
+00:14:51,810 --> 00:14:54,630
+amounts to is that the amount of energy being
+
+204
+00:14:54,780 --> 00:15:00,240
+introduced or removed from the gas of photons that
+
+205
+00:15:00,240 --> 00:15:05,770
+were swimming in is. Extremely small for any one
+
+206
+00:15:05,950 --> 00:15:10,800
+of those given photons. And hence the
+
+207
+00:15:11,370 --> 00:15:15,030
+corresponding chemical potential defined as the
+
+208
+00:15:15,600 --> 00:15:19,350
+change in energy. Resulting from adding or
+
+209
+00:15:19,350 --> 00:15:23,420
+removing one photon at a fixed entropy, so any
+
+210
+00:15:23,430 --> 00:15:26,070
+radically changing the number of photons in the
+
+211
+00:15:26,070 --> 00:15:33,210
+gas is essentially zero for the photon gas so that
+
+212
+00:15:33,210 --> 00:15:33,570
+the.
+
+213
+00:15:35,930 --> 00:15:38,120
+Grand canonical partition function and its
+
+214
+00:15:38,120 --> 00:15:40,130
+corresponding logarithm, the grand canonical
+
+215
+00:15:40,130 --> 00:15:44,120
+potential just ends up with no further dependence
+
+216
+00:15:44,120 --> 00:15:46,880
+on the chemical potential, depending only on the
+
+217
+00:15:46,880 --> 00:15:49,880
+photon energy, and through that, the photon
+
+218
+00:15:49,880 --> 00:15:56,210
+frequency. Omega, in all, we could go through
+
+219
+00:15:56,210 --> 00:15:59,900
+these same sorts of calculation steps for.
+
+220
+00:16:01,940 --> 00:16:07,610
+More generic ozone's with a non zero chemical
+
+221
+00:16:07,610 --> 00:16:10,010
+potential, in particular, a negative chemical
+
+222
+00:16:10,010 --> 00:16:14,210
+potential in order for the number of density of
+
+223
+00:16:14,240 --> 00:16:19,500
+the ozone gas to remain finite, that adds a. A
+
+224
+00:16:19,630 --> 00:16:24,350
+significant amount of complication and. Additional
+
+225
+00:16:24,350 --> 00:16:29,600
+complexity, and so it's something that. I won't
+
+226
+00:16:29,600 --> 00:16:33,770
+even get into in the synchronous session except
+
+227
+00:16:33,770 --> 00:16:35,480
+for maybe some generic remarks, if there's
+
+228
+00:16:35,480 --> 00:16:40,250
+interest, you can just refer you to some of the
+
+229
+00:16:41,660 --> 00:16:44,990
+additional references at the very start of the
+
+230
+00:16:44,990 --> 00:16:47,090
+lecture notes, in particular, David Tong's
+
+231
+00:16:47,840 --> 00:16:51,320
+statistical physics lectures and also the text
+
+232
+00:16:51,320 --> 00:16:55,580
+book by Dan Schroeder. Both go into these
+
+233
+00:16:55,580 --> 00:16:56,990
+calculations for.
+
+234
+00:17:00,180 --> 00:17:03,180
+Massive Lozano's with a non-zero chemical
+
+235
+00:17:03,180 --> 00:17:07,020
+potential where we need to introduce concepts of
+
+236
+00:17:07,020 --> 00:17:10,740
+the density of states and actually end up being
+
+237
+00:17:10,740 --> 00:17:15,240
+able to observe a phase transition in a non
+
+238
+00:17:15,240 --> 00:17:20,220
+interacting ideal system, which is quite unusual,
+
+239
+00:17:20,580 --> 00:17:22,530
+that phase transition is going between two
+
+240
+00:17:22,530 --> 00:17:25,380
+different phases of matter. The the gases that
+
+241
+00:17:25,380 --> 00:17:29,160
+we're looking at here for photons is one of those
+
+242
+00:17:29,160 --> 00:17:31,890
+phases. And the other phase is what's called a
+
+243
+00:17:31,890 --> 00:17:36,540
+Bose Einstein condensate that exists at low
+
+244
+00:17:36,540 --> 00:17:42,120
+temperatures was predicted theoretically by both
+
+245
+00:17:42,120 --> 00:17:45,870
+an Einstein, a good 70 years before technology was
+
+246
+00:17:45,870 --> 00:17:49,800
+sufficiently advanced to create it in the 1990s,
+
+247
+00:17:50,280 --> 00:17:54,870
+which was very promptly awarded the 2001 Nobel
+
+248
+00:17:54,870 --> 00:17:56,490
+Prize in physics. So
+
+249
+00:17:58,800 --> 00:18:04,050
+that's an aside that I will leave for later and
+
+250
+00:18:04,050 --> 00:18:06,420
+first go through the simpler case of the photon
+
+251
+00:18:06,420 --> 00:18:11,790
+gas with varnishing chemical potential. Looking
+
+252
+00:18:11,790 --> 00:18:12,810
+first at.
+
+253
+00:18:15,560 --> 00:18:16,400
+Some of the.
+
+254
+00:18:18,720 --> 00:18:21,480
+Recasting of the great economic potential that
+
+255
+00:18:21,480 --> 00:18:27,240
+we're able to do precisely because large volumes
+
+256
+00:18:27,630 --> 00:18:30,330
+are easy to come by compared to the wavelengths of
+
+257
+00:18:30,330 --> 00:18:35,040
+photons, often on those micrometer or even
+
+258
+00:18:35,040 --> 00:18:36,210
+nanometre scales.
+
+259
+00:18:38,600 --> 00:18:42,320
+So going through the same sort of trick that we
+
+260
+00:18:42,800 --> 00:18:45,650
+didn't work for in the case of a classical, non
+
+261
+00:18:45,650 --> 00:18:50,090
+relativistic ideal, gas you replace the sun is
+
+262
+00:18:50,090 --> 00:18:57,090
+over discrete momenta with a. Integration over the
+
+263
+00:18:57,900 --> 00:19:00,310
+corresponding real variables that I decorate with
+
+264
+00:19:00,310 --> 00:19:06,160
+the hat here. This turns out to be. As we will see,
+
+265
+00:19:06,160 --> 00:19:10,540
+an excellent approximation, and because the photon
+
+266
+00:19:10,540 --> 00:19:15,700
+energy only depends on the magnitude. Of this
+
+267
+00:19:15,700 --> 00:19:21,830
+momentum index by Kohat. We can carry out the
+
+268
+00:19:21,830 --> 00:19:25,970
+angular portions of these intervals, getting the
+
+269
+00:19:27,470 --> 00:19:32,930
+positive octet of the three sphere, I think I
+
+270
+00:19:32,930 --> 00:19:36,620
+merged together two words, both the three and the
+
+271
+00:19:36,620 --> 00:19:41,870
+sphere, that phrase. So keeping all of the
+
+272
+00:19:42,620 --> 00:19:47,760
+frequencies positive, we just pick out the. One
+
+273
+00:19:47,760 --> 00:19:50,670
+eighth of the total angle of the sphere that we're
+
+274
+00:19:50,670 --> 00:19:54,420
+integrating over a corresponding to positive
+
+275
+00:19:54,420 --> 00:19:57,870
+frequencies in the X, Y and Z direction, so the
+
+276
+00:19:57,870 --> 00:20:01,590
+total solid angle is surface area of a sphere for
+
+277
+00:20:01,590 --> 00:20:06,620
+pi divided by eight. And that gives us just as
+
+278
+00:20:06,620 --> 00:20:12,860
+integral over. Momenta, which we can then. Relate
+
+279
+00:20:12,860 --> 00:20:18,090
+back to the photon frequency. To turn into an
+
+280
+00:20:18,090 --> 00:20:21,420
+integration over the frequencies of these photons.
+
+281
+00:20:22,830 --> 00:20:26,670
+Recognizing from the factors of all that come in
+
+282
+00:20:26,670 --> 00:20:30,570
+through that changing variables, the overall
+
+283
+00:20:31,020 --> 00:20:34,550
+volume. Of the photographs, as well as its
+
+284
+00:20:34,550 --> 00:20:38,870
+temperature hanging out outside of this integral
+
+285
+00:20:38,870 --> 00:20:40,760
+over Frequency's Omega.
+
+286
+00:20:53,650 --> 00:20:58,060
+Quickly check the. People everywhere think that's
+
+287
+00:20:58,060 --> 00:21:03,370
+just going to hang out for the. Of course, of
+
+288
+00:21:03,370 --> 00:21:07,690
+today, and just checking to see that there are no
+
+289
+00:21:07,690 --> 00:21:10,870
+questions yet there, and those of you who are on
+
+290
+00:21:10,870 --> 00:21:14,830
+synchronously are, of course, free to hop in with
+
+291
+00:21:14,830 --> 00:21:19,580
+questions out loud or through the chat window. And
+
+292
+00:21:19,600 --> 00:21:24,400
+I won't bother to wait long for those I'll keep
+
+293
+00:21:24,400 --> 00:21:28,980
+charging ahead. With the commentary that part of
+
+294
+00:21:28,980 --> 00:21:33,330
+the reason for casting the Grand Canal as a
+
+295
+00:21:33,330 --> 00:21:36,750
+potential in the form of this integral over
+
+296
+00:21:36,840 --> 00:21:42,960
+frequencies has to do with connections to. Physics
+
+297
+00:21:42,960 --> 00:21:45,450
+experiments, or maybe better to say, physics,
+
+298
+00:21:45,450 --> 00:21:50,040
+observations of sources of photons, both light and
+
+299
+00:21:50,040 --> 00:21:53,260
+heat and ultraviolet radiation like radiation,
+
+300
+00:21:53,260 --> 00:21:57,420
+like gamma rays, where the typical measurements
+
+301
+00:21:57,450 --> 00:22:00,090
+being done in these.
+
+302
+00:22:02,810 --> 00:22:07,160
+Observations and experiments consists in measuring
+
+303
+00:22:07,580 --> 00:22:12,470
+how much energy is being carried by photons of a
+
+304
+00:22:12,470 --> 00:22:17,030
+particular frequency. So by pulling out this
+
+305
+00:22:17,030 --> 00:22:21,680
+integration over the frequency, the integrated. Of
+
+306
+00:22:21,680 --> 00:22:25,490
+the frequency is precisely the information being
+
+307
+00:22:25,490 --> 00:22:30,320
+measured in those experiments, and I do see that a
+
+308
+00:22:30,920 --> 00:22:36,440
+question came in to do the boxes on. Page 110 and
+
+309
+00:22:36,440 --> 00:22:44,130
+111, which. You have to do with carrying out the.
+
+310
+00:22:45,120 --> 00:22:49,310
+The actual integrals here. So we will get to that,
+
+311
+00:22:49,430 --> 00:22:52,370
+I think, before the end of today and before
+
+312
+00:22:52,460 --> 00:22:57,400
+carrying out the integrals, I'm going to. Just say
+
+313
+00:22:57,400 --> 00:23:02,080
+a few things about the integration itself, what
+
+314
+00:23:02,080 --> 00:23:08,790
+shows up in the. Integration of frequency and it
+
+315
+00:23:08,790 --> 00:23:15,200
+is, in fact, useful to hop ahead to that page. 110.
+
+316
+00:23:17,590 --> 00:23:22,900
+Where? In this box, we actually see the.
+
+317
+00:23:24,760 --> 00:23:26,050
+Integrated itself.
+
+318
+00:23:28,360 --> 00:23:32,230
+As computed earlier on, so playing out this
+
+319
+00:23:32,230 --> 00:23:35,500
+dependence on the frequency or magnitude in the
+
+320
+00:23:35,530 --> 00:23:38,110
+numerator with an exponential factor in the
+
+321
+00:23:38,110 --> 00:23:39,940
+denominator, and
+
+322
+00:23:42,010 --> 00:23:44,800
+in fact, I think the discussion works just as well.
+
+323
+00:23:45,680 --> 00:23:47,860
+Whichever order we do it in, whether we integrate
+
+324
+00:23:47,860 --> 00:23:49,120
+first and then look at the
+
+325
+00:23:52,630 --> 00:23:57,070
+look at the integration or going over or focus on
+
+326
+00:23:57,070 --> 00:23:59,250
+the integration and then complete the integration.
+
+327
+00:23:59,800 --> 00:24:03,910
+So let's carry out these integrals and then circle
+
+328
+00:24:03,910 --> 00:24:06,580
+back around in the lecture notes to comment on
+
+329
+00:24:07,030 --> 00:24:12,250
+some of the physics connections where what we need
+
+330
+00:24:12,250 --> 00:24:14,380
+to do.
+
+331
+00:24:16,480 --> 00:24:23,460
+For. This is a girl here on page 110 is getting
+
+332
+00:24:23,460 --> 00:24:26,460
+into the form of the integration that we're given
+
+333
+00:24:26,970 --> 00:24:29,820
+just above it, this fun combination of the game of
+
+334
+00:24:29,820 --> 00:24:34,350
+function and the remote Zeta function. And we see
+
+335
+00:24:34,350 --> 00:24:39,750
+that this integral here involves a factor of each
+
+336
+00:24:39,750 --> 00:24:44,050
+of the power X or as our starting point involves
+
+337
+00:24:44,070 --> 00:24:47,730
+the exponential factor of Beita times each our
+
+338
+00:24:47,730 --> 00:24:49,920
+times, amigo, which is the energy divided by
+
+339
+00:24:49,920 --> 00:24:52,770
+temperature calling the beta is the inverse
+
+340
+00:24:52,800 --> 00:24:58,230
+temperature. So our X to get these two integrals
+
+341
+00:24:58,230 --> 00:25:03,060
+into the same form. Needs to be precisely that
+
+342
+00:25:03,060 --> 00:25:08,220
+beater, each bar Omega, which is the energy of the
+
+343
+00:25:08,220 --> 00:25:12,090
+photon or a mega divided by temperature, and then
+
+344
+00:25:12,360 --> 00:25:15,210
+that substitution gives ADX.
+
+345
+00:25:17,390 --> 00:25:21,630
+Rather should. Express it as the almighty negative
+
+346
+00:25:22,160 --> 00:25:29,370
+is equal to. Temperature over age four times to X,
+
+347
+00:25:30,540 --> 00:25:36,880
+so from the. Three powers of Omega in the
+
+348
+00:25:36,880 --> 00:25:40,450
+numerator and the Omega that is also hanging out
+
+349
+00:25:40,450 --> 00:25:44,200
+there and see, we're going to pick up four powers
+
+350
+00:25:44,620 --> 00:25:49,950
+of this factor. T over h bar so that.
+
+351
+00:25:52,100 --> 00:25:55,860
+Comes along with that constant factor to your
+
+352
+00:25:55,860 --> 00:25:58,040
+average bar to the fourth.
+
+353
+00:26:02,650 --> 00:26:08,080
+And. When Omega zero zero and Sable's infinity, we
+
+354
+00:26:08,080 --> 00:26:12,960
+have precisely executed over E to the X minus one
+
+355
+00:26:12,970 --> 00:26:17,770
+to X, which is part of the four over 15. So
+
+356
+00:26:17,770 --> 00:26:21,640
+putting things together, there is a team of the
+
+357
+00:26:21,640 --> 00:26:27,300
+fourth on top. For factors of high cancel out two
+
+358
+00:26:27,300 --> 00:26:31,050
+of those in the denominator, so PI squared is left
+
+359
+00:26:31,050 --> 00:26:36,240
+in the numerator of 15 in the denominator and.
+
+360
+00:26:38,790 --> 00:26:41,910
+That factor of bar divided by each part of the
+
+361
+00:26:41,910 --> 00:26:44,640
+force leaves each bar cubed in the denominator and
+
+362
+00:26:44,650 --> 00:26:49,920
+cubed in that is. As promised, proportional to
+
+363
+00:26:50,520 --> 00:26:54,690
+this power of tea and to the fourth.
+
+364
+00:26:57,900 --> 00:26:58,560
+And.
+
+365
+00:27:00,650 --> 00:27:07,080
+Given that result, it may well be a. Fun exercise
+
+366
+00:27:07,080 --> 00:27:12,760
+to compute the heat capacity. For this, folks, I
+
+367
+00:27:12,820 --> 00:27:16,030
+guess maybe I won't.
+
+368
+00:27:24,760 --> 00:27:29,150
+I won't stop for too long asking that question and
+
+369
+00:27:29,490 --> 00:27:33,970
+calling that the heat capacity is related to this
+
+370
+00:27:33,970 --> 00:27:36,670
+energy density, but I'll leave that just up in the
+
+371
+00:27:36,670 --> 00:27:39,580
+background on people everywhere. It's something to
+
+372
+00:27:39,580 --> 00:27:43,330
+think about while we look at the similar
+
+373
+00:27:44,260 --> 00:27:47,230
+calculation for the number of density.
+
+374
+00:27:49,290 --> 00:27:52,920
+We're now we have. A similar looking integral over
+
+375
+00:27:52,920 --> 00:27:57,810
+these frequencies that corresponds to a slightly
+
+376
+00:27:57,810 --> 00:28:02,160
+different combination of. The other functions in
+
+377
+00:28:02,170 --> 00:28:06,340
+remote Zeta functions and maybe before writing
+
+378
+00:28:06,340 --> 00:28:09,080
+down this integral, I should.
+
+379
+00:28:12,050 --> 00:28:15,170
+Swap back and forth and highlight the similarity
+
+380
+00:28:16,160 --> 00:28:19,550
+between the energy density and the number of
+
+381
+00:28:19,550 --> 00:28:23,840
+density where we can see if we look closely and
+
+382
+00:28:23,840 --> 00:28:27,830
+maybe doing that asynchronously in offline would
+
+383
+00:28:27,830 --> 00:28:31,280
+be the better way to go than trying to fit them
+
+384
+00:28:31,280 --> 00:28:36,040
+both onto the same screen here. But the integrals
+
+385
+00:28:36,050 --> 00:28:41,210
+here only differ by the energy density inserting.
+
+386
+00:28:44,350 --> 00:28:50,740
+A factor of the energy, each bar Omega. Into the
+
+387
+00:28:50,780 --> 00:28:54,680
+integrated here, so instead of just counting the
+
+388
+00:28:54,680 --> 00:28:59,840
+number of photons. You're picking up or
+
+389
+00:28:59,840 --> 00:29:02,630
+integrating over the energy that is carried by
+
+390
+00:29:02,630 --> 00:29:05,270
+each of those photons. So instead of a. make a
+
+391
+00:29:05,270 --> 00:29:09,050
+square deal bigger, the integral for the energy is
+
+392
+00:29:09,050 --> 00:29:12,770
+each four times will make a huge mega.
+
+393
+00:29:14,800 --> 00:29:18,970
+So we use that trick again with FERME on Gas's
+
+394
+00:29:18,970 --> 00:29:22,450
+next week, and so it's worth commenting on here,
+
+395
+00:29:22,450 --> 00:29:30,600
+but doing that same substitution. Of ex. Age for
+
+396
+00:29:30,680 --> 00:29:36,500
+Omega, you can charge ahead in see that we now
+
+397
+00:29:36,500 --> 00:29:42,410
+have only three powers of that T over H Bar two
+
+398
+00:29:42,410 --> 00:29:45,050
+from the Omega squared the numerator and a third
+
+399
+00:29:45,470 --> 00:29:50,640
+from Jamaica and then the integral. From zero to
+
+400
+00:29:50,640 --> 00:29:55,260
+infinity of X squared over to the X minus one, the
+
+401
+00:29:55,290 --> 00:30:04,290
+X, which was our two times Z A three. So plugging
+
+402
+00:30:04,290 --> 00:30:06,300
+things in is.
+
+403
+00:30:08,810 --> 00:30:09,590
+We pull it
+
+404
+00:30:12,230 --> 00:30:17,480
+to zero three T cubed out front.
+
+405
+00:30:20,160 --> 00:30:24,710
+And everything in the denominator is left over.
+
+406
+00:30:25,840 --> 00:30:28,360
+Each bar cube cubed in PI squared.
+
+407
+00:30:35,590 --> 00:30:42,020
+So with that computed, they see that. You know,
+
+408
+00:30:42,070 --> 00:30:45,040
+there is agreements about the.
+
+409
+00:30:48,470 --> 00:30:52,760
+Heat capacity for the photon gas. I'll switch
+
+410
+00:30:52,760 --> 00:31:00,590
+things back to the question about where we've been.
+
+411
+00:31:02,370 --> 00:31:06,240
+Opportunity for questions to come in for many of
+
+412
+00:31:06,240 --> 00:31:07,530
+you and just.
+
+413
+00:31:12,940 --> 00:31:17,710
+Comment that the heat capacity itself.
+
+414
+00:31:20,090 --> 00:31:25,520
+That constant pressure is that. Derivative in the
+
+415
+00:31:25,520 --> 00:31:29,060
+energy with respect to the temperature at constant
+
+416
+00:31:29,060 --> 00:31:32,330
+bullying, with aggressive pressure just now. So
+
+417
+00:31:32,330 --> 00:31:39,680
+taking the. Temperature derivative of. This t to
+
+418
+00:31:39,680 --> 00:31:43,760
+the power for just leaves us with our three and
+
+419
+00:31:44,030 --> 00:31:45,770
+all the rest of the cast of factors that come
+
+420
+00:31:45,770 --> 00:31:47,870
+along for the ride and.
+
+421
+00:31:50,650 --> 00:31:54,460
+Yeah. Come in and assume about the gap on page one
+
+422
+00:31:54,460 --> 00:31:57,820
+of the six is I think our next pretty much our
+
+423
+00:31:57,820 --> 00:31:59,260
+next stop, because we saw
+
+424
+00:32:01,570 --> 00:32:04,900
+Biden jumping ahead to that integration. We looked
+
+425
+00:32:04,900 --> 00:32:07,990
+at a bit of detail at this integration here that
+
+426
+00:32:07,990 --> 00:32:11,620
+appears in the expression for the total energy
+
+427
+00:32:11,620 --> 00:32:15,550
+density. And I mentioned earlier before that
+
+428
+00:32:15,550 --> 00:32:22,780
+digression that it is this. Spectral density, the
+
+429
+00:32:22,900 --> 00:32:25,480
+thing that is being integrated over that is
+
+430
+00:32:25,480 --> 00:32:29,260
+actually measured in experimental observations.
+
+431
+00:32:30,400 --> 00:32:35,530
+With this plot here not actually being those
+
+432
+00:32:35,530 --> 00:32:37,420
+experimental measurements, but being an
+
+433
+00:32:37,420 --> 00:32:41,830
+illustration mathematically of how this idealized
+
+434
+00:32:41,830 --> 00:32:46,510
+Planck spectrum for non interacting photons
+
+435
+00:32:47,020 --> 00:32:50,860
+behaves as a function of the temperature, which is
+
+436
+00:32:51,850 --> 00:32:56,490
+the inverse of data or beta is the inverse
+
+437
+00:32:56,530 --> 00:33:00,700
+temperature, whereas the temperature gets higher
+
+438
+00:33:00,880 --> 00:33:05,650
+the peak. You see, if I can get both the equation
+
+439
+00:33:05,650 --> 00:33:07,960
+and the plot on the screen here
+
+440
+00:33:11,150 --> 00:33:15,580
+in the limit of large wavelengths and the limit of
+
+441
+00:33:15,580 --> 00:33:19,660
+small wavelengths, the spectrum goes to zero. And
+
+442
+00:33:19,660 --> 00:33:24,400
+because. Spectrum here is plotted as a function of
+
+443
+00:33:24,400 --> 00:33:27,460
+wavelength rather than the function of frequency
+
+444
+00:33:27,670 --> 00:33:31,780
+that we derive starting from the grand canonical
+
+445
+00:33:31,780 --> 00:33:34,120
+proficient function. It's worth.
+
+446
+00:33:36,180 --> 00:33:41,400
+Going through the requested box here on page 106
+
+447
+00:33:41,850 --> 00:33:46,700
+to change variables. And get to get the energy
+
+448
+00:33:46,700 --> 00:33:51,710
+density expressed as an integral over the
+
+449
+00:33:51,710 --> 00:33:58,380
+wavelength rather than the frequency. So the. The
+
+450
+00:33:58,390 --> 00:34:02,110
+straightforward part of this is just substituting
+
+451
+00:34:02,110 --> 00:34:10,090
+in three powers of that wavelength in three powers
+
+452
+00:34:10,090 --> 00:34:14,420
+of the frequency turn into three powers. Of
+
+453
+00:34:14,430 --> 00:34:21,000
+wavelength, so omega, is that too pricey, divided
+
+454
+00:34:21,000 --> 00:34:29,110
+by the waves like lambda? And. Looking at the. A
+
+455
+00:34:29,750 --> 00:34:32,720
+derivative of Omega with respect to LAMDA, then we
+
+456
+00:34:32,720 --> 00:34:36,830
+pull out that power just before things here for.
+
+457
+00:34:39,020 --> 00:34:42,230
+Use it for being explicit, the derivative of one
+
+458
+00:34:42,230 --> 00:34:46,970
+over lambda is minus one over lambda squared by C
+
+459
+00:34:47,480 --> 00:34:50,780
+come along for the ride in a D lambda.
+
+460
+00:34:53,730 --> 00:34:58,200
+Is. Up in the numerator in the.
+
+461
+00:35:01,200 --> 00:35:03,630
+One of the ways that's a minus sign could go
+
+462
+00:35:03,630 --> 00:35:11,820
+astray in this calculation is when converting this
+
+463
+00:35:11,820 --> 00:35:17,560
+integral from. Frequency to wavelength, we also
+
+464
+00:35:17,560 --> 00:35:21,850
+have to convert the limits, so as W goes to zero
+
+465
+00:35:21,850 --> 00:35:25,240
+and the lower limits of the center grow, that
+
+466
+00:35:25,240 --> 00:35:30,280
+corresponds to Lambda going to infinity and
+
+467
+00:35:30,280 --> 00:35:36,100
+similarly, W to infinity is the high energy limit
+
+468
+00:35:36,100 --> 00:35:42,010
+of very low wavelengths. And then we have the
+
+469
+00:35:42,010 --> 00:35:46,060
+lambda up fronts, but rather. That's minus.
+
+470
+00:35:50,580 --> 00:35:56,470
+To or the minus comes from only the deal a factor.
+
+471
+00:35:56,490 --> 00:36:01,890
+This is just positive see Cube with a minus two
+
+472
+00:36:01,890 --> 00:36:07,900
+plus C from the Omega. And then PI squared C cubed
+
+473
+00:36:09,280 --> 00:36:12,910
+lambda cubes from the Omega Cube, Lambda squared
+
+474
+00:36:12,910 --> 00:36:16,210
+from the Omega and then E to the.
+
+475
+00:36:18,530 --> 00:36:25,280
+Two pi beat each bar, C over lambda, minus one.
+
+476
+00:36:28,090 --> 00:36:28,900
+The Alanda.
+
+477
+00:36:31,460 --> 00:36:36,500
+So that is all of the factors that we then. You
+
+478
+00:36:36,560 --> 00:36:39,540
+have to deal with.
+
+479
+00:36:42,110 --> 00:36:47,150
+And pulling things out front, I see four factors
+
+480
+00:36:47,150 --> 00:36:49,310
+of two, which is 16.
+
+481
+00:36:51,330 --> 00:36:57,960
+There are four factors of pi in the denominator
+
+482
+00:36:58,590 --> 00:37:01,560
+there and there, and also four factors in the
+
+483
+00:37:01,560 --> 00:37:03,270
+numerator that will cancel out.
+
+484
+00:37:06,330 --> 00:37:07,200
+We have.
+
+485
+00:37:15,290 --> 00:37:18,800
+An issue because I duplicated things and going in
+
+486
+00:37:18,800 --> 00:37:22,490
+the wrong here, I wrote those PI squared CS in two
+
+487
+00:37:22,490 --> 00:37:26,930
+different places, so. Let's go back to the blue
+
+488
+00:37:26,930 --> 00:37:33,020
+and fix the pies, the annoying feature of that, a
+
+489
+00:37:33,020 --> 00:37:36,610
+racer racing. Everything that comes around.
+
+490
+00:37:40,140 --> 00:37:42,270
+I put it in both places, so.
+
+491
+00:37:45,350 --> 00:37:46,610
+Just rewrite this.
+
+492
+00:37:49,860 --> 00:37:51,450
+Without commentary this time.
+
+493
+00:37:56,360 --> 00:37:59,180
+And it looks a bit simpler than the cumulonimbus
+
+494
+00:37:59,180 --> 00:37:59,720
+squared
+
+495
+00:38:01,820 --> 00:38:07,650
+E two by being the first C over lambda. Minus one
+
+496
+00:38:07,660 --> 00:38:12,390
+day lamda, so 16 and there are two powers of pi
+
+497
+00:38:12,600 --> 00:38:17,820
+leftover. There is one factor of C that goes along
+
+498
+00:38:17,820 --> 00:38:22,440
+with that factor of bar. And then everything else
+
+499
+00:38:22,890 --> 00:38:29,790
+is this function of lamda where I can absorb that
+
+500
+00:38:29,790 --> 00:38:34,790
+minus sine. By reversing the order of integration
+
+501
+00:38:34,790 --> 00:38:38,210
+rather than from infinity to zero, make it zero to
+
+502
+00:38:38,210 --> 00:38:42,420
+infinity. He has written.
+
+503
+00:38:45,870 --> 00:38:46,290
+The.
+
+504
+00:38:49,420 --> 00:38:52,490
+It should have been written earlier in the notes.
+
+505
+00:38:52,520 --> 00:38:58,150
+Then there is a dilemma for Lambda five and this
+
+506
+00:38:58,150 --> 00:39:02,810
+exponential factor. Each person related to minus
+
+507
+00:39:02,810 --> 00:39:08,440
+one and we can check the. Overall, negative signs
+
+508
+00:39:08,620 --> 00:39:15,430
+by noting that this quantity here. Is just the
+
+509
+00:39:15,430 --> 00:39:18,520
+Planck spectrum as a function of wavelength, what
+
+510
+00:39:18,520 --> 00:39:22,690
+is plotted up here, and this is obviously a
+
+511
+00:39:23,260 --> 00:39:29,280
+positive. So we have the correct overall sign that
+
+512
+00:39:29,280 --> 00:39:31,430
+is also written there.
+
+513
+00:39:49,720 --> 00:39:50,720
+Judging now.
+
+514
+00:39:53,000 --> 00:39:56,570
+In the time that we have left, what would be worth
+
+515
+00:39:57,440 --> 00:40:02,480
+going through, I think I'll. Talk about the cosmic
+
+516
+00:40:02,480 --> 00:40:04,460
+microwave background. Bits and.
+
+517
+00:40:08,570 --> 00:40:15,920
+Wrap up the equation of state on Monday where the.
+
+518
+00:40:17,260 --> 00:40:19,960
+Having gone through the change of variables.
+
+519
+00:40:22,270 --> 00:40:27,430
+To get things in terms of the wavelength lamda, we
+
+520
+00:40:27,430 --> 00:40:28,780
+can now see that.
+
+521
+00:40:32,860 --> 00:40:37,210
+Suspects that were plotting here has that formed.
+
+522
+00:40:38,610 --> 00:40:45,270
+One over. Lambed is the fifth time's not enough
+
+523
+00:40:45,270 --> 00:40:50,550
+space here, so zoom in and narrate this a bit
+
+524
+00:40:50,550 --> 00:40:54,060
+smaller if it recognizes the eraser.
+
+525
+00:41:04,970 --> 00:41:09,170
+One over land is the fifth and then an exponential
+
+526
+00:41:09,170 --> 00:41:14,730
+factor. That goes like each of the one over minus
+
+527
+00:41:14,730 --> 00:41:15,120
+one.
+
+528
+00:41:17,920 --> 00:41:23,730
+Where I'm omitting all of the factors of the
+
+529
+00:41:23,740 --> 00:41:26,770
+factor of beta in there, but ignore HRC in those
+
+530
+00:41:26,770 --> 00:41:29,050
+other Karlsson's of it in the high temperature
+
+531
+00:41:29,050 --> 00:41:33,480
+limit relevant for. Classical physics, this e to
+
+532
+00:41:33,480 --> 00:41:38,250
+the Beethoven land of minus one, we can expand in
+
+533
+00:41:38,250 --> 00:41:43,290
+terms of the small beta as one plus beta over
+
+534
+00:41:43,290 --> 00:41:46,830
+lambda, but once cancel and that one over lambda
+
+535
+00:41:46,830 --> 00:41:51,570
+cancels out the. What are those five factors of
+
+536
+00:41:51,590 --> 00:41:56,960
+Canada so classically? The spectrum that would be
+
+537
+00:41:57,170 --> 00:41:58,220
+predicted for.
+
+538
+00:42:03,530 --> 00:42:08,120
+For later, for electromagnetic radiation is one
+
+539
+00:42:08,120 --> 00:42:10,740
+over lambdas of the power for which is what's
+
+540
+00:42:10,760 --> 00:42:16,070
+shown in. This black line here diverging as a
+
+541
+00:42:16,070 --> 00:42:19,150
+Kordic function as the way of life gets smaller,
+
+542
+00:42:19,730 --> 00:42:23,180
+but thanks to quantum effects that bring in this
+
+543
+00:42:23,180 --> 00:42:27,020
+factor of the exponential, as Lambda gets smaller
+
+544
+00:42:27,260 --> 00:42:31,040
+for any non-zero or any non-zero obeida, any
+
+545
+00:42:31,040 --> 00:42:34,460
+finite temperature, this exponential factor
+
+546
+00:42:34,880 --> 00:42:38,170
+becomes exponentially large, exponentially quickly
+
+547
+00:42:38,600 --> 00:42:39,080
+and.
+
+548
+00:42:41,880 --> 00:42:44,940
+As it shows up in the denominator, it suppresses
+
+549
+00:42:44,940 --> 00:42:47,700
+the overall spectrum and sends it crashing back
+
+550
+00:42:47,700 --> 00:42:53,250
+down to zero after some peak. That depends on the
+
+551
+00:42:53,250 --> 00:42:58,350
+particular temperature. And this is exactly what
+
+552
+00:42:58,920 --> 00:43:01,920
+the physicists of one hundred years ago.
+
+553
+00:43:03,940 --> 00:43:08,050
+Wanted to see since the measurements that they had
+
+554
+00:43:08,050 --> 00:43:11,920
+been able to do of things like the sun and ovens
+
+555
+00:43:11,920 --> 00:43:16,690
+at that at that time and showing precisely that
+
+556
+00:43:16,690 --> 00:43:22,120
+decrease at small wavelengths in the ultraviolet
+
+557
+00:43:22,120 --> 00:43:27,340
+regime of high energies and the fact that the
+
+558
+00:43:27,370 --> 00:43:31,540
+classical calculation are named after a rally in
+
+559
+00:43:31,540 --> 00:43:37,990
+genes to. Two English physicists of the early
+
+560
+00:43:37,990 --> 00:43:41,080
+nineteen hundreds, one of whom was was from
+
+561
+00:43:41,080 --> 00:43:45,790
+Ormskirk team Sheens, was a native of Lancashire.
+
+562
+00:43:45,820 --> 00:43:47,170
+They found that.
+
+563
+00:43:49,810 --> 00:43:52,720
+Courting divergence in the classical prediction
+
+564
+00:43:52,720 --> 00:43:57,200
+rather than. The reduction in the ultraviolet,
+
+565
+00:43:57,200 --> 00:44:00,350
+which became known as the ultraviolet catastrophe
+
+566
+00:44:00,710 --> 00:44:07,260
+that Max Planck was able to. Cure simply by
+
+567
+00:44:07,260 --> 00:44:10,380
+hypothesizing the form of the spectrum that now
+
+568
+00:44:10,440 --> 00:44:14,280
+bears his name, which we were able to. Derive
+
+569
+00:44:14,280 --> 00:44:17,390
+ourselves from the quantum theory that came along
+
+570
+00:44:17,400 --> 00:44:18,900
+a couple of decades later.
+
+571
+00:44:21,910 --> 00:44:23,740
+And, you know.
+
+572
+00:44:29,220 --> 00:44:32,910
+With a couple of minutes left, maybe the quickest
+
+573
+00:44:32,910 --> 00:44:35,730
+thing to fit in to that last bit of time is to hop
+
+574
+00:44:35,730 --> 00:44:42,500
+back to. Some of these boxes on. Pages one, 10 and
+
+575
+00:44:42,650 --> 00:44:43,160
+11.
+
+576
+00:44:45,230 --> 00:44:47,360
+And note that.
+
+577
+00:44:49,690 --> 00:44:52,960
+With these calculations, we're able to get a nice
+
+578
+00:44:53,380 --> 00:44:56,800
+correlation between the average energy and the
+
+579
+00:44:56,800 --> 00:44:58,780
+average number of particles where for a non
+
+580
+00:44:58,780 --> 00:45:03,340
+relativistic case, we had one of our key equations
+
+581
+00:45:03,340 --> 00:45:05,470
+for the classical ideal gas. And the canonical
+
+582
+00:45:05,470 --> 00:45:08,290
+example was that the energy was.
+
+583
+00:45:11,620 --> 00:45:18,280
+Three halves times, indeed, for some reason, the
+
+584
+00:45:18,280 --> 00:45:23,180
+screen is. But half blank, we get something
+
+585
+00:45:23,840 --> 00:45:26,930
+similar in this case only with the factor of
+
+586
+00:45:26,930 --> 00:45:30,890
+roughly two point seven rather than a factor of
+
+587
+00:45:30,890 --> 00:45:34,550
+three, has that two point seven comes from both
+
+588
+00:45:35,510 --> 00:45:38,630
+the effect of photons being relativistic particles
+
+589
+00:45:39,710 --> 00:45:45,210
+as well as the. The role of quantum physics coming
+
+590
+00:45:45,210 --> 00:45:48,840
+into this realisation of their wavelengths and
+
+591
+00:45:48,840 --> 00:45:51,810
+actually the sample exam that's posted on the
+
+592
+00:45:51,810 --> 00:45:58,230
+canvas sites. Asks about these non relativistic
+
+593
+00:45:58,230 --> 00:46:01,830
+particles or sadistic, so the ultra relativistic
+
+594
+00:46:01,830 --> 00:46:07,320
+energy in the canonical ensemble where we get even
+
+595
+00:46:07,320 --> 00:46:12,750
+a. Third, relation between energy and no density.
+
+596
+00:46:13,370 --> 00:46:17,570
+That is exactly three times the number of
+
+597
+00:46:17,570 --> 00:46:22,420
+particles, types of temperature. So. The two
+
+598
+00:46:22,420 --> 00:46:26,750
+effects are. We can disentangle from these three
+
+599
+00:46:26,750 --> 00:46:30,980
+pieces of influence that go on from a classical,
+
+600
+00:46:30,980 --> 00:46:33,620
+non relativistic ideal gas to a classical
+
+601
+00:46:33,620 --> 00:46:38,210
+relativistic ideal, gas doubles the energy density
+
+602
+00:46:39,050 --> 00:46:43,880
+from three 1/2 to three and then introducing the
+
+603
+00:46:43,880 --> 00:46:46,400
+quantum effects that cure that ultraviolet
+
+604
+00:46:46,970 --> 00:46:52,930
+catastrophe. Bring the relation back down again by
+
+605
+00:46:53,530 --> 00:46:59,070
+almost exactly 10 percent. This is. Quite a
+
+606
+00:46:59,070 --> 00:47:03,110
+precise and in fact, an exact. Ratio of Gamma
+
+607
+00:47:03,110 --> 00:47:06,800
+function to Zeta functions in this approximation
+
+608
+00:47:06,800 --> 00:47:10,100
+of photon gas being completely not interacting.
+
+609
+00:47:11,520 --> 00:47:14,880
+Which turns out to be a good description of.
+
+610
+00:47:17,720 --> 00:47:21,800
+Both the sun and the cosmic microwave background
+
+611
+00:47:21,800 --> 00:47:25,220
+that they talk about on next Monday,
+
+612
+00:47:27,440 --> 00:47:30,500
+and particularly in the case of the cosmic
+
+613
+00:47:30,500 --> 00:47:32,330
+microwave background, this really fantastic
+
+614
+00:47:32,330 --> 00:47:37,070
+agreement between the not interacting, idealized
+
+615
+00:47:37,160 --> 00:47:39,950
+theoretical prediction and the observed
+
+616
+00:47:39,950 --> 00:47:42,680
+measurements which provide some of the strongest
+
+617
+00:47:42,680 --> 00:47:47,510
+evidence for dark matter. So with that, hints
+
+618
+00:47:47,510 --> 00:47:51,470
+about some of the connections of this module to
+
+619
+00:47:51,470 --> 00:47:55,190
+broader physics. I'll stop there, check one last
+
+620
+00:47:55,190 --> 00:48:01,230
+time for any final questions and. If there aren't
+
+621
+00:48:01,240 --> 00:48:04,390
+any. See you all again next week.
