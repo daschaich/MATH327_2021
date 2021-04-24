@@ -6,7 +6,7 @@
 \phantomsection
 \addcontentsline{toc}{section}{Week 9: Quantum gases of fermions}
 \section*{Week 9: Quantum gases of fermions}
-\subsection{Non-relativistic ideal fermion gas}
+\subsection{\label{sec:fermi_nonrel}Non-relativistic ideal fermion gas}
 This week we wrap up our applications of the grand-canonical ensemble to investigate ideal gases of non-interacting particles.
 We again take the quantum statistical approach of defining micro-states by summing over the possible occupation numbers $n_{\ell}$ for each energy level $\cE_{\ell}$ with energy $E_{\ell}$.
 In contrast to the bosonic case considered last week, we now focus on quantum gases of fermions, where the only possible occupation numbers are $n_{\ell} = 0$ and $1$, since the Pauli exclusion principle prevents multiple identical fermions from occupying the same energy level.
@@ -165,6 +165,7 @@ The pressure is therefore
 The three expressions in the second line above present several relations between the pressure, the energy density, the Fermi energy $E_F = \mu$ and the particle number density.
 In particular, we can see that the pressure (like the energy) remains positive even as the temperature approaches absolute zero, with
 \begin{equation}
+  \label{eq:degen_pressure}
   P_{\text{f}} = \left(3\pi^2\right)^{2 / 3} \frac{\hbar^2}{5m} \rho_{\text{f}}^{5 / 3},
 \end{equation}
 where we define the density $\rho_{\text{f}} = \vev{N}_{\text{f}} / V$.
@@ -177,41 +178,94 @@ Even without getting into such detailed calculations, we know that at high tempe
   PV = NT \qquad \Lra \qquad P = \frac{N}{V} T = \rho T.
 \end{equation}
 In words, at high temperatures the pressure depends linearly on the temperature, with the slope corresponding to the density $\rho$.
-The plot below shows how the pressure changes from a positive constant as $T \to 0$ to this linear behaviour at higher temperatures.
+The plot below (produced by \href{https://github.com/daschaich/MATH327_2021/blob/master/lecture_notes/figs/week09_pressure.py}{this Python code}) shows how the pressure changes from a positive constant as $T \to 0$ to this linear behaviour at higher temperatures. \\[-24 pt] % WARNING: FORMATTING BY HAND
 
-\begin{center}\includegraphics[width=0.65\textwidth]{figs/week09_pressure.pdf}\end{center}
-
-\vspace{24 pt}
-\begin{center}\textbf{More information about supernovas and relativistic fermions \\ will be added over the weekend.}\end{center}
+\begin{center}\includegraphics[width=0.725\textwidth]{figs/week09_pressure.pdf}\end{center}
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{Type-Ia supernovas}
+The positive pressure that remains for a fermion gas even at zero temperature, \eq{eq:degen_pressure}, is known as the \textit{degeneracy pressure}.
+(This use of the word `degenerate' is completely unrelated to its other use describing multiple energy levels with the same value of the energy.)
+The degeneracy pressure plays a key role in a famous cosmic phenomenon---a certain class of supernova explosions of stars.
 
+As a opening remark to this topic, note that the temperature doesn't need to be exactly zero in order for the degeneracy pressure to be significant.
+The temperature just needs to be small compared to the Fermi energy, $T \ll E_F$.
+From \eq{eq:Fermi_energy} we can see that $E_F \propto \rho_{\text{f}}^{2 / 3}$ increases for larger densities $\rho_{\text{f}} = \vev{N}_{\text{f}} / V$.
+Not surprisingly, the densities of stars can be very large indeed, due to the enormous amount of matter that is being squeezed together by gravitational attraction.
+Everyday matter has densities around $10^{28}$--$10^{29}$ atoms per cubic metre (roughly corresponding to Avogadro's number per cubic centimetre), which results in Fermi energies $E_F \sim 10^4$~K. % 2--10 eV with eV~10^4 K being the Boltzmann constant
+Fermi energies for particularly dense stars known as \textit{white dwarfs} are a hundred thousand times larger, $E_F \sim 10^9$~K, corresponding to densities of roughly one tonne per cubic centimetre.
+This is around a million times more dense than our sun---while white dwarf stars have a mass similar to our sun's $M_{\odot}$, their radius is a hundred times smaller, comparable to the radius of the earth.
 
-% even though white dwarfs are quite hot by everyday standards, their interior temperatures of roughly $10^7$~K are still very small compared to their Fermi energies that correspond to roughly $01^9$~K. % 0.3MeV~10^5 eV with eV~10^4 K being the Boltzmann constant
+White dwarf stars are so dense because they have exhausted the hydrogen and helium `fuel' for the nuclear fusion that generates heat and light---and therefore radiation pressure---in stars such as our sun.
+For actively `burning' stars, this radiation pressure counteracts the gravitational attraction of the star's enormous mass.
+Without nuclear fusion, white dwarfs end up gravitationally compressed into much denser and more compact objects.
+The degeneracy pressure, \eq{eq:degen_pressure}, coming from the (fermionic) electrons in the white dwarf is what stabilizes these stars and prevents them from collapsing further into even denser objects such as black holes.
 
-% white dwarfs that accrete matter from a companion giant star, leading to a steadily increasing mass. As the white dwarf's mass approaches the Chandrasekhar limit, its central density increases, and, as a result of compressional heating, its temperature also increases. This eventually ignites nuclear fusion reactions, leading to an immediate carbon detonation, which disrupts the star and causes the supernova
-% named after \href{https://en.wikipedia.org/wiki/Subrahmanyan_Chandrasekhar}{Subrahmanyan Chandrasekhar}
+It is remarkable that even under these extreme conditions the electrons in white dwarf stars are well described by the non-interacting ideal fermion gas we have analyzed above.
+In particular, it is crucial that white dwarfs' Fermi energies are so large, $E_F \sim 10^9$~K.
+Even though white dwarfs have burned all their nuclear fuel, their interiors remain quite hot by everyday standards, roughly ten million kelvin ($T \sim 10^7$~K). % 0.3 MeV ~ 10^5 eV with eV~10^4 K being the Boltzmann constant
+It is only due to their large densities and Fermi energies that $T \ll E_F$ and white dwarfs can be treated as zero-temperature objects to a good approximation.
 
-\TODO{...}
+So far we've seen no sign of supernovas.
+In isolation, white dwarfs will happily cool for trillions of years, supported by their degeneracy pressure, until they reach thermal equilibrium with the $T_{\text{CMB}} \approx 2.725$~K cosmic microwave background radiation we considered last week.
+Things become more interesting for a white dwarf that forms a binary system with a companion star.
+If this companion star that is still burning hydrogen or helium through nuclear fusion, it will emit matter that is then captured by the white dwarf, slowly increasing the white dwarf's mass.
+Such a binary system is pictured below, in an artist's illustration provided by the \href{https://www.esa.int/ESA_Multimedia/Images/2014/09/Artist_s_impression_of_Type_Ia_supernova}{European Space Agency}.
 
-% https://www.esa.int/ESA_Multimedia/Images/2014/09/Artist_s_impression_of_Type_Ia_supernova
-These type Ia supernovas play a key role in demonstrating that the expansion of the universe is accelerating (a phenomenon popularly called `dark energy'), which was awarded the 2011 Nobel Prize in Physics.
+\begin{center}\includegraphics[width=0.8\textwidth]{figs/week09_nova.pdf}\end{center}
 
-\TODO{Being written...}
+As the white dwarf accumulates the matter emitted by its companion, its mass and its density will steadily increase.
+As the mass of the white dwarf approaches a value about 40\% larger than the mass of our sun (known as the Chandrasekhar limit, named after \href{https://en.wikipedia.org/wiki/Subrahmanyan_Chandrasekhar}{Subrahmanyan Chandrasekhar}), its density becomes large enough for new types of nuclear fusion reactions to occur.
+Instead of hydrogen or helium, which the white dwarf has already burned, these new fusion reactions involve carbon and oxygen, which the white dwarf has in plenty.
+In the space of just a few seconds, these fusion reactions run away, increase the temperature of the white dwarf to billions of kelvin, and blast it apart in a supernova explosion about five billion times brighter than the sun.
+
+For obscure historical reasons, these particular stellar explosions are known as \textit{type-Ia} (``one-A'') \textit{supernovas}.
+They rely on the degeneracy pressure (\eq{eq:degen_pressure}) of a low-temperature gas of non-interacting fermions, which allows a specific amount of mass to build up before the explosion is triggered.
+The specificity of the process results in a great deal of regularity among type-Ia supernovas, which is very useful to astronomers.
+In particular, these type Ia supernovas play a key role in demonstrating that the expansion of the universe is accelerating (a phenomenon popularly called `dark energy'), which was awarded the 2011 Nobel Prize in Physics.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
-\subsection{Massless fermions}
+\subsection{Relativistic ideal fermion gas}
+While our main focus this week is on non-relativistic gases with $E \propto p^2$, gases of relativistic fermions also appear in nature.
+In fact, by changing units we can see that the white dwarf Fermi energy discussed above, $E_F \sim 10^9~\text{K} \sim 0.3$~MeV is comparable to the $0.511$~MeV rest-energy of electrons, suggesting that relativistic effects may be non-negligible in white dwarfs.
+Such relativistic effects were indeed taken into account by Chandrasekhar and others investigating these compact stars in the twentieth century.
+While the full calculations required to analyze massive relativistic particles are beyond the scope of this module, we can benefit from last week's consideration of gases of massless photons to briefly consider similar gases of massless fermions.
+\textit{Neutrinos} (denoted `$\nu$') are physical examples of particles whose masses are so small that they can be very well approximated as massless fermions.\footnote{Neutrinos' masses are so small that it was extremely difficult to determine that they are not exactly massless.  The 2015 Nobel Prize in Physics was awarded for this discovery.}
 
-\TODO{white dwarft Fermi energy around $0.3$~MeV approaching electron mass--energy around $0.5$~MeV...}
+In the same way as photons, such massless fermions travel at the speed of light, $c$, and have energies $E = cp$ that depend on their angular frequencies,
+\begin{equation}
+  E_{\nu} = \hbar \om.
+\end{equation}
+In a volume $V = L^3$, these energies are quantized as usual,
+\begin{equation*}
+  \om = \frac{2\pi c}{\la} = c \frac{\pi}{L} k,
+\end{equation*}
+where $k^2 = k_x^2 + k_y^2 + k_z^2$ and $k_{x, y, z} > 0$ are positive integers.
+Just as for the massive fermions considered in \secref{sec:fermi_nonrel}, for each distinct set of integers $\vec k = (k_x, k_y, k_z)$, typical massless fermions such as neutrinos have two degenerate energy levels with the same energy.
 
-\TODO{Being written...}
+The detailed analysis of a gas of massless fermions is nearly the same as the work we did last week for photon gases.
+In particular, massless fermions are also well described by a vanishing chemical potential, $\mu \approx 0$.
+Again approximating sums over discrete integer $k_{x, y, z}$ by integrals over continuous real $\khat_{x, y, z}$, and changing variables to integrate over the angular frequency, we end up with the grand-canonical potential
+\begin{align}
+  \Phi_{\nu} = -\frac{VT}{c^3 \pi^2} \int_0^{\infty} d\om \; \om^2 \log\left[1 + e^{-\be \hbar \om}\right]. \label{eq:neutrino_grand}
+\end{align}
+The only change in $\Phi_{\nu}$ compared to \eq{eq:photon_grand} for photons are a couple of negative signs, precisely as we would expect from comparing the Bose--Einstein and Fermi--Dirac grand-canonical potentials in \secref{sec:quantum_classical}.
+
+Carrying out the derivatives to obtain the average particle number density and the average internal energy density produces
+\begin{align}
+  \frac{\vev{E}_{\nu}}{V} & = \frac{1}{c^3 \pi^2} \int_0^{\infty} \frac{\hbar \om^3}{e^{\be \hbar \om} + 1} d\om &
+  \frac{\vev{N}_{\nu}}{V} & = \frac{1}{c^3 \pi^2} \int_0^{\infty} \frac{\om^2}{e^{\be \hbar \om} + 1} d\om,
+\end{align}
+now differing only by negative signs in their denominators compared to the photon gas results we obtained last week.
+The condition of constant entropy is still $V T^3 = \mbox{constant}$, and the resulting pressure leads to an equation of state in the usual form,
+\begin{equation*}
+  P_{\nu} V \propto \vev{N}_{\nu} T,
+\end{equation*}
+with the constant of proportionality another $\cO(1)$ number involving the Riemann zeta function.
 % ------------------------------------------------------------------

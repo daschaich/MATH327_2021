@@ -1,6 +1,6 @@
 all:
-	pdflatex part2
-	pdflatex part2
+	pdflatex part2_sol
+	pdflatex part2_sol
 
 part1:
 	pdflatex part1
