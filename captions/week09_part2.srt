@@ -1,0 +1,911 @@
+1
+00:00:01,470 --> 00:00:04,540
+Hello and welcome back to Statistical Physics.
+
+2
+00:00:04,590 --> 00:00:07,710
+This is the second video for week nine in the
+
+3
+00:00:07,750 --> 00:00:11,670
+module, wrapping up the brief summary of context,
+
+4
+00:00:11,670 --> 00:00:14,550
+motivations and key learning outcomes for this
+
+5
+00:00:14,550 --> 00:00:18,060
+week's material on quantum gases of fermions,
+
+6
+00:00:18,060 --> 00:00:21,690
+which I will bring back up onto the screen here,
+
+7
+00:00:21,690 --> 00:00:27,120
+picking up where previous video left off at the
+
+8
+00:00:27,690 --> 00:00:30,930
+Fermi function, which had been introduced by
+
+9
+00:00:32,130 --> 00:00:35,910
+putting the the large scale macroscopic or
+
+10
+00:00:35,910 --> 00:00:38,130
+thermodynamic properties of the system that into
+
+11
+00:00:38,130 --> 00:00:41,430
+this equation of state. In this case, the average
+
+12
+00:00:41,430 --> 00:00:44,400
+particle density number of particles divided by
+
+13
+00:00:44,400 --> 00:00:48,960
+the volume expressing that in terms of an integral
+
+14
+00:00:48,960 --> 00:00:54,240
+over the particle energies with a non relativistic
+
+15
+00:00:54,810 --> 00:00:59,100
+setting for massive particles with relatively
+
+16
+00:00:59,790 --> 00:01:02,550
+little energy that is given just by their momentum
+
+17
+00:01:02,550 --> 00:01:08,160
+squared divided by twice the mass and in the set
+
+18
+00:01:08,160 --> 00:01:12,000
+up here, keeping the cost of factors separate from
+
+19
+00:01:12,000 --> 00:01:15,660
+the family function, we saw that at the very
+
+20
+00:01:15,660 --> 00:01:17,880
+function shown here resembles the average
+
+21
+00:01:17,880 --> 00:01:21,180
+occupation number, which means that its behavior
+
+22
+00:01:21,180 --> 00:01:24,570
+at low temperatures shown by the solid black curve
+
+23
+00:01:24,570 --> 00:01:26,580
+in this plot we went through in some detail in the
+
+24
+00:01:26,580 --> 00:01:27,540
+previous video
+
+25
+00:01:30,180 --> 00:01:33,600
+corresponds simply to a step function where all of
+
+26
+00:01:33,600 --> 00:01:36,690
+the energy levels that have energy is less than
+
+27
+00:01:36,690 --> 00:01:40,680
+the chemical potential. You are occupied or filled
+
+28
+00:01:41,100 --> 00:01:45,180
+by the maximum single possible for me on that they
+
+29
+00:01:45,180 --> 00:01:48,060
+can contain and all of the energy levels with
+
+30
+00:01:48,060 --> 00:01:51,540
+energies greater than the chemical potential have
+
+31
+00:01:51,540 --> 00:01:55,440
+an occupation. Number zero, they are unoccupied or
+
+32
+00:01:55,440 --> 00:02:01,940
+empty. And this approximation expressing the
+
+33
+00:02:01,950 --> 00:02:07,200
+family function as a step function that is one for
+
+34
+00:02:07,590 --> 00:02:12,600
+low energies and zero for higher energies at small
+
+35
+00:02:12,600 --> 00:02:17,460
+temperatures, provides the sort of dramatic
+
+36
+00:02:17,460 --> 00:02:20,850
+simplification that allows these calculations to
+
+37
+00:02:20,850 --> 00:02:26,790
+be computed in the space of these gaps, providing
+
+38
+00:02:26,790 --> 00:02:31,410
+both the particle number as well as the average
+
+39
+00:02:31,410 --> 00:02:36,260
+energy density where the. Integral to a computer
+
+40
+00:02:36,260 --> 00:02:39,670
+for the energy density is going to differ just by
+
+41
+00:02:39,670 --> 00:02:44,770
+an extra factor of the energy showing up in the
+
+42
+00:02:44,770 --> 00:02:49,270
+argument right there. So an energy or a power of
+
+43
+00:02:49,270 --> 00:02:52,060
+energy, each of the three hands, rather than the
+
+44
+00:02:52,060 --> 00:02:56,350
+square root, which is exactly as we saw for the
+
+45
+00:02:56,350 --> 00:02:59,080
+energy density compared to the particle. No
+
+46
+00:02:59,080 --> 00:03:05,380
+density for the photon gas last week. So that is a
+
+47
+00:03:05,380 --> 00:03:09,970
+generic connection between the energy and particle
+
+48
+00:03:09,970 --> 00:03:13,270
+number, regardless of whether particles are bosons,
+
+49
+00:03:13,270 --> 00:03:16,110
+fermions, not relativistic or ultra relativistic.
+
+50
+00:03:16,690 --> 00:03:19,900
+And what we're going through this, it's worth
+
+51
+00:03:19,900 --> 00:03:24,550
+highlighting the Fermi energy, which at low
+
+52
+00:03:24,550 --> 00:03:28,120
+temperatures is simply the chemical potential and
+
+53
+00:03:28,120 --> 00:03:33,430
+is the boundary between those filled energy levels
+
+54
+00:03:33,430 --> 00:03:36,700
+with energy is smaller than the free energy and
+
+55
+00:03:36,700 --> 00:03:41,020
+the empty energy levels with higher energies that
+
+56
+00:03:41,020 --> 00:03:48,910
+is given by the particle. No density in over the
+
+57
+00:03:49,090 --> 00:03:52,930
+race to the power of two thirds coming just from
+
+58
+00:03:53,230 --> 00:03:57,280
+converting the particle. No density computed above.
+
+59
+00:03:58,310 --> 00:04:02,260
+And by carrying out the analogous computation for
+
+60
+00:04:02,260 --> 00:04:07,450
+the internal energy density, you could find that
+
+61
+00:04:08,620 --> 00:04:12,910
+the average energy for each of these particles at
+
+62
+00:04:12,910 --> 00:04:17,380
+low temperatures is given by just a little over
+
+63
+00:04:17,380 --> 00:04:22,360
+half of the Fermi Energy particular nice, odd
+
+64
+00:04:24,010 --> 00:04:26,140
+round fraction of three fifths
+
+65
+00:04:28,390 --> 00:04:33,160
+relating the average energy to the average
+
+66
+00:04:33,160 --> 00:04:36,720
+particle. No. In the rest of the way to the
+
+67
+00:04:36,720 --> 00:04:39,630
+equation of state requires computing, the pressure,
+
+68
+00:04:40,770 --> 00:04:43,860
+which requires fixing both the entropy and
+
+69
+00:04:43,890 --> 00:04:47,190
+particle number in the entropy, is actually an
+
+70
+00:04:47,190 --> 00:04:50,790
+interesting case in this very low temperature
+
+71
+00:04:50,790 --> 00:04:54,990
+regime where if we have all of the energy levels
+
+72
+00:04:54,990 --> 00:04:58,800
+up to the Fermi energy filled, all of the energy
+
+73
+00:04:58,800 --> 00:05:02,010
+levels with higher energies are unoccupied. That
+
+74
+00:05:02,010 --> 00:05:05,600
+is a single microstates for this quantum system.
+
+75
+00:05:06,420 --> 00:05:08,880
+And it turns out to be the only micro state that
+
+76
+00:05:08,880 --> 00:05:14,580
+we are actually. Accessing with a non-zero
+
+77
+00:05:14,580 --> 00:05:17,760
+probability in the the limit of low temperatures.
+
+78
+00:05:18,360 --> 00:05:22,230
+So expressing the entropy in the generic way as
+
+79
+00:05:22,230 --> 00:05:26,430
+the sum over my cross over the probabilities of
+
+80
+00:05:26,430 --> 00:05:29,910
+occupying microstates, there's only a single term
+
+81
+00:05:29,910 --> 00:05:32,880
+in the sum, and it is one times the log of one,
+
+82
+00:05:33,150 --> 00:05:36,390
+which is simply zero. So the entropy of a low
+
+83
+00:05:36,390 --> 00:05:40,720
+temperature firmly on gas is zero. And that gives
+
+84
+00:05:42,490 --> 00:05:46,960
+direct relations between the pressure, the energy
+
+85
+00:05:46,960 --> 00:05:50,020
+density and the number density, which if we plug
+
+86
+00:05:50,020 --> 00:05:53,200
+in the very energy in place of the chemical
+
+87
+00:05:53,200 --> 00:05:57,850
+potential, hmu and define the density as a row.
+
+88
+00:05:59,290 --> 00:06:01,960
+Just a new symbol for this same concept. We've
+
+89
+00:06:01,960 --> 00:06:05,590
+been discussing the average particle number per
+
+90
+00:06:05,590 --> 00:06:09,790
+unit volume. There is an interesting relation
+
+91
+00:06:09,790 --> 00:06:14,410
+between the pressure and density, which does not
+
+92
+00:06:14,410 --> 00:06:18,520
+vanish as the temperature goes to zero. This is
+
+93
+00:06:18,520 --> 00:06:22,480
+also the case, as we can see, for the energy of
+
+94
+00:06:22,480 --> 00:06:24,820
+the gas and its particles. That also remains
+
+95
+00:06:24,820 --> 00:06:31,150
+non-zero in the limit of a vanishing temperature,
+
+96
+00:06:31,150 --> 00:06:36,280
+which is a sharp contrast with the classical non
+
+97
+00:06:36,280 --> 00:06:40,240
+relativistic gas where we saw that the energy was
+
+98
+00:06:40,240 --> 00:06:43,630
+three 1/2 times empty and vanished as that
+
+99
+00:06:43,630 --> 00:06:46,480
+temperature goes to zero. And similarly, the
+
+100
+00:06:46,480 --> 00:06:50,980
+pressure was given by empty overview by the ideal
+
+101
+00:06:50,980 --> 00:06:54,580
+gas law equals empty and also vanished in zero
+
+102
+00:06:54,580 --> 00:06:57,700
+temperature limit. And that is not the case for
+
+103
+00:06:57,700 --> 00:07:01,360
+fermions simply because it's only possible to have
+
+104
+00:07:01,360 --> 00:07:05,620
+a single ferme on occupying any energy level with
+
+105
+00:07:05,620 --> 00:07:09,990
+that lowest energy that we can set to zero. If we
+
+106
+00:07:09,990 --> 00:07:14,310
+have more fermions of that coming from a positive
+
+107
+00:07:14,310 --> 00:07:17,280
+chemical potential, then we have to have fermions
+
+108
+00:07:17,280 --> 00:07:19,980
+occupying energy levels with higher volumes of the
+
+109
+00:07:19,980 --> 00:07:23,970
+energy, even an absolute zero temperature, which
+
+110
+00:07:23,970 --> 00:07:29,130
+leaves a strictly positive average energy density
+
+111
+00:07:29,300 --> 00:07:33,660
+and a strictly positive pressure, as is shown in
+
+112
+00:07:33,660 --> 00:07:37,200
+the zero temperature limit of of this plant here,
+
+113
+00:07:38,520 --> 00:07:43,050
+where instead of going straight to zero like a
+
+114
+00:07:43,050 --> 00:07:47,610
+classical gas, the pressure for the fermions gas
+
+115
+00:07:47,820 --> 00:07:51,120
+ends up at a positive value at zero temperature
+
+116
+00:07:51,600 --> 00:07:53,970
+and in the high temperature limit where it
+
+117
+00:07:54,660 --> 00:07:58,620
+approaches the classical behavior. We see the
+
+118
+00:07:58,620 --> 00:08:01,920
+onset of that linear dependence that we would
+
+119
+00:08:01,920 --> 00:08:06,970
+expect from our previous work. So that is the the
+
+120
+00:08:07,420 --> 00:08:10,330
+key takeaway for low temperature for on is
+
+121
+00:08:10,330 --> 00:08:13,870
+compared to the high temperature, a classical case
+
+122
+00:08:14,200 --> 00:08:18,610
+for these non relativistic particles. And there is
+
+123
+00:08:18,610 --> 00:08:22,180
+some discussion here of some physical effects of
+
+124
+00:08:22,480 --> 00:08:26,170
+this non-zero pressure at low temperatures, which
+
+125
+00:08:26,170 --> 00:08:30,500
+in. Astrophysical contexts allows for
+
+126
+00:08:32,540 --> 00:08:33,020
+a
+
+127
+00:08:35,480 --> 00:08:38,360
+famous cosmic phenomenon known as a type one, a
+
+128
+00:08:38,360 --> 00:08:42,560
+supernova that precedes briefly in the following
+
+129
+00:08:42,560 --> 00:08:47,180
+way the type of a supernova involves what's called
+
+130
+00:08:47,180 --> 00:08:51,200
+a white dwarf star, which is a star that has
+
+131
+00:08:51,920 --> 00:08:57,200
+burned all of its its nuclear fuel. That's in
+
+132
+00:08:57,650 --> 00:09:00,560
+stars like our sun that are shining brightly and
+
+133
+00:09:00,660 --> 00:09:03,410
+producing lots of heat. They're doing that for
+
+134
+00:09:03,410 --> 00:09:07,100
+nuclear fusion involving hydrogen and helium. And
+
+135
+00:09:08,300 --> 00:09:10,640
+eventually, after a long amount of time, a star
+
+136
+00:09:10,640 --> 00:09:13,400
+made up all of that hydrogen and helium fuel and
+
+137
+00:09:13,400 --> 00:09:18,940
+no longer be able to generate heat and light and
+
+138
+00:09:18,950 --> 00:09:23,870
+energy and pressure through the source of nuclear
+
+139
+00:09:23,870 --> 00:09:27,440
+fusion reactions. And that is what characterizes
+
+140
+00:09:27,440 --> 00:09:33,980
+the white dwarf star, all of the. Fuel for those
+
+141
+00:09:33,980 --> 00:09:36,560
+hydrogen and helium nuclear reactions in a white
+
+142
+00:09:36,560 --> 00:09:40,730
+dwarf has been consumed and is no longer providing
+
+143
+00:09:40,730 --> 00:09:43,010
+the energy that can counterbalance the enormous
+
+144
+00:09:43,010 --> 00:09:46,640
+gravitational attraction of the huge amount of
+
+145
+00:09:46,640 --> 00:09:49,850
+matter present in these stars. And what keeps the
+
+146
+00:09:49,850 --> 00:09:53,150
+star from collapsing all the way down to a black
+
+147
+00:09:53,150 --> 00:09:59,120
+hole under the weight of its of its mass of matter
+
+148
+00:09:59,750 --> 00:10:06,350
+is precisely the non-zero pressure of the of the
+
+149
+00:10:06,350 --> 00:10:10,220
+gas of the electrons, which are fermions that this
+
+150
+00:10:10,220 --> 00:10:11,360
+star contains.
+
+151
+00:10:14,550 --> 00:10:19,050
+And in the in the case where this white wordstar
+
+152
+00:10:19,050 --> 00:10:21,480
+may be part of a binary system with some companya
+
+153
+00:10:21,490 --> 00:10:25,470
+that is still burning, it's nuclear fuel and
+
+154
+00:10:25,470 --> 00:10:29,160
+emitting heat and light and matter, that matter
+
+155
+00:10:29,160 --> 00:10:33,340
+can gradually accumulate on this way for a start
+
+156
+00:10:33,340 --> 00:10:36,960
+up being held up by the zero temperature pressure
+
+157
+00:10:36,990 --> 00:10:42,270
+of its four, its low temperature, me on gas up to
+
+158
+00:10:42,270 --> 00:10:45,240
+the point that the pressure becomes so large that
+
+159
+00:10:45,240 --> 00:10:49,590
+new types of fusion reactions involving carbon and
+
+160
+00:10:49,590 --> 00:10:53,370
+oxygen rather than hydrogen and helium are able to
+
+161
+00:10:53,370 --> 00:10:57,690
+begin. And once they begin, they proceed very
+
+162
+00:10:57,690 --> 00:11:01,170
+quickly. And in the space of just a few seconds,
+
+163
+00:11:01,620 --> 00:11:04,950
+they release something like five billion times the
+
+164
+00:11:04,950 --> 00:11:08,970
+amount of energy that our sun is putting out,
+
+165
+00:11:09,690 --> 00:11:14,940
+which is precisely the supernova explosion that we
+
+166
+00:11:14,940 --> 00:11:18,330
+can observe in the sky and can actually use to
+
+167
+00:11:18,330 --> 00:11:22,020
+establish the existence of a mysterious phenomenon
+
+168
+00:11:23,100 --> 00:11:26,340
+known as dark energy is showing that the universe
+
+169
+00:11:26,340 --> 00:11:28,710
+is not only expanding, but is expanding more and
+
+170
+00:11:28,710 --> 00:11:33,750
+more rapidly as time goes on. A discovery from the
+
+171
+00:11:33,750 --> 00:11:37,110
+late 90s that was awarded the Nobel Prize about 10
+
+172
+00:11:37,110 --> 00:11:40,620
+years ago. Now, one interesting thing about these
+
+173
+00:11:40,630 --> 00:11:42,780
+Wentworth stars that I glossed over in the
+
+174
+00:11:42,780 --> 00:11:45,600
+interests of time is that.
+
+175
+00:11:47,970 --> 00:11:51,630
+Even though their temperatures are small compared
+
+176
+00:11:51,630 --> 00:11:57,300
+to their energies, they have a fear of the energy
+
+177
+00:11:57,600 --> 00:12:00,930
+of something like a billion Kelvin. The
+
+178
+00:12:00,930 --> 00:12:03,510
+temperatures in the interior of the white dwarf
+
+179
+00:12:03,870 --> 00:12:07,230
+are about 10 million Kelvin, which is relatively
+
+180
+00:12:07,230 --> 00:12:12,330
+large by our everyday standards. It's still small
+
+181
+00:12:12,330 --> 00:12:15,660
+enough compared to the very energy identified as
+
+182
+00:12:15,660 --> 00:12:19,260
+the chemical potential that we can approximate
+
+183
+00:12:19,260 --> 00:12:22,050
+white dwarfs very well as a zero temperature
+
+184
+00:12:22,590 --> 00:12:28,080
+firmly on gas. But the temperature is actually so
+
+185
+00:12:28,080 --> 00:12:33,330
+large that if we convert units to units of mass or
+
+186
+00:12:33,330 --> 00:12:36,120
+emit our mega electron volts.
+
+187
+00:12:38,300 --> 00:12:41,420
+You find that the Fermoy energy, the chemical
+
+188
+00:12:41,420 --> 00:12:45,110
+potential of this electron gas is comparable to
+
+189
+00:12:45,230 --> 00:12:50,570
+the electron reste energy itself, suggesting that
+
+190
+00:12:51,020 --> 00:12:55,370
+relativistic effects may be worth considering and.
+
+191
+00:12:58,440 --> 00:13:01,230
+To go through this last section quite quickly, the
+
+192
+00:13:01,230 --> 00:13:04,680
+key takeaway in the context of a relativistic
+
+193
+00:13:04,680 --> 00:13:08,310
+fermoy on gas is that it behaves much like the
+
+194
+00:13:08,700 --> 00:13:12,330
+relativistic photon gas we consider last week. We
+
+195
+00:13:12,330 --> 00:13:15,990
+can express the energy in terms of the frequency.
+
+196
+00:13:17,250 --> 00:13:22,270
+Of these massless fermions, an example of which in
+
+197
+00:13:22,270 --> 00:13:26,440
+physics are given by neutrinos and carrying out
+
+198
+00:13:26,440 --> 00:13:30,940
+these same. Considerations and manipulations, as
+
+199
+00:13:30,940 --> 00:13:35,110
+for the photon. Yes, we conclude that here the
+
+200
+00:13:35,110 --> 00:13:38,290
+chemical potential is zero here to an excellent
+
+201
+00:13:38,290 --> 00:13:44,500
+approximation and. The integration over the
+
+202
+00:13:44,500 --> 00:13:49,090
+frequencies of these relativistic electrons
+
+203
+00:13:49,660 --> 00:13:53,320
+produces expressions that differ from the the case
+
+204
+00:13:53,320 --> 00:13:57,220
+of the photon gas only in the relative sine
+
+205
+00:13:57,760 --> 00:14:01,450
+between the two terms in the denominator. And
+
+206
+00:14:01,450 --> 00:14:04,810
+again, the energy density and particle no density
+
+207
+00:14:04,810 --> 00:14:09,670
+differ only by a factor of that energy. Each FA
+
+208
+00:14:09,670 --> 00:14:16,790
+Omega showing up in the inter grand here and
+
+209
+00:14:17,170 --> 00:14:22,990
+carrying out these integrals. Again, these are fun
+
+210
+00:14:22,990 --> 00:14:25,990
+integrals that can be looked up or computed
+
+211
+00:14:25,990 --> 00:14:29,620
+through some symbolic mathematic program like
+
+212
+00:14:30,130 --> 00:14:35,270
+maple or mathematical. And computing the pressure
+
+213
+00:14:35,600 --> 00:14:40,490
+again gives a equation of state very much like the
+
+214
+00:14:40,490 --> 00:14:43,550
+ideal gas law, just with a slightly different
+
+215
+00:14:43,550 --> 00:14:47,930
+causal factor involving the remains at a function
+
+216
+00:14:48,620 --> 00:14:52,400
+that comes out to be not so different from the
+
+217
+00:14:53,000 --> 00:14:57,410
+classical case that it will reduce to at high high
+
+218
+00:14:57,440 --> 00:15:02,590
+temperatures. So that is where we will end with
+
+219
+00:15:03,160 --> 00:15:07,480
+not interacting ideal gases and other idealise
+
+220
+00:15:07,490 --> 00:15:11,230
+systems of not interacting particles and the
+
+221
+00:15:11,230 --> 00:15:15,460
+remainder of the module after this will take just
+
+222
+00:15:15,460 --> 00:15:19,930
+a quick look at appreciating the roles and effects
+
+223
+00:15:19,930 --> 00:15:23,200
+of interactions, both in the types of phenomenon
+
+224
+00:15:23,920 --> 00:15:26,230
+or phenomena that they can produce, such as phase
+
+225
+00:15:26,230 --> 00:15:29,080
+transitions, as well as the practical matter of
+
+226
+00:15:29,080 --> 00:15:34,690
+how they complicate the analysis and calculations
+
+227
+00:15:35,140 --> 00:15:37,960
+that we would have to do in statistical physics in
+
+228
+00:15:37,960 --> 00:15:41,560
+order to make predictions for interacting systems.

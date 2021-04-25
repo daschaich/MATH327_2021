@@ -1,0 +1,795 @@
+1
+00:00:01,910 --> 00:00:05,040
+Hello and welcome back to statistical physics.
+
+2
+00:00:05,090 --> 00:00:08,450
+This is the first video for week nine of the
+
+3
+00:00:08,450 --> 00:00:12,560
+molecule, providing a brief summary of the context,
+
+4
+00:00:12,560 --> 00:00:16,550
+motivations and key learning outcomes for this
+
+5
+00:00:16,550 --> 00:00:21,590
+week's material on quantum gases of fermions. And
+
+6
+00:00:21,590 --> 00:00:24,590
+bringing materials onto the screen here
+
+7
+00:00:26,780 --> 00:00:29,660
+can start just by orientating ourselves in the big
+
+8
+00:00:29,660 --> 00:00:32,780
+picture of the module where we are, where we've
+
+9
+00:00:32,780 --> 00:00:35,750
+been and where we are headed, where in week nine
+
+10
+00:00:35,750 --> 00:00:39,050
+we are wrapping up not only our consideration of
+
+11
+00:00:39,050 --> 00:00:42,440
+quantum gases as an application of the grand
+
+12
+00:00:42,440 --> 00:00:45,770
+economical ensemble, but actually taking our last
+
+13
+00:00:45,770 --> 00:00:50,060
+look at idealised systems whose constituent
+
+14
+00:00:50,060 --> 00:00:53,090
+particles do not interact with each other, which
+
+15
+00:00:53,090 --> 00:00:56,960
+is all we have been considering in the module up
+
+16
+00:00:56,960 --> 00:00:59,660
+to this point. And next week we will dive into the
+
+17
+00:01:00,380 --> 00:01:03,500
+much more complicated situation of interacting
+
+18
+00:01:03,500 --> 00:01:08,840
+systems where we no longer make this idealized
+
+19
+00:01:08,840 --> 00:01:11,570
+approximation of not interacting particles. And we
+
+20
+00:01:11,570 --> 00:01:14,090
+will see that things become much more difficult,
+
+21
+00:01:14,090 --> 00:01:17,330
+much more quickly in that case. But that is for
+
+22
+00:01:17,330 --> 00:01:22,430
+next week and for this week. We have formulas to
+
+23
+00:01:22,430 --> 00:01:27,530
+deal with and in particular focusing on not
+
+24
+00:01:27,530 --> 00:01:32,300
+relativistic fermions, so particles that obey the
+
+25
+00:01:32,660 --> 00:01:37,100
+same relation between energy and momentum that we
+
+26
+00:01:37,790 --> 00:01:40,520
+worked with in some detail all the way back in
+
+27
+00:01:40,730 --> 00:01:43,580
+week four in the context of the canonical example
+
+28
+00:01:44,480 --> 00:01:49,040
+where the energy is just given by the particle
+
+29
+00:01:49,040 --> 00:01:53,250
+momentum squared divided by twice its mass. And
+
+30
+00:01:53,580 --> 00:01:57,810
+just as in week four, we quantize the particles
+
+31
+00:01:57,810 --> 00:01:59,790
+momentum and therefore their energy use in order
+
+32
+00:01:59,790 --> 00:02:05,670
+to make the petition function well defined in this
+
+33
+00:02:05,670 --> 00:02:08,070
+case this week, the grand canonical partition
+
+34
+00:02:08,070 --> 00:02:10,950
+function that depends on temperature and chemical
+
+35
+00:02:10,950 --> 00:02:13,590
+potential, allowing both the energy and particle
+
+36
+00:02:13,590 --> 00:02:16,890
+number to fluctuate. And we take the quantum
+
+37
+00:02:16,890 --> 00:02:21,300
+approach of something over all of those discrete
+
+38
+00:02:21,300 --> 00:02:23,910
+energy levels. And considering the possible
+
+39
+00:02:23,910 --> 00:02:27,060
+occupation numbers that each energy level could
+
+40
+00:02:27,060 --> 00:02:31,110
+have rather than the classical approach that we
+
+41
+00:02:31,230 --> 00:02:34,830
+did back in week four, where we consider the
+
+42
+00:02:34,830 --> 00:02:38,280
+particles one by one summed over all of the
+
+43
+00:02:38,280 --> 00:02:40,350
+possible energies that each individual particle
+
+44
+00:02:40,350 --> 00:02:43,710
+could have and then introduced some correction
+
+45
+00:02:43,710 --> 00:02:47,910
+factors for or to address the overcounting that
+
+46
+00:02:47,910 --> 00:02:50,670
+resulted from that classical approach. In the
+
+47
+00:02:50,670 --> 00:02:53,850
+quantum approach. There is no overcounting and in
+
+48
+00:02:53,850 --> 00:02:57,630
+particular in the low temperature regime of.
+
+49
+00:02:59,480 --> 00:03:03,860
+Fermions, we have the somewhat unusual or at least
+
+50
+00:03:03,860 --> 00:03:07,580
+unfamiliar circumstance where the only possible
+
+51
+00:03:08,150 --> 00:03:11,390
+occupation numbers for these energy levels are
+
+52
+00:03:11,420 --> 00:03:13,820
+zero and one in energy level can either be
+
+53
+00:03:14,060 --> 00:03:17,600
+unoccupied or empty or it can be occupied by a
+
+54
+00:03:17,600 --> 00:03:21,230
+single FIRREA, which completely fills it and does
+
+55
+00:03:21,230 --> 00:03:26,570
+not allow any other on to occupy that same energy
+
+56
+00:03:26,570 --> 00:03:28,970
+level, assuming, as we will, that all of the
+
+57
+00:03:28,970 --> 00:03:32,900
+fermions in this case are identical. And we don't
+
+58
+00:03:32,900 --> 00:03:35,540
+have multiple species of particles which would be
+
+59
+00:03:35,540 --> 00:03:38,840
+described by separate energy levels for each
+
+60
+00:03:38,840 --> 00:03:39,560
+species.
+
+61
+00:03:42,200 --> 00:03:44,900
+And with that set up of fermions back in week
+
+62
+00:03:44,900 --> 00:03:48,020
+seven, we derived the great canonical partition
+
+63
+00:03:48,020 --> 00:03:50,750
+function and the corresponding great nonlocal
+
+64
+00:03:50,960 --> 00:03:55,180
+potential for that situation of occupation numbers,
+
+65
+00:03:55,190 --> 00:03:59,900
+either zero or one in what remains is to plug in
+
+66
+00:03:59,930 --> 00:04:05,540
+the specific energies for these fermions in in
+
+67
+00:04:05,600 --> 00:04:07,610
+this case, the non relativistic Régine. So
+
+68
+00:04:07,610 --> 00:04:11,270
+providing a contrast with the photon gas we
+
+69
+00:04:11,270 --> 00:04:14,090
+consider last week and at low temperatures,
+
+70
+00:04:14,090 --> 00:04:18,020
+revealing the effects solely due to quantum
+
+71
+00:04:18,290 --> 00:04:20,300
+physics or what we are assuming
+
+72
+00:04:22,700 --> 00:04:26,450
+as an Anzac's that we based on quantum physics but
+
+73
+00:04:26,450 --> 00:04:29,510
+don't require any background knowledge of the
+
+74
+00:04:29,510 --> 00:04:35,660
+topic to see how the low temperature fermoy on gas
+
+75
+00:04:35,660 --> 00:04:39,080
+differs compared to the classical approach that we
+
+76
+00:04:39,680 --> 00:04:44,900
+investigated back before the term break and
+
+77
+00:04:46,070 --> 00:04:48,410
+plugging in this energy into the grand economic
+
+78
+00:04:48,430 --> 00:04:51,200
+potential and importantly retaining the chemical
+
+79
+00:04:51,200 --> 00:04:53,630
+potential, which for fermions can be either
+
+80
+00:04:53,630 --> 00:04:58,700
+positive or negative. We can do the same sort of
+
+81
+00:04:58,700 --> 00:05:03,350
+calculation of integrating over the the possible
+
+82
+00:05:03,350 --> 00:05:08,000
+momentum rather than something over them. And if
+
+83
+00:05:08,000 --> 00:05:11,540
+we change variables to express the grand canonical
+
+84
+00:05:11,540 --> 00:05:16,430
+potential in terms of the Fermi on energy rather
+
+85
+00:05:16,430 --> 00:05:21,890
+than the momentum or the integer labels that
+
+86
+00:05:22,820 --> 00:05:26,000
+classify the different quantized values of that
+
+87
+00:05:26,000 --> 00:05:30,670
+momentum. We end up with this equation, one of
+
+88
+00:05:30,670 --> 00:05:33,440
+five for the great economic potential that
+
+89
+00:05:33,440 --> 00:05:36,470
+determines all of the large scale properties of
+
+90
+00:05:36,470 --> 00:05:41,390
+the system arising from the the quantum statistics
+
+91
+00:05:41,390 --> 00:05:45,470
+obeyed by each of the individual particles that
+
+92
+00:05:45,800 --> 00:05:51,860
+that compose it. And. All that we need to do
+
+93
+00:05:52,010 --> 00:05:54,320
+starting from this potential, is take the
+
+94
+00:05:54,320 --> 00:05:56,900
+appropriate derivatives to extract things like the
+
+95
+00:05:56,900 --> 00:06:00,980
+average internal energy particle, no pressure and
+
+96
+00:06:00,980 --> 00:06:06,020
+entropy. And you will be interested in doing so at
+
+97
+00:06:06,020 --> 00:06:08,510
+low temperatures, driving the equation of states
+
+98
+00:06:09,080 --> 00:06:14,060
+and seeing how the quantum gas at low temperatures
+
+99
+00:06:14,060 --> 00:06:18,470
+smoothly matches on to the classical system that
+
+100
+00:06:18,470 --> 00:06:22,220
+we saw in week seven is reproduced in the
+
+101
+00:06:22,220 --> 00:06:24,290
+appropriate high temperature limit, where the
+
+102
+00:06:24,290 --> 00:06:27,980
+chemical potential goes to a large negative value
+
+103
+00:06:27,980 --> 00:06:30,350
+as the temperature goes to a large positive value
+
+104
+00:06:30,710 --> 00:06:34,610
+in order to retain a finite number of particles in
+
+105
+00:06:34,610 --> 00:06:38,160
+the system. But starting off with some
+
+106
+00:06:38,250 --> 00:06:40,680
+consideration of the number of particles in the
+
+107
+00:06:40,680 --> 00:06:42,630
+system and the great canonical approach that is
+
+108
+00:06:42,630 --> 00:06:45,570
+given just by the negative derivative with respect
+
+109
+00:06:45,570 --> 00:06:49,050
+to chemical potential of the great economical
+
+110
+00:06:49,050 --> 00:06:55,830
+potential. And similarly to how you looked first
+
+111
+00:06:55,830 --> 00:06:59,610
+at the energy density as our last week in the
+
+112
+00:06:59,610 --> 00:07:01,650
+photon gas context, we looked at the energy
+
+113
+00:07:01,650 --> 00:07:05,370
+density of a photon gas as an integral over a
+
+114
+00:07:05,370 --> 00:07:09,630
+spectral density, which matched on to what we
+
+115
+00:07:09,630 --> 00:07:14,880
+could observe. It will prove useful to take a
+
+116
+00:07:14,880 --> 00:07:17,250
+similar approach this week and look at the
+
+117
+00:07:18,090 --> 00:07:20,730
+particle number density and also the internal
+
+118
+00:07:20,730 --> 00:07:24,390
+energy density as integrals over the energy of
+
+119
+00:07:24,930 --> 00:07:28,620
+some function of that energy, which is known as
+
+120
+00:07:28,890 --> 00:07:33,210
+the the Fermi function. And if we keep the
+
+121
+00:07:33,990 --> 00:07:36,960
+constant multiplicative factors outside of that
+
+122
+00:07:36,960 --> 00:07:39,930
+family function, in contrast to what we did with
+
+123
+00:07:39,930 --> 00:07:43,290
+the Planck distribution last week, we end up with
+
+124
+00:07:43,290 --> 00:07:45,930
+something that looks very much like the average
+
+125
+00:07:45,930 --> 00:07:49,830
+occupation. No. Arrived back in Section seven
+
+126
+00:07:49,830 --> 00:07:52,980
+point five, the main difference being that instead
+
+127
+00:07:52,980 --> 00:07:56,430
+of fixing the particular value of the energy
+
+128
+00:07:56,580 --> 00:07:59,220
+corresponding to the energy level whose occupation
+
+129
+00:07:59,670 --> 00:08:02,880
+number we were considering back in week seven,
+
+130
+00:08:04,110 --> 00:08:08,130
+here we are looking at this exponential function
+
+131
+00:08:08,130 --> 00:08:12,450
+as a function of the energy, which also depends on
+
+132
+00:08:12,660 --> 00:08:14,430
+the inverse temperature data and chemical
+
+133
+00:08:14,430 --> 00:08:20,070
+potential. New and if we. Rearrange this very
+
+134
+00:08:20,070 --> 00:08:22,920
+function to write it in terms of dimensionless
+
+135
+00:08:22,920 --> 00:08:26,280
+ratios of that energy divided by chemical
+
+136
+00:08:26,280 --> 00:08:29,040
+potential in the chemical potential divided by the
+
+137
+00:08:29,040 --> 00:08:33,780
+temperature, we can highlight its two main
+
+138
+00:08:33,780 --> 00:08:40,990
+features at both as functions of. The temperature
+
+139
+00:08:41,920 --> 00:08:46,900
+given by this dimensionless number with respect to
+
+140
+00:08:46,900 --> 00:08:49,780
+the chemical potential as well as the dependence
+
+141
+00:08:49,780 --> 00:08:52,690
+on the energy, again, compared to the chemical
+
+142
+00:08:52,690 --> 00:08:55,510
+potential which is shown in this figure here.
+
+143
+00:08:58,460 --> 00:09:01,640
+So the two things to pick out are, first, that the
+
+144
+00:09:01,640 --> 00:09:05,270
+point where the energy is equal to the chemical
+
+145
+00:09:05,270 --> 00:09:09,920
+potential, that ratio equals one is a special
+
+146
+00:09:09,920 --> 00:09:12,470
+point in this plot where all of these different
+
+147
+00:09:12,470 --> 00:09:15,320
+curves for different temperatures intersect at a
+
+148
+00:09:15,320 --> 00:09:19,210
+value of one half. The argument of the exponential
+
+149
+00:09:19,220 --> 00:09:21,980
+zero of the exponential itself is then one, and
+
+150
+00:09:21,980 --> 00:09:26,570
+the family function is one over one plus one gives
+
+151
+00:09:26,570 --> 00:09:29,690
+us a half or any value of the temperature. And at
+
+152
+00:09:29,690 --> 00:09:35,510
+lower energies there is a distinct. Temperature
+
+153
+00:09:35,510 --> 00:09:38,840
+dependent, so rare that the opposite temperature
+
+154
+00:09:38,840 --> 00:09:40,670
+dependence compared to the situation at higher
+
+155
+00:09:40,670 --> 00:09:44,690
+energies, so a higher energy is a decrease in
+
+156
+00:09:44,690 --> 00:09:47,600
+temperature going from a relatively large value
+
+157
+00:09:47,600 --> 00:09:51,080
+equal to the chemical potential in the solid red
+
+158
+00:09:51,080 --> 00:09:55,760
+curve down to a much smaller value. Only one
+
+159
+00:09:55,760 --> 00:09:57,740
+percent of the chemical potential given by the
+
+160
+00:09:57,740 --> 00:10:01,280
+black curve. You see that at higher energies, this
+
+161
+00:10:01,280 --> 00:10:05,070
+change in temperature leads to. A rapidly
+
+162
+00:10:05,070 --> 00:10:09,240
+decreasing family function, in fact, exponentially
+
+163
+00:10:09,240 --> 00:10:12,780
+decreasing, whereas at lower temperatures, the
+
+164
+00:10:12,780 --> 00:10:15,990
+family function increases and the exponential
+
+165
+00:10:15,990 --> 00:10:19,740
+factor itself there is decreasing, heading towards
+
+166
+00:10:19,740 --> 00:10:22,530
+zero exponentially quickly. So that all that is
+
+167
+00:10:22,530 --> 00:10:27,450
+left is that one divided by the one in the
+
+168
+00:10:27,450 --> 00:10:30,270
+denominator. So the primary function is
+
+169
+00:10:30,270 --> 00:10:33,660
+approaching one from below at temperatures lower
+
+170
+00:10:33,960 --> 00:10:36,390
+than the sorry energies, lower than the chemical
+
+171
+00:10:36,390 --> 00:10:39,240
+potential with the speed of approach governed by
+
+172
+00:10:39,330 --> 00:10:43,740
+the temperature. And it approaches zero for energy
+
+173
+00:10:43,740 --> 00:10:46,200
+is higher than the chemical potential, again, with
+
+174
+00:10:46,200 --> 00:10:48,990
+the speed of approach to zero governed by the
+
+175
+00:10:48,990 --> 00:10:53,540
+temperature. And at low temperatures as shown by
+
+176
+00:10:53,540 --> 00:10:56,090
+the black curve here, the family function can
+
+177
+00:10:56,090 --> 00:10:59,450
+become dull, approximated by a simple step
+
+178
+00:10:59,450 --> 00:11:03,980
+function where it is one for all energies, less
+
+179
+00:11:03,980 --> 00:11:07,160
+than the chemical potential, which in this context
+
+180
+00:11:07,160 --> 00:11:10,190
+at low temperatures needs to be positive in order
+
+181
+00:11:10,190 --> 00:11:13,850
+to have any non-zero number of particles remaining
+
+182
+00:11:13,850 --> 00:11:17,300
+in our great economical system and at higher
+
+183
+00:11:17,300 --> 00:11:20,180
+energies larger than that chemical potential. The
+
+184
+00:11:20,180 --> 00:11:23,960
+family function is zero, and the interpretation of
+
+185
+00:11:23,960 --> 00:11:29,450
+this is that all of the energy levels that have
+
+186
+00:11:29,450 --> 00:11:32,660
+values are the energy up to the chemical potential
+
+187
+00:11:33,110 --> 00:11:37,490
+are filled at these low temperatures, and none of
+
+188
+00:11:37,490 --> 00:11:40,310
+the energy levels with values of the energy larger
+
+189
+00:11:40,310 --> 00:11:42,650
+than the chemical potential are filled. They are
+
+190
+00:11:42,650 --> 00:11:44,960
+all empty or unoccupied.
+
+191
+00:11:47,210 --> 00:11:50,990
+And that interpretation connects to the similarity
+
+192
+00:11:51,110 --> 00:11:53,480
+between this Fermoy function in the average
+
+193
+00:11:53,480 --> 00:11:56,150
+occupation number that we computed a couple of
+
+194
+00:11:56,150 --> 00:11:59,900
+weeks ago and can also be seen in the computation
+
+195
+00:11:59,900 --> 00:12:04,520
+of the average particle number and internal energy
+
+196
+00:12:04,760 --> 00:12:08,030
+that, given how long this recording is already,
+
+197
+00:12:08,540 --> 00:12:13,370
+you will set aside for the next video and return
+
+198
+00:12:13,370 --> 00:12:20,960
+to to to go through. In. In that second video for
+
+199
+00:12:21,380 --> 00:12:22,130
+this week.
