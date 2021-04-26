@@ -1,0 +1,2491 @@
+1
+00:00:03,480 --> 00:00:07,950
+OK, the recording should now be under way, and
+
+2
+00:00:09,810 --> 00:00:13,800
+we'll see if any more folks come in in the next
+
+3
+00:00:13,800 --> 00:00:18,710
+few minutes. And in the meantime, you can just get
+
+4
+00:00:18,710 --> 00:00:22,070
+set up with some of the usual.
+
+5
+00:00:25,320 --> 00:00:28,890
+Logistical, organizational matters, and in
+
+6
+00:00:28,890 --> 00:00:31,860
+particular, giving those of you who are here the
+
+7
+00:00:32,490 --> 00:00:36,790
+opportunity to. But again, any questions you may
+
+8
+00:00:36,790 --> 00:00:42,330
+have either for yourself, for. For the future use
+
+9
+00:00:42,330 --> 00:00:44,700
+of those watching the recording.
+
+10
+00:00:46,700 --> 00:00:47,360
+In the.
+
+11
+00:00:50,080 --> 00:00:58,060
+Few logistical notes today are that the next and
+
+12
+00:00:58,060 --> 00:01:00,790
+final homework assignment is due tomorrow. Some
+
+13
+00:01:00,790 --> 00:01:03,700
+have already come in, though there's still time to
+
+14
+00:01:04,240 --> 00:01:08,860
+resubmit them if you see any changes or
+
+15
+00:01:08,860 --> 00:01:12,670
+improvements you'd like to make. And after that,
+
+16
+00:01:12,670 --> 00:01:16,150
+the only remaining piece of assessment will be the
+
+17
+00:01:16,990 --> 00:01:20,230
+final exam, which has been scheduled for a month
+
+18
+00:01:20,230 --> 00:01:24,640
+from yesterday, the Tuesday, the twenty fifth of
+
+19
+00:01:24,640 --> 00:01:31,150
+May. So as we wrap up with the interim assessment,
+
+20
+00:01:31,720 --> 00:01:35,200
+there'll be some more. Practice problems and other
+
+21
+00:01:35,200 --> 00:01:41,370
+simple materials uploaded in preparation. For that.
+
+22
+00:01:44,220 --> 00:01:49,740
+One other piece of logistics is that next Monday
+
+23
+00:01:49,740 --> 00:01:54,930
+is a holiday in the U.K.. So you may have seen.
+
+24
+00:01:55,850 --> 00:01:59,150
+From the somewhat flaky calendar on canvas that.
+
+25
+00:02:00,550 --> 00:02:03,850
+There is no synchronous session scheduled that day,
+
+26
+00:02:03,850 --> 00:02:07,810
+though, I expect still to be around for all of
+
+27
+00:02:07,810 --> 00:02:08,590
+this hours.
+
+28
+00:02:15,110 --> 00:02:18,980
+Just taking a quick look to see whether there are
+
+29
+00:02:18,980 --> 00:02:23,360
+any immediate questions about the homework or the
+
+30
+00:02:23,930 --> 00:02:27,470
+asynchronous materials for the module up till now.
+
+31
+00:02:34,650 --> 00:02:39,920
+I don't see any. Coming in so far so they can jump
+
+32
+00:02:39,920 --> 00:02:44,240
+over to those materials and just keep going
+
+33
+00:02:44,240 --> 00:02:50,610
+through them steadily ramping up the. Quantum gas
+
+34
+00:02:50,610 --> 00:02:54,390
+is a bosun's that was the material for last week
+
+35
+00:02:54,390 --> 00:02:58,290
+and then getting into the quantum gases of
+
+36
+00:02:58,290 --> 00:03:02,740
+fermions. And that we will deal with for the
+
+37
+00:03:02,740 --> 00:03:06,790
+remainder of this week leading up to the bank
+
+38
+00:03:06,790 --> 00:03:13,740
+holiday. Next Monday and where we left off with.
+
+39
+00:03:15,550 --> 00:03:18,160
+Last week saw our discussion last Thursday about
+
+40
+00:03:18,220 --> 00:03:21,070
+one of the assets of those islands was applying
+
+41
+00:03:21,280 --> 00:03:25,840
+the idealized calculations that we were doing for
+
+42
+00:03:25,870 --> 00:03:32,380
+a photon gas. The. Not an intern or a guess of not
+
+43
+00:03:32,380 --> 00:03:36,640
+interacting particles that obey the relativistic.
+
+44
+00:03:38,050 --> 00:03:40,750
+Energy momentum relation.
+
+45
+00:03:43,530 --> 00:03:48,710
+That the energy. The photon is just the speed of
+
+46
+00:03:48,710 --> 00:03:51,980
+light at times as momentum p, which is equivalent
+
+47
+00:03:51,980 --> 00:03:54,710
+to a Planck's constant four times the photon
+
+48
+00:03:54,710 --> 00:03:58,040
+frequency omega. We saw that
+
+49
+00:04:00,290 --> 00:04:01,280
+that simple.
+
+50
+00:04:05,080 --> 00:04:09,910
+Approximation, which is known as the. The black
+
+51
+00:04:09,910 --> 00:04:15,230
+body model and I can. Elaborate briefly on where
+
+52
+00:04:15,230 --> 00:04:17,750
+that name comes from. For the curious, a bit
+
+53
+00:04:18,170 --> 00:04:20,750
+simple, a curve of the plate distribution show
+
+54
+00:04:20,750 --> 00:04:27,710
+here as a function of wavelength, which is.
+
+55
+00:04:31,150 --> 00:04:37,690
+The inverse of the frequency, two factors of two
+
+56
+00:04:37,700 --> 00:04:43,310
+pi in the speed of light provides a. Pretty good
+
+57
+00:04:43,310 --> 00:04:48,110
+approximation to the light that is emitted by the
+
+58
+00:04:48,110 --> 00:04:48,560
+sun.
+
+59
+00:04:50,610 --> 00:04:53,460
+Which is shown to these colored bands here ready
+
+60
+00:04:53,460 --> 00:04:56,760
+for what we would measure at the surface of the
+
+61
+00:04:56,760 --> 00:05:00,480
+earth around sea level, and then yellow is coming
+
+62
+00:05:00,480 --> 00:05:04,740
+from measurements carried out by high altitude
+
+63
+00:05:05,250 --> 00:05:08,010
+observations, either climbing up mountains or
+
+64
+00:05:09,060 --> 00:05:15,210
+initially measured from high flying balloons. And
+
+65
+00:05:15,210 --> 00:05:18,420
+more recently, measured even on satellites, but.
+
+66
+00:05:20,230 --> 00:05:22,990
+These sorts of measurements predate the satellite
+
+67
+00:05:22,990 --> 00:05:31,040
+age and. Were some of the input observations that
+
+68
+00:05:31,040 --> 00:05:34,370
+that led Planck to develop the distribution that
+
+69
+00:05:34,370 --> 00:05:37,580
+now bears his name, this black line here that
+
+70
+00:05:37,580 --> 00:05:44,810
+matches the. Observed light from the sun to pretty
+
+71
+00:05:44,810 --> 00:05:47,750
+good precision, taking into account the fact that.
+
+72
+00:05:49,650 --> 00:05:54,900
+Interactions are not negligible in the sun, and we
+
+73
+00:05:54,900 --> 00:05:59,340
+can see they also interactions between photons and
+
+74
+00:05:59,340 --> 00:06:02,820
+these sorts of gases that exist in the sun, in the
+
+75
+00:06:02,820 --> 00:06:05,070
+space between the earth and the sun and also in
+
+76
+00:06:05,520 --> 00:06:09,030
+the earth's atmosphere. Can absorb a lot of these
+
+77
+00:06:09,030 --> 00:06:11,850
+photons that are easy to create and destroy,
+
+78
+00:06:11,850 --> 00:06:15,650
+corresponding to a vanishing chemical potential,
+
+79
+00:06:16,350 --> 00:06:21,120
+which leads to some of the different shape or the
+
+80
+00:06:21,120 --> 00:06:24,980
+different measurements you would get at high, high,
+
+81
+00:06:24,990 --> 00:06:28,660
+higher. Altitude or high position in the
+
+82
+00:06:28,660 --> 00:06:32,940
+atmosphere compared to sea level. And the black
+
+83
+00:06:32,940 --> 00:06:38,160
+body term, that was. In vogue at that time, it has
+
+84
+00:06:38,240 --> 00:06:42,350
+stayed around for that historical reason, just
+
+85
+00:06:42,620 --> 00:06:46,730
+comes from the idea that these objects being
+
+86
+00:06:46,730 --> 00:06:50,510
+considered that are radiating lights or the whole
+
+87
+00:06:50,510 --> 00:06:53,310
+spectrum of electromagnetic radiation from high
+
+88
+00:06:53,420 --> 00:06:58,100
+energy ultraviolet radiation down to low energy
+
+89
+00:06:58,100 --> 00:07:02,060
+infrared and thermal radiation, all of which
+
+90
+00:07:02,060 --> 00:07:05,050
+corresponds to photons with different frequencies
+
+91
+00:07:05,060 --> 00:07:10,220
+in different wavelengths. The black body is an
+
+92
+00:07:10,220 --> 00:07:14,060
+object that emits that sort of light or that sort
+
+93
+00:07:14,060 --> 00:07:16,760
+of electromagnetic radiation without having to
+
+94
+00:07:16,760 --> 00:07:22,060
+worry about it, reflecting any. Any radiation that
+
+95
+00:07:22,060 --> 00:07:25,090
+is in the environment, which there always is, if
+
+96
+00:07:25,090 --> 00:07:28,900
+there's like to see these bodies or a non-zero
+
+97
+00:07:28,900 --> 00:07:32,770
+temperature that is being carried by the
+
+98
+00:07:33,760 --> 00:07:36,330
+electromagnetic radiation, the ambient environment,
+
+99
+00:07:36,340 --> 00:07:40,480
+the idea is a black body simply absorbs all of
+
+100
+00:07:40,480 --> 00:07:43,480
+that external radiation and emits its own
+
+101
+00:07:43,480 --> 00:07:47,800
+radiation with no influence, no reflection coming
+
+102
+00:07:47,800 --> 00:07:51,340
+from all of that other stuff. So it's a
+
+103
+00:07:51,340 --> 00:07:55,190
+simplification that, like the simplification of a
+
+104
+00:07:55,210 --> 00:08:01,450
+non interacting gas, turns out to describe not
+
+105
+00:08:01,450 --> 00:08:03,970
+only the sun, but also things like ovens and light
+
+106
+00:08:03,970 --> 00:08:06,880
+bulbs and all other sources of electromagnetic
+
+107
+00:08:06,880 --> 00:08:12,270
+radiation very well. And another extreme that we
+
+108
+00:08:12,270 --> 00:08:16,620
+can look at, where the BlackBerry curve for the
+
+109
+00:08:16,620 --> 00:08:20,760
+blank distribution matches up even better with the
+
+110
+00:08:20,910 --> 00:08:25,860
+observed spectrum of electromagnetic radiation is
+
+111
+00:08:25,860 --> 00:08:29,570
+something known as the cosmic microwave background.
+
+112
+00:08:30,680 --> 00:08:35,840
+Which is illustrated in in this picture here,
+
+113
+00:08:35,840 --> 00:08:36,530
+which is a.
+
+114
+00:08:39,330 --> 00:08:44,430
+Famous image. Or one of the classic famous images
+
+115
+00:08:44,430 --> 00:08:47,970
+that is showing a picture of the entire visible
+
+116
+00:08:47,970 --> 00:08:53,100
+sky with all of the stars and galaxies and other.
+
+117
+00:08:54,730 --> 00:08:59,440
+Known sources of heat and light subtracted away
+
+118
+00:08:59,450 --> 00:09:05,050
+and removed from it and what is left? Is what we
+
+119
+00:09:05,050 --> 00:09:08,320
+would consider empty space and what is being done
+
+120
+00:09:08,980 --> 00:09:13,120
+in this picture is that the temperature of that
+
+121
+00:09:13,120 --> 00:09:18,810
+empty space? With no contributions from galaxies
+
+122
+00:09:18,810 --> 00:09:24,210
+and stars is being colored depending on whether
+
+123
+00:09:24,210 --> 00:09:26,640
+the temperature is a little higher than average or
+
+124
+00:09:26,910 --> 00:09:31,290
+a little lower than average. So the the colors
+
+125
+00:09:31,290 --> 00:09:34,530
+here are illustrations of fluctuations around the
+
+126
+00:09:34,530 --> 00:09:38,460
+average temperature of the entire sky, the entire
+
+127
+00:09:38,460 --> 00:09:43,260
+observable universe. That average temperature has
+
+128
+00:09:43,260 --> 00:09:45,630
+been measured very precisely to be about two point
+
+129
+00:09:45,630 --> 00:09:49,500
+seventy five Kelvin. And that average is attracted
+
+130
+00:09:49,500 --> 00:09:54,600
+away from each points in this picture. And what is
+
+131
+00:09:54,600 --> 00:10:00,090
+left are hotter regions colored in red or orange
+
+132
+00:10:00,090 --> 00:10:05,130
+or reddish colors like that area over on the right
+
+133
+00:10:05,130 --> 00:10:11,720
+of the figure that are just a few. Millions of a
+
+134
+00:10:11,720 --> 00:10:15,830
+Kelvyn higher than average, I think the actual
+
+135
+00:10:15,830 --> 00:10:22,930
+number is one part in. 10000. And then the blue
+
+136
+00:10:22,930 --> 00:10:25,870
+colored regions are similarly about a part in
+
+137
+00:10:25,870 --> 00:10:35,790
+10000 cooler than average. And what this? Is is a
+
+138
+00:10:36,690 --> 00:10:38,760
+Gafsa photon, so a.
+
+139
+00:10:43,510 --> 00:10:45,640
+The gas of electromagnetic radiation that is
+
+140
+00:10:45,640 --> 00:10:49,580
+filling. The entirety of the empty space in the
+
+141
+00:10:49,580 --> 00:10:53,300
+observable universe, within and between galaxies,
+
+142
+00:10:53,300 --> 00:10:57,230
+that dates back to the early stages of the
+
+143
+00:10:57,410 --> 00:11:00,240
+universe's evolution. If.
+
+144
+00:11:03,450 --> 00:11:09,670
+We pull up a. Illustration of. The universe's
+
+145
+00:11:10,120 --> 00:11:11,290
+evolution here.
+
+146
+00:11:14,710 --> 00:11:18,010
+From measurements of this cosmic microwave
+
+147
+00:11:18,010 --> 00:11:20,770
+background that we were just looking at, along
+
+148
+00:11:20,770 --> 00:11:21,400
+with other.
+
+149
+00:11:23,740 --> 00:11:27,100
+Other observable facets of cosmology and the
+
+150
+00:11:27,100 --> 00:11:28,150
+observable universe.
+
+151
+00:11:30,310 --> 00:11:32,170
+We've been able to measure and this is a.
+
+152
+00:11:34,540 --> 00:11:36,220
+This picture is being shown on a program that
+
+153
+00:11:36,220 --> 00:11:39,100
+doesn't let me scribble on it, so we'll just have
+
+154
+00:11:39,100 --> 00:11:43,930
+to to look at it. Without the benefit of any
+
+155
+00:11:43,970 --> 00:11:48,290
+drawing, so we know that the age of the universe
+
+156
+00:11:48,290 --> 00:11:52,340
+from the early stages of what's called the Big
+
+157
+00:11:52,340 --> 00:11:54,410
+Bang, when the universe was a very hot and then
+
+158
+00:11:54,410 --> 00:11:57,530
+state has been about thirteen point eight billion
+
+159
+00:11:57,530 --> 00:12:02,590
+years. In the cosmic microwave background that
+
+160
+00:12:02,590 --> 00:12:06,070
+pervades all of the universe is essentially.
+
+161
+00:12:08,320 --> 00:12:11,850
+An imprint of the universe in its early days,
+
+162
+00:12:11,860 --> 00:12:15,280
+about three hundred eighty thousand years after.
+
+163
+00:12:16,610 --> 00:12:19,520
+It was formed after that big bang, and that was
+
+164
+00:12:19,520 --> 00:12:22,640
+the point where the universe had expanded and
+
+165
+00:12:22,640 --> 00:12:29,960
+cooled enough. That. Electrons and atomic nuclei
+
+166
+00:12:30,170 --> 00:12:34,640
+were able to bind to form neutral atoms, which
+
+167
+00:12:34,640 --> 00:12:39,440
+allowed the light that we can see in the sky to
+
+168
+00:12:39,920 --> 00:12:43,010
+propagate freely rather than being absorbed and
+
+169
+00:12:43,010 --> 00:12:48,860
+created by those electrons and charged atomic
+
+170
+00:12:48,860 --> 00:12:55,380
+nuclei. So that was the point shown here, about
+
+171
+00:12:55,380 --> 00:12:57,210
+three hundred eighty thousand years after the Big
+
+172
+00:12:57,210 --> 00:13:03,390
+Bang where. The light that we are now observing in
+
+173
+00:13:03,390 --> 00:13:07,980
+the cosmic microwave background was released and
+
+174
+00:13:07,980 --> 00:13:12,480
+allowed to travel freely again thirteen point
+
+175
+00:13:12,480 --> 00:13:14,430
+eight billion years ago, the three hundred eighty
+
+176
+00:13:14,430 --> 00:13:18,240
+thousand years is a rounding error in that overall
+
+177
+00:13:18,240 --> 00:13:19,740
+age of the universe.
+
+178
+00:13:21,960 --> 00:13:25,230
+And that light that has been traveling for
+
+179
+00:13:25,230 --> 00:13:27,570
+thirteen point eight billion years is what is
+
+180
+00:13:27,570 --> 00:13:32,130
+being observed to indicate the temperature
+
+181
+00:13:32,130 --> 00:13:34,770
+fluctuations shown in.
+
+182
+00:13:38,190 --> 00:13:41,820
+Joining this figure, which we can get back to, and
+
+183
+00:13:41,820 --> 00:13:45,450
+there's in addition to the scientific value of the
+
+184
+00:13:45,450 --> 00:13:48,240
+cosmic microwave background, which we'll get into
+
+185
+00:13:48,570 --> 00:13:53,430
+in just a minute, there was a famous story about
+
+186
+00:13:53,430 --> 00:13:58,020
+its discovery back in in nineteen sixty five and.
+
+187
+00:13:59,870 --> 00:14:02,420
+This is by Arnold Penzias and Robert Wilson, two
+
+188
+00:14:02,420 --> 00:14:08,210
+astronomers who were trying to set up a telescope
+
+189
+00:14:08,210 --> 00:14:14,760
+to measure. Long wavelength on low frequency radio
+
+190
+00:14:14,760 --> 00:14:15,360
+waves.
+
+191
+00:14:17,840 --> 00:14:22,070
+As a probe of astronomy and astrophysics, and
+
+192
+00:14:22,820 --> 00:14:25,370
+while they were setting up this telescope and
+
+193
+00:14:25,370 --> 00:14:28,190
+trying to to tune it to get rid of background
+
+194
+00:14:28,190 --> 00:14:32,120
+noise from terrestrial sources, radio broadcasts,
+
+195
+00:14:32,120 --> 00:14:35,870
+the sun and other nearby stars they kept.
+
+196
+00:14:38,340 --> 00:14:42,060
+Noticing this persistent hissing coming at low
+
+197
+00:14:42,060 --> 00:14:46,370
+frequency. Electromagnetic radiation, low
+
+198
+00:14:46,370 --> 00:14:49,790
+frequency photons coming almost uniformly from all
+
+199
+00:14:49,790 --> 00:14:55,490
+directions in the sky, that. With a bit of work,
+
+200
+00:14:55,970 --> 00:15:00,730
+they were able to identify as precisely this, this
+
+201
+00:15:00,740 --> 00:15:04,470
+cosmic relic of the early stages of the universe.
+
+202
+00:15:05,120 --> 00:15:07,130
+So the cosmic microwave background, although it
+
+203
+00:15:07,130 --> 00:15:12,380
+had been predicted by some folks in the decades
+
+204
+00:15:12,380 --> 00:15:14,900
+before the 1960s, it was discovered accidentally
+
+205
+00:15:14,900 --> 00:15:18,440
+rather than by actually looking for it. And it was
+
+206
+00:15:18,440 --> 00:15:21,590
+only that accidental discovery which got a Nobel
+
+207
+00:15:21,590 --> 00:15:27,430
+Prize in the 70s that really. Helped to solidify
+
+208
+00:15:27,430 --> 00:15:31,330
+that big bang picture of the universe that we now
+
+209
+00:15:31,330 --> 00:15:37,120
+have and really lend credence to the predictions
+
+210
+00:15:37,120 --> 00:15:39,040
+that there would be this cosmic microwave
+
+211
+00:15:39,040 --> 00:15:43,360
+background. Pervading all of the empty space
+
+212
+00:15:43,360 --> 00:15:45,400
+between stars and galaxies.
+
+213
+00:15:47,760 --> 00:15:48,300
+Now.
+
+214
+00:15:54,730 --> 00:15:58,680
+I mentioned when looking at. This drawing here
+
+215
+00:15:58,680 --> 00:16:01,770
+that the average temperature being subtracted away
+
+216
+00:16:02,310 --> 00:16:08,300
+is about two point seventy five Kelvin, which I
+
+217
+00:16:08,790 --> 00:16:12,450
+every day standards, is quite low, one hundred
+
+218
+00:16:12,450 --> 00:16:17,350
+times lower than room temperature, roughly, and. I
+
+219
+00:16:17,370 --> 00:16:21,710
+also mentioned that. The the life here dates from
+
+220
+00:16:22,130 --> 00:16:26,390
+the very early stages of the universe when it was
+
+221
+00:16:26,390 --> 00:16:29,510
+just a fraction of a million years old, when the
+
+222
+00:16:29,510 --> 00:16:31,550
+universe itself was in a Honeyman state in
+
+223
+00:16:31,550 --> 00:16:33,950
+particular, so hot that
+
+224
+00:16:36,200 --> 00:16:40,250
+atoms had just started to to recombine. The
+
+225
+00:16:40,250 --> 00:16:42,950
+temperature was such that there was nearly enough
+
+226
+00:16:43,790 --> 00:16:48,590
+heat energy to ionized all of the atoms in the
+
+227
+00:16:48,590 --> 00:16:52,070
+universe, which is you can also see from this
+
+228
+00:16:52,070 --> 00:16:55,100
+figure was hundreds of millions of years before
+
+229
+00:16:56,180 --> 00:16:59,960
+the formation of dense structures like stars.
+
+230
+00:17:02,200 --> 00:17:07,480
+The universe was a more or less uniform plasma at
+
+231
+00:17:07,480 --> 00:17:11,710
+a temperature of thousands of Kelvin, which is the
+
+232
+00:17:11,710 --> 00:17:16,420
+scale needed in order to keep all of those atoms
+
+233
+00:17:16,420 --> 00:17:21,280
+ionized of the electrons separate from the protons
+
+234
+00:17:21,280 --> 00:17:24,340
+and other other atomic nuclei.
+
+235
+00:17:28,060 --> 00:17:28,600
+And.
+
+236
+00:17:30,780 --> 00:17:32,790
+What that tells us is that.
+
+237
+00:17:35,180 --> 00:17:38,120
+Now, as the universe has expanded over the past
+
+238
+00:17:38,120 --> 00:17:40,430
+thirteen point eight billion years, the
+
+239
+00:17:40,430 --> 00:17:44,330
+temperature of this cosmic microwave background,
+
+240
+00:17:44,870 --> 00:17:48,850
+the. The leftover lights from the big bang that's
+
+241
+00:17:48,850 --> 00:17:52,330
+filling all points in the universe, its
+
+242
+00:17:52,330 --> 00:17:57,580
+temperature has gradually cooled. By much more
+
+243
+00:17:57,580 --> 00:18:00,490
+than 99 percent of its initial value.
+
+244
+00:18:03,500 --> 00:18:08,450
+Leaving us with just that few Kelvin temperature
+
+245
+00:18:08,450 --> 00:18:10,280
+left over and.
+
+246
+00:18:12,870 --> 00:18:17,870
+While. It is sort of intuitive to think that over
+
+247
+00:18:17,870 --> 00:18:22,190
+time, hot objects, can they be expected to to cool
+
+248
+00:18:22,190 --> 00:18:26,220
+down the fact that. The cosmic microwave
+
+249
+00:18:26,220 --> 00:18:29,250
+background is really part of the universe, rather
+
+250
+00:18:29,250 --> 00:18:31,740
+than an object sitting within the universe and
+
+251
+00:18:31,740 --> 00:18:35,220
+able to radiate energy in the form of heat or
+
+252
+00:18:35,220 --> 00:18:40,110
+light really means that its change in temperature
+
+253
+00:18:40,110 --> 00:18:43,110
+is a bit more subtle than just an object sitting
+
+254
+00:18:43,740 --> 00:18:49,500
+in some space cooling down by radiating thermal
+
+255
+00:18:49,500 --> 00:18:53,360
+electromagnetic radiation. This cosmic microwave
+
+256
+00:18:53,360 --> 00:18:56,330
+background really is that radiation and the real
+
+257
+00:18:56,330 --> 00:19:00,590
+reason it has cooled is in fact precisely due to
+
+258
+00:19:01,130 --> 00:19:04,370
+the expansion of the universe over the thirteen
+
+259
+00:19:04,370 --> 00:19:08,690
+point eight billion years since the cosmic
+
+260
+00:19:08,690 --> 00:19:10,670
+microwave background was formed. What what has
+
+261
+00:19:10,670 --> 00:19:16,920
+happened is that. The as the universe expands, the
+
+262
+00:19:16,920 --> 00:19:19,830
+wavelength of this background, light in the
+
+263
+00:19:19,830 --> 00:19:23,460
+universe is also being expanded in the same way,
+
+264
+00:19:23,640 --> 00:19:27,090
+which is we talked about last week corresponds to
+
+265
+00:19:29,190 --> 00:19:32,160
+lower energies and the correspondingly lower
+
+266
+00:19:32,160 --> 00:19:36,420
+temperatures coming from those longer wavelengths
+
+267
+00:19:36,600 --> 00:19:42,960
+moving towards the. Infrared. And in particular.
+
+268
+00:19:44,440 --> 00:19:48,580
+The peak wavelength of the cosmic microwave
+
+269
+00:19:48,580 --> 00:19:52,090
+background these days is around the scale of
+
+270
+00:19:52,090 --> 00:19:54,560
+millimeters as opposed to the hundreds of
+
+271
+00:19:54,560 --> 00:19:59,900
+nanometres, that is the main wavelength of the
+
+272
+00:19:59,950 --> 00:20:02,800
+visible light from the sun that we are able to see.
+
+273
+00:20:05,120 --> 00:20:09,980
+Which is. As might be expected from the name The
+
+274
+00:20:10,580 --> 00:20:15,830
+Microwave. Region of the electromagnetic radiation,
+
+275
+00:20:15,830 --> 00:20:20,270
+longer wavelengths moving into the infrared and
+
+276
+00:20:21,080 --> 00:20:23,720
+thermal frequencies and wavelength of a few
+
+277
+00:20:23,720 --> 00:20:29,820
+millimeters, which I believe is. The next. Figure
+
+278
+00:20:30,510 --> 00:20:30,990
+in.
+
+279
+00:20:33,690 --> 00:20:38,990
+In the quantum gases of bosun's notes where. This
+
+280
+00:20:38,990 --> 00:20:45,340
+millimeter scale is. Just about the central
+
+281
+00:20:45,520 --> 00:20:50,320
+frequency on the x axis of of this plot, which is
+
+282
+00:20:50,320 --> 00:20:56,190
+shown here in. Frequency of a particular.
+
+283
+00:20:59,220 --> 00:21:01,630
+Cyclical frequency rather than angular frequency,
+
+284
+00:21:01,630 --> 00:21:08,820
+so omega is two pi times. This F on the horizontal
+
+285
+00:21:08,820 --> 00:21:11,760
+axis here plotted in readers of Inver seconds,
+
+286
+00:21:11,760 --> 00:21:13,050
+which are also known as Herts.
+
+287
+00:21:15,240 --> 00:21:20,000
+And a frequency of several times, 10 to the 11
+
+288
+00:21:20,300 --> 00:21:25,920
+cycles per second. Corresponds to lights traveling
+
+289
+00:21:25,920 --> 00:21:28,350
+at the speed of light with a wavelength of about a
+
+290
+00:21:28,350 --> 00:21:34,590
+millimeter, let's see, 10 to the 11 would be a
+
+291
+00:21:34,960 --> 00:21:40,050
+hundred billion cycles per second. So this is the
+
+292
+00:21:40,050 --> 00:21:40,740
+overall.
+
+293
+00:21:43,150 --> 00:21:43,570
+Um.
+
+294
+00:21:45,940 --> 00:21:48,940
+Power density of the cosmic microwave background
+
+295
+00:21:48,940 --> 00:21:52,930
+averaged over all of the the sky is no longer
+
+296
+00:21:52,930 --> 00:21:57,400
+looking at the temperature fluctuations, focusing
+
+297
+00:21:57,400 --> 00:21:59,200
+on the overall measurements that can be carried
+
+298
+00:21:59,200 --> 00:22:04,550
+out quite precisely to the point that the. The
+
+299
+00:22:04,550 --> 00:22:09,710
+size of the squares in this figure showing the the
+
+300
+00:22:09,710 --> 00:22:11,240
+data are.
+
+301
+00:22:14,150 --> 00:22:18,920
+Generous estimates of the overall uncertainties in
+
+302
+00:22:18,950 --> 00:22:21,580
+these observational measurements of the power
+
+303
+00:22:21,590 --> 00:22:24,710
+coming from the cosmic microwave background, all
+
+304
+00:22:24,710 --> 00:22:27,830
+of the stars and galaxies subtracted away as a
+
+305
+00:22:27,830 --> 00:22:33,030
+function of that frequency. Which is then fit to
+
+306
+00:22:33,030 --> 00:22:37,110
+the salad line is our plank distribution.
+
+307
+00:22:39,870 --> 00:22:43,950
+And. In particular, we can see that there's really
+
+308
+00:22:43,960 --> 00:22:47,560
+an excellent agreement between all of these
+
+309
+00:22:50,350 --> 00:22:51,910
+data points and.
+
+310
+00:22:53,980 --> 00:22:56,860
+The overall Planck distribution, with its
+
+311
+00:22:56,860 --> 00:23:03,040
+particular value of the temperature as as that
+
+312
+00:23:03,040 --> 00:23:08,530
+only free parameter, so it's to. Remind ourselves
+
+313
+00:23:08,530 --> 00:23:14,370
+of what this election is. Which I can write either
+
+314
+00:23:14,370 --> 00:23:18,810
+in terms of that angular frequency Omega or the
+
+315
+00:23:18,810 --> 00:23:20,190
+frequency F, which is.
+
+316
+00:23:22,460 --> 00:23:28,560
+Let me go over to pie. I prefer to work in terms
+
+317
+00:23:28,560 --> 00:23:32,020
+of the angular frequency omega just to. Keep the
+
+318
+00:23:32,020 --> 00:23:34,270
+factors of supply under control.
+
+319
+00:23:37,300 --> 00:23:38,020
+We have.
+
+320
+00:23:40,780 --> 00:23:44,500
+Plant distribution, given in terms of Omega cubed
+
+321
+00:23:45,070 --> 00:23:51,010
+over E to the each of our Omega over to. Minus one
+
+322
+00:23:51,790 --> 00:23:54,100
+in that fit to the single parameter of the
+
+323
+00:23:54,100 --> 00:24:01,760
+temperature. To these data then. Gives the.
+
+324
+00:24:03,660 --> 00:24:04,860
+Bellevue, that was.
+
+325
+00:24:07,270 --> 00:24:10,000
+Published along with this plot from all the way
+
+326
+00:24:10,000 --> 00:24:14,530
+back in 1990, this was one of the first
+
+327
+00:24:14,530 --> 00:24:18,670
+measurements of the temperature of the cosmic
+
+328
+00:24:18,670 --> 00:24:22,800
+microwave background radiation. Which.
+
+329
+00:24:27,250 --> 00:24:31,910
+Measured it to. Just a few percent precision, so
+
+330
+00:24:31,950 --> 00:24:35,720
+two point seventy four plus minus zero point zero
+
+331
+00:24:35,730 --> 00:24:43,150
+six Kelvin. And in the 30 years since those
+
+332
+00:24:43,150 --> 00:24:45,820
+measurements were carried out, they've become much
+
+333
+00:24:45,820 --> 00:24:48,430
+more precise by many orders of magnitude, which in
+
+334
+00:24:48,430 --> 00:24:53,170
+turn allows a check of the age of the universe
+
+335
+00:24:53,440 --> 00:25:00,070
+simply by figuring out how long it. Needs to have
+
+336
+00:25:00,070 --> 00:25:04,660
+been in order for the cosmic microwave background,
+
+337
+00:25:04,660 --> 00:25:06,880
+initially formed at a high temperature of
+
+338
+00:25:06,880 --> 00:25:11,530
+thousands of Kelvin to have decreased to the two
+
+339
+00:25:11,560 --> 00:25:15,610
+point seventy five Kelvin that we observe in the
+
+340
+00:25:15,610 --> 00:25:16,290
+present day.
+
+341
+00:25:29,380 --> 00:25:32,670
+Applause Just to check if any questions have come
+
+342
+00:25:32,670 --> 00:25:36,420
+in while you've been going through that. Bit about
+
+343
+00:25:36,420 --> 00:25:38,670
+the cosmic microwave background, because there's
+
+344
+00:25:39,300 --> 00:25:43,980
+one. Final thing I want to say about the cosmic
+
+345
+00:25:43,980 --> 00:25:46,620
+microwave background as a bit of a further
+
+346
+00:25:46,620 --> 00:25:49,260
+supplement that is mentioned in the notes without
+
+347
+00:25:49,260 --> 00:25:54,390
+going into detail, which is that the cosmic
+
+348
+00:25:54,390 --> 00:25:56,100
+microwave background is.
+
+349
+00:25:58,760 --> 00:26:03,820
+One of the strongest sources for. Our strongest
+
+350
+00:26:03,830 --> 00:26:08,630
+sources of evidence that we have for the existence
+
+351
+00:26:08,750 --> 00:26:11,900
+and other properties of dark matter.
+
+352
+00:26:15,250 --> 00:26:19,810
+And this is the figure we want to take look at in
+
+353
+00:26:19,810 --> 00:26:23,770
+the context of dark matter, because the evidence
+
+354
+00:26:23,770 --> 00:26:25,660
+for dark matter from the cosmic microwave
+
+355
+00:26:25,660 --> 00:26:29,490
+background is coming. Through a bit more involved
+
+356
+00:26:30,000 --> 00:26:33,600
+calculations than we're doing in this module, and
+
+357
+00:26:33,600 --> 00:26:37,320
+in particular, we have to take into account the
+
+358
+00:26:37,680 --> 00:26:45,310
+interactions between dark matter and. This the the
+
+359
+00:26:45,320 --> 00:26:51,980
+plasma of photons, light radiation and all the
+
+360
+00:26:51,980 --> 00:26:55,520
+other particles in existence in the early stages
+
+361
+00:26:55,520 --> 00:26:57,620
+of the universe on the cosmic microwave background
+
+362
+00:26:57,620 --> 00:27:01,710
+was formed. And carrying out those sorts of
+
+363
+00:27:01,710 --> 00:27:07,400
+calculations. Allows. Allows us to predict.
+
+364
+00:27:10,120 --> 00:27:13,940
+Not only the. Energy profile following the Planck
+
+365
+00:27:13,950 --> 00:27:17,100
+distribution that we were able to get from the
+
+366
+00:27:17,100 --> 00:27:20,880
+simple, not interacting photon gas, but also the
+
+367
+00:27:21,060 --> 00:27:24,870
+overall patterns of the fluctuations in the
+
+368
+00:27:24,870 --> 00:27:26,850
+temperature for the effective temperature shown
+
+369
+00:27:26,850 --> 00:27:31,100
+here, where. I should have mentioned when we were
+
+370
+00:27:31,100 --> 00:27:35,240
+looking at this figure that we can do these sorts
+
+371
+00:27:35,240 --> 00:27:39,350
+of fits of data to the plate distribution for
+
+372
+00:27:39,740 --> 00:27:45,590
+individual points in the empty sky show.
+
+373
+00:27:47,730 --> 00:27:51,750
+In this picture here and use those facts to
+
+374
+00:27:51,840 --> 00:27:55,500
+determine the temperature of the cosmic microwave
+
+375
+00:27:55,500 --> 00:27:59,970
+background coming precisely from that point in the
+
+376
+00:27:59,970 --> 00:28:06,140
+sky. So that's how the temperature. And in
+
+377
+00:28:06,140 --> 00:28:09,230
+particular, the fluctuations being shown here is
+
+378
+00:28:09,230 --> 00:28:09,830
+determined.
+
+379
+00:28:12,080 --> 00:28:15,010
+And what we would be able to predict from
+
+380
+00:28:15,410 --> 00:28:20,570
+computing the interactions between photons and in
+
+381
+00:28:20,930 --> 00:28:25,190
+a matter of ordinary matter that interacts
+
+382
+00:28:25,190 --> 00:28:28,760
+directly with light in the way that we are used to
+
+383
+00:28:28,760 --> 00:28:31,100
+in every day, as well as dark matter, which is
+
+384
+00:28:31,550 --> 00:28:35,930
+transparent and invisible to heat and lights and.
+
+385
+00:28:37,220 --> 00:28:40,920
+And the other. Experimental tools that we have
+
+386
+00:28:40,920 --> 00:28:44,310
+available in our laboratories on Earth carrying
+
+387
+00:28:44,310 --> 00:28:48,940
+out those calculations of those interactions leads
+
+388
+00:28:49,020 --> 00:28:54,010
+to predictions for how these regions of. Higher
+
+389
+00:28:54,010 --> 00:28:56,950
+and lower temperature photons and the cosmic
+
+390
+00:28:56,950 --> 00:29:00,730
+microwave background are distributed around the
+
+391
+00:29:00,730 --> 00:29:07,180
+sky and. The usual way of presenting that sort of
+
+392
+00:29:07,180 --> 00:29:08,590
+data about.
+
+393
+00:29:11,310 --> 00:29:16,100
+The characteristics of. How likely we are if we
+
+394
+00:29:16,100 --> 00:29:21,980
+are in some hot patch of the sky to find another
+
+395
+00:29:22,430 --> 00:29:25,670
+hot patch as opposed to a cold patch, some
+
+396
+00:29:25,670 --> 00:29:29,540
+particular distance away in the sky. So because.
+
+397
+00:29:31,180 --> 00:29:33,640
+This is a three dimensional spherical shell
+
+398
+00:29:33,640 --> 00:29:37,840
+projected onto a two dimensional page, the
+
+399
+00:29:38,230 --> 00:29:42,820
+distance between. Those two passes is a measure of
+
+400
+00:29:43,150 --> 00:29:46,750
+an angular separation in the sky and the
+
+401
+00:29:46,750 --> 00:29:51,960
+measurement of. How much the temperature in one
+
+402
+00:29:52,860 --> 00:29:56,250
+place in the sky is correlated with another place,
+
+403
+00:29:56,260 --> 00:30:02,050
+a certain angle away. Is the usual way that all of
+
+404
+00:30:02,050 --> 00:30:06,640
+the information in these measurements of the
+
+405
+00:30:06,640 --> 00:30:10,850
+cosmic microwave background can be reduced to just
+
+406
+00:30:11,020 --> 00:30:15,010
+a simple plot like this, which is. A relatively
+
+407
+00:30:15,700 --> 00:30:20,950
+old one from 2006, so the data have become much
+
+408
+00:30:20,950 --> 00:30:22,300
+more precise since then.
+
+409
+00:30:24,410 --> 00:30:27,170
+But this plot is nice because it illustrates how
+
+410
+00:30:28,520 --> 00:30:33,130
+the. The quantity being plotted vertically, which,
+
+411
+00:30:33,130 --> 00:30:37,550
+again, this program is not, let me draw on it, how
+
+412
+00:30:37,570 --> 00:30:41,530
+that is being shown as a function of an angular
+
+413
+00:30:41,530 --> 00:30:46,480
+scale labeled on the upper horizontal axis of this
+
+414
+00:30:46,480 --> 00:30:46,960
+plotts.
+
+415
+00:30:49,750 --> 00:30:53,840
+Flooded in particular logarithmically. Though the
+
+416
+00:30:53,840 --> 00:30:58,950
+vertical axis is an ordinary. Ordinary scale, so
+
+417
+00:30:58,950 --> 00:31:02,130
+this is a similar logarithmic plot and what is
+
+418
+00:31:02,130 --> 00:31:07,750
+shown on. The bottom horizontal axis is the
+
+419
+00:31:08,260 --> 00:31:11,440
+conversion of those angular scales in what's
+
+420
+00:31:11,440 --> 00:31:17,090
+called a a multiple expansion where. If we go back
+
+421
+00:31:17,090 --> 00:31:25,270
+to. This figure. Here is a simple dipole or.
+
+422
+00:31:28,610 --> 00:31:31,040
+What these polls correspond to is essentially.
+
+423
+00:31:34,910 --> 00:31:39,440
+Dividing up the the overall sky into some number
+
+424
+00:31:39,440 --> 00:31:44,900
+of. Of pieces or sectors that we can start with,
+
+425
+00:31:45,320 --> 00:31:48,650
+say, a dipole, which is just looking at dividing
+
+426
+00:31:48,650 --> 00:31:56,010
+the sky into two pieces. Which can freely take any
+
+427
+00:31:56,010 --> 00:32:00,690
+orientation in this representation of the data and
+
+428
+00:32:00,690 --> 00:32:04,920
+seeing just how much how strongly those two pieces
+
+429
+00:32:04,920 --> 00:32:08,190
+are correlated with each other. And similarly for
+
+430
+00:32:08,730 --> 00:32:12,600
+Waterfall's dividing the sky into four pieces,
+
+431
+00:32:15,210 --> 00:32:18,780
+octopods dividing it into eight and so on, with
+
+432
+00:32:18,780 --> 00:32:24,270
+any possible orientation that leads to looking at
+
+433
+00:32:24,270 --> 00:32:28,830
+smaller scale fluctuations between those different
+
+434
+00:32:28,830 --> 00:32:33,640
+regions. So that's the connection shown here
+
+435
+00:32:33,640 --> 00:32:39,280
+between this so-called multiple moment and angular
+
+436
+00:32:39,280 --> 00:32:42,520
+scale where they see being plotted on the vertical
+
+437
+00:32:42,520 --> 00:32:48,340
+axis is a measure of that correlation between the
+
+438
+00:32:48,730 --> 00:32:51,490
+high and low temperature fluctuations at those
+
+439
+00:32:51,820 --> 00:32:56,540
+corresponding scales. And the data points are the
+
+440
+00:32:56,540 --> 00:33:01,900
+measurements that can be. Taken and extracted from.
+
+441
+00:33:04,340 --> 00:33:07,460
+Data going into those temperature fluctuation
+
+442
+00:33:07,760 --> 00:33:10,220
+pictures that we were that are in the notes and
+
+443
+00:33:10,220 --> 00:33:15,630
+we're flipping back and forth between. In the sort
+
+444
+00:33:15,630 --> 00:33:18,720
+of British curve that is overlaid on top of them
+
+445
+00:33:18,720 --> 00:33:21,870
+is the prediction of the much more complicated
+
+446
+00:33:22,110 --> 00:33:25,620
+calculation with something like six parameters of.
+
+447
+00:33:27,310 --> 00:33:31,780
+Exactly what sort of temperature fluctuations we
+
+448
+00:33:31,780 --> 00:33:35,320
+would expect on any given scale, following from
+
+449
+00:33:35,830 --> 00:33:39,040
+that calculation of how the photons of the cosmic
+
+450
+00:33:39,040 --> 00:33:45,910
+microwave background are. Interacting with all of
+
+451
+00:33:45,940 --> 00:33:49,610
+the the matter in the universe, both. Visible,
+
+452
+00:33:49,610 --> 00:33:54,400
+luminous matter like atoms. And all of the
+
+453
+00:33:54,400 --> 00:33:57,700
+materials that we're familiar with, as well as
+
+454
+00:33:59,030 --> 00:34:02,520
+these potentially dark matter. And in particular,
+
+455
+00:34:02,850 --> 00:34:06,060
+where dark matter comes into this calculation,
+
+456
+00:34:06,270 --> 00:34:13,720
+though, sorry that I can't draw. Drawn onto. On
+
+457
+00:34:13,770 --> 00:34:18,150
+this picture, but the amount of dark matter is
+
+458
+00:34:18,150 --> 00:34:22,380
+most clearly seen in the relative heights of the
+
+459
+00:34:22,380 --> 00:34:27,590
+second and third peaks around this multiple moment,
+
+460
+00:34:27,600 --> 00:34:30,570
+five hundred and eight hundred, respectively,
+
+461
+00:34:30,570 --> 00:34:34,530
+angular scales of point four degrees versus about
+
+462
+00:34:34,540 --> 00:34:36,840
+point to five degrees where?
+
+463
+00:34:39,020 --> 00:34:41,990
+The the dark matter is the main reason that that
+
+464
+00:34:41,990 --> 00:34:48,850
+third. Peek in this plot is as large or as high
+
+465
+00:34:48,970 --> 00:34:52,180
+vertically as the second piece, which is easier to
+
+466
+00:34:52,180 --> 00:34:53,950
+see in a slightly more recent
+
+467
+00:34:56,470 --> 00:35:00,940
+figure here. I can zoom in just a bit. So this is
+
+468
+00:35:00,940 --> 00:35:03,910
+putting a little bit more recent data from two
+
+469
+00:35:03,910 --> 00:35:06,940
+thousand nine rather than two thousand six.
+
+470
+00:35:08,500 --> 00:35:10,750
+Slightly different scales, but still that same
+
+471
+00:35:11,980 --> 00:35:15,130
+correlation between the temperature fluctuations
+
+472
+00:35:15,130 --> 00:35:17,890
+of the cosmic microwave background at different
+
+473
+00:35:17,890 --> 00:35:22,570
+angular scales in the sky. And here that data is
+
+474
+00:35:22,570 --> 00:35:27,310
+being fit to two different predictions in two
+
+475
+00:35:27,310 --> 00:35:33,340
+different calculations shown by a dotted line and
+
+476
+00:35:33,340 --> 00:35:37,900
+a solid line. Where the cell phone line is what
+
+477
+00:35:37,900 --> 00:35:40,870
+would be predicted if there were no dark matter in
+
+478
+00:35:40,870 --> 00:35:45,810
+the universe. And the dotted line is the
+
+479
+00:35:45,810 --> 00:35:52,350
+prediction if if there is dark matter and. We can
+
+480
+00:35:52,350 --> 00:35:58,200
+take away from this plot is that the data really
+
+481
+00:35:58,200 --> 00:36:01,260
+demand the existence of dark matter in a
+
+482
+00:36:01,260 --> 00:36:04,560
+particular, we can see that in that third peak,
+
+483
+00:36:04,560 --> 00:36:08,640
+around 800 or L equals eight hundred and eight
+
+484
+00:36:08,640 --> 00:36:11,610
+hundred multiple moments on the horizontal axis,
+
+485
+00:36:12,360 --> 00:36:16,860
+which is where the difference between the dotted
+
+486
+00:36:16,860 --> 00:36:20,830
+and solid curves is most significant and easiest
+
+487
+00:36:20,830 --> 00:36:26,560
+to see. There is a much better description of the
+
+488
+00:36:26,860 --> 00:36:31,480
+data being provided by the hypothesis of dark
+
+489
+00:36:31,480 --> 00:36:37,030
+matter, which is just one piece of evidence
+
+490
+00:36:38,980 --> 00:36:41,320
+establishing the existence of dark matter, though
+
+491
+00:36:41,800 --> 00:36:45,250
+possibly the the most solid piece of evidence and
+
+492
+00:36:45,250 --> 00:36:50,660
+the evidence that is. Most difficult to to get
+
+493
+00:36:50,660 --> 00:36:54,740
+around by supposing that gravity might behave
+
+494
+00:36:54,740 --> 00:36:58,490
+differently than than we observe, which is an
+
+495
+00:36:58,490 --> 00:37:01,940
+argument that was carried out in the 80s and 90s
+
+496
+00:37:02,540 --> 00:37:05,600
+when the existence of dark matter was first being
+
+497
+00:37:05,600 --> 00:37:09,110
+established. So that is.
+
+498
+00:37:11,160 --> 00:37:14,550
+The connection of the cosmic microwave background
+
+499
+00:37:15,270 --> 00:37:19,800
+and of and the work we are doing on quantum gases
+
+500
+00:37:19,800 --> 00:37:25,830
+of photons to. Some hot topics in modern physics,
+
+501
+00:37:25,830 --> 00:37:32,020
+like the. Existence of dark matter. Pause again
+
+502
+00:37:32,020 --> 00:37:35,980
+briefly just to check if any questions have come
+
+503
+00:37:35,980 --> 00:37:38,500
+in, what we've gone through, that which does get
+
+504
+00:37:38,500 --> 00:37:39,130
+us through.
+
+505
+00:37:42,570 --> 00:37:48,750
+All of the. Photon gas material from the from week
+
+506
+00:37:48,750 --> 00:37:49,830
+eight in the module.
+
+507
+00:38:01,180 --> 00:38:01,840
+And.
+
+508
+00:38:05,080 --> 00:38:08,890
+Since let's see, I'm looking at the time and not
+
+509
+00:38:08,890 --> 00:38:13,600
+seeing questions, and I think there is time that
+
+510
+00:38:13,600 --> 00:38:14,140
+we can.
+
+511
+00:38:18,170 --> 00:38:22,230
+If you just get into a bit about fermions, the end
+
+512
+00:38:22,230 --> 00:38:27,510
+of today and even before that, there's one last
+
+513
+00:38:27,510 --> 00:38:30,690
+topic that I was tempted to include in the
+
+514
+00:38:31,410 --> 00:38:36,870
+materials for for the module, but left out because
+
+515
+00:38:36,870 --> 00:38:41,830
+it is, again, a. A more complicated calculation,
+
+516
+00:38:41,830 --> 00:38:44,170
+though, possibly a more interesting one than the
+
+517
+00:38:44,170 --> 00:38:49,320
+photon gas, which is what happens if we have. Non
+
+518
+00:38:49,320 --> 00:38:53,370
+relativistic gases of those zones, and in
+
+519
+00:38:53,370 --> 00:38:57,120
+particular at low temperatures where those non
+
+520
+00:38:57,120 --> 00:38:59,940
+relativistic gases would differ from their
+
+521
+00:38:59,940 --> 00:39:03,210
+behavior, would differ from the classical case
+
+522
+00:39:03,210 --> 00:39:07,230
+that we considered back in in week four before the
+
+523
+00:39:07,230 --> 00:39:10,140
+break. And.
+
+524
+00:39:13,800 --> 00:39:17,520
+There's really a fascinating phenomenon that
+
+525
+00:39:17,520 --> 00:39:23,190
+occurs in. Non relativistic losen gases at low
+
+526
+00:39:23,190 --> 00:39:26,670
+temperature at the cost of a much more complicated
+
+527
+00:39:26,670 --> 00:39:31,050
+calculation, when we are not able to approximate
+
+528
+00:39:31,050 --> 00:39:35,130
+the chemical potential as varnishing and have to
+
+529
+00:39:36,450 --> 00:39:40,500
+carry out the full calculation of inaugural's
+
+530
+00:39:40,500 --> 00:39:45,570
+mustard gas with a a non-zero chemical potential.
+
+531
+00:39:46,230 --> 00:39:49,380
+This is this phenomenon is known as those Einstein
+
+532
+00:39:49,380 --> 00:39:53,550
+carbonisation, as the name suggests. It follows
+
+533
+00:39:53,550 --> 00:39:56,790
+from those Einstein statistics and was first
+
+534
+00:39:57,210 --> 00:40:00,690
+predicted by Einstein building on the work of
+
+535
+00:40:00,690 --> 00:40:05,100
+those in the 1920s. And it took a good 70 years
+
+536
+00:40:05,100 --> 00:40:09,390
+for technology to advance sufficiently to get
+
+537
+00:40:09,390 --> 00:40:11,490
+temperatures low enough that both Einstein
+
+538
+00:40:11,490 --> 00:40:17,040
+condensation could be observed. Experimentally in
+
+539
+00:40:17,040 --> 00:40:19,290
+a an atomic physics lab.
+
+540
+00:40:21,300 --> 00:40:24,600
+And that was very promptly rewarded with the Nobel
+
+541
+00:40:24,600 --> 00:40:31,140
+Prize in 2001. And this video that I will try to.
+
+542
+00:40:32,220 --> 00:40:34,620
+Broadcast over Zoome will see.
+
+543
+00:40:37,210 --> 00:40:39,700
+How it's picked up and transmitted, but that video
+
+544
+00:40:40,210 --> 00:40:46,610
+is. Illustration of what's going on with those and
+
+545
+00:40:46,610 --> 00:40:51,900
+condensation. Just lasting about a minute and
+
+546
+00:40:51,900 --> 00:40:52,440
+showing.
+
+547
+00:40:54,700 --> 00:40:58,180
+Both the quantize energy levels and their
+
+548
+00:40:58,180 --> 00:41:04,540
+occupation numbers as or for a gas of those arms
+
+549
+00:41:04,720 --> 00:41:08,890
+and how those occupation numbers tend to depend on
+
+550
+00:41:09,610 --> 00:41:14,440
+the temperature when we have a non relativistic.
+
+551
+00:41:15,470 --> 00:41:18,500
+Relation between the energy and momentum of these
+
+552
+00:41:18,500 --> 00:41:23,130
+particles. And as the temperature lowers,
+
+553
+00:41:23,130 --> 00:41:27,870
+gradually, the energy levels that the bosons are
+
+554
+00:41:27,870 --> 00:41:32,940
+able to populate become a lower and lower and
+
+555
+00:41:33,240 --> 00:41:36,810
+eventually at very low temperatures. All of this
+
+556
+00:41:36,810 --> 00:41:41,010
+goes on to form a new state of matter, all
+
+557
+00:41:41,010 --> 00:41:44,730
+populating that lowest energy level and behaving.
+
+558
+00:41:45,740 --> 00:41:49,760
+As a single collective quantum wave, as
+
+559
+00:41:49,760 --> 00:41:50,690
+illustrated here.
+
+560
+00:41:52,920 --> 00:41:58,100
+So sorry to add, there is the link where that full
+
+561
+00:41:58,110 --> 00:42:01,980
+video can be found, and hopefully it wasn't too
+
+562
+00:42:01,980 --> 00:42:07,740
+distracting for me to talk over the subtitles that
+
+563
+00:42:07,740 --> 00:42:12,850
+it was showing from the. And so how to get out of
+
+564
+00:42:12,850 --> 00:42:18,340
+that full screen? And back to another window.
+
+565
+00:42:21,120 --> 00:42:24,780
+So what are the so those kind of candidates have
+
+566
+00:42:24,780 --> 00:42:31,750
+many remarkable features. I'll just highlight. To
+
+567
+00:42:32,980 --> 00:42:39,020
+one of which being that. That transition from the
+
+568
+00:42:39,830 --> 00:42:44,210
+gas of not interacting particles, the sort of
+
+569
+00:42:44,210 --> 00:42:46,910
+ideal gas that we've been considering through this
+
+570
+00:42:46,910 --> 00:42:51,260
+module, that makes all the calculations especially
+
+571
+00:42:51,260 --> 00:42:55,430
+simple when that gas of separate nondrinking
+
+572
+00:42:55,430 --> 00:43:01,110
+particles changes to a. Single collective
+
+573
+00:43:01,110 --> 00:43:04,380
+wavefunction that really is what's known as a
+
+574
+00:43:04,380 --> 00:43:08,190
+phase transition, a change in the state of matter
+
+575
+00:43:08,550 --> 00:43:11,820
+of those particles, sort of similar to water
+
+576
+00:43:11,820 --> 00:43:15,210
+changing into ice. And this is reflected by.
+
+577
+00:43:17,250 --> 00:43:22,080
+Discontinuities and non Atlantis's in quantities
+
+578
+00:43:22,080 --> 00:43:27,300
+like the heat capacity, which is shown here in so
+
+579
+00:43:27,340 --> 00:43:29,970
+is David Tonguç lecture notes that go through the
+
+580
+00:43:30,660 --> 00:43:33,000
+more complicated calculation of the density of
+
+581
+00:43:33,000 --> 00:43:35,460
+states that has to be carried out.
+
+582
+00:43:37,570 --> 00:43:41,020
+In order to predict this sort of behavior, but the.
+
+583
+00:43:44,710 --> 00:43:47,200
+The cusp of the peak that is shown in the heat
+
+584
+00:43:47,200 --> 00:43:51,220
+capacity at this critical temperature, T.C., is
+
+585
+00:43:51,220 --> 00:43:54,820
+the characteristic feature of a phase transition,
+
+586
+00:43:54,940 --> 00:43:58,120
+which we're going to get into on this week. But
+
+587
+00:43:58,120 --> 00:44:01,390
+next week after the bank holiday and usually phase
+
+588
+00:44:01,390 --> 00:44:06,450
+transitions require interactions between. The
+
+589
+00:44:06,450 --> 00:44:08,820
+particles in the system, those are some
+
+590
+00:44:08,820 --> 00:44:12,690
+condensation being really one of the unique
+
+591
+00:44:13,980 --> 00:44:18,030
+systems in which a non interacting theory is able
+
+592
+00:44:18,030 --> 00:44:20,790
+to show with this sort of phase transition. I can
+
+593
+00:44:20,790 --> 00:44:22,620
+also point out that at high temperatures in this
+
+594
+00:44:22,620 --> 00:44:27,660
+plot, as we go off to the right, which can't draw
+
+595
+00:44:27,750 --> 00:44:28,110
+on.
+
+596
+00:44:30,260 --> 00:44:33,530
+This window either see that the heat capacity
+
+597
+00:44:33,530 --> 00:44:39,260
+approaches, that three halves end, we computed for
+
+598
+00:44:39,860 --> 00:44:40,340
+the.
+
+599
+00:44:42,810 --> 00:44:46,530
+The classical unrealistic gas in week for.
+
+600
+00:44:48,810 --> 00:44:52,200
+And yet the last thing to say about those I
+
+601
+00:44:52,500 --> 00:44:56,190
+conversation is that while it was a real.
+
+602
+00:44:57,790 --> 00:45:02,980
+Technological breakthrough in in the mid 90s very
+
+603
+00:45:02,980 --> 00:45:06,700
+quickly became a routine experimental setup to
+
+604
+00:45:07,120 --> 00:45:11,140
+create a Bose Einstein condensate and use it for
+
+605
+00:45:11,140 --> 00:45:16,360
+all sorts of other purposes as a tool in ultra low
+
+606
+00:45:16,360 --> 00:45:20,530
+temperature physics labs, and in particular, a lot
+
+607
+00:45:20,530 --> 00:45:23,680
+of the applications of those those Einstein
+
+608
+00:45:23,680 --> 00:45:26,110
+concepts that are being created now in hundreds of
+
+609
+00:45:26,110 --> 00:45:32,740
+labs around the world is to serve as the basis for
+
+610
+00:45:33,070 --> 00:45:35,830
+for quantum computers or quantum simulating
+
+611
+00:45:35,830 --> 00:45:39,370
+machines, where those Einstein concept is created
+
+612
+00:45:39,370 --> 00:45:42,130
+and then it's quantum properties are manipulated
+
+613
+00:45:42,130 --> 00:45:46,090
+in order to do calculations and simulations.
+
+614
+00:45:48,440 --> 00:45:52,340
+So I guess, as usual, that discussion will
+
+615
+00:45:52,340 --> 00:45:55,610
+supplement on both our side conversation went on
+
+616
+00:45:56,330 --> 00:46:01,000
+longer than. I expected so I'm going to to wrap up
+
+617
+00:46:01,000 --> 00:46:05,680
+there and Thursday will be quantum is a fermions
+
+618
+00:46:06,070 --> 00:46:12,110
+from the start. And this is the last call for
+
+619
+00:46:13,280 --> 00:46:15,530
+questions today.
+
+620
+00:46:17,770 --> 00:46:20,750
+And if there aren't any of the next ministers who
+
+621
+00:46:20,950 --> 00:46:24,250
+will shut down the zoo meeting, extract that
+
+622
+00:46:24,250 --> 00:46:27,070
+recording and come back in about 10 minutes for
+
+623
+00:46:27,340 --> 00:46:28,570
+today's office hours.
