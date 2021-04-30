@@ -304,7 +304,7 @@ Here we will consider simple spin systems as introduced last week, contrasting t
 It's important to appreciate that the ``information'' discussed here is an intrinsic property of the system---what is \textit{knowable} about it in principle.
 It does not matter whether or not any observer actually knows this information; so long as it can possibly be known it will have an effect.
 
-\subsubsection{Distinguishable spins in a solid}
+\subsubsection{\label{sec:spin_chain}Distinguishable spins in a solid}
 We begin with the setup introduced last week: A system of $N$ spins arranged in a line, placed in an external magnetic field of strength $H$, and in thermodynamic equilibrium.
 We further specify that the spins are embedded in a solid material that fixes their positions and prevents them from moving.
 This allows them to be distinguished from one another: An observer can target an appropriate position in the solid to measure the corresponding spin.
@@ -322,7 +322,7 @@ In this process we can save some space by defining the dimensionless variable $x
 \begin{align}
   Z_D & = \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} e^{-\be E_i} = \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} \exp\left[-x \sum_{n = 1}^N s_n\right] \cr
       & = \sum_{s_1 = \pm 1} \cdots \sum_{s_N = \pm 1} e^{-x s_1} \cdots e^{-x s_N} = \left(\sum_{s_1 = \pm 1} e^{-x s_1}\right) \cdots \left(\sum_{s_N = \pm 1} e^{-x s_N}\right) \cr
-      & = \left(\sum_{s = \pm 1} e^{-x s}\right)^N = \left(e^x + e^{-x}\right)^N = \left[2\cosh\left(\be H\right)\right]^N,
+      & = \left(\sum_{s = \pm 1} e^{-x s}\right)^N = \left(e^x + e^{-x}\right)^N = \left[2\cosh\left(\be H\right)\right]^N, \label{eq:spin_part_func}
 \end{align}
 distributing the summations since all the spins are independent of each other.
 
