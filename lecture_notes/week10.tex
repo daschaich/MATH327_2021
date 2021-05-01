@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 10}
-\renewcommand{\moddate}{Last modified 30 Apr.~2021}
+\renewcommand{\moddate}{Last modified 1 May 2021}
 \setcounter{section}{10}
 \setcounter{subsection}{0}
 \phantomsection
@@ -100,7 +100,7 @@ The three-dimensional Ising model remains an open mathematical question, with no
 
 In this context, `solving' the Ising model means deriving a closed-form expression for its canonical partition function,
 \begin{equation*}
-  Z(\be, N, H) = \sum_{\left\{s_n\right\}} \exp\left[-\be E(s_n)\right] = \sum_{\left\{s_i\right\}} \exp\left[\be\sum_{(ij)} s_i s_j - \be H \sum_n s_n\right].
+  Z(\be, N, H) = \sum_{\left\{s_n\right\}} \exp\left[-\be E(s_n)\right] = \sum_{\left\{s_n\right\}} \exp\left[\be\sum_{(ij)} s_i s_j - \be H \sum_n s_n\right].
 \end{equation*}
 As in \secref{sec:spin_info}, the partition function sums over all possible spin configurations $\left\{s_n\right\}$, which amounts to a sum of $2^N$ exponential factors for $N$ spins, with $\cO(N)$ terms within each exponential.
 Now that the system is interacting, the partition function can no longer be factorized into $N$ identical two-term factors, making it extremely difficult to evaluate.
@@ -114,7 +114,115 @@ If we attempt `brute-force' numerical computation of every term in the partition
 % ------------------------------------------------------------------
 \subsection{Ising model phases and phase transition}
 Similarly to how we analyzed non-interacting spin systems in \secref{sec:spin_info}, we can simplify the Ising model by considering its behaviour in the limits of high and low temperatures.
+For another simplification, we will set $H = 0$ in this section, and consider
+\begin{align}
+  \label{eq:Ising_zero_field}
+  E & = -\sum_{(ij)} s_i s_j &
+  Z(\be, N) & = \sum_{\left\{s_n\right\}} \exp\left[\be\sum_{(ij)} s_i s_j\right].
+\end{align}
+We will see that the large-scale behaviour of the Ising model is qualitatively different at high temperatures compared to low temperatures.
+In other words, the system exhibits two distinct phases for different temperatures.
+This is a necessary but not sufficient condition for there to be a true phase transition---a priori, it is possible for there to be a gradual \textit{crossover} between these two phases, as opposed to a rapid transition.
+We will use the Ising model to more rigorously define what exactly constitutes a phase transition, and how this can be distinguished from a crossover.
 
+The Ising model partition function becomes extremely simple in the \textbf{high-temperature} limit $\be \to 0$.
+What is its asymptotic limit?
+\begin{mdframed}
+  $\displaystyle Z(\be = 0, N) = $ \\[50 pt]
+\end{mdframed}
+You should find a result identical to that for a micro-canonical system with energy $E = 0$, which is clearly non-interacting since $\De E_i = 0$.
+Every spin configuration is a different micro-state of the system, all with the same probability $p_i = 1 / 2^N$, as in \eq{eq:micro_equil}.
+
+Effectively, we are considering temperatures so high that the energy from \eq{eq:Ising_zero_field} is negligible for any spin configuration.
+Although the energy no longer distinguishes between different micro-states, we can define a quantity that continues to be sensitive to the details of the spin configuration.
+This is the \textbf{magnetization} $M = n_+ - n_-$, where we redefine $n_{\pm}$ to be the number of spins with value $\pm 1$, so that $N = n_+ + n_-$.\footnote{In week $2$ we defined $n_{\pm}$ based on spins' alignment with or against the external magnetic field, which no longer applies now that we have set $H = 0$.}
+It is convenient to normalize the total magnetization $M$ by the number of spins,
+\begin{equation}
+  |m| \equiv \frac{|M|}{N} = \frac{|n_+ - n_-|}{n_+ + n_-}
+\end{equation}
+so that $0 \leq |m| \leq 1$ for any value of $N$.
+
+Our task is now to determine the magnetization of the Ising model at high temperatures.
+Above we found that all spin configurations are equally probable in this regime, so $|m|$ will be determined by how likely it is for these micro-states to have a particular magnetization.
+For example, there are only two micro-states with $|m| = 1$, corresponding to $(n_+, n_-) = (N, 0)$ and $(0, N)$.
+In general, just as we saw in \eq{eq:spin_states}, there are
+\begin{equation*}
+  \binom{N}{n_+} = \binom{N}{n_-} = \frac{N!}{n_+! \; n_-!}
+\end{equation*}
+equally probable micro-states with a given $n_+ = N - n_-$.
+For large $N \gg 1$ this binomial coefficient is factorially peaked around
+\begin{equation*}
+  n_+ = n_- = \frac{1}{2} N \qquad \lra \qquad |m| = 0,
+\end{equation*}
+which defines a \textbf{disordered phase} with similar numbers of up- and down-pointing spins producing a small magnetization.
+In the so-called \textit{thermodynamic limit} $N \to \infty$, the magnetization in the disordered phase vanishes exactly, $|m| \to 0$.
+
+We now need to determine the magnetization in the \textbf{low-temperature} limit $\be \to \infty$.
+In this regime, as we saw in \secref{sec:spin_chain}, the Boltzmann factor $\exp\left[\be\sum_{(ij)} s_i s_j\right]$ makes it exponentially more likely for the system to adopt micro-states with lower energies.
+In particular, we can expect the ground state to determine the magnetization $|m|$ up to exponentially suppressed corrections from higher-energy excited states.
+With $H = 0$, the Ising model has two degenerate ground states corresponding to the two ways all the spins can be aligned with each other: $(n_+, n_-) = (N, 0)$ and $(0, N)$.
+What is the ground-state energy of the $N$-site Ising model in $d$ dimensions?
+\begin{mdframed}
+  $\displaystyle E_0 = -\sum_{(ij)} s_i s_j = $ \\[50 pt]
+\end{mdframed}
+
+As mentioned above, both of these degenerate ground states have the maximal magnetization $|m| = 1$.
+Let's check what effect the first excited state would have on the overall magnetization of the system.
+The first excited state involves negating (or `flipping') a single spin, corresponding to $(n_+, n_-) = (N - 1, 1)$ and $(1, N - 1)$.
+Because any one of the $N$ spins in the lattice could be flipped, the degeneracy of the first excited state grows with $N$:
+\begin{equation*}
+  \binom{N}{1} + \binom{N}{N - 1} = 2N.
+\end{equation*}
+At the same time, as $N$ increases the magnetization of each of these micro-states gets closer to that of the ground state,
+\begin{equation*}
+  |m| = \frac{N - 1}{N} = 1 - \frac{1}{N}.
+\end{equation*}
+The key factor is the probability for the system to be in any one of these micro-states, which depends on the energy of the first excited state, $E_1$.
+What is the first-excited-state energy of the $N$-site Ising model in $d$ dimensions?
+\begin{mdframed}
+  $\displaystyle E_1 = $ \\[100 pt]
+\end{mdframed}
+
+Let's put things together by computing the relative probability for the $d$-dimensional Ising model to be in its ground state with $|m| = 1$ compared to its first excited state with $|m| = 1 - \frac{1}{N}$, accounting for the different number of micro-states in each case:
+\begin{equation*}
+  \frac{p(E_0)}{p(E_1)} = \frac{2\cdot \exp\left[\be d\cdot N\right]}{2N\cdot \exp\left[\be \left(d\cdot N - 4d\right)\right]} = \frac{\exp\left[4\be d\right]}{N}.
+\end{equation*}
+For any fixed $N$, a sufficiently low temperature will cause the ground state to dominate.
+This defines an \textbf{ordered phase} in which essentially all spins are aligned in the same direction, producing a large magnetization $|m| = 1$.
+
+We have seen that the magnetization $|m|$ distinguishes between the high- and low-temperature behaviour of the $d$-dimensional Ising model.
+In the high-temperature disordered phase, the magnetization is small and $|m| \to 0$ in the thermodynamic limit $N \to \infty$.
+In the low-temperature ordered phase, the magnetization is large and $|m| \to 1$ as $T \to 0$.
+This is typical behaviour for interacting statistical systems, where the quantity distinguishing between these two phases (here the magnetization) is known as the \textbf{order parameter}.
+The behaviour of the order parameter is what distinguishes gradual crossovers from rapid phase transitions.
+
+\begin{shaded}
+  A phase transition is characterized by a discontinuity in the order parameter or its derivative(s), in the $N \to \infty$ thermodynamic limit.
+  The value(s) of the control parameter(s) at which the discontinuity occurs define the \textit{critical point} corresponding to the transition.
+\end{shaded}
+
+For the zero-field ($H = 0$) Ising model, the control parameter is the temperature $T$, and any phase transition would occur at a \textbf{critical temperature} $T_C$.
+The sketches below illustrate the most common types of phase transitions.
+When the order parameter (OP) itself is discontinuous (shown by a dashed line), the transition is said to be a \textit{first-order} phase transition.
+When the order parameter is continuous at $T_C$ but its first derivative is discontinuous, the transition is said to be a \textit{second-order} phase transition.
+This naming scheme generalizes to higher-order phase transitions, the most remarkable of which is the infinite-order BKT phase transition (named after \href{https://en.wikipedia.org/wiki/Vadim_Berezinskii}{Vadim Berezinskii}, \href{https://en.wikipedia.org/wiki/J._Michael_Kosterlitz}{J.\ Michael Kosterlitz} and \href{https://en.wikipedia.org/wiki/David_J._Thouless}{David Thouless}), which was awarded the 2016 Nobel Prize in Physics.
+
+\begin{center}\includegraphics[width=0.8\textwidth]{figs/week10_transitions.pdf}\end{center}
+
+Because true discontinuities are only possible with an infinite number of degrees of freedom, it is really the way in which the system approaches the $N \to \infty$ thermodynamic limit that distinguishes crossovers from true phase transitions.
+We will conclude this week's consideration of the Ising model by checking its order parameter for discontinuities---explicitly in the simple one-dimensional case, and then through a useful approximation that becomes more reliable as $d$ increases.
+
+\vspace{48 pt}
+\begin{center}\textbf{More information about phase transitions \\ and the mean-field approximation will be added over the weekend.}\end{center}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\newpage
+\subsection{Solving the one-dimensional Ising model}
+% Dropping one link from periodic BCs leaves things not quite exact for finite $N$, but much more straightforward...
+% Section~5.3.1 of David Tong's \href{https://www.damtp.cam.ac.uk/user/tong/statphys.html}{\textit{Lectures on Statistical Physics}} (reference~1 in the list of further reading on page~6) presents the exact calculation.
 
 \TODO{Being written...}
 % ------------------------------------------------------------------
@@ -124,16 +232,8 @@ Similarly to how we analyzed non-interacting spin systems in \secref{sec:spin_in
 % ------------------------------------------------------------------
 \newpage
 \subsection{The mean-field approximation}
-
-\TODO{Being written...}
-% ------------------------------------------------------------------
-
-
-
-% ------------------------------------------------------------------
-\newpage
-\subsection{\TODO{Universality...}}
-% TODO: Wilson, Kadanoff...
+% $\De E_i$ from first gap above...
+% TODO: Skip straight to Tong's derivation...
 
 \TODO{Being written...}
 % ------------------------------------------------------------------
