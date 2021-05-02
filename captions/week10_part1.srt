@@ -1,0 +1,1123 @@
+1
+00:00:02,160 --> 00:00:05,400
+Hello and welcome back to Statistical Physics.
+
+2
+00:00:05,610 --> 00:00:10,410
+This is the first video for week 10 in the module,
+
+3
+00:00:10,410 --> 00:00:14,010
+providing a brief summary of the context,
+
+4
+00:00:14,010 --> 00:00:16,710
+motivations and key learning outcomes for this
+
+5
+00:00:16,710 --> 00:00:19,980
+week's material on interacting systems, which I
+
+6
+00:00:19,980 --> 00:00:25,080
+will bring up onto the screen, starting with just
+
+7
+00:00:25,080 --> 00:00:27,720
+a brief orientation, because getting to the point
+
+8
+00:00:27,720 --> 00:00:32,940
+that there's not too much left to to go through in
+
+9
+00:00:32,940 --> 00:00:38,730
+this module, interacting systems is the last. Big
+
+10
+00:00:38,730 --> 00:00:45,600
+topic building on the concepts, tools and
+
+11
+00:00:45,600 --> 00:00:48,120
+understanding that we have developed for
+
+12
+00:00:48,150 --> 00:00:52,020
+statistical systems over the previous nine weeks
+
+13
+00:00:52,020 --> 00:00:55,020
+of the course, looking at simplified systems that
+
+14
+00:00:55,020 --> 00:00:58,290
+consist of constituent particles that do not
+
+15
+00:00:58,290 --> 00:01:02,760
+interact with each other. So I've already said a
+
+16
+00:01:02,760 --> 00:01:05,910
+few times, but it's no harm in reiterating that
+
+17
+00:01:06,330 --> 00:01:11,280
+when the particles that compose a large scale
+
+18
+00:01:11,280 --> 00:01:13,680
+statistical system do not interact with each other,
+
+19
+00:01:13,950 --> 00:01:17,520
+enormous simplifications can result, which we've
+
+20
+00:01:17,520 --> 00:01:22,800
+seen even going back to week three on the
+
+21
+00:01:23,220 --> 00:01:24,510
+canonical ensemble.
+
+22
+00:01:26,830 --> 00:01:33,530
+How? With or in the absence of interactions, the
+
+23
+00:01:34,040 --> 00:01:37,760
+objects like the canonical partition function just
+
+24
+00:01:37,910 --> 00:01:41,990
+break up or factories into products of many
+
+25
+00:01:41,990 --> 00:01:45,020
+identical partition functions for each individual
+
+26
+00:01:45,020 --> 00:01:48,200
+product, which we only have to compute once and
+
+27
+00:01:48,200 --> 00:01:52,700
+are much easier to compute for one particle than
+
+28
+00:01:53,150 --> 00:01:56,240
+for a whole statistical ensembles worth of
+
+29
+00:01:56,240 --> 00:01:56,870
+particles.
+
+30
+00:01:59,720 --> 00:02:00,320
+Of course.
+
+31
+00:02:03,540 --> 00:02:06,990
+That's not interacting approximation, although it
+
+32
+00:02:07,380 --> 00:02:12,890
+can describe very well things like the the ferry
+
+33
+00:02:12,930 --> 00:02:16,020
+pressure that holds up white dwarf stars or the
+
+34
+00:02:16,020 --> 00:02:19,890
+spectrum of radiation emitted by the sun or by the
+
+35
+00:02:19,890 --> 00:02:22,770
+cosmic microwave background, it is still an
+
+36
+00:02:22,770 --> 00:02:26,790
+approximation to the real world in which objects
+
+37
+00:02:26,790 --> 00:02:29,880
+are able to interact with each other, is dancing
+
+38
+00:02:29,880 --> 00:02:31,830
+off each other rather than passing straight
+
+39
+00:02:31,830 --> 00:02:36,120
+through without realizing any other object is in
+
+40
+00:02:36,120 --> 00:02:40,590
+its way. And there are many important physical
+
+41
+00:02:40,590 --> 00:02:44,010
+phenomena that rely on the presence of
+
+42
+00:02:44,010 --> 00:02:48,560
+interactions. The one will be focusing on in in
+
+43
+00:02:48,810 --> 00:02:51,930
+this week's material is the concept of a phase
+
+44
+00:02:51,930 --> 00:02:55,290
+transition where systems composed of the same
+
+45
+00:02:55,290 --> 00:02:59,190
+particles can exhibit extremely different
+
+46
+00:02:59,190 --> 00:03:03,870
+Large-Scale behavior depending on the control
+
+47
+00:03:03,870 --> 00:03:07,320
+parameters that we've seen before, things like the
+
+48
+00:03:07,320 --> 00:03:08,400
+pressure and temperature
+
+49
+00:03:10,410 --> 00:03:13,410
+and depending on, say, the temperature, we can
+
+50
+00:03:13,410 --> 00:03:17,610
+have water molecules, H2O that behave like a
+
+51
+00:03:17,610 --> 00:03:22,020
+liquid of water or like a solid ice or even like a
+
+52
+00:03:22,020 --> 00:03:25,950
+gas in the form of steam. There are many other
+
+53
+00:03:25,950 --> 00:03:28,800
+examples ranging from the courts on plasma in the
+
+54
+00:03:28,800 --> 00:03:35,370
+early universe to Byler graphene in in physics
+
+55
+00:03:35,370 --> 00:03:38,700
+labs just down the road here, where there are
+
+56
+00:03:39,060 --> 00:03:42,750
+these transitions between two different types of
+
+57
+00:03:42,750 --> 00:03:44,550
+behavior in the case of graphene.
+
+58
+00:03:47,010 --> 00:03:49,140
+Electrical insulator that does not allow electric
+
+59
+00:03:49,140 --> 00:03:52,260
+field to flow versus a superconductor that allows
+
+60
+00:03:52,500 --> 00:03:55,500
+an electric field to flow with no electrical
+
+61
+00:03:55,500 --> 00:03:58,230
+resistance or no loss of energy in the form of
+
+62
+00:03:58,230 --> 00:04:04,320
+heat. And in all of these cases, the interactions
+
+63
+00:04:04,320 --> 00:04:07,890
+between the particles in these systems play a key
+
+64
+00:04:07,890 --> 00:04:13,160
+role. And we will. Get a grip on this with our
+
+65
+00:04:13,160 --> 00:04:16,040
+usual spin system that was introduced all the way
+
+66
+00:04:16,040 --> 00:04:21,770
+back in week three or week to even analyzing the
+
+67
+00:04:22,070 --> 00:04:25,610
+canonical ensemble in week three, where in the.
+
+68
+00:04:27,340 --> 00:04:31,540
+Not attract, in case we just had this expression,
+
+69
+00:04:31,540 --> 00:04:35,380
+for the energy of the system in an external field
+
+70
+00:04:35,830 --> 00:04:42,490
+of strength h where we will assume that all of the
+
+71
+00:04:42,880 --> 00:04:46,270
+spins are distinguishable by their location in a
+
+72
+00:04:46,270 --> 00:04:50,470
+fixed grid or a lattice such as the the two
+
+73
+00:04:50,470 --> 00:04:54,660
+dimensional lattice that is drawn here. We can
+
+74
+00:04:54,660 --> 00:04:59,250
+label each of these spins by its position and see
+
+75
+00:04:59,250 --> 00:05:03,930
+whether it is pointing upwards. We'll give a value
+
+76
+00:05:03,930 --> 00:05:06,300
+of plus one or pointing downwards, which
+
+77
+00:05:06,300 --> 00:05:08,970
+corresponds to a value of minus one. This is for a
+
+78
+00:05:08,970 --> 00:05:12,810
+two dimensional lattice and mathematically at
+
+79
+00:05:12,810 --> 00:05:16,140
+least, we can define a lattices of any dimension.
+
+80
+00:05:16,260 --> 00:05:21,270
+From zero to infinity, though, only one, two and
+
+81
+00:05:21,270 --> 00:05:23,730
+three dimensional lattices are physically
+
+82
+00:05:23,730 --> 00:05:26,730
+realizable in the three spatial dimensions that we
+
+83
+00:05:26,730 --> 00:05:33,170
+live in. So to get a start, we. Intuitively have
+
+84
+00:05:33,170 --> 00:05:35,000
+an understanding of what it means for particles
+
+85
+00:05:35,000 --> 00:05:36,770
+not to interact with each other, they don't even
+
+86
+00:05:37,070 --> 00:05:41,360
+realize each other, are there? We can put this on
+
+87
+00:05:41,360 --> 00:05:46,220
+a more rigorous mathematical footing by defining a
+
+88
+00:05:46,220 --> 00:05:49,700
+system to be not interacting. If the change in its
+
+89
+00:05:49,700 --> 00:05:53,270
+total energy that results from some change in one
+
+90
+00:05:53,270 --> 00:05:56,600
+particular degree of freedom is independent of all
+
+91
+00:05:56,600 --> 00:05:59,000
+of the other degrees of freedom in the system,
+
+92
+00:05:59,900 --> 00:06:04,760
+which is easy to check for. That system of and not
+
+93
+00:06:04,760 --> 00:06:07,850
+interacting spins the change in the energy upon
+
+94
+00:06:08,300 --> 00:06:11,480
+changing spin. I am the only possible way depends
+
+95
+00:06:11,480 --> 00:06:13,760
+only on speed. I am not from any of the others.
+
+96
+00:06:14,570 --> 00:06:18,290
+But if we add terms that multiply together two or
+
+97
+00:06:18,290 --> 00:06:23,590
+more spins. Then this will no longer be the case.
+
+98
+00:06:25,250 --> 00:06:27,650
+In the simplest possible interaction, given the
+
+99
+00:06:27,980 --> 00:06:33,200
+the lattice structure mentioned just above, is to
+
+100
+00:06:33,200 --> 00:06:37,420
+suppose that. Only pairs of spins can interact, so
+
+101
+00:06:37,420 --> 00:06:41,560
+there's there are no terms in the energy that have
+
+102
+00:06:41,560 --> 00:06:46,530
+more than two factors of s multiplied together,
+
+103
+00:06:46,960 --> 00:06:49,870
+and we also assume that spins interact only with
+
+104
+00:06:49,870 --> 00:06:54,000
+the spins that are closest to them in that fixed
+
+105
+00:06:54,010 --> 00:07:00,360
+structure of the lattice. So this defines a. So
+
+106
+00:07:00,410 --> 00:07:03,650
+called nearest neighbor Perre, which is maybe
+
+107
+00:07:03,650 --> 00:07:06,530
+easiest to get a handle on with some pictures,
+
+108
+00:07:06,530 --> 00:07:10,340
+where if we pick out one skin in a two dimensional
+
+109
+00:07:10,340 --> 00:07:16,150
+lattice, we can see that it has. For nearest
+
+110
+00:07:16,150 --> 00:07:18,760
+neighbors that are the same distance away from,
+
+111
+00:07:18,760 --> 00:07:22,570
+it's the next closest site after that is a route
+
+112
+00:07:22,570 --> 00:07:25,900
+to factor further away, about 40 percent along
+
+113
+00:07:25,900 --> 00:07:28,600
+that diagonal. And we can.
+
+114
+00:07:31,600 --> 00:07:34,690
+Take or introduced an accounting for these nearest
+
+115
+00:07:34,690 --> 00:07:38,650
+neighbors by defining what are called links that
+
+116
+00:07:38,650 --> 00:07:42,820
+connect these nearest neighbor pairs of so-called
+
+117
+00:07:42,820 --> 00:07:48,040
+sites where the spin degrees of freedom live. And
+
+118
+00:07:48,040 --> 00:07:51,190
+there are similar concepts like placates or cubes
+
+119
+00:07:51,190 --> 00:07:56,670
+for two or three dimensional human cells. With a
+
+120
+00:07:56,670 --> 00:07:58,650
+bit of accounting.
+
+121
+00:08:00,890 --> 00:08:06,680
+We can figure out how many terms there are in the.
+
+122
+00:08:07,940 --> 00:08:11,960
+Energy, we have generalize here to include a
+
+123
+00:08:11,990 --> 00:08:15,410
+nearest neighbor, sphincter interaction, and in
+
+124
+00:08:15,410 --> 00:08:15,910
+this it's.
+
+125
+00:08:18,030 --> 00:08:20,610
+A simplification is provided by imagining that the
+
+126
+00:08:20,610 --> 00:08:27,180
+Latisse is. Connected to itself along its edges
+
+127
+00:08:27,180 --> 00:08:30,750
+are glued together. You could say similarly to
+
+128
+00:08:31,050 --> 00:08:33,660
+that old video game, Pacman. I'm sure many other
+
+129
+00:08:33,990 --> 00:08:36,990
+video games where if you run off one side of the
+
+130
+00:08:36,990 --> 00:08:42,050
+screen, you just appear. At the same height on the
+
+131
+00:08:42,050 --> 00:08:45,740
+other side of the screen in this corresponds to
+
+132
+00:08:46,280 --> 00:08:49,910
+introducing extra links between the sites that one
+
+133
+00:08:49,910 --> 00:08:53,750
+edge connected to the sites of the other edge,
+
+134
+00:08:53,750 --> 00:08:57,260
+that these sites are now considered themselves
+
+135
+00:08:57,260 --> 00:09:00,650
+nearest neighbors. All the sites are therefore the
+
+136
+00:09:00,650 --> 00:09:03,290
+same. You don't have to worry about whether or not
+
+137
+00:09:03,290 --> 00:09:05,600
+they may be on the boundary. And it's easy to
+
+138
+00:09:05,600 --> 00:09:09,560
+count how many links there are in any number of
+
+139
+00:09:09,560 --> 00:09:12,530
+dimensions. And the only lattice structure we're
+
+140
+00:09:12,530 --> 00:09:17,030
+considering is the simple cubic lattice, which,
+
+141
+00:09:17,030 --> 00:09:20,450
+with periodic boundary conditions, is existing on
+
+142
+00:09:20,810 --> 00:09:24,050
+a dimensional hyperfocus, which is a top logically
+
+143
+00:09:24,050 --> 00:09:26,270
+flat surface that doesn't introduce any
+
+144
+00:09:26,270 --> 00:09:29,900
+complications itself. So with those
+
+145
+00:09:29,900 --> 00:09:32,960
+simplifications, we can just by inspecting this
+
+146
+00:09:32,960 --> 00:09:36,500
+picture, see that an instant system with periodic
+
+147
+00:09:36,500 --> 00:09:40,160
+boundary conditions in one dimension involves in
+
+148
+00:09:40,310 --> 00:09:43,760
+Linc's or in nearest neighbor pairs. That
+
+149
+00:09:43,760 --> 00:09:48,110
+increases to two and in two dimensions. And you
+
+150
+00:09:48,110 --> 00:09:51,740
+can work out the generalization to an arbitrary
+
+151
+00:09:52,130 --> 00:09:56,750
+number of dimensions. So this system is is known
+
+152
+00:09:56,750 --> 00:10:01,400
+as the easy model, which to my knowledge is the
+
+153
+00:10:01,640 --> 00:10:04,160
+simplest possible interacting system we can
+
+154
+00:10:04,160 --> 00:10:07,670
+consider. And in part for that reason, it has been
+
+155
+00:10:07,670 --> 00:10:11,870
+used and continues to be used in thousands of
+
+156
+00:10:11,870 --> 00:10:16,370
+scientific studies where the interactions matter.
+
+157
+00:10:16,730 --> 00:10:20,330
+But the interactions can be modeled just by this
+
+158
+00:10:20,540 --> 00:10:25,130
+simple nearest neighbor interaction of spin's. And
+
+159
+00:10:25,910 --> 00:10:26,720
+there is a.
+
+160
+00:10:29,460 --> 00:10:33,690
+Well, a story that I find very interesting
+
+161
+00:10:33,690 --> 00:10:37,260
+historically around the development and
+
+162
+00:10:37,920 --> 00:10:40,740
+understanding of this, this model, it was not
+
+163
+00:10:40,740 --> 00:10:46,320
+until really the 1960s that it was realized the
+
+164
+00:10:46,320 --> 00:10:50,010
+easy model could. Provide a very good
+
+165
+00:10:50,010 --> 00:10:54,240
+approximation to a vast array of systems, both
+
+166
+00:10:54,840 --> 00:10:58,530
+within and beyond mathematical sciences, including
+
+167
+00:10:58,530 --> 00:11:05,370
+things like social sciences and in biology, and
+
+168
+00:11:06,360 --> 00:11:11,730
+maybe as a reflection of. Or one aspect of this
+
+169
+00:11:11,730 --> 00:11:14,640
+history to take away is just how hard it is to
+
+170
+00:11:14,640 --> 00:11:18,690
+solve even such a simple system exactly in a
+
+171
+00:11:18,690 --> 00:11:21,990
+closed form expression. So this was in one
+
+172
+00:11:21,990 --> 00:11:24,180
+dimension. It's not so hard. It was done as a
+
+173
+00:11:24,740 --> 00:11:29,190
+project for the fellow or by the fellow using
+
+174
+00:11:29,880 --> 00:11:33,390
+whose name is now attached to the model. But the
+
+175
+00:11:33,920 --> 00:11:36,930
+the two dimensional solution, even in a simple
+
+176
+00:11:36,930 --> 00:11:39,300
+case for the external magnetic field, was turned
+
+177
+00:11:39,300 --> 00:11:43,020
+off and said to zero was not completed until the
+
+178
+00:11:43,020 --> 00:11:48,480
+1940s in work by Lawrence Einziger. That is
+
+179
+00:11:50,580 --> 00:11:54,210
+a famously difficult calculation and has not yet
+
+180
+00:11:54,720 --> 00:11:59,760
+and may be impossible to reproduce in of three to
+
+181
+00:11:59,850 --> 00:12:02,970
+three dimensions or higher numbers of dimensions.
+
+182
+00:12:05,040 --> 00:12:05,520
+Now.
+
+183
+00:12:08,090 --> 00:12:13,360
+Yeah, and. Another reflection of the difficulty of
+
+184
+00:12:13,600 --> 00:12:15,700
+solving these interacting systems is that now
+
+185
+00:12:15,910 --> 00:12:19,030
+instead of being able to consider a single spin
+
+186
+00:12:19,030 --> 00:12:22,030
+and then just multiply the resulting partition
+
+187
+00:12:22,030 --> 00:12:25,330
+function to get the overall partition function for
+
+188
+00:12:25,330 --> 00:12:29,080
+an instant system, that factorization is no longer
+
+189
+00:12:29,080 --> 00:12:33,160
+possible because of this quadratic term and spins.
+
+190
+00:12:33,610 --> 00:12:37,510
+And we have to really consider how many terms
+
+191
+00:12:37,510 --> 00:12:42,400
+there are in the partition function that sums over
+
+192
+00:12:42,400 --> 00:12:46,420
+all possible microstates, all of the possible ways
+
+193
+00:12:46,420 --> 00:12:52,510
+the end spins can be orientated. And if we try to
+
+194
+00:12:53,320 --> 00:12:55,690
+solve this numerically with the computer the way
+
+195
+00:12:55,690 --> 00:12:58,720
+you did for anomalous diffusion in your project.
+
+196
+00:12:59,940 --> 00:13:03,030
+You can pretty easily estimate that it would take
+
+197
+00:13:03,030 --> 00:13:06,540
+even for simple systems with hundreds or thousands
+
+198
+00:13:06,540 --> 00:13:11,850
+of of particles far below the typical number, ten
+
+199
+00:13:11,850 --> 00:13:14,760
+to the twenty three that shows up in any physical
+
+200
+00:13:14,760 --> 00:13:20,640
+systems, a calculation exactly. Evaluating this
+
+201
+00:13:20,640 --> 00:13:23,860
+partition function numerically on a modern
+
+202
+00:13:23,970 --> 00:13:27,180
+computer or indeed any computer that can possibly
+
+203
+00:13:27,270 --> 00:13:31,050
+be foreseen would take far longer than the age of
+
+204
+00:13:31,050 --> 00:13:36,690
+the universe. So rather than attempting a an exact
+
+205
+00:13:36,690 --> 00:13:41,400
+solution in our work for this week, we'll just
+
+206
+00:13:41,400 --> 00:13:47,710
+quickly consider the. Two limits, as we did in
+
+207
+00:13:47,710 --> 00:13:51,730
+week three of high and low temperature and at high
+
+208
+00:13:51,730 --> 00:13:57,370
+temperatures of the partition function is. Quite
+
+209
+00:13:57,370 --> 00:14:03,580
+easy to evaluate, and we find that every possible
+
+210
+00:14:03,580 --> 00:14:07,030
+micro state effectively has varnishing energy and
+
+211
+00:14:07,030 --> 00:14:11,250
+equal probability. So in order to distinguish
+
+212
+00:14:11,250 --> 00:14:15,570
+between those different micro states, which we can
+
+213
+00:14:15,570 --> 00:14:18,570
+no longer tell them apart by looking at their
+
+214
+00:14:18,570 --> 00:14:22,140
+energy, which is sort of invisible underneath the
+
+215
+00:14:22,680 --> 00:14:25,890
+the thermal effects of that high temperature, we
+
+216
+00:14:25,890 --> 00:14:28,680
+can look at the magnetization, which is the
+
+217
+00:14:28,680 --> 00:14:32,250
+difference between how many spins are pointing in
+
+218
+00:14:32,250 --> 00:14:36,000
+one direction versus how many are pointing in the
+
+219
+00:14:36,000 --> 00:14:38,490
+other direction. And if we normalize by the total
+
+220
+00:14:38,490 --> 00:14:41,370
+number of spins, that the magnetization is between
+
+221
+00:14:41,370 --> 00:14:44,790
+zero and one. So in the high-temperature phase,
+
+222
+00:14:46,140 --> 00:14:49,110
+because the all of the microstates are equally
+
+223
+00:14:49,110 --> 00:14:53,130
+probable and there are many more microstates with
+
+224
+00:14:53,880 --> 00:14:56,520
+approximately equal numbers of up and down
+
+225
+00:14:56,520 --> 00:15:00,960
+pointing spins, we predict that the magnetization
+
+226
+00:15:01,860 --> 00:15:05,670
+will vanish. And this is called a disordered phase,
+
+227
+00:15:05,670 --> 00:15:10,020
+reflecting that relatively equal number of up and
+
+228
+00:15:10,020 --> 00:15:12,660
+down putting spins which can be distributed
+
+229
+00:15:12,660 --> 00:15:16,280
+randomly or the disordered way throughout the the
+
+230
+00:15:16,650 --> 00:15:20,900
+lattice. And not surprisingly, in low temperatures,
+
+231
+00:15:21,380 --> 00:15:25,220
+we end up with a so-called order order phase, and
+
+232
+00:15:25,220 --> 00:15:28,970
+this is this follows from the sort of calculation
+
+233
+00:15:28,970 --> 00:15:32,870
+that we did in week three, looking at the low
+
+234
+00:15:32,870 --> 00:15:35,990
+energy ground states and the the first excited
+
+235
+00:15:35,990 --> 00:15:40,220
+states of these systems and seeing that the ground
+
+236
+00:15:40,220 --> 00:15:42,260
+states where all the spins are aligned and the
+
+237
+00:15:42,350 --> 00:15:46,370
+organization takes its maximum value, one is
+
+238
+00:15:47,030 --> 00:15:49,100
+dominant with only exponentially suppressed
+
+239
+00:15:49,100 --> 00:15:53,300
+effects coming in from excited states with with
+
+240
+00:15:53,300 --> 00:15:57,950
+higher energies and smaller monetizations. So
+
+241
+00:15:59,990 --> 00:16:05,780
+as the temperature changes from high to low, the
+
+242
+00:16:05,840 --> 00:16:08,480
+large scale system or the large scale behavior of
+
+243
+00:16:08,480 --> 00:16:11,360
+the system changes from being disordered with
+
+244
+00:16:11,360 --> 00:16:15,470
+varnishing magnetization to being ordered with a
+
+245
+00:16:16,670 --> 00:16:22,310
+nearly maximal magnetization, which identifies the
+
+246
+00:16:22,310 --> 00:16:25,100
+magnetization as what is known as an order
+
+247
+00:16:25,100 --> 00:16:29,660
+parameter distinguishing between the possible
+
+248
+00:16:29,660 --> 00:16:33,080
+phases of the system, whether it is disordered or
+
+249
+00:16:33,080 --> 00:16:33,740
+disordered.
+
+250
+00:16:40,450 --> 00:16:44,600
+It is. Possible for.
+
+251
+00:16:47,490 --> 00:16:52,370
+There to be. Two different or two distinct ways of
+
+252
+00:16:52,370 --> 00:16:55,490
+getting it from one of those phases to the other,
+
+253
+00:16:56,360 --> 00:16:58,760
+one of which is a bona fide hit phase transition
+
+254
+00:16:58,760 --> 00:17:02,600
+and the other of which is a a gradual and smooth
+
+255
+00:17:02,900 --> 00:17:08,540
+evolution that is is called a crossover in in the
+
+256
+00:17:08,540 --> 00:17:13,190
+lingo where the the rigorous definition of a phase
+
+257
+00:17:13,190 --> 00:17:16,010
+transition involves the appearance of a
+
+258
+00:17:16,010 --> 00:17:18,260
+discontinuity, either in the order parameter
+
+259
+00:17:18,260 --> 00:17:22,250
+itself or in derivatives of the order parameter
+
+260
+00:17:22,250 --> 00:17:26,870
+with respect to control parameters. In the case of
+
+261
+00:17:27,830 --> 00:17:31,190
+the using model, the only control parameter in the
+
+262
+00:17:31,380 --> 00:17:34,520
+zero field limit is the temperature in any phase,
+
+263
+00:17:34,520 --> 00:17:37,790
+transition with a discontinuity would occur at a
+
+264
+00:17:37,790 --> 00:17:39,230
+so-called critical temperature.
+
+265
+00:17:43,460 --> 00:17:48,450
+So the two. Most common types of face transitions
+
+266
+00:17:48,450 --> 00:17:52,050
+are known as first order and second order. We're
+
+267
+00:17:52,090 --> 00:17:54,040
+in a first sort of phase transition, the order
+
+268
+00:17:54,040 --> 00:17:58,180
+parameter itself is this is discontinuous at that
+
+269
+00:17:58,180 --> 00:18:00,370
+critical temperature with a.
+
+270
+00:18:02,480 --> 00:18:04,570
+Not varnishing jump happening
+
+271
+00:18:06,940 --> 00:18:09,490
+as the temperature passes through the critical
+
+272
+00:18:09,490 --> 00:18:12,460
+temperature to see a second order phase transition,
+
+273
+00:18:12,470 --> 00:18:16,060
+the order itself is continuous, but it has a kink
+
+274
+00:18:16,600 --> 00:18:20,260
+at the critical temperature that corresponds to a
+
+275
+00:18:20,380 --> 00:18:23,650
+discontinuity or a divergence in its first
+
+276
+00:18:23,650 --> 00:18:28,690
+derivative. And we will see in the next video,
+
+277
+00:18:28,690 --> 00:18:31,090
+which I suspect will be shorter than this one,
+
+278
+00:18:31,600 --> 00:18:32,200
+that.
+
+279
+00:18:35,590 --> 00:18:41,360
+The easy model. In two or more dimensions has
+
+280
+00:18:41,360 --> 00:18:44,150
+precisely this second order phase transition in
+
+281
+00:18:44,150 --> 00:18:46,820
+its order parameter of the magnetization.

@@ -1,0 +1,987 @@
+1
+00:00:01,880 --> 00:00:04,940
+Hello and welcome back to Statistical Physics.
+
+2
+00:00:04,970 --> 00:00:09,470
+This is the second video for week 10 wrapping up.
+
+3
+00:00:09,470 --> 00:00:13,280
+That's a brief summary of the context, motivations
+
+4
+00:00:13,280 --> 00:00:16,670
+and key of learning outcomes for interacting
+
+5
+00:00:16,670 --> 00:00:21,140
+systems and in particular, doing so more briefly
+
+6
+00:00:21,140 --> 00:00:23,810
+than the first video for this week, which went
+
+7
+00:00:24,530 --> 00:00:29,570
+significantly over the target of time. So without
+
+8
+00:00:29,570 --> 00:00:32,960
+further ado, we'll just pick right back up where
+
+9
+00:00:32,960 --> 00:00:35,750
+we were in this week's materials, having
+
+10
+00:00:35,750 --> 00:00:39,710
+introduced the mathematical definition of phase
+
+11
+00:00:39,710 --> 00:00:42,860
+transition and how it is distinguished from a a
+
+12
+00:00:42,890 --> 00:00:47,390
+smooth, gradual crossover by the existence of a
+
+13
+00:00:47,570 --> 00:00:52,280
+discontinuity in either the order parameter itself
+
+14
+00:00:52,280 --> 00:00:55,580
+that distinguishes the different large scale
+
+15
+00:00:55,580 --> 00:00:59,690
+phases of the system. Or in derivatives of that
+
+16
+00:00:59,690 --> 00:01:03,590
+order parameter with respect to the control
+
+17
+00:01:03,590 --> 00:01:06,080
+parameters. So in the case, the easy model, the
+
+18
+00:01:06,080 --> 00:01:10,250
+order parameter is the magnetization. And the
+
+19
+00:01:10,250 --> 00:01:13,640
+control parameter is the temperature, and when we
+
+20
+00:01:13,640 --> 00:01:17,270
+have a discontinuity in the order parameter in
+
+21
+00:01:17,270 --> 00:01:19,880
+general, that is known as a first order phase
+
+22
+00:01:19,880 --> 00:01:23,150
+transition, and we will see in the last section
+
+23
+00:01:23,150 --> 00:01:27,590
+for this week that in two or more dimensions, the
+
+24
+00:01:27,590 --> 00:01:30,560
+easy model has been said, a second order phase
+
+25
+00:01:30,560 --> 00:01:33,710
+transition where the order parameter itself is
+
+26
+00:01:33,710 --> 00:01:36,800
+continuous, but it has a kink where its first
+
+27
+00:01:36,800 --> 00:01:41,150
+derivative is is discontinuous, where divergence.
+
+28
+00:01:44,150 --> 00:01:48,230
+And we will we will figure this out, we will
+
+29
+00:01:48,380 --> 00:01:50,330
+establish that result by considering an
+
+30
+00:01:50,330 --> 00:01:53,570
+approximation that will allow us to get some
+
+31
+00:01:53,570 --> 00:01:58,370
+results for this interactive system where by
+
+32
+00:01:58,370 --> 00:02:00,800
+virtue of those interactions, the calculation
+
+33
+00:02:01,310 --> 00:02:04,610
+immediately becomes enormously more difficult than
+
+34
+00:02:05,150 --> 00:02:07,340
+the non distracting spend system we considered
+
+35
+00:02:08,180 --> 00:02:13,020
+back in weeks, two and three. And the starting
+
+36
+00:02:13,020 --> 00:02:14,520
+point for this is.
+
+37
+00:02:18,340 --> 00:02:21,010
+Noticing that the order parameter or the
+
+38
+00:02:21,010 --> 00:02:23,680
+magnetization is related to the order parameter is
+
+39
+00:02:23,680 --> 00:02:28,840
+just the average spin over all of the degrees of
+
+40
+00:02:28,840 --> 00:02:33,060
+freedom in the system. And if we take the
+
+41
+00:02:33,060 --> 00:02:36,690
+expectation value of this, every spin, we will
+
+42
+00:02:36,690 --> 00:02:42,870
+have Mison, this mean magnetization is the origin
+
+43
+00:02:42,870 --> 00:02:44,490
+of the meaning in the so-called Medfield
+
+44
+00:02:44,490 --> 00:02:47,280
+approximation, though, you don't need to worry too
+
+45
+00:02:47,280 --> 00:02:50,280
+much about that terminology, which is largely
+
+46
+00:02:50,640 --> 00:02:56,190
+historical. But the approach, the the way this
+
+47
+00:02:56,210 --> 00:02:59,910
+Medfield approximation works is to right. That
+
+48
+00:02:59,910 --> 00:03:03,390
+interaction term involving two factors of spins on
+
+49
+00:03:03,390 --> 00:03:08,160
+nearest neighbor sites in terms of fluctuations
+
+50
+00:03:08,160 --> 00:03:12,180
+about this constant mean. And we make the
+
+51
+00:03:12,180 --> 00:03:17,610
+approximation that for a system with a sufficient
+
+52
+00:03:17,610 --> 00:03:23,400
+number of particles sufficiently large n the
+
+53
+00:03:24,180 --> 00:03:27,490
+average fluctuations about the mean and.
+
+54
+00:03:28,460 --> 00:03:32,210
+Magnetization are going to be small, at least when
+
+55
+00:03:32,210 --> 00:03:35,720
+we sum over all of the links, all of the nearest
+
+56
+00:03:35,720 --> 00:03:42,020
+neighbor pairs in the lattice in the sun that
+
+57
+00:03:42,020 --> 00:03:45,590
+appears in the energy. The individual terms may
+
+58
+00:03:45,590 --> 00:03:48,170
+not be small from site to site, but something over
+
+59
+00:03:48,170 --> 00:03:52,910
+all sites can reliably approximate this
+
+60
+00:03:52,910 --> 00:03:57,020
+interaction term by dropping the quadratic piece
+
+61
+00:03:57,020 --> 00:04:00,500
+of two factors of this small quantity and keeping
+
+62
+00:04:00,500 --> 00:04:05,600
+something that is only linear in the spins in both
+
+63
+00:04:05,600 --> 00:04:08,660
+of these terms and the sum over the links and the
+
+64
+00:04:08,660 --> 00:04:12,890
+sum over the sites which can then be combined into
+
+65
+00:04:14,360 --> 00:04:17,180
+this form where.
+
+66
+00:04:19,960 --> 00:04:22,240
+There is a constant factor in the energy that
+
+67
+00:04:22,240 --> 00:04:26,170
+doesn't affect any expectation values and then the
+
+68
+00:04:26,440 --> 00:04:29,380
+same sort of some overspends with an effective
+
+69
+00:04:29,380 --> 00:04:32,870
+magnetic field. That depends on this mean spin,
+
+70
+00:04:32,950 --> 00:04:37,330
+the average magnetization, which is another aspect
+
+71
+00:04:37,330 --> 00:04:41,650
+of being fields being involved in this calculation.
+
+72
+00:04:41,700 --> 00:04:44,950
+And I should mention here that we didn't have to
+
+73
+00:04:44,950 --> 00:04:50,800
+have a slight change in the design convention for
+
+74
+00:04:50,800 --> 00:04:53,050
+the external magnetic field in order to keep it
+
+75
+00:04:53,050 --> 00:04:56,260
+consistent with the magnetization defined in the
+
+76
+00:04:56,260 --> 00:04:59,740
+previous section. So sorry for having to change
+
+77
+00:04:59,740 --> 00:05:03,610
+that on the fly for that relative negative side is
+
+78
+00:05:03,610 --> 00:05:06,010
+going to be easy to keep track of in these
+
+79
+00:05:06,010 --> 00:05:14,790
+calculations and with the. Energy cast into this
+
+80
+00:05:14,910 --> 00:05:19,740
+approximate form involving this average, this
+
+81
+00:05:19,740 --> 00:05:22,510
+effective field, depending on the mean
+
+82
+00:05:22,540 --> 00:05:26,220
+magnetization, the calculation is very much like
+
+83
+00:05:26,220 --> 00:05:29,730
+what we did back in week three and we can get the
+
+84
+00:05:29,730 --> 00:05:34,470
+corresponding protection function in terms of the
+
+85
+00:05:35,160 --> 00:05:37,470
+average, the expectation value of the
+
+86
+00:05:37,470 --> 00:05:42,350
+magnetization. Which appears both in an overall
+
+87
+00:05:42,350 --> 00:05:46,100
+exponential factor as well as in the hyperbolic
+
+88
+00:05:46,100 --> 00:05:49,520
+cosine to the power in that should look familiar
+
+89
+00:05:49,670 --> 00:05:51,620
+from the non interacting case
+
+90
+00:05:54,140 --> 00:06:00,210
+and. To get another handle on this expression, we
+
+91
+00:06:00,210 --> 00:06:04,050
+can take the usual derivative of the log of the
+
+92
+00:06:04,050 --> 00:06:07,170
+partition function so the derivative of the
+
+93
+00:06:07,170 --> 00:06:10,740
+elbow's free energy and considering just for a
+
+94
+00:06:10,740 --> 00:06:14,490
+moment, the fully using model with its interaction
+
+95
+00:06:14,490 --> 00:06:19,110
+restored, we can see that the total magnetization
+
+96
+00:06:19,110 --> 00:06:23,460
+sum over all and spin's appears in that energy
+
+97
+00:06:23,580 --> 00:06:28,200
+through its connection with the the average spin.
+
+98
+00:06:29,220 --> 00:06:31,890
+So taking the derivative of the Helmholtz free
+
+99
+00:06:31,890 --> 00:06:34,890
+energy with respect to that external magnetic
+
+100
+00:06:34,890 --> 00:06:40,380
+field. Gives us another relation between the
+
+101
+00:06:40,680 --> 00:06:45,250
+expectation value for the magnetization and the
+
+102
+00:06:46,470 --> 00:06:49,200
+the factors of that.
+
+103
+00:06:51,510 --> 00:06:55,110
+Expectation value that appear in the main field
+
+104
+00:06:55,110 --> 00:06:59,700
+partitioned function, and we end up with a still
+
+105
+00:06:59,700 --> 00:07:03,360
+non-trivial equation involving this expectation
+
+106
+00:07:03,360 --> 00:07:08,210
+value. Where because it appears on both sides, we
+
+107
+00:07:08,900 --> 00:07:13,760
+want to consider this as a condition of the
+
+108
+00:07:14,000 --> 00:07:17,140
+magnetization. That depending on the
+
+109
+00:07:17,140 --> 00:07:20,110
+dimensionality, these intercepts are data and
+
+110
+00:07:20,140 --> 00:07:23,920
+exterminate it feel each has to satisfy this
+
+111
+00:07:23,920 --> 00:07:27,040
+requirement in order to have a self-consistent
+
+112
+00:07:27,310 --> 00:07:30,790
+solution for the order parameter.
+
+113
+00:07:33,160 --> 00:07:34,000
+Now solving.
+
+114
+00:07:36,410 --> 00:07:38,600
+The self consistency condition is equivalent to
+
+115
+00:07:38,600 --> 00:07:42,650
+finding the roots of the difference between these
+
+116
+00:07:42,650 --> 00:07:45,560
+two functions. The expectation value that we're
+
+117
+00:07:45,560 --> 00:07:51,220
+after and this is hyperbolic tangent. And quick
+
+118
+00:07:51,220 --> 00:07:56,010
+and easy way to. To find those roots and see how
+
+119
+00:07:56,010 --> 00:07:59,970
+they behave is to look at the intersections of
+
+120
+00:08:00,000 --> 00:08:02,490
+these two functions on either side of the equals
+
+121
+00:08:02,490 --> 00:08:07,290
+sign plotted against the order parameter so that
+
+122
+00:08:08,040 --> 00:08:10,860
+that expectation value is just the constant
+
+123
+00:08:10,860 --> 00:08:14,580
+straight line with slope one. And this is how the
+
+124
+00:08:14,580 --> 00:08:18,000
+hyperbolic tangent looks, picking parameters so
+
+125
+00:08:18,000 --> 00:08:22,920
+that all the factors of BTD and age cancel out
+
+126
+00:08:23,190 --> 00:08:26,790
+here. And just in two dimensions for illustration.
+
+127
+00:08:27,790 --> 00:08:31,810
+And as we change the magnetic field H and the
+
+128
+00:08:31,810 --> 00:08:35,950
+inverse temperature beat up, of course, the
+
+129
+00:08:35,950 --> 00:08:38,260
+expectation value of M, the dotted line stays the
+
+130
+00:08:38,260 --> 00:08:41,650
+same, but the hyperbolic tangent gets shifted
+
+131
+00:08:41,650 --> 00:08:46,310
+around for different magnetic fields. Moving the
+
+132
+00:08:46,310 --> 00:08:51,170
+intersection from the point zero zero to non-zero
+
+133
+00:08:51,170 --> 00:08:54,470
+points in which the destines are all
+
+134
+00:08:55,010 --> 00:08:57,320
+preferentially aligning with that external
+
+135
+00:08:57,320 --> 00:09:02,300
+magnetic field, and if we decrease the temperature,
+
+136
+00:09:02,660 --> 00:09:07,270
+then. We see that the intersection moves even
+
+137
+00:09:07,270 --> 00:09:10,720
+closer to its limiting values out of one or minus
+
+138
+00:09:10,720 --> 00:09:14,770
+one, corresponding to the ordered phase discussed
+
+139
+00:09:14,770 --> 00:09:18,160
+in the previous video. I guess the most
+
+140
+00:09:18,160 --> 00:09:20,740
+interesting case is turning off that external
+
+141
+00:09:20,740 --> 00:09:23,200
+magnetic field and looking at a few different
+
+142
+00:09:23,200 --> 00:09:25,960
+temperatures from a low temperature and blue to a
+
+143
+00:09:25,960 --> 00:09:29,680
+high temperature in red, where the the low
+
+144
+00:09:29,680 --> 00:09:31,840
+temperature is the interesting one, because it has
+
+145
+00:09:31,840 --> 00:09:35,500
+three intersections with the expectation value of
+
+146
+00:09:35,500 --> 00:09:40,660
+the magnetization of the intersection at zero
+
+147
+00:09:40,810 --> 00:09:45,730
+magnetization. That could correspond to a
+
+148
+00:09:45,730 --> 00:09:49,420
+disordered phase, but also possible intersections
+
+149
+00:09:49,420 --> 00:09:49,840
+at
+
+150
+00:09:52,390 --> 00:09:57,190
+high and low values of the mechanisation. So some
+
+151
+00:09:57,190 --> 00:10:02,710
+plus or minus and not that. We could interpret as.
+
+152
+00:10:06,440 --> 00:10:12,100
+As a. Sign of an ordered phase developing
+
+153
+00:10:12,100 --> 00:10:14,770
+spontaneously, even in the absence of an external
+
+154
+00:10:14,770 --> 00:10:16,680
+magnetic field for
+
+155
+00:10:18,880 --> 00:10:24,280
+to guide the spin's alignment. And with just a
+
+156
+00:10:24,280 --> 00:10:26,620
+little reflection, we can see that in the low
+
+157
+00:10:26,630 --> 00:10:28,810
+temperature case with these three intersections,
+
+158
+00:10:29,560 --> 00:10:34,750
+the intersection at the point zero is unstable. If
+
+159
+00:10:34,750 --> 00:10:41,950
+we fluctuate just a little bit off of that point,
+
+160
+00:10:42,520 --> 00:10:45,340
+then looking here at the difference between those
+
+161
+00:10:45,340 --> 00:10:48,580
+two functions that we want to equal zero, we see
+
+162
+00:10:48,580 --> 00:10:54,130
+that when this difference is positive. That means
+
+163
+00:10:54,130 --> 00:10:57,280
+that's the magnetization which also appears on the
+
+164
+00:10:57,280 --> 00:11:01,480
+horizontal axis, is too small compared to the
+
+165
+00:11:01,630 --> 00:11:05,500
+hyperbolic tangent, and we want to push off to
+
+166
+00:11:05,500 --> 00:11:08,860
+higher values of the magnetization in order to
+
+167
+00:11:09,280 --> 00:11:10,210
+recover the.
+
+168
+00:11:12,550 --> 00:11:15,730
+The solution that we can identify with the ordered
+
+169
+00:11:15,730 --> 00:11:19,740
+phase, so just as we checked in the asymptotic
+
+170
+00:11:19,750 --> 00:11:22,810
+limits in the previous video, this Medfield
+
+171
+00:11:22,810 --> 00:11:23,800
+approximation.
+
+172
+00:11:26,690 --> 00:11:29,990
+Correctly predicts that at high temperatures, the
+
+173
+00:11:30,170 --> 00:11:32,960
+easy model is in a disordered phase, while at low
+
+174
+00:11:32,960 --> 00:11:36,740
+temperatures it is an ordered phase by considering
+
+175
+00:11:36,740 --> 00:11:43,780
+the slope of the hyperbolic tangent around. This
+
+176
+00:11:44,500 --> 00:11:48,220
+critical solution of mechanization equals zero,
+
+177
+00:11:48,800 --> 00:11:53,300
+you can determine the. The temperature at which
+
+178
+00:11:53,690 --> 00:11:57,380
+the zero solution becomes unstable and the ordered
+
+179
+00:11:57,380 --> 00:12:01,010
+phase solution develops and the question then is
+
+180
+00:12:01,580 --> 00:12:05,270
+whether or not there are any discontinuities at
+
+181
+00:12:05,270 --> 00:12:09,010
+that. At that temperature, which would make a true
+
+182
+00:12:09,430 --> 00:12:12,390
+critical temperature. So.
+
+183
+00:12:15,740 --> 00:12:17,810
+We can do this with one further approximation,
+
+184
+00:12:17,810 --> 00:12:20,300
+just truncating the expansion of the hyperbolic
+
+185
+00:12:20,300 --> 00:12:25,100
+tangent at Kubic Order, so dropping Firepower's.
+
+186
+00:12:26,910 --> 00:12:30,360
+And which is permissible when we consider values
+
+187
+00:12:30,360 --> 00:12:35,910
+of the temperature that are close to this TSI at
+
+188
+00:12:35,910 --> 00:12:39,660
+which the zero solution becomes unstable. But
+
+189
+00:12:39,660 --> 00:12:40,170
+still
+
+190
+00:12:42,370 --> 00:12:46,310
+still smaller than it so that the. As the value of
+
+191
+00:12:46,310 --> 00:12:49,040
+the magnetization is non-zero, but still very
+
+192
+00:12:49,040 --> 00:12:52,760
+small in the overall argument of the hyperbolic
+
+193
+00:12:52,760 --> 00:12:58,200
+tangents itself is therefore still. And a quick
+
+194
+00:12:58,200 --> 00:12:59,610
+calculation gives us.
+
+195
+00:13:02,030 --> 00:13:05,570
+An expression for the order parameter that depends
+
+196
+00:13:05,570 --> 00:13:09,830
+on the square root of the difference between the
+
+197
+00:13:09,830 --> 00:13:14,740
+temperature. And this this I'll start calling it
+
+198
+00:13:14,740 --> 00:13:17,560
+the critical temperature, see, because we can see
+
+199
+00:13:17,560 --> 00:13:23,890
+with a first derivative of this. Word parameter, a
+
+200
+00:13:24,190 --> 00:13:28,150
+quantity that diverges at the critical temperature
+
+201
+00:13:28,840 --> 00:13:31,270
+while the order parameter itself is continuous,
+
+202
+00:13:32,350 --> 00:13:36,400
+establishing a second order phase transition in
+
+203
+00:13:36,400 --> 00:13:37,990
+any number of dimensions.
+
+204
+00:13:40,040 --> 00:13:42,950
+Another interesting aspect of this prediction is
+
+205
+00:13:42,950 --> 00:13:45,950
+the the power dependence that shows up in the
+
+206
+00:13:45,950 --> 00:13:49,340
+order parameter of this factor of a half is known
+
+207
+00:13:49,340 --> 00:13:53,060
+as a critical exponent, which here the bean field
+
+208
+00:13:53,060 --> 00:13:56,990
+approximation predicts to be a half in again in
+
+209
+00:13:56,990 --> 00:14:00,110
+any number of dimensions, whereas the critical
+
+210
+00:14:00,110 --> 00:14:04,010
+temperature itself depends on the dimensionality
+
+211
+00:14:04,010 --> 00:14:07,280
+of the lattice moving to higher and higher
+
+212
+00:14:07,280 --> 00:14:11,720
+temperatures as the. Number of dimensions
+
+213
+00:14:11,720 --> 00:14:12,530
+increases.
+
+214
+00:14:14,860 --> 00:14:18,130
+In one dimensions, this result is completely wrong,
+
+215
+00:14:19,750 --> 00:14:24,040
+using his work in his PhD thesis in the 1920s
+
+216
+00:14:24,340 --> 00:14:27,640
+found that in one dimensions there is no phase
+
+217
+00:14:27,640 --> 00:14:32,250
+transition at all. But in two dimensions on
+
+218
+00:14:32,250 --> 00:14:35,340
+Secours exact solution, establish that there is
+
+219
+00:14:35,340 --> 00:14:37,920
+indeed a second order phase transition with a
+
+220
+00:14:37,920 --> 00:14:40,380
+temperature that's about a factor of two different
+
+221
+00:14:40,380 --> 00:14:42,570
+from what the battlefield approximation predicts
+
+222
+00:14:43,230 --> 00:14:47,010
+and a critical exponent. That's all that we get
+
+223
+00:14:47,010 --> 00:14:49,230
+rolling through the minefield approximation by a
+
+224
+00:14:49,230 --> 00:14:53,190
+factor of four. And as we go to higher and higher
+
+225
+00:14:53,190 --> 00:14:55,890
+dimensions, the agreement becomes better and
+
+226
+00:14:55,890 --> 00:14:59,580
+better with, in fact, exact agreement for the
+
+227
+00:14:59,580 --> 00:15:02,970
+critical exponents in four or greater dimensions
+
+228
+00:15:04,230 --> 00:15:04,800
+and
+
+229
+00:15:07,080 --> 00:15:09,240
+in fact, an exact agreement for the full solution
+
+230
+00:15:09,240 --> 00:15:12,510
+itself in the forward limit of an infinite number
+
+231
+00:15:12,510 --> 00:15:15,960
+of dimensions where the the Medfield approximation
+
+232
+00:15:15,960 --> 00:15:20,730
+becomes exact qualitatively because each spin has
+
+233
+00:15:20,730 --> 00:15:23,700
+an infinite number of nearest neighbors that allow
+
+234
+00:15:23,700 --> 00:15:27,720
+it to exactly feel the the expectation value.
+
+235
+00:15:29,750 --> 00:15:35,530
+Of all of those nearest neighbor spin's. And
+
+236
+00:15:35,710 --> 00:15:39,370
+because there is no known exact solution in three
+
+237
+00:15:39,370 --> 00:15:42,670
+or higher dimensions, these this minefield
+
+238
+00:15:42,670 --> 00:15:46,180
+approximation has to be compared with numerical
+
+239
+00:15:46,180 --> 00:15:50,240
+calculations, which were mentioned briefly in the
+
+240
+00:15:50,260 --> 00:15:51,160
+previous video.
+
+241
+00:15:53,600 --> 00:15:57,680
+Where I noted that a brute force solution with the
+
+242
+00:15:57,680 --> 00:16:00,110
+computer would take far longer than the age of the
+
+243
+00:16:00,110 --> 00:16:03,560
+universe. So next week is as part of a broader
+
+244
+00:16:03,560 --> 00:16:07,280
+application. We'll see some tricks that will allow
+
+245
+00:16:07,280 --> 00:16:10,550
+quite accurate results for critical temperatures
+
+246
+00:16:10,550 --> 00:16:14,600
+and critical exponents to be computed in a
+
+247
+00:16:14,600 --> 00:16:16,580
+reasonable amount of time.
