@@ -1,6 +1,6 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 10}
-\renewcommand{\moddate}{Last modified 2 May 2021}
+\renewcommand{\moddate}{Last modified 4 May 2021}
 \setcounter{section}{10}
 \setcounter{subsection}{0}
 \phantomsection
@@ -106,7 +106,6 @@ As in \secref{sec:spin_info}, the partition function sums over all possible spin
 Now that the system is interacting, the partition function can no longer be factorized into $N$ identical two-term factors, making it extremely difficult to evaluate.
 This is why there is no known exact solution to the three-dimensional Ising model, and it also makes `brute-force' numerical computations impractical.
 Even for a system of $N = 1023$ spins (tiny compared to Avogadro's number $\sim 10^{23}$) there would be roughly $2^{1023} \sim 10^{310}$ terms in the partition function, far beyond the capabilities of existing or foreseeable supercomputers.
-If we attempt `brute-force' numerical computation of every term in the partition function, even for a system of $N = 1023$ spins we would need to evaluate 
 % ------------------------------------------------------------------
 
 
@@ -125,6 +124,7 @@ In other words, the system exhibits two distinct phases for different temperatur
 This is a necessary but not sufficient condition for there to be a true phase transition---a priori, it is possible for there to be a gradual \textit{crossover} between these two phases, as opposed to a rapid transition.
 We will use the Ising model to more rigorously define what exactly constitutes a phase transition, and how this can be distinguished from a crossover.
 
+\newpage % WARNING: FORMATTING BY HAND
 The Ising model partition function becomes extremely simple in the \textbf{high-temperature} limit $\be \to 0$.
 What is its asymptotic limit?
 \begin{mdframed}
