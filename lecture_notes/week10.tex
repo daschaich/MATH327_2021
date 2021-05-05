@@ -6,7 +6,7 @@
 \phantomsection
 \addcontentsline{toc}{section}{Week 10: Interacting systems}
 \section*{Week 10: Interacting systems}
-\subsection{From non-interacting spins to the Ising model}
+\subsection{\label{sec:Ising}From non-interacting spins to the Ising model}
 So far in this module we have considered `ideal' systems whose constituent objects do not interact with each other.
 While we have seen that excellent mathematical models for real physical systems (such as stars and the cosmic microwave background) can be obtained despite this approximation of non-interacting particles, there are important statistical physics phenomena that cannot be captured by this approach.
 
@@ -111,7 +111,7 @@ Even for a system of $N = 1023$ spins (tiny compared to Avogadro's number $\sim 
 
 
 % ------------------------------------------------------------------
-\subsection{Ising model phases and phase transition}
+\subsection{\label{sec:Ising_phases}Ising model phases and phase transition}
 Similarly to how we analyzed non-interacting spin systems in \secref{sec:spin_info}, we can simplify the Ising model by considering its behaviour in the limits of high and low temperatures.
 For another simplification, we will set $H = 0$ in this section, and consider
 \begin{align}
@@ -217,7 +217,7 @@ We will conclude this week's consideration of interacting systems by developing 
 
 
 % ------------------------------------------------------------------
-\subsection{The mean-field approximation}
+\subsection{\label{sec:mean_field}The mean-field approximation}
 Looking back to \eq{eq:Ising_magnet}, we can identify the magnetization (with no absolute value) as the average spin,
 \begin{equation*}
   m = \frac{M}{N} = \frac{1}{N}\left(n_+ - n_-\right) = \frac{1}{N} \sum_{n = 1}^N s_n.
@@ -392,7 +392,7 @@ Onsager's exact $H = 0$ solution reveals a second-order phase transition, with i
 While the mean-field approach now provides the correct qualitative behaviour, its prediction $\be_c = \frac{1}{2d} = 0.25$ is off by almost a factor of $2$, while the mean-field critical exponent $b = 1 / 2$ is four times larger than the true $b = 1 / 8$.
 
 For higher dimensions $d \geq 3$ there is no known exact solution for the Ising model, but the existence of a second-order phase transition can be established, while the corresponding critical temperature and critical exponents can be computed numerically.
-In three dimensions the mean-field $T_c = 2d = 6$ and $b = 1 / 2$ are still only rough first approximations to the true $T_c \approx 4.5$ and $b \approx 0.32$. % From arXiv:1304.4110 and Tong
+In three dimensions the mean-field $T_c = 2d = 6$ and $b = 1 / 2$ are still only rough first approximations to the true $T_c \approx 4.5$ and $b \approx 0.32$. % From Tong and arXiv:1806.03558
 The mean-field prediction for the critical exponent $b = 1 / 2$ turns out to be correct for $d \geq 4$, while the critical temperature $T_c = 2d$ gradually approaches the true value as the number of dimensions increases.
 (Numerical computations find $T_c \approx 6.7$, $8.8$, $10.8$ and $12.9$ for $d = 4$, $5$, $6$ and $7$, respectively.) % From arXiv:1202.3031 and arXiv:1502.07613
 Formally, the mean-field approximation exactly reproduces the Ising model in the unphysical limit of infinite dimensions, $d \to \infty$.
