@@ -91,25 +91,37 @@ First, there is another important concept to introduce, called universality, whi
 
 % ------------------------------------------------------------------
 \subsection{Universality}
-In \secref{sec:mean_field} we defined the critical exponent $b$ as the power governing the behaviour of the order parameter $\vev{m} \propto \left(T_c - T\right)^b$ as the temperature $T$ approaches (from below) the critical temperature $T_c$ of the second-order phase transition.
-This quantity 
+In \secref{sec:mean_field} we defined the critical exponent $b$ as the power governing the behaviour of the order parameter $\vev{m} \propto \left(T_c - T\right)^b$ as the temperature $T$ approaches the critical temperature $T_c$ of the second-order phase transition.
+In addition to being an important feature characterizing any given phase transition, it was discovered during the twentieth century that precisely the same critical exponents turn out to govern the behaviour of phase transitions that we initially would not have expected to have any connection.
+For example, the critical exponent $b \approx 0.32$ for the three-dimensional Ising model magnetization mentioned last week also appears at the phase transition where an interacting (non-ideal) gas transforms into a liquid,
+\begin{align*}
+  \frac{1}{\rho_{\text{gas}}} - \frac{1}{\rho_{\text{liquid}}} & \propto \left(T_c - T\right)^b &
+  b & \approx 0.32,
+\end{align*}
+where $\rho$ is the density of the atoms, which are equal for the two phases at the transition.\footnote{We're not covering the liquid--gas transition in this module.  If you are curious about it, you can find a discussion in Section~5.1 of David Tong's \href{https://www.damtp.cam.ac.uk/user/tong/statphys.html}{\textit{Lectures on Statistical Physics}} (reference~1 in the list of further reading on page~6).}
 
-% TODO: 3d Ising model vs.\ liquid--gas...
-% TODO: \href{https://en.wikipedia.org/wiki/Leo_Kadanoff}{Leo Kadanoff} and \href{https://en.wikipedia.org/wiki/Kenneth_G._Wilson}{Ken Wilson}...
+This is not simply a numerical coincidence, but an example of an amazing phenomenon is known as \textbf{universality}.
+In essence, universality states that the specific details of interacting statistical systems become irrelevant close to critical points at which phase transitions occur.
+It doesn't matter whether we are considering a three-dimensional lattice of Ising spins or a liquid such as water---the behaviour of both systems is governed by the same set of critical exponents (known as their \textit{universality class}).
 
-\TODO{Being written...}
+The detailed mathematics underlying universality is well beyond the scope of this module.
+Important contributions to its development were made by \href{https://en.wikipedia.org/wiki/Leo_Kadanoff}{Leo Kadanoff} and \href{https://en.wikipedia.org/wiki/Kenneth_G._Wilson}{Ken Wilson}, among many others.
+The key point to take away is that universality causes the same large-scale behaviour to appear in the vicinity of critical points even for systems that initially may seem completely different.
+This independence of the details of the system helps to explain the power of even simple interacting statistical systems such as the Ising model, and their applicability in so many different domains.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{\label{sec:broad}Broader applications}
 \subsubsection*{Voter models}
+
+% phase transition (with a discontinuity in the large-$N$ limit) is possible once some opinion reaches a critical concentration
 
 \TODO{Being written...}
 
 \subsubsection*{Epidemiology}
+A particularly topical application of statistical physics is to model the spread of diseases in populations, something most of us may have seen in the news over the past fifteen months.
 % arXiv:2101.11399
 % similar to original 1953 calculation summarized on Schroeder page 347...
 
@@ -127,7 +139,7 @@ Larger-scale versions of these epidemiological model simulations provide importa
 
 % ------------------------------------------------------------------
 \newpage
-\subsection{Wrap-up recap}
+\subsection{Wrap-up recap and synthesis}
 
 \TODO{Being written...}
 % ------------------------------------------------------------------
