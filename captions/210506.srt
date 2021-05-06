@@ -1,0 +1,2443 @@
+1
+00:00:02,240 --> 00:00:05,930
+OK, the recording should be under way. Let's get going
+
+2
+00:00:05,930 --> 00:00:10,340
+with the final stretch for statistical physics now
+
+3
+00:00:10,340 --> 00:00:17,870
+that we are in May and diving into the the last
+
+4
+00:00:17,870 --> 00:00:20,090
+significant topic for the module, which is
+
+5
+00:00:20,510 --> 00:00:24,380
+interacting systems, but before I before we get
+
+6
+00:00:24,380 --> 00:00:29,960
+into that, let me pull up the usual
+
+7
+00:00:34,220 --> 00:00:38,540
+invitation for any questions that any of you may
+
+8
+00:00:38,540 --> 00:00:46,420
+have about. The material so far in the. In the
+
+9
+00:00:46,420 --> 00:00:49,360
+module either this week or previous weeks.
+
+10
+00:00:52,910 --> 00:00:53,560
+And.
+
+11
+00:00:56,900 --> 00:00:57,890
+As well, any.
+
+12
+00:01:00,890 --> 00:01:03,110
+Questions about other aspects of the module.
+
+13
+00:01:03,790 --> 00:01:06,230
+There's not too much logistics to deal with
+
+14
+00:01:06,230 --> 00:01:10,250
+anymore. The exam is coming up in about three
+
+15
+00:01:10,250 --> 00:01:13,520
+weeks on catching up with the marking that'll get
+
+16
+00:01:13,520 --> 00:01:14,180
+back to you
+
+17
+00:01:16,370 --> 00:01:19,730
+all next week, hopefully. Definitely has to be, do,
+
+18
+00:01:20,210 --> 00:01:22,460
+will be or definitely has to be done well before
+
+19
+00:01:22,460 --> 00:01:27,170
+the exam happens. And then it is just.
+
+20
+00:01:29,340 --> 00:01:32,140
+You know, going through exam preparation with some
+
+21
+00:01:32,140 --> 00:01:35,230
+additional sample questions and solutions being
+
+22
+00:01:35,230 --> 00:01:38,410
+provided in the last couple of weeks worth of
+
+23
+00:01:38,410 --> 00:01:42,730
+material on interacting statistical systems and
+
+24
+00:01:43,120 --> 00:01:44,590
+their broader applications.
+
+25
+00:01:50,600 --> 00:01:54,260
+And I'm just pausing for a moment to see if there
+
+26
+00:01:54,260 --> 00:01:58,610
+are any questions at the outset, which at any time
+
+27
+00:01:59,360 --> 00:02:05,800
+be free to. And they're hoping that poll or. Just
+
+28
+00:02:05,800 --> 00:02:10,120
+bring up. And zoom out loud or in the chat window.
+
+29
+00:02:14,330 --> 00:02:19,950
+Not seeing any so far, I will. Charge ahead with
+
+30
+00:02:19,950 --> 00:02:24,870
+the. The week 10 material, which is.
+
+31
+00:02:28,360 --> 00:02:31,840
+Taking what's really a significant step, that kind
+
+32
+00:02:31,840 --> 00:02:34,810
+of setting up. All of our work for.
+
+33
+00:02:37,310 --> 00:02:39,170
+Broader applications in the ways that this could
+
+34
+00:02:39,170 --> 00:02:45,200
+be built on in many directions where, as I've said
+
+35
+00:02:45,200 --> 00:02:47,750
+before, during the the bulk of the module, the
+
+36
+00:02:47,750 --> 00:02:51,380
+previous nine weeks, we've been making one
+
+37
+00:02:51,380 --> 00:02:54,980
+particular simplification in all of our work that
+
+38
+00:02:54,980 --> 00:02:59,630
+has been very significant. And that has been the
+
+39
+00:02:59,630 --> 00:03:02,120
+assumption that when we deal with these
+
+40
+00:03:02,120 --> 00:03:06,440
+statistical systems that consist of a large number
+
+41
+00:03:06,440 --> 00:03:11,270
+of underlying constituents, we have made the
+
+42
+00:03:11,270 --> 00:03:13,400
+assumption or the approximation that those
+
+43
+00:03:13,700 --> 00:03:16,760
+constituents do not interact with each other in
+
+44
+00:03:16,760 --> 00:03:19,490
+any significant way. And this is
+
+45
+00:03:21,650 --> 00:03:25,130
+this is the ideal part of the ideal gas that we
+
+46
+00:03:25,130 --> 00:03:29,030
+introduced all the way back in week four and was
+
+47
+00:03:29,030 --> 00:03:32,540
+also the future of, say, spin systems considered
+
+48
+00:03:32,990 --> 00:03:37,850
+even prior to that, where what this has allowed us
+
+49
+00:03:37,850 --> 00:03:42,500
+to do in both the classical and quantum context is
+
+50
+00:03:42,500 --> 00:03:46,130
+basically break up the overall calculation of
+
+51
+00:03:46,130 --> 00:03:48,920
+these 10 to the power of twenty three or however
+
+52
+00:03:48,920 --> 00:03:54,290
+many particles into just a single calculation for
+
+53
+00:03:54,290 --> 00:03:56,360
+a single particle to start interacting with the
+
+54
+00:03:56,360 --> 00:03:59,700
+others. And then we just essentially raise that to
+
+55
+00:03:59,700 --> 00:04:02,450
+the ten to the twenty three power. What I just
+
+56
+00:04:02,450 --> 00:04:05,450
+described is classical approach, but we saw that a
+
+57
+00:04:05,450 --> 00:04:13,010
+similar sort of factorization also occurs for the
+
+58
+00:04:13,010 --> 00:04:16,280
+quantum approach of considering energy levels and
+
+59
+00:04:16,280 --> 00:04:19,610
+occupation numbers rather than individual
+
+60
+00:04:19,610 --> 00:04:24,620
+particles, where in non interacting settings we
+
+61
+00:04:24,620 --> 00:04:28,880
+just end up with either a sum or a product over
+
+62
+00:04:28,910 --> 00:04:33,110
+those possible energy levels, depending on whether
+
+63
+00:04:33,110 --> 00:04:37,310
+we're considering the partition function or its
+
+64
+00:04:37,340 --> 00:04:38,870
+logarithm, the free energy.
+
+65
+00:04:41,220 --> 00:04:43,920
+And while we were able to do a lot of things with
+
+66
+00:04:43,920 --> 00:04:48,540
+monitoring systems ranging from heat engines to
+
+67
+00:04:48,960 --> 00:04:52,410
+the spectrum of heat and light from the sun and
+
+68
+00:04:52,410 --> 00:04:54,480
+from the cosmic microwave background, as well as
+
+69
+00:04:54,480 --> 00:05:00,740
+the Fairbury pressure that keeps. All stars from
+
+70
+00:05:00,860 --> 00:05:04,830
+collapsing in on themselves, there are. At least
+
+71
+00:05:04,830 --> 00:05:07,110
+some things that do require the kinds of
+
+72
+00:05:07,110 --> 00:05:11,810
+interactions that we encounter in. In our everyday
+
+73
+00:05:11,810 --> 00:05:16,220
+life where we don't simply pass through. All of
+
+74
+00:05:16,220 --> 00:05:17,920
+the materials that are able to touch them and
+
+75
+00:05:18,150 --> 00:05:23,540
+interact with them and the the class of examples
+
+76
+00:05:23,540 --> 00:05:28,900
+that is focused on. In. In this week and in this
+
+77
+00:05:28,900 --> 00:05:32,110
+module, the general is the phenomenon of phase
+
+78
+00:05:32,110 --> 00:05:36,010
+transitions where statistical systems that are
+
+79
+00:05:36,010 --> 00:05:40,950
+built up of exactly the same constituents. Behave
+
+80
+00:05:40,960 --> 00:05:45,190
+and qualitatively different ways, depending on.
+
+81
+00:05:49,220 --> 00:05:51,260
+How those constituents are interacting with each
+
+82
+00:05:51,260 --> 00:05:56,030
+other or the control parameters that we can adjust
+
+83
+00:05:56,420 --> 00:06:00,380
+in these in the system are an experiment to.
+
+84
+00:06:03,930 --> 00:06:08,160
+To verify or to to control the behavior of these
+
+85
+00:06:08,160 --> 00:06:12,120
+constituents, and the classic example is the
+
+86
+00:06:12,120 --> 00:06:16,770
+behavior of of water, which can exist in the
+
+87
+00:06:16,770 --> 00:06:20,820
+phases of the gas, a steam, just liquid water and
+
+88
+00:06:21,120 --> 00:06:25,050
+various sorts of solid ice. There are if you dig
+
+89
+00:06:25,050 --> 00:06:27,420
+into the details, there are many different phases
+
+90
+00:06:27,420 --> 00:06:32,820
+of of water, of H2O molecules that depend on
+
+91
+00:06:33,270 --> 00:06:36,780
+control parameters like the the temperature and
+
+92
+00:06:36,780 --> 00:06:40,790
+the pressure, things that. That can be controlled
+
+93
+00:06:41,330 --> 00:06:46,470
+in experiments or in just everyday settings. But,
+
+94
+00:06:46,470 --> 00:06:48,870
+of course, that that's the familiar example, but
+
+95
+00:06:48,870 --> 00:06:53,030
+these transitions are really. All around it, if
+
+96
+00:06:53,030 --> 00:06:55,400
+you if you start to look for them from the
+
+97
+00:06:55,400 --> 00:07:00,560
+earliest microseconds of the universe where. The
+
+98
+00:07:00,560 --> 00:07:04,670
+elementary particles that existed in a confined
+
+99
+00:07:04,670 --> 00:07:08,840
+plasma shortly after the Big Bang underwent a
+
+100
+00:07:08,840 --> 00:07:11,630
+phase transition to form the so-called confined
+
+101
+00:07:11,990 --> 00:07:15,430
+neutrons and protons that we are built out of in
+
+102
+00:07:15,500 --> 00:07:19,520
+the modern day, as well as all sorts of
+
+103
+00:07:20,870 --> 00:07:24,470
+solid-state or magnetic systems where the typical
+
+104
+00:07:24,470 --> 00:07:29,300
+transition is between insulating and conducting
+
+105
+00:07:29,300 --> 00:07:30,350
+phases that.
+
+106
+00:07:33,980 --> 00:07:37,490
+Determine whether or not the electrons in these
+
+107
+00:07:37,490 --> 00:07:39,230
+materials are able to.
+
+108
+00:07:41,350 --> 00:07:44,100
+To propagate freely or if they are bound and tied
+
+109
+00:07:44,110 --> 00:07:49,570
+to particular atoms or molecules. The example
+
+110
+00:07:51,220 --> 00:07:55,540
+mentioned in the notes here is that a transition
+
+111
+00:07:55,540 --> 00:07:58,330
+to a superconducting phase where not only can the
+
+112
+00:07:58,330 --> 00:08:00,610
+electrons propagate, they actually propagate
+
+113
+00:08:01,120 --> 00:08:03,760
+without any resistance or without friction. They
+
+114
+00:08:03,760 --> 00:08:09,940
+don't lose any energy to heat. And this occurs in
+
+115
+00:08:10,600 --> 00:08:13,000
+many sorts of so-called superconducting materials
+
+116
+00:08:13,000 --> 00:08:16,510
+at low temperature. The one pictured here is two
+
+117
+00:08:16,510 --> 00:08:20,890
+layers of graphene that are stacked on top of each
+
+118
+00:08:20,890 --> 00:08:28,660
+other and misaligned by a small angle theta where?
+
+119
+00:08:30,760 --> 00:08:34,570
+Through some sort of remarkable effects, all
+
+120
+00:08:34,570 --> 00:08:37,900
+related to the interactions between the particles
+
+121
+00:08:37,900 --> 00:08:42,190
+in the system, superconductivity only sets in when
+
+122
+00:08:42,190 --> 00:08:46,000
+this angle theta takes a particular magic value.
+
+123
+00:08:47,230 --> 00:08:51,600
+About about one degree. So.
+
+124
+00:08:54,750 --> 00:08:57,570
+I should say, just as a brief supplement, that
+
+125
+00:08:57,960 --> 00:08:58,680
+there is.
+
+126
+00:09:01,230 --> 00:09:04,050
+At least one case in which you can't have a phase
+
+127
+00:09:04,050 --> 00:09:07,800
+transition without interactions between the
+
+128
+00:09:07,800 --> 00:09:11,640
+constituents of a statistical system, and that is
+
+129
+00:09:11,970 --> 00:09:15,360
+in the context of both sides on conversation that
+
+130
+00:09:15,360 --> 00:09:19,770
+we talked about maybe 10 days ago, wrapping up the
+
+131
+00:09:19,770 --> 00:09:21,960
+week, eight materials where.
+
+132
+00:09:25,930 --> 00:09:30,550
+The the gas of those islands that. Or the ideal
+
+133
+00:09:30,550 --> 00:09:33,470
+gas, I should specify, of not attracting bosun's,
+
+134
+00:09:33,790 --> 00:09:35,800
+the sort of thing that would be considered in the
+
+135
+00:09:35,800 --> 00:09:38,200
+special case of fermions necessary in such a case
+
+136
+00:09:38,200 --> 00:09:41,600
+of photons, zero mass ultra relativistic particles.
+
+137
+00:09:42,160 --> 00:09:46,330
+That is a particular phase. Of a collection of
+
+138
+00:09:46,330 --> 00:09:52,030
+boatswain's, and as the temperature decreases, we
+
+139
+00:09:52,030 --> 00:09:54,370
+looked at just the video illustration without
+
+140
+00:09:54,370 --> 00:09:57,640
+doing the mathematics, seeing that there is a
+
+141
+00:09:57,640 --> 00:10:01,180
+transition to a new phase of matter, the Bose
+
+142
+00:10:01,180 --> 00:10:06,500
+Einstein condensate. Where? There is still no
+
+143
+00:10:06,500 --> 00:10:09,800
+interaction between the the individual, those
+
+144
+00:10:09,800 --> 00:10:13,520
+islands in the SCAS, but due to quantum effects
+
+145
+00:10:14,060 --> 00:10:17,510
+and the competition between those quantum effects
+
+146
+00:10:17,510 --> 00:10:19,310
+and the thermal effects of the temperature, even
+
+147
+00:10:19,310 --> 00:10:22,280
+these not interact, those can undergo a phase
+
+148
+00:10:22,280 --> 00:10:26,450
+transition from that ideal gas to that quantum
+
+149
+00:10:26,450 --> 00:10:31,850
+Bose Einstein condensate phase. But in general, as
+
+150
+00:10:31,850 --> 00:10:37,340
+a rule, these transitions and many other sorts of
+
+151
+00:10:37,340 --> 00:10:40,580
+interesting behavior depend on the interactions
+
+152
+00:10:40,970 --> 00:10:46,250
+between the particles in our our systems and to do
+
+153
+00:10:46,250 --> 00:10:49,370
+things mathematically and concretely. This week we
+
+154
+00:10:49,370 --> 00:10:55,430
+will look at the two state spin systems that we
+
+155
+00:10:55,820 --> 00:10:59,090
+introduced all the way back in week two and three
+
+156
+00:10:59,360 --> 00:11:01,850
+in the non interacting setting, where in that case
+
+157
+00:11:02,300 --> 00:11:06,290
+the energy was just given by how these individual
+
+158
+00:11:06,290 --> 00:11:13,640
+spins as coupled to an external magnetic field of
+
+159
+00:11:13,640 --> 00:11:17,720
+strength h which I believe should be drawn. On the
+
+160
+00:11:17,720 --> 00:11:22,070
+next page here and in week three, we went through.
+
+161
+00:11:23,030 --> 00:11:26,630
+Some of the different setups that we can have,
+
+162
+00:11:26,630 --> 00:11:30,110
+even in the simple system, whether the spins are
+
+163
+00:11:30,470 --> 00:11:35,120
+fixed into a a solid framework or whether they're
+
+164
+00:11:35,120 --> 00:11:38,570
+allowed to to move about freely is a gas.
+
+165
+00:11:41,630 --> 00:11:46,310
+And seeing the effect that the corresponding
+
+166
+00:11:46,310 --> 00:11:50,960
+information we had had on the thermodynamics or
+
+167
+00:11:50,960 --> 00:11:53,420
+the statistical predictions for those two
+
+168
+00:11:53,420 --> 00:11:57,200
+different cases where the spins were able to move
+
+169
+00:11:57,200 --> 00:12:00,200
+freely as a gas, we could not distinguish between
+
+170
+00:12:00,200 --> 00:12:06,840
+them and had less information. About the the
+
+171
+00:12:06,880 --> 00:12:10,330
+system and therefore of observe to different
+
+172
+00:12:10,330 --> 00:12:13,120
+behavior in its derived quantities, the entropy,
+
+173
+00:12:13,510 --> 00:12:17,200
+in the internal energy. Or the interacting system
+
+174
+00:12:18,550 --> 00:12:22,870
+will focus just on the case of distinguishable
+
+175
+00:12:22,870 --> 00:12:26,260
+spins that are distinguished by having a fixed
+
+176
+00:12:26,260 --> 00:12:30,520
+position in some regular grid, that.
+
+177
+00:12:33,520 --> 00:12:36,850
+I'm going to call a Allardice
+
+178
+00:12:38,860 --> 00:12:45,210
+and. Basically, what allowed us is at the broadest
+
+179
+00:12:45,210 --> 00:12:54,290
+level. Is a way of. Positioning or spacing, the.
+
+180
+00:12:55,710 --> 00:12:58,440
+The particles that the degrees of freedom more
+
+181
+00:12:58,440 --> 00:13:04,170
+generally that make up the. The statistical system
+
+182
+00:13:04,170 --> 00:13:07,550
+in question. I'm trying to be as general as
+
+183
+00:13:07,550 --> 00:13:10,910
+possible here without specifying too many things,
+
+184
+00:13:10,910 --> 00:13:15,140
+which we will go on to specialize too. We have
+
+185
+00:13:15,140 --> 00:13:15,530
+some.
+
+186
+00:13:17,700 --> 00:13:22,590
+Regular grid of locations in space where those
+
+187
+00:13:22,590 --> 00:13:26,190
+degrees of freedom are located in that have an
+
+188
+00:13:26,190 --> 00:13:29,700
+effect on how those degrees of freedom interact
+
+189
+00:13:29,700 --> 00:13:33,870
+with each other. So to start now specializing in
+
+190
+00:13:33,870 --> 00:13:36,600
+becoming more specific and more concrete for
+
+191
+00:13:36,600 --> 00:13:41,160
+actual calculations, say that will work only with
+
+192
+00:13:42,070 --> 00:13:46,410
+simple cubic lattices, possibly in an arbitrary
+
+193
+00:13:46,410 --> 00:13:52,710
+number of dimensions where the the system of spins
+
+194
+00:13:52,710 --> 00:13:57,570
+placed in a line. Was precisely the the
+
+195
+00:13:57,570 --> 00:14:00,810
+distinguishable case that we considered all the
+
+196
+00:14:00,810 --> 00:14:03,600
+way back in week three in the not interacting
+
+197
+00:14:03,870 --> 00:14:09,200
+setting to. To look at the entropy and energy and
+
+198
+00:14:09,200 --> 00:14:13,790
+the effects of information on those systems. So
+
+199
+00:14:13,790 --> 00:14:18,540
+what's pictured here is a. You two dimensional
+
+200
+00:14:18,720 --> 00:14:26,880
+lattice with. For spins in one direction, in four
+
+201
+00:14:26,880 --> 00:14:32,440
+spins in another, so overall, a four by four site
+
+202
+00:14:32,520 --> 00:14:36,840
+Latisse or Inequal 16, the individual spins
+
+203
+00:14:37,080 --> 00:14:41,940
+labeled by their location in each of those two
+
+204
+00:14:41,940 --> 00:14:46,620
+dimensions. And take values, depending on their
+
+205
+00:14:46,620 --> 00:14:51,000
+orientation, aligned with or aligned against this
+
+206
+00:14:51,330 --> 00:14:53,010
+extraordinary field H.
+
+207
+00:14:56,930 --> 00:14:57,500
+And.
+
+208
+00:14:59,640 --> 00:15:02,010
+The place to start to make things concrete and
+
+209
+00:15:02,010 --> 00:15:06,560
+mathematical is to more formally define. What
+
+210
+00:15:06,560 --> 00:15:08,150
+exactly is meant by.
+
+211
+00:15:11,240 --> 00:15:13,900
+By an interaction or by a non interacting system.
+
+212
+00:15:14,970 --> 00:15:18,680
+Which we can do by considering what happens to.
+
+213
+00:15:19,670 --> 00:15:23,810
+The internal energy. When we change, when we pick
+
+214
+00:15:23,810 --> 00:15:28,580
+out some degree of freedom and change it. So in a
+
+215
+00:15:28,580 --> 00:15:31,190
+not in tracking system where that degree of
+
+216
+00:15:31,190 --> 00:15:34,010
+freedom is not interacting with any of the other
+
+217
+00:15:34,010 --> 00:15:36,500
+degrees of freedom and should therefore know
+
+218
+00:15:36,500 --> 00:15:40,610
+nothing about them, we would expect the resulting
+
+219
+00:15:40,610 --> 00:15:42,890
+change in the total energy of the system from
+
+220
+00:15:43,310 --> 00:15:47,510
+changing that degree of freedom to label by. I
+
+221
+00:15:47,930 --> 00:15:51,050
+expect that change to be independent of every
+
+222
+00:15:51,050 --> 00:15:55,460
+other degree of freedom labeled by K. That is not
+
+223
+00:15:55,880 --> 00:16:02,230
+equal to I. And it's easy to see for the the not
+
+224
+00:16:02,230 --> 00:16:05,670
+interacting spin system that we looked at before
+
+225
+00:16:06,190 --> 00:16:11,260
+if we break up. The sum over all of the spins that
+
+226
+00:16:11,260 --> 00:16:14,500
+couples to the external magnetic field to pick out
+
+227
+00:16:15,070 --> 00:16:18,670
+whatever spin, whatever degree of freedom we are
+
+228
+00:16:18,670 --> 00:16:21,790
+changing, there's only one possible change we can
+
+229
+00:16:21,790 --> 00:16:26,110
+make in a two state spin system, which is simply
+
+230
+00:16:26,710 --> 00:16:29,140
+reversing the orientation of that spin with
+
+231
+00:16:29,140 --> 00:16:32,050
+respect to the magnetic field or in other words,
+
+232
+00:16:32,050 --> 00:16:37,930
+changing inside. And when they do that, the sign
+
+233
+00:16:37,930 --> 00:16:42,170
+of that speed changes. All of the other spins are
+
+234
+00:16:42,200 --> 00:16:44,900
+unaffected, and if we take the difference between
+
+235
+00:16:44,900 --> 00:16:50,000
+the the final energy and the starting energy, we
+
+236
+00:16:50,000 --> 00:16:53,240
+end up with those summations over all the other
+
+237
+00:16:53,240 --> 00:16:57,740
+spins cancelling out. And all that's left is a
+
+238
+00:16:57,740 --> 00:17:01,280
+simple function that depends. Only on the spin
+
+239
+00:17:01,280 --> 00:17:04,720
+that was changed, so. The
+
+240
+00:17:07,630 --> 00:17:10,030
+formal definition of a not a tracking system
+
+241
+00:17:10,360 --> 00:17:13,180
+checks out in a straightforward way for that case,
+
+242
+00:17:14,170 --> 00:17:17,320
+and now we can change the set up of the spin
+
+243
+00:17:17,320 --> 00:17:24,720
+system by introducing a. A new term in the energy,
+
+244
+00:17:24,880 --> 00:17:28,690
+so in this equation, when 18, the second term is
+
+245
+00:17:28,690 --> 00:17:32,530
+exactly what we had before back in weeks, two and
+
+246
+00:17:32,530 --> 00:17:36,850
+three each spin coupling to that external magnetic
+
+247
+00:17:36,850 --> 00:17:39,160
+field. And to that we add.
+
+248
+00:17:41,350 --> 00:17:45,160
+This initial term, which has a product of two
+
+249
+00:17:45,160 --> 00:17:49,150
+spins and Jane in a funny label at the bottom of
+
+250
+00:17:49,150 --> 00:17:55,170
+the station sign. This is in parentheses labeling
+
+251
+00:17:55,170 --> 00:17:58,170
+those two spins that appear in this quadratic
+
+252
+00:17:58,170 --> 00:18:05,540
+product. And what this notation means is that. We
+
+253
+00:18:05,540 --> 00:18:06,440
+are considering.
+
+254
+00:18:09,490 --> 00:18:14,380
+Indices I enjoy that run over all of the the
+
+255
+00:18:14,380 --> 00:18:16,900
+nearest neighbors in the simple cubicle, a
+
+256
+00:18:16,910 --> 00:18:19,870
+structure that we have defined. So if we hop back
+
+257
+00:18:19,870 --> 00:18:25,840
+up to this two dimensional case and consider some
+
+258
+00:18:25,840 --> 00:18:28,900
+particular spin, say that one that I just circled,
+
+259
+00:18:29,530 --> 00:18:34,330
+its nearest neighbors are in this case, the the
+
+260
+00:18:34,330 --> 00:18:38,050
+four things that are a constant distance away from
+
+261
+00:18:38,050 --> 00:18:42,280
+it, both to the left and right, as well as up and
+
+262
+00:18:42,280 --> 00:18:47,470
+down. In this two dimensional lattice, so the.
+
+263
+00:18:50,030 --> 00:18:55,660
+For this. Particular spin circled in blue, that
+
+264
+00:18:55,660 --> 00:19:00,700
+first term in the new energy equation 118 is
+
+265
+00:19:00,700 --> 00:19:08,830
+something over the. The four products of. This
+
+266
+00:19:08,830 --> 00:19:13,090
+term with all of its four nearest neighbors and
+
+267
+00:19:13,090 --> 00:19:15,730
+then doing the same for all of the other students
+
+268
+00:19:15,730 --> 00:19:20,510
+in the lattice without any double counting. So if
+
+269
+00:19:20,520 --> 00:19:24,020
+we hop over to consider the Spinto the rights of
+
+270
+00:19:24,020 --> 00:19:26,420
+the one that we circled, we've already accounted
+
+271
+00:19:26,420 --> 00:19:29,180
+for its interaction with its nearest neighbor to
+
+272
+00:19:29,180 --> 00:19:33,320
+the left. So that is that term in this sum is
+
+273
+00:19:33,320 --> 00:19:34,130
+accounted for
+
+274
+00:19:36,620 --> 00:19:37,160
+and.
+
+275
+00:19:39,560 --> 00:19:43,320
+See, since there is. A smaller crowd, I'll skip
+
+276
+00:19:43,320 --> 00:19:45,690
+the the polls everywhere and just stop.
+
+277
+00:19:48,890 --> 00:19:53,930
+Go through the the confirmation that this new term
+
+278
+00:19:53,930 --> 00:19:58,520
+in the energy does indeed produce an interacting
+
+279
+00:19:58,520 --> 00:19:59,020
+system.
+
+280
+00:20:01,120 --> 00:20:06,250
+Just by doing the same sort of procedure is for
+
+281
+00:20:07,540 --> 00:20:11,290
+the non in case in this box.
+
+282
+00:20:13,580 --> 00:20:19,380
+Where we can start by writing down. The energy
+
+283
+00:20:19,380 --> 00:20:23,520
+with the particular lights then pulled out and
+
+284
+00:20:23,520 --> 00:20:27,960
+isolated, so just changed the notation to some
+
+285
+00:20:27,960 --> 00:20:30,780
+over the nearest neighbor, here's J and K
+
+286
+00:20:31,170 --> 00:20:33,240
+specifying that those are only the pairs that do
+
+287
+00:20:33,240 --> 00:20:37,170
+not contain that spin, ie that has been changed.
+
+288
+00:20:37,620 --> 00:20:43,510
+Thus the product S.J České. There is an.
+
+289
+00:20:46,000 --> 00:20:49,180
+The term with the external magnetic field, as
+
+290
+00:20:49,180 --> 00:20:55,530
+usual, Sunday over. All the spins, except. The
+
+291
+00:20:55,530 --> 00:20:59,130
+spin I and then we have the contributions from
+
+292
+00:20:59,790 --> 00:21:04,530
+that spin I, we have the terms over all of its
+
+293
+00:21:04,530 --> 00:21:06,690
+nearest neighbors. So those sites, they were by
+
+294
+00:21:06,690 --> 00:21:10,520
+KABE. We're case in the set of nearest neighbors,
+
+295
+00:21:11,340 --> 00:21:16,600
+I think. So this is all of the terms that were not
+
+296
+00:21:16,600 --> 00:21:19,030
+included in that first summation.
+
+297
+00:21:21,700 --> 00:21:23,920
+So all of the nearest neighbor payers have now
+
+298
+00:21:23,920 --> 00:21:26,770
+been accounted for and all that's left is the
+
+299
+00:21:27,280 --> 00:21:31,210
+coupling of spin eye to that external magnetic
+
+300
+00:21:31,210 --> 00:21:38,640
+field. And when we negate the spin. The first two
+
+301
+00:21:38,640 --> 00:21:43,530
+terms don't involve spin any longer, they are
+
+302
+00:21:43,530 --> 00:21:44,340
+unchanged.
+
+303
+00:21:49,440 --> 00:21:52,690
+And in the. Last two terms.
+
+304
+00:21:55,830 --> 00:21:56,760
+The sign.
+
+305
+00:21:58,850 --> 00:22:07,680
+Is simply. Loopt. So as K and minus. HCI, so the
+
+306
+00:22:07,680 --> 00:22:09,090
+difference is.
+
+307
+00:22:12,300 --> 00:22:20,420
+A factor of two. This sum over. All of the nearest
+
+308
+00:22:20,420 --> 00:22:24,020
+neighbors of the site that we have changed.
+
+309
+00:22:26,420 --> 00:22:29,000
+And then the same coupling to the external
+
+310
+00:22:29,000 --> 00:22:31,280
+magnetic field that we had an unattractive case
+
+311
+00:22:31,880 --> 00:22:36,830
+and because these české are different than they
+
+312
+00:22:36,830 --> 00:22:38,510
+are, the nearest neighbors are the. That was
+
+313
+00:22:38,510 --> 00:22:44,400
+changed as opposed to. Being that that site.
+
+314
+00:22:47,060 --> 00:22:48,020
+We see that.
+
+315
+00:22:50,510 --> 00:22:53,330
+This indicates we are indeed dealing with an
+
+316
+00:22:53,330 --> 00:22:57,230
+interacting system. Is desire.
+
+317
+00:23:02,990 --> 00:23:07,150
+Maybe a. Simpler way to keep track of things.
+
+318
+00:23:09,690 --> 00:23:12,810
+Equivalent to talking about all of those nearest
+
+319
+00:23:12,810 --> 00:23:16,020
+neighbors and the nearest neighbor, Pear's, is to.
+
+320
+00:23:17,820 --> 00:23:23,070
+Introduce a bit more terminology for these simple
+
+321
+00:23:23,070 --> 00:23:27,420
+Kubic Gladys's in any number of dimensions where
+
+322
+00:23:27,420 --> 00:23:32,010
+we can sort of introduce elementary one and two
+
+323
+00:23:32,010 --> 00:23:33,870
+and three dimensional.
+
+324
+00:23:37,990 --> 00:23:41,230
+Unit objects that the the overall lattice system
+
+325
+00:23:41,230 --> 00:23:46,030
+itself is or can be considered as being built out
+
+326
+00:23:46,030 --> 00:23:46,270
+of.
+
+327
+00:23:55,080 --> 00:23:58,230
+So rather than drawing up and down, pointing
+
+328
+00:23:58,230 --> 00:24:02,340
+arrows to to represent the spin degrees of freedom
+
+329
+00:24:02,340 --> 00:24:07,710
+in these systems. It's conventional just to to
+
+330
+00:24:07,710 --> 00:24:11,220
+denote the locations of those spins by some black
+
+331
+00:24:11,220 --> 00:24:17,440
+dot. Where the figure on the right here, the the
+
+332
+00:24:17,440 --> 00:24:21,180
+shading of the data is being used to indicate the
+
+333
+00:24:21,860 --> 00:24:22,900
+the third dimension.
+
+334
+00:24:25,260 --> 00:24:27,750
+The idea that the the lighter the dogs get, the
+
+335
+00:24:27,750 --> 00:24:32,460
+farther into the page, the third dimension has
+
+336
+00:24:32,790 --> 00:24:37,530
+progressed, it's. About as best as you can do,
+
+337
+00:24:37,890 --> 00:24:41,370
+representing three dimensions in. The two
+
+338
+00:24:41,370 --> 00:24:46,550
+dimensional page that we're looking at here. And.
+
+339
+00:24:51,170 --> 00:24:54,920
+In addition to those dots at which the the spins
+
+340
+00:24:54,920 --> 00:24:57,410
+or the more general degrees of freedom are are
+
+341
+00:24:57,610 --> 00:25:01,700
+going to want to live in V dimensions, we can
+
+342
+00:25:01,700 --> 00:25:05,000
+connect the nearest neighbors and only the nearest
+
+343
+00:25:05,000 --> 00:25:08,480
+neighbors by drawing lines between them that
+
+344
+00:25:08,480 --> 00:25:13,220
+become known as or have become known as links. And
+
+345
+00:25:13,220 --> 00:25:16,340
+these are sort of the elementary objects that
+
+346
+00:25:16,850 --> 00:25:19,910
+appear in that first term of the energy we were
+
+347
+00:25:19,910 --> 00:25:20,600
+looking at.
+
+348
+00:25:23,190 --> 00:25:25,440
+This first term of the box here is really a sum
+
+349
+00:25:25,440 --> 00:25:28,260
+over the links, whereas the second term that we
+
+350
+00:25:28,260 --> 00:25:32,640
+had before is the sum over the individual sites.
+
+351
+00:25:33,660 --> 00:25:37,530
+So the links are essentially representing the
+
+352
+00:25:37,530 --> 00:25:41,070
+interaction between these nearest neighbor pairs.
+
+353
+00:25:42,690 --> 00:25:47,960
+In the interacting system we have set up and, you
+
+354
+00:25:47,970 --> 00:25:52,080
+know, going further three dimensions is sort of
+
+355
+00:25:52,080 --> 00:25:55,110
+the most that we can have in the world that we
+
+356
+00:25:55,110 --> 00:25:57,210
+live in. But mathematically, we can define
+
+357
+00:25:57,720 --> 00:26:01,410
+lattices in any number of dimensions, because you
+
+358
+00:26:01,410 --> 00:26:04,320
+mentioned that the two dimensional system, we
+
+359
+00:26:04,320 --> 00:26:08,100
+could experimentally realized by doing experiments
+
+360
+00:26:08,100 --> 00:26:12,710
+with a thin film of degrees of freedom. On the top
+
+361
+00:26:12,710 --> 00:26:15,740
+of some table and even reduce that to a one
+
+362
+00:26:15,740 --> 00:26:21,470
+dimensional lattice, a simple chain of spins. But
+
+363
+00:26:21,470 --> 00:26:23,180
+as we go into higher dimensions, there are
+
+364
+00:26:23,630 --> 00:26:26,540
+analogous elementary unit objects known as
+
+365
+00:26:26,540 --> 00:26:29,870
+Phuket's and cubes, one of which is drawn here
+
+366
+00:26:29,900 --> 00:26:32,930
+with the cat being the elementary unit of surface
+
+367
+00:26:32,930 --> 00:26:35,540
+area and the cube being an elementary unit of
+
+368
+00:26:35,540 --> 00:26:39,170
+volume once we hit three dimensions.
+
+369
+00:26:43,110 --> 00:26:47,090
+And one of the wrinkle that. You might have to
+
+370
+00:26:47,090 --> 00:26:53,240
+worry about in these latter systems is what
+
+371
+00:26:53,240 --> 00:26:56,690
+happens if we reach the edge of the lattice and
+
+372
+00:26:56,690 --> 00:27:02,470
+there's no longer. Any more sites for. For our
+
+373
+00:27:02,470 --> 00:27:03,490
+spins to.
+
+374
+00:27:06,100 --> 00:27:09,430
+To share a link with or to have a have an
+
+375
+00:27:09,430 --> 00:27:13,790
+interaction with. There are various options, one
+
+376
+00:27:13,790 --> 00:27:16,610
+of which is the formal mathematical level, just to
+
+377
+00:27:16,610 --> 00:27:19,310
+consider an infinite lattice that goes off forever
+
+378
+00:27:19,310 --> 00:27:20,330
+in every direction.
+
+379
+00:27:22,930 --> 00:27:26,080
+And we can also just say that the lattice ends, we
+
+380
+00:27:26,080 --> 00:27:30,280
+can chop off any of the links that go out from the
+
+381
+00:27:30,280 --> 00:27:34,720
+edge of that lattice, but the mathematically most
+
+382
+00:27:34,720 --> 00:27:38,710
+convenient way to handle this sort of thing is to
+
+383
+00:27:38,710 --> 00:27:42,990
+impose. What are called boundary conditions in a
+
+384
+00:27:42,990 --> 00:27:46,230
+particular imposing periodic boundary conditions
+
+385
+00:27:46,230 --> 00:27:53,730
+where we identify the in this case, the leftmost
+
+386
+00:27:53,730 --> 00:27:57,660
+site in the lattice as the the nearest neighbor.
+
+387
+00:27:59,200 --> 00:28:03,850
+Link of the nearest neighbor site of the rightmost
+
+388
+00:28:03,850 --> 00:28:06,940
+site so that the link connecting them.
+
+389
+00:28:09,310 --> 00:28:13,570
+Is just another standard link, like any other link
+
+390
+00:28:13,570 --> 00:28:16,900
+in the Latisse, so there's a constant distance
+
+391
+00:28:16,900 --> 00:28:24,150
+between. The. The sites here at the. Right, edge
+
+392
+00:28:24,150 --> 00:28:30,220
+of the lattice that. Circles around to talk to the
+
+393
+00:28:30,700 --> 00:28:33,820
+side at the left edge, it's just as far away as it
+
+394
+00:28:33,820 --> 00:28:39,190
+is from the. The other nearest neighbor in the
+
+395
+00:28:39,190 --> 00:28:42,580
+other direction, and at least in one dimension,
+
+396
+00:28:42,580 --> 00:28:45,700
+this is easy to to represents by
+
+397
+00:28:48,520 --> 00:28:52,180
+bending this chain of sites around into a circle
+
+398
+00:28:53,020 --> 00:28:57,430
+where. We can see that or see the reason this
+
+399
+00:28:57,670 --> 00:28:59,680
+periodic boundary condition set up is convenient,
+
+400
+00:28:59,680 --> 00:29:03,100
+because now every single spin or every single site
+
+401
+00:29:03,100 --> 00:29:06,560
+is on. On the same footing with the same number of
+
+402
+00:29:06,560 --> 00:29:08,630
+nearest neighbors, you don't have to worry about
+
+403
+00:29:08,630 --> 00:29:12,500
+where exactly it is located in the lattice or to
+
+404
+00:29:12,500 --> 00:29:18,500
+put this in a more mathematical freezing. There is
+
+405
+00:29:19,220 --> 00:29:23,510
+a discrete translation cemetery where, well, in
+
+406
+00:29:23,510 --> 00:29:27,890
+the case of writing the drawing, the ladies in the
+
+407
+00:29:27,890 --> 00:29:30,470
+circle, that translation would be called the
+
+408
+00:29:30,470 --> 00:29:35,960
+rotation of the sites going around here. Where? If
+
+409
+00:29:35,960 --> 00:29:39,930
+we would rotate the circle by an angle of two pi
+
+410
+00:29:39,950 --> 00:29:42,530
+over and over and is the number of sites that we
+
+411
+00:29:42,530 --> 00:29:46,250
+have, then the resulting lattice would be exactly
+
+412
+00:29:46,250 --> 00:29:50,610
+the same as the starting points. Which is what I
+
+413
+00:29:50,610 --> 00:29:54,540
+mean when I say there's a symmetry and we can so
+
+414
+00:29:54,960 --> 00:29:58,110
+it is harder to visualize this sort of.
+
+415
+00:30:01,240 --> 00:30:05,110
+Bending around in higher dimensions, but
+
+416
+00:30:05,110 --> 00:30:09,790
+mathematically what it corresponds to is. Placing
+
+417
+00:30:10,420 --> 00:30:15,340
+this simple cubic lattice with a constant fixed
+
+418
+00:30:15,340 --> 00:30:18,160
+distance between every point and all of its
+
+419
+00:30:18,160 --> 00:30:21,580
+nearest neighbors in all the dimensions that that
+
+420
+00:30:21,580 --> 00:30:27,650
+setup gets placed on a dimensional Taurus. So. The
+
+421
+00:30:27,650 --> 00:30:30,980
+two dimensional Taurus is probably what you think
+
+422
+00:30:30,980 --> 00:30:35,710
+of when you hear the word Taurus. I neglected to.
+
+423
+00:30:37,270 --> 00:30:39,440
+Pull up a picture of that.
+
+424
+00:30:42,180 --> 00:30:44,130
+I'm sure you've seen it before, it is essentially
+
+425
+00:30:44,140 --> 00:30:47,190
+the doughnut shape and in higher dimensions, you
+
+426
+00:30:47,190 --> 00:30:52,470
+simply have dimensional territory or hyper Tauri
+
+427
+00:30:53,100 --> 00:30:55,470
+that share the same property of being
+
+428
+00:30:55,470 --> 00:30:59,950
+typologically flat spaces with no curvature. So
+
+429
+00:30:59,950 --> 00:31:03,550
+that there's no complication with having this
+
+430
+00:31:03,550 --> 00:31:07,150
+simple Kubic Latisse living in this toroidal
+
+431
+00:31:07,150 --> 00:31:09,760
+structure that allows it to to wrap around
+
+432
+00:31:09,760 --> 00:31:10,660
+periodically.
+
+433
+00:31:15,180 --> 00:31:19,350
+And then the. The calculation of how many nearest
+
+434
+00:31:19,350 --> 00:31:24,150
+neighbors there are in the interacting energy that
+
+435
+00:31:24,150 --> 00:31:27,390
+we have to dealing with becomes a very simple and
+
+436
+00:31:27,390 --> 00:31:29,820
+very regular calculation.
+
+437
+00:31:31,820 --> 00:31:36,680
+Where no independence of the number of dimensions
+
+438
+00:31:37,460 --> 00:31:40,760
+we can see based on the pictures we've been
+
+439
+00:31:40,760 --> 00:31:42,650
+looking at in the general discussions around it,
+
+440
+00:31:42,650 --> 00:31:51,620
+that every site in every dimension. He has a link
+
+441
+00:31:51,620 --> 00:31:53,930
+connecting it to its nearest neighbor, both in the
+
+442
+00:31:54,320 --> 00:31:58,160
+forward orientation, in that dimension and the
+
+443
+00:31:58,160 --> 00:32:00,680
+backward orientation, so.
+
+444
+00:32:05,030 --> 00:32:07,850
+For every site, there are two times the number of
+
+445
+00:32:07,850 --> 00:32:12,600
+dimensions. Links connected to it are coming out
+
+446
+00:32:12,600 --> 00:32:16,740
+of it. So in this one dimensional case, we just
+
+447
+00:32:16,740 --> 00:32:19,230
+have the two links that connect to that site
+
+448
+00:32:19,230 --> 00:32:20,910
+circled in blue.
+
+449
+00:32:23,790 --> 00:32:29,030
+And. Similarly, if we had other dimensions in
+
+450
+00:32:29,030 --> 00:32:31,340
+which we could move, we would have the four
+
+451
+00:32:31,340 --> 00:32:34,940
+backward left, right up, down pairs of legs for
+
+452
+00:32:34,940 --> 00:32:35,870
+each of those,
+
+453
+00:32:38,030 --> 00:32:40,760
+but each of these links that are attached to each
+
+454
+00:32:40,760 --> 00:32:44,810
+site are also attached to another site. So.
+
+455
+00:32:47,710 --> 00:32:51,160
+Every link is essentially shared. Between.
+
+456
+00:32:54,470 --> 00:33:01,480
+To. Different sites, so to avoid overcounting. We
+
+457
+00:33:01,480 --> 00:33:05,380
+have to combine both of those facts to consider
+
+458
+00:33:05,380 --> 00:33:10,510
+that the total number of links is that two D for
+
+459
+00:33:10,510 --> 00:33:14,530
+each site and then that counts each link twice
+
+460
+00:33:14,530 --> 00:33:18,040
+from each of the sites that it connects to. So
+
+461
+00:33:18,040 --> 00:33:22,720
+correcting for that gives just these times and
+
+462
+00:33:22,720 --> 00:33:25,060
+links in these dimensions. And I'll try to
+
+463
+00:33:25,060 --> 00:33:29,560
+remember to put little dots in the in the middle
+
+464
+00:33:29,560 --> 00:33:32,260
+of that sort of expression just so it doesn't look
+
+465
+00:33:32,260 --> 00:33:35,860
+like a differential factor. But an actual product
+
+466
+00:33:35,860 --> 00:33:39,910
+between the number of dimensions and the number of
+
+467
+00:33:39,910 --> 00:33:45,070
+sites, so that is how many terms there are in this
+
+468
+00:33:45,070 --> 00:33:47,830
+sum over the nearest thing, repairs that we've
+
+469
+00:33:47,830 --> 00:33:53,440
+been able to recast as a sum over links in the
+
+470
+00:33:53,440 --> 00:34:00,900
+system. Is known as the the easy model, these
+
+471
+00:34:00,900 --> 00:34:04,220
+dimension's. Which has.
+
+472
+00:34:06,380 --> 00:34:09,650
+Now, really a fascinating history that. I've said
+
+473
+00:34:09,650 --> 00:34:11,930
+a bit about in in the text here, but.
+
+474
+00:34:17,620 --> 00:34:20,560
+It really, especially over the past half century
+
+475
+00:34:20,560 --> 00:34:27,910
+or so, it's become one of the foundational. Tools
+
+476
+00:34:28,450 --> 00:34:34,230
+in. No, not merely statistical physics, but. Very
+
+477
+00:34:34,230 --> 00:34:38,320
+many branches of mathematical sciences and even
+
+478
+00:34:40,020 --> 00:34:42,330
+fields of research beyond the physical sciences
+
+479
+00:34:42,330 --> 00:34:49,720
+like sociology and in biology. As a an extremely
+
+480
+00:34:49,720 --> 00:34:54,200
+simple system that due to. It's interactive nature.
+
+481
+00:34:57,930 --> 00:35:01,440
+Exhibits and can be used to model a very a vast
+
+482
+00:35:01,440 --> 00:35:06,780
+array of of different behaviors. So the where the
+
+483
+00:35:06,800 --> 00:35:09,830
+model was invented not by this easy fellow, but by
+
+484
+00:35:10,460 --> 00:35:13,220
+the guy named Lence, who was actually using his
+
+485
+00:35:13,490 --> 00:35:16,880
+PhD supervisor and Lence.
+
+486
+00:35:18,890 --> 00:35:25,080
+Came up with this model of. Of spins that can have
+
+487
+00:35:25,680 --> 00:35:28,650
+only two orientations and interact only with their
+
+488
+00:35:29,010 --> 00:35:31,290
+nearest neighbors and some regular Latisse
+
+489
+00:35:31,830 --> 00:35:34,890
+motivated by trying to explain the phenomenon of
+
+490
+00:35:34,890 --> 00:35:39,750
+feral magnetism. Which is one of those phase
+
+491
+00:35:39,750 --> 00:35:44,580
+transitions that I got mentioned earlier towards
+
+492
+00:35:44,580 --> 00:35:46,350
+the start of today, where?
+
+493
+00:35:48,810 --> 00:35:54,870
+As temperatures decrease for certain metals, they
+
+494
+00:35:54,870 --> 00:35:57,810
+pick up a an overall magnetization.
+
+495
+00:36:00,560 --> 00:36:06,590
+In the. No one had in mind with this model was
+
+496
+00:36:06,590 --> 00:36:09,620
+that the the spin's he was considering were the.
+
+497
+00:36:11,590 --> 00:36:15,330
+The individual magnetization of each individual
+
+498
+00:36:15,630 --> 00:36:22,140
+atom or molecule that composed this particular
+
+499
+00:36:22,140 --> 00:36:24,390
+ferromagnetic material,
+
+500
+00:36:26,580 --> 00:36:30,480
+iron being, I guess, the paradigmatic example,
+
+501
+00:36:30,480 --> 00:36:33,300
+which is what the Fero Charlamagne magnetism means,
+
+502
+00:36:33,720 --> 00:36:35,850
+I'm curious materials involving iron ore from
+
+503
+00:36:35,850 --> 00:36:39,120
+Latin. And the idea was that.
+
+504
+00:36:42,750 --> 00:36:47,970
+In one phase of these. Atoms in this lattice.
+
+505
+00:36:48,990 --> 00:36:53,760
+They're a. They're magnetization their spins would
+
+506
+00:36:53,760 --> 00:36:57,120
+all align in the same direction, adding up to the
+
+507
+00:36:57,120 --> 00:36:59,580
+overall large scale magnetization that had been
+
+508
+00:36:59,580 --> 00:37:03,360
+observed experimentally, whereas there may be some
+
+509
+00:37:03,360 --> 00:37:09,030
+other phase. Where? The the spins were pointing
+
+510
+00:37:09,030 --> 00:37:10,790
+all in different directions.
+
+511
+00:37:15,590 --> 00:37:18,980
+Leading to an overall cancellation of their
+
+512
+00:37:18,980 --> 00:37:24,780
+contributions to the magnetization Rich. Was
+
+513
+00:37:25,320 --> 00:37:28,980
+testing whether that was the case, was the project
+
+514
+00:37:28,980 --> 00:37:33,570
+that he assigned to students using whose solution
+
+515
+00:37:33,570 --> 00:37:35,610
+to the one dimensional system rather than the
+
+516
+00:37:35,610 --> 00:37:38,430
+three dimensions that that lens was originally
+
+517
+00:37:38,430 --> 00:37:42,120
+interested in, define that one dimensional using
+
+518
+00:37:42,120 --> 00:37:46,010
+model. And has turned out to be enormously
+
+519
+00:37:46,010 --> 00:37:51,060
+difficult to. To generalize to higher numbers of
+
+520
+00:37:51,060 --> 00:37:51,870
+dimensions.
+
+521
+00:37:53,980 --> 00:37:54,610
+And.
+
+522
+00:37:57,030 --> 00:37:59,160
+So what easing did was come up with an exact
+
+523
+00:37:59,160 --> 00:38:02,070
+expression, reclose for expression, for the
+
+524
+00:38:02,070 --> 00:38:05,400
+canonical position function of this simple model
+
+525
+00:38:06,090 --> 00:38:10,380
+with that energy from equation 118 in one
+
+526
+00:38:10,380 --> 00:38:11,010
+dimension.
+
+527
+00:38:13,770 --> 00:38:20,000
+And the two dimensional. A case. In the special
+
+528
+00:38:20,000 --> 00:38:22,790
+case for that, external magnetic field was exactly
+
+529
+00:38:22,790 --> 00:38:26,750
+vanishing, was not solved for another 20 years
+
+530
+00:38:27,230 --> 00:38:32,000
+until. This fellow named Morrisson Singer and
+
+531
+00:38:32,010 --> 00:38:37,160
+eventual Nobel laureate carried out a. Famously
+
+532
+00:38:37,160 --> 00:38:41,600
+difficult calculation that. You know, it really is
+
+533
+00:38:41,600 --> 00:38:45,260
+one of the most famous calculations of 20th
+
+534
+00:38:45,260 --> 00:38:49,040
+century mathematical physics and sort of up there
+
+535
+00:38:49,460 --> 00:38:53,060
+on the scale of the equals and C squared in the.
+
+536
+00:38:54,950 --> 00:38:56,810
+In the physics community, if not in popular
+
+537
+00:38:56,810 --> 00:39:02,390
+consciousness, it was a remarkable achievement to
+
+538
+00:39:02,390 --> 00:39:05,960
+exactly solve. Even this very simple two
+
+539
+00:39:05,960 --> 00:39:09,230
+dimensional model, which is maybe the key points
+
+540
+00:39:09,230 --> 00:39:09,770
+to.
+
+541
+00:39:12,020 --> 00:39:15,770
+To wrap up with today, maybe will make things a
+
+542
+00:39:15,770 --> 00:39:18,140
+bit short today and pick up next week with.
+
+543
+00:39:19,360 --> 00:39:22,540
+Looking at the phases of the easing phase,
+
+544
+00:39:22,540 --> 00:39:26,110
+transition between them, where the sorts of
+
+545
+00:39:26,110 --> 00:39:31,300
+numerical simulations that will be included in the
+
+546
+00:39:31,300 --> 00:39:35,170
+week 11 material can play a useful role. But in
+
+547
+00:39:35,170 --> 00:39:39,590
+terms of. Of mathematically or analytically
+
+548
+00:39:40,460 --> 00:39:43,790
+solving this interacting spin system, the easy
+
+549
+00:39:43,790 --> 00:39:44,240
+model.
+
+550
+00:39:46,910 --> 00:39:50,520
+We can see that. Now that we no longer have the
+
+551
+00:39:50,520 --> 00:39:53,730
+ability to consider each individual spent in
+
+552
+00:39:53,730 --> 00:39:56,970
+isolation, not interacting with any of the others.
+
+553
+00:39:59,970 --> 00:40:02,070
+We can no longer factories or break up the
+
+554
+00:40:02,070 --> 00:40:04,980
+calculation into just repeating that simple one
+
+555
+00:40:04,980 --> 00:40:07,980
+spin calculation over and over and over again, we
+
+556
+00:40:07,980 --> 00:40:12,120
+have to keep track of all in spins at once. And
+
+557
+00:40:12,120 --> 00:40:14,970
+the precision function then depends on every
+
+558
+00:40:14,970 --> 00:40:18,360
+possible microstates that is defined by every
+
+559
+00:40:18,360 --> 00:40:22,020
+possible orientation of all of those and spins,
+
+560
+00:40:22,020 --> 00:40:25,440
+each of which can be either up or down. So a total
+
+561
+00:40:25,440 --> 00:40:31,530
+of to the end terms. In this.
+
+562
+00:40:34,330 --> 00:40:36,370
+There's some overlapping configurations that
+
+563
+00:40:36,370 --> 00:40:39,190
+defines the partition function, which grows
+
+564
+00:40:39,610 --> 00:40:45,840
+exponentially quickly. So if we. If we back off
+
+565
+00:40:45,840 --> 00:40:47,750
+from our goal of thinking about ten to the power
+
+566
+00:40:47,760 --> 00:40:51,540
+funny three particles that are in everyday
+
+567
+00:40:51,540 --> 00:40:56,220
+materials and think about just say No. Thousand
+
+568
+00:40:56,220 --> 00:41:01,060
+twenty three spin's. In this song that is is
+
+569
+00:41:01,060 --> 00:41:04,510
+written here on this page, there are something
+
+570
+00:41:04,510 --> 00:41:11,560
+like 10 to the. 310 power. Terms where I'm
+
+571
+00:41:11,560 --> 00:41:14,530
+breaking up these summations in the exponential to
+
+572
+00:41:14,530 --> 00:41:17,470
+count the total number of terms that would have to
+
+573
+00:41:17,470 --> 00:41:22,690
+be computed in order to really evaluate this
+
+574
+00:41:23,110 --> 00:41:26,830
+function, either mathematically or analytically or
+
+575
+00:41:26,830 --> 00:41:31,900
+by a numerical calculation. And those numerical
+
+576
+00:41:31,900 --> 00:41:36,160
+calculations. They turn out to be.
+
+577
+00:41:38,430 --> 00:41:42,000
+Of great utility in more than two dimensions where
+
+578
+00:41:42,810 --> 00:41:46,770
+there is no known exact solution to the U.S. model
+
+579
+00:41:47,010 --> 00:41:52,680
+in three or any larger number of dimensions,
+
+580
+00:41:52,680 --> 00:41:55,650
+except for the infinite dimensional limit, which
+
+581
+00:41:55,650 --> 00:42:00,960
+is somewhat of a mathematical curiosity. What were
+
+582
+00:42:00,960 --> 00:42:04,320
+you even mean by an infinite number of dimensions?
+
+583
+00:42:09,260 --> 00:42:14,660
+But there is. Yeah, as we will see next week, an
+
+584
+00:42:14,660 --> 00:42:18,050
+enormous amount of work using all sorts of tools
+
+585
+00:42:18,050 --> 00:42:21,170
+at the cutting edge of water research even to
+
+586
+00:42:21,170 --> 00:42:25,190
+evaluate interaction systems like the using model,
+
+587
+00:42:25,580 --> 00:42:29,510
+let alone the more complicated variants that we
+
+588
+00:42:29,510 --> 00:42:32,660
+could consider describing or consider defining,
+
+589
+00:42:32,660 --> 00:42:35,870
+say, by allowing the ideal gasses that we've
+
+590
+00:42:35,870 --> 00:42:38,330
+worked with to have particles that interact with
+
+591
+00:42:38,330 --> 00:42:42,890
+each other or by generalizing these things to
+
+592
+00:42:43,220 --> 00:42:45,380
+degrees of freedom that can take continuously
+
+593
+00:42:45,380 --> 00:42:48,740
+value or continuous values, maybe having a
+
+594
+00:42:49,760 --> 00:42:52,610
+continuous length or continuous orientation rather
+
+595
+00:42:52,610 --> 00:42:55,700
+than being simply plus one for an opposing spin or
+
+596
+00:42:55,700 --> 00:43:00,980
+minus one for a down 20 spin. So I'll wrap up with
+
+597
+00:43:00,980 --> 00:43:04,670
+maybe that key point that interactive systems are
+
+598
+00:43:04,670 --> 00:43:07,970
+enormously difficult to handle mathematically and
+
+599
+00:43:07,970 --> 00:43:11,150
+there are whole fields of of mathematics that.
+
+600
+00:43:12,150 --> 00:43:17,180
+Worked on just this question and now we'll see
+
+601
+00:43:18,510 --> 00:43:21,360
+next week wrapping up the module, how the
+
+602
+00:43:21,360 --> 00:43:25,110
+statistical tools, the statistical ensembles, the
+
+603
+00:43:25,110 --> 00:43:28,660
+partition function, the free energy canonical
+
+604
+00:43:28,660 --> 00:43:31,710
+degree and canonical micro canonical ensembles can
+
+605
+00:43:31,710 --> 00:43:34,770
+all be brought to bear even in these more
+
+606
+00:43:34,770 --> 00:43:38,250
+complicated settings of interactive systems.
+
+607
+00:43:40,600 --> 00:43:44,170
+So the one last call for immediate questions,
+
+608
+00:43:44,890 --> 00:43:49,090
+we've asked for office hours later on today after
+
+609
+00:43:49,780 --> 00:43:52,570
+saving this recording and shutting down the
+
+610
+00:43:52,570 --> 00:43:56,670
+meeting. This is the good place to stop, I think,
+
+611
+00:43:56,670 --> 00:43:58,230
+for today.
