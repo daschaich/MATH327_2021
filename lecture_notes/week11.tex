@@ -1,12 +1,12 @@
 % ------------------------------------------------------------------
 \renewcommand{\thisweek}{MATH327 Week 11}
-\renewcommand{\moddate}{Last modified 5 May 2021}
+\renewcommand{\moddate}{Last modified 7 May 2021}
 \setcounter{section}{11}
 \setcounter{subsection}{0}
 \phantomsection
 \addcontentsline{toc}{section}{Week 11: Synthesis and broader applications}
 \section*{Week 11: Synthesis and broader applications}
-\subsection{Monte Carlo importance sampling}
+\subsection{\label{sec:MonteCarlo}Monte Carlo importance sampling}
 Last week we wrapped up our discussion of the mean-field approximation to the Ising model by comparing some of its predictions against results from numerical computations for systems in $d \geq 3$ dimensions where no exact solution is known.
 These numerical results may have come as a surprise given the statement at the end of \secref{sec:Ising} that numerically evaluating the Ising model partition function even for tiny systems with $N \sim 1000$ spins is far beyond the capabilities of existing or foreseeable supercomputers.
 To quantify `tiny', consider that $N \sim 1000$ would correspond to a $10\times 10\times 10$ lattice in three dimensions or a $6\times 6\times 6\times 6$ lattice in four dimensions, both very far from the thermodynamic limit of interest for phase transitions.
@@ -106,7 +106,7 @@ It doesn't matter whether we are considering a three-dimensional lattice of Isin
 
 The detailed mathematics underlying universality is well beyond the scope of this module.
 Important contributions to its development were made by \href{https://en.wikipedia.org/wiki/Leo_Kadanoff}{Leo Kadanoff} and \href{https://en.wikipedia.org/wiki/Kenneth_G._Wilson}{Ken Wilson}, among many others.
-The key point to take away is that universality causes the same large-scale behaviour to appear in the vicinity of critical points even for systems that initially may seem completely different.
+The purpose of this section is just to quickly introduce the concept and emphasize that universality causes the same large-scale behaviour to appear in the vicinity of critical points even for systems that initially may seem completely different.
 This independence of the details of the system helps to explain the power of even simple interacting statistical systems such as the Ising model, and their applicability in so many different domains.
 % ------------------------------------------------------------------
 
@@ -114,32 +114,88 @@ This independence of the details of the system helps to explain the power of eve
 
 % ------------------------------------------------------------------
 \subsection{\label{sec:broad}Broader applications}
+In this section we will continue to provide quick introductions rather than detailed derivations, considering a few ways in which the concepts and tools of statistical physics are applied beyond the mathematical sciences.
+The cases considered here are far from exhaustive, and many more examples may become apparent now that we have gained familiarity with the underlying statistical methods and perspectives.
+
 \subsubsection*{Voter models}
+Sociology is one domain where the applicability of statistical physics may be unexpected.
+Despite (possible) expectations, there is a diverse and active field of ``sociophysics'', which uses the statistical physics concepts and tools that we have been learning about to describe various aspects of social and political behavior.\footnote{For a review, see Serge Galam, \href{https://liverpool.idm.oclc.org/login?url=http://dx.doi.org/10.1007/978-1-4614-2032-3}{\textit{Sociophysics: A Physicist's Modeling of Psycho-political Phenomena}} (2012).}
 
-% phase transition (with a discontinuity in the large-$N$ limit) is possible once some opinion reaches a critical concentration
+A particular branch of sociology where connections to statistical physics may be more apparent is the field of opinion formation, where so-called \href{https://en.wikipedia.org/wiki/Voter_model}{voter models} have been widely used since the 1970s, and have proved capable of capturing outcomes of elections.
+Voter models are interacting statistical systems not too different from the Ising model, where spin degrees of freedom that we have been working with are interpreted as voters' opinions on a certain topic.
+For example, support for a proposal or candidate can be represented as $s_i = +1$, while opposition would be $s_i = -1$.
+Just like the interactions in the Ising model encourage spins to align with each other, voter models build in a tendency for voters to align (i.e., agree) with the majority of other voters they interact with.
 
-\TODO{Being written...}
+There are many generalizations that can then be incorporated to better describe the outcome of polls and elections.
+A simple extension would be to allow voters to be neutral or indifferent to the question, represented as $s_i = 0$.
+Similarly, the strength of a voter's commitment to their opinion can be modelled by extending the range of possible spin values,
+\begin{equation*}
+  s_i \in \left\{\cdots, -2, -1, 0, +1, +2, \cdots\right\}.
+\end{equation*}
+
+Another way to make voter models more realistic is to define them on more flexible \textit{graphs} rather than regular lattices.
+The figure below (\href{https://doi.org/10.1073/pnas.1200709109}{source}) illustrates how such a graph can look for a two-state system with $s_i \in \left\{-1, +1\right\}$ coloured red and blue.
+As in everyday experience (and inspired by social networks), different voters can have connections with different numbers of other voters, who do not need to be nearest neighbours.
+In this particular investigation, network connections between disagreeing voters are probabilistically severed, and transitions are observed between a phase in which one of the opinions becomes the consensus, or all connections are severed between the two groups with differing opinions.
+
+\begin{center}\includegraphics[width=0.7\textwidth]{figs/week11_voter.pdf}\end{center}
+
+Simpler studies that don't involve severing connections have observed a similar consensus phase occurring once an opinion reaches a critical concentration.
+Remarkably, this was found to be described by a second-order phase transition in the universality class of the two-dimensional Ising model.
+Another outcome possible in certain voter models is a ``stable non-consensus'' phase, in which the two opinions persist indefinitely, each one held by a `cluster' of aligned voters who interact mainly with each other rather than with voters holding the opposite opinion.
+These investigations are described by Alexander Balankin et al., ``\href{https://doi.org/10.1016/j.physleta.2016.12.001}{Ising percolation in a three-state majority vote model}'' (2016).
 
 \subsubsection*{Epidemiology}
-A particularly topical application of statistical physics is to model the spread of diseases in populations, something most of us may have seen in the news over the past fifteen months.
-% arXiv:2101.11399
-% similar to original 1953 calculation summarized on Schroeder page 347...
+A particularly topical application of interacting statistical systems is to model the spread of diseases in populations, something most of us may have seen in the news over the past fifteen months.
+As in the case of voter models, the degrees of freedom under consideration are again individuals, whose interactions with each other allow infection to spread to those who are susceptible.
+A Monte Carlo calculation of the sort described in \secref{sec:MonteCarlo} can then be used to model how many people may be infected as time passes, guided by data on typical movement and contacts.
 
-Larger-scale versions of these epidemiological model simulations provide important input into government deliberations regarding what restrictions (such as lockdowns) should be imposed to mitigate the spread of diseases, and how long these restrictions ought to be maintained.
+The figure below comes from \href{https://www.washingtonpost.com/graphics/2020/world/corona-simulator/}{an over-simplified simulation} provided by the \textit{Washington Post} to illustrate these concepts.
+Here individuals are modeled simply as a gas of interacting particles in two dimensions, and various ways of restricting their motion are used to explore the likely effects of measures such as quarantines and social distancing.
+By coincidence, the scale of this simulation, which considers a population of just $200$ people, is comparable to the first importance sampling Monte Carlo calculation carried out in 1953 as a first application of the Metropolis--Rosenbluth--Teller algorithm.
+\href{https://en.wikipedia.org/wiki/Equation_of_State_Calculations_by_Fast_Computing_Machines}{That historic investigation} computed the pressure (i.e., equation of state) for $224$ interacting particles in a two-dimensional `volume'.
+At the time, this required several days of computing time on a state-of-the-art machine; now these sorts of calculations are easily done on a smartphone.
 
-\TODO{Being written...}
+\begin{center}\includegraphics[width=0.8\textwidth]{figs/week11_epidemic.pdf}\end{center}
+
+Larger-scale and more realistic versions of these epidemiological simulations provide important input into government deliberations regarding what restrictions (such as lockdowns) would be most beneficial to reduce the spread of disease, and how long such restrictions may need to be maintained.
+Rather than investigating a phase transition, the goal is to quantify likely effects of restrictions (or of the absence of restrictions).
+As described in \secref{sec:LLN}, the numerical experiments are therefore repeated many times with different sequences of pseudo-random numbers.
+This produces an ensemble of possibilities from which the likely outcomes of various interventions can be inferred.
 
 \subsubsection*{Flocking}
-% Vicsek model of flocking with first-order phase transition
+Let's conclude our quick glimpses of some broader applications of statistical physics by considering another biological example, where interacting statistical systems are used to model the large-scale collective motion of certain groups of animals.
+The image below (from Marcus Woo, ``\href{https://www.sciencemag.org/news/2014/07/how-bird-flocks-are-liquid-helium}{How bird flocks are like liquid helium}'', \textit{Science}, 27 July 2014) illustrates the so-called flocking behaviour of large groups of starlings, which fly through the sky in surprisingly tight coordination.
+This same sort of behaviour is also seen in schools of fish, swarms of insects, and even crowds of humans.
 
-\TODO{Being written...}
+\begin{center}\includegraphics[width=0.8\textwidth]{figs/week11_flock.pdf}\end{center}
+
+Many models based on interacting statistical systems have been (and continue to be) developed to describe this emergent collective behaviour.
+A particularly simple and widely studied \href{https://en.wikipedia.org/wiki/Vicsek_model}{example} was introduced in 1995.
+It proposes that each particle (i.e., bird) will interact with others near to it, and this interaction will encourage it to move in the same direction as its neighbours, in much the same way that the nearest-neighbour interactions in the Ising model encourage its spins to align.
+
+This model exhibits a transition between two distinct phases.
+When there is a low density of particles, there are relatively few interactions and the particles' motion is disordered, with no formation of flocks or swarms.
+At high densities, in contrast, large-scale collective motion appears, based solely on the interactions between the individual particles in the system.
+These two regimes turn out to be separated by a first-order phase transition, with a discontinuity (in the thermodynamic limit) in an order parameter related to the average angle of flight.
+In addition, as the critical density is approached, flights in the disordered phase exhibit anomalous super-diffusion like that investigated in the computer project.
 % ------------------------------------------------------------------
 
 
 
 % ------------------------------------------------------------------
-\newpage
 \subsection{Wrap-up recap and synthesis}
+We have covered a lot of ground in this module, building on foundations from probability to develop and apply the core concepts of statistical physics.
+
+%Learning outcomes
+% * Demonstrate understanding of the micro-canonical, canonical and grand-canonical ensembles, their relation and the derived concepts of entropy, temperature and particle number density.
+% * Understand the derivation of the equation of state for non-interacting classical and quantum gases.
+% * Demonstrate numerical skills to understand diffusion from an underlying stochastic process.
+% * Know the laws of thermodynamics and demonstrate their application to thermodynamic cycles.
+% * Be aware of the effects of interactions, including an understanding of the origin of phase transitions.
 
 \TODO{Being written...}
+
+
+% Statistical Physics is a core subject in Physics and a cornerstone for modern technologies. To name just one example, quantum statistics is informing leading edge developments around ultra-cold gases and liquids giving rise to new materials. The module will introduce foundations of Statistical Physics and will develop an understanding of the stochastic roots of thermodynamics and the sometimes-illusive properties of matter. After successfully completing this module students will understand statistical ensembles and related concepts such as entropy and temperature, will understand the properties of classical and quantum gases, will be know the laws of thermodynamics and will be aware of advanced phenomena such as phase transition. The module will also deliver key numerical skills for the description of macroscopic effects such as diffusion by an underlying stochastic process.
 % ------------------------------------------------------------------
