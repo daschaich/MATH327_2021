@@ -185,17 +185,64 @@ In addition, as the critical density is approached, flights in the disordered ph
 
 % ------------------------------------------------------------------
 \subsection{Wrap-up recap and synthesis}
-We have covered a lot of ground in this module, building on foundations from probability to develop and apply the core concepts of statistical physics.
+We have covered a lot of ground in this module, building on foundations from probability theory to develop and apply the core concepts of statistical physics.
+In week~1 we defined probability spaces, expectation values and variances, and used these to establish the law of large numbers through which stable large-scale behaviour occurs for stochastic systems involving many degrees of freedom $N \gg 1$.
+We also saw how the central limit theorem relates large-$N$ probability distributions to the underlying mean and variance of the elementary degree of freedom, and practiced extracting probabilities from such distributions.
+The law of diffusion results from the central limit theorem, and the computer project applied inverse transform sampling to study how anomalous diffusion can arise when the central limit theorem's assumption of finite elementary mean and variance breaks down.
 
-%Learning outcomes
-% * Demonstrate understanding of the micro-canonical, canonical and grand-canonical ensembles, their relation and the derived concepts of entropy, temperature and particle number density.
-% * Understand the derivation of the equation of state for non-interacting classical and quantum gases.
-% * Demonstrate numerical skills to understand diffusion from an underlying stochastic process.
-% * Know the laws of thermodynamics and demonstrate their application to thermodynamic cycles.
-% * Be aware of the effects of interactions, including an understanding of the origin of phase transitions.
+Starting in week~2 we specialized to particular probability spaces known as statistical ensembles, which consist of the micro-states and associated probabilities that a system can possibly adopt through its time evolution.
+The laws of physics, such as conservation of energy (the first law of thermodynamics), impose constraints on statistical ensembles.
+The micro-canonical ensemble directly implements such constraints, by requiring the system's internal energy and particle number be constant, which implies that the system is completely isolated from the rest of the universe.
+This makes both the entropy (\eq{eq:entropy}) and temperature (\eq{eq:temperature}) derived quantities, which we explored via non-interacting spin systems.
+In particular, we derived a form of the second law of thermodynamics, which states that the total entropy never decreases as time passes and therefore indicates that maximal entropy corresponds to thermodynamic equilibrium.
 
-\TODO{Being written...}
+Motivated by the impracticality of demanding that a system be completely isolated, in week~3 we turned to the canonical ensemble, which allows systems to exchange energy with a large thermal reservoir that imposes a constant temperature.
+The particle number is still fixed, while the entropy, internal energy and heat capacity are now important derived quantities, with the last two related by a fluctuation--dissipation relation.
+Maximizing the entropy to consider systems in thermodynamic equilibrium defines the partition function (\eq{eq:canon_part_func}) and Boltzmann distribution (\eq{eq:canon_prob}).
+Derived quantities are determined from the partition function, or equivalently the Helmholtz free energy (\eq{eq:helmholtz}).
+By analyzing both distinguishable and indistinguishable non-interacting spins, we demonstrated that the intrinsic information content of statistical systems has physically measurable effects.
 
+In week~4 we developed another application of the canonical ensemble by analyzing non-relativistic, classical, ideal (non-interacting) gases.
+At the start of this analysis we had to take care to ensure that the partition function was well-defined, by assuming that only discrete momenta are possible in a finite volume $V$, to ensure that the number of micro-states is countable.
+Again determining the internal energy (\eq{eq:ideal_energy}) and entropy (\eq{eq:ideal_entropy}) from the resulting partition functions for both distinguishable and indistinguishable gas particles, we computed the mixing entropy that is created by combining gases of distinguishable particles.
+Finally we defined the pressure as the adiabatic change in the system's energy upon changing its volume (\eq{eq:pressure}), and derived the ideal gas law (\eq{eq:ideal_gas_law}) as a famous equation of state.
 
-% Statistical Physics is a core subject in Physics and a cornerstone for modern technologies. To name just one example, quantum statistics is informing leading edge developments around ultra-cold gases and liquids giving rise to new materials. The module will introduce foundations of Statistical Physics and will develop an understanding of the stochastic roots of thermodynamics and the sometimes-illusive properties of matter. After successfully completing this module students will understand statistical ensembles and related concepts such as entropy and temperature, will understand the properties of classical and quantum gases, will be know the laws of thermodynamics and will be aware of advanced phenomena such as phase transition. The module will also deliver key numerical skills for the description of macroscopic effects such as diffusion by an underlying stochastic process.
+Building on our analyses of ideal gases in the canonical ensemble, in week~5 we considered thermodynamic cycles as systems that perform a repeatable sequence of expansions, compressions and heat transfers in order to act as heat engines or refrigerators.
+This required first considering the work done on the system through these processes (\eq{eq:work}), the heat added to or removed from it (\eq{eq:heat_def}), and the first law of thermodynamics expressed in terms of these quantities (\eq{eq:first_law}).
+After introducing $PV$~diagrams as a convenient way to visualize thermodynamic cycles and the individual processes that comprise them, we analyzed the Carnot heat engine and computed how much work it can do by transferring heat from a hot thermal reservoir to a cold reservoir.
+This combination of work and heat defines the efficiency (\eq{eq:efficiency}), and we computed that the Carnot heat engine achieves the maximum possible efficiency allowed by the second law of thermodynamics.
+
+The logical next step, after allowing the energy to fluctuate with a constant temperature, is also allowing the system to exchange particles with a large particle reservoir.
+This leads to the grand-canonical ensemble that we developed in week~6, beginning by defining the chemical potential (\eq{eq:chem_pot}) as the new quantity (in addition to the temperature) that the particle reservoir keeps constant.
+Carrying out another round of entropy maximization defined the grand-canonical partition function (\eq{eq:grand_part_func}) and the corresponding grand-canonical potential (\eq{eq:grand_pot}) that determine the derived quantities that now include the particle number in addition to the energy and entropy.
+We were also able to derive a generalized thermodynamic identity (\eq{eq:thermo_ident}) that relates the chemical potential to the change in energy upon adiabatically adding a particle to the system.
+
+Our main applications of the grand-canonical ensemble were to analyze gases based on the quantum statistics that we introduced (as an ansatz) in week~7.
+After demonstrating how the classical (non-quantum) approach we took when first considering ideal gases breaks down when there is a non-negligible probability for multiple identical particles to occupy the same energy level, we got around this problem by organizing the micro-states in terms of the possible occupation numbers of the energy levels.
+These possible occupation numbers distinguish between the two types of particles that appear in nature: bosons that can have any non-negative occupation numbers $n_{\ell} \in \Nbb_0$, and fermions that obey the Pauli exclusion principle and can have only $n_{\ell} \in \left\{0, 1\right\}$.
+We derived the respective Bose--Einstein and Fermi--Dirac statistics for these two types of quantum particles, and checked that both approach classical (Maxwell--Boltzmann) statistics in the limit of high temperature with large negative chemical potential $-\mu \gg T$.
+
+We carried out a more thorough application of the grand-canonical ensemble to quantum gases of bosons in week~8, focusing on ideal (non-interacting) gases of ultra-relativistic photons with energies defined in terms of frequencies (\eq{eq:photon_omega}).
+Based on the grand-canonical potential, we derived the Planck spectrum (\eq{eq:Planck_omega}) governing the frequency dependence of the energy density for photon gases, and found how it solves the ultraviolet catastrophe of the classical Rayleigh--Jeans spectrum.
+We also saw how the Planck spectrum provides an excellent mathematical model for both stars (some of the hottest places in the universe) as well as the cosmic microwave background that fills frigid inter-galactic space and provides strong evidence for the existence of dark matter.
+We finally derived the radiation pressure of photon gases, and the corresponding equation of state, which has the same form as the ideal gas law, just with a different numerical factor.
+
+In week~9 we carried out a similar application of the grand-canonical ensemble to quantum gases of non-interacting fermions, focusing mainly on non-relativistic particles and considering the low-temperature regime where quantum Fermi--Dirac statistics differs the most from the classical case.
+Again based on the grand-canonical potential, we derived the Fermi function (\eq{eq:Fermi_func}) and saw how it becomes a step function at low temperatures.
+This corresponds to all the low-lying energy levels being filled by the single fermion that can occupy each of them by the Pauli exclusion principle, up to the Fermi energy that (at zero temperature) is simply the chemical potential (\eq{eq:Fermi_energy}).
+The resulting internal energy (\eq{eq:fermi_E_N}) and pressure (\eq{eq:degen_pressure}) remain positive even as the temperature approaches absolute zero.
+This non-zero degeneracy pressure helps to explain the regularity of type-Ia supernovas, which play a key role in establishing the existence of so-called dark energy.
+
+The last major topic of the module was to explore effects of interactions in weeks~10 and 11.
+Statistical systems in which the constituent degrees of freedom can interact with each other exhibit a broader array of phenomena, such as phase transitions.
+At the same time, they become enormously more difficult to analyze, because their partition functions and derived quantities no longer factorize into independent single-particle contributions.
+We focused on the famous Ising model, which is simple to write down as a system of spins interacting with their nearest neighbours on a $d$-dimensional simple cubic lattice, but extremely difficult to solve exactly in two or more dimensions.
+We discussed how to analyze the Ising model through the mean-field approximation (last week) and by using numerical Monte Carlo importance sampling algorithms (\secref{sec:MonteCarlo}).
+For $d \geq 2$, the Ising model exhibits a second-order phase transition between its high-temperature disordered phase and its low-temperature ordered phase.
+The critical exponents characterizing these transitions also arise in many other contexts, a phenomenon known as universality, which helps to explain the broad applicability and far-reaching power of statistical physics, including the examples briefly considered in \secref{sec:broad}.
+
+In summary, we have learned foundations including statistical ensembles, entropy, and the laws of thermodynamics.
+We have studied applications including diffusion, ideal gases, thermodynamic cycles, and phase transitions.
+And we have previewed advanced topics including numerical methods and universality.
+All together, our new knowledge of statistical physics enables us to observe and appreciate many further applications of these concepts and tools across the mathematical sciences and beyond.
 % ------------------------------------------------------------------
