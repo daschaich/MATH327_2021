@@ -1,0 +1,747 @@
+1
+00:00:01,680 --> 00:00:04,720
+Hello and welcome back to a statistical physics.
+
+2
+00:00:04,740 --> 00:00:07,980
+This is the first video for the final week of the
+
+3
+00:00:07,980 --> 00:00:11,640
+module, week 11, which if I bring the materials up
+
+4
+00:00:11,650 --> 00:00:15,720
+onto the screen here, we will see is a bit
+
+5
+00:00:15,720 --> 00:00:18,120
+different than the the previous weeks that came
+
+6
+00:00:18,120 --> 00:00:22,350
+before dealing with a wrap up for the module,
+
+7
+00:00:22,680 --> 00:00:25,410
+brief consideration of some broader applications
+
+8
+00:00:25,410 --> 00:00:28,890
+of the statistical physics tools and concepts we
+
+9
+00:00:28,890 --> 00:00:31,890
+have developed so far, along with an overall
+
+10
+00:00:32,070 --> 00:00:35,310
+synthesis and recapitulation of everything that
+
+11
+00:00:35,310 --> 00:00:39,640
+we've seen. And the starting point for this week
+
+12
+00:00:40,000 --> 00:00:45,110
+is building a bit on the. Interacting systems that
+
+13
+00:00:45,110 --> 00:00:48,230
+we introduced last week through the particular
+
+14
+00:00:48,230 --> 00:00:52,790
+example of the easy model of spins out of lattice
+
+15
+00:00:52,790 --> 00:00:55,760
+interacting with their nearest neighbors, where
+
+16
+00:00:56,330 --> 00:01:00,200
+when we talked about the accuracy of the Glenfield
+
+17
+00:01:00,200 --> 00:01:03,950
+approximation to the using model, you mentioned
+
+18
+00:01:03,950 --> 00:01:08,930
+that with accuracy actually increases as the
+
+19
+00:01:08,930 --> 00:01:11,570
+number of dimensions in the system increases,
+
+20
+00:01:12,440 --> 00:01:15,680
+getting the critical exponents correct for
+
+21
+00:01:16,190 --> 00:01:20,060
+lattices in four or more dimensions, while the
+
+22
+00:01:20,060 --> 00:01:22,760
+critical temperature from the main field
+
+23
+00:01:22,760 --> 00:01:27,290
+approximation becomes closer to the true value as
+
+24
+00:01:27,650 --> 00:01:32,040
+that dimensionality increases and. What was
+
+25
+00:01:32,040 --> 00:01:34,620
+mentioned here was that these true values are
+
+26
+00:01:34,620 --> 00:01:40,580
+being determined by. Numerical calculations and
+
+27
+00:01:40,610 --> 00:01:47,090
+numerical computations, and this may have caused
+
+28
+00:01:47,450 --> 00:01:52,070
+some questions based on the earlier discussion of
+
+29
+00:01:52,070 --> 00:01:56,630
+the extreme difficulty of exactly solving the easy
+
+30
+00:01:56,650 --> 00:01:59,330
+model or indeed any other interacting statistical
+
+31
+00:01:59,330 --> 00:02:03,950
+system where we counted the terms that appear in
+
+32
+00:02:03,950 --> 00:02:08,720
+the partition function and clearly saw that even
+
+33
+00:02:08,720 --> 00:02:11,750
+with any computer we could imagine, it would take
+
+34
+00:02:11,750 --> 00:02:14,270
+far longer than the age of the universe to
+
+35
+00:02:14,270 --> 00:02:19,040
+evaluate all of those terms. So the numerical
+
+36
+00:02:19,220 --> 00:02:22,900
+methods that are used very broadly, used
+
+37
+00:02:22,910 --> 00:02:27,170
+throughout many fields of science to analyze
+
+38
+00:02:27,890 --> 00:02:31,340
+interacting statistical systems are not based on
+
+39
+00:02:32,210 --> 00:02:35,990
+completely determining the partition function the
+
+40
+00:02:35,990 --> 00:02:40,040
+way that we have been carrying out calculations
+
+41
+00:02:40,040 --> 00:02:42,950
+analytically in the simple not track in cases
+
+42
+00:02:42,950 --> 00:02:46,310
+where factorization turns that into a single
+
+43
+00:02:46,310 --> 00:02:52,460
+particle problem. The approach that is used in all
+
+44
+00:02:52,460 --> 00:02:57,260
+of these numerical calculations is centered on the
+
+45
+00:02:57,260 --> 00:02:59,450
+idea of sampling that instead of computing every
+
+46
+00:02:59,450 --> 00:03:02,750
+possible term, instead of something over every
+
+47
+00:03:02,750 --> 00:03:05,600
+microstates that appears in the formal definition
+
+48
+00:03:05,600 --> 00:03:08,570
+of the partition function, we can just sample some
+
+49
+00:03:08,570 --> 00:03:13,820
+small subsets of those microstates and hope that
+
+50
+00:03:14,060 --> 00:03:17,990
+this small sample provides an accurate and
+
+51
+00:03:17,990 --> 00:03:21,250
+controlled approximation to the overall system.
+
+52
+00:03:22,160 --> 00:03:25,760
+And there are cases and conditions under which
+
+53
+00:03:25,760 --> 00:03:27,050
+this turns out to be true.
+
+54
+00:03:31,070 --> 00:03:34,370
+And perhaps before getting into those conditions,
+
+55
+00:03:34,370 --> 00:03:38,090
+a bit of background is that these methods were
+
+56
+00:03:38,090 --> 00:03:42,470
+developed with the advent of numerical computing
+
+57
+00:03:42,470 --> 00:03:46,220
+machines back in the 1940s and a couple of
+
+58
+00:03:46,220 --> 00:03:50,240
+mathematicians who pioneered these methods and
+
+59
+00:03:50,240 --> 00:03:54,140
+gave them the whimsical name of Montecarlo
+
+60
+00:03:54,140 --> 00:03:58,400
+techniques named after the casino in Monaco. We're
+
+61
+00:03:58,400 --> 00:04:03,440
+satisfied with William and Jonathan Neumann. And
+
+62
+00:04:03,440 --> 00:04:09,680
+the idea is that just as we had to do in the
+
+63
+00:04:09,680 --> 00:04:13,040
+computing project, we no longer had the central
+
+64
+00:04:13,040 --> 00:04:15,710
+limit theorem and the law of diffusion available
+
+65
+00:04:15,710 --> 00:04:20,000
+to analyze random walks, we have to carry out some
+
+66
+00:04:20,000 --> 00:04:23,420
+numerical calculations that involve stochastic
+
+67
+00:04:23,420 --> 00:04:28,010
+sampling, pseudo random numbers and repeated many
+
+68
+00:04:28,010 --> 00:04:33,750
+times to get an ensemble of. Of results that can
+
+69
+00:04:33,750 --> 00:04:38,340
+then be averaged ideally with some controlled
+
+70
+00:04:38,340 --> 00:04:39,990
+uncertainty in those averaging.
+
+71
+00:04:42,330 --> 00:04:47,460
+And the sort of basic setting in which these
+
+72
+00:04:47,460 --> 00:04:50,790
+Montecarlo methods were developed were evaluating
+
+73
+00:04:51,120 --> 00:04:53,790
+complicated, multidimensional integrals that could
+
+74
+00:04:53,790 --> 00:04:57,420
+not be done through pen and paper techniques or
+
+75
+00:04:57,420 --> 00:05:00,990
+through simple analytic approximations, where
+
+76
+00:05:00,990 --> 00:05:05,250
+maybe the the simplest example of a Montecarlo
+
+77
+00:05:05,250 --> 00:05:11,460
+evaluation of an integral is to compute the area
+
+78
+00:05:11,460 --> 00:05:17,220
+of this unit, this embedded in a two by two square
+
+79
+00:05:17,220 --> 00:05:21,600
+integration domain, which normally normalizes the
+
+80
+00:05:22,020 --> 00:05:25,140
+counts of the random points in that domain that
+
+81
+00:05:25,140 --> 00:05:25,920
+gets sampled
+
+82
+00:05:28,110 --> 00:05:31,290
+so that the ratio of the points that land within
+
+83
+00:05:31,290 --> 00:05:35,400
+the disk to those that took the total number that
+
+84
+00:05:35,400 --> 00:05:42,420
+are generated is simply high. And in a few minutes
+
+85
+00:05:42,870 --> 00:05:47,040
+with, say, a billion samples, we can compute pi
+
+86
+00:05:47,430 --> 00:05:51,990
+using simply pseudo random numbers to about.
+
+87
+00:05:54,350 --> 00:05:59,000
+For significant figures in this uncertainty here,
+
+88
+00:05:59,000 --> 00:06:02,240
+you can see how it is estimated in the Python code
+
+89
+00:06:03,110 --> 00:06:06,980
+now that sort of sampling could work well in the
+
+90
+00:06:06,980 --> 00:06:09,320
+high temperature phase of the easing model, we
+
+91
+00:06:09,320 --> 00:06:15,590
+just sample a vanishingly small subset of all of
+
+92
+00:06:15,590 --> 00:06:18,170
+the microstates. So sampling, say a trillion
+
+93
+00:06:18,170 --> 00:06:21,140
+microstates would be one part in 10 to the power
+
+94
+00:06:21,140 --> 00:06:24,940
+of two hundred eighty eight out of the total for a
+
+95
+00:06:24,950 --> 00:06:28,820
+thousand particle system and really tiny system in
+
+96
+00:06:28,820 --> 00:06:31,220
+the context of statistical physics.
+
+97
+00:06:33,770 --> 00:06:38,200
+But that is definitely not going to work in the in
+
+98
+00:06:38,200 --> 00:06:40,370
+the low temperature phase, so we call that the
+
+99
+00:06:40,940 --> 00:06:44,750
+high temperature phase is characterized by. All of
+
+100
+00:06:44,750 --> 00:06:47,450
+the micro states of the easy model being
+
+101
+00:06:47,990 --> 00:06:52,490
+approximately. Equal probability so that averaging
+
+102
+00:06:52,490 --> 00:06:55,340
+over any subset of them is going to be just as
+
+103
+00:06:55,340 --> 00:06:58,580
+good as averaging over in the other subset, the
+
+104
+00:06:58,580 --> 00:07:01,460
+low temperature phase, however, the ground stage
+
+105
+00:07:01,460 --> 00:07:05,120
+becomes exponentially dominant, with excited
+
+106
+00:07:05,120 --> 00:07:07,340
+states producing exponentially suppressed
+
+107
+00:07:07,340 --> 00:07:13,700
+corrections to predictions. So if our sampling did
+
+108
+00:07:13,700 --> 00:07:17,300
+not pick out the the ground state or one of the
+
+109
+00:07:17,480 --> 00:07:20,210
+two degenerate ground states, then we would get
+
+110
+00:07:20,210 --> 00:07:23,690
+simply a completely wrong answer. And we can see
+
+111
+00:07:23,690 --> 00:07:26,600
+that we have a chance of one part in 10 to the
+
+112
+00:07:26,600 --> 00:07:30,020
+power two hundred eighty eight to randomly select
+
+113
+00:07:30,020 --> 00:07:34,250
+background state that really controls and
+
+114
+00:07:34,250 --> 00:07:38,990
+determines the physics and that regime and the the
+
+115
+00:07:39,170 --> 00:07:43,550
+way around. This was sort of phrased in a very
+
+116
+00:07:43,550 --> 00:07:47,840
+elegant way by this group of researchers who
+
+117
+00:07:47,840 --> 00:07:50,810
+developed so-called important sampling back in the
+
+118
+00:07:50,810 --> 00:07:56,390
+1950s, saying that instead of randomly sampling
+
+119
+00:07:56,510 --> 00:07:59,300
+states with the probability distribution and
+
+120
+00:07:59,300 --> 00:08:02,480
+weighting their expectation value or weighting
+
+121
+00:08:02,480 --> 00:08:05,390
+their contributions to the expectation value with
+
+122
+00:08:05,390 --> 00:08:09,110
+the exponential Boltzmann factor, we sample states
+
+123
+00:08:09,110 --> 00:08:13,040
+proportional to that exponential factor and then
+
+124
+00:08:13,040 --> 00:08:18,020
+simply have a flat. Distribution with which they
+
+125
+00:08:18,020 --> 00:08:20,090
+contribute to expectation values,
+
+126
+00:08:22,670 --> 00:08:25,560
+so the the trick so the idea of importance, of
+
+127
+00:08:25,570 --> 00:08:29,390
+sampling, to say it a bit less elegantly and more
+
+128
+00:08:29,390 --> 00:08:33,290
+straightforwardly is just to sample the important
+
+129
+00:08:33,290 --> 00:08:37,310
+states that contribute a lot to the predictions
+
+130
+00:08:37,910 --> 00:08:41,900
+that we want to obtain numerically. The
+
+131
+00:08:42,320 --> 00:08:46,060
+complication is that apriori, before we do a full
+
+132
+00:08:46,070 --> 00:08:48,950
+calculation, we don't necessarily know which
+
+133
+00:08:48,950 --> 00:08:51,530
+states in this complicated interactive statistical
+
+134
+00:08:51,530 --> 00:08:57,360
+system are actually important in the. The work
+
+135
+00:08:57,360 --> 00:09:01,350
+that was done in the 50s was getting around. We're
+
+136
+00:09:01,350 --> 00:09:03,720
+addressing that challenge through the concept of
+
+137
+00:09:03,720 --> 00:09:06,420
+Berkoff change that we saw all the way back in
+
+138
+00:09:06,420 --> 00:09:10,020
+Section one, where each state that is sampled
+
+139
+00:09:10,020 --> 00:09:12,450
+numerically, I should say, each micro state that
+
+140
+00:09:12,450 --> 00:09:16,380
+is sampled numerically is built from the
+
+141
+00:09:16,380 --> 00:09:20,890
+previously considered micro state. Forming a chain
+
+142
+00:09:20,890 --> 00:09:24,910
+of microstates that evolved from one to the next
+
+143
+00:09:24,910 --> 00:09:30,540
+in a particular way and. The way that was
+
+144
+00:09:30,540 --> 00:09:34,560
+developed back in the 50s and remains very widely
+
+145
+00:09:34,560 --> 00:09:40,230
+used across all areas of science, was to just make
+
+146
+00:09:40,230 --> 00:09:43,050
+a change to a particular degree of freedom,
+
+147
+00:09:44,130 --> 00:09:46,980
+compute the overall change in energy, the same
+
+148
+00:09:47,250 --> 00:09:51,690
+quantity that we used to diagnose whether or not
+
+149
+00:09:51,690 --> 00:09:56,080
+the system was interacting or not interacting. And
+
+150
+00:09:56,080 --> 00:10:00,460
+then either accept or reject this proposed change
+
+151
+00:10:00,670 --> 00:10:04,420
+to the degree of freedom with this particular
+
+152
+00:10:04,930 --> 00:10:08,680
+probability where if the change in energy is
+
+153
+00:10:08,680 --> 00:10:12,820
+negative, then the exponential factor is greater
+
+154
+00:10:12,820 --> 00:10:15,850
+than one and the acceptance probability is one
+
+155
+00:10:15,850 --> 00:10:19,000
+hundred percent. But if the change in energy is
+
+156
+00:10:19,000 --> 00:10:22,600
+negative, then the acceptance probability is
+
+157
+00:10:22,600 --> 00:10:26,230
+exponentially suppressed so that if we do manage
+
+158
+00:10:26,230 --> 00:10:30,010
+to find that lowest energy ground states, we have,
+
+159
+00:10:30,010 --> 00:10:33,070
+depending on the inverse temperature data, the
+
+160
+00:10:33,070 --> 00:10:35,920
+appropriate exponentially suppressed probability
+
+161
+00:10:35,920 --> 00:10:38,590
+of leaving it again and sampling different
+
+162
+00:10:38,590 --> 00:10:41,560
+microstates so we can continue in this process to
+
+163
+00:10:41,560 --> 00:10:44,590
+sample the same microstates over and over and over
+
+164
+00:10:44,590 --> 00:10:49,510
+again if. All of the other microstates that are
+
+165
+00:10:49,510 --> 00:10:52,210
+proposed by this algorithm come in with a
+
+166
+00:10:52,360 --> 00:10:56,200
+significantly higher temperature or significantly
+
+167
+00:10:56,200 --> 00:10:59,110
+higher energy times, inverse temperature at least
+
+168
+00:10:59,110 --> 00:11:00,520
+of this exponential suppression.
+
+169
+00:11:02,720 --> 00:11:06,890
+And yes, the quick calculation reveals that the
+
+170
+00:11:06,890 --> 00:11:12,650
+probability of ending up in the state A or B based
+
+171
+00:11:12,650 --> 00:11:15,770
+on this approach is proportional to the
+
+172
+00:11:15,770 --> 00:11:19,760
+corresponding Boltzmann factor, the exponential of
+
+173
+00:11:20,180 --> 00:11:23,360
+minus speed of times, the corresponding energy A
+
+174
+00:11:23,540 --> 00:11:32,540
+or B, so gone on about this A. A fair amount of
+
+175
+00:11:32,540 --> 00:11:35,450
+time, so I'll wrap up the video here and deal with
+
+176
+00:11:35,450 --> 00:11:38,180
+the rest of the material in the second video for
+
+177
+00:11:38,180 --> 00:11:42,880
+this week. But I will just say that these sorts of
+
+178
+00:11:43,540 --> 00:11:46,660
+numerical calculations based on Montecarlo,
+
+179
+00:11:46,660 --> 00:11:48,640
+important sampling are.
+
+180
+00:11:50,650 --> 00:11:53,920
+I emphasize that they date back to the 1950s, but
+
+181
+00:11:53,920 --> 00:11:58,450
+they remain a cutting edge aspect of research in
+
+182
+00:11:58,840 --> 00:12:01,810
+mathematical sciences, physical sciences, life
+
+183
+00:12:01,810 --> 00:12:07,180
+sciences, even beyond the sciences, wherever there
+
+184
+00:12:07,210 --> 00:12:10,090
+are statistics and where there are systems with
+
+185
+00:12:10,420 --> 00:12:14,620
+large numbers of individual components. This sort
+
+186
+00:12:14,620 --> 00:12:17,920
+of Montecarlo important sampling will be a key
+
+187
+00:12:17,920 --> 00:12:18,400
+tool.
