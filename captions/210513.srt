@@ -1,0 +1,2747 @@
+1
+00:00:02,260 --> 00:00:07,070
+OK, that recording should be under way and we'll
+
+2
+00:00:07,120 --> 00:00:12,340
+get set up with the usual logistical notes and
+
+3
+00:00:14,440 --> 00:00:17,680
+the chance in the chat window to
+
+4
+00:00:20,690 --> 00:00:24,980
+Have any input on the direction that those of you
+
+5
+00:00:24,980 --> 00:00:31,430
+who are here live, want this last session to go.
+
+6
+00:00:32,180 --> 00:00:37,450
+So if there are a couple of. Directions that we
+
+7
+00:00:37,450 --> 00:00:42,220
+could go today, one being. Circling back to the
+
+8
+00:00:42,790 --> 00:00:45,550
+weekend stuff on the Medfield approximation that
+
+9
+00:00:45,550 --> 00:00:47,860
+sort of skipped over on Monday in favor of talking
+
+10
+00:00:47,860 --> 00:00:52,150
+about numerical Montecarlo calculations, the other
+
+11
+00:00:52,150 --> 00:00:57,560
+main thrust would be an overall review of. Of the
+
+12
+00:00:57,560 --> 00:01:02,630
+past 11 weeks, the volatile material with an eye
+
+13
+00:01:02,630 --> 00:01:07,910
+toward the final assessment coming up. And I think
+
+14
+00:01:07,910 --> 00:01:10,730
+if there are no strong preference is expressed
+
+15
+00:01:10,730 --> 00:01:14,300
+through Zob or that way everywhere, I would
+
+16
+00:01:14,300 --> 00:01:16,670
+probably go through them in that order. Touching
+
+17
+00:01:16,670 --> 00:01:19,850
+on the bean field approximation as the last major
+
+18
+00:01:19,850 --> 00:01:22,400
+components of the.
+
+19
+00:01:24,590 --> 00:01:27,290
+The material that has not really been discussed in
+
+20
+00:01:27,290 --> 00:01:32,090
+much depth in previous synchronous sessions while.
+
+21
+00:01:33,310 --> 00:01:38,680
+You have that opportunity to. Make your feelings
+
+22
+00:01:38,680 --> 00:01:43,330
+felt, can you give a few more logistical notes,
+
+23
+00:01:43,330 --> 00:01:47,740
+first of which being that the second part of the
+
+24
+00:01:47,740 --> 00:01:50,980
+computer project is now finally graded and that
+
+25
+00:01:50,980 --> 00:01:55,110
+should have gotten back to you about 10 hours ago.
+
+26
+00:01:56,830 --> 00:02:01,240
+And as always, no guarantee that I've done that
+
+27
+00:02:01,240 --> 00:02:04,210
+working perfectly. So feel free to get in touch
+
+28
+00:02:04,210 --> 00:02:08,620
+with me if you think I've. Made any mistakes by
+
+29
+00:02:08,620 --> 00:02:11,680
+going through it, either in your submission was
+
+30
+00:02:11,680 --> 00:02:16,660
+marked or the general solutions, I think in
+
+31
+00:02:16,660 --> 00:02:19,510
+general folks had a much easier time with this
+
+32
+00:02:19,510 --> 00:02:21,880
+parts than with the first part, probably
+
+33
+00:02:22,360 --> 00:02:26,560
+benefiting from the experience and model of how
+
+34
+00:02:26,560 --> 00:02:29,170
+that that first thought went. So there were not
+
+35
+00:02:29,170 --> 00:02:32,710
+really any very widespread and significant issues
+
+36
+00:02:32,710 --> 00:02:36,460
+that I noticed while going through things. The
+
+37
+00:02:37,240 --> 00:02:40,570
+solutions are up on the canvass sites and in the
+
+38
+00:02:40,570 --> 00:02:43,810
+usual place. So let me know if you have any
+
+39
+00:02:43,810 --> 00:02:47,920
+trouble finding those as well. The second homework
+
+40
+00:02:47,920 --> 00:02:50,830
+assignment is now what's being marked and that
+
+41
+00:02:50,830 --> 00:02:54,940
+should go more quickly without having to hop back
+
+42
+00:02:54,940 --> 00:02:58,330
+and forth between PDF submissions and code files
+
+43
+00:02:58,550 --> 00:03:02,500
+that should be wrapped up over the weekend and.
+
+44
+00:03:04,950 --> 00:03:08,820
+I guess there will be no more synchronous sessions
+
+45
+00:03:08,820 --> 00:03:12,780
+after that to provide general feedback if there
+
+46
+00:03:12,810 --> 00:03:15,990
+are big issues on the record and upload a little
+
+47
+00:03:16,530 --> 00:03:21,780
+supplementary video. But I will say that at the
+
+48
+00:03:21,780 --> 00:03:25,800
+end of the regular term schedule, at the end of
+
+49
+00:03:25,800 --> 00:03:28,830
+this week, I won't be doing office hours at the
+
+50
+00:03:28,830 --> 00:03:31,740
+usual time, the hour after each of these
+
+51
+00:03:31,920 --> 00:03:36,000
+synchronous sessions, but will be available by
+
+52
+00:03:36,000 --> 00:03:39,960
+appointment and asynchronously throughout the
+
+53
+00:03:40,470 --> 00:03:43,500
+assessment period. If there are questions about
+
+54
+00:03:43,980 --> 00:03:48,270
+that upcoming homework assignment being returned
+
+55
+00:03:49,260 --> 00:03:54,510
+or anything else in the module as a whole.
+
+56
+00:03:58,320 --> 00:04:02,250
+And, you know, just for the sake of recording a
+
+57
+00:04:02,250 --> 00:04:05,840
+couple of the. Questions and answers that came up
+
+58
+00:04:05,840 --> 00:04:09,710
+at the end of the previous session after I believe
+
+59
+00:04:09,710 --> 00:04:14,210
+the recording had already stopped the. Question
+
+60
+00:04:14,210 --> 00:04:18,980
+was that whether the final assessment would cover
+
+61
+00:04:18,980 --> 00:04:22,270
+the entire module or just the the portion of it
+
+62
+00:04:22,280 --> 00:04:22,640
+that.
+
+63
+00:04:24,770 --> 00:04:28,040
+It was not covered by those previous work
+
+64
+00:04:28,040 --> 00:04:30,920
+assignments, and the answer is that the entire
+
+65
+00:04:30,920 --> 00:04:35,240
+module is fair game to show up on that final
+
+66
+00:04:35,240 --> 00:04:38,000
+assessment. There are few enough questions that
+
+67
+00:04:38,000 --> 00:04:41,180
+not every aspect of it can be covered, but what is
+
+68
+00:04:41,180 --> 00:04:45,430
+covered can be drawn from any week in the term.
+
+69
+00:04:47,030 --> 00:04:49,550
+That said, there will not be any programming
+
+70
+00:04:49,670 --> 00:04:52,550
+component to the final assessment that all got
+
+71
+00:04:52,550 --> 00:04:55,820
+wrapped up just about a month ago with the end of
+
+72
+00:04:55,820 --> 00:04:57,260
+the computer project.
+
+73
+00:05:00,420 --> 00:05:07,130
+And not seeing or hearing any. Strong demands for.
+
+74
+00:05:08,690 --> 00:05:14,260
+What to to look at today? Just keep that. Pull up
+
+75
+00:05:14,260 --> 00:05:16,210
+and running in the background and check in on it
+
+76
+00:05:16,900 --> 00:05:20,320
+on occasion, and as always, you're welcome to
+
+77
+00:05:20,710 --> 00:05:24,040
+unmuted what questions and comments in the chat
+
+78
+00:05:24,040 --> 00:05:29,860
+window I will hop over to. Actually, the the last
+
+79
+00:05:29,860 --> 00:05:34,810
+bit of the week, 10 material that got skipped over
+
+80
+00:05:34,930 --> 00:05:37,810
+on Monday in favor of numerical methods, looking
+
+81
+00:05:37,810 --> 00:05:43,510
+at the Manfield approximation and also the.
+
+82
+00:05:46,740 --> 00:05:51,470
+Related issue that I think. Also got a little bit
+
+83
+00:05:51,470 --> 00:05:54,860
+shortchanged for lack of time, which is what?
+
+84
+00:05:56,130 --> 00:05:59,270
+Really rigorously and mathematically defines a
+
+85
+00:05:59,310 --> 00:06:03,150
+phase transition as opposed to just some
+
+86
+00:06:03,150 --> 00:06:06,330
+difference between the behavior of the system in
+
+87
+00:06:06,330 --> 00:06:09,300
+different regions of its control parameters. So we
+
+88
+00:06:09,300 --> 00:06:14,940
+did see previously that looking at the using model
+
+89
+00:06:14,940 --> 00:06:19,590
+as the simplest possible interacting theory in the
+
+90
+00:06:19,590 --> 00:06:21,990
+high and low temperature limits that we could
+
+91
+00:06:22,560 --> 00:06:26,280
+solve the very leading order, asymptotic behavior
+
+92
+00:06:26,940 --> 00:06:29,370
+with analytic approximations. Or we could carry
+
+93
+00:06:29,370 --> 00:06:32,070
+out numerical calculations, both of which
+
+94
+00:06:32,490 --> 00:06:37,560
+distinguish between two distinct types of behavior,
+
+95
+00:06:37,560 --> 00:06:42,870
+two different phases analogous to, say, the liquid
+
+96
+00:06:42,870 --> 00:06:45,270
+phase of water in the solid phase of ice. Both may
+
+97
+00:06:45,270 --> 00:06:46,920
+not have the same substance, but behaving
+
+98
+00:06:47,340 --> 00:06:52,120
+qualitatively differently in the easy model are a
+
+99
+00:06:52,200 --> 00:06:55,320
+parameter, just like the melting or freezing of
+
+100
+00:06:55,320 --> 00:06:59,130
+water is the temperature of the system or the
+
+101
+00:06:59,130 --> 00:07:02,070
+inverse temperature data. And at high temperatures,
+
+102
+00:07:02,070 --> 00:07:09,960
+we saw that the system is disordered and. Roughly
+
+103
+00:07:09,960 --> 00:07:13,440
+half of the spin's are pointing in each of the two
+
+104
+00:07:13,530 --> 00:07:16,080
+directions that they can point out in the absence
+
+105
+00:07:16,080 --> 00:07:19,800
+of an external magnetic field and there's sort of
+
+106
+00:07:19,800 --> 00:07:25,380
+no pattern or no large scale organization between
+
+107
+00:07:25,620 --> 00:07:27,750
+determining which direction spins or pointing it
+
+108
+00:07:27,750 --> 00:07:32,580
+is randomly decided for each thing. And we have. I
+
+109
+00:07:32,580 --> 00:07:34,440
+guess just as a quick reminder,
+
+110
+00:07:36,510 --> 00:07:40,610
+can pull up. This again, and look at the high
+
+111
+00:07:40,610 --> 00:07:41,630
+temperature limit where.
+
+112
+00:07:43,890 --> 00:07:46,590
+Each square here corresponds to a spin color,
+
+113
+00:07:46,590 --> 00:07:49,080
+black or white, for pointing up or down and at
+
+114
+00:07:49,080 --> 00:07:50,040
+high temperatures.
+
+115
+00:07:53,210 --> 00:07:54,560
+It's not the one that I want.
+
+116
+00:07:57,420 --> 00:08:03,820
+Circle this high temperature limit. Here, where
+
+117
+00:08:03,820 --> 00:08:06,430
+there's no large scale pattern in the orientation
+
+118
+00:08:06,430 --> 00:08:10,900
+of the stands, which is a disordered array of of
+
+119
+00:08:10,900 --> 00:08:14,080
+up and down 40 degrees of freedom and in low
+
+120
+00:08:14,080 --> 00:08:17,800
+temperatures, things are. Qualitatively different.
+
+121
+00:08:19,140 --> 00:08:25,060
+With all of the spins preferring to. Align in an
+
+122
+00:08:25,060 --> 00:08:28,510
+ordered rather than a disordered phase where these
+
+123
+00:08:28,780 --> 00:08:33,780
+two faces are distinguished. By the magnetization,
+
+124
+00:08:33,960 --> 00:08:37,290
+the difference between the number of appointing
+
+125
+00:08:37,290 --> 00:08:40,530
+and down appointing spins, which vanishes in the
+
+126
+00:08:40,560 --> 00:08:46,260
+disordered phase and is non-zero and it approaches
+
+127
+00:08:46,260 --> 00:08:51,640
+its maximum one in that order phase. So this
+
+128
+00:08:51,640 --> 00:08:54,130
+magnetization here is playing the role of a
+
+129
+00:08:54,130 --> 00:08:56,500
+parameter that tells us whether the system is
+
+130
+00:08:56,800 --> 00:08:58,990
+ordered or disordered, and because that sort of
+
+131
+00:09:01,210 --> 00:09:05,860
+order disorder behavior is fairly generic in a
+
+132
+00:09:05,860 --> 00:09:10,870
+large number of statistical systems, this
+
+133
+00:09:11,150 --> 00:09:14,590
+magnetization can be generalized or it serves as
+
+134
+00:09:14,590 --> 00:09:17,650
+an example of a more general concept of order
+
+135
+00:09:17,650 --> 00:09:20,590
+parameter, which, as it says on the tin, is a
+
+136
+00:09:20,590 --> 00:09:23,050
+parameter that tells us whether the system is
+
+137
+00:09:23,050 --> 00:09:28,240
+ordered or disordered in a phase transition is.
+
+138
+00:09:30,010 --> 00:09:33,040
+Formally defined by the presence of a
+
+139
+00:09:33,040 --> 00:09:38,080
+discontinuity. In this order parameter or.
+
+140
+00:09:40,460 --> 00:09:48,370
+Any of its derivatives? And this is. A. A way of
+
+141
+00:09:48,520 --> 00:09:53,560
+categorizing and defining these transitions as
+
+142
+00:09:53,560 --> 00:09:59,260
+opposed to a gradual, continuous crossover's. That
+
+143
+00:09:59,770 --> 00:10:02,620
+was developed around the mid 20th century by.
+
+144
+00:10:04,830 --> 00:10:09,180
+Two Russian physicist Lev Landow and Ginzberg
+
+145
+00:10:10,080 --> 00:10:12,420
+think the first name is Vitaly Ginzberg, but can't
+
+146
+00:10:12,750 --> 00:10:16,770
+quite recall. But it's the Ginzberg paradigm where
+
+147
+00:10:17,190 --> 00:10:19,020
+there is an order parameter that distinguishes
+
+148
+00:10:19,020 --> 00:10:21,900
+between these phases in a phase, transition is
+
+149
+00:10:21,900 --> 00:10:24,120
+present. If that were a parameter or its
+
+150
+00:10:24,120 --> 00:10:30,800
+derivatives have a discontinuity. And the the
+
+151
+00:10:30,800 --> 00:10:32,960
+points in the case of the easy model, the
+
+152
+00:10:32,960 --> 00:10:36,620
+temperature at which the discontinuity occurs, is
+
+153
+00:10:36,770 --> 00:10:39,980
+known as the critical points or more specifically,
+
+154
+00:10:39,980 --> 00:10:43,690
+the critical temperature. We can imagine systems
+
+155
+00:10:43,690 --> 00:10:47,890
+where there are multiple different control
+
+156
+00:10:47,890 --> 00:10:49,750
+parameters that we could have to play with, we
+
+157
+00:10:49,750 --> 00:10:51,460
+could adjust the pressure of the volume, the
+
+158
+00:10:51,460 --> 00:10:53,710
+external magnetic field, and in that
+
+159
+00:10:53,710 --> 00:10:56,320
+multidimensional parameter space, there could well
+
+160
+00:10:56,320 --> 00:10:59,830
+be one or more different points where our order
+
+161
+00:10:59,830 --> 00:11:02,470
+parameter exhibits this sort of discontinuity,
+
+162
+00:11:03,430 --> 00:11:07,570
+transitioning between different phases. So the
+
+163
+00:11:07,570 --> 00:11:09,400
+critical point is a more general concept that
+
+164
+00:11:09,400 --> 00:11:12,730
+specializes to the critical temperature in the
+
+165
+00:11:12,730 --> 00:11:17,320
+zero field easing model in the classification or
+
+166
+00:11:17,320 --> 00:11:20,580
+categorization that was developed by Orlando. And
+
+167
+00:11:20,590 --> 00:11:24,340
+Ginsburg was to say that when the order parameter
+
+168
+00:11:24,340 --> 00:11:30,430
+itself has a a finite jump, a discontinuity at
+
+169
+00:11:30,430 --> 00:11:33,100
+that critical point which is drawn in this right
+
+170
+00:11:33,100 --> 00:11:36,970
+hand plot in the form of the dotted line, we call
+
+171
+00:11:36,970 --> 00:11:40,920
+that a first order phase transition or a
+
+172
+00:11:40,930 --> 00:11:44,340
+discontinuous phase transition where the order
+
+173
+00:11:44,350 --> 00:11:45,490
+parameter OPIS
+
+174
+00:11:47,770 --> 00:11:51,190
+jumps all of a sudden from its non-zero value in
+
+175
+00:11:51,550 --> 00:11:55,510
+the ordered phase to zero value in the disordered
+
+176
+00:11:55,510 --> 00:12:00,870
+phase, which of course implies. Similar
+
+177
+00:12:01,260 --> 00:12:04,530
+divergences in discontinuities in the derivatives
+
+178
+00:12:05,010 --> 00:12:08,130
+of this this sort of parameter, but it's also
+
+179
+00:12:08,130 --> 00:12:13,110
+possible for the order parameter to be continuous
+
+180
+00:12:13,110 --> 00:12:17,520
+at the phase transition, but to transition from
+
+181
+00:12:17,520 --> 00:12:22,740
+having a non-zero value to having a zero value
+
+182
+00:12:22,740 --> 00:12:25,800
+going from one place to another with a kink
+
+183
+00:12:27,810 --> 00:12:33,090
+where the first derivative exhibits a divergence.
+
+184
+00:12:34,270 --> 00:12:34,780
+And.
+
+185
+00:12:38,260 --> 00:12:39,910
+Not to spoil things, I think we already looked at
+
+186
+00:12:39,910 --> 00:12:43,990
+this last time that this so-called second order or
+
+187
+00:12:43,990 --> 00:12:49,120
+continuous phase transition is what the using
+
+188
+00:12:49,120 --> 00:12:55,690
+model exhibits in. Two or more dimensions where?
+
+189
+00:12:58,710 --> 00:13:02,010
+And in the two dimensional case, the make the
+
+190
+00:13:02,010 --> 00:13:03,600
+order parameter, which is the.
+
+191
+00:13:06,310 --> 00:13:08,980
+The magnetization that we've been talking about is
+
+192
+00:13:08,980 --> 00:13:14,970
+proportional to. The square root of the distance
+
+193
+00:13:15,240 --> 00:13:18,590
+away from that critical temperature. Whereas if
+
+194
+00:13:18,590 --> 00:13:21,920
+you take the first derivative, so obviously that
+
+195
+00:13:21,920 --> 00:13:24,290
+square roots is, in fact what is drawn in this
+
+196
+00:13:24,290 --> 00:13:27,020
+plot, it is a continuous function.
+
+197
+00:13:30,470 --> 00:13:34,250
+At that critical temperature where it goes from
+
+198
+00:13:34,250 --> 00:13:37,550
+that square independence to just being zero. But
+
+199
+00:13:37,560 --> 00:13:40,050
+if we look at the first derivative instead of the
+
+200
+00:13:40,050 --> 00:13:43,140
+square root, we end up with one over that square
+
+201
+00:13:43,140 --> 00:13:47,430
+root, which diverges as the quantity in
+
+202
+00:13:47,430 --> 00:13:52,170
+parentheses goes to zero as he approaches TCE from
+
+203
+00:13:52,170 --> 00:14:00,800
+below. And. We can get a grip on. These
+
+204
+00:14:00,800 --> 00:14:05,290
+transitions by. Trying to simplify these
+
+205
+00:14:05,290 --> 00:14:07,750
+interactive theories in some way, so we saw that
+
+206
+00:14:08,170 --> 00:14:11,140
+there were simplifications very far from that
+
+207
+00:14:11,140 --> 00:14:12,100
+phase transition.
+
+208
+00:14:14,270 --> 00:14:16,550
+Once we get to temperatures that are very much
+
+209
+00:14:16,550 --> 00:14:18,980
+larger than the critical temperature, we're very
+
+210
+00:14:18,980 --> 00:14:22,580
+much smaller than the critical temperature and we
+
+211
+00:14:22,580 --> 00:14:25,490
+are solidly we can identify that we are solidly in
+
+212
+00:14:25,850 --> 00:14:28,160
+one or the other of those phases and extract some
+
+213
+00:14:28,160 --> 00:14:31,310
+of the leading asymptotic behavior, neglecting
+
+214
+00:14:31,490 --> 00:14:33,770
+higher order terms and some small parameter.
+
+215
+00:14:35,870 --> 00:14:38,180
+Both of those expansions are going to break down
+
+216
+00:14:38,750 --> 00:14:40,670
+around the phase transitions to something a bit
+
+217
+00:14:40,670 --> 00:14:45,590
+more clever has to be done to look at the phase
+
+218
+00:14:45,590 --> 00:14:51,070
+transition dynamics in themselves. And this
+
+219
+00:14:51,070 --> 00:14:53,140
+Medfield approximation that.
+
+220
+00:14:56,120 --> 00:15:00,620
+Was what we skipped over last time is. Another
+
+221
+00:15:00,620 --> 00:15:03,890
+fairly generically applicable method that can be
+
+222
+00:15:03,890 --> 00:15:06,860
+applied not only to the easy model, but to all
+
+223
+00:15:06,860 --> 00:15:09,770
+sorts of interacting systems of which the using
+
+224
+00:15:09,770 --> 00:15:15,860
+model is a or the simplest possible example. And
+
+225
+00:15:16,700 --> 00:15:21,320
+the way this proceeds is to sort of reorganise the.
+
+226
+00:15:23,040 --> 00:15:25,860
+The energy that defines the U.S. model and its
+
+227
+00:15:25,860 --> 00:15:29,100
+interaction, so we're still defining everything on
+
+228
+00:15:29,100 --> 00:15:34,470
+this simple cubic lattice in these dimensions and
+
+229
+00:15:34,470 --> 00:15:39,210
+just by adding and subtracting a expectation value
+
+230
+00:15:39,210 --> 00:15:46,180
+for the magnetization which. We've done a quick
+
+231
+00:15:46,180 --> 00:15:48,460
+derivation here to relate that to the average
+
+232
+00:15:48,460 --> 00:15:51,370
+spend. Which as a.
+
+233
+00:15:56,030 --> 00:15:59,570
+As a sum over all of the microstates in in the
+
+234
+00:15:59,570 --> 00:16:02,600
+definition of the expectation value, this
+
+235
+00:16:02,600 --> 00:16:04,580
+expectation value of the magnetization is
+
+236
+00:16:04,580 --> 00:16:08,330
+independent of any particular spin or spin
+
+237
+00:16:08,330 --> 00:16:11,150
+configuration. It is simply a function of the
+
+238
+00:16:11,150 --> 00:16:17,660
+control parameters, beta and H. Which we turn back
+
+239
+00:16:17,660 --> 00:16:22,120
+on to a non-zero. External fuel strength.
+
+240
+00:16:24,520 --> 00:16:27,550
+For the purpose of this exercise, so by adding and
+
+241
+00:16:27,550 --> 00:16:32,650
+subtracting that constant value for a particular.
+
+242
+00:16:33,680 --> 00:16:38,170
+Value of these control parameters, we can express
+
+243
+00:16:38,200 --> 00:16:43,360
+the overall energy of the U.S. model with a slight
+
+244
+00:16:43,360 --> 00:16:46,720
+change of design conventions to get things to line
+
+245
+00:16:46,720 --> 00:16:48,640
+up with the previous sections. Sorry for that
+
+246
+00:16:48,640 --> 00:16:53,080
+inconsistency or that a change in convention
+
+247
+00:16:53,080 --> 00:16:56,680
+midstream, but we are able to organize things in
+
+248
+00:16:56,680 --> 00:17:01,210
+terms of the fluctuations of spins about that,
+
+249
+00:17:01,990 --> 00:17:04,460
+every expectation value of the average
+
+250
+00:17:04,460 --> 00:17:05,740
+standardization.
+
+251
+00:17:08,120 --> 00:17:08,600
+Now.
+
+252
+00:17:11,330 --> 00:17:14,420
+Obviously, for the easy model where these spins
+
+253
+00:17:14,420 --> 00:17:17,150
+can take only the values plus or minus one.
+
+254
+00:17:19,470 --> 00:17:22,110
+Any individual term here, even expressed in this
+
+255
+00:17:22,110 --> 00:17:27,330
+way is going to be fluctuating in some way or it's
+
+256
+00:17:27,330 --> 00:17:29,790
+going to be exhibiting large fluctuations, no
+
+257
+00:17:29,790 --> 00:17:33,060
+matter what the mechanization is, it cannot be
+
+258
+00:17:33,060 --> 00:17:35,430
+close to both plus one and minus one
+
+259
+00:17:35,430 --> 00:17:40,770
+simultaneously. However, on average, when we
+
+260
+00:17:40,770 --> 00:17:45,780
+insert this quantity into the sum over all the
+
+261
+00:17:45,780 --> 00:17:48,570
+nearest neighbor pairs that are represented by the
+
+262
+00:17:48,570 --> 00:17:52,410
+links in the simple cubic model, the average
+
+263
+00:17:52,410 --> 00:17:57,230
+fluctuations we can conjecture are. A relatively
+
+264
+00:17:57,230 --> 00:17:59,930
+small it could be neglected in the specific
+
+265
+00:17:59,930 --> 00:18:02,610
+context of that, some of our nearest neighbor
+
+266
+00:18:02,610 --> 00:18:07,730
+repairs, and that leads to this minefield
+
+267
+00:18:07,730 --> 00:18:12,970
+approximation to the energy which. Is not or has
+
+268
+00:18:12,970 --> 00:18:18,510
+not yet been justified. This is simply a. I guess
+
+269
+00:18:18,510 --> 00:18:21,240
+sort of conjecture that this sort of.
+
+270
+00:18:23,620 --> 00:18:28,300
+Approximation is valid and applicable that the
+
+271
+00:18:28,300 --> 00:18:33,750
+fluctuations are small on average then. What we
+
+272
+00:18:33,750 --> 00:18:39,180
+end up with is a system with a constant value, a
+
+273
+00:18:39,180 --> 00:18:41,550
+constant contribution to the energy coming from
+
+274
+00:18:42,180 --> 00:18:44,610
+that expectation, value of the magnetization
+
+275
+00:18:44,610 --> 00:18:49,800
+squared minus just the sum of our spins coupled to
+
+276
+00:18:50,340 --> 00:18:54,870
+a a modified external field. That depends on the
+
+277
+00:18:54,870 --> 00:19:00,130
+speed value of the spin. So this terminology of
+
+278
+00:19:00,130 --> 00:19:05,440
+Medfield approximation is something that arose
+
+279
+00:19:05,440 --> 00:19:08,650
+historically and can be.
+
+280
+00:19:10,790 --> 00:19:13,770
+Uses a mnemonic to remember that that's going on,
+
+281
+00:19:13,770 --> 00:19:17,360
+that an external field has been defined now
+
+282
+00:19:17,720 --> 00:19:21,620
+depending on that mean value of the average STED.
+
+283
+00:19:23,660 --> 00:19:24,200
+And.
+
+284
+00:19:28,650 --> 00:19:30,780
+There's a little box here to go through the
+
+285
+00:19:30,780 --> 00:19:37,360
+exercise of. Checking whether or not this Medfield
+
+286
+00:19:37,360 --> 00:19:39,640
+approximation is.
+
+287
+00:19:42,580 --> 00:19:44,800
+Is giving us an interacting or not a tracking
+
+288
+00:19:44,800 --> 00:19:51,310
+system, and just by noting that we have a constant
+
+289
+00:19:51,310 --> 00:19:55,720
+independent of the spin configuration and then the
+
+290
+00:19:55,720 --> 00:19:58,030
+same energy that we started off with, just with a
+
+291
+00:19:58,030 --> 00:20:00,820
+different or efficient and effective magnetic
+
+292
+00:20:00,820 --> 00:20:07,940
+field rather than the. The very magnetic field, we
+
+293
+00:20:07,940 --> 00:20:12,050
+can just reuse our result from the first
+
+294
+00:20:14,150 --> 00:20:18,260
+little gap in this week's material and immediately
+
+295
+00:20:18,260 --> 00:20:22,880
+write down that the change in energy upon changing
+
+296
+00:20:22,880 --> 00:20:25,790
+the degree of freedom in this case is just going
+
+297
+00:20:25,790 --> 00:20:31,820
+to be two times now, that effective magnetic field.
+
+298
+00:20:34,300 --> 00:20:38,230
+Rather than the bare magnetic field that we
+
+299
+00:20:38,230 --> 00:20:40,690
+started off with, so the only change is swapping
+
+300
+00:20:40,690 --> 00:20:46,710
+in an effective field rather than. The original
+
+301
+00:20:46,710 --> 00:20:48,420
+field, this is.
+
+302
+00:20:51,010 --> 00:20:53,320
+Independent of all spin's.
+
+303
+00:20:59,690 --> 00:21:04,270
+Apart from. The the one that got changed, which is
+
+304
+00:21:05,140 --> 00:21:09,160
+our definition of a non interacting system, so
+
+305
+00:21:09,640 --> 00:21:13,230
+this is sort of the. Magic of the Medfield
+
+306
+00:21:13,230 --> 00:21:18,300
+approximation, it is taking us from the
+
+307
+00:21:18,300 --> 00:21:21,570
+interacting system that is extremely difficult to.
+
+308
+00:21:22,820 --> 00:21:27,050
+And analytically, since a no longer factor rises
+
+309
+00:21:27,050 --> 00:21:30,080
+and all of the exponentially many terms in his
+
+310
+00:21:30,080 --> 00:21:35,450
+partition function have to be considered in in
+
+311
+00:21:35,480 --> 00:21:39,740
+full detail, the mean field approximation is able
+
+312
+00:21:39,740 --> 00:21:44,720
+to take us from that situation back to a non
+
+313
+00:21:44,720 --> 00:21:49,250
+interacting system that still know something about
+
+314
+00:21:49,250 --> 00:21:54,680
+the the dynamics that are due to that interaction.
+
+315
+00:21:55,840 --> 00:21:59,890
+By virtue of incorporating the.
+
+316
+00:22:02,700 --> 00:22:08,430
+Resulting magnetization in the effective. Magnetic
+
+317
+00:22:08,430 --> 00:22:11,940
+field that each of the spins are independently
+
+318
+00:22:12,150 --> 00:22:16,600
+coupling to. So that I probably should have put in
+
+319
+00:22:17,860 --> 00:22:20,920
+this material as one of those shaded boxes at the
+
+320
+00:22:20,920 --> 00:22:24,790
+Medfield approximation is taking us from an
+
+321
+00:22:24,790 --> 00:22:27,730
+interactive system back to the non interacting
+
+322
+00:22:27,730 --> 00:22:34,380
+case. But with. Some cleverness built in in that
+
+323
+00:22:34,380 --> 00:22:37,860
+definition of the non attraction theory to back up
+
+324
+00:22:37,860 --> 00:22:41,670
+some of the effects of these interactions that
+
+325
+00:22:41,670 --> 00:22:44,820
+were not able to handle explicitly.
+
+326
+00:22:51,880 --> 00:23:00,140
+So. Going through and. And plugging in. The the
+
+327
+00:23:00,180 --> 00:23:03,510
+Medfield approximation of the energy into that
+
+328
+00:23:03,510 --> 00:23:07,710
+partition function, we again, as we should expect
+
+329
+00:23:07,710 --> 00:23:11,370
+for a non interacting theory, benefit from the
+
+330
+00:23:11,370 --> 00:23:17,100
+factorization. That we had just like back in.
+
+331
+00:23:19,260 --> 00:23:23,250
+In week two or three or four of the previous parts
+
+332
+00:23:23,250 --> 00:23:27,450
+of the of the module for introducing.
+
+333
+00:23:28,420 --> 00:23:30,280
+InterAction's and.
+
+334
+00:23:32,920 --> 00:23:34,450
+By relating the.
+
+335
+00:23:37,280 --> 00:23:41,900
+The magnetization of the order parameter to. The
+
+336
+00:23:41,900 --> 00:23:46,430
+resulting Medfield approximation of the petition
+
+337
+00:23:46,430 --> 00:23:52,650
+function. We can end up with or derive the self
+
+338
+00:23:52,650 --> 00:23:54,270
+consistency condition.
+
+339
+00:23:57,990 --> 00:24:01,770
+That basically pulls out the dependence on the
+
+340
+00:24:01,770 --> 00:24:06,690
+marginalization that has been built into the not
+
+341
+00:24:06,690 --> 00:24:10,850
+interacting structure of this theory, so I'll
+
+342
+00:24:10,860 --> 00:24:14,430
+quickly go through how that works rather than
+
+343
+00:24:17,490 --> 00:24:21,300
+setting it up as a helpful question, given the
+
+344
+00:24:21,690 --> 00:24:27,060
+size of the audience today, but by identifying
+
+345
+00:24:27,450 --> 00:24:30,030
+this overall magnetization.
+
+346
+00:24:33,600 --> 00:24:41,240
+In the partition function, we can. See that the.
+
+347
+00:24:42,410 --> 00:24:45,350
+Derivative of the Helmholtz free energy, this
+
+348
+00:24:45,350 --> 00:24:49,970
+minus whatever, Ryvita. Derivative with respect to
+
+349
+00:24:49,970 --> 00:24:55,100
+the external magnetic field strength. Of the log
+
+350
+00:24:55,110 --> 00:24:56,400
+of the petition function.
+
+351
+00:24:59,710 --> 00:25:05,570
+Is. As usual, for the derivative of a log, we pull
+
+352
+00:25:05,570 --> 00:25:09,920
+out whatever Z expand the partition function in
+
+353
+00:25:10,910 --> 00:25:12,860
+some overlapping configurations.
+
+354
+00:25:15,120 --> 00:25:21,480
+And then just have. Derivative of. Better times
+
+355
+00:25:21,780 --> 00:25:24,670
+that attracting. Term.
+
+356
+00:25:29,450 --> 00:25:34,710
+Nearest neighbor appears as CSJ. And Peter HSM.
+
+357
+00:25:38,200 --> 00:25:41,590
+So derivative with respect to H is pulling down
+
+358
+00:25:41,770 --> 00:25:46,090
+both a beater and an M, so the batter comes out
+
+359
+00:25:46,090 --> 00:25:52,060
+and cancels that one over batter out front. So
+
+360
+00:25:52,060 --> 00:25:54,760
+we're just left with that. Whatever, Z.
+
+361
+00:25:56,990 --> 00:26:00,230
+Some over the span configurations, which are the
+
+362
+00:26:00,230 --> 00:26:08,670
+microstates. Of the system. That magnetization of
+
+363
+00:26:08,670 --> 00:26:12,750
+each of those skin configurations and then the
+
+364
+00:26:12,750 --> 00:26:17,880
+exponential of the same factor as above, which is
+
+365
+00:26:17,880 --> 00:26:22,110
+just the negative expectation value of that
+
+366
+00:26:22,110 --> 00:26:23,490
+overall magnetization.
+
+367
+00:26:26,400 --> 00:26:30,610
+Which is the number of spin's times the man, the
+
+368
+00:26:30,660 --> 00:26:34,320
+normalized magnetization person, that is our
+
+369
+00:26:34,330 --> 00:26:40,350
+quarter parameter, which. We're looking at two of
+
+370
+00:26:40,350 --> 00:26:42,180
+the terms in this equation, we can.
+
+371
+00:26:45,650 --> 00:26:52,640
+Identify. That's expectation value as this one
+
+372
+00:26:52,640 --> 00:26:58,250
+over and data that the derivative of the Lord of
+
+373
+00:26:58,250 --> 00:27:02,130
+the partition function, which is. Just what we had
+
+374
+00:27:02,130 --> 00:27:05,060
+down there and plugging in that fact arised
+
+375
+00:27:05,170 --> 00:27:10,620
+Medfield partition function. Gives us the.
+
+376
+00:27:13,220 --> 00:27:21,820
+Synch overcaution with the factor of. Tuti in plus
+
+377
+00:27:21,820 --> 00:27:25,810
+H coming from the argument of the of the Coche.
+
+378
+00:27:27,310 --> 00:27:32,660
+Which depends on. On both the left and right hand
+
+379
+00:27:32,660 --> 00:27:35,330
+sides of this equation, one twenty four, there is
+
+380
+00:27:35,330 --> 00:27:38,990
+dependence on the expectation value of the
+
+381
+00:27:38,990 --> 00:27:42,770
+magnetization on both sides of that equation,
+
+382
+00:27:42,770 --> 00:27:45,590
+which. Becomes
+
+383
+00:27:47,660 --> 00:27:51,920
+annoying to solve know, expecting when a cash is
+
+384
+00:27:51,920 --> 00:27:55,670
+equal to one piece of its argument, but can be.
+
+385
+00:27:57,350 --> 00:27:58,250
+Analyzed
+
+386
+00:28:00,410 --> 00:28:03,950
+by considering it a self consistency condition and
+
+387
+00:28:04,850 --> 00:28:08,780
+simply plotting the the two sides of this equation
+
+388
+00:28:08,780 --> 00:28:12,470
+as two separate functions and looking for their
+
+389
+00:28:12,470 --> 00:28:16,100
+intersections, which is equivalent to to looking
+
+390
+00:28:16,100 --> 00:28:20,690
+for the roots of the difference between those two
+
+391
+00:28:20,690 --> 00:28:21,440
+factors.
+
+392
+00:28:24,140 --> 00:28:26,630
+So that's what's exactly what's done over the next
+
+393
+00:28:26,630 --> 00:28:30,590
+few pages. Just starting off with a reminder of of
+
+394
+00:28:30,590 --> 00:28:36,020
+what the tension looks like at the at the baseline
+
+395
+00:28:37,220 --> 00:28:41,090
+where the tension of zero is zero and
+
+396
+00:28:41,270 --> 00:28:47,350
+asymptotically in. The limit of. It's argument
+
+397
+00:28:47,350 --> 00:28:48,160
+going to.
+
+398
+00:28:50,410 --> 00:28:53,320
+Plus or minus infinity, the change approaches plus
+
+399
+00:28:53,320 --> 00:28:54,130
+or minus one.
+
+400
+00:28:56,580 --> 00:29:00,420
+In the you know, the horizontal axis here is just
+
+401
+00:29:01,140 --> 00:29:07,160
+that expectation value of the magnetization. Which.
+
+402
+00:29:10,320 --> 00:29:14,520
+You might recall that in the easy model, this this
+
+403
+00:29:14,520 --> 00:29:22,300
+is bounded to be between minus one. And one, when
+
+404
+00:29:22,300 --> 00:29:25,210
+all of the spins are aligned in either of the two
+
+405
+00:29:25,210 --> 00:29:29,090
+orientations that they can have. And this is
+
+406
+00:29:29,660 --> 00:29:32,390
+consistent with the self-consistent condition that
+
+407
+00:29:32,390 --> 00:29:36,320
+the easing model in this Manfield approximation is
+
+408
+00:29:36,320 --> 00:29:41,150
+only consistently described when this solid green
+
+409
+00:29:41,150 --> 00:29:45,200
+curve of the Tange and the straight dotted line of
+
+410
+00:29:45,380 --> 00:29:49,400
+itself. So Y equals X when those intersect is the
+
+411
+00:29:49,400 --> 00:29:53,330
+only possible solution, possible description of
+
+412
+00:29:53,330 --> 00:29:58,760
+the easy model in this Manfield approximation,
+
+413
+00:29:58,760 --> 00:30:02,360
+which in this case the only intersection is right
+
+414
+00:30:02,360 --> 00:30:07,840
+here at the origin to the point zero zero. The
+
+415
+00:30:07,840 --> 00:30:12,270
+things become more interesting when. An external
+
+416
+00:30:12,270 --> 00:30:17,370
+magnetic field is turned on that simply shifts the
+
+417
+00:30:18,210 --> 00:30:23,410
+argument of this hyperbolic tangent. The magnetic
+
+418
+00:30:23,410 --> 00:30:27,610
+field is positive, the attention gets shifted to
+
+419
+00:30:27,790 --> 00:30:31,550
+the left. When it's negative, it gets shifted to
+
+420
+00:30:31,550 --> 00:30:37,160
+the right. And we now see that the there is, again,
+
+421
+00:30:37,160 --> 00:30:41,660
+only one possible self-consistent description of
+
+422
+00:30:41,690 --> 00:30:44,090
+the using model in this Medfield approximation in
+
+423
+00:30:44,090 --> 00:30:47,810
+each of these cases. One is the intersection up
+
+424
+00:30:47,810 --> 00:30:51,920
+here with the positive value. Of the the
+
+425
+00:30:52,390 --> 00:30:53,380
+magnetization.
+
+426
+00:30:56,630 --> 00:31:00,050
+The other is the intersection down here with.
+
+427
+00:31:01,680 --> 00:31:06,740
+Negative value. Of the magnetization and in both
+
+428
+00:31:06,740 --> 00:31:12,260
+cases, because the tension is bounded by plus or
+
+429
+00:31:12,260 --> 00:31:16,370
+minus one a vertically and this dotted line is
+
+430
+00:31:16,370 --> 00:31:23,440
+just. The lion, the lion X equals Y, we know that
+
+431
+00:31:23,500 --> 00:31:28,580
+this point here. Is MS equals one?
+
+432
+00:31:30,640 --> 00:31:33,670
+The mechanization equal to its maximum value, and
+
+433
+00:31:33,670 --> 00:31:40,160
+we can see that. In both of these cases, the only
+
+434
+00:31:40,160 --> 00:31:44,390
+consistent result is correctly within the.
+
+435
+00:31:46,840 --> 00:31:52,720
+Allowable domain of values for the magnetization,
+
+436
+00:31:53,200 --> 00:31:56,800
+which is not a proof that the Medfield
+
+437
+00:31:56,800 --> 00:31:59,350
+approximation is is actually working for the
+
+438
+00:31:59,350 --> 00:32:00,630
+system, but at least a
+
+439
+00:32:02,980 --> 00:32:04,600
+place where it could have failed and could have
+
+440
+00:32:04,600 --> 00:32:07,360
+given a nonsensical result, but instead it
+
+441
+00:32:07,900 --> 00:32:10,660
+remained consistent with the constraints that are
+
+442
+00:32:10,660 --> 00:32:13,960
+built into the structure of the system.
+
+443
+00:32:18,000 --> 00:32:20,460
+But, of course, when we looked at the at the faces
+
+444
+00:32:20,460 --> 00:32:27,100
+of using model. We saw that they depended on the
+
+445
+00:32:27,100 --> 00:32:30,280
+temperature rather than this external magnetic
+
+446
+00:32:30,280 --> 00:32:34,870
+field, that for simplicity when doing the high and
+
+447
+00:32:34,870 --> 00:32:37,440
+low temperature approximations, we turned off the
+
+448
+00:32:37,450 --> 00:32:41,230
+magnetic field to not have to worry about it. So
+
+449
+00:32:42,580 --> 00:32:47,530
+moving on, we need to look at what happens when
+
+450
+00:32:50,300 --> 00:32:53,280
+when the temperature varies in the self-consistent,
+
+451
+00:32:53,290 --> 00:32:57,930
+the condition that we're looking at by. By
+
+452
+00:32:57,930 --> 00:33:00,770
+flooding these curbs and finding their their
+
+453
+00:33:00,780 --> 00:33:05,160
+intersections. So this here this spot here is the
+
+454
+00:33:05,160 --> 00:33:07,680
+same as the one above just with a lower
+
+455
+00:33:07,680 --> 00:33:09,540
+temperature and.
+
+456
+00:33:12,130 --> 00:33:15,360
+We double check. You know what exactly the change
+
+457
+00:33:15,360 --> 00:33:22,160
+was, so the temperature up above was. For in order
+
+458
+00:33:22,160 --> 00:33:26,090
+to get the know convenient argument of the
+
+459
+00:33:26,090 --> 00:33:29,840
+hyperbolic tangent here, we have have this and
+
+460
+00:33:29,840 --> 00:33:33,980
+reduced it down to two, still keeping the nonzero
+
+461
+00:33:34,610 --> 00:33:38,910
+external magnetic field. And now the the
+
+462
+00:33:39,120 --> 00:33:43,180
+intersections have shifted much closer to those
+
+463
+00:33:43,180 --> 00:33:45,220
+maximum values, plus or minus one.
+
+464
+00:33:47,630 --> 00:33:52,370
+They the plot up here, I mentioned in the notes
+
+465
+00:33:52,370 --> 00:33:56,720
+that. This magnetization, was it plus or minus
+
+466
+00:33:56,730 --> 00:33:59,780
+point eight eight, so it's approaching the the
+
+467
+00:33:59,790 --> 00:34:03,360
+asymptotic low temperature limit where the the
+
+468
+00:34:03,480 --> 00:34:08,080
+magnetization of one is set by. There was to
+
+469
+00:34:08,080 --> 00:34:10,870
+degenerate ground states out of the two to the
+
+470
+00:34:10,870 --> 00:34:14,500
+power nd now possibly 10 to the power, three
+
+471
+00:34:14,500 --> 00:34:16,120
+hundred or ten of the power of three hundred
+
+472
+00:34:16,120 --> 00:34:20,260
+million possible states as the temperature gets
+
+473
+00:34:20,260 --> 00:34:24,430
+lower. Because the tension gets steeper, it
+
+474
+00:34:24,430 --> 00:34:30,470
+approaches. That ordered limit of. More and more
+
+475
+00:34:30,470 --> 00:34:31,040
+quickly.
+
+476
+00:34:36,030 --> 00:34:38,340
+Now confirming that.
+
+477
+00:34:40,360 --> 00:34:44,260
+The Medfield approximation at low temperatures is
+
+478
+00:34:44,950 --> 00:34:49,030
+giving us a system in its ordered phase, so that's
+
+479
+00:34:49,030 --> 00:34:52,630
+another good sanity check of this approximation,
+
+480
+00:34:52,960 --> 00:34:56,590
+that it is doing something reasonable and
+
+481
+00:34:56,770 --> 00:34:58,120
+identifying at least
+
+482
+00:35:00,460 --> 00:35:03,010
+at least the asymptotic phases know we saw at the
+
+483
+00:35:03,850 --> 00:35:09,100
+intersection at at zero when that external field
+
+484
+00:35:09,820 --> 00:35:13,210
+was set to zero. We always have the hyperbolic
+
+485
+00:35:13,210 --> 00:35:16,540
+Tange going through zero and intersecting with the
+
+486
+00:35:16,540 --> 00:35:22,150
+dotted line at that point. And. Now, for these two
+
+487
+00:35:22,150 --> 00:35:25,690
+cases of the temperature of four and eight.
+
+488
+00:35:27,690 --> 00:35:30,660
+With zero external field that.
+
+489
+00:35:33,860 --> 00:35:40,810
+Disordered. Phase solution. So in. Equals zero
+
+490
+00:35:41,290 --> 00:35:46,630
+corresponding to the disordered phase. Becomes the
+
+491
+00:35:46,630 --> 00:35:49,730
+only possibility at those high temperatures, the
+
+492
+00:35:50,000 --> 00:35:54,410
+the dance becomes for the slope of the dance
+
+493
+00:35:54,430 --> 00:35:58,180
+around zero becomes so low that it takes hands too
+
+494
+00:35:58,540 --> 00:36:03,040
+long to approach and Salsinha take value of one.
+
+495
+00:36:03,550 --> 00:36:05,920
+By the time it gets up there, it's no longer in
+
+496
+00:36:06,400 --> 00:36:11,660
+the physical domain. Of the using model bounded by
+
+497
+00:36:12,560 --> 00:36:16,970
+that magnetization within plus and minus one per
+
+498
+00:36:17,390 --> 00:36:20,420
+normalized for the total number of spins.
+
+499
+00:36:24,250 --> 00:36:24,790
+So.
+
+500
+00:36:27,610 --> 00:36:31,090
+We are seeing. Good sanity checks at.
+
+501
+00:36:34,380 --> 00:36:37,530
+At high temperatures and at low temperatures, at
+
+502
+00:36:37,530 --> 00:36:41,430
+least in the case of a non-structural field, there
+
+503
+00:36:41,430 --> 00:36:45,330
+was only this one possible self-consistent
+
+504
+00:36:45,330 --> 00:36:47,910
+solution coming from the main field approximation
+
+505
+00:36:47,910 --> 00:36:52,680
+corresponding to the the ordered face value of the
+
+506
+00:36:52,680 --> 00:36:53,610
+magnetization.
+
+507
+00:36:57,430 --> 00:37:01,400
+And of plus or minus one. When that field is
+
+508
+00:37:01,400 --> 00:37:05,450
+turned off and the temperature is low, there is
+
+509
+00:37:05,870 --> 00:37:08,750
+this interesting behavior that there are actually
+
+510
+00:37:08,750 --> 00:37:11,150
+three intersections
+
+511
+00:37:13,430 --> 00:37:17,840
+within the allowable or accessible domain.
+
+512
+00:37:21,010 --> 00:37:26,090
+For the easy model. One at the the disorder
+
+513
+00:37:26,100 --> 00:37:30,110
+magnetization were advantages and another at the
+
+514
+00:37:30,770 --> 00:37:36,150
+two now degenerates. Ordered phase ground states
+
+515
+00:37:36,900 --> 00:37:41,010
+with with no external field to energetically
+
+516
+00:37:41,010 --> 00:37:44,370
+prefer one or the other spin orientation, we have,
+
+517
+00:37:44,370 --> 00:37:48,090
+as always, that equal balance between.
+
+518
+00:37:50,970 --> 00:37:54,540
+The two degenerate ground states that differ only
+
+519
+00:37:54,540 --> 00:37:57,780
+by reversing every single spin from spin up,
+
+520
+00:37:57,780 --> 00:38:00,690
+flipping the spin down and spin down spontaneously
+
+521
+00:38:00,690 --> 00:38:02,370
+flipping to two point up.
+
+522
+00:38:04,810 --> 00:38:10,000
+But a little bit of thought. Reveals that in the
+
+523
+00:38:10,000 --> 00:38:14,560
+slow temperature phase. The solution is zero, even
+
+524
+00:38:14,560 --> 00:38:20,020
+though it exists is an unstable solution and
+
+525
+00:38:20,020 --> 00:38:24,250
+unstable root of the difference between these two
+
+526
+00:38:24,550 --> 00:38:31,380
+curves, which. We can. Figure out just by looking
+
+527
+00:38:31,380 --> 00:38:34,620
+at graphs of this sort of thinking about them in
+
+528
+00:38:35,070 --> 00:38:40,620
+the appropriate way. So if we zoom in. To the
+
+529
+00:38:40,620 --> 00:38:45,840
+origin here, if the tablet responds to that zoom
+
+530
+00:38:47,380 --> 00:38:51,540
+and we think about what happens if we are not
+
+531
+00:38:51,540 --> 00:38:55,800
+exactly at that self-consistent point, that
+
+532
+00:38:55,800 --> 00:38:59,760
+happens to randomly fluctuate just a little bit
+
+533
+00:38:59,760 --> 00:39:05,580
+off of it. Then for this blue curve at this, the
+
+534
+00:39:05,580 --> 00:39:08,430
+lowest temperature case, the attention.
+
+535
+00:39:14,090 --> 00:39:17,780
+Is the blue curve, and it is larger than the
+
+536
+00:39:17,780 --> 00:39:21,170
+magnetization itself, which I'll just call X for
+
+537
+00:39:21,170 --> 00:39:25,400
+simplicity. So that is to say, X is too small.
+
+538
+00:39:30,160 --> 00:39:34,940
+For the system to be self-consistent. And
+
+539
+00:39:34,940 --> 00:39:40,190
+therefore, you know, any algorithm that we set up
+
+540
+00:39:40,610 --> 00:39:44,000
+to search for a root of the difference between
+
+541
+00:39:44,000 --> 00:39:47,180
+these functions would say that, well, if X is too
+
+542
+00:39:47,180 --> 00:39:54,770
+small, we need to look at. Larger values. Of
+
+543
+00:39:54,890 --> 00:39:57,920
+course, in order to recover self-consistent seat.
+
+544
+00:39:59,860 --> 00:40:00,520
+So.
+
+545
+00:40:03,310 --> 00:40:08,500
+The the set up, the structure of. This this plot
+
+546
+00:40:08,500 --> 00:40:14,180
+or this route finding routine. Is such that it
+
+547
+00:40:14,900 --> 00:40:17,540
+pushes the system or the system flows.
+
+548
+00:40:19,600 --> 00:40:25,320
+Two larger values of X, which take us up. To even
+
+549
+00:40:25,320 --> 00:40:27,960
+larger values of that hyperbolic tangent, which
+
+550
+00:40:27,960 --> 00:40:32,520
+are, in fact, even further away, even greater than
+
+551
+00:40:32,520 --> 00:40:36,150
+X actually increasing the the disagreement and the
+
+552
+00:40:36,150 --> 00:40:42,010
+violation of consistency. So we keep being pushed
+
+553
+00:40:42,010 --> 00:40:44,800
+even further to a larger, larger efforts to try to
+
+554
+00:40:44,800 --> 00:40:50,830
+regain this balance between the. The two curves
+
+555
+00:40:50,840 --> 00:40:53,350
+whose intersection we're trying to find and we
+
+556
+00:40:53,350 --> 00:40:57,070
+follow along this curve all the way until we reach
+
+557
+00:40:57,370 --> 00:41:03,250
+its ordered phase intersection, which is the the
+
+558
+00:41:03,610 --> 00:41:09,910
+stable route to the stable solution at these low
+
+559
+00:41:09,910 --> 00:41:13,090
+temperatures when these multiple intersections
+
+560
+00:41:13,090 --> 00:41:18,700
+exist. So another way of visualizing this is by
+
+561
+00:41:19,090 --> 00:41:23,080
+plotting the difference itself, again, against
+
+562
+00:41:23,230 --> 00:41:27,220
+that expectation value of the memorisation and
+
+563
+00:41:27,220 --> 00:41:29,470
+putting the arrows on here, just as we did above.
+
+564
+00:41:30,750 --> 00:41:35,370
+Seeing which way the system wants to flow, if it
+
+565
+00:41:35,880 --> 00:41:40,380
+happens to be displaced from one or another of
+
+566
+00:41:40,380 --> 00:41:41,970
+these routes where it vanishes.
+
+567
+00:41:44,650 --> 00:41:47,200
+Probably also something that can be seen by by
+
+568
+00:41:47,200 --> 00:41:51,970
+taking the the derivative and looking at where
+
+569
+00:41:51,970 --> 00:41:55,930
+that is minimize or maximize to identify the
+
+570
+00:41:56,170 --> 00:41:59,890
+stable and unstable solutions or the minimal
+
+571
+00:41:59,910 --> 00:42:03,370
+maximum of that stability condition. But the
+
+572
+00:42:03,370 --> 00:42:06,700
+conclusion is that this new approximation is not
+
+573
+00:42:06,700 --> 00:42:10,210
+only allowing for the possibility of an order
+
+574
+00:42:10,210 --> 00:42:14,230
+phase at low temperature, but by having that being
+
+575
+00:42:14,230 --> 00:42:18,730
+the only. Stable solution, it is correctly
+
+576
+00:42:19,390 --> 00:42:20,320
+identifying.
+
+577
+00:42:23,390 --> 00:42:27,800
+That there is a transition between the order phase
+
+578
+00:42:27,800 --> 00:42:30,470
+and the disorder phase as the temperature
+
+579
+00:42:30,680 --> 00:42:34,390
+increases going from order to low temperature to
+
+580
+00:42:34,400 --> 00:42:38,720
+disorder at high temperature, and by virtue of
+
+581
+00:42:38,720 --> 00:42:42,140
+having an exact analytic solution for the
+
+582
+00:42:42,140 --> 00:42:45,200
+partition function and for the expectation value
+
+583
+00:42:45,200 --> 00:42:49,650
+of the magnetization. In the form of this tension,
+
+584
+00:42:51,180 --> 00:42:53,370
+we can then from the bean field approximation, it
+
+585
+00:42:53,370 --> 00:42:59,170
+is simple enough to get an expression for the. The
+
+586
+00:42:59,170 --> 00:43:04,450
+critical temperature at which. The stability of
+
+587
+00:43:04,450 --> 00:43:08,650
+this disordered phase route changes from being
+
+588
+00:43:08,650 --> 00:43:10,900
+stable at high temperatures to being unstable at
+
+589
+00:43:10,900 --> 00:43:16,170
+low temperatures, that happens exactly when. The
+
+590
+00:43:16,500 --> 00:43:22,350
+tension at the origin has the same slope as just
+
+591
+00:43:22,350 --> 00:43:26,070
+the expectation value Y equals X, which is to say
+
+592
+00:43:26,070 --> 00:43:31,200
+the the slope of the Tange has to equal one at
+
+593
+00:43:31,200 --> 00:43:37,940
+that critical temperature. And by expanding the
+
+594
+00:43:37,940 --> 00:43:41,270
+tension, a series approximation, we can take that
+
+595
+00:43:42,470 --> 00:43:45,190
+derivative to to define the slope,
+
+596
+00:43:48,320 --> 00:43:52,370
+it's the derivative and use that variable X again.
+
+597
+00:43:53,590 --> 00:43:54,340
+Just to.
+
+598
+00:43:57,010 --> 00:44:01,530
+Reduce the amount that I need to write. Executed
+
+599
+00:44:03,900 --> 00:44:09,980
+at X equals zero, which is just. Well, the
+
+600
+00:44:09,980 --> 00:44:15,180
+argument to. PETA claims the dimensionality and
+
+601
+00:44:15,180 --> 00:44:18,770
+then. Doing the derivative brings down one of
+
+602
+00:44:18,800 --> 00:44:21,560
+those factors of X, so we only have.
+
+603
+00:44:23,690 --> 00:44:27,170
+Something that depends on. The magnetization
+
+604
+00:44:27,170 --> 00:44:30,140
+squared as the next correction, but of course,
+
+605
+00:44:30,140 --> 00:44:34,430
+when we set that magnetization to zero to look at
+
+606
+00:44:34,430 --> 00:44:39,650
+the slope in the the relevant intersection between
+
+607
+00:44:39,650 --> 00:44:42,920
+these curves, then everything that depends on him
+
+608
+00:44:42,920 --> 00:44:47,180
+is going to drop out. And we have just two better
+
+609
+00:44:47,180 --> 00:44:51,320
+times of dimensionality equals one or that
+
+610
+00:44:52,010 --> 00:44:56,030
+critical beat up is whatever to the political
+
+611
+00:44:56,030 --> 00:44:58,970
+temperature is just to D.
+
+612
+00:45:02,950 --> 00:45:05,530
+And that turns out to be wrong.
+
+613
+00:45:10,020 --> 00:45:15,090
+For for the actual interacting easing model, this
+
+614
+00:45:15,090 --> 00:45:17,880
+is where we see the Medfield approximation
+
+615
+00:45:18,750 --> 00:45:21,930
+revealing itself to be just an approximation and
+
+616
+00:45:21,930 --> 00:45:26,610
+not an exact solution of this interacting system
+
+617
+00:45:26,610 --> 00:45:29,460
+in the in the two dimensional case where an exact
+
+618
+00:45:29,460 --> 00:45:34,260
+solution is possible. That exact solution predicts
+
+619
+00:45:34,260 --> 00:45:41,220
+this funny expression for the inverse critical
+
+620
+00:45:41,220 --> 00:45:43,890
+temperature being a sea of about zero point four
+
+621
+00:45:43,890 --> 00:45:49,250
+for. Whereas, you know, our prediction of a
+
+622
+00:45:50,300 --> 00:45:54,200
+critical bit of one over two times two dimensions
+
+623
+00:45:54,380 --> 00:45:58,310
+is point to five is off by very nearly a factor of
+
+624
+00:45:58,310 --> 00:46:01,310
+two. So it's the right order of magnitude. So
+
+625
+00:46:01,310 --> 00:46:05,600
+qualitatively acceptable, but not not a very
+
+626
+00:46:05,600 --> 00:46:09,680
+reliable guide to that two dimensional case. Just
+
+627
+00:46:09,680 --> 00:46:11,240
+as a fun historical note,
+
+628
+00:46:13,580 --> 00:46:16,250
+this two dimensional critical temperature for the
+
+629
+00:46:16,250 --> 00:46:20,630
+easy model was actually determined exactly even
+
+630
+00:46:20,630 --> 00:46:23,480
+before the easy model itself was solved
+
+631
+00:46:23,480 --> 00:46:26,240
+analytically by Einziger in the 1940s.
+
+632
+00:46:28,900 --> 00:46:30,880
+And that was done through a technique known as
+
+633
+00:46:30,880 --> 00:46:35,230
+developing by a couple of folks called Kramers and
+
+634
+00:46:35,230 --> 00:46:41,200
+Vania. They were able to find that the. So Kramers
+
+635
+00:46:41,200 --> 00:46:45,280
+body found a relation between the behavior of the
+
+636
+00:46:45,290 --> 00:46:47,500
+easy model in its high and low temperature,
+
+637
+00:46:47,500 --> 00:46:50,140
+Faison's something that's now it is called Kramers
+
+638
+00:46:50,140 --> 00:46:55,210
+finding a duality and by requiring that.
+
+639
+00:46:58,020 --> 00:47:02,640
+This is the this relation be satisfied in both the
+
+640
+00:47:02,640 --> 00:47:05,490
+high and low temperature phases at the same
+
+641
+00:47:05,490 --> 00:47:08,860
+temperature. That is the temperature at which both
+
+642
+00:47:08,860 --> 00:47:11,260
+the high and low temperature phases are
+
+643
+00:47:11,320 --> 00:47:14,660
+simultaneously valid. You can identify as the
+
+644
+00:47:14,680 --> 00:47:19,450
+critical temperature and solving the Kramers self
+
+645
+00:47:19,450 --> 00:47:23,900
+to reality condition produces this. Funny, one
+
+646
+00:47:23,900 --> 00:47:27,800
+half of a log of one plus square root two, which
+
+647
+00:47:27,800 --> 00:47:32,000
+was then a consistency check that Oddsmaker was
+
+648
+00:47:32,000 --> 00:47:35,570
+able to derive from his exact solution of the
+
+649
+00:47:35,600 --> 00:47:39,770
+using model and in the zero field case. And just
+
+650
+00:47:39,770 --> 00:47:44,860
+as the last note to. To wrap up today and wrap up
+
+651
+00:47:44,860 --> 00:47:47,110
+these synchronous sessions, the Medfield
+
+652
+00:47:47,110 --> 00:47:49,510
+approximation turns out to fail badly in
+
+653
+00:47:49,900 --> 00:47:54,580
+relatively low numbers of dimensions. The one
+
+654
+00:47:54,580 --> 00:47:57,280
+dimensional easy model does not show a transition
+
+655
+00:47:57,280 --> 00:48:00,400
+at all in contrast to the main field approximation.
+
+656
+00:48:01,690 --> 00:48:04,180
+But the meaningful approximation does become exact
+
+657
+00:48:04,180 --> 00:48:07,390
+in the sort of formal mathematical limit where
+
+658
+00:48:07,390 --> 00:48:11,230
+each site has an infinite number of neighbors, or
+
+659
+00:48:11,530 --> 00:48:15,550
+we have a simple cubic lattice in an infinite
+
+660
+00:48:15,550 --> 00:48:20,080
+number of dimensions. And the. The qualitative or
+
+661
+00:48:20,080 --> 00:48:23,650
+conceptual reason for that is because in that case,
+
+662
+00:48:23,650 --> 00:48:27,160
+each site is interacting with a larger and larger
+
+663
+00:48:27,160 --> 00:48:30,070
+number of nearest neighbors forward and backward
+
+664
+00:48:30,070 --> 00:48:32,700
+in every one of those dimensions.
+
+665
+00:48:34,960 --> 00:48:39,340
+It feels the overall adverse effects of a larger
+
+666
+00:48:39,340 --> 00:48:43,420
+and larger number of spins so that the the mean
+
+667
+00:48:43,420 --> 00:48:46,330
+value of the spin that goes into this effective
+
+668
+00:48:46,330 --> 00:48:50,350
+magnetic field and windfield approximation becomes
+
+669
+00:48:50,350 --> 00:48:53,980
+more and more like what each spin is seeing by
+
+670
+00:48:53,980 --> 00:48:57,880
+virtue of its interactions with more and more of
+
+671
+00:48:57,880 --> 00:49:02,160
+its neighbors. So that is.
+
+672
+00:49:04,520 --> 00:49:10,250
+Showing the know the limitations of approximations
+
+673
+00:49:10,250 --> 00:49:13,190
+that allow us to solve this interacting system
+
+674
+00:49:13,850 --> 00:49:17,630
+approximately by making it not interacting in a
+
+675
+00:49:17,630 --> 00:49:20,210
+clever or refined way in the.
+
+676
+00:49:22,540 --> 00:49:24,850
+The regime in which that approximation becomes
+
+677
+00:49:25,240 --> 00:49:28,630
+more or less reliable, working in a larger or
+
+678
+00:49:28,630 --> 00:49:31,450
+smaller number of dimensions, I'll wrap up there
+
+679
+00:49:31,450 --> 00:49:36,580
+with my spiel for today. Shut down the recording
+
+680
+00:49:36,580 --> 00:49:38,950
+and back for the last round of scheduled office
+
+681
+00:49:38,950 --> 00:49:42,040
+hours, though, at the individual office, hours can
+
+682
+00:49:42,040 --> 00:49:44,290
+still be booked by appointment through the
+
+683
+00:49:44,290 --> 00:49:47,980
+assessment period. And with the end of this
+
+684
+00:49:47,980 --> 00:49:52,470
+recording to say, I hope you enjoyed. Some of the
+
+685
+00:49:53,400 --> 00:49:55,920
+statistical physics stuff we were able to to see
+
+686
+00:49:55,920 --> 00:49:59,730
+this term and good luck with that final assessment
+
+687
+00:49:59,730 --> 00:50:01,410
+in your preparations for it.
