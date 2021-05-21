@@ -1,0 +1,102 @@
+% ------------------------------------------------------------------
+\documentclass[12 pt]{article} % A4 paper set by geometry package below
+\pagenumbering{arabic}
+\setlength{\parindent}{10 mm}
+\setlength{\parskip}{12 pt}
+
+% Nimbus Sans font should be reasonably legible
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}  % Without this \textsterling produces $
+
+% Section header spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}    % For comment
+\usepackage[shortlabels]{enumitem}
+\usepackage[paper=a4paper, marginparwidth=0 cm, marginparsep=0 cm, top=2.5 cm, bottom=2.5 cm, left=3 cm, right=3 cm, includemp]{geometry}
+\usepackage[pdftex, pdfstartview={FitH}, pdfnewwindow=true, colorlinks=true, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue, pdfpagemode=UseNone]{hyperref}
+
+% Put module code and last-modified date in footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{{\small \thisweek}\hfill \thepage\hfill {\small \moddate}}
+
+% Hopefully address Canvas complaints about pdf tagging
+%\usepackage[tagged]{accessibility}
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\be}{\ensuremath{\beta} }
+\newcommand{\De}{\ensuremath{\Delta} }
+\newcommand{\Om}{\ensuremath{\Omega} }
+\newcommand{\vev}[1]{\ensuremath{\left\langle #1 \right\rangle} }
+\newcommand{\pderiv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}} }
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
+\begin{document}
+\newcommand{\thisweek}{MATH327 Extra (Fugacity)}
+\newcommand{\moddate}{Last modified 21 May 2021}
+\begin{center}
+  {\Large \textbf{MATH327: Statistical Physics, Spring 2021}} \\[12 pt]
+  {\Large \textbf{Extra practice \ --- \ Fugacity and particle number}} \\[24 pt]
+\end{center}
+
+Consider a system governed by the grand-canonical ensemble with temperature $T = 1/ \be$ and chemical potential $\mu$.
+Let $Z_g(T, \mu)$ denote the system's grand-canonical partition function, while $Z_N(T)$ indicates the partition function for a canonical ensemble with $N$ particles.
+When these particles are classical and indistinguishable, we have seen
+\begin{equation*}
+  Z_N = \frac{1}{N!} Z_1^N,
+\end{equation*}
+where $Z_1(T)$ is the canonical partition function for a single particle.
+
+\begin{enumerate}[label={(\alph*)}]
+  \item Defining the fugacity $\xi \equiv e^{\be \mu} = e^{\mu / T}$, show
+        \begin{equation*}
+          Z_g(T, \mu) = \sum_{N = 0}^{\infty} \xi^N \, Z_N(T).
+        \end{equation*}
+
+  \item Derive a relation between the average particle number $\vev{N}$ and
+        \begin{equation*}
+          \xi \pderiv{}{\xi} \Om,
+        \end{equation*}
+        where $\Om = -T \log Z_g$ is the grand-canonical potential.
+        It might be convenient to change variables to $x \equiv \log \xi = \be \mu$ with $\displaystyle \pderiv{}{x} = \xi\pderiv{}{\xi}$.
+
+  \item Similarly, derive a relation between the squared particle number fluctuations
+        \begin{equation*}
+          \vev{\De N^2} \equiv \vev{\left(N - \vev{N}\right)^2}
+        \end{equation*}
+        and the second derivative
+        \begin{equation*}
+          \left(\xi \pderiv{}{\xi}\right)^2 \Om.
+        \end{equation*}
+
+  \item Specializing to indistinguishable classical particles, show
+        \begin{equation*}
+          Z_g(T, \mu) = \exp\left[\xi Z_1(T)\right].
+        \end{equation*}
+
+  \item Use the previous parts to derive the following result for the relative particle number fluctuations of indistinguishable classical particles:
+        \begin{equation*}
+          \frac{\sqrt{\vev{\De N^2}}}{\vev{N}} = \frac{1}{\sqrt{\vev{N}}}.
+        \end{equation*}
+        As discussed in the solutions for the second homework assignment, this relation connects the canonical and grand-canonical ensembles in the large-$N$ thermodynamic limit.
+\end{enumerate}
+
+\end{document}
+% ------------------------------------------------------------------

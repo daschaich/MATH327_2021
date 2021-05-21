@@ -37,38 +37,42 @@
 
 
 % ------------------------------------------------------------------
+% Shortcuts
+\newcommand{\la}{\ensuremath{\lambda} }
+% ------------------------------------------------------------------
+
+
+
+% ------------------------------------------------------------------
 \begin{document}
-\newcommand{\thisweek}{MATH327 Extra (Dice)}
-\newcommand{\moddate}{Last modified 2 May 2021}
+\newcommand{\thisweek}{MATH327 Extra (Dalton)}
+\newcommand{\moddate}{Last modified 21 May 2021}
 \begin{center}
   {\Large \textbf{MATH327: Statistical Physics, Spring 2021}} \\[12 pt]
-  {\Large \textbf{Extra practice \ --- \ Rolling dice}} \\[24 pt]
+  {\Large \textbf{Extra practice \ --- \ Dalton's law}} \\[24 pt]
 \end{center}
 
-Icosahedral (20-sided) dice date back more than 2000 years.
-Consider such icosahedral dice with sides labeled by the numbers $1, \cdots, 20$, analogously to cubic dice with sides labeled $1, \cdots, 6$.
+Consider the mixture of two ideal gases analyzed in Question~1 of the second homework assignment.
+As illustrated below, the two gases with particle numbers $N_1$ and $N_2$ are in a container of volume $V$ at temperature $T$.
+Within each gas the particles are indistinguishable, but particles of one gas are distinguishable from particles of the other gas.
+Their thermal de~Broglie wavelengths and single-particle canonical partition functions are
+\begin{align*}
+  \la_i(T) & = \sqrt{\frac{2\pi\hbar^2}{m_i T}} &
+  Z_1^{(i)}(T) & = \frac{V}{\la_i^3},
+\end{align*}
+where $m_1$ and $m_2$ are the masses of particles in the two different gases.
 
-Define an experiment of rolling six distinguishable icosahedral dice and measuring the sum of the numbers that come out on top.
-The largest possible result is $120 = 6\times 20$ and the smallest possible result is $6 = 6\times 1$.
+\begin{center}\includegraphics[width=0.5\textwidth]{figs/mixed.pdf}\end{center}
 
-\begin{enumerate}[label={(\alph*)}]
-  \item What is the size of the outcome space for this experiment and measurement?
-        What is the probability of rolling the maximum 120?
-        What is the probability of rolling 119?
-\end{enumerate}
-
-Now consider the analogous experiment and measurement with three of those icosahedral dice replaced by ten distinguishable cubic dice.
-In this case the largest possible result is still $120 = 3\times 20 + 10\times 6$, while the smallest possible result becomes $13 = 3\times 1 + 10\times 1$.
-
-\begin{enumerate}[label={(\alph*)}]
-  \setcounter{enumi}{1}
-  \item What is the size of the outcome space for this experiment and measurement with thirteen dice?
-        What is the probability of rolling the maximum 120?
-        What is the probability of rolling 119?
-\end{enumerate}
-
-\vspace{24 pt}
-\begin{center}\includegraphics[height=5 cm]{figs/die20.pdf}\hfill \includegraphics[height=5 cm]{figs/die06.pdf}\end{center}
+Determine the equation of state for the mixture, and use it to demonstrate Dalton's law,
+\begin{equation*}
+  P = P_1 + P_2,
+\end{equation*}
+where the `partial pressures' obey
+\begin{align*}
+  P_1 V & = N_1 T &
+  P_2 V & = N_2 T.
+\end{align*}
 
 \end{document}
 % ------------------------------------------------------------------

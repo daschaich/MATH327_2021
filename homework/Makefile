@@ -1,6 +1,6 @@
 all:
-	pdflatex homework2
-	pdflatex homework2
+	pdflatex homework2_sol
+	pdflatex homework2_sol
 
 hw1:
 	pdflatex homework1
