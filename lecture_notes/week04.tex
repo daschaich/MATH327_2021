@@ -215,22 +215,22 @@ Since the entropies depend on whether or not the particles in the gas are distin
 \newpage % WARNING: FORMATTING BY HAND
 The initial entropy is the sum of the contributions from the two canonical systems, $S_A + S_B$, both of which are the same thanks to our simplification above, and are given by \eq{eq:ideal_entropy}:
 \begin{mdframed}
-  $\displaystyle S_A + S_B = $ \\[50 pt]
+  $\displaystyle S_A + S_B = $ \\[40 pt]
 \end{mdframed}
 To find the entropy $S_C$ of the combined system, we just need to consider what happens when we double the volume and also double the number of particles:
 \begin{mdframed}
-  $\displaystyle S_C = $ \\[50 pt]
+  $\displaystyle S_C = $ \\[40 pt]
 \end{mdframed}
 You should find $S_C = S_A + S_B$, which is consistent with the second law of thermodynamics.
 
 Things are more complicated when we re-separate the systems.
 Analogously to our considerations in \secref{sec:heat_ex}, we need to sum over all the possible ways of dividing the $2N$ particles between the two re-separated boxes.
-If $N_A'$ particles end up in the left box (system $\Om_A'$), then the other system $\Om_B'$ must contain the remaining $N_B' = 2N - N_A'$ particles.
-Adding up the entropies,
+In particular, we need to carry out this sum to compute the partition function $Z'$ for $\Om_A' + \Om_B'$, since this is the fundamental quantity from which the entropy is then derived as $S = \pderiv{}{T}\left(T\log Z'\right)$ (\eq{eq:canon_entropy-F}).
+If $\nu$ particles end up in the left box (system $\Om_A'$), then the other system $\Om_B'$ must contain the remaining $2N - \nu$ particles, giving us
 \begin{align}
-  S_A' + S_B' & = \sum_{N_A' = 0}^{2N} \left[\frac{3}{2} N_A' + N_A' \log\left(\frac{eV}{N_A' \lath^3}\right) \right. \cr
-              &         \qquad\qquad + \left.\frac{3}{2} (2N - N_A') + (2N - N_A') \log\left(\frac{eV}{(2N - N_A') \lath^3}\right)\right] \label{eq:mixing_full} \\
-              & = 3N + 2N \log\left(\frac{eV}{\lath^3}\right) + \sum_{N_A' = 0}^{2N} \log\left[\left(N_A'\right)^{-N_A'} \left(2N - N_A'\right)^{-(2N - N_A')}\right]. \nonumber
+  Z_{\nu}     & = \frac{1}{\nu!} \left(\frac{V}{\lath^3}\right)^{\nu} \times \frac{1}{(2N - \nu)!} \left(\frac{V}{\lath^3}\right)^{2N - \nu} = \frac{1}{\nu! \, (2N - \nu)!} \left(\frac{V}{\lath^3}\right)^{2N} \cr
+  Z'          & = \sum_{\nu = 0}^{2N} Z_{\nu} = \left(\frac{V}{\lath^3}\right)^{2N} \sum_{\nu = 0}^{2N} \frac{1}{\nu! \, (2N - \nu)!} = \left(\frac{V}{\lath^3}\right)^{2N} \frac{1}{(2N)!} \sum_{\nu = 0}^{2N} \binom{2N}{\nu} \cr
+  S_A' + S_B' & = 2N \pderiv{}{T}\left(T\log \left[\frac{V}{\lath^3}\right]\right) - \log[(2N)!] + \log\left[ \sum_{\nu = 0}^{2N} \binom{2N}{\nu} \right]. \label{eq:mixing_full}
 \end{align}
 
 Since this is hard to compare with $S_C = S_A + S_B = 3N + 2N \log\left(\frac{eV}{N\lath^3}\right)$, back in the 1870s J.\ Willard Gibbs suggested considering only the case $N_A' = N_B' = N$.
