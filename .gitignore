@@ -5,6 +5,7 @@
 *aux
 *out
 *toc
+Makefile
 toplot
 *sol*
 *.bbl
